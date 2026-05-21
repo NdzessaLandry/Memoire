@@ -1,0 +1,74 @@
+\begin{thebibliography}{10}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[{Commission \'Economique pour l'Afrique
+  (CEA)}(2023)]{uneca_digital_2023}
+{Commission \'Economique pour l'Afrique (CEA)}.
+\newblock Digital trade in africa: Shaping future policies.
+\newblock Technical report, Nations Unies --- Commission \'Economique pour
+  l'Afrique, Addis-Ab\'eba, \'Ethiopie, 2023.
+\newblock URL \url{https://www.uneca.org}.
+
+\bibitem[des Entreprises~du Cameroun~(GECAM)(2020)]{barometr_gecam}
+Groupement des Entreprises~du Cameroun~(GECAM).
+\newblock \emph{Barométre et obstables à la croissance des entreprises
+  Camerounaises}.
+\newblock GECAM, 2020.
+
+\bibitem[{Institut National de la Statistique (INS)}(2023)]{ins_rge_2023}
+{Institut National de la Statistique (INS)}.
+\newblock Rapport du recensement g\'en\'eral des entreprises du cameroun.
+\newblock Rapport statistique, Institut National de la Statistique, Yaound\'e,
+  Cameroun, 2023.
+
+\bibitem[{MINEPAT}(2026)]{minepat_midterm_2026}
+{MINEPAT}.
+\newblock Rapport d'\'evaluation \`a mi-parcours de la strat\'egie nationale de
+  d\'eveloppement 2020--2030.
+\newblock Rapport officiel, Minist\`ere de l'\'Economie, de la Planification et
+  de l'Am\'enagement du Territoire, Yaound\'e, Cameroun, 2026.
+
+\bibitem[{OCDE}(2021)]{oecd_sme_2021}
+{OCDE}.
+\newblock Sme and entrepreneurship outlook 2021.
+\newblock Technical report, Organisation de Coop\'eration et de D\'eveloppement
+  \'Economiques, Paris, 2021.
+\newblock URL \url{https://www.oecd.org/sme-outlook-2021}.
+
+\bibitem[Porter(1990)]{porter_1990}
+Michael~E. Porter.
+\newblock \emph{The Competitive Advantage of Nations}.
+\newblock Free Press, New York, 1990.
+
+\bibitem[{United Nations Industrial Development Organization
+  (UNIDO)}(2022)]{unido_2022}
+{United Nations Industrial Development Organization (UNIDO)}.
+\newblock Industrial development report 2022: The future of industrialization
+  in a post-pandemic world.
+\newblock Technical report, UNIDO, Vienna, 2022.
+\newblock URL \url{https://www.unido.org/idr2022}.
+
+\bibitem[Williamson(1985)]{williamson_1985}
+Oliver~E. Williamson.
+\newblock \emph{The Economic Institutions of Capitalism}.
+\newblock Free Press, New York, 1985.
+
+\bibitem[{World Bank}(2020{\natexlab{a}})]{world_bank_2020}
+{World Bank}.
+\newblock Doing business 2020: Comparing business regulation in 190 economies.
+\newblock Annual report, The World Bank, Washington, D.C., 2020{\natexlab{a}}.
+\newblock URL \url{https://www.doingbusiness.org}.
+
+\bibitem[{World Bank}(2020{\natexlab{b}})]{world_bank_doing_business_2020}
+{World Bank}.
+\newblock Enterprise surveys: Understanding the constraints to private sector
+  growth.
+\newblock Technical report, The World Bank, Washington, D.C.,
+  2020{\natexlab{b}}.
+\newblock URL \url{https://www.enterprisesurveys.org}.
+
+\end{thebibliography}

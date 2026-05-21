@@ -1,0 +1,76 @@
+\babel@toc {french}{}\relax 
+\contentsline {chapter}{Dédicace}{i}{chapter*.1}%
+\contentsline {chapter}{Remerciements}{ii}{chapter*.2}%
+\contentsline {chapter}{Résumé}{iii}{chapter*.3}%
+\contentsline {chapter}{Abstract}{iv}{chapter*.4}%
+\contentsline {chapter}{Table des matières}{vi}{chapter*.5}%
+\contentsline {chapter}{Liste des figures}{vii}{chapter*.6}%
+\contentsline {chapter}{Liste des tableaux}{1}{chapter*.7}%
+\contentsline {chapter}{Introduction Générale}{2}{chapter*.8}%
+\contentsline {chapter}{\numberline {1}Présentation de la structure d'accueil et déroulement du stage}{6}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Présentation du MINEPAT}{6}{section.1.1}%
+\contentsline {subsection}{\numberline {1.1.1}Organisation interne du \gls {minepat}}{6}{subsection.1.1.1}%
+\contentsline {subsubsection}{Le Ministre délégué}{6}{subsection.1.1.1}%
+\contentsline {subsubsection}{L'Inspection Générale}{7}{subsection.1.1.1}%
+\contentsline {subsubsection}{L'Administration Centrale}{7}{subsection.1.1.1}%
+\contentsline {subsubsection}{Les Services Déconcentrés}{8}{Item.5}%
+\contentsline {subsubsection}{Les Établissements et Organismes Rattachés}{8}{Item.5}%
+\contentsline {subsection}{\numberline {1.1.2}Missions du MINEPAT}{8}{subsection.1.1.2}%
+\contentsline {subsubsection}{En matière d'économie}{8}{subsection.1.1.2}%
+\contentsline {subsubsection}{En matière de planification}{9}{Item.10}%
+\contentsline {subsubsection}{En matière d'aménagement du territoire}{9}{Item.14}%
+\contentsline {subsection}{\numberline {1.1.3}Présentation de la structure d'accueil : la DAPE}{10}{subsection.1.1.3}%
+\contentsline {section}{\numberline {1.2}Déroulement du stage}{10}{section.1.2}%
+\contentsline {subsection}{\numberline {1.2.1}Cadre du stage}{10}{subsection.1.2.1}%
+\contentsline {subsection}{\numberline {1.2.2}Missions confiées}{11}{subsection.1.2.2}%
+\contentsline {subsection}{\numberline {1.2.3}Apports du stage}{12}{subsection.1.2.3}%
+\contentsline {chapter}{\numberline {2}Définition des concepts et état de l’art}{13}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Définition des concepts }{14}{section.2.1}%
+\contentsline {subsection}{\numberline {2.1.1}Cartographie des besoins des entreprises}{14}{subsection.2.1.1}%
+\contentsline {subsection}{\numberline {2.1.2}Mise en relation des entreprises}{15}{subsection.2.1.2}%
+\contentsline {subsubsection}{Plateformes numériques B2B}{15}{subsection.2.1.2}%
+\contentsline {subsubsection}{Bourse de Sous Traitance et de Partenariat}{16}{subsection.2.1.2}%
+\contentsline {subsubsection}{Partenariats contractuels directs}{17}{subsection.2.1.2}%
+\contentsline {section}{\numberline {2.2}État de l'art}{17}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}Enquêtes en vue de la cartographie des besoins des entreprises}{17}{subsection.2.2.1}%
+\contentsline {subsection}{\numberline {2.2.2}Plateformes existantes de mise en relation des entreprises}{20}{subsection.2.2.2}%
+\contentsline {subsubsection}{LinkedIn}{21}{subsection.2.2.2}%
+\contentsline {subsubsection}{Facebook Marketplace}{21}{subsection.2.2.2}%
+\contentsline {subsubsection}{Alibaba}{22}{subsection.2.2.2}%
+\contentsline {chapter}{\numberline {3}Méthodologie}{24}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Méthodologie pour la cartographie des besoins des entreprises}{24}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}Présentation des données}{24}{subsection.3.1.1}%
+\contentsline {subsubsection}{Source de données}{24}{subsection.3.1.1}%
+\contentsline {subsubsection}{Description des variables}{25}{subsection.3.1.1}%
+\contentsline {subsubsection}{Pré-traitement de la Base de Données}{27}{table.caption.13}%
+\contentsline {subsection}{\numberline {3.1.2}Méthode d'analyse}{28}{subsection.3.1.2}%
+\contentsline {subsubsection}{Analyse descriptive}{28}{subsection.3.1.2}%
+\contentsline {subsubsection}{Analyse exploratoire des données}{29}{Item.20}%
+\contentsline {paragraph}{Notion d'ACM}{29}{Item.21}%
+\contentsline {paragraph}{Formalisation mathématique}{29}{Item.21}%
+\contentsline {paragraph}{Notion de CAH}{30}{Item.22}%
+\contentsline {paragraph}{Formalisation mathématiques}{30}{Item.22}%
+\contentsline {section}{\numberline {3.2}Méthodologie de conception et de développement de l'application business partnert ship}{31}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}Conception de la base de données}{31}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.2}Algorithme de mise en relation}{31}{subsection.3.2.2}%
+\contentsline {subsection}{\numberline {3.2.3}Environnement de développement}{31}{subsection.3.2.3}%
+\contentsline {chapter}{\numberline {4}Présentation des résultats}{32}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Présentation des résultats sur la cartographie des besoins des entreprises}{32}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}Statistique descriptive simple}{32}{subsection.4.1.1}%
+\contentsline {subsubsection}{Statistique uni variée}{32}{subsection.4.1.1}%
+\contentsline {subsubsection}{Statistique bivariée}{32}{subsection.4.1.1}%
+\contentsline {subsection}{\numberline {4.1.2}Statistique Multidimentionnelle}{32}{subsection.4.1.2}%
+\contentsline {subsubsection}{Résultat ACM}{32}{subsection.4.1.2}%
+\contentsline {subsubsection}{Résultat CAH}{32}{subsection.4.1.2}%
+\contentsline {subsubsection}{Résultat AFD}{32}{subsection.4.1.2}%
+\contentsline {subsection}{\numberline {4.1.3}Synthèse des résultats}{32}{subsection.4.1.3}%
+\contentsline {section}{\numberline {4.2}Présentation de la plateforme}{32}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Interface Utilisateur}{32}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.2}Implémentation de l'algorithme de mise en relation}{32}{subsection.4.2.2}%
+\contentsline {subsection}{\numberline {4.2.3}Limites du travail}{32}{subsection.4.2.3}%
+\contentsline {subsection}{\numberline {4.2.4}Perspectives}{33}{subsection.4.2.4}%
+\contentsline {chapter}{Conclusion Générale}{34}{chapter*.14}%
+\contentsline {chapter}{\numberline {A}Questionnaire de l'enquête MINEPAT 2025}{37}{appendix.A}%
+\contentsline {chapter}{\numberline {B}Modèle de données complet}{38}{appendix.B}%
+\contentsline {chapter}{\numberline {C}Manuel d'utilisation de la plateforme}{39}{appendix.C}%
+\contentsfinish 

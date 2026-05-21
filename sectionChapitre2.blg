@@ -1,0 +1,58 @@
+This is BibTeX, Version 0.99e
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: sectionChapitre2.aux
+Reallocating 'name_of_file' (item size: 1) to 9 items.
+The style file: plainnat.bst
+I found no \bibdata command---while reading file sectionChapitre2.aux
+Warning--I didn't find a database entry for "oecd_sme_2021"
+Warning--I didn't find a database entry for "ins_rge_2023"
+Warning--I didn't find a database entry for "world_bank_2020"
+Warning--I didn't find a database entry for "unido_2022"
+Warning--I didn't find a database entry for "porter_1990"
+Warning--I didn't find a database entry for "world_bank_doing_business_2020"
+Warning--I didn't find a database entry for "barometr_gecam"
+Warning--I didn't find a database entry for "minepat_midterm_2026"
+Warning--I didn't find a database entry for "williamson_1985"
+Warning--I didn't find a database entry for "uneca_digital_2023"
+You've used 0 entries,
+            2773 wiz_defined-function locations,
+            601 strings with 5002 characters,
+and the built_in function-call counts, 33 in all, are:
+= -- 0
+> -- 0
+< -- 0
++ -- 0
+- -- 0
+* -- 2
+:= -- 10
+add.period$ -- 0
+call.type$ -- 0
+change.case$ -- 0
+chr.to.int$ -- 0
+cite$ -- 0
+duplicate$ -- 0
+empty$ -- 1
+format.name$ -- 0
+if$ -- 1
+int.to.chr$ -- 1
+int.to.str$ -- 1
+missing$ -- 0
+newline$ -- 8
+num.names$ -- 0
+pop$ -- 0
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 1
+stack$ -- 0
+substring$ -- 0
+swap$ -- 0
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 0
+while$ -- 0
+width$ -- 0
+write$ -- 7
+(There was 1 error message)

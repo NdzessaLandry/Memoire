@@ -1,0 +1,869 @@
+%============================================================
+%  MÉMOIRE D'INGÉNIEUR EN DATA SCIENCES
+%  Université de Maroua — ENSPM
+%  Auteur : NDZESSA AVELE BRUNO LANDRY
+%============================================================
+
+\documentclass[12pt, a4paper, oneside]{report}
+
+%------------------------------------------------------------
+%  ENCODAGE & LANGUE
+%------------------------------------------------------------
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[french]{babel}
+\usepackage{csquotes}
+
+%------------------------------------------------------------
+%  POLICES & TYPOGRAPHIE
+%------------------------------------------------------------
+\usepackage{lmodern}
+\usepackage{microtype}       % Améliore le gris typographique
+\usepackage{setspace}
+\onehalfspacing              % Interligne 1,5 (norme internationale)
+
+%------------------------------------------------------------
+%  GÉOMÉTRIE DE LA PAGE
+%------------------------------------------------------------
+\usepackage[
+  top=2.5cm,
+  bottom=2.5cm,
+  left=3cm,           % Marge gauche plus large (reliure)
+  right=2.5cm,
+  headheight=28pt
+]{geometry}
+
+%------------------------------------------------------------
+%  EN-TÊTES & PIEDS DE PAGE
+%------------------------------------------------------------
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small\textit{\leftmark}}
+\fancyhead[R]{\small\textit{ENSPM — Maroua}}
+\fancyfoot[C]{\thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Style plain (pour 1ère page des chapitres)
+\fancypagestyle{plain}{
+  \fancyhf{}
+  \fancyfoot[C]{\thepage}
+  \renewcommand{\headrulewidth}{0pt}
+}
+
+%------------------------------------------------------------
+%  COULEURS
+%------------------------------------------------------------
+\usepackage[dvipsnames, table]{xcolor}
+\definecolor{primary}{RGB}{0, 51, 102}      % Bleu institutionnel
+\definecolor{secondary}{RGB}{0, 102, 153}   % Bleu clair
+\definecolor{accent}{RGB}{200, 50, 50}      % Rouge accent
+\definecolor{lightgray}{RGB}{245, 245, 245}
+\definecolor{darkgray}{RGB}{80, 80, 80}
+
+%------------------------------------------------------------
+%  GRAPHIQUES & FIGURES
+%------------------------------------------------------------
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{subcaption}
+\usepackage{wrapfig}
+\usepackage{tikz}
+\usetikzlibrary{shapes, arrows.meta, positioning, calc, decorations.pathmorphing}
+
+%------------------------------------------------------------
+%  TABLEAUX
+%------------------------------------------------------------
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{multirow}
+\usepackage{longtable}
+\usepackage{array}
+
+%------------------------------------------------------------
+%  MATHÉMATIQUES & CODE
+%------------------------------------------------------------
+\usepackage{amsmath, amssymb, amsthm}
+\usepackage{listings}
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+
+\lstset{
+  basicstyle=\small\ttfamily,
+  backgroundcolor=\color{lightgray},
+  frame=single,
+  framerule=0.5pt,
+  rulecolor=\color{secondary},
+  breaklines=true,
+  numbers=left,
+  numberstyle=\tiny\color{darkgray},
+  keywordstyle=\color{primary}\bfseries,
+  commentstyle=\color{darkgray}\itshape,
+  stringstyle=\color{accent},
+  captionpos=b,
+  xleftmargin=2em,
+  xrightmargin=0.5em,
+}
+
+%------------------------------------------------------------
+%  HYPERLIENS & PDF METADATA
+%------------------------------------------------------------
+\usepackage[
+  colorlinks=true,
+  linkcolor=primary,
+  citecolor=secondary,
+  urlcolor=secondary,
+  bookmarks=true,
+  pdfauthor={NDZESSA AVELE BRUNO LANDRY},
+  pdftitle={Plateforme gouvernementale pour la cartographie et mise en relation des besoins des entreprises locales},
+  pdfsubject={Mémoire de fin d'études — Ingénieur en Data Sciences},
+  pdfkeywords={Data Sciences, Cartographie, Entreprises, MINEPAT, Cameroun}
+]{hyperref}
+
+%------------------------------------------------------------
+%  BIBLIOGRAPHIE
+%------------------------------------------------------------
+\usepackage[style=apa,
+             backend=biber,
+             natbib=true,
+             sortcites=true,
+             sorting=nyt]{biblatex}
+\DeclareLanguageMapping{french}{french-apa}
+\addbibresource{references.bib}
+
+
+%------------------------------------------------------------
+%  PERSONNALISATION DES CHAPITRES (style élégant)
+%------------------------------------------------------------
+\usepackage{titlesec}
+
+% Format des chapitres
+\titleformat{\chapter}[display]
+  {\normalfont\bfseries\color{primary}}
+  {%
+    \hfill
+    \tikz[remember picture]{
+      \node[fill=primary, text=white, font=\Large\bfseries,
+            minimum width=2.5cm, minimum height=2.5cm,
+            rounded corners=4pt]
+        {\thechapter};
+    }
+  }
+  {0pt}
+  {\vspace{1ex}\huge\raggedright}
+  [\vspace{0.5ex}{\color{primary}\rule{\linewidth}{2pt}}]
+
+% Format des sections
+\titleformat{\section}
+  {\normalfont\large\bfseries\color{primary}}
+  {\thesection}{1em}{}
+  [\vspace{-0.5ex}{\color{secondary}\rule{\linewidth}{0.6pt}}]
+
+% Format des sous-sections
+\titleformat{\subsection}
+  {\normalfont\normalsize\bfseries\color{secondary}}
+  {\thesubsection}{1em}{}
+
+% Format des sous-sous-sections
+\titleformat{\subsubsection}
+  {\normalfont\normalsize\itshape\color{darkgray}}
+  {\thesubsubsection}{1em}{}
+
+%------------------------------------------------------------
+%  TABLE DES MATIÈRES PERSONNALISÉE
+%------------------------------------------------------------
+\usepackage{titletoc}
+\usepackage[titles]{tocloft}
+\renewcommand{\cftchapfont}{\bfseries\color{primary}}
+\renewcommand{\cftchappagefont}{\bfseries\color{primary}}
+\renewcommand{\cftsecfont}{\color{darkgray}}
+\setlength{\cftbeforechapskip}{6pt}
+
+%------------------------------------------------------------
+%  BOÎTES & ENVIRONNEMENTS SPÉCIAUX
+%------------------------------------------------------------
+\usepackage{tcolorbox}
+\tcbuselibrary{most}
+
+% Boîte "Définition"
+\newtcolorbox{definition}[1][]{
+  colback=lightgray, colframe=primary,
+  title=Définition #1,
+  fonttitle=\bfseries,
+  arc=4pt, boxrule=0.8pt
+}
+
+% Boîte "Remarque"
+\newtcolorbox{remarque}{
+  colback=blue!5, colframe=secondary,
+  title=Remarque,
+  fonttitle=\bfseries\small,
+  arc=4pt, boxrule=0.6pt, left=4pt, right=4pt
+}
+
+% Boîte "Important"
+\newtcolorbox{important}{
+  colback=red!5, colframe=accent,
+  title=Important,
+  fonttitle=\bfseries\small,
+  arc=4pt, boxrule=0.6pt
+}
+
+%------------------------------------------------------------
+%  LÉGENDES
+%------------------------------------------------------------
+\usepackage[
+  labelfont={bf, color=primary},
+  font=small,
+  justification=centering
+]{caption}
+
+%------------------------------------------------------------
+%  GLOSSAIRE & ACRONYMES
+%------------------------------------------------------------
+\usepackage[acronym, toc]{glossaries}
+\makeglossaries
+
+% --- Exemples d'acronymes (à compléter) ---
+\newacronym{minepat}{MINEPAT}{Ministère de l'Économie, de la Planification et de l'Aménagement du Territoire}
+\newacronym{snd30}{SND30}{Stratégie Nationale de Développement à l'horizon 2030}
+\newacronym{api}{API}{Application Programming Interface}
+\newacronym{ml}{ML}{Machine Learning}
+\newacronym{sgbd}{SGBD}{Système de Gestion de Bases de Données}
+\newacronym{uis}{UI/UX}{User Interface / User Experience}
+
+%------------------------------------------------------------
+%  COMMANDES UTILITAIRES
+%------------------------------------------------------------
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
+\newcommand{\auteur}{NDZESSA AVELE BRUNO LANDRY}
+\newcommand{\matricule}{21D0180EP}
+\newcommand{\directeur}{Pr HAYATOU OUMAROU}
+\newcommand{\annee}{2025 / 2026}
+\newcommand{\titredoc}{Conception et développement d'une plateforme gouvernementale pour la cartographie et la mise en relation des besoins des entreprises locales}
+
+%============================================================
+%  DOCUMENT
+%============================================================
+\begin{document}
+
+%------------------------------------------------------------
+%  PAGE DE GARDE
+%------------------------------------------------------------
+\begin{titlepage}
+\newgeometry{top=1.5cm, bottom=1.5cm, left=2.5cm, right=2.5cm}
+\begin{center}
+
+  %--- BLOC 1 : En-tête bilingue avec logo université centré ---
+  \begin{tabularx}{\textwidth}{>{\centering\arraybackslash}p{4.5cm}
+                                >{\centering\arraybackslash}X
+                                >{\centering\arraybackslash}p{4.5cm}}
+    \multirow{2}{*}{%
+      \parbox[c]{4.2cm}{\centering\small
+        République du Cameroun\\[-2pt]
+        {\tiny **********}\\[-2pt]
+        Paix-Travail-Patrie\\[-2pt]
+        {\tiny **********}\\[-2pt]
+        Université de Maroua\\[-2pt]
+        {\tiny **********}\\[-2pt]
+        École Nationale Supérieure\\[-2pt]
+        Polytechnique de Maroua}%
+    }
+    &
+    \multirow{2}{*}{%
+      \parbox[c]{3cm}{\centering%
+        \includegraphics[height=2.5cm]{LogoUMA.png}}%
+    }
+    &
+    \multirow{2}{*}{%
+      \parbox[c]{4.2cm}{\centering\small
+        Republic of Cameroon\\[-2pt]
+        {\tiny **********}\\[-2pt]
+        Peace-Work-Fatherland\\[-2pt]
+        {\tiny **********}\\[-2pt]
+        The University of Maroua\\[-2pt]
+        {\tiny **********}\\[-2pt]
+        National Advanced School of\\[-2pt]
+        Engineering of Maroua}%
+    }
+    \\[3.8cm] & & \\
+  \end{tabularx}
+
+  \vspace{0.3cm}
+  \textcolor{primary}{\rule{\linewidth}{1.5pt}}
+  \vspace{0.15cm}
+
+  %--- BLOC 2 : Bandeau département avec logos ENSPM et MINEPAT ---
+  \begin{tabularx}{\textwidth}{>{\centering\arraybackslash}p{3cm}
+                                >{\centering\arraybackslash}X
+                                >{\centering\arraybackslash}p{3cm}}
+    \multirow{2}{*}{%
+      \raisebox{-1\totalheight}{%
+        \includegraphics[height=1.8cm]{LogoENSPM.jpeg}%
+      }%
+    }
+    &
+    \multirow{2}{*}{%
+      \parbox[c]{7cm}{\centering
+        \textbf{\large\color{primary} DÉPARTEMENT D'INFORMATIQUE}\\[2pt]
+        \textbf{\large\color{primary} ET TÉLÉCOMMUNICATIONS}}%
+    }
+    &
+    \multirow{2}{*}{%
+      \raisebox{-1\totalheight}{%
+        \includegraphics[height=1.8cm]{minepat.png}%
+      }%
+    }
+    \\[1.4cm] & & \\
+  \end{tabularx}
+
+  \vspace{0.15cm}
+  \textcolor{primary}{\rule{\linewidth}{1.5pt}}
+  \vspace{0.5cm}
+
+  %--- BLOC 3 : Titre du mémoire ---
+  \begin{tcolorbox}[
+    colback=primary!6, colframe=primary,
+    arc=5pt, boxrule=1pt,
+    left=12pt, right=12pt, top=10pt, bottom=10pt
+  ]
+    \centering
+    {\large\bfseries\color{primary} \titredoc}
+  \end{tcolorbox}
+
+  \vspace{0.45cm}
+
+  %--- BLOC 4 : Nature du document ---
+  {\normalsize Mémoire présenté et soutenu en vue de l'obtention du}\\[5pt]
+  {\large\bfseries\color{primary} Diplôme d'INGÉNIEUR EN DATA SCIENCES}
+
+  \vspace{0.45cm}
+
+  %--- BLOC 5 : Auteur ---
+  {\normalsize Par}\\[5pt]
+  {\large\bfseries \auteur}\\[3pt]
+  {\small Matricule : \matricule}
+
+  \vspace{0.4cm}
+
+  %--- BLOC 6 : Encadrement ---
+  {\normalsize Sous la direction de :}\\[5pt]
+  {\large\bfseries\color{primary} \directeur}\\[2pt]
+  {\small Maître de Conférences}
+
+  \vspace{0.4cm}
+
+  %--- BLOC 7 : Jury ---
+  \begin{tabularx}{\textwidth}{>{\bfseries\raggedright\arraybackslash}p{3.2cm}
+                                >{\raggedright\arraybackslash}X}
+    \multicolumn{2}{c}{\normalsize\bfseries Devant le jury composé de :}\\[6pt]
+    Président :    & Pr DANWE RAIDANDI \\[4pt]
+    Rapporteur :   & Pr HAYATOU OUMAROU \\[4pt]
+    Examinatrice : & Dr BOUDJOU TCHAPGNOUO HORTENSE \\
+  \end{tabularx}
+
+  \vfill
+
+  %--- BLOC 8 : Pied de page ---
+  \textcolor{primary}{\rule{\linewidth}{1pt}}\\[5pt]
+  {\bfseries Année Académique \annee}
+
+\end{center}
+\restoregeometry
+\end{titlepage}
+
+%------------------------------------------------------------
+%  PAGES LIMINAIRES (numérotation romaine)
+%------------------------------------------------------------
+%\frontmatter   % Si vous utilisez \mainmatter plus loin
+% Sinon, utilisez : \pagenumbering{roman}
+\pagenumbering{roman}
+\setcounter{page}{1}
+
+%--- DÉDICACE ---
+\chapter*{Dédicace}
+\addcontentsline{toc}{chapter}{Dédicace}
+\thispagestyle{plain}
+
+\vspace{4cm}
+\begin{flushright}
+  \begin{minipage}{0.6\textwidth}
+    \itshape\large
+    Je dédie ce travail à ma famille,\\[6pt]
+    pour son soutien indéfectible\\
+    tout au long de ce parcours.
+  \end{minipage}
+\end{flushright}
+\vfill
+
+%--- REMERCIEMENTS ---
+\chapter*{Remerciements}
+\addcontentsline{toc}{chapter}{Remerciements}
+\thispagestyle{plain}
+
+De nombreuses personnes ont contribué, chacune à sa manière, à l'accomplissement de ce travail. Nous remercions sincèrement :
+
+\begin{itemize}
+  \item Le \textbf{Ministre de l'Économie, de la Planification et de l'Aménagement du Territoire} pour nous avoir accordé la possibilité d'effectuer un stage académique au sein de son ministère.
+  \item Le \textbf{Chef de la Division des Analyses et des Politiques Économiques} pour son accompagnement permanent.
+  \item Notre \textbf{encadreur professionnel} pour ses conseils avisés et le suivi méticuleux de l'évolution de ce travail.
+  \item Le \textbf{Directeur de l'École Nationale Supérieure Polytechnique de Maroua}.
+  \item Le \textbf{Chef du Département d'Informatique et Télécommunications}.
+  \item Tous les \textbf{enseignants} qui, à travers leurs enseignements, ont rendu ce travail possible.
+\end{itemize}
+
+%--- RÉSUMÉ ---
+\chapter*{Résumé}
+\addcontentsline{toc}{chapter}{Résumé}
+\thispagestyle{plain}
+
+\textbf{Mots-clés :} Plateforme numérique, cartographie des entreprises, mise en relation, Data Sciences, MINEPAT, secteur privé, Cameroun.
+
+\medskip
+
+[Insérer ici le résumé en français — environ 200 à 300 mots décrivant le contexte, les objectifs, la méthodologie et les résultats principaux de votre travail.]
+
+\vspace{1cm}
+
+\begin{center}
+  \rule{0.5\linewidth}{0.4pt}
+\end{center}
+
+\chapter*{Abstract}
+\addcontentsline{toc}{chapter}{Abstract}
+\thispagestyle{plain}
+
+\textbf{Keywords:} Digital platform, business mapping, matching system, Data Sciences, MINEPAT, private sector, Cameroon.
+
+\medskip
+
+[Insert here the English abstract — approximately 200 to 300 words describing the context, objectives, methodology and main results of your work.]
+
+%--- TABLE DES MATIÈRES ---
+\tableofcontents
+\addcontentsline{toc}{chapter}{Table des matières}
+
+%--- LISTE DES FIGURES ---
+\listoffigures
+\addcontentsline{toc}{chapter}{Liste des figures}
+
+%--- LISTE DES TABLEAUX ---
+\listoftables
+\addcontentsline{toc}{chapter}{Liste des tableaux}
+
+%--- LISTE DES ACRONYMES ---
+\printglossary[type=\acronymtype, title=Liste des acronymes et abréviations]
+%\addcontentsline{toc}{chapter}{Liste des acronymes et abréviations}
+
+%============================================================
+%  CORPS DU MÉMOIRE (numérotation arabe)
+%============================================================
+\pagenumbering{arabic}
+\setcounter{page}{1}
+
+%------------------------------------------------------------
+%  INTRODUCTION GÉNÉRALE
+%------------------------------------------------------------
+\chapter*{Introduction Générale}
+\addcontentsline{toc}{chapter}{Introduction Générale}
+\markboth{Introduction Générale}{Introduction Générale}
+
+\section*{Contexte général}
+
+La Stratégie Nationale de Développement 2020-2030 \gls{snd30} est le document de référence qui guide les politiques publiques au Cameroun. Ce document fixe les caps, les objectifs de croissances économiques à atteindre et les stratégies appropriées à adopter afin de construire un Cameroun émergeant et unis dans sa diversité à l'horizon 2035. Dans les différentes orientations quelle se donne, la \gls{snd30} se veut faconner un Etat stratège et pragmatique qui met en place les facilités pour l’émergence du secteur privé comme
+principal moteur de la croissance économique et réalise des interventions ciblées dans des secteurs hautement stratégiques (SND30,page). Le caractère prioritaire du secteur privé se traduit principalement par l’incitation au développement des entre
+prises où l’objectif est de disposer d’une masse critique d’entreprises « champions nationaux » représentant des fleurons ou têtes de proue dans les secteurs clés de l’économie. Construire un climat des affaires approprié dans le but de rendre possible ces différents objectifs devrait donc etre l'une des préocupations majeurs des pouvoirs publiques Camerounais. 
+
+
+\section*{Problématique}
+
+Dans son besoin d’effectuer un état des lieux des entreprises qui la composent et d’évaluer les différentes difficultés auxquelles elles sont confrontées, le GECAM initie une enquête en son sein et les résultats issues de cette enquête expose une économie balbutiante. En effet, le rapport de cette enquete indique que en 2019 bon nombres d’entreprises ont vu leur survie menacée. 57\% des entreprises du GECAM ont connu des difficultés et les politiques publiques ayant le plus contribuées au mauvais résultat des entreprises du GECAM sont : La fiscalité caractérisée par l’instabilité du système fiscale et des motifs des redressements fiscaux (72\%), les pénalités et amendes fiscales (66\%), le taux d’imposition fiscale (61\%), et la multiplicité des contrôles de l’administration fiscales (59\%) \citep{barometr_gecam}.  Cette enquête réalisée par le GECAM bien que pertinente ne met pas en évidence les difficultés de toutes les entreprises évoluant dans le tissu économique Camerounais. C’est ainsi que le MINEPAT engage en 2022 la rédaction du document de stratégie afin de proposer un nouveau cadre stratégique pour le secteur de l’industrie suite à de la Stratégie de Développement du Secteur de l’Industrie et Services (SDSIS) en vue de son réalignement sur la planification post Document Stratégique pour la Croissance Economique (DSCE). Ce document tombe à pique après la caricature réalisée par le GECAM, il vient redonner espoir aux entreprises Camerounaises évoluant dans le secteur de l’industrie à travers les réformes qu’il entend menées. Ce document de stratégie après avoir fait l’état des lieux du secteur industriel, se projette sur l’avenir en présentant les grands chantiers qui devront redynamiser l’industrie Camerounaise. Il s’agira par exemple de la mise en œuvre du projet FABER, de l’augmentation de la quantité d’énergie électrique à 70 TWh/an non seulement pour l’industrie nationale mais également pour l’exportation aux pays voisins. Ce document étant axé sur un secteur en particulier notamment celui industriel et le manque de directives claires adressées aux acteurs de ce secteur (bien que la stratégie prévoit la composition des champions nationaux acteurs du secteur en mesure de représenter valablement le pays dans ce secteur) sont là les principales limites de la stratégie. L’objectif pour la SND30 étant de faire du secteur privé le moteur de l’économie nationale, orienter les entreprises et construire un cadre propice à leur développement devrait être l’une des préoccupations majeures. Le MINEPAT lance une enquête en novembre 2023 afin de s’enquérir de l’évolution du secteur industriel reformé dans la stratégie de 2020 cette enquête révèle une économie une fois de plus en retard vis-à-vis des perspectives énoncées dans la SND30. Des exportations sont faites à l’endroit de l’état pour alléger les charges liées au taux d’intérêt, à l’assurance et au courtage élevés. Les chefs d’entreprises sont unanimes: l’accès aux facteurs de productions et l’état des routes sont un frein majeur. Une étude plus grande est également réalisée durant la même année dont la population est cible est l’ensemble des unités économiques au Cameroun réalisée par l’INS. Bien que cette étude ait pour ambition de recenser la totalité des entreprises du Cameroun les besoins des entreprises et les difficultés quelles rencontrent sont bottées en touche. Les entreprises privées bien qu’au centre des études suscités ne sont manifestement pas les grands bénéficiaires. C’est ainsi que le MINEPAT lance en 2025 une enquête sur la cartographie et les besoins des entreprises. L’objectif final de cette enquête est d’aboutir sur un colloque où chefs d’entreprises se rencontreront afin  d’établir des partenariats par rapport à leurs besoins spécifiques. Au-delà de ce colloque la mise sur pied d’une plateforme de collaboration a été évoquée et aura pour base les données recueillies dans cette enquête. Cette plateforme permettra donc aux entreprises de venir à bout des difficultés quelles rencontrent et de croitre contribuant ainsi à la croissance économique du pays. Comment cette plateforme pourra t’elle aider les entreprises du secteur privé ? Quel serait son intérêt vis-à-vis des autres plateformes existantes ? Sur quel principe se basera la mise en relation des entreprises ? Ce sont là les questions auxquelles nous essayerons de répondre tout au long de ce travail.
+
+\section*{Objectifs du mémoire}
+
+Ce mémoire poursuit les objectifs suivants :
+
+\begin{enumerate}
+  \item Analyser les besoins des entreprises locales et les outils existants ;
+  \item Concevoir l'architecture d'une plateforme gouvernementale de cartographie et de mise en relation ;
+  \item Développer et tester un prototype fonctionnel de cette plateforme ;
+  \item Évaluer les résultats et proposer des perspectives d'amélioration.
+\end{enumerate}
+
+\section*{Structure du mémoire}
+
+Ce document est organisé en quatre chapitres. Le \textbf{Chapitre~1} présente la structure d'accueil et le déroulement du stage. Le \textbf{Chapitre~2} propose une revue de la littérature et un état de l'art sur les plateformes similaires. Le \textbf{Chapitre~3} décrit la méthodologie adoptée pour la conception et le développement de la plateforme. Enfin, le \textbf{Chapitre~4} présente et discute les résultats obtenus.
+
+%============================================================
+%  CHAPITRE 1 : PRÉSENTATION DE LA STRUCTURE ET DU STAGE
+%============================================================
+\chapter{Présentation de la structure d'accueil et déroulement du stage}
+\label{chap:structure}
+
+\section{Présentation du MINEPAT}
+\label{sec:minepat}
+
+Le Ministère de l'Économie, de la Planification et de l'Aménagement du Territoire (\gls{minepat}) a été créé par le Décret N°\,2008/220 du 4 juillet 2008. Il est placé sous l'autorité d'un Ministre, assisté d'un Ministre délégué.
+
+\subsection{Organisation interne}
+
+\subsubsection{Le Ministre délégué}
+
+Le Ministre délégué est chargé d'assister le Ministre et dispose d'un Secrétariat particulier.
+
+\subsubsection{L'Inspection Générale}
+
+L'Inspection Générale est placée sous l'autorité d'un Inspecteur Général chargé de l'évaluation des performances des services.
+
+\subsubsection{L'Administration Centrale}
+
+L'administration centrale comprend notamment :
+
+\begin{itemize}
+  \item Un \textbf{Secrétariat Général} avec ses différentes divisions (Affaires Juridiques, Communication, Informatique, etc.) ;
+  \item La \textbf{Direction Générale de l'Économie et de la Programmation des Investissements Publics (DGEPIP)}, au sein de laquelle se trouve la \textit{Division des Analyses et des Politiques Économiques (DAPE)} — lieu de notre stage ;
+  \item La \textbf{Direction Générale de la Planification et de l'Aménagement du Territoire (DGPAT)} ;
+  \item La \textbf{Direction Générale de la Coopération et de l'Intégration Régionale (DGCOOP)} ;
+  \item La \textbf{Direction des Affaires Générales (DAG)}.
+\end{itemize}
+
+\subsection{Missions du \gls{minepat}}
+
+Le \gls{minepat} est chargé de l'élaboration et de la mise en œuvre de la politique économique nationale. Ses missions s'articulent autour de trois axes :
+
+\begin{enumerate}
+  \item \textbf{En matière d'économie :} coordination des réformes, suivi de la coopération internationale et gestion du programme d'investissement public.
+  \item \textbf{En matière de planification :} élaboration du cadre global de planification stratégique et suivi de la stratégie de réduction de la pauvreté.
+  \item \textbf{En matière d'aménagement du territoire :} coordination des études d'aménagement et contrôle des programmes nationaux et régionaux.
+\end{enumerate}
+
+% Exemple de figure d'organigramme
+\begin{figure}[H]
+  \centering
+  % \includegraphics[width=0.85\textwidth]{organigramme_minepat.png}
+  \begin{tikzpicture}[
+    node distance=1.2cm,
+    box/.style={rectangle, draw=primary, fill=primary!10, text width=4cm, align=center,
+                rounded corners=3pt, minimum height=1cm, font=\small},
+    line/.style={->, thick, color=primary}
+  ]
+    \node[box, fill=primary, text=white] (min) {Ministre};
+    \node[box, below=of min] (sg)  {Secrétariat Général};
+    \node[box, below left=1cm and 1.5cm of sg] (dgepip) {DGEPIP};
+    \node[box, below=of sg] (dgpat) {DGPAT};
+    \node[box, below right=1cm and 1.5cm of sg] (dgcoop) {DGCOOP};
+    \node[box, below=of dgepip, fill=secondary!20, draw=secondary] (dape) {DAPE \\ {\tiny(lieu de stage)}};
+
+    \draw[line] (min) -- (sg);
+    \draw[line] (sg) -- (dgepip);
+    \draw[line] (sg) -- (dgpat);
+    \draw[line] (sg) -- (dgcoop);
+    \draw[line] (dgepip) -- (dape);
+  \end{tikzpicture}
+  \caption{Organigramme simplifié du \gls{minepat} (lieu de stage mis en évidence)}
+  \label{fig:organigramme}
+\end{figure}
+
+\section{Déroulement du stage}
+
+\subsection{Cadre du stage}
+
+Notre stage académique s'est déroulé au sein de la \textbf{Division des Analyses et des Politiques Économiques (DAPE)}, une des quatre cellules de la DGEPIP. Cette division comprend :
+
+\begin{itemize}
+  \item La Cellule des Analyses Conjoncturelles ;
+  \item La Cellule des Politiques Économiques ;
+  \item La Cellule de Synthèse Macroéconomique ;
+  \item La Cellule des Analyses Sectorielles.
+\end{itemize}
+
+\subsection{Missions confiées}
+
+[Décrire ici les tâches et missions réalisées au cours du stage.]
+
+\subsection{Apports du stage}
+
+[Bilan personnel et professionnel du stage.]
+
+%============================================================
+%  CHAPITRE 2 : CONCEPTS ET ÉTAT DE L'ART
+%============================================================
+\chapter{Concepts et état de l'art}
+\label{chap:etat_art}
+
+\section{Concepts fondamentaux}
+\label{sec:concepts}
+
+\subsection{Cartographie des entreprises}
+
+\begin{definition}[: Cartographie des entreprises]
+  La cartographie des entreprises désigne le processus systématique de recensement, de localisation et de caractérisation des acteurs économiques d'un territoire donné, en vue de produire une représentation structurée de leur écosystème.
+\end{definition}
+
+\subsection{Plateforme numérique de mise en relation}
+
+[Définir la notion de plateforme numérique B2B et ses caractéristiques.]
+
+\subsection{Data Sciences appliquées aux politiques publiques}
+
+[Expliquer comment les Data Sciences permettent d'extraire de la valeur des données d'enquêtes économiques.]
+
+\section{État de l'art}
+\label{sec:etat_art}
+
+\subsection{Plateformes similaires existantes}
+
+\begin{table}[H]
+  \centering
+  \caption{Comparaison des plateformes de mise en relation d'entreprises}
+  \label{tab:comparaison}
+  \renewcommand{\arraystretch}{1.3}
+  \begin{tabularx}{\textwidth}{lXXX}
+    \toprule
+    \rowcolor{primary!20}
+    \textbf{Plateforme} & \textbf{Contexte} & \textbf{Fonctionnalités} & \textbf{Limites} \\
+    \midrule
+    Plateforme A & [Contexte] & [Fonctionnalités] & [Limites] \\
+    \rowcolor{lightgray}
+    Plateforme B & [Contexte] & [Fonctionnalités] & [Limites] \\
+    Plateforme C & [Contexte] & [Fonctionnalités] & [Limites] \\
+    \rowcolor{lightgray}
+    \textbf{Notre solution} & Cameroun / MINEPAT & Cartographie + mise en relation & — \\
+    \bottomrule
+  \end{tabularx}
+\end{table}
+
+\subsection{Lacunes identifiées}
+
+\begin{important}
+  Les plateformes existantes ne répondent pas aux spécificités du tissu économique camerounais, notamment l'informalité d'une partie des acteurs et la diversité sectorielle. Notre solution vise à combler ces lacunes.
+\end{important}
+
+\section{Technologies utilisées}
+\label{sec:technologies}
+
+\subsection{Back-end}
+
+[Présenter les technologies back-end choisies : framework, base de données, etc.]
+
+\subsection{Front-end}
+
+[Présenter les technologies front-end.]
+
+\subsection{Algorithmes de mise en relation}
+
+[Décrire les approches algorithmiques retenues pour le matching entre entreprises.]
+
+%============================================================
+%  CHAPITRE 3 : MÉTHODOLOGIE
+%============================================================
+\chapter{Méthodologie}
+\label{chap:methodo}
+
+\section{Approche méthodologique globale}
+
+[Décrire le paradigme méthodologique adopté : approche agile, Scrum, cycle en V, etc.]
+
+\section{Collecte et traitement des données}
+\label{sec:donnees}
+
+\subsection{Source des données}
+
+Les données utilisées dans ce travail proviennent de l'enquête lancée en 2025 par le \gls{minepat} sur la cartographie et les besoins des entreprises camerounaises.
+
+\subsection{Nettoyage et prétraitement}
+
+[Décrire le pipeline de traitement des données.]
+
+\section{Architecture de la plateforme}
+\label{sec:architecture}
+
+\subsection{Vue d'ensemble}
+
+\begin{figure}[H]
+  \centering
+  \begin{tikzpicture}[
+    node distance=1.8cm,
+    layer/.style={rectangle, draw=primary, fill=primary!10, text width=5cm,
+                  align=center, rounded corners=5pt, minimum height=1.2cm, font=\small\bfseries},
+    arrow/.style={->, thick, color=secondary}
+  ]
+    \node[layer, fill=secondary!20, draw=secondary] (ui) {Couche Présentation \\ {\small Interface utilisateur (Web/Mobile)}};
+    \node[layer, below=of ui] (api) {Couche Métier \\ {\small API REST / Logique applicative}};
+    \node[layer, below=of api] (data) {Couche Données \\ {\small Base de données + Moteur de matching}};
+
+    \draw[arrow] (ui) -- (api);
+    \draw[arrow] (api) -- (data);
+    \draw[arrow, bend right=40] (data.east) to node[right, font=\tiny] {Réponse} (ui.east);
+  \end{tikzpicture}
+  \caption{Architecture en trois couches de la plateforme}
+  \label{fig:architecture}
+\end{figure}
+
+\subsection{Conception de la base de données}
+
+[Présenter le modèle entité-relation ou le schéma de la base de données.]
+
+\subsection{Algorithme de mise en relation}
+
+[Décrire l'algorithme de matching utilisé. Exemple ci-dessous :]
+
+\begin{algorithm}[H]
+  \caption{Algorithme de mise en relation des entreprises}
+  \label{alg:matching}
+  \begin{algorithmic}[1]
+    \Require Profil de l'entreprise $E$, Base d'entreprises $\mathcal{B}$
+    \Ensure Liste des entreprises partenaires potentiels $\mathcal{P}$
+    \State $\mathcal{P} \leftarrow \emptyset$
+    \ForAll{$E' \in \mathcal{B}$}
+      \State $s \leftarrow \text{score}(E, E')$
+      \If{$s \geq \theta$}
+        \State $\mathcal{P} \leftarrow \mathcal{P} \cup \{(E', s)\}$
+      \EndIf
+    \EndFor
+    \State \Return $\mathcal{P}$ trié par $s$ décroissant
+  \end{algorithmic}
+\end{algorithm}
+
+\section{Implémentation}
+\label{sec:implementation}
+
+\subsection{Environnement de développement}
+
+[Décrire l'environnement technique : OS, IDE, versions des outils, etc.]
+
+\subsection{Extraits de code significatifs}
+
+\begin{lstlisting}[language=Python, caption=Exemple : calcul du score de compatibilité]
+def compute_score(company_a: dict, company_b: dict) -> float:
+    """
+    Calcule un score de compatibilite entre deux entreprises.
+    """
+    score = 0.0
+    # Correspondance sectorielle
+    if company_a["secteur"] == company_b["secteur"]:
+        score += 0.4
+    # Correspondance géographique
+    if company_a["region"] == company_b["region"]:
+        score += 0.3
+    # Correspondance des besoins
+    common = set(company_a["besoins"]) & set(company_b["offres"])
+    score += 0.3 * len(common) / max(len(company_a["besoins"]), 1)
+    return round(score, 4)
+\end{lstlisting}
+
+%============================================================
+%  CHAPITRE 4 : PRÉSENTATION DES RÉSULTATS
+%============================================================
+\chapter{Présentation et discussion des résultats}
+\label{chap:resultats}
+
+\section{Présentation de la plateforme développée}
+\label{sec:plateforme}
+
+\subsection{Interface d'accueil}
+
+\begin{figure}[H]
+  \centering
+  % \includegraphics[width=0.9\textwidth]{screenshots/accueil.png}
+  \fbox{\parbox{0.9\textwidth}{\centering\vspace{2cm}[Capture d'écran de la page d'accueil]\vspace{2cm}}}
+  \caption{Page d'accueil de la plateforme gouvernementale}
+  \label{fig:accueil}
+\end{figure}
+
+\subsection{Module de cartographie}
+
+[Décrire et illustrer le module de cartographie des entreprises.]
+
+\subsection{Module de mise en relation}
+
+[Décrire et illustrer le module de matching.]
+
+\section{Évaluation des performances}
+\label{sec:evaluation}
+
+\subsection{Métriques utilisées}
+
+[Présenter les métriques d'évaluation : précision, rappel, F1-score, etc.]
+
+\subsection{Résultats quantitatifs}
+
+\begin{table}[H]
+  \centering
+  \caption{Performances du module de mise en relation}
+  \label{tab:performances}
+  \renewcommand{\arraystretch}{1.4}
+  \begin{tabular}{lccc}
+    \toprule
+    \rowcolor{primary!20}
+    \textbf{Scénario} & \textbf{Précision} & \textbf{Rappel} & \textbf{F1-Score} \\
+    \midrule
+    Matching sectoriel   & [val] & [val] & [val] \\
+    \rowcolor{lightgray}
+    Matching géographique & [val] & [val] & [val] \\
+    Matching multi-critère & [val] & [val] & [val] \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+\subsection{Discussion}
+
+\begin{remarque}
+  Les résultats obtenus démontrent la viabilité de l'approche adoptée. Cependant, l'enrichissement du jeu de données pourrait améliorer significativement les performances du moteur de recommandation.
+\end{remarque}
+
+[Interpréter et discuter vos résultats en les confrontant aux objectifs fixés et aux travaux de l'état de l'art.]
+
+\section{Limites et perspectives}
+\label{sec:limites}
+
+\subsection{Limites du travail}
+
+[Identifier honnêtement les limites de votre solution.]
+
+\subsection{Perspectives}
+
+[Proposer des pistes d'amélioration et d'extension futures de la plateforme.]
+
+%============================================================
+%  CONCLUSION GÉNÉRALE
+%============================================================
+\chapter*{Conclusion Générale}
+\addcontentsline{toc}{chapter}{Conclusion Générale}
+\markboth{Conclusion Générale}{Conclusion Générale}
+
+[Rédiger ici la conclusion générale en rappelant : le contexte, les objectifs, les principales contributions, les résultats clés et les perspectives ouvertes par ce travail.]
+
+\medskip
+
+Ce travail constitue une première contribution concrète à la digitalisation des services économiques du \gls{minepat}, en phase avec les ambitions de la \gls{snd30} pour un secteur privé dynamique et connecté.
+
+%============================================================
+%  BIBLIOGRAPHIE
+%============================================================
+%\nocite{*}
+\printbibliography[heading=bibintoc,
+                    title={Références bibliographiques}]
+
+%============================================================
+%  ANNEXES
+%============================================================
+\appendix
+\chapter{Questionnaire de l'enquête MINEPAT 2025}
+\label{ann:questionnaire}
+
+[Insérer ici le questionnaire utilisé lors de l'enquête.]
+
+\chapter{Modèle de données complet}
+\label{ann:modele}
+
+[Insérer ici le schéma complet de la base de données.]
+
+\chapter{Manuel d'utilisation de la plateforme}
+\label{ann:manuel}
+
+[Insérer ici le guide utilisateur de la plateforme.]
+
+
+\end{document}
