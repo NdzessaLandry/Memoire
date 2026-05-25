@@ -50,27 +50,30 @@
 \contentsline {paragraph}{Formalisation mathématique}{29}{Item.21}%
 \contentsline {paragraph}{Notion de CAH}{30}{Item.22}%
 \contentsline {paragraph}{Formalisation mathématiques}{30}{Item.22}%
-\contentsline {section}{\numberline {3.2}Méthodologie de conception et de développement de l'application business partnert ship}{31}{section.3.2}%
+\contentsline {section}{\numberline {3.2}Méthodologie de conception et de développement de la plateforme Business Partnership}{31}{section.3.2}%
 \contentsline {subsection}{\numberline {3.2.1}Conception de la base de données}{31}{subsection.3.2.1}%
-\contentsline {subsection}{\numberline {3.2.2}Algorithme de mise en relation}{31}{subsection.3.2.2}%
-\contentsline {subsection}{\numberline {3.2.3}Environnement de développement}{31}{subsection.3.2.3}%
-\contentsline {chapter}{\numberline {4}Présentation des résultats}{32}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Présentation des résultats sur la cartographie des besoins des entreprises}{32}{section.4.1}%
-\contentsline {subsection}{\numberline {4.1.1}Statistique descriptive simple}{32}{subsection.4.1.1}%
-\contentsline {subsubsection}{Statistique uni variée}{32}{subsection.4.1.1}%
-\contentsline {subsubsection}{Statistique bivariée}{32}{subsection.4.1.1}%
-\contentsline {subsection}{\numberline {4.1.2}Statistique Multidimentionnelle}{32}{subsection.4.1.2}%
-\contentsline {subsubsection}{Résultat ACM}{32}{subsection.4.1.2}%
-\contentsline {subsubsection}{Résultat CAH}{32}{subsection.4.1.2}%
-\contentsline {subsubsection}{Résultat AFD}{32}{subsection.4.1.2}%
-\contentsline {subsection}{\numberline {4.1.3}Synthèse des résultats}{32}{subsection.4.1.3}%
-\contentsline {section}{\numberline {4.2}Présentation de la plateforme}{32}{section.4.2}%
-\contentsline {subsection}{\numberline {4.2.1}Interface Utilisateur}{32}{subsection.4.2.1}%
-\contentsline {subsection}{\numberline {4.2.2}Implémentation de l'algorithme de mise en relation}{32}{subsection.4.2.2}%
-\contentsline {subsection}{\numberline {4.2.3}Limites du travail}{32}{subsection.4.2.3}%
-\contentsline {subsection}{\numberline {4.2.4}Perspectives}{33}{subsection.4.2.4}%
-\contentsline {chapter}{Conclusion Générale}{34}{chapter*.14}%
-\contentsline {chapter}{\numberline {A}Questionnaire de l'enquête MINEPAT 2025}{37}{appendix.A}%
-\contentsline {chapter}{\numberline {B}Modèle de données complet}{38}{appendix.B}%
-\contentsline {chapter}{\numberline {C}Manuel d'utilisation de la plateforme}{39}{appendix.C}%
+\contentsline {subsection}{\numberline {3.2.2}Algorithme de mise en relation des entreprises}{32}{subsection.3.2.2}%
+\contentsline {paragraph}{Étape 1 — Réduction de dimension par ACM}{33}{subsection.3.2.2}%
+\contentsline {paragraph}{Étape 2 — Calcul de la similarité cosinus}{33}{equation.3.4}%
+\contentsline {paragraph}{Étape 3 — Génération des recommandations}{33}{equation.3.5}%
+\contentsline {subsection}{\numberline {3.2.3}Environnement de développement}{34}{subsection.3.2.3}%
+\contentsline {chapter}{\numberline {4}Présentation des résultats}{37}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Présentation des résultats sur la cartographie des besoins des entreprises}{37}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}Statistique descriptive simple}{37}{subsection.4.1.1}%
+\contentsline {subsubsection}{Statistique uni variée}{37}{subsection.4.1.1}%
+\contentsline {subsubsection}{Statistique bivariée}{37}{subsection.4.1.1}%
+\contentsline {subsection}{\numberline {4.1.2}Statistique Multidimentionnelle}{37}{subsection.4.1.2}%
+\contentsline {subsubsection}{Résultat ACM}{37}{subsection.4.1.2}%
+\contentsline {subsubsection}{Résultat CAH}{37}{subsection.4.1.2}%
+\contentsline {subsubsection}{Résultat AFD}{37}{subsection.4.1.2}%
+\contentsline {subsection}{\numberline {4.1.3}Synthèse des résultats}{37}{subsection.4.1.3}%
+\contentsline {section}{\numberline {4.2}Présentation de la plateforme}{37}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Interface Utilisateur}{37}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.2}Implémentation de l'algorithme de mise en relation}{37}{subsection.4.2.2}%
+\contentsline {subsection}{\numberline {4.2.3}Limites du travail}{37}{subsection.4.2.3}%
+\contentsline {subsection}{\numberline {4.2.4}Perspectives}{38}{subsection.4.2.4}%
+\contentsline {chapter}{Conclusion Générale}{39}{chapter*.15}%
+\contentsline {chapter}{\numberline {A}Questionnaire de l'enquête MINEPAT 2025}{41}{appendix.A}%
+\contentsline {chapter}{\numberline {B}Modèle de données complet}{42}{appendix.B}%
+\contentsline {chapter}{\numberline {C}Manuel d'utilisation de la plateforme}{43}{appendix.C}%
 \contentsfinish 

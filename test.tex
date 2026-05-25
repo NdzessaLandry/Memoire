@@ -1279,16 +1279,252 @@ ce qui limite leur capacité à en tirer parti pour se faire connaître
 	
 	
 	
-	\section{Méthodologie de conception et de développement de l'application business partnert ship}
-	\label{sec:architecture}
+	%=============================================================
+	\section{Méthodologie de conception et de développement
+		de la plateforme Business Partnership}
+	\label{sec:methodologie_dev}
+	%=============================================================
 	
+	La conception et le développement de la plateforme gouvernementale
+	de cartographie et de mise en relation des entreprises, dénommée
+	\textit{Business Partnership}, constituent le second volet de la
+	démarche méthodologique adoptée dans le cadre de ce travail. Cette
+	phase s'appuie sur des méthodes éprouvées de modélisation des
+	systèmes d'information, sur des algorithmes issus du domaine des
+	Data Sciences et sur des technologies de développement web modernes.
+	Elle est structurée autour de trois étapes complémentaires~: la
+	conception de la base de données, la définition de l'algorithme de
+	mise en relation des entreprises, et la mise en place de
+	l'environnement de développement.
+	
+	%-------------------------------------------------------------
 	\subsection{Conception de la base de données}
-	La conception de la base  de données est une partie importante dans le developpement de notre solution. La méthode que nous avons utilisé pour cette tache est MERISE
-	\subsection{Algorithme de mise en relation}
-	L'algorithme de mise en relation consiste à rapprocher les entreprises suceptibles de répondre à des besoins d'autres entreprises. Après avoir réalisé une ACM, il sera question de faire une projection sur les deux voir trois axes factoriels obtenus. Et calculer la similarité cosinus àfin d'évaluer la proximité entre les entreprises.
+	%-------------------------------------------------------------
 	
+	La base de données constitue le socle fondamental de la plateforme
+	\textit{Business Partnership}, en ce qu'elle assure le stockage,
+	l'organisation et la restitution structurée de l'ensemble des
+	informations relatives aux entreprises et à leurs besoins. Sa
+	conception rigoureuse conditionne directement la fiabilité, les
+	performances et l'évolutivité de la solution développée. La méthode
+	retenue pour cette tâche est la méthode \textbf{MERISE}
+	(Méthode d'Étude et de Réalisation Informatique pour les Systèmes
+	d'Entreprise).
+	
+	MERISE est une méthode d'analyse, de conception et de gestion de
+	projets informatiques développée en France à la fin des années 1970,
+	qui s'est largement imposée dans le monde francophone comme référence
+	méthodologique pour la modélisation des systèmes d'information
+	\citep{tardieu_1983}. Elle repose sur une séparation claire entre
+	les données et les traitements, et propose une démarche structurée
+	en plusieurs niveaux d'abstraction successifs, allant du niveau
+	conceptuel au niveau physique.
+	
+	La démarche de conception adoptée s'est articulée autour de
+	trois niveaux~:
+	
+	\begin{enumerate}
+		
+		\item \textbf{Le niveau conceptuel}~: ce niveau a consisté à
+		élaborer le \textbf{Modèle Conceptuel des Données (MCD)}, qui
+		représente les entités du système d'information, leurs attributs
+		et les associations qui les relient, indépendamment de toute
+		considération technique ou informatique. Les entités principales
+		identifiées sont~: \texttt{Entreprise}, \texttt{Besoin},
+		\texttt{Secteur}, \texttt{Region} et \texttt{Partenariat}.
+		Les cardinalités des associations ont été définies de manière
+		à refléter fidèlement les règles de gestion du domaine~: une
+		entreprise peut exprimer plusieurs besoins, un besoin est
+		associé à une et une seule entreprise, et une mise en relation
+		implique au minimum deux entreprises.
+		
+		\item \textbf{Le niveau logique}~: le MCD a ensuite été
+		transformé en \textbf{Modèle Logique des Données (MLD)},
+		qui traduit les entités et associations en tables relationnelles
+		en appliquant les règles de passage du modèle conceptuel au
+		modèle relationnel. Chaque entité devient une table, chaque
+		attribut devient une colonne, et les associations sont
+		matérialisées par des clés étrangères assurant l'intégrité
+		référentielle entre les tables.
+		
+		\item \textbf{Le niveau physique}~: enfin, le MLD a été
+		converti en \textbf{Modèle Physique des Données (MPD)}, qui
+		correspond à l'implémentation concrète de la base de données
+		dans le système de gestion de bases de données retenu, en
+		tenant compte des spécificités techniques de l'environnement
+		de développement choisi.
+		
+	\end{enumerate}
+	
+	%-------------------------------------------------------------
+	\subsection{Algorithme de mise en relation des entreprises}
+	%-------------------------------------------------------------
+	
+	L'algorithme de mise en relation constitue le c\oe ur fonctionnel
+	de la plateforme \textit{Business Partnership}. Son objectif est
+	d'identifier, parmi l'ensemble des entreprises enregistrées sur la
+	plateforme, celles qui sont les plus susceptibles de répondre aux
+	besoins exprimés par une entreprise donnée, en se fondant sur une
+	mesure objective de proximité entre leurs profils respectifs. La
+	démarche algorithmique retenue s'articule en trois étapes
+	successives.
+	
+	\paragraph{Étape 1 — Réduction de dimension par ACM}
+	
+	Les données relatives aux entreprises et à leurs besoins étant
+	majoritairement de nature qualitative, une Analyse des
+	Correspondances Multiples (ACM) est préalablement conduite afin
+	de réduire la dimensionnalité de l'espace de représentation tout
+	en préservant l'essentiel de l'information contenue dans les
+	données. Les entreprises sont ainsi projetées dans un espace
+	factoriel de dimension réduite, défini par les deux ou trois
+	premiers axes factoriels qui concentrent la plus grande part
+	de l'inertie totale du nuage \citep{lebart_morineau_piron_1995}.
+	Chaque entreprise $i$ est alors représentée par son vecteur de
+	coordonnées factorielles~:
+	
+	\begin{equation}
+		\mathbf{f}_i = (F_{i1}, F_{i2}, \ldots, F_{iq})^{\top}
+		\in \mathbb{R}^q
+		\label{eq:vecteur_factoriel}
+	\end{equation}
+	
+	où $q \in \{2, 3\}$ désigne le nombre d'axes factoriels retenus.
+	
+	\paragraph{Étape 2 — Calcul de la similarité cosinus}
+	
+	La proximité entre deux entreprises $i$ et $j$ dans l'espace
+	factoriel est mesurée à l'aide de la \textbf{similarité cosinus},
+	définie comme le cosinus de l'angle formé par leurs vecteurs de
+	coordonnées factorielles. Cette mesure, largement utilisée dans
+	les systèmes de recommandation et les moteurs de recherche
+	d'information \citep{goodfellow2016deep}, présente l'avantage
+	d'être insensible à la norme des vecteurs et de se concentrer
+	uniquement sur leur orientation dans l'espace factoriel. Elle
+	est définie par~:
+	
+	\begin{equation}
+		\text{sim}(i, j) =
+		\frac{\mathbf{f}_i \cdot \mathbf{f}_j}
+		{\|\mathbf{f}_i\| \cdot \|\mathbf{f}_j\|}
+		= \frac{\displaystyle\sum_{s=1}^{q} F_{is} \cdot F_{js}}
+		{\displaystyle\sqrt{\sum_{s=1}^{q} F_{is}^2}
+			\cdot
+			\displaystyle\sqrt{\sum_{s=1}^{q} F_{js}^2}}
+		\label{eq:similarite_cosinus}
+	\end{equation}
+	
+	La valeur de $\text{sim}(i, j)$ est comprise entre $-1$ et $1$.
+	Une valeur proche de $1$ indique que les deux entreprises ont
+	des profils de besoins très similaires et sont donc de bonnes
+	candidates à une mise en relation~; une valeur proche de $0$
+	indique une absence de corrélation entre leurs profils~; et
+	une valeur négative indique des profils opposés.
+	
+	\paragraph{Étape 3 — Génération des recommandations}
+	
+	Pour une entreprise cible $i$, l'algorithme calcule sa
+	similarité cosinus avec l'ensemble des autres entreprises
+	enregistrées sur la plateforme, puis sélectionne les $k$
+	entreprises les plus similaires selon le critère~:
+	
+	\begin{equation}
+		\mathcal{R}(i) = \underset{j \neq i}{\text{top-}k}
+		\left\{ \text{sim}(i, j) \right\}
+		\label{eq:recommandation}
+	\end{equation}
+	
+	Ces $k$ entreprises constituent la liste de recommandations
+	présentée à l'entreprise $i$ sur la plateforme, lui permettant
+	d'identifier en priorité les partenaires potentiels dont le
+	profil est le plus complémentaire au sien. La valeur de $k$
+	est un paramètre configurable de la plateforme, fixé par défaut
+	à $k = 5$ recommandations par entreprise.
+	
+	%-------------------------------------------------------------
 	\subsection{Environnement de développement}
-	L'environnement de developpement utilisé est VS Code, nous avons utilisé le framework web Django de python et une base de données SQLite
+	%-------------------------------------------------------------
+	
+	Le développement de la plateforme \textit{Business Partnership}
+	a été réalisé dans un environnement technique soigneusement
+	sélectionné, en tenant compte des contraintes de performance,
+	de maintenabilité et d'adéquation aux objectifs fonctionnels
+	du projet. Le tableau~\ref{tab:env_dev} ci-dessous présente
+	une synthèse des outils et technologies mobilisés.
+	
+\begin{table}[H]
+	\centering
+	\caption{Environnement technique de développement de la plateforme
+		\textit{Business Partnership}}
+	\label{tab:env_dev}
+	\renewcommand{\arraystretch}{1.6}
+	\begin{tabularx}{\textwidth}{
+			>{\raggedright\arraybackslash\bfseries}p{3.2cm}
+			>{\raggedright\arraybackslash}p{3.2cm}
+			>{\raggedright\arraybackslash}X}
+		
+		\toprule
+		\rowcolor{primary!15}
+		\textbf{Composante} & \textbf{Outil / Technologie} & \textbf{Justification} \\
+		\midrule
+		
+		Éditeur de code
+		& Visual Studio Code
+		& Éditeur léger, extensible et largement adopté, offrant
+		un support natif de Python et des extensions dédiées
+		au développement web. \\[4pt]
+		
+		Langage de programmation
+		& Python 3
+		& Langage de référence en Data Sciences, offrant un
+		écosystème de bibliothèques riche adapté au traitement
+		de données et au développement d'applications web. \\[4pt]
+		
+		Framework web
+		& Django (MVT)
+		& Framework Python de haut niveau suivant le paradigme
+		Modèle-Vue-Template (MVT), favorisant un développement
+		rapide, sécurisé et structuré. Intègre nativement un
+		ORM facilitant l'interaction avec la base de données. \\[4pt]
+		
+		\gls{sgbd}
+		& SQLite
+		& Base de données relationnelle légère, sans serveur
+		dédié, adaptée à la phase de prototypage. Une migration
+		vers PostgreSQL est prévue en production pour de
+		meilleures performances. \\[4pt]
+		
+		Analyse statistique
+		& R et Python
+		& Bibliothèques pandas, scikit-learn et FactoMineR
+		mobilisées pour la réalisation de l'ACM, de la CAH
+		et de l'AFD, ainsi que pour le prétraitement des
+		données de l'enquête. \\[4pt]
+		
+		Gestion de version
+		& Git / GitHub
+		& Système de contrôle de version permettant de suivre
+		l'évolution du code source et d'assurer la traçabilité
+		des modifications apportées à l'application. \\
+		
+		\bottomrule
+	\end{tabularx}
+\end{table}
+
+	L'architecture de la plateforme suit le patron de conception
+	\textbf{MVT (Modèle-Vue-Template)} proposé par Django, qui
+	constitue une adaptation du patron MVC (Modèle-Vue-Contrôleur)
+	largement utilisé dans le développement d'applications web.
+	Dans ce paradigme, le \textbf{Modèle} définit la structure des
+	données et gère les interactions avec la base de données via
+	l'ORM de Django~; la \textbf{Vue} contient la logique métier
+	de l'application et traite les requêtes HTTP entrantes~; et le
+	\textbf{Template} prend en charge la présentation et le rendu
+	des pages HTML transmises à l'utilisateur final. Cette séparation
+	claire des responsabilités entre les différentes couches de
+	l'application favorise la maintenabilité du code, facilite les
+	tests unitaires et permet une évolution indépendante de chacune
+	des composantes de la solution.
 	
 	
 	

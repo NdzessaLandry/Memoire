@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.5.12)  19 MAY 2026 10:40
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.5.12)  21 MAY 2026 09:14
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1949,7 +1949,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 835--836
  []
 
 [17]
-<enqueteGecam.png, id=441, 450.18187pt x 403.5075pt>
+<enqueteGecam.png, id=444, 450.18187pt x 403.5075pt>
 File: enqueteGecam.png Graphic file (type png)
 <use enqueteGecam.png>
 Package pdftex.def Info: enqueteGecam.png  used on input line 839.
@@ -1969,7 +1969,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 849--850
 
  []
 
-<zoneRecensement.png, id=447, 400.49625pt x 551.05875pt>
+<zoneRecensement.png, id=450, 400.49625pt x 551.05875pt>
 File: zoneRecensement.png Graphic file (type png)
 <use zoneRecensement.png>
 Package pdftex.def Info: zoneRecensement.png  used on input line 853.
@@ -2011,24 +2011,36 @@ lmr/m/n/12 (-20) ,
 
 [30{C:/Users/LandryNDZESSA/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-
 mathsy.enc}] [31]
+
+Package natbib Warning: Citation `tardieu_1983' on page 32 undefined on input l
+ine 1318.
+
+
+Package natbib Warning: Citation `lebart_morineau_piron_1995' on page 32 undefi
+ned on input line 1382.
+
+[32] [33] [34] [35] [36]
 Chapitre 4.
-[32
-
-] [33] (test.bbl [34
-
-] [35
-
-]) [36]
-Annexe A.
 [37
+
+] [38] (test.bbl [39
+
+]) [40
+
+]
+Annexe A.
+[41
 
 ]
 Annexe B.
-[38
+[42
 
 ]
 Annexe C.
-[39
+
+Package natbib Warning: There were undefined citations.
+
+[43
 
 ] (test.aux)
  ***********
@@ -2040,16 +2052,20 @@ L3 programming layer <2025-12-24>
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 Package rerunfilecheck Info: File `test.out' has not changed.
-(rerunfilecheck)             Checksum: 3E888B67566C6947DD3A83E857BE4792;9823.
+(rerunfilecheck)             Checksum: 6E14051B4D8BA5782EB8F39C0EF553B6;9899.
  ) 
 Here is how much of TeX's memory you used:
- 46882 strings out of 467871
- 981271 string characters out of 5414504
+ 46893 strings out of 467871
+ 981034 string characters out of 5414504
  1520446 words of memory out of 5000000
- 74711 multiletter control sequences out of 15000+600000
- 699051 words of font info for 164 fonts, out of 8000000 for 9000
+ 74694 multiletter control sequences out of 15000+600000
+ 708924 words of font info for 178 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  84i,16n,94p,2489b,870s stack positions out of 10000i,1000n,20000p,200000b,200000s
+
+pdfTeX warning (dest): name{glo:sgbd} has been referenced but does not exist, r
+eplaced by a fixed one
+
 
 pdfTeX warning (dest): name{glo:dape} has been referenced but does not exist, r
 eplaced by a fixed one
@@ -2072,12 +2088,14 @@ ryNDZESSA/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri10.pfb><C:/Us
 ers/LandryNDZESSA/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri12.pf
 b><C:/Users/LandryNDZESSA/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/l
 msy10.pfb><C:/Users/LandryNDZESSA/AppData/Local/Programs/MiKTeX/fonts/type1/pub
-lic/lm/lmtk10.pfb><C:/Users/LandryNDZESSA/AppData/Local/Programs/MiKTeX/fonts/t
-ype1/public/lm/lmtt10.pfb><C:/Users/LandryNDZESSA/AppData/Local/Programs/MiKTeX
-/fonts/type1/public/lm/lmtt12.pfb>
-Output written on test.pdf (47 pages, 1372872 bytes).
+lic/lm/lmsy8.pfb><C:/Users/LandryNDZESSA/AppData/Local/Programs/MiKTeX/fonts/ty
+pe1/public/lm/lmtk10.pfb><C:/Users/LandryNDZESSA/AppData/Local/Programs/MiKTeX/
+fonts/type1/public/lm/lmtt10.pfb><C:/Users/LandryNDZESSA/AppData/Local/Programs
+/MiKTeX/fonts/type1/public/lm/lmtt12.pfb><C:/Users/LandryNDZESSA/AppData/Local/
+Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on test.pdf (51 pages, 1394319 bytes).
 PDF statistics:
- 675 PDF objects out of 1000 (max. 8388607)
- 137 named destinations out of 1000 (max. 500000)
- 40998 words of extra memory for PDF output out of 42996 (max. 10000000)
+ 705 PDF objects out of 1000 (max. 8388607)
+ 140 named destinations out of 1000 (max. 500000)
+ 47142 words of extra memory for PDF output out of 51595 (max. 10000000)
 
