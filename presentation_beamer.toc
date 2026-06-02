@@ -1,0 +1,4 @@
+\babel@toc {french}{}\relax 
+\beamer@sectionintoc {1}{Contexte et problématique}{3}{0}{1}
+\beamer@sectionintoc {2}{Données et analyse descriptive}{6}{0}{2}
+\beamer@sectionintoc {3}{Analyse Multidimentionnelle }{14}{0}{3}

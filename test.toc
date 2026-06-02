@@ -4,7 +4,7 @@
 \contentsline {chapter}{Résumé}{iii}{chapter*.3}%
 \contentsline {chapter}{Abstract}{iv}{chapter*.4}%
 \contentsline {chapter}{Table des matières}{vi}{chapter*.5}%
-\contentsline {chapter}{Liste des figures}{vii}{chapter*.6}%
+\contentsline {chapter}{Liste des figures}{viii}{chapter*.6}%
 \contentsline {chapter}{Liste des tableaux}{1}{chapter*.7}%
 \contentsline {chapter}{Introduction Générale}{2}{chapter*.8}%
 \contentsline {chapter}{\numberline {1}Présentation de la structure d'accueil et déroulement du stage}{6}{chapter.1}%
@@ -43,37 +43,54 @@
 \contentsline {subsubsection}{Source de données}{24}{subsection.3.1.1}%
 \contentsline {subsubsection}{Description des variables}{25}{subsection.3.1.1}%
 \contentsline {subsubsection}{Pré-traitement de la Base de Données}{27}{table.caption.13}%
-\contentsline {subsection}{\numberline {3.1.2}Méthode d'analyse}{28}{subsection.3.1.2}%
-\contentsline {subsubsection}{Analyse descriptive}{28}{subsection.3.1.2}%
-\contentsline {subsubsection}{Analyse exploratoire des données}{29}{Item.20}%
-\contentsline {paragraph}{Notion d'ACM}{29}{Item.21}%
-\contentsline {paragraph}{Formalisation mathématique}{29}{Item.21}%
-\contentsline {paragraph}{Notion de CAH}{30}{Item.22}%
-\contentsline {paragraph}{Formalisation mathématiques}{30}{Item.22}%
-\contentsline {section}{\numberline {3.2}Méthodologie de conception et de développement de la plateforme Business Partnership}{31}{section.3.2}%
-\contentsline {subsection}{\numberline {3.2.1}Conception de la base de données}{31}{subsection.3.2.1}%
-\contentsline {subsection}{\numberline {3.2.2}Algorithme de mise en relation des entreprises}{32}{subsection.3.2.2}%
-\contentsline {paragraph}{Étape 1 — Réduction de dimension par ACM}{33}{subsection.3.2.2}%
-\contentsline {paragraph}{Étape 2 — Calcul de la similarité cosinus}{33}{equation.3.4}%
-\contentsline {paragraph}{Étape 3 — Génération des recommandations}{33}{equation.3.5}%
-\contentsline {subsection}{\numberline {3.2.3}Environnement de développement}{34}{subsection.3.2.3}%
-\contentsline {chapter}{\numberline {4}Présentation des résultats}{37}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Présentation des résultats sur la cartographie des besoins des entreprises}{37}{section.4.1}%
-\contentsline {subsection}{\numberline {4.1.1}Statistique descriptive simple}{37}{subsection.4.1.1}%
-\contentsline {subsubsection}{Statistique uni variée}{37}{subsection.4.1.1}%
-\contentsline {subsubsection}{Statistique bivariée}{37}{subsection.4.1.1}%
-\contentsline {subsection}{\numberline {4.1.2}Statistique Multidimentionnelle}{37}{subsection.4.1.2}%
-\contentsline {subsubsection}{Résultat ACM}{37}{subsection.4.1.2}%
-\contentsline {subsubsection}{Résultat CAH}{37}{subsection.4.1.2}%
-\contentsline {subsubsection}{Résultat AFD}{37}{subsection.4.1.2}%
-\contentsline {subsection}{\numberline {4.1.3}Synthèse des résultats}{37}{subsection.4.1.3}%
-\contentsline {section}{\numberline {4.2}Présentation de la plateforme}{37}{section.4.2}%
-\contentsline {subsection}{\numberline {4.2.1}Interface Utilisateur}{37}{subsection.4.2.1}%
-\contentsline {subsection}{\numberline {4.2.2}Implémentation de l'algorithme de mise en relation}{37}{subsection.4.2.2}%
-\contentsline {subsection}{\numberline {4.2.3}Limites du travail}{37}{subsection.4.2.3}%
-\contentsline {subsection}{\numberline {4.2.4}Perspectives}{38}{subsection.4.2.4}%
-\contentsline {chapter}{Conclusion Générale}{39}{chapter*.15}%
-\contentsline {chapter}{\numberline {A}Questionnaire de l'enquête MINEPAT 2025}{41}{appendix.A}%
-\contentsline {chapter}{\numberline {B}Modèle de données complet}{42}{appendix.B}%
-\contentsline {chapter}{\numberline {C}Manuel d'utilisation de la plateforme}{43}{appendix.C}%
+\contentsline {subsection}{\numberline {3.1.2}Méthode d'analyse}{29}{subsection.3.1.2}%
+\contentsline {subsubsection}{Analyse descriptive}{29}{subsection.3.1.2}%
+\contentsline {subsubsection}{Analyse exploratoire des données}{31}{Item.20}%
+\contentsline {paragraph}{Notion d'ACM}{31}{Item.21}%
+\contentsline {paragraph}{Formalisation mathématique}{32}{Item.21}%
+\contentsline {paragraph}{Notion de CAH}{34}{Item.22}%
+\contentsline {paragraph}{Formalisation mathématiques}{35}{Item.22}%
+\contentsline {paragraph}{Formulation mathématiques}{36}{Item.23}%
+\contentsline {section}{\numberline {3.2}Méthodologie de conception et de développement de la plateforme Business Partnership}{38}{section.3.2}%
+\contentsline {chapter}{\numberline {4}Présentation des résultats}{39}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Résultats sur la cartographie des entreprises}{39}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}Résultats de l'analyse univariée}{40}{subsection.4.1.1}%
+\contentsline {subsubsection}{Répartition des entreprises par statut juridique}{40}{subsection.4.1.1}%
+\contentsline {subsubsection}{Répartition des entreprises par région}{41}{figure.caption.14}%
+\contentsline {subsubsection}{Répartition des entreprises par taille}{41}{figure.caption.15}%
+\contentsline {subsubsection}{Répartition des entreprises par ancienneté}{42}{figure.caption.16}%
+\contentsline {subsubsection}{Répartition des entreprises par secteur d'activité}{43}{figure.caption.17}%
+\contentsline {subsubsection}{Répartition des besoins exprimés}{44}{figure.caption.18}%
+\contentsline {subsection}{\numberline {4.1.2}Résultats de l'analyse bivariée}{44}{subsection.4.1.2}%
+\contentsline {subsubsection}{Répartition des besoins selon le statut juridique}{45}{subsection.4.1.2}%
+\contentsline {subsubsection}{Répartition des besoins selon la région}{46}{table.caption.21}%
+\contentsline {subsubsection}{Répartition des besoins selon l'ancienneté}{47}{table.caption.23}%
+\contentsline {subsubsection}{Répartition des besoins selon le secteur d'activité}{48}{table.caption.25}%
+\contentsline {subsubsection}{Répartition des besoins selon la taille de l'entreprise}{49}{table.caption.27}%
+\contentsline {subsection}{\numberline {4.1.3}Résultats de l'analyse multidimensionnelle}{50}{subsection.4.1.3}%
+\contentsline {subsubsection}{Analyse des Correspondances Multiples (ACM)}{50}{subsection.4.1.3}%
+\contentsline {paragraph}{Valeurs propres et inertie expliquée}{50}{subsection.4.1.3}%
+\contentsline {paragraph}{Projection des modalités sur le premier plan factoriel}{51}{figure.caption.30}%
+\contentsline {paragraph}{Variables contribuant aux axes factoriels}{52}{figure.caption.31}%
+\contentsline {subsubsection}{Classification Ascendante Hiérarchique (CAH)}{53}{figure.caption.32}%
+\contentsline {paragraph}{Dendrogramme et choix du nombre de classes}{53}{figure.caption.32}%
+\contentsline {paragraph}{Visualisation de la partition obtenue}{54}{figure.caption.33}%
+\contentsline {subsubsection}{Analyse Factorielle Discriminante (AFD)}{55}{figure.caption.36}%
+\contentsline {paragraph}{Axes discriminants et pouvoir discriminant}{56}{figure.caption.36}%
+\contentsline {paragraph}{Les axes factoriels obtenus}{56}{figure.caption.37}%
+\contentsline {paragraph}{Fonction LD1 — Axe de discrimination principal}{57}{table.caption.38}%
+\contentsline {paragraph}{Fonction LD2 — Axe secondaire de séparation}{57}{table.caption.38}%
+\contentsline {paragraph}{Précision globale (Accuracy)}{58}{table.caption.39}%
+\contentsline {paragraph}{Indice Kappa de Cohen}{58}{table.caption.39}%
+\contentsline {paragraph}{Comparaison au classifieur naïf}{58}{table.caption.39}%
+\contentsline {paragraph}{Significativité statistique}{58}{table.caption.39}%
+\contentsline {section}{\numberline {4.2}Présentation de la plateforme}{59}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Interface Utilisateur}{59}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.2}Implémentation de l'algorithme de mise en relation}{59}{subsection.4.2.2}%
+\contentsline {subsection}{\numberline {4.2.3}Limites du travail}{59}{subsection.4.2.3}%
+\contentsline {subsection}{\numberline {4.2.4}Perspectives}{59}{subsection.4.2.4}%
+\contentsline {chapter}{Conclusion Générale}{60}{chapter*.40}%
+\contentsline {chapter}{\numberline {A}Questionnaire de l'enquête MINEPAT 2025}{62}{appendix.A}%
+\contentsline {chapter}{\numberline {B}Modèle de données complet}{63}{appendix.B}%
+\contentsline {chapter}{\numberline {C}Manuel d'utilisation de la plateforme}{64}{appendix.C}%
 \contentsfinish 

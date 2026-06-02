@@ -13,6 +13,10 @@
 \usepackage[T1]{fontenc}
 \usepackage[french]{babel}
 \usepackage{csquotes}
+\usepackage{booktabs}
+\usepackage{siunitx}
+\usepackage{float}
+\usepackage{caption}
 
 %------------------------------------------------------------
 %  POLICES & TYPOGRAPHIE
@@ -1174,42 +1178,62 @@ ce qui limite leur capacité à en tirer parti pour se faire connaître
 	Avant toute analyse statistique, il est recommandé d'effectuer une phase de prétraitement des données afin d'en garantir la qualité et la cohérence. Cette étape, souvent désignée sous le terme de data cleaning dans la littérature en Data Sciences, constitue un préalable indispensable à la fiabilité des résultats. Elle a comporté les opérations suivantes:
 	
 	\begin{itemize}
-		\item \textbf{Gestion des valeurs manquantes} :
+		\item \textbf{Organisation des données} :
 		
 		
-		Il s'agit des observations pour lesquelles un ou plusieurs champs du questionnaire n'ont pas été renseignés par le répondant. Selon leur ampleur et leur distribution, ces valeurs manquantes peuvent être traitées de différentes manières~: suppression des observations incomplètes lorsque le taux de non-réponse est trop élevé pour permettre une imputation fiable, imputation par la valeur la plus fréquente (mode) pour les variables qualitatives, ou imputation par la moyenne ou la médiane pour les variables quantitatives.
-		\item \textbf{Gestion et traitement des valeurs abérantes}
+		La première étape du traitement a consisté à rendre stable la structure de la base de données afin de disposer d’un fichier exploitable pour l’analyse. La base initiale comportait une table principale décrivant le profil des entreprises et une table secondaire renseignant les besoins exprimés. Comme une même entreprise pouvait déclarer plusieurs besoins, la table des besoins contenait plusieurs lignes pour une seule entreprise. Il n’était donc pas pertinent de faire une simple jointure ligne à ligne, car cela aurait multiplié artificiellement certaines entreprises dans la base finale. Le traitement a plutôt consisté à ramener les besoins au niveau de l’entreprise, de manière à conserver une seule ligne par entreprise dans la table principale, tout en ajoutant les informations relatives aux besoins sous forme de variables distinctes.\\
 		
-		Une valeur aberrante est une observation qui s'écarte de manière anormale de la distribution générale des données. Elle peut résulter d'une erreur de saisie, d'une mauvaise compréhension de la question par le répondant, ou encore d'un cas réellement atypique dans la population étudiée. La détection de ces valeurs s'effectue généralement par inspection visuelle des distributions, ou à l'aide de critères statistiques tels que la règle des écarts inter-quartiles.
+		\item \textbf{Transformation des données}
 		
-		\item \textbf{Détection et la suppression des doublons} :
+		La deuxième étape a porté sur la transformation de la table des besoins en variables binaires de type Oui/Non. Chaque type de besoin initialement déclaré dans la feuille des besoins a été converti en une colonne spécifique. Lorsqu’une entreprise avait déclaré un besoin donné, la modalité « Oui » lui était attribuée ; dans le cas contraire, la modalité « Non » était retenue. Cette opération permet de rendre les besoins directement comparables entre entreprises, tout en évitant les problèmes liés au format long de la table initiale. Elle facilite aussi l’exploitation statistique, car chaque entreprise est décrite à la fois par ses caractéristiques propres et par l’ensemble des besoins qu’elle a ou n’a pas exprimés.\\
+		
+		\item \textbf{Discrétisation des données} :
+		La troisième étape a consisté à harmoniser certaines informations mal structurées ou hétérogènes, notamment la variable relative à la date de début d’activité. Cette variable contenait des formats variés : années simples, dates complètes, valeurs numériques issues d’Excel, textes partiels ou informations difficilement exploitables. Pour rendre cette information utilisable, elle a été transformée en classes d’âge de l’entreprise : « Moins de 3 ans », « 3 à 4 ans », « 5 à 9 ans », « 10 à 19 ans », « 20 ans et plus » et « Non renseigné ». Ce choix permet de passer d’une information brute parfois instable à une variable catégorielle claire, homogène et interprétable. Il permet également de comparer les entreprises selon leur niveau de maturité, ce qui est plus pertinent qu’une date brute souvent mal renseignée.\\
+		
+		\item \textbf{Supression des données}:
 		
 		
-		Dans le cadre d'une enquête en ligne, il est fréquent qu'un même répondant soumette plusieurs fois le formulaire, volontairement ou par erreur. Ces doublons introduisent un biais dans les analyses en surpondérant certaines observations. Leur identification repose sur la comparaison des valeurs de variables clés permettant d'identifier de manière unique chaque répondant.
-		\item \textbf{Vérification de la cohérence logique des données}:
+		La quatrième étape a concerné la rationalisation des besoins exprimés. Certains besoins étaient très proches sur le fond, mais apparaissaient sous des libellés séparés. C’est le cas, par exemple, des besoins liés aux équipements de conditionnement, de conservation ou de stockage, de production et de transformation. Ces différentes modalités ont été regroupées dans une seule variable appelée besoin\_equipements, car elles renvoient toutes à une contrainte matérielle ou productive. De la même manière, les besoins relatifs aux nouvelles techniques de conditionnement, de conservation ou stockage, de production et de transformation ont été regroupés dans une variable appelée besoin\_innovation\_recherche, qui traduit davantage un besoin d’innovation, d’amélioration technique ou d’accompagnement en recherche appliquée. Cette consolidation permet de réduire la dispersion des modalités et de rendre les résultats plus lisibles.\\
 		
-		
-		Il s'agit de s'assurer que les réponses fournies par un même répondant ne sont pas contradictoires entre elles. Par exemple, une entreprise déclarant appartenir au secteur primaire tout en indiquant comme activité principale le développement de logiciels constitue une incohérence qui doit être identifiée et corrigée avant toute analyse. Ces contrôles de cohérence sont réalisés à l'aide de règles métier définies en amont, en concertation avec les concepteurs du questionnaire.
+		\item 
+		Enfin, la dernière étape a consisté à uniformiser les modalités textuelles et à produire une base finale cohérente, prête pour l’analyse statistique. Les accents ont été retirés sur les modalités afin d’éviter que deux valeurs identiques sur le fond soient traitées comme différentes à cause de variations d’écriture. Les besoins ont été regroupés en sept grandes catégories finales, ce qui permet de conserver l’essentiel de l’information tout en simplifiant la lecture économique des résultats. Au terme du traitement, chaque entreprise est décrite par son profil et par un ensemble réduit, clair et homogène de besoins. Cette structuration est particulièrement pertinente, car elle permet de comparer les entreprises entre elles et de repérer plus facilement les proximités entre profils d’entreprises et types de besoins exprimés.
 	\end{itemize}
 	\subsection{Méthode d'analyse}
 	Le traitement de la base de données passe par l’utilisation d’un ensemble de méthodes, les objectifs ici sont la description et l’exploration du jeu de données à disposition. 
 	\subsubsection{Analyse descriptive}
+	L’analyse descriptive constitue la première étape d’exploitation statistique de la base. Elle permet de comprendre la structure générale des entreprises enquêtées avant tout regroupement plus avancé. Cette étape repose sur deux niveaux complémentaires : l’analyse univariée, qui décrit chaque variable séparément, et l’analyse bivariée, qui met en relation les caractéristiques des entreprises avec les besoins exprimés. Cette progression est importante, car elle évite d’interpréter directement des groupes complexes sans avoir d’abord identifié les principales tendances de la base.
 	\begin{enumerate}
 		\item \textbf{Analyse uni-variée}:
 		
-		L'analyse uni-variée constitue la première étape de la description des données. Elle consiste à examiner chaque variable de manière isolée, afin d'en décrire la distribution et d'en dégager les caractéristiques essentielles. Dans le cadre de cette étude, où les variables sont majoritairement qualitatives, l'analyse uni-variée repose principalement sur le calcul des effectifs et fréquences  associées à chaque modalité, ainsi que sur leur représentation graphique sous forme de diagrammes en barres ou de diagrammes circulaires. Cette étape permet par exemple d'établir la répartition des entreprises enquêtées par secteur d'activité, par région ou par taille, et de disposer ainsi d'une première photographie descriptive du tissu productif couvert par l'enquête. Elle permet également d'identifier d'éventuelles valeurs manquantes ou modalités peu représentées, dont il conviendra de tenir compte dans les analyses ultérieures.
+		L’analyse univariée vise d’abord à présenter la distribution des entreprises selon leurs principales caractéristiques : statut juridique, région, taille, ancienneté et secteur d’activité principal. Pour chaque variable, les effectifs et les pourcentages sont calculés afin de connaître le poids de chaque modalité dans l’ensemble de la base. La logique est la suivante : une modalité fortement représentée peut influencer les résultats globaux, tandis qu’une modalité faiblement représentée doit être interprétée avec prudence. Par exemple, si une région ou un secteur concentre une grande partie des entreprises, les besoins observés au niveau global peuvent en partie refléter cette concentration.\\
+		
+		Les besoins exprimés par les entreprises sont également analysés de manière univariée. L’objectif est d’identifier les besoins les plus fréquents parmi les sept catégories retenues : intrants, financement, emballages, transport, appui à l’entreprise, équipements, innovation et recherche. Pour chaque besoin, l’analyse consiste à compter le nombre d’entreprises ayant répondu « Oui », puis à rapporter cet effectif au nombre total d’entreprises. Le pourcentage obtenu indique la proportion d’entreprises concernées par chaque besoin. Cette étape permet de hiérarchiser les contraintes exprimées et de distinguer les besoins transversaux, qui touchent une grande partie des entreprises, des besoins plus spécifiques.\\
+		
+		
 	\item \textbf{Analyse bis-variée}:
 	
-	L'analyse bis-variée constitue le prolongement naturel de l'analyse uni-variée: elle vise à étudier les relations entre deux variables prises simultanément, afin de mettre en évidence d'éventuelles associations ou dépendances. Dans le cas de deux variables qualitatives, l'outil privilégié est le tableau de contingence, qui croise les modalités des deux variables et permet de visualiser leur distribution conjointe. L'intensité de l'association entre les variables est ensuite mesurée à l'aide du test du $\chi$2  de Pearson, qui permet de tester l'hypothèse d'indépendance entre les deux variables. Dans le cadre de cette étude, l'analyse bis-variée sera mobilisée pour examiner, par exemple, le lien entre le secteur d'activité des entreprises et les types de besoins exprimés, ou encore entre la région d'implantation et ces mêmes besoins. Ces croisements permettront d'identifier des associations structurelles entre les caractéristiques des entreprises et leurs besoins spécifiques.
+L’analyse bivariée intervient ensuite pour dépasser la simple description globale. Elle consiste à croiser les variables de profil avec les variables de besoins afin de déterminer si certains types d’entreprises expriment davantage certains besoins. Par exemple, les besoins de financement peuvent être croisés avec la taille des entreprises, les besoins en équipements avec le secteur d’activité, ou encore les besoins d’appui avec l’ancienneté. Cette étape permet de répondre à une question centrale : les besoins sont-ils répartis de manière uniforme entre toutes les entreprises, ou varient-ils selon leur profil ?\\
+
+L’intérêt de l’analyse bivariée est donc de produire une lecture plus ciblée des besoins. Une analyse globale peut montrer qu’un besoin est important, mais elle ne dit pas nécessairement quels types d’entreprises sont les plus concernés. Le croisement des variables permet de préciser cette information. Par exemple, si les petites entreprises déclarent plus fréquemment un besoin de financement, cela suggère que la contrainte financière est particulièrement associée à leur profil. Si les entreprises d’un secteur donné déclarent davantage des besoins en équipements, cela peut révéler une contrainte productive ou technologique propre à ce secteur.\\
+
+Pour renforcer l’interprétation des croisements, le test du $\chi^2$ est mobilisé. Ce test permet de vérifier si la relation observée entre une variable de profil et un besoin est statistiquement significative. L’hypothèse testée est l’indépendance entre les deux variables. Lorsque la p-value est inférieure à 5 \%, l’hypothèse d’indépendance est rejetée : il existe alors une association statistique entre la caractéristique de l’entreprise et le besoin considéré. À l’inverse, lorsque la p-value est supérieure à 5 \%, la relation observée n’est pas suffisamment robuste pour être considérée comme significative.\\
+
+Lorsque le test du $\chi^2$ indique une association significative, l’intensité de cette association peut être appréciée à l’aide du V de Cramer. Cette mesure permet de distinguer une relation faible, modérée ou forte. Elle est utile parce qu’une association peut être statistiquement significative tout en étant peu importante sur le plan pratique. Le V de Cramer complète donc le Khi-deux en indiquant non seulement si deux variables sont liées, mais aussi à quel degré elles le sont. Dans l’analyse, cette étape permet de retenir les associations réellement pertinentes pour comprendre la structuration des besoins des entreprises.
 	\end{enumerate}
 
 	\subsubsection{Analyse exploratoire des données}
-	
+	Après les analyses univariée et bivariée, l’analyse multivariée permet d’étudier simultanément l’ensemble des variables de profil et des besoins. Cette étape est nécessaire, car les entreprises ne se différencient pas seulement par une variable isolée. Elles se distinguent plutôt par une combinaison de caractéristiques : taille, secteur, ancienneté, région, statut juridique et besoins exprimés. Les méthodes multivariées permettent donc de passer d’une lecture variable par variable à une lecture globale des profils d’entreprises. Dans cette logique, l’Analyse des Correspondances Multiples (ACM), la Classification Ascendante Hiérarchique (CAH) puis l'Anayse Factorielle Discrimimante (AFD) sont mobilisées.
 	\begin{enumerate}
 		\item \textbf{Analyse en Composante Multiple}:
 		
 		\paragraph{Notion d'ACM}
-		L’Analyse en Composante Multiples (ACM) est une méthode factorielle développée dans le prolongement de l’Analyse en Composantes Principales (ACP), spécifiquement conçue pour traiter  des tableaux de données de variables qualitatives. Formalisés par Jean-Paul Benzécri dans les années 1970, l’ACM s’appuie sur le principe de l’analyse des correspondances, qu’elle généralise au cas de plus de deux variables qualitatives simultanées.  Son principe repose sur la transformation du tableau de données initial en un tableau disjonctif complet, dans lequel chaque variable qualitative est éclatée en autant de colonnes binaires que de modalités, avant d’appliquer une analyse factorielle sur le tableau étendu. L’ACM produit ainsi des axes fatoriels, appelés composantes, qui résument la structure des associations entre les modalités des différentes variables en réduisant la dimentionnalité des données, tout en préservant au mieux l’information contenue dans le tableau initial. Les résultats sont restitués sous forme de représentation graphiques appelées nuages de points, sur lesquelles figurent simultanément les individus et les modalités des variables : deux modalités proches sur le graphiques sont fréquemment associées dans les données, tandis que deux individus proches présentes des profils de réponses similaires.
+	L’Analyse des Correspondances Multiples est adaptée aux données qualitatives. Elle permet de résumer l’information contenue dans plusieurs variables catégorielles et de représenter les entreprises et les modalités dans un espace factoriel commun. Son intérêt est particulièrement fort dans cette étude, car les variables utilisées sont essentiellement qualitatives : les caractéristiques des entreprises sont exprimées sous forme de catégories, et les besoins sont codés en modalités « Oui » ou « Non ». L’ACM permet ainsi d’identifier les proximités entre modalités et de voir quelles caractéristiques tendent à apparaître ensemble.\\
+	
+	L’interprétation de l’ACM repose d’abord sur les axes factoriels. Chaque axe résume une partie des différences entre les entreprises. Les valeurs propres indiquent la part d’information portée par chaque dimension. En ACM, les pourcentages d’inertie sont souvent relativement faibles, surtout lorsque plusieurs variables qualitatives sont utilisées. Cela n’invalide pas l’analyse. L’essentiel est d’identifier les modalités qui contribuent le plus à chaque axe, car ce sont elles qui donnent un sens économique aux dimensions retenues. Les axes ne sont donc pas interprétés uniquement à partir de leur inertie, mais surtout à partir des modalités qui les structurent.\\
+	
+	Les contributions des modalités permettent de repérer les catégories qui jouent le rôle le plus important dans la construction des axes. Une modalité fortement contributive participe fortement à la différenciation des entreprises. Le cosinus carré complète cette information en indiquant si la modalité est bien représentée sur l’axe considéré. Une modalité à la fois fortement contributive et bien représentée est particulièrement utile pour interpréter l’axe. À l’inverse, une modalité très rare ou faiblement représentée doit être commentée avec prudence, même lorsqu’elle apparaît visible sur la carte factorielle.\\
+	
+	Les cartes factorielles issues de l’ACM facilitent la lecture des relations entre profils et besoins. Sur la carte des modalités, deux modalités proches peuvent être interprétées comme associées. Par exemple, la proximité entre une catégorie de taille d’entreprise et un besoin donné peut suggérer que ce besoin est plus fréquent pour cette catégorie. Les modalités éloignées du centre sont celles qui différencient le plus les entreprises, tandis que les modalités proches du centre sont moins discriminantes. Sur la carte des individus, chaque point représente une entreprise ; les entreprises proches les unes des autres présentent des profils relativement similaires.
 		\paragraph{Formalisation mathématique}
 		Soit un tableau de données $X$ composé de $n$ individus (entreprises)
 		décrits par $p$ variables qualitatives $Q_1, Q_2, \ldots, Q_p$, où la
@@ -1228,11 +1252,135 @@ ce qui limite leur capacité à en tirer parti pour se faire connaître
 			\end{cases}
 			\label{eq:tdc}
 		\end{equation}
+	Le tableau de Burt $\mathbf{B}$ est défini comme le produit :
 	
+	\begin{equation}
+		\mathbf{B} = \mathbf{Z}^{\top} \mathbf{Z} \in \mathbb{R}^{K \times K}.
+		\label{eq:burt}
+	\end{equation}
+	
+	Il regroupe en sous-blocs les tableaux de contingence croisés entre toutes les paires
+	de variables, et les tableaux diagonaux contenant les effectifs marginaux de chaque
+	modalité.
+	
+	On définit les matrices diagonales de pondération :
+	
+	\begin{equation}
+		\mathbf{D}_r = \frac{1}{nQ}\,\mathbf{Z}^{\top}\mathbf{1}_n, \qquad
+		\mathbf{D}_c = \frac{1}{nQ}\,\mathbf{Z}^{\top}\mathbf{1}_n,
+	\end{equation}
+	
+	où $\mathbf{1}_n$ est le vecteur unité de taille $n$. La matrice des profils ligne
+	(profils des individus sur les modalités) est :
+	
+	\begin{equation}
+		\mathbf{P} = \frac{1}{nQ}\,\mathbf{Z}.
+		\label{eq:profils}
+	\end{equation}
+	
+	La matrice à décomposer est alors la matrice des écarts à l'indépendance :
+	
+	\begin{equation}
+		\mathbf{S} = \mathbf{D}_r^{-1/2}
+		\left(\mathbf{P} - \mathbf{r}\,\mathbf{c}^{\top}\right)
+		\mathbf{D}_c^{-1/2},
+		\label{eq:ecarts}
+	\end{equation}
+	
+	où $\mathbf{r} = \mathbf{P}\,\mathbf{1}_K$ et $\mathbf{c} = \mathbf{P}^{\top}\mathbf{1}_n$
+	sont respectivement les marges lignes et colonnes de $\mathbf{P}$.
+	
+	% --- 1.4 Décomposition en valeurs singulières et vecteurs propres ---
+	
+	
+	L'ACM repose sur la Décomposition en Valeurs Singulières (DVS) de la matrice
+	$\mathbf{S}$ définie en~\eqref{eq:ecarts} :
+	
+	\begin{equation}
+		\mathbf{S} = \mathbf{U}\,\boldsymbol{\Sigma}\,\mathbf{V}^{\top},
+		\label{eq:svd}
+	\end{equation}
+	
+	où :
+	\begin{itemize}
+		\item $\mathbf{U} \in \mathbb{R}^{n \times r}$ contient les vecteurs singuliers
+		gauches (vecteurs propres des individus) ;
+		\item $\mathbf{V} \in \mathbb{R}^{K \times r}$ contient les vecteurs singuliers
+		droits (vecteurs propres des modalités) ;
+		\item $\boldsymbol{\Sigma} = \mathrm{diag}(\sigma_1, \sigma_2, \ldots, \sigma_r)$
+		est la matrice diagonale des valeurs singulières, avec
+		$\sigma_1 \geq \sigma_2 \geq \cdots \geq \sigma_r \geq 0$.
+	\end{itemize}
+	
+	Les valeurs propres associées à chaque axe factoriel sont :
+	
+	\begin{equation}
+		\lambda_s = \sigma_s^2, \quad s = 1, \ldots, r.
+		\label{eq:valeurs_propres}
+	\end{equation}
+	
+	Les vecteurs propres $\mathbf{v}_s$ (colonnes de $\mathbf{V}$) sont solutions du
+	problème aux valeurs propres :
+	
+	\begin{equation}
+		\mathbf{S}^{\top}\mathbf{S}\,\mathbf{v}_s = \lambda_s\,\mathbf{v}_s,
+		\qquad \|\mathbf{v}_s\| = 1.
+		\label{eq:vp_modalites}
+	\end{equation}
+	
+	La part de variance totale expliquée par l'axe $s$ est mesurée par le taux d'inertie :
+	
+	\begin{equation}
+		\tau_s = \frac{\lambda_s}{\displaystyle\sum_{s'=1}^{r} \lambda_{s'}}.
+		\label{eq:inertie}
+	\end{equation}
+	
+	% --- 1.5 Projection dans le nouvel espace factoriel ---
+	
+	
+	Une fois les vecteurs propres obtenus, les coordonnées factorielles des individus
+	sur les axes de l'ACM sont calculées par projection dans le nouvel espace. Les
+	coordonnées de l'individu $i$ sur l'axe $s$ sont données par :
+	
+	\begin{equation}
+		F_{is} = \frac{1}{\sigma_s}\,\sum_{k=1}^{K} p_{ik}\,v_{ks},
+		\label{eq:coord_individus}
+	\end{equation}
+	
+	où $p_{ik}$ est l'élément $(i,k)$ de $\mathbf{P}$ et $v_{ks}$ est la $k$-ième
+	composante du $s$-ième vecteur propre. En notation matricielle :
+	
+	\begin{equation}
+		\boxed{\mathbf{F} = \mathbf{D}_r^{-1/2}\,\mathbf{U}\,\boldsymbol{\Sigma}}
+		\label{eq:proj_individus}
+	\end{equation}
+	
+	De même, les coordonnées des modalités sur l'axe $s$ sont :
+	
+	\begin{equation}
+		G_{ks} = \frac{1}{\sigma_s}\,\sum_{i=1}^{n} p_{ik}\,u_{is},
+		\label{eq:coord_modalites}
+	\end{equation}
+	
+	soit en notation matricielle :
+	
+	\begin{equation}
+		\boxed{\mathbf{G} = \mathbf{D}_c^{-1/2}\,\mathbf{V}\,\boldsymbol{\Sigma}}
+		\label{eq:proj_modalites}
+	\end{equation}
+	
+	Les matrices $\mathbf{F}$ et $\mathbf{G}$ constituent le nouvel espace factoriel
+	dans lequel individus et modalités sont représentés simultanément, ce qui est la
+	propriété centrale du biplot en ACM.
 	\item Classification Ascendante Hiérarchique (CAH):
 	
 	\paragraph{Notion de CAH}
-	La Classification Ascendante Hiérarchique est une méthode de classification non supervisée qui vise à regrouper les individus en classes homogènes, de telle sorte que les individus appartenant à une même classe se ressemblent davantage entre eux qu'avec les individus des autres classes. Le principe de l'algorithme est ascendant: à chaque étape, les deux individus ou groupes les plus proches selon une mesure de dissimilarité sont fusionnés, jusqu'à l'obtention d'un groupe unique regroupant l'ensemble des observations. Le résultat est représenté sous la forme d'un dendrogramme, dont la coupe à un niveau donné fournit la partition en un nombre de classes souhaité. Dans le cadre de cette étude, la CAH sera appliquée aux coordonnées factorielles issues de l'ACM, en utilisant la méthode d'agrégation de Ward, qui cherche à minimiser l'inertie intra-classe et à maximiser l'inertie inter-classe afin de produire des groupes aussi homogènes et distincts que possible.
+	La Classification Ascendante Hiérarchique est ensuite réalisée à partir des coordonnées factorielles de l’ACM. Cette articulation est méthodologiquement pertinente, car la classification ne s’appuie pas directement sur les variables brutes, mais sur une représentation synthétique des principales différences entre entreprises. L’ACM réduit la complexité de l’information, puis la CAH utilise cette information pour constituer des groupes homogènes. Le principe est de regrouper progressivement les entreprises les plus proches jusqu’à obtenir une partition finale. Dans le cas retenu, la classification est contrainte à trois classes afin d’obtenir une typologie lisible et opérationnelle.\\
+	
+	Le choix de trois classes répond à une logique de synthèse. Un nombre trop élevé de classes rendrait l’interprétation plus complexe et risquerait de produire des groupes trop fragmentés pour l’aide à la décision. À l’inverse, un nombre trop faible pourrait masquer des différences importantes entre entreprises. Trois classes permettent de dégager une typologie équilibrée, suffisamment simple pour être exploitable, mais assez différenciée pour mettre en évidence plusieurs profils de besoins. Chaque classe regroupe donc des entreprises relativement proches en termes de caractéristiques et de besoins exprimés.\\
+	
+	L’interprétation finale repose sur le profilage des classes. Une fois les groupes constitués, chaque classe est décrite selon la taille des entreprises, la région, le secteur d’activité, l’ancienneté et les besoins déclarés. Cette étape est essentielle, car la CAH fournit des groupes statistiques, mais leur sens économique doit être construit à partir des modalités qui les caractérisent. Les tableaux de profilage permettent d’identifier les caractéristiques dominantes de chaque groupe. Le taux de déclaration des besoins par classe est particulièrement important, car il permet de nommer les classes selon leur contenu réel : classe à dominante productive, financière, logistique, organisationnelle ou orientée vers l’innovation.\\
+	
 	
 	\paragraph{Formalisation mathématiques}
 	
@@ -1274,6 +1422,171 @@ ce qui limite leur capacité à en tirer parti pour se faire connaître
 	L'Analyse Factorielle Discriminante est une méthode d'analyse multivariée à caractère supervisé, qui intervient en aval de la classification. Contrairement à la CAH qui est non supervisée et construit les groupes sans information préalable sur leur appartenance, l'AFD suppose que les classes sont connues et cherche à identifier les combinaisons linéaires des variables explicatives qui permettent de les séparer et de les caractériser le mieux possible. Elle permet ainsi de déterminer quelles sont les variables qui contribuent le plus à discriminer les groupes identifiés lors de la classification, et d'évaluer la qualité de cette discrimination à travers des indicateurs tels que le pouvoir discriminant des axes canoniques et le taux de bon classement des individus. Dans le cadre de cette étude, l'AFD sera appliquée aux classes d'entreprises issues de la CAH, afin de valider la pertinence de la partition obtenue et d'identifier les variables secteur d'activité, région, type de besoin, taille de l'entreprise qui caractérisent le mieux chacun des profils constitués. Les résultats de l'AFD alimenteront directement la logique de recommandation de la plateforme, en fournissant les critères objectifs sur lesquels reposera l'algorithme de mise en relation des entreprises.
 	\end{enumerate}
 	
+	\paragraph{Formulation mathématiques}
+	
+	Soit $n$ individus répartis en $g$ classes $\mathcal{C}_1, \ldots, \mathcal{C}_g$,
+	chaque individu $i$ étant décrit par un vecteur $\mathbf{x}_i \in \mathbb{R}^p$.
+	La variance totale se décompose en :
+	
+	\begin{equation}
+		\mathbf{T} = \mathbf{W} + \mathbf{B},
+		\label{eq:decomp_variance}
+	\end{equation}
+	
+	où la matrice de dispersion intra-classes $\mathbf{W}$ et la matrice de dispersion
+	inter-classes $\mathbf{B}$ sont définies par :
+	
+	\begin{align}
+		\mathbf{W} &= \sum_{c=1}^{g} \sum_{i \in \mathcal{C}_c}
+		\left(\mathbf{x}_i - \boldsymbol{\mu}_c\right)
+		\left(\mathbf{x}_i - \boldsymbol{\mu}_c\right)^{\top},
+		\label{eq:W} \\[6pt]
+		\mathbf{B} &= \sum_{c=1}^{g} n_c\,
+		\left(\boldsymbol{\mu}_c - \boldsymbol{\mu}\right)
+		\left(\boldsymbol{\mu}_c - \boldsymbol{\mu}\right)^{\top},
+		\label{eq:B}
+	\end{align}
+	
+	avec $\boldsymbol{\mu}_c = \frac{1}{n_c}\sum_{i \in \mathcal{C}_c} \mathbf{x}_i$
+	le centroïde de la classe $c$, $n_c$ son effectif, et
+	$\boldsymbol{\mu} = \frac{1}{n}\sum_{i=1}^{n} \mathbf{x}_i$ le centre de gravité global.
+	
+	
+	L'AFD cherche les vecteurs $\mathbf{a} \in \mathbb{R}^p$ qui maximisent le rapport
+	de la variance inter-classes à la variance intra-classes dans l'espace projeté,
+	appelé \textit{critère de Fisher} :
+	
+	\begin{equation}
+		\mathbf{a}^* = \underset{\mathbf{a}}{\arg\max}\;
+		\frac{\mathbf{a}^{\top}\mathbf{B}\,\mathbf{a}}
+		{\mathbf{a}^{\top}\mathbf{W}\,\mathbf{a}}.
+		\label{eq:fisher}
+	\end{equation}
+	
+	Ce problème d'optimisation est équivalent au problème aux valeurs propres généralisé :
+	
+	\begin{equation}
+		\mathbf{B}\,\mathbf{a} = \lambda\,\mathbf{W}\,\mathbf{a},
+		\label{eq:vp_generalisee}
+	\end{equation}
+	
+	qui se ramène, en posant $\mathbf{a} = \mathbf{W}^{-1/2}\tilde{\mathbf{a}}$, au
+	problème aux valeurs propres standard :
+	
+	\begin{equation}
+		\mathbf{W}^{-1}\mathbf{B}\,\mathbf{a}_s = \lambda_s\,\mathbf{a}_s,
+		\qquad s = 1, \ldots, \min(p,\, g-1).
+		\label{eq:vp_standard}
+	\end{equation}
+	
+	Les vecteurs propres $\mathbf{a}_1, \mathbf{a}_2, \ldots$ ordonnés selon les valeurs
+	propres décroissantes $\lambda_1 \geq \lambda_2 \geq \cdots$ constituent les
+	\textbf{axes discriminants} (fonctions LD1, LD2, \ldots). Le nombre maximal d'axes
+	est $\min(p,\, g-1)$.
+	
+	La part de discrimination expliquée par l'axe $s$ est :
+	
+	\begin{equation}
+		\tau_s = \frac{\lambda_s}{\displaystyle\sum_{s'=1}^{\min(p,\,g-1)} \lambda_{s'}}.
+		\label{eq:inertie_afd}
+	\end{equation}
+	
+	% --- 2.3 Projection sur les axes discriminants ---
+	
+	Les coordonnées discriminantes de l'individu $i$ sur l'axe $s$ sont obtenues par
+	projection de son vecteur de variables centré sur le vecteur discriminant $\mathbf{a}_s$ :
+	
+	\begin{equation}
+		y_{is} = \mathbf{a}_s^{\top}\,(\mathbf{x}_i - \boldsymbol{\mu}),
+		\label{eq:projection}
+	\end{equation}
+	
+	soit, pour l'ensemble des individus :
+	
+	\begin{equation}
+		\boxed{\mathbf{Y} = (\mathbf{X} - \mathbf{1}_n\boldsymbol{\mu}^{\top})\,\mathbf{A}}
+		\label{eq:proj_matrice}
+	\end{equation}
+	
+	où $\mathbf{A} = [\mathbf{a}_1 \mid \mathbf{a}_2 \mid \cdots \mid \mathbf{a}_d]
+	\in \mathbb{R}^{p \times d}$ est la matrice des $d$ vecteurs discriminants retenus
+	et $\mathbf{Y} \in \mathbb{R}^{n \times d}$ est la matrice des scores discriminants.
+	
+	% --- 2.4 Règle de classification bayésienne ---
+	
+	
+	La règle de classification repose sur le théorème de Bayes. Pour un individu $i$
+	de vecteur $\mathbf{x}_i$, la probabilité a posteriori d'appartenir à la classe
+	$c$ est :
+	
+	\begin{equation}
+		P(\mathcal{C}_c \mid \mathbf{x}_i)
+		= \frac{P(\mathbf{x}_i \mid \mathcal{C}_c)\,\pi_c}
+		{\displaystyle\sum_{c'=1}^{g} P(\mathbf{x}_i \mid \mathcal{C}_{c'})\,\pi_{c'}},
+		\label{eq:bayes}
+	\end{equation}
+	
+	où $\pi_c = n_c / n$ est la probabilité a priori de la classe $c$ et
+	$P(\mathbf{x}_i \mid \mathcal{C}_c)$ est la vraisemblance de l'observation
+	sachant la classe $c$.
+	
+	Sous l'hypothèse de normalité multivariée et d'homoscédasticité
+	(matrices de covariance égales entre classes, $\boldsymbol{\Sigma}_c = \boldsymbol{\Sigma}$),
+	la vraisemblance s'écrit :
+	
+	\begin{equation}
+		P(\mathbf{x}_i \mid \mathcal{C}_c)
+		= \frac{1}{(2\pi)^{p/2}|\boldsymbol{\Sigma}|^{1/2}}
+		\exp\!\left(
+		-\frac{1}{2}
+		(\mathbf{x}_i - \boldsymbol{\mu}_c)^{\top}
+		\boldsymbol{\Sigma}^{-1}
+		(\mathbf{x}_i - \boldsymbol{\mu}_c)
+		\right).
+		\label{eq:vraisemblance}
+	\end{equation}
+	
+	En substituant~\eqref{eq:vraisemblance} dans~\eqref{eq:bayes} et en prenant le
+	logarithme, la règle de décision revient à maximiser le \textbf{score discriminant
+		linéaire de Bayes} :
+	
+	\begin{equation}
+		\delta_c(\mathbf{x}_i)
+		= \mathbf{x}_i^{\top}\,\boldsymbol{\Sigma}^{-1}\boldsymbol{\mu}_c
+		- \frac{1}{2}\,\boldsymbol{\mu}_c^{\top}\,\boldsymbol{\Sigma}^{-1}\boldsymbol{\mu}_c
+		+ \log(\pi_c).
+		\label{eq:score_bayes}
+	\end{equation}
+	
+	L'individu $i$ est alors affecté à la classe $\hat{c}$ qui maximise ce score :
+	
+	\begin{equation}
+		\boxed{\hat{c}(\mathbf{x}_i)
+			= \underset{c \in \{1,\ldots,g\}}{\arg\max}\;
+			\delta_c(\mathbf{x}_i)}
+		\label{eq:regle_classif}
+	\end{equation}
+	
+	Cette règle est équivalente à affecter l'individu à la classe dont le centroïde
+	$\boldsymbol{\mu}_c$ est le plus proche au sens de la \textbf{distance de Mahalanobis}
+	corrigée des probabilités a priori :
+	
+	\begin{equation}
+		d_M^2(\mathbf{x}_i,\, \mathcal{C}_c)
+		= (\mathbf{x}_i - \boldsymbol{\mu}_c)^{\top}\,
+		\boldsymbol{\Sigma}^{-1}\,
+		(\mathbf{x}_i - \boldsymbol{\mu}_c)
+		- 2\log(\pi_c).
+		\label{eq:mahalanobis}
+	\end{equation}
+	
+	La matrice de covariance commune $\boldsymbol{\Sigma}$ est estimée par la matrice
+	de dispersion intra-classes poolée :
+	
+	\begin{equation}
+		\hat{\boldsymbol{\Sigma}} = \frac{\mathbf{W}}{n - g}.
+		\label{eq:sigma_estime}
+	\end{equation}
 	
 
 	
@@ -1285,273 +1598,828 @@ ce qui limite leur capacité à en tirer parti pour se faire connaître
 	\label{sec:methodologie_dev}
 	%=============================================================
 	
-	La conception et le développement de la plateforme gouvernementale
-	de cartographie et de mise en relation des entreprises, dénommée
-	\textit{Business Partnership}, constituent le second volet de la
-	démarche méthodologique adoptée dans le cadre de ce travail. Cette
-	phase s'appuie sur des méthodes éprouvées de modélisation des
-	systèmes d'information, sur des algorithmes issus du domaine des
-	Data Sciences et sur des technologies de développement web modernes.
-	Elle est structurée autour de trois étapes complémentaires~: la
-	conception de la base de données, la définition de l'algorithme de
-	mise en relation des entreprises, et la mise en place de
-	l'environnement de développement.
-	
-	%-------------------------------------------------------------
-	\subsection{Conception de la base de données}
-	%-------------------------------------------------------------
-	
-	La base de données constitue le socle fondamental de la plateforme
-	\textit{Business Partnership}, en ce qu'elle assure le stockage,
-	l'organisation et la restitution structurée de l'ensemble des
-	informations relatives aux entreprises et à leurs besoins. Sa
-	conception rigoureuse conditionne directement la fiabilité, les
-	performances et l'évolutivité de la solution développée. La méthode
-	retenue pour cette tâche est la méthode \textbf{MERISE}
-	(Méthode d'Étude et de Réalisation Informatique pour les Systèmes
-	d'Entreprise).
-	
-	MERISE est une méthode d'analyse, de conception et de gestion de
-	projets informatiques développée en France à la fin des années 1970,
-	qui s'est largement imposée dans le monde francophone comme référence
-	méthodologique pour la modélisation des systèmes d'information
-	\citep{tardieu_1983}. Elle repose sur une séparation claire entre
-	les données et les traitements, et propose une démarche structurée
-	en plusieurs niveaux d'abstraction successifs, allant du niveau
-	conceptuel au niveau physique.
-	
-	La démarche de conception adoptée s'est articulée autour de
-	trois niveaux~:
-	
-	\begin{enumerate}
-		
-		\item \textbf{Le niveau conceptuel}~: ce niveau a consisté à
-		élaborer le \textbf{Modèle Conceptuel des Données (MCD)}, qui
-		représente les entités du système d'information, leurs attributs
-		et les associations qui les relient, indépendamment de toute
-		considération technique ou informatique. Les entités principales
-		identifiées sont~: \texttt{Entreprise}, \texttt{Besoin},
-		\texttt{Secteur}, \texttt{Region} et \texttt{Partenariat}.
-		Les cardinalités des associations ont été définies de manière
-		à refléter fidèlement les règles de gestion du domaine~: une
-		entreprise peut exprimer plusieurs besoins, un besoin est
-		associé à une et une seule entreprise, et une mise en relation
-		implique au minimum deux entreprises.
-		
-		\item \textbf{Le niveau logique}~: le MCD a ensuite été
-		transformé en \textbf{Modèle Logique des Données (MLD)},
-		qui traduit les entités et associations en tables relationnelles
-		en appliquant les règles de passage du modèle conceptuel au
-		modèle relationnel. Chaque entité devient une table, chaque
-		attribut devient une colonne, et les associations sont
-		matérialisées par des clés étrangères assurant l'intégrité
-		référentielle entre les tables.
-		
-		\item \textbf{Le niveau physique}~: enfin, le MLD a été
-		converti en \textbf{Modèle Physique des Données (MPD)}, qui
-		correspond à l'implémentation concrète de la base de données
-		dans le système de gestion de bases de données retenu, en
-		tenant compte des spécificités techniques de l'environnement
-		de développement choisi.
-		
-	\end{enumerate}
-	
-	%-------------------------------------------------------------
-	\subsection{Algorithme de mise en relation des entreprises}
-	%-------------------------------------------------------------
-	
-	L'algorithme de mise en relation constitue le c\oe ur fonctionnel
-	de la plateforme \textit{Business Partnership}. Son objectif est
-	d'identifier, parmi l'ensemble des entreprises enregistrées sur la
-	plateforme, celles qui sont les plus susceptibles de répondre aux
-	besoins exprimés par une entreprise donnée, en se fondant sur une
-	mesure objective de proximité entre leurs profils respectifs. La
-	démarche algorithmique retenue s'articule en trois étapes
-	successives.
-	
-	\paragraph{Étape 1 — Réduction de dimension par ACM}
-	
-	Les données relatives aux entreprises et à leurs besoins étant
-	majoritairement de nature qualitative, une Analyse des
-	Correspondances Multiples (ACM) est préalablement conduite afin
-	de réduire la dimensionnalité de l'espace de représentation tout
-	en préservant l'essentiel de l'information contenue dans les
-	données. Les entreprises sont ainsi projetées dans un espace
-	factoriel de dimension réduite, défini par les deux ou trois
-	premiers axes factoriels qui concentrent la plus grande part
-	de l'inertie totale du nuage \citep{lebart_morineau_piron_1995}.
-	Chaque entreprise $i$ est alors représentée par son vecteur de
-	coordonnées factorielles~:
-	
-	\begin{equation}
-		\mathbf{f}_i = (F_{i1}, F_{i2}, \ldots, F_{iq})^{\top}
-		\in \mathbb{R}^q
-		\label{eq:vecteur_factoriel}
-	\end{equation}
-	
-	où $q \in \{2, 3\}$ désigne le nombre d'axes factoriels retenus.
-	
-	\paragraph{Étape 2 — Calcul de la similarité cosinus}
-	
-	La proximité entre deux entreprises $i$ et $j$ dans l'espace
-	factoriel est mesurée à l'aide de la \textbf{similarité cosinus},
-	définie comme le cosinus de l'angle formé par leurs vecteurs de
-	coordonnées factorielles. Cette mesure, largement utilisée dans
-	les systèmes de recommandation et les moteurs de recherche
-	d'information \citep{goodfellow2016deep}, présente l'avantage
-	d'être insensible à la norme des vecteurs et de se concentrer
-	uniquement sur leur orientation dans l'espace factoriel. Elle
-	est définie par~:
-	
-	\begin{equation}
-		\text{sim}(i, j) =
-		\frac{\mathbf{f}_i \cdot \mathbf{f}_j}
-		{\|\mathbf{f}_i\| \cdot \|\mathbf{f}_j\|}
-		= \frac{\displaystyle\sum_{s=1}^{q} F_{is} \cdot F_{js}}
-		{\displaystyle\sqrt{\sum_{s=1}^{q} F_{is}^2}
-			\cdot
-			\displaystyle\sqrt{\sum_{s=1}^{q} F_{js}^2}}
-		\label{eq:similarite_cosinus}
-	\end{equation}
-	
-	La valeur de $\text{sim}(i, j)$ est comprise entre $-1$ et $1$.
-	Une valeur proche de $1$ indique que les deux entreprises ont
-	des profils de besoins très similaires et sont donc de bonnes
-	candidates à une mise en relation~; une valeur proche de $0$
-	indique une absence de corrélation entre leurs profils~; et
-	une valeur négative indique des profils opposés.
-	
-	\paragraph{Étape 3 — Génération des recommandations}
-	
-	Pour une entreprise cible $i$, l'algorithme calcule sa
-	similarité cosinus avec l'ensemble des autres entreprises
-	enregistrées sur la plateforme, puis sélectionne les $k$
-	entreprises les plus similaires selon le critère~:
-	
-	\begin{equation}
-		\mathcal{R}(i) = \underset{j \neq i}{\text{top-}k}
-		\left\{ \text{sim}(i, j) \right\}
-		\label{eq:recommandation}
-	\end{equation}
-	
-	Ces $k$ entreprises constituent la liste de recommandations
-	présentée à l'entreprise $i$ sur la plateforme, lui permettant
-	d'identifier en priorité les partenaires potentiels dont le
-	profil est le plus complémentaire au sien. La valeur de $k$
-	est un paramètre configurable de la plateforme, fixé par défaut
-	à $k = 5$ recommandations par entreprise.
-	
-	%-------------------------------------------------------------
-	\subsection{Environnement de développement}
-	%-------------------------------------------------------------
-	
-	Le développement de la plateforme \textit{Business Partnership}
-	a été réalisé dans un environnement technique soigneusement
-	sélectionné, en tenant compte des contraintes de performance,
-	de maintenabilité et d'adéquation aux objectifs fonctionnels
-	du projet. Le tableau~\ref{tab:env_dev} ci-dessous présente
-	une synthèse des outils et technologies mobilisés.
-	
-\begin{table}[H]
-	\centering
-	\caption{Environnement technique de développement de la plateforme
-		\textit{Business Partnership}}
-	\label{tab:env_dev}
-	\renewcommand{\arraystretch}{1.6}
-	\begin{tabularx}{\textwidth}{
-			>{\raggedright\arraybackslash\bfseries}p{3.2cm}
-			>{\raggedright\arraybackslash}p{3.2cm}
-			>{\raggedright\arraybackslash}X}
-		
-		\toprule
-		\rowcolor{primary!15}
-		\textbf{Composante} & \textbf{Outil / Technologie} & \textbf{Justification} \\
-		\midrule
-		
-		Éditeur de code
-		& Visual Studio Code
-		& Éditeur léger, extensible et largement adopté, offrant
-		un support natif de Python et des extensions dédiées
-		au développement web. \\[4pt]
-		
-		Langage de programmation
-		& Python 3
-		& Langage de référence en Data Sciences, offrant un
-		écosystème de bibliothèques riche adapté au traitement
-		de données et au développement d'applications web. \\[4pt]
-		
-		Framework web
-		& Django (MVT)
-		& Framework Python de haut niveau suivant le paradigme
-		Modèle-Vue-Template (MVT), favorisant un développement
-		rapide, sécurisé et structuré. Intègre nativement un
-		ORM facilitant l'interaction avec la base de données. \\[4pt]
-		
-		\gls{sgbd}
-		& SQLite
-		& Base de données relationnelle légère, sans serveur
-		dédié, adaptée à la phase de prototypage. Une migration
-		vers PostgreSQL est prévue en production pour de
-		meilleures performances. \\[4pt]
-		
-		Analyse statistique
-		& R et Python
-		& Bibliothèques pandas, scikit-learn et FactoMineR
-		mobilisées pour la réalisation de l'ACM, de la CAH
-		et de l'AFD, ainsi que pour le prétraitement des
-		données de l'enquête. \\[4pt]
-		
-		Gestion de version
-		& Git / GitHub
-		& Système de contrôle de version permettant de suivre
-		l'évolution du code source et d'assurer la traçabilité
-		des modifications apportées à l'application. \\
-		
-		\bottomrule
-	\end{tabularx}
-\end{table}
-
-	L'architecture de la plateforme suit le patron de conception
-	\textbf{MVT (Modèle-Vue-Template)} proposé par Django, qui
-	constitue une adaptation du patron MVC (Modèle-Vue-Contrôleur)
-	largement utilisé dans le développement d'applications web.
-	Dans ce paradigme, le \textbf{Modèle} définit la structure des
-	données et gère les interactions avec la base de données via
-	l'ORM de Django~; la \textbf{Vue} contient la logique métier
-	de l'application et traite les requêtes HTTP entrantes~; et le
-	\textbf{Template} prend en charge la présentation et le rendu
-	des pages HTML transmises à l'utilisateur final. Cette séparation
-	claire des responsabilités entre les différentes couches de
-	l'application favorise la maintenabilité du code, facilite les
-	tests unitaires et permet une évolution indépendante de chacune
-	des composantes de la solution.
-	
 	
 	
 	%============================================================
 	%  CHAPITRE 4 : PRÉSENTATION DES RÉSULTATS
 	%============================================================
+	%=============================================================
 	\chapter{Présentation des résultats}
-	\label{chap:resultats}
+	%=============================================================
 	
-	\section{Présentation des résultats sur la cartographie des besoins des entreprises}
-	\label{sec:plateforme}
+	Ce chapitre présente l'ensemble des résultats obtenus dans le cadre
+	de ce travail, structurés autour de deux axes complémentaires. Le
+	premier axe est consacré à la présentation et à l'interprétation des
+	résultats issus de l'analyse statistique des données de l'enquête
+	réalisée par le \gls{minepat} sur la cartographie des besoins des
+	entreprises du tissu productif local. Cette analyse s'articule en
+	trois niveaux de profondeur croissante~: une analyse univariée
+	décrivant la distribution des entreprises selon leurs caractéristiques
+	principales, une analyse bivariée croisant ces caractéristiques avec
+	les besoins exprimés et validant les associations observées par le
+	test du $\chi^2$ de Pearson, et une analyse multidimensionnelle
+	mobilisant l'Analyse des Correspondances Multiples (ACM), la
+	Classification Ascendante Hiérarchique (CAH) et l'Analyse Factorielle
+	Discriminante (AFD). Le second axe est consacré à la présentation de
+	la plateforme \textit{Business Partnership}. L'ensemble de ces
+	analyses ont été conduites sur un fichier contenant
+	\textbf{1\,194 entreprises}, issues de l'enquête nationale du
+	\gls{minepat} de 2025.
 	
-	\subsection{Statistique descriptive simple}
-	\subsubsection{Statistique uni variée}
-	\subsubsection{Statistique bivariée}
+	%=============================================================
+	\section{Résultats sur la cartographie des entreprises}
+	\label{sec:resultats_carto}
+	%=============================================================
+	
+	Cette section est consacrée à la présentation des résultats de l'analyse statistique des
+	données collectées lors de l'enquête. Elle se veux etre progressive en débutant par une ~: description
+	univariée, s'en suivra une analyse des associations bivariées, et enfin  l'exploration
+	multidimensionnelle.
+	
+	%-------------------------------------------------------------
+	\subsection{Résultats de l'analyse univariée}
+	\label{subsec:univariee}
+	%-------------------------------------------------------------
+	
+	L'analyse univariée a consisté à déterminer le nombre et le
+	pourcentage d'entreprises présentant des modalités similaires sur
+	les différentes variables retenues~: statut juridique, région
+	d'implantation, taille, ancienneté et secteur d'activité principal.
+	Elle constitue la première photographie descriptive du tissu productif
+	camerounais couvert par l'enquête, et permet d'identifier les
+	caractéristiques dominantes des entreprises interrogées avant
+	d'explorer les relations entre leurs attributs et leurs besoins.
+	
+	\subsubsection{Répartition des entreprises par statut juridique}
+	Le statut juridique est la forme revêtue par une entreprise. Il donne une indication sur la structure de l’entreprise et sur le cadre juridique dans lequel elle naît, évolue et interagit avec ses partenaires
+	%(lecoindesentreprenerus.fr).
+	La distribution des entreprises selon leur statut juridique révèle
+	une prépondérance des Sociétés à Responsabilité Limitée (SARL), qui
+	représentent 35,0\,\% des entreprises de l'échantillon. Les entreprises individuelles viennent en deuxième position avec 
+	28,7\%. Ce qui pourrait traduire une difficulté pour les grandes entreprises à se constituer dans l'écosystème Camerounais.
+	
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.75\textwidth]{statut.jpeg}
+		\caption{Répartition des entreprises enquêtées par statut juridique}
+		\label{fig:statut_juridique}
+	\end{figure}
+\newpage
+	\subsubsection{Répartition des entreprises par région}
+	Le Cameroun compte 10 régions et au vue des données exploitées, nous pouvons relevés une répartition assez inéquitable.
+	En effet plus de la moitié des entreprises interrogées sont implentées dans les régions du Centre et du Littoral avec
+	respectivement un pourcentage de 39,3\% et 17,8\%. Les autres régions se partagent 42,9\% avec les régions du Nord-Ouest et du Sud-Ouest qui ferment la marque avec respectivement 2,7\% et 2,8\% des entreprises étudiées. 
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.75\textwidth]{repartition_region.jpeg}
+		\caption{Répartition des entreprises enquêtées par région}
+		\label{fig:region}
+	\end{figure}
 	
 	
 	
-	\subsection{Statistique Multidimentionnelle}
-	\subsubsection{Résultat ACM}
-	\subsubsection{Résultat CAH}
-	\subsubsection{Résultat AFD}
-	\subsection{Synthèse des résultats}
+	\subsubsection{Répartition des entreprises par taille}
+	La taille de l'entreprise repose sur le nombre de salariés et le chiffre d'affaires annuel de celle ci. %(https://blog.hubspot.fr/sales/taille-entreprise-classification)
+	La discribution des entreprises par taille reflète la structure du tissus productif camerounais,
+	caractérisé par une prédominance des petites entreprises et des très petites entreprises Les Grandes Entreprises sont très peu nombreuses et constituent 1,3\% des entreprises interrogées.
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.75\textwidth]{repartition_taille.jpeg}
+		\caption{Répartition des entreprises enquêtées par taille}
+		\label{fig:taille}
+	\end{figure}
+	
+	\subsubsection{Répartition des entreprises par ancienneté}
+	La capacité d'une entreprise à se maintenir dans le temps témoigne de sa résilience et de sa force. 
+	La répartition des entreprises par ancienneté indique que ce sont les entreprises de 5 à 9 ans
+	d'ages qui ce sont le plus prétées au jeu avec 39,0\% de participation. Les entreprises ayant pas plus de 4  ans sont relativement nombreuses avec un pourcentage de 31,2\%. 
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.75\textwidth]{anciennete.jpeg}
+		\caption{Répartition des entreprises enquêtées par ancienneté}
+		\label{fig:anciennete}
+	\end{figure}
 	
 	
-	
+	\subsubsection{Répartition des entreprises par secteur d'activité}
+	Les secteurs d'activités des entreprises locales sont plutot diversifiés. Nous avons pu relevé que 
+le secteur de l'agriculture et de l'agroalimentaire est le plus représenté dans les entreprises locales, 
+il détient à lui seul 62,6\% des entreprises étudiées. Les secteurs de l'industrie manufacturière et des 
+Technologies de l'Informations et de la Communication sont assez peu nombreuses avec respectivement des taux de 5,2 \% et 3,7 \%. 
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.75\textwidth]{repartition_activite.jpeg}
+		\caption{Répartition des entreprises enquêtées par secteur d'activité}
+		\label{fig:secteur}
+	\end{figure}
 
+	\subsubsection{Répartition des besoins exprimés}
+	
+	Les entreprises interrogées ont exprimé des besoins divers en relation avec les problèmes rencontrés quotidiennement. Le besoin qui revient le plus est celui du financement avec un taux de 20,1\% ce qui pourrait s'expliquer par une prédominance des TPE et des PME qui ont besoin de fonds pour une meilleur implentation. Vient ensuite le besoin en équipements avec 19,4\%, le besoin de transport est la moins fréquente ce qui traduirait l'existence d'infrastructures adéquat pour l'acheminement des produits.
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.75\textwidth]{repartition_besoins.jpeg}
+		\caption{Répartition globale des besoins exprimés par les entreprises
+			enquêtées}
+		\label{fig:besoins_global}
+		\end{figure}
+			
+			%-------------------------------------------------------------
+			\subsection{Résultats de l'analyse bivariée}
+			\label{subsec:bivariee}
+			%-------------------------------------------------------------
+			
+			L'analyse bivariée a consisté à croiser les variables descriptives
+			des entreprises avec les besoins qu'elles ont exprimés, afin
+			d'identifier d'éventuelles associations structurelles entre les
+			caractéristiques des entreprises et leurs besoins spécifiques. Deux
+			outils ont été mobilisés~: les tableaux de contingence, qui permettent
+			de visualiser la distribution conjointe des variables, et le test du
+			$\chi^2$ de Pearson accompagné du coefficient $V$ de Cramér, qui
+			permettent de tester et de quantifier l'intensité de ces associations
+			\citep{saporta_2010}.
+			
+			\subsubsection{Répartition des besoins selon le statut juridique}
+			
+			Les figures ci-dessous présentent la distribution des besoins des
+			entreprises selon leur statut juridique, ainsi que les résultats du
+			test d'association correspondant.
+			
+			\begin{figure}[H]
+				\centering
+				\includegraphics[width=\textwidth]{carte_chaleur_besoins_statut_juridique.jpeg}
+				\caption{Distribution des besoins des entreprises selon le statut
+					juridique}
+				\label{fig:besoins_statut}
+			\end{figure}
+			
+			\begin{table}[H]
+				\centering
+				\caption{Test du $\chi^2$ entre le statut juridique et les besoins
+					des entreprises}
+				\label{tab:khi2_statut}
+				\renewcommand{\arraystretch}{1.4}
+				\begin{tabularx}{\textwidth}{>{\raggedright\arraybackslash}X
+						r r
+						>{\centering\arraybackslash}p{2.8cm}
+						r}
+					\toprule
+					\rowcolor{primary!15}
+					\textbf{Besoin} & \textbf{$\chi^2$} & \textbf{p-valeur}
+					& \textbf{Significatif} & \textbf{$V$ Cramér} \\
+					\midrule
+					Besoin en intrants        & 14,26 & 0,027  & Oui ($p < 0{,}05$) & 0,109 \\
+					\rowcolor{lightgray}
+					Besoin en financement     &  2,94 & 0,817  & Non                & 0,050 \\
+					Besoin en emballages      & 44,47 & $<0{,}001$ & Oui ($p < 0{,}05$) & 0,193 \\
+					\rowcolor{lightgray}
+					Besoin en transport       & 50,44 & $<0{,}001$ & Oui ($p < 0{,}05$) & 0,206 \\
+					Appui aux entreprises     & 26,32 & $<0{,}001$ & Oui ($p < 0{,}05$) & 0,148 \\
+					\rowcolor{lightgray}
+					Besoin en équipements     & 61,66 & $<0{,}001$ & Oui ($p < 0{,}05$) & 0,227 \\
+					Innovation et recherche   & 77,88 & $<0{,}001$ & Oui ($p < 0{,}05$) & 0,255 \\
+					\bottomrule
+				\end{tabularx}
+			\end{table}
+			
+			Les résultats du test du $\chi^2$ révèlent que le statut juridique
+			est significativement associé à six des sept besoins étudiés, à
+			l'exception du besoin en financement ($\chi^2 = 2{,}94$~;
+			$p = 0{,}817$). Les associations les plus fortes concernent le besoin
+			en innovation et en recherche ($V = 0{,}255$) et le besoin en
+			équipements ($V = 0{,}227$), suggérant que la nature juridique de
+			l'entreprise influence significativement la manière dont elle exprime
+			ses besoins technologiques. Les entreprises de type SUARL/SARLU
+			présentent notamment le taux le plus élevé de besoin en appui aux
+			entreprises (20,0\,\%) et en financement (26,2\,\%), tandis que les
+			Coopératives expriment davantage de besoins en innovation
+			(14,1\,\%). Le besoin en financement constitue une exception notable~:
+			il est exprimé de manière relativement homogène quelle que soit la
+			forme juridique de l'entreprise, ce qui suggère que la contrainte
+			financière est une réalité transversale à l'ensemble du tissu
+			économique, indépendante du cadre juridique de l'entreprise.
+			
+			\subsubsection{Répartition des besoins selon la région}
+			
+			\begin{figure}[H]
+				\centering
+				\includegraphics[width=\textwidth]{carte_chaleur_besoins_region.jpeg}
+				\caption{Distribution des besoins des entreprises selon la région
+					d'implantation}
+				\label{fig:besoins_region}
+			\end{figure}
+			
+			\begin{table}[H]
+				\centering
+				\caption{Test du $\chi^2$ entre la région d'implantation et les besoins
+					des entreprises}
+				\label{tab:khi2_region}
+				\renewcommand{\arraystretch}{1.4}
+				\begin{tabularx}{\textwidth}{>{\raggedright\arraybackslash}X
+						r r
+						>{\centering\arraybackslash}p{2.8cm}
+						r}
+					\toprule
+					\rowcolor{primary!15}
+					\textbf{Besoin} & \textbf{$\chi^2$} & \textbf{p-valeur}
+					& \textbf{Significatif} & \textbf{$V$ Cramér} \\
+					\midrule
+					Besoin en intrants        & 28,91 & $<0{,}001$ & Oui ($p < 0{,}05$) & 0,156 \\
+					\rowcolor{lightgray}
+					Besoin en financement     &  6,21 & 0,718  & Non                    & 0,072 \\
+					Besoin en emballages      & 18,69 & 0,028  & Oui ($p < 0{,}05$)    & 0,125 \\
+					\rowcolor{lightgray}
+					Besoin en transport       & 29,83 & $<0{,}001$ & Oui ($p < 0{,}05$) & 0,158 \\
+					Appui aux entreprises     & 23,36 & 0,005  & Oui ($p < 0{,}05$)    & 0,140 \\
+					\rowcolor{lightgray}
+					Besoin en équipements     & 28,25 & $<0{,}001$ & Oui ($p < 0{,}05$) & 0,154 \\
+					Innovation et recherche   & 23,77 & 0,005  & Oui ($p < 0{,}05$)    & 0,141 \\
+					\bottomrule
+				\end{tabularx}
+			\end{table}
+			
+			La région d'implantation s'avère significativement associée à six
+			besoins sur sept, le besoin en financement étant à nouveau le seul
+			pour lequel aucune association significative n'est détectée
+			($\chi^2 = 6{,}21$~; $p = 0{,}718$). Ce résultat confirme le
+			caractère transversal de la contrainte financière, commune à
+			l'ensemble des régions. Les besoins en transport ($V = 0{,}158$)
+			et en intrants ($V = 0{,}156$) présentent les associations les plus
+			fortes avec la région, ce qui est cohérent avec les disparités
+			infrastructurelles importantes entre les régions camerounaises.
+			Les régions du Nord-Ouest de l'Adamaoua et de l'Est, qui concentrent une part
+			significative des entreprises à besoins en transport élevés,
+			illustrent comment les contraintes géographiques et l'état des
+			infrastructures conditionnent les priorités des entreprises locales.
+			
+			\subsubsection{Répartition des besoins selon l'ancienneté}
+			
+			\begin{figure}[H]
+				\centering
+				\includegraphics[width=\textwidth]{carte_chaleur_besoins_anciennete.jpeg}
+				\caption{Distribution des besoins des entreprises selon leur
+					ancienneté}
+				\label{fig:besoins_anciennete}
+			\end{figure}
+			
+			\begin{table}[H]
+				\centering
+				\caption{Test du $\chi^2$ entre l'ancienneté et les besoins
+					des entreprises}
+				\label{tab:khi2_anciennete}
+				\renewcommand{\arraystretch}{1.4}
+				\begin{tabularx}{\textwidth}{>{\raggedright\arraybackslash}X
+						r r
+						>{\centering\arraybackslash}p{2.8cm}
+						r}
+					\toprule
+					\rowcolor{primary!15}
+					\textbf{Besoin} & \textbf{$\chi^2$} & \textbf{p-valeur}
+					& \textbf{Significatif} & \textbf{$V$ Cramér} \\
+					\midrule
+					Besoin en intrants        &  6,46 & 0,264  & Non                 & 0,074 \\
+					\rowcolor{lightgray}
+					Besoin en financement     &  4,44 & 0,488  & Non                 & 0,061 \\
+					Besoin en emballages      &  5,09 & 0,405  & Non                 & 0,065 \\
+					\rowcolor{lightgray}
+					Besoin en transport       &  5,52 & 0,356  & Non                 & 0,068 \\
+					Appui aux entreprises     & 11,84 & 0,037  & Oui ($p < 0{,}05$)  & 0,100 \\
+					\rowcolor{lightgray}
+					Besoin en équipements     & 14,84 & 0,011  & Oui ($p < 0{,}05$)  & 0,111 \\
+					Innovation et recherche   & 20,10 & 0,001  & Oui ($p < 0{,}05$)  & 0,130 \\
+					\bottomrule
+				\end{tabularx}
+			\end{table}
+			
+			L'ancienneté de l'entreprise est le critère présentant le moins
+			d'associations significatives avec les besoins, puisque seulement
+			trois besoins sur sept lui sont significativement liés. Les entreprises
+			jeunes (moins de 3 ans) expriment davantage de besoins en financement
+			(22,2\,\%) et en équipements (21,1\,\%), ce qui s'explique par leur
+			stade de développement~: en phase de démarrage, l'accès aux
+			ressources matérielles et financières constitue la contrainte
+			prioritaire. À l'inverse, les entreprises plus matures (20 ans et
+			plus) expriment un besoin en innovation et en recherche plus marqué
+			(13,9\,\%), témoignant d'une préoccupation croissante pour la
+			compétitivité à long terme et la modernisation technologique au fur
+			et à mesure que l'entreprise se consolide.
+			
+			\subsubsection{Répartition des besoins selon le secteur d'activité}
+			
+			\begin{figure}[H]
+				\centering
+				\includegraphics[width=\textwidth]{carte_chaleur_besoins_secteurs_activite.jpeg}
+				\caption{Distribution des besoins des entreprises selon le secteur
+					d'activité}
+				\label{fig:besoins_secteur}
+			\end{figure}
+			
+			\begin{table}[H]
+				\centering
+				\caption{Test du $\chi^2$ entre le secteur d'activité et les besoins
+					des entreprises}
+				\label{tab:khi2_secteur}
+				\renewcommand{\arraystretch}{1.4}
+				\begin{tabularx}{\textwidth}{>{\raggedright\arraybackslash}X
+						r r
+						>{\centering\arraybackslash}p{2.8cm}
+						r}
+					\toprule
+					\rowcolor{primary!15}
+					\textbf{Besoin} & \textbf{$\chi^2$} & \textbf{p-valeur}
+					& \textbf{Significatif} & \textbf{$V$ Cramér} \\
+					\midrule
+					Besoin en intrants        & 103,48 & $<0{,}001$ & Oui ($p < 0{,}05$) & 0,294 \\
+					\rowcolor{lightgray}
+					Besoin en financement     &  34,10 & 0,003  & Oui ($p < 0{,}05$)    & 0,169 \\
+					Besoin en emballages      & 306,81 & $<0{,}001$ & Oui ($p < 0{,}05$) & 0,507 \\
+					\rowcolor{lightgray}
+					Besoin en transport       & 147,87 & $<0{,}001$ & Oui ($p < 0{,}05$) & 0,352 \\
+					Appui aux entreprises     &  20,13 & 0,167  & Non                    & 0,130 \\
+					\rowcolor{lightgray}
+					Besoin en équipements     & 239,10 & $<0{,}001$ & Oui ($p < 0{,}05$) & 0,447 \\
+					Innovation et recherche   & 163,49 & $<0{,}001$ & Oui ($p < 0{,}05$) & 0,370 \\
+					\bottomrule
+				\end{tabularx}
+			\end{table}
+			
+			Le secteur d'activité constitue la variable présentant les
+			associations les plus fortes avec les besoins des entreprises~:
+			six besoins sur sept lui sont significativement liés, avec des
+			valeurs de $V$ de Cramér particulièrement élevées, notamment pour
+			le besoin en emballages ($V = 0{,}507$), le besoin en équipements
+			($V = 0{,}447$) et le besoin en transport ($V = 0{,}352$). Ces
+			résultats confirment l'intuition selon laquelle le secteur d'activité
+			est le principal déterminant de la nature des besoins exprimés par
+			les entreprises. Les entreprises du secteur des Services immobiliers
+			expriment le taux de besoin en financement le plus élevé (50,0\,\%),
+			tandis que les entreprises du secteur des Médias et Divertissement
+			présentent un besoin en équipements particulièrement fort (40,0\,\%).
+			Le besoin en appui aux entreprises est le seul besoin pour lequel
+			aucune association significative avec le secteur d'activité n'est
+			détectée ($p = 0{,}167$), confirmant son caractère transversal à
+			l'ensemble des secteurs.
+			\subsubsection{Répartition des besoins selon la taille de l'entreprise}
+			
+			\begin{figure}[H]
+				\centering
+				\includegraphics[width=\textwidth]{carte_chaleur_besoins_taille_entreprise.jpeg}
+				\caption{Distribution des besoins des entreprises selon leur taille}
+				\label{fig:besoins_taille}
+			\end{figure}
+			
+			\begin{table}[H]
+				\centering
+				\caption{Test du $\chi^2$ entre la taille de l'entreprise et ses besoins}
+				\label{tab:khi2_taille}
+				\renewcommand{\arraystretch}{1.4}
+				\begin{tabularx}{\textwidth}{>{\raggedright\arraybackslash}X
+						r r
+						>{\centering\arraybackslash}p{3cm}
+						r}
+					\toprule
+					\rowcolor{primary!15}
+					\textbf{Besoin} & \textbf{$\chi^2$} & \textbf{p-valeur}
+					& \textbf{Significatif} & \textbf{$V$ Cramér} \\
+					\midrule
+					
+					Besoin en intrants
+					& 1,01 & 0,799 & Non & 0,029 \\
+					
+					\rowcolor{lightgray}
+					Besoin en financement
+					& 5,67 & 0,129 & Non & 0,069 \\
+					
+					Besoin en emballages
+					& 7,48 & 0,058 & Non & 0,079 \\
+					
+					\rowcolor{lightgray}
+					Besoin en transport
+					& 3,20 & 0,362 & Non & 0,052 \\
+					
+					Besoin en appui aux entreprises
+					& 13,95 & 0,003 & Oui ($p < 0{,}05$) & 0,108 \\
+					
+					\rowcolor{lightgray}
+					Besoin en équipements
+					& 2,25 & 0,521 & Non & 0,043 \\
+					
+					Innovation et recherche
+					& 2,85 & 0,415 & Non & 0,049 \\
+					
+					\bottomrule
+				\end{tabularx}
+			\end{table}
+			
+			Les résultats du test du $\chi^2$ révèlent que la taille de
+			l'entreprise n'est significativement associée qu'à un seul besoin sur
+			les sept étudiés~: le besoin en appui aux entreprises ($\chi^2 =
+			13{,}95$~; $p = 0{,}003$~; $V = 0{,}108$). Ce résultat est
+			interprétable de manière intuitive~: les besoins d'accompagnement et
+			d'appui institutionnel sont davantage ressentis par les petites
+			structures, qui ne disposent pas en interne des ressources humaines
+			et organisationnelles nécessaires pour gérer leurs activités de
+			manière autonome, contrairement aux grandes entreprises qui
+			internalisent généralement ces fonctions. L'association reste
+			néanmoins modérée ($V = 0{,}108$), ce qui suggère que d'autres
+			facteurs que la taille influencent également ce besoin.
+			
+			Pour les six autres besoins étudiés, aucune association
+			statistiquement significative avec la taille de l'entreprise n'est
+			détectée. Ce constat est particulièrement notable pour le besoin en
+			financement ($\chi^2 = 5{,}67$~; $p = 0{,}129$), qui se confirme une
+			nouvelle fois comme une contrainte universelle, indépendante de la
+			taille de l'entreprise. De même, le besoin en équipements ($p =
+			0{,}521$) et le besoin en innovation ($p = 0{,}415$) ne sont pas
+			significativement liés à la taille, ce qui peut paraître surprenant
+			mais s'explique par le fait que les besoins technologiques concernent
+			l'ensemble des entreprises quel que soit leur niveau de développement,
+			même si leur nature précise peut différer.
+			
+			
+			
+			
+			%-------------------------------------------------------------
+			\subsection{Résultats de l'analyse multidimensionnelle}
+			\label{subsec:multi}
+			%-------------------------------------------------------------
+			
+			Les analyses univariée et bivariée ont permis de décrire le tissu
+			économique et d'identifier des associations entre les caractéristiques
+			des entreprises et leurs besoins. Cependant, ces méthodes ne
+			permettent pas d'appréhender simultanément l'ensemble des relations
+			entre les variables dans leur globalité. L'analyse multidimensionnelle
+			vient combler cette limite en offrant une représentation synthétique
+			des données dans un espace factoriel de dimension réduite, à partir
+			duquel des groupes d'entreprises aux profils similaires peuvent être
+			construits et caractérisés. Elle s'articule en trois étapes
+			successives~: l'ACM pour la réduction de dimension, la CAH pour
+			la construction des classes, et l'AFD pour leur validation et
+			caractérisation.
+			
+			\subsubsection{Analyse des Correspondances Multiples (ACM)}
+			
+			L'ACM a été conduite à l'aide du package \texttt{FactoMineR} du
+			langage R %\citep{lebart_morineau_piron_1995}
+			, sur l'ensemble des
+			variables qualitatives retenues pour décrire les entreprises et
+			leurs besoins. Son objectif principal est d'identifier les axes
+			factoriels sur lesquels les données présentent la plus grande
+			variabilité, afin de produire une représentation synthétique du
+			nuage d'entreprises dans un espace de dimension réduit.
+			
+			\paragraph{Valeurs propres et inertie expliquée}
+			
+			Le choix du nombre d'axes à retenir s'effectue à partir de
+			l'examen de l'éboulis des valeurs propres, qui représente la
+			part d'inertie totale expliquée par chacun des axes factoriels.
+			
+			\begin{figure}[H]
+				\centering
+				\includegraphics[width=0.75\textwidth]{contributionValeursPropres.jpeg}
+				\caption{Éboulis des valeurs propres de l'ACM --- part d'inertie
+					expliquée par axe factoriel}
+				\label{fig:acm_vp}
+			\end{figure}
+			
+			L’objectif principal de l’ACM étant l’interprétation à partir des projections des modalités sur les axes factoriels, le nombre d’axes à retenir est choisi en utilisant le critère du « coude »% (Cours Méthodes Factorielles Cnam UE).
+			 Le critère du coude stipule que: (i) avant le coude, la pente est très raide. Chaque axe supplémentaire apporte une quantité importante d'information (d'inertie); (ii) après le coude, la courbe s'aplatit et forme un plateau linéaire. Les axes suivants n'apportent que du "bruit de fond" ou des détails négligeables. A partir de cette règle et de la figure \ref{fig:acm_vp} nous avons choisi les 5 premiers axes factoriels.
+			
+			
+			\paragraph{Projection des modalités sur le premier plan factoriel}
+		
+
+			La projection des modalités sur les deux premiers axes factoriels
+			permet de visualiser les associations entre les différentes modalités
+			des variables et d'identifier les oppositions structurantes du nuage
+			de points.
+			
+			\begin{figure}[H]
+				\centering
+				\includegraphics[width=\textwidth]{projectionDesCategories.jpeg}
+				\caption{Projection des modalités sur le premier plan factoriel
+					de l'ACM (axes 1 et 2)}
+				\label{fig:acm_projection}
+			\end{figure}
+			
+			On observe dans la figure \ref{fig:acm_projection} que bien de modalités sont assez proches des deux premiers axes factoriels. L'axe 1 oppose les entreprises tertiaires des entreprises du secteur primaire à travers la présence ou non d'un certains nombre de besoins et la répartition des secteurs d'activités. L'axe 2 permet de discriminer les statuts des entreprises et leurs tailles. On peut remarquer la présence quasi au centre du besoin en financement considéré comme un besoin transversal des entreprises.
+			
+			\paragraph{Variables contribuant aux axes factoriels}
+			
+			Les figures suivantes présentent les contributions des variables
+			au premier et au second axe factoriel, permettant d'identifier
+			les attributs les plus structurants de chaque dimension.
+			
+			\begin{figure}[H]
+				\centering
+				\begin{minipage}{0.48\textwidth}
+					\centering
+					\includegraphics[width=\textwidth]{contributionCategoriesAlAxe1.jpeg}
+					\caption{Contributions des modalités au premier axe factoriel}
+					\label{fig:acm_contrib1}
+				\end{minipage}
+				\hfill
+				\begin{minipage}{0.48\textwidth}
+					\centering
+					\includegraphics[width=\textwidth]{contributionCategorieALAxe2.jpeg}
+					\caption{Contributions des modalités au second axe factoriel}
+					\label{fig:acm_contrib2}
+				\end{minipage}
+			\end{figure}
+			
+		Le premier axe factoriel (Dim 1), qui capte la plus grande part de
+		l'inertie de la structure des données (7\,\%), est fortement construit
+		par des variables liées aux besoins opérationnels et techniques des
+		structures. En observant l'éboulis des contributions, un groupe de
+		trois modalités se détache très nettement au-dessus des autres,
+		frôlant les 10\,\% de contribution chacune~:
+		\texttt{besoin\_emballages\_Non},
+		\texttt{besoin\_innovation\_recherche\_Non} et
+		\texttt{besoin\_equipements\_Non}.
+		Viennent ensuite, de manière équilibrée (entre 5\,\% et 7\,\%),
+		les expressions contrastées des besoins logistiques et techniques
+		(\texttt{besoin\_transport\_Oui},
+		\texttt{besoin\_transport\_Non},
+		\texttt{besoin\_innovation\_recherche\_Oui},
+		\texttt{besoin\_emballages\_Oui}).
+		Le seuil de contribution moyenne (ligne pointillée rouge à environ
+		1{,}8\,\%) met en évidence que l'Axe~1 est presque exclusivement
+		dicté par la dichotomie entre la présence et l'absence de besoins
+		matériels et d'innovation au sein des structures.
+
+		
+		Le second axe factoriel (Dim 2, 3.6 \% de l'inertie) est quant à lui défini par des variables purement statutaires, institutionnelles et géographiques, marquant une rupture totale avec la logique de besoins de l'axe précédent. Le graphique des contributions montre que la construction de cet axe repose majoritairement sur cinq piliers qui dépassent de loin le seuil de contribution théorique : la taille moyenne d'entreprise (Moyenne Entreprise, ~12 \%), la forme juridique de Société Anonyme (SA, ~10.5 \%), la région de l'Ouest (~10 \%), le statut de Groupement d'Intérêt Communautaire (GIC, ~7.5 \%) et le secteur des Services financiers et bancaires (~6.5 \%). Les variables d'âge de l'entreprise ou de besoins opérationnels n'exercent ici qu'une influence très secondaire, ce qui confirme que l'Axe 2 capte spécifiquement le niveau de formalisation et de structuration légale des entités.
+			
+			\subsubsection{Classification Ascendante Hiérarchique (CAH)}
+			
+			La CAH a été conduite à partir des coordonnées factorielles des
+			entreprises sur les axes retenus lors de l'ACM, en utilisant la
+			méthode d'agrégation de Ward qui minimise la perte d'inertie
+			inter-classes à chaque étape de fusion \citep{saporta_2010}. Cette
+			approche, combinant ACM et CAH, est particulièrement adaptée aux
+			données qualitatives dans la mesure où elle s'affranchit des
+			problèmes liés aux distances euclidiennes calculées directement
+			sur des variables catégorielles brutes.
+			
+			\paragraph{Dendrogramme et choix du nombre de classes}
+			
+			Le dendrogramme obtenu à l'issue de la CAH permet de visualiser
+			la hiérarchie des regroupements.
+			
+			\begin{figure}[H]
+				\centering
+				\includegraphics[width=0.85\textwidth]{dendrogramme.jpeg}
+				\caption{Dendrogramme de la Classification Ascendante Hiérarchique
+					(méthode de Ward)}
+				\label{fig:dendrogramme}
+			\end{figure}
+			
+			L'examen du dendrogramme (figure~\ref{fig:dendrogramme}) révèle
+			l'existence d'un saut d'inertie particulièrement marqué à l'étape
+			correspondant au passage de trois à deux classes, ce qui plaide en
+			faveur d'une partition en \textbf{trois classes}. Ce choix est
+			conforté par l'éboulis des indices de niveau, qui présente un
+			décrochement net à ce niveau. La partition en trois classes offre
+			par ailleurs une granularité suffisante pour identifier des profils
+			d'entreprises distincts et opérationnellement utiles dans le cadre
+			de l'algorithme de mise en relation de la plateforme.
+			
+			\paragraph{Visualisation de la partition obtenue}
+			
+			\begin{figure}[H]
+				\centering
+				\includegraphics[width=\textwidth]{CAH.jpeg}
+				\caption{Projection des trois classes obtenues par CAH sur le
+					premier plan factoriel de l'ACM}
+				\label{fig:cah_classes}
+			\end{figure}
+			
+			La figure~\ref{fig:cah_classes} représente les trois classes
+			d'entreprises obtenues, projetées sur le premier plan factoriel
+			de l'ACM. La séparation visuelle des classes dans cet espace
+			factoriel confirme la cohérence de la partition obtenue~: les
+			trois groupes occupent des zones distinctes du plan factoriel,
+			témoignant d'une bonne homogénéité intra-classe et d'une
+			séparation satisfaisante inter-classes.
+		
+			\begin{itemize}
+				\item \textbf{Classe 1} --- [753] entreprises (~63,1\,\%)~. L'on remarque que: (i) 40,2\% des entreprises de la classe 1 ont entre 5 et 9 ans d'anciennté; (ii)  
+				81,1\% évolues dans le secteur de l'agriculture et de l'agroalimentaire; (iii) 36,3 \% sont dans la région du Centre; (iv) 52,5 \% sont des des petites entreprises. 
+				\item \textbf{Classe 2} --- [57] entreprises (~4,8\,\%)~:
+				profil dominant: (i) 26,4\% des entreprises ont plus de 20 ans; (ii) 54,4\% sont des Moyennes Entreprises; (iii) 45,5\% exercent leurs activités dans la région du centre; (iv) 24,6\% offrent des services financiers en bancaires.
+				\item \textbf{Classe 3} --- [384] entreprises (~32,2\,\%)~:
+				profil dominant: (i) 38,8\% ont entre 5 et 9 ans; (ii) 31,2\% sont dans le secteur de l'agriculture et de l'agroalimentaire; (iii) 45,6 \% sont implentés dans la région du centre et (iv) 59,6 \% sont des petites entreprises.
+			\end{itemize}
+			\begin{figure}[H]
+				\centering
+				\begin{minipage}{0.48\textwidth}
+					\centering
+					\includegraphics[width=\textwidth]{classe_et_anciennete.jpeg}
+					\caption{Répartition des classes par ancienneté }
+					\label{fig:rep_class_anc}
+				\end{minipage}
+				\hfill
+				\begin{minipage}{0.48\textwidth}
+					\centering
+					\includegraphics[width=\textwidth]{classes_et_secteurs_activites.jpeg}
+					\caption{Répartition des classes par secteur d'activité}
+					\label{fig:rep_classe_secteur}
+				\end{minipage}
+			\end{figure}
+			\begin{figure}[H]
+				\centering
+				\begin{minipage}{0.48\textwidth}
+					\centering
+					\includegraphics[width=\textwidth]{classes_et_tailles.jpeg}
+					\caption{Répartition des classes par taille}
+					\label{fig:rep_classe_taille}
+				\end{minipage}
+				\hfill
+				\begin{minipage}{0.48\textwidth}
+					\centering
+					\includegraphics[width=\textwidth]{classes_et_regions.jpeg}
+					\caption{Répartition des classes par région}
+					\label{fig:rep_classe_region}
+				\end{minipage}
+			\end{figure}
+			
+			
+			\subsubsection{Analyse Factorielle Discriminante (AFD)}
+			
+			L'AFD est conduite en aval de la CAH afin de valider la qualité de
+			la partition obtenue et d'identifier les variables qui discriminent
+			le mieux les trois classes d'entreprises \citep{saporta_2010}. Elle
+			permet de répondre à deux questions complémentaires~: les classes
+			identifiées sont-elles suffisamment distinctes pour être considérées
+			comme des groupes homogènes~? Quelles variables permettent de les
+			distinguer le plus efficacement~?
+			
+			\paragraph{Axes discriminants et pouvoir discriminant}
+			
+			\begin{figure}[H]
+				\centering
+				\includegraphics[width=0.85\textwidth]{AFDProjectionDesObservations.jpeg}
+				\caption{Projection des entreprises et des centres de classes
+					sur les axes discriminants de l'AFD}
+				\label{fig:afd_projection}
+			\end{figure}
+			
+			Le graphique de projection des observations met en évidence une excellente séparation globale des trois classes sur le plan formé par les deux premiers axes discriminants, qui captent ensemble 100 \% du pouvoir de séparation (58.6 \% pour LD1 et 41.4 \% pour LD2). Les ellipses de confiance à 95 \% confirment visuellement la pertinence statistique du modèle : bien qu'un léger chevauchement existe entre les classes 1 et 3, les trois nuages de points se structurent de manière distincte sans concentration massive au centre.
+			
+			
+			\paragraph{Les axes factoriels obtenus}
+L'Analyse Factorielle Discriminante (AFD) consiste à construire des combinaisons
+linéaires des variables initiales --- appelées fonctions discriminantes canoniques ---
+de manière à maximiser la variance inter-classes tout en minimisant la variance
+intra-classes. Chaque axe obtenu (LD1, LD2, \ldots) représente ainsi une direction
+de l'espace factoriel le long de laquelle les groupes issus de la Classification
+Ascendante Hiérarchique (CAH) sont séparés de façon optimale. Les coefficients
+associés à chaque variable sur ces axes, présentés dans le tableau~\ref{tab:variables_ld},
+renseignent sur la contribution relative de chacune d'elles à la discrimination
+entre les classes.
+		
+		\begin{table}[H]
+			\centering
+			\caption{Coefficients des variables sur les fonctions discriminantes canoniques}
+			\label{tab:variables_ld}
+			\renewcommand{\arraystretch}{1.4}
+			\begin{tabularx}{\textwidth}{>{\raggedright\arraybackslash}X
+					>{\centering\arraybackslash}p{3cm}
+					>{\centering\arraybackslash}p{3cm}}
+				\toprule
+				\rowcolor{primary!15}
+				\textbf{Variable} & \textbf{LD1} & \textbf{LD2} \\
+				\midrule
+				
+				Dim1
+				& 3,4117 & 0,8420 \\
+				
+				\rowcolor{lightgray}
+				Dim2
+				& 0,5020 & $-$2,8215 \\
+				
+				Dim3
+				& 1,0018 & $-$2,3454 \\
+				
+				\rowcolor{lightgray}
+				Dim4
+				& 0,7551 & $-$2,1043 \\
+				
+				Dim5
+				& $-$0,5523 & 1,0850 \\
+				
+				\bottomrule
+			\end{tabularx}
+		\end{table}
+		
+		
+		
+		% --- Commentaires analytiques (à intégrer dans le texte du mémoire) ---
+		%
+		 Le tableau~\ref{tab:variables_ld} présente les coefficients standardisés des variables
+		 sur les deux premières fonctions discriminantes canoniques (LD1 et LD2).
+		
+		 \paragraph{Fonction LD1 — Axe de discrimination principal}
+		 La première fonction discriminante est dominée par \textbf{Dim1} (coefficient = 3,41),
+		 qui exerce la contribution la plus élevée en valeur absolue parmi toutes les variables.
+		 Les variables Dim3 (1,00) et Dim4 (0,76) contribuent également positivement à LD1,
+		 tandis que Dim5 présente une contribution négative modérée (--0,55). Dim2 (0,50) joue
+		 un rôle secondaire sur cet axe. LD1 semble donc principalement structuré autour de
+		 Dim1, qui peut être interprétée comme la dimension discriminante la plus puissante
+		 entre les groupes.
+		
+		 \paragraph{Fonction LD2 — Axe secondaire de séparation}
+		 La seconde fonction discriminante oppose fortement Dim2 (--2,82), Dim3 (--2,35)
+		 et Dim4 (--2,10) aux variables Dim1 (0,84) et Dim5 (1,09), toutes deux à contribution
+		 positive. LD2 capte ainsi une structure de variation orthogonale à LD1, permettant
+		 d'affiner la séparation entre les groupes que LD1 ne distingue pas suffisamment.\\
+		 
+		 
+		
+		
+		% ============================================================
+		%  TABLEAU 2 — Indicateurs de performance du modèle
+		% ============================================================
+		
+		
+		Au-delà de la représentation factorielle, l'AFD poursuit un objectif de classification
+		prédictive. À partir des fonctions discriminantes estimées, chaque observation est
+		affectée à la classe dont le centroïde lui est le plus proche au sens de la distance
+		de Mahalanobis, ce qui tient compte des corrélations entre variables et de la
+		dispersion propre à chaque groupe. Les performances de ce modèle de classification
+		sont évaluées à l'aide d'une matrice de confusion établie sur les données de test,
+		dont les principaux indicateurs --- précision globale, indice Kappa de Cohen et
+		tests de significativité --- sont consignés dans le tableau~\ref{tab:scores_modele}.
+		\begin{table}[H]
+			\centering
+			\caption{Indicateurs de performance du modèle discriminant}
+			\label{tab:scores_modele}
+			\renewcommand{\arraystretch}{1.4}
+			\begin{tabularx}{\textwidth}{>{\raggedright\arraybackslash}X
+					>{\centering\arraybackslash}p{3.5cm}
+					>{\centering\arraybackslash}p{3cm}}
+				\toprule
+				\rowcolor{primary!15}
+				\textbf{Indicateur} & \textbf{Valeur} & \textbf{Interprétation} \\
+				\midrule
+				
+				Accuracy
+				& 0,9724 & Excellent \\
+				
+				\rowcolor{lightgray}
+				Kappa de Cohen
+				& 0,9435 & Accord quasi-parfait \\
+				
+				Accuracy Lower (IC 95\,\%)
+				& 0,9614 & — \\
+				
+				\rowcolor{lightgray}
+				Accuracy Upper (IC 95\,\%)
+				& 0,9809 & — \\
+				
+				Accuracy Null
+				& 0,6307 & Seuil classifieur naïf \\
+				
+				\rowcolor{lightgray}
+				Accuracy P-value
+				& $5{,}16 \times 10^{-183}$ & Hautement significatif \\
+				
+				McNemar P-value
+				& $8{,}50 \times 10^{-7}$ & Significatif ($p < 0{,}05$) \\
+				
+				\bottomrule
+			\end{tabularx}
+		\end{table}
+		
+		% --- Commentaires analytiques (à intégrer dans le texte du mémoire) ---
+		%
+		 Le tableau~\ref{tab:scores_modele} synthétise les métriques d'évaluation du modèle
+		 discriminant appliqué aux données de l'étude.
+		
+		 \paragraph{Précision globale (Accuracy)}
+		 Le modèle affiche une précision globale de \textbf{97,24\,\%}, ce qui traduit un très
+		 haut niveau de classification correcte des observations. L'intervalle de confiance à
+		 95\,\% est étroit [96,14\,\% -- 98,09\,\%], confirmant la stabilité de cette estimation.
+		
+		 \paragraph{Indice Kappa de Cohen}
+		 Le coefficient Kappa vaut \textbf{0,9435}, ce qui correspond à un accord quasi-parfait
+		 entre les classes prédites et les classes réelles (seuil conventionnel : Kappa $> 0{,}80$
+		 = très bon accord). Cet indicateur est particulièrement pertinent en présence de classes
+		 déséquilibrées, car il corrige la précision en tenant compte du hasard.
+		
+		 \paragraph{Comparaison au classifieur naïf}
+		 L'\textit{Accuracy Null} de 63,07\,\% représente la performance d'un classifieur trivial
+		 attribuant systématiquement la classe majoritaire. Le gain de performance du modèle
+		 par rapport à ce seuil est de $+34{,}17$ points de pourcentage, ce qui illustre
+		 l'apport réel du modèle discriminant.
+		
+		 \paragraph{Significativité statistique}
+		 La p-valeur associée à l'accuracy ($5{,}16 \times 10^{-183}$) est extrêmement faible,
+		 rejetant sans ambiguïté l'hypothèse nulle selon laquelle le modèle ne serait pas meilleur
+		 qu'un classifieur aléatoire. De même, le test de McNemar (p = $8{,}50 \times 10^{-7}$)
+		 indique une asymétrie significative dans la matrice de confusion, suggérant que les
+		 erreurs du modèle ne sont pas distribuées de façon uniforme entre les classes.
+		
 	
 	\section{Présentation de la plateforme}
 	\label{sec:evaluation}

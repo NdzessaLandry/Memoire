@@ -1,0 +1,640 @@
+%=============================================================
+\chapter{Présentation des résultats}
+%=============================================================
+
+Ce chapitre présente l'ensemble des résultats obtenus dans le cadre
+de ce travail, structurés autour de deux axes complémentaires. Le
+premier axe est consacré à la présentation et à l'interprétation des
+résultats issus de l'analyse statistique des données de l'enquête
+réalisée par le \gls{minepat} sur la cartographie et les besoins des
+entreprises du tissu productif local. Cette analyse s'articule en
+trois niveaux de profondeur croissante~: une analyse univariée
+décrivant la distribution des entreprises selon leurs caractéristiques
+principales, une analyse bivariée croisant ces caractéristiques avec
+les besoins exprimés et validant les associations observées par le
+test du $\chi^2$ de Pearson, et une analyse multidimensionnelle
+mobilisant l'Analyse des Correspondances Multiples (ACM), la
+Classification Ascendante Hiérarchique (CAH) et l'Analyse Factorielle
+Discriminante (AFD). Le second axe est consacré à la présentation de
+la plateforme \textit{Business Partnership}, développée pour répondre
+aux besoins identifiés lors de cette analyse. L'ensemble de ces
+analyses ont été conduites sur un fichier contenant
+\textbf{1\,194 entreprises}, issues de l'enquête nationale du
+\gls{minepat} de 2025.
+
+%=============================================================
+\section{Résultats sur la cartographie des entreprises}
+\label{sec:resultats_carto}
+%=============================================================
+
+Cette section présente les résultats de l'analyse statistique des
+données collectées lors de l'enquête. Elle est structurée selon une
+progression méthodologique allant du simple au complexe~: description
+univariée, analyse des associations bivariées, puis exploration
+multidimensionnelle.
+
+%-------------------------------------------------------------
+\subsection{Résultats de l'analyse univariée}
+\label{subsec:univariee}
+%-------------------------------------------------------------
+
+L'analyse univariée a consisté à déterminer le nombre et le
+pourcentage d'entreprises présentant des modalités similaires sur
+les différentes variables retenues~: statut juridique, région
+d'implantation, taille, ancienneté et secteur d'activité principal.
+Elle constitue la première photographie descriptive du tissu productif
+camerounais couvert par l'enquête, et permet d'identifier les
+caractéristiques dominantes des entreprises interrogées avant
+d'explorer les relations entre leurs attributs et leurs besoins.
+
+\subsubsection{Répartition des entreprises par statut juridique}
+
+La distribution des entreprises selon leur statut juridique révèle
+une prépondérance des Sociétés à Responsabilité Limitée (SARL), qui
+représentent 35,0\,\% des entreprises de l'échantillon. Ce résultat
+reflète la tendance observée dans l'ensemble du tissu économique
+camerounais, où la SARL constitue la forme juridique la plus courante
+pour les entreprises de taille intermédiaire, en raison notamment de
+la simplicité relative de sa constitution et de la limitation de
+responsabilité qu'elle offre à ses associés.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.75\textwidth]{./img/repartition_statut_juridique.png}
+	\caption{Répartition des entreprises enquêtées par statut juridique}
+	\label{fig:statut_juridique}
+\end{figure}
+
+\subsubsection{Répartition des entreprises par région}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.75\textwidth]{./img/repartition_region.png}
+	\caption{Répartition des entreprises enquêtées par région}
+	\label{fig:region}
+\end{figure}
+
+La répartition géographique des entreprises enquêtées met en évidence
+une distribution couvrant l'ensemble des dix régions du Cameroun.
+[Compléter avec les chiffres issus de la figure~\ref{fig:region}
+et commenter les régions les plus représentées.]
+
+\subsubsection{Répartition des entreprises par taille}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.75\textwidth]{./img/repartition_taille.png}
+	\caption{Répartition des entreprises enquêtées par taille}
+	\label{fig:taille}
+\end{figure}
+
+La distribution par taille reflète la structure du tissu productif
+camerounais, caractérisé par une forte prédominance des très petites
+et petites entreprises, conformément aux résultats du Recensement
+Général des Entreprises de 2023 qui indiquait que 92,4\,\% des unités
+économiques sont des entreprises individuelles \citep{ins_rge_2023}.
+[Compléter avec les chiffres issus de la figure~\ref{fig:taille}.]
+
+\subsubsection{Répartition des entreprises par ancienneté}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.75\textwidth]{./img/repartition_anciennete.png}
+	\caption{Répartition des entreprises enquêtées par ancienneté}
+	\label{fig:anciennete}
+\end{figure}
+
+[Commenter la distribution par ancienneté en lien avec la figure
+\ref{fig:anciennete}, en soulignant notamment la part des entreprises
+jeunes (moins de 5 ans) et celle des entreprises matures (plus de
+10 ans), et en interprétant ce que cela dit sur la dynamique
+entrepreneuriale nationale.]
+
+\subsubsection{Répartition des entreprises par secteur d'activité}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.75\textwidth]{./img/repartition_secteur.png}
+	\caption{Répartition des entreprises enquêtées par secteur d'activité}
+	\label{fig:secteur}
+\end{figure}
+
+[Commenter la distribution sectorielle. Souligner la prédominance
+attendue du secteur tertiaire, conformément aux résultats du RGE3 de
+l'INS qui indiquait que 85,6\,\% des unités économiques relèvent du
+secteur tertiaire \citep{ins_rge_2023}.]
+
+\subsubsection{Répartition des besoins exprimés}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.75\textwidth]{./img/repartition_besoins.png}
+	\caption{Répartition globale des besoins exprimés par les entreprises
+		enquêtées}
+	\label{fig:besoins_global}
+	\end{figure>
+		
+		L'analyse de la distribution globale des besoins exprimés par les
+		entreprises met en évidence que le besoin en équipements et le besoin
+		en financement constituent les deux besoins les plus fréquemment
+		cités par les répondants. Ce résultat est cohérent avec les constats
+		établis lors des enquêtes antérieures du \gls{minepat}, qui avaient
+		mis en évidence que l'accès aux facteurs de production et aux
+		financements constitue le principal frein au développement des
+		entreprises camerounaises \citep{minepat_enquete_2025}. Le besoin en
+		innovation et en recherche, bien que moins fréquemment cité, demeure
+		non négligeable et témoigne d'une prise de conscience progressive des
+		entreprises quant à l'importance de la modernisation technologique
+		comme levier de compétitivité.
+		
+		%-------------------------------------------------------------
+		\subsection{Résultats de l'analyse bivariée}
+		\label{subsec:bivariee}
+		%-------------------------------------------------------------
+		
+		L'analyse bivariée a consisté à croiser les variables descriptives
+		des entreprises avec les besoins qu'elles ont exprimés, afin
+		d'identifier d'éventuelles associations structurelles entre les
+		caractéristiques des entreprises et leurs besoins spécifiques. Deux
+		outils ont été mobilisés~: les tableaux de contingence, qui permettent
+		de visualiser la distribution conjointe des variables, et le test du
+		$\chi^2$ de Pearson accompagné du coefficient $V$ de Cramér, qui
+		permettent de tester et de quantifier l'intensité de ces associations
+		\citep{saporta_2010}.
+		
+		\subsubsection{Répartition des besoins selon le statut juridique}
+		
+		Les figures ci-dessous présentent la distribution des besoins des
+		entreprises selon leur statut juridique, ainsi que les résultats du
+		test d'association correspondant.
+		
+		\begin{figure}[H]
+			\centering
+			\includegraphics[width=\textwidth]{./img/besoins_statut.png}
+			\caption{Distribution des besoins des entreprises selon le statut
+				juridique}
+			\label{fig:besoins_statut}
+		\end{figure}
+		
+		\begin{table}[H]
+			\centering
+			\caption{Test du $\chi^2$ entre le statut juridique et les besoins
+				des entreprises}
+			\label{tab:khi2_statut}
+			\renewcommand{\arraystretch}{1.4}
+			\begin{tabularx}{\textwidth}{>{\raggedright\arraybackslash}X
+					r r
+					>{\centering\arraybackslash}p{2.8cm}
+					r}
+				\toprule
+				\rowcolor{primary!15}
+				\textbf{Besoin} & \textbf{$\chi^2$} & \textbf{p-valeur}
+				& \textbf{Significatif} & \textbf{$V$ Cramér} \\
+				\midrule
+				Besoin en intrants        & 14,26 & 0,027  & Oui ($p < 0{,}05$) & 0,109 \\
+				\rowcolor{lightgray}
+				Besoin en financement     &  2,94 & 0,817  & Non                & 0,050 \\
+				Besoin en emballages      & 44,47 & $<0{,}001$ & Oui ($p < 0{,}05$) & 0,193 \\
+				\rowcolor{lightgray}
+				Besoin en transport       & 50,44 & $<0{,}001$ & Oui ($p < 0{,}05$) & 0,206 \\
+				Appui aux entreprises     & 26,32 & $<0{,}001$ & Oui ($p < 0{,}05$) & 0,148 \\
+				\rowcolor{lightgray}
+				Besoin en équipements     & 61,66 & $<0{,}001$ & Oui ($p < 0{,}05$) & 0,227 \\
+				Innovation et recherche   & 77,88 & $<0{,}001$ & Oui ($p < 0{,}05$) & 0,255 \\
+				\bottomrule
+			\end{tabularx}
+		\end{table}
+		
+		Les résultats du test du $\chi^2$ révèlent que le statut juridique
+		est significativement associé à six des sept besoins étudiés, à
+		l'exception du besoin en financement ($\chi^2 = 2{,}94$~;
+		$p = 0{,}817$). Les associations les plus fortes concernent le besoin
+		en innovation et en recherche ($V = 0{,}255$) et le besoin en
+		équipements ($V = 0{,}227$), suggérant que la nature juridique de
+		l'entreprise influence significativement la manière dont elle exprime
+		ses besoins technologiques. Les entreprises de type SUARL/SARLU
+		présentent notamment le taux le plus élevé de besoin en appui aux
+		entreprises (20,0\,\%) et en financement (26,2\,\%), tandis que les
+		Coopératives expriment davantage de besoins en innovation
+		(14,1\,\%). Le besoin en financement constitue une exception notable~:
+		il est exprimé de manière relativement homogène quelle que soit la
+		forme juridique de l'entreprise, ce qui suggère que la contrainte
+		financière est une réalité transversale à l'ensemble du tissu
+		économique, indépendante du cadre juridique de l'entreprise.
+		
+		\subsubsection{Répartition des besoins selon la région}
+		
+		\begin{figure}[H]
+			\centering
+			\includegraphics[width=\textwidth]{./img/besoins_region.png}
+			\caption{Distribution des besoins des entreprises selon la région
+				d'implantation}
+			\label{fig:besoins_region}
+		\end{figure}
+		
+		\begin{table}[H]
+			\centering
+			\caption{Test du $\chi^2$ entre la région d'implantation et les besoins
+				des entreprises}
+			\label{tab:khi2_region}
+			\renewcommand{\arraystretch}{1.4}
+			\begin{tabularx}{\textwidth}{>{\raggedright\arraybackslash}X
+					r r
+					>{\centering\arraybackslash}p{2.8cm}
+					r}
+				\toprule
+				\rowcolor{primary!15}
+				\textbf{Besoin} & \textbf{$\chi^2$} & \textbf{p-valeur}
+				& \textbf{Significatif} & \textbf{$V$ Cramér} \\
+				\midrule
+				Besoin en intrants        & 28,91 & $<0{,}001$ & Oui ($p < 0{,}05$) & 0,156 \\
+				\rowcolor{lightgray}
+				Besoin en financement     &  6,21 & 0,718  & Non                    & 0,072 \\
+				Besoin en emballages      & 18,69 & 0,028  & Oui ($p < 0{,}05$)    & 0,125 \\
+				\rowcolor{lightgray}
+				Besoin en transport       & 29,83 & $<0{,}001$ & Oui ($p < 0{,}05$) & 0,158 \\
+				Appui aux entreprises     & 23,36 & 0,005  & Oui ($p < 0{,}05$)    & 0,140 \\
+				\rowcolor{lightgray}
+				Besoin en équipements     & 28,25 & $<0{,}001$ & Oui ($p < 0{,}05$) & 0,154 \\
+				Innovation et recherche   & 23,77 & 0,005  & Oui ($p < 0{,}05$)    & 0,141 \\
+				\bottomrule
+			\end{tabularx}
+		\end{table}
+		
+		La région d'implantation s'avère significativement associée à six
+		besoins sur sept, le besoin en financement étant à nouveau le seul
+		pour lequel aucune association significative n'est détectée
+		($\chi^2 = 6{,}21$~; $p = 0{,}718$). Ce résultat confirme le
+		caractère transversal de la contrainte financière, commune à
+		l'ensemble des régions. Les besoins en transport ($V = 0{,}158$)
+		et en intrants ($V = 0{,}156$) présentent les associations les plus
+		fortes avec la région, ce qui est cohérent avec les disparités
+		infrastructurelles importantes entre les régions camerounaises.
+		Les régions du Nord-Ouest et de l'Est, qui concentrent une part
+		significative des entreprises à besoins en transport élevés,
+		illustrent comment les contraintes géographiques et l'état des
+		infrastructures conditionnent les priorités des entreprises locales.
+		
+		\subsubsection{Répartition des besoins selon l'ancienneté}
+		
+		\begin{figure}[H]
+			\centering
+			\includegraphics[width=\textwidth]{./img/besoins_anciennete.png}
+			\caption{Distribution des besoins des entreprises selon leur
+				ancienneté}
+			\label{fig:besoins_anciennete}
+		\end{figure}
+		
+		\begin{table}[H]
+			\centering
+			\caption{Test du $\chi^2$ entre l'ancienneté et les besoins
+				des entreprises}
+			\label{tab:khi2_anciennete}
+			\renewcommand{\arraystretch}{1.4}
+			\begin{tabularx}{\textwidth}{>{\raggedright\arraybackslash}X
+					r r
+					>{\centering\arraybackslash}p{2.8cm}
+					r}
+				\toprule
+				\rowcolor{primary!15}
+				\textbf{Besoin} & \textbf{$\chi^2$} & \textbf{p-valeur}
+				& \textbf{Significatif} & \textbf{$V$ Cramér} \\
+				\midrule
+				Besoin en intrants        &  6,46 & 0,264  & Non                 & 0,074 \\
+				\rowcolor{lightgray}
+				Besoin en financement     &  4,44 & 0,488  & Non                 & 0,061 \\
+				Besoin en emballages      &  5,09 & 0,405  & Non                 & 0,065 \\
+				\rowcolor{lightgray}
+				Besoin en transport       &  5,52 & 0,356  & Non                 & 0,068 \\
+				Appui aux entreprises     & 11,84 & 0,037  & Oui ($p < 0{,}05$)  & 0,100 \\
+				\rowcolor{lightgray}
+				Besoin en équipements     & 14,84 & 0,011  & Oui ($p < 0{,}05$)  & 0,111 \\
+				Innovation et recherche   & 20,10 & 0,001  & Oui ($p < 0{,}05$)  & 0,130 \\
+				\bottomrule
+			\end{tabularx}
+		\end{table}
+		
+		L'ancienneté de l'entreprise est le critère présentant le moins
+		d'associations significatives avec les besoins, puisque seulement
+		trois besoins sur sept lui sont significativement liés. Les entreprises
+		jeunes (moins de 3 ans) expriment davantage de besoins en financement
+		(22,2\,\%) et en équipements (21,1\,\%), ce qui s'explique par leur
+		stade de développement~: en phase de démarrage, l'accès aux
+		ressources matérielles et financières constitue la contrainte
+		prioritaire. À l'inverse, les entreprises plus matures (20 ans et
+		plus) expriment un besoin en innovation et en recherche plus marqué
+		(13,9\,\%), témoignant d'une préoccupation croissante pour la
+		compétitivité à long terme et la modernisation technologique au fur
+		et à mesure que l'entreprise se consolide.
+		
+		\subsubsection{Répartition des besoins selon le secteur d'activité}
+		
+		\begin{figure}[H]
+			\centering
+			\includegraphics[width=\textwidth]{./img/besoins_secteur.png}
+			\caption{Distribution des besoins des entreprises selon le secteur
+				d'activité}
+			\label{fig:besoins_secteur}
+		\end{figure}
+		
+		\begin{table}[H]
+			\centering
+			\caption{Test du $\chi^2$ entre le secteur d'activité et les besoins
+				des entreprises}
+			\label{tab:khi2_secteur}
+			\renewcommand{\arraystretch}{1.4}
+			\begin{tabularx}{\textwidth}{>{\raggedright\arraybackslash}X
+					r r
+					>{\centering\arraybackslash}p{2.8cm}
+					r}
+				\toprule
+				\rowcolor{primary!15}
+				\textbf{Besoin} & \textbf{$\chi^2$} & \textbf{p-valeur}
+				& \textbf{Significatif} & \textbf{$V$ Cramér} \\
+				\midrule
+				Besoin en intrants        & 103,48 & $<0{,}001$ & Oui ($p < 0{,}05$) & 0,294 \\
+				\rowcolor{lightgray}
+				Besoin en financement     &  34,10 & 0,003  & Oui ($p < 0{,}05$)    & 0,169 \\
+				Besoin en emballages      & 306,81 & $<0{,}001$ & Oui ($p < 0{,}05$) & 0,507 \\
+				\rowcolor{lightgray}
+				Besoin en transport       & 147,87 & $<0{,}001$ & Oui ($p < 0{,}05$) & 0,352 \\
+				Appui aux entreprises     &  20,13 & 0,167  & Non                    & 0,130 \\
+				\rowcolor{lightgray}
+				Besoin en équipements     & 239,10 & $<0{,}001$ & Oui ($p < 0{,}05$) & 0,447 \\
+				Innovation et recherche   & 163,49 & $<0{,}001$ & Oui ($p < 0{,}05$) & 0,370 \\
+				\bottomrule
+			\end{tabularx}
+		\end{table}
+		
+		Le secteur d'activité constitue la variable présentant les
+		associations les plus fortes avec les besoins des entreprises~:
+		six besoins sur sept lui sont significativement liés, avec des
+		valeurs de $V$ de Cramér particulièrement élevées, notamment pour
+		le besoin en emballages ($V = 0{,}507$), le besoin en équipements
+		($V = 0{,}447$) et le besoin en transport ($V = 0{,}352$). Ces
+		résultats confirment l'intuition selon laquelle le secteur d'activité
+		est le principal déterminant de la nature des besoins exprimés par
+		les entreprises. Les entreprises du secteur des Services immobiliers
+		expriment le taux de besoin en financement le plus élevé (50,0\,\%),
+		tandis que les entreprises du secteur des Médias et Divertissement
+		présentent un besoin en équipements particulièrement fort (40,0\,\%).
+		Le besoin en appui aux entreprises est le seul besoin pour lequel
+		aucune association significative avec le secteur d'activité n'est
+		détectée ($p = 0{,}167$), confirmant son caractère transversal à
+		l'ensemble des secteurs.
+		
+		\begin{remarque}
+			Deux constats transversaux émergent de l'ensemble des analyses
+			bivariées~: \textbf{(i)} le besoin en financement est le seul besoin
+			systématiquement non associé aux variables descriptives (statut
+			juridique, région, ancienneté), à l'exception du secteur d'activité,
+			ce qui en fait une contrainte universelle du tissu économique
+			camerounais, indépendante des caractéristiques structurelles des
+			entreprises~; \textbf{(ii)} le secteur d'activité est la variable
+			dont le pouvoir explicatif est le plus élevé, avec les valeurs de
+			$V$ de Cramér les plus importantes, ce qui justifie son rôle central
+			dans la définition de l'algorithme de mise en relation de la
+			plateforme \textit{Business Partnership}.
+		\end{remarque}
+		
+		%-------------------------------------------------------------
+		\subsection{Résultats de l'analyse multidimensionnelle}
+		\label{subsec:multi}
+		%-------------------------------------------------------------
+		
+		Les analyses univariée et bivariée ont permis de décrire le tissu
+		économique et d'identifier des associations entre les caractéristiques
+		des entreprises et leurs besoins. Cependant, ces méthodes ne
+		permettent pas d'appréhender simultanément l'ensemble des relations
+		entre les variables dans leur globalité. L'analyse multidimensionnelle
+		vient combler cette limite en offrant une représentation synthétique
+		des données dans un espace factoriel de dimension réduite, à partir
+		duquel des groupes d'entreprises aux profils similaires peuvent être
+		construits et caractérisés. Elle s'articule en trois étapes
+		successives~: l'ACM pour la réduction de dimension, la CAH pour
+		la construction des classes, et l'AFD pour leur validation et
+		caractérisation.
+		
+		\subsubsection{Analyse des Correspondances Multiples (ACM)}
+		
+		L'ACM a été conduite à l'aide du package \texttt{FactoMineR} du
+		langage R \citep{lebart_morineau_piron_1995}, sur l'ensemble des
+		variables qualitatives retenues pour décrire les entreprises et
+		leurs besoins. Son objectif principal est d'identifier les axes
+		factoriels sur lesquels les données présentent la plus grande
+		variabilité, afin de produire une représentation synthétique du
+		nuage d'entreprises dans un espace de dimension réduite.
+		
+		\paragraph{Valeurs propres et inertie expliquée}
+		
+		Le choix du nombre d'axes à retenir s'effectue à partir de
+		l'examen de l'éboulis des valeurs propres, qui représente la
+		part d'inertie totale expliquée par chacun des axes factoriels.
+		
+		\begin{figure}[H]
+			\centering
+			\includegraphics[width=0.75\textwidth]{./img/acm_valeurs_propres.png}
+			\caption{Éboulis des valeurs propres de l'ACM --- part d'inertie
+				expliquée par axe factoriel}
+			\label{fig:acm_vp}
+		\end{figure}
+		
+		[Commenter la figure~\ref{fig:acm_vp} en indiquant le pourcentage
+		d'inertie expliqué par les deux ou trois premiers axes, et justifier
+		le choix du nombre d'axes retenus pour la suite de l'analyse.
+		Exemple type de commentaire~: \textit{Les deux premiers axes
+			factoriels expliquent conjointement X\,\% de l'inertie totale, ce
+			qui est suffisant pour capturer la structure principale des données
+			et justifie leur retenue pour la projection des individus et
+			des modalités.}]
+		
+		\paragraph{Projection des modalités sur le premier plan factoriel}
+		
+		La projection des modalités sur les deux premiers axes factoriels
+		permet de visualiser les associations entre les différentes modalités
+		des variables et d'identifier les oppositions structurantes du nuage
+		de points.
+		
+		\begin{figure}[H]
+			\centering
+			\includegraphics[width=\textwidth]{./img/acm_projection_modalites.png}
+			\caption{Projection des modalités sur le premier plan factoriel
+				de l'ACM (axes 1 et 2)}
+			\label{fig:acm_projection}
+		\end{figure}
+		
+		[Commenter la figure~\ref{fig:acm_projection} en décrivant les
+		oppositions observées sur chaque axe. Identifier les modalités
+		qui contribuent le plus à la définition des axes et interpréter
+		leur signification économique. Exemple~: \textit{L'axe 1 oppose
+			les entreprises du secteur tertiaire ayant des besoins en
+			financement et en services aux entreprises du secteur primaire
+			caractérisées par des besoins en intrants et en équipements.}]
+		
+		\paragraph{Variables contribuant aux axes factoriels}
+		
+		Les figures suivantes présentent les contributions des variables
+		au premier et au second axe factoriel, permettant d'identifier
+		les attributs les plus structurants de chaque dimension.
+		
+		\begin{figure}[H]
+			\centering
+			\begin{minipage}{0.48\textwidth}
+				\centering
+				\includegraphics[width=\textwidth]{./img/acm_contrib_axe1.png}
+				\caption{Contributions des modalités au premier axe factoriel}
+				\label{fig:acm_contrib1}
+			\end{minipage}
+			\hfill
+			\begin{minipage}{0.48\textwidth}
+				\centering
+				\includegraphics[width=\textwidth]{./img/acm_contrib_axe2.png}
+				\caption{Contributions des modalités au second axe factoriel}
+				\label{fig:acm_contrib2}
+			\end{minipage}
+		\end{figure}
+		
+		[Commenter conjointement les figures~\ref{fig:acm_contrib1}
+		et~\ref{fig:acm_contrib2}. Identifier pour chaque axe les trois ou
+		quatre modalités présentant les contributions les plus élevées, et
+		interpréter ce que ces contributions révèlent sur la structure
+		économique sous-jacente. Les contributions dépassant le seuil moyen
+		$\frac{100}{m}$ (où $m$ est le nombre total de modalités) sont
+		considérées comme significatives \citep{lebart_morineau_piron_1995}.]
+		
+		\subsubsection{Classification Ascendante Hiérarchique (CAH)}
+		
+		La CAH a été conduite à partir des coordonnées factorielles des
+		entreprises sur les axes retenus lors de l'ACM, en utilisant la
+		méthode d'agrégation de Ward qui minimise la perte d'inertie
+		inter-classes à chaque étape de fusion \citep{saporta_2010}. Cette
+		approche, combinant ACM et CAH, est particulièrement adaptée aux
+		données qualitatives dans la mesure où elle s'affranchit des
+		problèmes liés aux distances euclidiennes calculées directement
+		sur des variables catégorielles brutes.
+		
+		\paragraph{Dendrogramme et choix du nombre de classes}
+		
+		Le dendrogramme obtenu à l'issue de la CAH permet de visualiser
+		la hiérarchie des regroupements et d'identifier le nombre optimal
+		de classes à retenir.
+		
+		\begin{figure}[H]
+			\centering
+			\includegraphics[width=0.85\textwidth]{./img/cah_dendrogramme.png}
+			\caption{Dendrogramme de la Classification Ascendante Hiérarchique
+				(méthode de Ward)}
+			\label{fig:dendrogramme}
+		\end{figure}
+		
+		L'examen du dendrogramme (figure~\ref{fig:dendrogramme}) révèle
+		l'existence d'un saut d'inertie particulièrement marqué à l'étape
+		correspondant au passage de trois à deux classes, ce qui plaide en
+		faveur d'une partition en \textbf{trois classes}. Ce choix est
+		conforté par l'éboulis des indices de niveau, qui présente un
+		décrochement net à ce niveau. La partition en trois classes offre
+		par ailleurs une granularité suffisante pour identifier des profils
+		d'entreprises distincts et opérationnellement utiles dans le cadre
+		de l'algorithme de mise en relation de la plateforme.
+		
+		\paragraph{Visualisation de la partition obtenue}
+		
+		\begin{figure}[H]
+			\centering
+			\includegraphics[width=\textwidth]{./img/cah_classification.png}
+			\caption{Projection des trois classes obtenues par CAH sur le
+				premier plan factoriel de l'ACM}
+			\label{fig:cah_classes}
+		\end{figure}
+		
+		La figure~\ref{fig:cah_classes} représente les trois classes
+		d'entreprises obtenues, projetées sur le premier plan factoriel
+		de l'ACM. La séparation visuelle des classes dans cet espace
+		factoriel confirme la cohérence de la partition obtenue~: les
+		trois groupes occupent des zones distinctes du plan factoriel,
+		témoignant d'une bonne homogénéité intra-classe et d'une
+		séparation satisfaisante inter-classes.
+		
+		[Décrire ici les trois classes en termes de profils d'entreprises.
+		Exemple de structure~:
+		\begin{itemize}
+			\item \textbf{Classe 1} --- [Nombre] entreprises (~[X]\,\%)~:
+			profil dominant [à compléter à partir des résultats].
+			\item \textbf{Classe 2} --- [Nombre] entreprises (~[X]\,\%)~:
+			profil dominant [à compléter].
+			\item \textbf{Classe 3} --- [Nombre] entreprises (~[X]\,\%)~:
+			profil dominant [à compléter].
+		\end{itemize}]
+		
+		\subsubsection{Analyse Factorielle Discriminante (AFD)}
+		
+		L'AFD est conduite en aval de la CAH afin de valider la qualité de
+		la partition obtenue et d'identifier les variables qui discriminent
+		le mieux les trois classes d'entreprises \citep{saporta_2010}. Elle
+		permet de répondre à deux questions complémentaires~: les classes
+		identifiées sont-elles suffisamment distinctes pour être considérées
+		comme des groupes homogènes~? Quelles variables permettent de les
+		distinguer le plus efficacement~?
+		
+		\paragraph{Axes discriminants et pouvoir discriminant}
+		
+		\begin{figure}[H]
+			\centering
+			\includegraphics[width=0.85\textwidth]{./img/afd_projection.png}
+			\caption{Projection des entreprises et des centres de classes
+				sur les axes discriminants de l'AFD}
+			\label{fig:afd_projection}
+		\end{figure}
+		
+		[Commenter la figure~\ref{fig:afd_projection}. Indiquer le
+		pourcentage de variance inter-classes expliqué par le premier
+		axe discriminant et par le second. Une valeur cumulée supérieure
+		à 80\,\% indique une bonne discrimination. Interpréter la
+		séparation des barycentres de classes sur le premier plan
+		discriminant.]
+		
+		\paragraph{Variables discriminantes}
+		
+		\begin{figure}[H]
+			\centering
+			\includegraphics[width=0.85\textwidth]{./img/afd_variables.png}
+			\caption{Contribution des variables aux axes discriminants de l'AFD}
+			\label{fig:afd_variables}
+		\end{figure}
+		
+		[Commenter la figure~\ref{fig:afd_variables} en identifiant les
+		deux ou trois variables présentant les contributions les plus
+		élevées aux axes discriminants. Ces variables constituent les
+		critères les plus pertinents pour la mise en relation des
+		entreprises dans la plateforme.]
+		
+		\paragraph{Taux de bon classement}
+		
+		La qualité globale de la discrimination est évaluée par le taux
+		de bon classement (TBC), calculé par validation croisée afin
+		d'éviter le biais de sur-ajustement~:
+		
+		\begin{equation}
+			\text{TBC} = \frac{\text{Nombre d'individus correctement classés}}{n}
+			\times 100
+			\label{eq:tbc_resultats}
+		\end{equation}
+		
+		[Indiquer ici la valeur du TBC obtenu. Un TBC supérieur à 70\,\%
+		est généralement considéré comme satisfaisant dans la littérature
+		\citep{lebart_morineau_piron_1995}. Conclure sur la qualité de la
+		partition et son adéquation pour alimenter l'algorithme de mise
+		en relation de la plateforme.]
+		
+		\begin{remarque}
+			La chaîne analytique ACM $\rightarrow$ CAH $\rightarrow$ AFD
+			produit trois résultats directement exploitables par la plateforme
+			\textit{Business Partnership}~: \textbf{(i)} les coordonnées
+			factorielles de chaque entreprise dans l'espace de l'ACM, qui
+			constituent les vecteurs sur lesquels est calculée la similarité
+			cosinus pour la mise en relation~; \textbf{(ii)} l'appartenance
+			de chaque entreprise à l'une des trois classes, qui permet des
+			recommandations de premier niveau~; \textbf{(iii)} les variables
+			discriminantes identifiées par l'AFD, qui constituent les critères
+			prioritaires de filtrage dans le moteur de recommandation.
+		\end{remarque}

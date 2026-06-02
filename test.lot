@@ -4,8 +4,14 @@
 \addvspace {10\p@ }
 \contentsline {table}{\numberline {3.1}{\ignorespaces Variables pour l'identification des entreprises (\texttt {identifications.csv})}}{26}{table.caption.12}%
 \contentsline {table}{\numberline {3.2}{\ignorespaces Variables relatives aux besoins des entreprises (\texttt {besoins.csv})}}{27}{table.caption.13}%
-\contentsline {table}{\numberline {3.3}{\ignorespaces Environnement technique de développement de la plateforme \textit {Business Partnership}}}{35}{table.caption.14}%
 \addvspace {10\p@ }
+\contentsline {table}{\numberline {4.1}{\ignorespaces Test du $\chi ^2$ entre le statut juridique et les besoins des entreprises}}{45}{table.caption.21}%
+\contentsline {table}{\numberline {4.2}{\ignorespaces Test du $\chi ^2$ entre la région d'implantation et les besoins des entreprises}}{46}{table.caption.23}%
+\contentsline {table}{\numberline {4.3}{\ignorespaces Test du $\chi ^2$ entre l'ancienneté et les besoins des entreprises}}{47}{table.caption.25}%
+\contentsline {table}{\numberline {4.4}{\ignorespaces Test du $\chi ^2$ entre le secteur d'activité et les besoins des entreprises}}{48}{table.caption.27}%
+\contentsline {table}{\numberline {4.5}{\ignorespaces Test du $\chi ^2$ entre la taille de l'entreprise et ses besoins}}{49}{table.caption.29}%
+\contentsline {table}{\numberline {4.6}{\ignorespaces Coefficients des variables sur les fonctions discriminantes canoniques}}{57}{table.caption.38}%
+\contentsline {table}{\numberline {4.7}{\ignorespaces Indicateurs de performance du modèle discriminant}}{58}{table.caption.39}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
