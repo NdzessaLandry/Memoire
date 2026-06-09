@@ -1,33 +1,35 @@
 \babel@toc {french}{}\relax 
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {1.1}{\ignorespaces Organigramme simplifié du \gls {minepat} (lieu de stage mis en évidence)}}{10}{figure.caption.9}%
+\contentsline {figure}{\numberline {1.1}{\ignorespaces Organigramme simplifié du \gls {minepat} (lieu de stage mis en évidence)}}{7}{figure.caption.9}%
+\contentsline {figure}{\numberline {1.2}{\ignorespaces Représentation schématique du tableau Kanban utilisé pour le développement de la plateforme \textit {Business Partnership}}}{14}{figure.caption.10}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces récapitulatif de l'enquête du GECAM}}{18}{figure.caption.10}%
-\contentsline {figure}{\numberline {2.2}{\ignorespaces Découpage des zones de recensement }}{20}{figure.caption.11}%
+\contentsline {figure}{\numberline {2.1}{\ignorespaces récapitulatif de l'enquête du GECAM}}{22}{figure.caption.12}%
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Découpage des zones de recensement }}{24}{figure.caption.13}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Répartition des entreprises enquêtées par statut juridique}}{40}{figure.caption.14}%
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Répartition des entreprises enquêtées par région}}{41}{figure.caption.15}%
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Répartition des entreprises enquêtées par taille}}{42}{figure.caption.16}%
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Répartition des entreprises enquêtées par ancienneté}}{43}{figure.caption.17}%
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Répartition des entreprises enquêtées par secteur d'activité}}{44}{figure.caption.18}%
-\contentsline {figure}{\numberline {4.6}{\ignorespaces Répartition globale des besoins exprimés par les entreprises enquêtées}}{44}{figure.caption.19}%
-\contentsline {figure}{\numberline {4.7}{\ignorespaces Distribution des besoins des entreprises selon le statut juridique}}{45}{figure.caption.20}%
-\contentsline {figure}{\numberline {4.8}{\ignorespaces Distribution des besoins des entreprises selon la région d'implantation}}{46}{figure.caption.22}%
-\contentsline {figure}{\numberline {4.9}{\ignorespaces Distribution des besoins des entreprises selon leur ancienneté}}{47}{figure.caption.24}%
-\contentsline {figure}{\numberline {4.10}{\ignorespaces Distribution des besoins des entreprises selon le secteur d'activité}}{48}{figure.caption.26}%
-\contentsline {figure}{\numberline {4.11}{\ignorespaces Distribution des besoins des entreprises selon leur taille}}{49}{figure.caption.28}%
-\contentsline {figure}{\numberline {4.12}{\ignorespaces Éboulis des valeurs propres de l'ACM --- part d'inertie expliquée par axe factoriel}}{51}{figure.caption.30}%
-\contentsline {figure}{\numberline {4.13}{\ignorespaces Projection des modalités sur le premier plan factoriel de l'ACM (axes 1 et 2)}}{52}{figure.caption.31}%
-\contentsline {figure}{\numberline {4.14}{\ignorespaces Contributions des modalités au premier axe factoriel}}{52}{figure.caption.32}%
-\contentsline {figure}{\numberline {4.15}{\ignorespaces Contributions des modalités au second axe factoriel}}{52}{figure.caption.32}%
-\contentsline {figure}{\numberline {4.16}{\ignorespaces Dendrogramme de la Classification Ascendante Hiérarchique (méthode de Ward)}}{54}{figure.caption.33}%
-\contentsline {figure}{\numberline {4.17}{\ignorespaces Projection des trois classes obtenues par CAH sur le premier plan factoriel de l'ACM}}{54}{figure.caption.34}%
-\contentsline {figure}{\numberline {4.18}{\ignorespaces Répartition des classes par ancienneté }}{55}{figure.caption.35}%
-\contentsline {figure}{\numberline {4.19}{\ignorespaces Répartition des classes par secteur d'activité}}{55}{figure.caption.35}%
-\contentsline {figure}{\numberline {4.20}{\ignorespaces Répartition des classes par taille}}{55}{figure.caption.36}%
-\contentsline {figure}{\numberline {4.21}{\ignorespaces Répartition des classes par région}}{55}{figure.caption.36}%
-\contentsline {figure}{\numberline {4.22}{\ignorespaces Projection des entreprises et des centres de classes sur les axes discriminants de l'AFD}}{56}{figure.caption.37}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Répartition des entreprises enquêtées par statut juridique}}{58}{figure.caption.18}%
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Répartition des entreprises enquêtées par région}}{59}{figure.caption.19}%
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Répartition des entreprises enquêtées par taille}}{60}{figure.caption.20}%
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Répartition des entreprises enquêtées par ancienneté}}{61}{figure.caption.21}%
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Répartition des entreprises enquêtées par secteur d'activité}}{62}{figure.caption.22}%
+\contentsline {figure}{\numberline {5.6}{\ignorespaces Répartition globale des besoins exprimés par les entreprises enquêtées}}{62}{figure.caption.23}%
+\contentsline {figure}{\numberline {5.7}{\ignorespaces Distribution des besoins des entreprises selon le statut juridique}}{63}{figure.caption.24}%
+\contentsline {figure}{\numberline {5.8}{\ignorespaces Distribution des besoins des entreprises selon la région d'implantation}}{64}{figure.caption.26}%
+\contentsline {figure}{\numberline {5.9}{\ignorespaces Distribution des besoins des entreprises selon leur ancienneté}}{65}{figure.caption.28}%
+\contentsline {figure}{\numberline {5.10}{\ignorespaces Distribution des besoins des entreprises selon le secteur d'activité}}{66}{figure.caption.30}%
+\contentsline {figure}{\numberline {5.11}{\ignorespaces Distribution des besoins des entreprises selon leur taille}}{67}{figure.caption.32}%
+\contentsline {figure}{\numberline {5.12}{\ignorespaces Éboulis des valeurs propres de l'ACM --- part d'inertie expliquée par axe factoriel}}{69}{figure.caption.34}%
+\contentsline {figure}{\numberline {5.13}{\ignorespaces Projection des modalités sur le premier plan factoriel de l'ACM (axes 1 et 2)}}{70}{figure.caption.35}%
+\contentsline {figure}{\numberline {5.14}{\ignorespaces Contributions des modalités au premier axe factoriel}}{70}{figure.caption.36}%
+\contentsline {figure}{\numberline {5.15}{\ignorespaces Contributions des modalités au second axe factoriel}}{70}{figure.caption.36}%
+\contentsline {figure}{\numberline {5.16}{\ignorespaces Dendrogramme de la Classification Ascendante Hiérarchique (méthode de Ward)}}{72}{figure.caption.37}%
+\contentsline {figure}{\numberline {5.17}{\ignorespaces Projection des trois classes obtenues par CAH sur le premier plan factoriel de l'ACM}}{72}{figure.caption.38}%
+\contentsline {figure}{\numberline {5.18}{\ignorespaces Répartition des classes par ancienneté }}{73}{figure.caption.39}%
+\contentsline {figure}{\numberline {5.19}{\ignorespaces Répartition des classes par secteur d'activité}}{73}{figure.caption.39}%
+\contentsline {figure}{\numberline {5.20}{\ignorespaces Répartition des classes par taille}}{73}{figure.caption.40}%
+\contentsline {figure}{\numberline {5.21}{\ignorespaces Répartition des classes par région}}{73}{figure.caption.40}%
+\contentsline {figure}{\numberline {5.22}{\ignorespaces Projection des entreprises et des centres de classes sur les axes discriminants de l'AFD}}{74}{figure.caption.41}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }

@@ -1,0 +1,75 @@
+\newacronym{dape}{DAPE}{Division des Analyses et des Politiques Économiques}
+\newacronym{minepat}{MINEPAT}{Ministère de l'Économie, de la Planification
+	et de l'Aménagement du Territoire}
+\newacronym{snd30}{SND30}{Stratégie Nationale de Développement à l'horizon 2030}
+\newacronym{dgepip}{DGEPIP}{Direction Générale de l'Économie et de la
+	Programmation des Investissements Publics}
+\newacronym{dgpat}{DGPAT}{Direction Générale de la Planification et de
+	l'Aménagement du Territoire}
+\newacronym{dgcoop}{DGCOOP}{Direction Générale de la Coopération et de
+	l'Intégration Régionale}
+\newacronym{dag}{DAG}{Direction des Affaires Générales}
+\newacronym{ins}{INS}{Institut National de la Statistique}
+\newacronym{rge}{RGE}{Recensement Général des Entreprises}
+\newacronym{gecam}{GECAM}{Groupement des Entreprises du Cameroun}
+\newacronym{pme}{PME}{Petites et Moyennes Entreprises}
+\newacronym{api}{API}{Application Programming Interface}
+\newacronym{ml}{ML}{Machine Learning}
+\newacronym{sgbd}{SGBD}{Système de Gestion de Bases de Données}
+\newacronym{uis}{UI/UX}{User Interface / User Experience}
+
+\begin{figure}[H]
+	\centering
+	\begin{tikzpicture}[
+		actor/.style={text width=1.5cm, align=center, font=\small},
+		usecase/.style={ellipse, draw=primary, fill=primary!8,
+			text width=3.2cm, align=center, font=\small,
+			minimum height=0.8cm},
+		sys/.style={rectangle, draw=primary, very thick,
+			minimum width=10cm, minimum height=11cm,
+			rounded corners=6pt},
+		line/.style={->, thick, color=primary},
+		dline/.style={dashed, ->, color=secondary}
+		]
+		% Boîte système
+		\node[sys] at (5, -4.5) {};
+		\node[font=\small\bfseries\color{primary}] at (5, 0.3)
+		{Plateforme \textit{Business Partnership}};
+		
+		% Cas d'usage
+		\node[usecase] (uc1) at (5,  -0.8) {S'inscrire};
+		\node[usecase] (uc2) at (5,  -2.2) {S'authentifier};
+		\node[usecase] (uc3) at (5,  -3.6) {Gérer son profil};
+		\node[usecase] (uc4) at (5,  -5.0) {Saisir ses besoins};
+		\node[usecase] (uc5) at (5,  -6.4) {Consulter les recommandations};
+		\node[usecase] (uc6) at (5,  -7.8) {Contacter un partenaire};
+		\node[usecase] (uc7) at (5,  -9.2) {Administrer la plateforme};
+		
+		% Acteurs
+		%\node[actor] (visiteur) at (-1.2, -0.8)
+		%{\includegraphics[height=1cm]{./img/actor.png}\\Visiteur};
+		%\node[actor] (entreprise) at (-1.2, -4.5)
+		%{\includegraphics[height=1cm]{./img/actor.png}\\Entreprise};
+		%\node[actor] (admin) at (11.2, -9.2)
+		%{\includegraphics[height=1cm]{./img/actor.png}\\Administrateur};
+		
+		% Relations
+		\draw[line] (visiteur)   -- (uc1);
+		\draw[line] (entreprise) -- (uc2);
+		\draw[line] (entreprise) -- (uc3);
+		\draw[line] (entreprise) -- (uc4);
+		\draw[line] (entreprise) -- (uc5);
+		\draw[line] (entreprise) -- (uc6);
+		\draw[line] (admin)      -- (uc7);
+		\draw[line] (admin)      -- (uc2);
+		
+		% Relations include
+		\draw[dline] (uc3) -- node[right, font=\tiny]
+		{\textlangle\textlangle include\textrangle\textrangle} (uc2);
+		\draw[dline] (uc4) -- node[right, font=\tiny]
+		{\textlangle\textlangle include\textrangle\textrangle} (uc2);
+	\end{tikzpicture}
+	\caption{Diagramme des cas d'usage de la plateforme
+		\textit{Business Partnership}}
+	\label{fig:use_case}
+\end{figure}

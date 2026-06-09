@@ -17,7 +17,7 @@
 \usepackage{siunitx}
 \usepackage{float}
 \usepackage{caption}
-
+\usepackage[table]{xcolor}
 %------------------------------------------------------------
 %  POLICES & TYPOGRAPHIE
 %------------------------------------------------------------
@@ -143,16 +143,10 @@ pdfkeywords={Data Sciences, Cartographie, Entreprises, MINEPAT, Cameroun}
 %  CORRECTION 3 : style=apa nécessite le package biblatex-apa
 %  installé via MiKTeX Package Manager
 %------------------------------------------------------------
-%\usepackage[
-%backend=biber,
-%style=apa,
-%natbib=true,
-%sortcites=true,
-%sorting=nyt
-%]{biblatex}
-%\DeclareLanguageMapping{french}{french-apa}
+%\usepackage[backend=biber,natbib=true, style=ieee, citestyle=ieee]{biblatex}
+ % Ton fichier de références
+\usepackage[numbers]{natbib}
 %\addbibresource{references.bib}
-\usepackage[round, sort, authoryear]{natbib}
 \bibliographystyle{plainnat}
 %------------------------------------------------------------
 %  PERSONNALISATION DES CHAPITRES
@@ -238,6 +232,7 @@ justification=centering
 %  CORRECTION 4 : glossaries chargé APRÈS hyperref (ordre obligatoire)
 %------------------------------------------------------------
 \usepackage[acronym, toc]{glossaries}
+
 \makeglossaries
 
 \newacronym{dape}{DAPE}{Division des Analyses et des Politiques Économiques}
@@ -253,6 +248,7 @@ justification=centering
 \newacronym{dag}{DAG}{Direction des Affaires Générales}
 \newacronym{ins}{INS}{Institut National de la Statistique}
 \newacronym{rge}{RGE}{Recensement Général des Entreprises}
+\newacronym{cas}{CAS}{Cellule des Analyses Sectorielles}
 \newacronym{gecam}{GECAM}{Groupement des Entreprises du Cameroun}
 \newacronym{pme}{PME}{Petites et Moyennes Entreprises}
 \newacronym{api}{API}{Application Programming Interface}
@@ -433,11 +429,11 @@ justification=centering
 	De nombreuses personnes ont contribué, chacune à sa manière, à l'accomplissement de ce travail. Nous remercions sincèrement :
 	
 	\begin{itemize}
-		\item Le \textbf{Ministre de l'Économie, de la Planification et de l'Aménagement du Territoire} pour nous avoir accordé la possibilité d'effectuer un stage académique au sein de son ministère.
-		\item Le \textbf{Chef de la Division des Analyses et des Politiques Économiques} pour son accompagnement permanent.
-		\item Notre \textbf{encadreur professionnel} pour ses conseils avisés et le suivi méticuleux de l'évolution de ce travail.
-		\item Le \textbf{Directeur de l'École Nationale Supérieure Polytechnique de Maroua}.
-		\item Le \textbf{Chef du Département d'Informatique et Télécommunications}.
+		\item M. ALAMINE OUSMANE MEY \textbf{\gls{minepat}} pour nous avoir accordé la possibilité d'effectuer un stage académique au sein de son ministère.
+		\item M. MENDO PAULIN \textbf{\gls{dape}} pour ses conseils avisés et le suivi méticuleux de l'évolution de ce travail.
+		\item M. ABDELAZIZ JUNMBE Cadre à la \textbf{\gls{cas}}
+		\item Pr ALIDOU MOHAMADOU \textbf{Directeur de l'École Nationale Supérieure Polytechnique de Maroua}.
+		\item Pr KALADZAVI  \textbf{Chef du Département d'Informatique et Télécommunications}.
 		\item Tous les \textbf{enseignants} qui, à travers leurs enseignements, ont rendu ce travail possible.
 	\end{itemize}
 	
@@ -481,8 +477,8 @@ justification=centering
 	\addcontentsline{toc}{chapter}{Liste des tableaux}
 	
 	%--- LISTE DES ACRONYMES ---
-	\printglossary[type=\acronymtype, title=Liste des acronymes et abréviations]
-	%\addcontentsline{toc}{chapter}{Liste des acronymes et abréviations}
+	\printglossary[type=\acronymtype, title={Liste des abréviations}]
+	\addcontentsline{toc}{chapter}{Liste des acronymes et abréviations}
 	
 	%============================================================
 	%  CORPS DU MÉMOIRE (numérotation arabe)
@@ -497,65 +493,25 @@ justification=centering
 	\addcontentsline{toc}{chapter}{Introduction Générale}
 	\markboth{Introduction Générale}{Introduction Générale}
 	
-	\section*{Contexte général}
-	
 
-	Dans de nombreux pays en développement, les entreprises locales jouent un rôle déterminant dans la production de biens et services, la création de valeur ajoutée et la dynamisation de l’activité économique (FMI, 2023). C’est la raison pour laquelle depuis 2009, le Cameroun s’est fixé pour objectif : le développement du secteur privé (MINEPAT, 2009). En effet, selon la vision 2035 , le développement de ce secteur constitue un levier essentiel de croissance économique, de création d’emplois et de transformation structurelle des économies. 
-	Conscient de l’importance stratégique de ce secteur dans le développement économique, le Gouvernement camerounais a adopté la Stratégie Nationale de Développement 2020 2030 (SND30), qui constitue le cadre de référence des politiques économiques et sociales pour la période 2020-2030. Cette stratégie vise notamment à accélérer la transformation structurelle de l’économie afin de faire du Cameroun un pays émergent à l’horizon 2035 (MINEPAT, 2020).\\ 
-	
-	 Dans ce cadre, plusieurs réformes ont déjà été mis en œuvre afin d’améliorer le climat des affaires et de promouvoir le développement du secteur privé (MINEPAT, 2025). Il s’agit notamment de : (i) la révision du cadre légal et réglementaire régissant le régime foncier et domanial en cohérence avec l’industrialisation, la modernisation de l’agriculture, le développement des villes, de l’immobilier et du logement ; (ii) la relecture du cadre légal et réglementaire de la gouvernance et de gestion de la forêt, pêche et élevage en cohérence avec l’industrialisation ; (iii) la relecture du cadre légal et réglementaire de la publicité en lien avec l’économie de marché et de commerce électronique ou en ligne ; (iv) la mise en place d’un cadre légal et réglementaire de structuration du sous-secteur de la médecine traditionnelle en vue de vulgariser les médicaments locaux ; et (v) la création et la mise en place des juridictions spécialisées pour améliorer l’instruction des litiges commerciaux et financiers.\\
-	 
-	Toutefois, malgré la mise en œuvre de ces réformes, les performances économiques observées restent en deçà des objectifs fixés. Selon le rapport d’évaluation de mi-parcours de la SND30 rendu public par le MINEPAT en janvier 2026, la croissance économique qui devait atteindre environ 8,5 \% en 2025, s’est établie en moyenne à environ 3,4 \% entre 2020 et 2025, avec des taux annuels de 0,3 \% en 2020, 3,3 \% en 2021, 3,7 \% en 2022, 3,2 \% en 2023 et environ 3,5 \% en 2024. De même, la contribution du secteur industriel à l’économie reste inférieure aux objectifs fixés. En effet, la part de la valeur ajoutée manufacturières sur le PIB stagne à 14 \% entre 2020-2025 au lieu des 19,9 \% prévus. Par ailleurs, le crédit à l’économie plafonne à 17,5 \% contre un objectif de 23,2 \%. \\
-	
-	Ces résultats montrent que, malgré les réformes engagées, plusieurs contraintes continuent de limiter le développement des entreprises locales. Pour rattraper les écarts observés, Monsieur le Ministre de l’Economie de la planification et de l’Aménagement du Territoire a instruit à la Division des Analyses et des Politiques Economiques (DAPE) la mise en œuvre d’une étude visant à faire la cartographie des besoins des entreprises du tissu productif local. Les extrants de cette étude permettront au Gouvernement de mener des interventions plus ciblées et adaptées aux entreprises selon leurs besoins.
-	
-	
-	\section*{Problématique}
-	
-	Les difficultés et besoins des entreprises ont fait l’objet de plusieurs études. Le GECAM (2019) par le biais d’une enquête montre que près de 60\% d’entreprises font face difficultés parmi lesquelles, l’instabilité du système fiscal (72\%), les pénalités et amendes fiscales (66\%), le niveau du taux d’imposition (61\%) ainsi la multiplicité des contrôles de l’administration fiscale (59\%). Pour le MINEPAT (2022), l’accès à l’énergie électrique est la principale difficulté auxquelles font face les entreprises industrielles nationales. Aussi, à travers l’enquête sur le climat des affaires au Cameroun auprès des chefs d’entreprises du secteur industriel, le MINEPAT (2023) soulève deux difficultés majeurs auxquelles sont confrontés les entreprises constituant le tissu productif nationale à savoir : l’accès aux facteurs de production et l’état des infrastructures routières. \\
-	
-	Il ressort qu’aune de ces études n’a tenté de recueillir de manière exhaustive les besoins des entreprises locales qui constituent le tissu productif camerounais. En général, elles recueillent les besoins dans le cadre des enquêtes qui poursuivent d’autres objectifs et de fait, ne sont pas exhausif. En effet, l’étude du GECAM (2019), bien que pertinente, se limite aux seuls membres de ce groupement et ne rend pas compte de la diversité du tissu économique national dans son ensemble. Le MINEPAT (2022 et 2023), pour sa part, demeure centré sur le secteur industriel et n’adresse pas de manière suffisamment directe les besoins des acteurs privés dans leur pluralité.\\
-	
-	C’est pour combler ces lacunes que le MINEPAT a engagé en 2025 une enquête spécifiquement dédiée à la cartographie et aux besoins des entreprises du tissu productif local, dont les résultats permettront au Gouvernement de mener des interventions plus ciblées et adaptées aux entreprises selon leurs besoins. Au-delà de ce cela, la mise sur pied d’une plateforme numérique de cartographie et de mise en relation est entreprise par le MINEPAT comme prolongement naturel de cette démarche. Car, à ce jour, aucun outil de ce type n’existe dans le paysage institutionnel camerounais. Les plateformes accessibles au grand public, telles que le Marketplace de Facebook, présentent des limites rédhibitoires : leur caractère informel les expose à des pratiques frauduleuses, et leur portée géographique restreinte à environ 65 kilomètres rend impossible tout accès à des partenaires étrangers. Des plateformes à vocation internationale comme Amazon ou Alibaba pallient certes ce problème d’étendue, mais leur offre concentrée sur des produits finis ne répond pas aux besoins plus complexes des entreprises camerounaises, qu’il s’agisse de la recherche de financements, de solutions organisationnelles ou d’outils adaptés à leur fonctionnement. C’est précisément à ces insuffisances que le MINEPAT entreprend engagé la mise en place d’une plateforme gouvernementale offrant un cadre formel, structuré et étendu, permettant aux entreprises  d’exprimer leurs besoins et d’identifier des partenaires potentiels sur la base de critères sectoriels et fonctionnels précis. \\
-	
-	Dès lors, deux questions guident ce travail : 
-	\begin{itemize}
-		\item Quel est la cartographie des besoins des entreprises locales au Cameroun ? 
-		\item Comment développer et mettre en place une plate-forme institutionnel de mise en relation entre les entreprises locales dans le but de combler ces besoins recensés ?
-	\end{itemize}
-	\newpage
-	\section*{Objectifs du mémoire}
-	L’objectif général de ce travail est de proposer une cartographie des besoins des entreprises locales sur la base des données obtenue à la suite de l’enquête initiée par la DAPE et de concevoir et développer une plateforme gouvernementale numérique permettant d’assurer non seulement la présentation des résultats obtenus mais également la mise en relation ces entreprises. Cette plateforme vise à centraliser les informations relatives aux entreprises, à leurs capacités productives et à leurs besoins spécifiques, afin de constituer un outil d’aide à la décision pour les pouvoirs publics et un espace de collaboration structuré pour les acteurs économiques, qu’ils soient nationaux ou étrangers. Spécifiquement, il sera question de :
-	\begin{itemize}
-		\item Décrire l’état des besoins exprimés par les entreprises locales;
-		\item Analyser les besoins en fonction des caractéristiques des entreprises;
-		\item Proposer une classification des entreprises locales selon leurs besoins et leurs profils;
-		\item Concevoir l’architecture d’une plateforme gouvernementale de cartographie et de mise en relation;
-		\item  Développer et tester un prototype fonctionnel de cette plateforme.
-	\end{itemize}
-	
-	\section*{Structure du mémoire}
-	
-	Ce document est organisé en quatre chapitres. Le \textbf{Chapitre~1} présente la structure d'accueil et le déroulement du stage. Le \textbf{Chapitre~2} propose une revue de la littérature et un état de l'art sur les plateformes similaires. Le \textbf{Chapitre~3} décrit la méthodologie adoptée pour la conception et le développement de la plateforme. Enfin, le \textbf{Chapitre~4} présente et discute les résultats obtenus.
-	
 	%============================================================
 	%  CHAPITRE 1 : PRÉSENTATION DE LA STRUCTURE ET DU STAGE
 	%============================================================
-	\chapter{Présentation de la structure d'accueil et déroulement du stage}
+	\chapter{Contexte et problèmatique}
 	\label{chap:structure}
-	
+Il sera question dans ce chapitre de présenter premièrement la structure d'accueil et le déroulement du stage. Par la suite présenter le contexte de notre travail et la problèmatique.
 \section[Présentation du MINEPAT]{Présentation du \gls{minepat}}
 \label{sec:minepat}
 
 Le Ministère de l'Économie, de la Planification et de l'Aménagement du Territoire
 (\gls{minepat}), créé par le Décret N°\,2008/220 du 4 juillet 2008, est l'institution
 gouvernementale chargée de l'élaboration et de la mise en \oe uvre de la politique
-économique nationale ainsi que de l'aménagement du territoire. Placé sous l'autorité
+économique nationale ainsi que de l'aménagement du territoire \cite{decret2008}. Placé sous l'autorité
 d'un Ministre assisté d'un Ministre délégué, le \gls{minepat} s'appuie sur un ensemble
-de structures organisationnelles complémentaires pour accomplir ses missions~: un
+de structures organisationnelles complémentaires pour accomplir ses missions, le ministre est accompagné par: un
 Secrétaire particulier, quatre conseillers techniques, une Inspection Générale, une
 administration centrale, des services déconcentrés, des services extérieurs ainsi que
-des établissements et organismes rattachés.
+des établissements et organismes rattachés. Le ministre délégué dispose d'un sécrétaire particulier.
 
 %------------------------------------------------------------
 \subsection{Organisation interne du \gls{minepat}}
@@ -709,11 +665,11 @@ Dans le domaine de l'aménagement du territoire, le \gls{minepat} est chargé~:
 \end{enumerate}
 
 %------------------------------------------------------------
-\subsection{Présentation de la structure d'accueil : la DAPE}
+\subsection{Présentation de la structure d'accueil : la \gls{dape}}
 %------------------------------------------------------------
 
-Au sein de la DGEPIP, la Division des Analyses et des Politiques Économiques (DAPE)
-constitue la structure au sein de laquelle s'est déroulé le présent stage. La DAPE est
+Au sein de la \gls{dgepip}, la Division des Analyses et des Politiques Économiques (\gls{dape})
+constitue la structure au sein de laquelle s'est déroulé le présent stage. La \gls{dape} est
 organisée en quatre cellules spécialisées dont les missions couvrent l'ensemble du
 cycle d'analyse économique~:
 
@@ -759,30 +715,371 @@ cycle d'analyse économique~:
 		\label{fig:organigramme}
 	\end{figure}
 	
-	\section{Déroulement du stage}
+	\section{Contexte général}
 	
-	\subsection{Cadre du stage}
+	Dans de nombreux pays en développement, les entreprises locales jouent un rôle déterminant dans la production de biens et services, la création de valeur ajoutée et la dynamisation de l’activité économique \cite{fmi2023}. C’est la raison pour laquelle depuis 2009, le Cameroun s’est fixé pour objectif : le développement du secteur privé \cite{minepat2009}. En effet, selon la vision 2035 , le développement de ce secteur constitue un levier essentiel de croissance économique, de création d’emplois et de transformation structurelle des économies. 
+	Conscient de l’importance stratégique de ce secteur dans le développement économique, le Gouvernement camerounais a adopté la Stratégie Nationale de Développement 2020-2030 \cite{minepat2020}, qui constitue le cadre de référence des politiques économiques et sociales pour la période 2020-2030. Cette stratégie vise notamment à accélérer la transformation structurelle de l’économie afin de faire du Cameroun un pays émergent à l’horizon 2035 \cite{minepat2020}.\\ 
 	
-	Notre stage académique s'est déroulé au sein de la \textbf{Division des Analyses et des Politiques Économiques (DAPE)}, une des quatre cellules de la DGEPIP. Cette division comprend :
+	Dans ce cadre, plusieurs réformes ont déjà été mis en œuvre afin d’améliorer le climat des affaires et de promouvoir le développement du secteur privé (MINEPAT, 2025). Il s’agit notamment de : (i) la révision du cadre légal et réglementaire régissant le régime foncier et domanial en cohérence avec l’industrialisation, la modernisation de l’agriculture, le développement des villes, de l’immobilier et du logement ; (ii) la relecture du cadre légal et réglementaire de la gouvernance et de gestion de la forêt, pêche et élevage en cohérence avec l’industrialisation ; (iii) la relecture du cadre légal et réglementaire de la publicité en lien avec l’économie de marché et de commerce électronique ou en ligne ; (iv) la mise en place d’un cadre légal et réglementaire de structuration du sous-secteur de la médecine traditionnelle en vue de vulgariser les médicaments locaux ; et (v) la création et la mise en place des juridictions spécialisées pour améliorer l’instruction des litiges commerciaux et financiers.\\
 	
+	Toutefois, malgré la mise en œuvre de ces réformes, les performances économiques observées restent en deçà des objectifs fixés. Selon le rapport d’évaluation de mi-parcours de la SND30 rendu public par le MINEPAT en janvier 2026, la croissance économique qui devait atteindre environ 8,5 \% en 2025, s’est établie en moyenne à environ 3,4 \% entre 2020 et 2025, avec des taux annuels de 0,3 \% en 2020, 3,3 \% en 2021, 3,7 \% en 2022, 3,2 \% en 2023 et environ 3,5 \% en 2024. De même, la contribution du secteur industriel à l’économie reste inférieure aux objectifs fixés. En effet, la part de la valeur ajoutée manufacturières sur le PIB stagne à 14 \% entre 2020-2025 au lieu des 19,9 \% prévus. Par ailleurs, le crédit à l’économie plafonne à 17,5 \% contre un objectif de 23,2 \% \cite{minepat2025}. \\
+	
+	Ces résultats montrent que, malgré les réformes engagées, plusieurs contraintes continuent de limiter le développement des entreprises locales. Pour rattraper les écarts observés, Monsieur le Ministre de l’Economie de la planification et de l’Aménagement du Territoire a instruit à la Division des Analyses et des Politiques Economiques (DAPE) la mise en œuvre d’une étude visant à faire la cartographie des besoins des entreprises du tissu productif local. Les extrants de cette étude permettront au Gouvernement de mener des interventions plus ciblées et adaptées aux entreprises selon leurs besoins.
+	
+	
+	\section{Problématique}
+	
+	Les difficultés et besoins des entreprises ont fait l’objet de plusieurs études. Le \gls{gecam} par le biais d’une enquête montre que près de 60\% d’entreprises font face difficultés parmi lesquelles, l’instabilité du système fiscal (72\%), les pénalités et amendes fiscales (66\%), le niveau du taux d’imposition (61\%) ainsi la multiplicité des contrôles de l’administration fiscale (59\%). Pour le MINEPAT (2022), l’accès à l’énergie électrique est la principale difficulté auxquelles font face les entreprises industrielles nationales \cite{gecam2019}. Aussi, à travers l’enquête sur le climat des affaires au Cameroun auprès des chefs d’entreprises du secteur industriel, le MINEPAT (2023) soulève deux difficultés majeurs auxquelles sont confrontés les entreprises constituant le tissu productif nationale à savoir : l’accès aux facteurs de production et l’état des infrastructures routières. \\
+	
+	Il ressort qu’aucune de ces études n’a tenté de recueillir de manière exhaustive les besoins des entreprises locales qui constituent le tissu productif camerounais. En général, elles recueillent les besoins dans le cadre des enquêtes qui poursuivent d’autres objectifs et de fait, ne sont pas exhausif. En effet, l’étude du \gls{gecam} , bien que pertinente, se limite aux seuls membres de ce groupement et ne rend pas compte de la diversité du tissu économique national dans son ensemble. Le \gls{minepat}, pour sa part, demeure centré sur le secteur industriel et n’adresse pas de manière suffisamment directe les besoins des acteurs privés dans leur pluralité.\\
+	
+	C’est pour combler ces lacunes que le \gls{minepat} a engagé en 2025 une enquête spécifiquement dédiée à la cartographie et aux besoins des entreprises du tissu productif local, dont les résultats permettront au Gouvernement de mener des interventions plus ciblées et adaptées aux entreprises selon leurs besoins. Au-delà de ce cela, la mise sur pied d’une plateforme numérique de cartographie et de mise en relation est entreprise par le MINEPAT comme prolongement naturel de cette démarche. Car, à ce jour, aucun outil de ce type n’existe dans le paysage institutionnel camerounais. Les plateformes accessibles au grand public, telles que le Marketplace de Facebook, présentent des limites rédhibitoires : leur caractère informel les expose à des pratiques frauduleuses, et leur portée géographique restreinte à environ 65 kilomètres rend impossible tout accès à des partenaires étrangers. Des plateformes à vocation internationale comme Amazon ou Alibaba pallient certes ce problème d’étendue, mais leur offre concentrée sur des produits finis ne répond pas aux besoins plus complexes des entreprises camerounaises, qu’il s’agisse de la recherche de financements, de solutions organisationnelles ou d’outils adaptés à leur fonctionnement. C’est précisément à ces insuffisances que le MINEPAT entreprend engagé la mise en place d’une plateforme gouvernementale offrant un cadre formel, structuré et étendu, permettant aux entreprises  d’exprimer leurs besoins et d’identifier des partenaires potentiels sur la base de critères sectoriels et fonctionnels précis. \\
+	
+	Dès lors, deux questions guident ce travail : 
 	\begin{itemize}
-		\item La Cellule des Analyses Conjoncturelles ;
-		\item La Cellule des Politiques Économiques ;
-		\item La Cellule de Synthèse Macroéconomique ;
-		\item La Cellule des Analyses Sectorielles.
+		\item Quel est la cartographie des besoins des entreprises locales au Cameroun ? 
+		\item Comment développer et mettre en place une plate-forme institutionnel de mise en relation entre les entreprises locales dans le but de combler ces besoins recensés ?
 	\end{itemize}
+	\newpage
+	\section{Objectifs du mémoire}
+	L’objectif général de ce travail est de proposer une cartographie des besoins des entreprises locales sur la base des données obtenue à la suite de l’enquête initiée par la DAPE et de concevoir et développer une plateforme gouvernementale numérique permettant d’assurer non seulement la présentation des résultats obtenus mais également la mise en relation ces entreprises. Cette plateforme vise à centraliser les informations relatives aux entreprises, à leurs capacités productives et à leurs besoins spécifiques, afin de constituer un outil d’aide à la décision pour les pouvoirs publics et un espace de collaboration structuré pour les acteurs économiques, qu’ils soient nationaux ou étrangers. Spécifiquement, il sera question de :
+	\begin{itemize}
+		\item Décrire l’état des besoins exprimés par les entreprises locales;
+		\item Analyser les besoins en fonction des caractéristiques des entreprises;
+		\item Proposer une classification des entreprises locales selon leurs besoins et leurs profils;
+		\item Concevoir l’architecture d’une plateforme gouvernementale de cartographie et de mise en relation;
+		\item  Développer et tester un prototype fonctionnel de cette plateforme.
+	\end{itemize}
+	%=============================================================
+	\section{Méthode de gestion de projet : l'approche Kanban}
+	\label{sec:kanban}
+	%=============================================================
 	
-	\subsection{Missions confiées}
+	La conduite d'un projet informatique de la nature de celui présenté
+	dans ce travail alliant traitement de données statistiques,
+	développement d'une application web requiert une méthode de gestion de projet adaptée
+	à la complexité, à l'incertitude et à l'évolutivité inhérentes à ce
+	type de réalisation. Parmi les différentes approches disponibles,
+	la méthode \textbf{Kanban} a été retenue comme cadre organisationnel
+	du présent projet, en raison de sa flexibilité, de sa capacité à
+	visualiser en temps réel l'état d'avancement des tâches et de son
+	adéquation avec les contraintes d'un projet conduit par un nombre
+	limité de collaborateurs. La présente section expose les fondements
+	théoriques et pratiques de cette méthode, avant d'en présenter
+	l'application concrète dans le cadre du développement de la
+	plateforme \textit{Business Partnership}.
 	
-	Les missions confiées au cours de ce stage au sein de la Division des Analyses et des Politiques Économiques \gls{dape} ont principalement porté sur le suivi et l'analyse des indicateurs macroéconomiques du Cameroun. À ce titre, des analyses approfondies ont été produites sur l'évolution des indicateurs des comptes nationaux, notamment le Produit Intérieur Brut (PIB), la valeur ajoutée sectorielle, la consommation finale et la formation brute de capital fixe. Ces travaux ont consisté à interpréter les tendances observées, à identifier les facteurs explicatifs des variations enregistrées d'une période à l'autre, et à formuler des conclusions susceptibles d'éclairer les décideurs dans leurs orientations stratégiques. Par ailleurs, des notes de conjoncture économique ont été rédigées, portant aussi bien sur la situation économique nationale que sur l'évolution de plusieurs économies partenaires du Cameroun. Ces notes, destinées à alimenter les rapports périodiques de la Division, ont nécessité une veille documentaire rigoureuse ainsi qu'une maîtrise des sources statistiques institutionnelles telles que les publications de la Banque Mondiale, du Fonds Monétaire International et de la Commission Économique des Nations Unies pour l'Afrique.
-	\\
-	Une seconde catégorie de missions a concerné la conception d'outils de collecte de données dans le cadre des enquêtes menées par la Division. Des questionnaires adaptés aux différentes problématiques économiques étudiées ont ainsi été élaborés, en veillant à la pertinence des variables retenues, à la clarté des formulations et à la cohérence de la structure d'ensemble. Ces questionnaires ont ensuite été transposés sous forme de formulaires numériques déployés sur des plateformes spécialisées de collecte de données en ligne, notamment KoBoToolbox. La prise en main de ces outils a impliqué une maîtrise de leurs fonctionnalités avancées, telles que la définition des types de questions, la gestion des sauts conditionnels, la configuration des contraintes de saisie et le paramétrage du déploiement auprès des enquêteurs de terrain. L'ensemble de ces activités a permis de contribuer concrètement au cycle complet de production de l'information économique, depuis la conception des instruments de mesure jusqu'à la production des analyses destinées aux autorités compétentes.s  
+	%-------------------------------------------------------------
+	\subsection{Origines et fondements conceptuels de la méthode Kanban}
+	\label{subsec:kanban_origines}
+	%-------------------------------------------------------------
 	
-	\subsection{Apports du stage}
-	Sur le plan des connaissances théoriques et analytiques, ce stage a constitué une opportunité d'approfondissement significatif dans plusieurs domaines de l'économie nationale. La participation aux travaux d'analyse de la conjoncture économique camerounaise a permis de développer une meilleure appréhension  des principaux indicateurs macroéconomiques, notamment le Produit Intérieur Brut, la valeur ajoutée sectorielle, le taux d'inflation, le solde de la balance commerciale et les agrégats des finances publiques. Enfin, la participation à la rédaction de notes de conjoncture et de documents de stratégie a permis de s'approprier les codes et les exigences propres à l'écriture institutionnelle, notamment la rigueur dans la formulation des constats, la structuration logique des argumentaires et la précision dans l'usage des données statistiques. \\
+	La méthode Kanban trouve ses origines dans le système de production
+	industrielle développé par l'ingénieur Taiichi Ohno au sein des
+	usines Toyota dans le Japon de l'après-guerre, au milieu des années
+	1950. Inspiré du fonctionnement des supermarchés américains, dans
+	lesquels les rayons sont réapprovisionnés en fonction de la demande
+	réelle des consommateurs et non selon des prévisions préétablies,
+	Ohno conçoit un système de production dit \textit{en flux tiré}
+	(\textit{pull system}), dans lequel chaque étape du processus de
+	fabrication ne produit que ce que l'étape suivante est en mesure
+	d'absorber \cite{ohno_1988}. Ce principe fondamental de régulation
+	par la demande constitue le c\oe ur philosophique de la méthode
+	Kanban, dont le nom signifie littéralement \og{}étiquette\fg{} ou
+	\og{}signal visuel\fg{} en japonais, en référence aux cartes physiques
+	utilisées pour matérialiser le flux de travail sur les lignes
+	d'assemblage.
 	
-	Sur le plan des compétences techniques et opérationnelles, ce stage a permis de renforcer la maîtrise de plusieurs outils d'analyse de données mobilisés dans le cadre des missions confiées. Le traitement et la visualisation des séries statistiques relatives aux comptes nationaux ont nécessité l'utilisation d'outils bureautiques avancés, contribuant ainsi au développement d'une rigueur méthodologique dans la manipulation et l'interprétation des données quantitatives. La conception de questionnaires d'enquête et leur déploiement sur les plateformes numériques tel que KoBoToolbox ont quant à eux permis d'acquérir une expérience concrète dans la gestion du cycle de collecte de données, depuis la définition des variables jusqu'au paramétrage des formulaires en ligne. 
-
+	Transposée au domaine du développement logiciel et de la gestion de
+	projets informatiques au début des années 2000, la méthode Kanban
+	a été formalisée et popularisée par David J. Anderson, dont l'ouvrage
+	de référence \textit{Kanban: Successful Evolutionary Change for Your
+		Technology Business} (2010) constitue la base théorique sur laquelle
+	repose la quasi-totalité des implémentations modernes de cette
+	méthode \cite{anderson2015essential}. Anderson identifie cinq propriétés
+	fondamentales qui caractérisent toute implémentation Kanban~:
+	
+	\begin{enumerate}
+		\item \textbf{La visualisation du flux de travail}~: l'ensemble des
+		tâches constituant le projet est rendu visible sur un tableau
+		structuré en colonnes représentant les différents états du processus
+		de réalisation (à faire, en cours, terminé, etc.), permettant à
+		chaque membre de l'équipe d'appréhender instantanément l'état
+		d'avancement global du projet~;
+		
+		\item \textbf{La limitation du travail en cours (WIP)}~: chaque
+		colonne du tableau Kanban est soumise à une limite maximale de
+		tâches simultanément en cours (\textit{Work In Progress limit},
+		ou WIP limit), afin d'éviter la surcharge des ressources, de
+		favoriser l'achèvement des tâches engagées avant d'en démarrer
+		de nouvelles, et d'identifier rapidement les goulots d'étranglement
+		du processus~;
+		
+		\item \textbf{La gestion et la mesure du flux}~: le flux de travail
+		est mesuré et géré de manière continue, à l'aide d'indicateurs
+		tels que le \textit{lead time} (délai entre la création d'une tâche
+		et sa livraison) et le \textit{cycle time} (délai de traitement
+		effectif), afin d'identifier les inefficiences et d'optimiser
+		la cadence de livraison~;
+		
+		\item \textbf{La formalisation des règles du processus}~: les
+		critères d'entrée et de sortie de chaque étape du processus sont
+		explicitement définis et partagés par l'ensemble des parties
+		prenantes, garantissant ainsi la cohérence et la prévisibilité
+		des livraisons~;
+		
+		\item \textbf{L'amélioration continue collaborative}~: la méthode
+		Kanban inscrit l'équipe dans une démarche permanente d'amélioration
+		du processus (\textit{kaizen}), fondée sur l'analyse régulière
+		des métriques de flux et la mise en \oe uvre collective de mesures
+		correctives.
+	\end{enumerate}
+	
+	Kanban s'inscrit ainsi dans la famille des méthodes agiles de gestion
+	de projet, dont le Manifeste Agile de 2001 a posé les principes
+	fondateurs~: priorité aux individus et aux interactions sur les
+	processus, aux logiciels fonctionnels sur la documentation exhaustive,
+	à la collaboration avec le client sur la négociation contractuelle,
+	et à l'adaptation au changement sur le suivi d'un plan rigide
+	\cite{beck_2001}. Il se distingue cependant d'autres méthodes agiles
+	telles que Scrum en ce qu'il ne prescrit ni itérations de durée fixe
+	(\textit{sprints}), ni rôles prédéfinis, ni cérémonies obligatoires,
+	offrant ainsi une flexibilité organisationnelle maximale, particulièrement
+	adaptée aux projets conduits par des équipes de petite taille ou en
+	contexte académique.
+	
+	%-------------------------------------------------------------
+	\subsection{Structure et composantes du tableau Kanban}
+	\label{subsec:kanban_tableau}
+	%-------------------------------------------------------------
+	
+	Le tableau Kanban constitue l'artefact central de la méthode~: il
+	matérialise visuellement l'ensemble du flux de travail et en rend
+	l'état instantanément lisible par l'ensemble des parties prenantes
+	du projet. Dans sa forme la plus courante, le tableau Kanban est
+	organisé en colonnes verticales représentant les différentes étapes
+	du cycle de vie d'une tâche, et en lignes horizontales pouvant
+	correspondre à différentes catégories de travaux ou à différents
+	membres de l'équipe. Chaque tâche est représentée par une carte
+	(\textit{kanban card}), physique ou numérique, qui se déplace de
+	gauche à droite sur le tableau au fur et à mesure de son avancement.
+	
+	Dans le cadre du développement de la plateforme \textit{Business
+		Partnership}, le tableau Kanban a été structuré autour de
+	\textbf{cinq colonnes} correspondant aux étapes successives du
+	processus de développement~:
+	
+	\begin{enumerate}
+		\item \textbf{Backlog} (\textit{À planifier})~: cette colonne
+		regroupe l'ensemble des tâches identifiées mais non encore
+		planifiées pour réalisation. Elle constitue le réservoir de travail
+		du projet et est alimentée au fur et à mesure de l'identification
+		de nouveaux besoins fonctionnels ou techniques~;
+		
+		\item \textbf{À faire} (\textit{To Do})~: les tâches sélectionnées
+		pour être traitées dans la période courante sont déplacées du
+		Backlog vers cette colonne. Leur sélection est effectuée en
+		fonction de leur priorité et de la capacité disponible de l'équipe~;
+		
+		\item \textbf{En cours} (\textit{In Progress})~: cette colonne
+		regroupe les tâches en cours de réalisation. Une limite WIP est
+		appliquée à cette colonne afin de garantir la focalisation de
+		l'effort sur un nombre restreint de tâches simultanées~;
+		
+		\item \textbf{En révision} (\textit{In Review})~: les tâches
+		achevées sont soumises à une phase de relecture, de test et de
+		validation avant d'être considérées comme définitivement terminées.
+		Cette étape garantit la qualité des livrables produits~;
+		
+		\item \textbf{Terminé} (\textit{Done})~: les tâches ayant satisfait
+		l'ensemble des critères de validation définis sont archivées dans
+		cette colonne, constituant ainsi un historique des réalisations
+		accomplies.
+	\end{enumerate}
+	
+	\usetikzlibrary{shadows} % <--- Indispensable pour l'effet "drop shadow"
+	
+	\begin{figure}[H]
+		\centering
+		\begin{tikzpicture}[
+			col/.style={rectangle, draw=primary, fill=primary!8,
+				minimum width=2.2cm, minimum height=7cm,
+				text width=2cm, align=center, rounded corners=3pt},
+			card/.style={rectangle, draw=secondary, fill=white,
+				minimum width=1.8cm, minimum height=0.8cm,
+				text width=1.7cm, align=center, font=\tiny,
+				rounded corners=2pt, drop shadow},
+			header/.style={rectangle, fill=primary, text=white,
+				minimum width=2.2cm, minimum height=0.6cm,
+				text width=2cm, align=center, font=\small\bfseries,
+				rounded corners=3pt}
+			]
+			% Colonnes
+			\foreach \i/\name in {0/{Backlog}, 2.4/{À faire}, 4.8/{En cours}, 7.2/{En révision}, 9.6/{Terminé}}{
+				\node[col] at (\i, 0) {};
+				\node[header] at (\i, 3.2) {\name};
+			}
+			% Cartes exemples
+			\node[card] at (0, 2.2) {Conception MCD};
+			\node[card] at (0, 1.2) {Tests unitaires};
+			\node[card] at (0, 0.2) {Documentation};
+			\node[card] at (2.4, 2.2) {ACM / CAH};
+			\node[card] at (2.4, 1.2) {Module auth};
+			\node[card, fill=secondary!15] at (4.8, 2.2) {Algo matching};
+			\node[card, fill=secondary!15] at (4.8, 1.2) {Interface profil};
+			\node[card, fill=accent!10] at (7.2, 2.2) {API REST};
+			\node[card, fill=green!20] at (9.6, 2.2) {Base de données};
+			\node[card, fill=green!20] at (9.6, 1.2) {Page d'accueil};
+			% Limite WIP
+			\node[font=\tiny\color{accent}] at (4.8, -3) {WIP max : 2};
+		\end{tikzpicture}
+		\caption{Représentation schématique du tableau Kanban utilisé pour
+			le développement de la plateforme \textit{Business Partnership}}
+		\label{fig:kanban_board}
+	\end{figure}
+	%-------------------------------------------------------------
+	\subsection{Avantages de Kanban pour un projet de Data Sciences}
+	\label{subsec:kanban_avantages}
+	%-------------------------------------------------------------
+	
+	Le choix de la méthode Kanban comme cadre de gestion du présent
+	projet se justifie par plusieurs avantages spécifiques, particulièrement
+	pertinents dans le contexte d'un projet de Data Sciences combinant
+	analyse statistique et développement logiciel.
+	
+	\textbf{La flexibilité face à l'incertitude analytique} constitue
+	le premier avantage déterminant. Un projet de Data Sciences est par
+	nature itératif et exploratoire~: les résultats d'une analyse
+	statistique peuvent remettre en question des choix de modélisation
+	antérieurs ou faire émerger de nouveaux besoins fonctionnels pour
+	la plateforme. Contrairement à des méthodes prescriptives telles
+	que le cycle en V ou le modèle en cascade, Kanban permet d'intégrer
+	ces évolutions sans rupture organisationnelle, simplement en ajoutant
+	ou en repriorisant des cartes dans le tableau. Cette adaptabilité
+	est d'autant plus précieuse que les phases d'analyse (ACM, CAH, AFD)
+	et de développement (Django, SQLite) s'influencent mutuellement de
+	manière non linéaire au cours du projet.
+	
+	\textbf{La visibilité permanente de l'avancement} représente le
+	second avantage majeur. Le tableau Kanban offre à tout moment une
+	photographie fidèle de l'état du projet~: les tâches terminées, en
+	cours, en attente et à planifier sont visibles d'un seul regard,
+	sans nécessiter de réunions de suivi formelles ou de rapports
+	d'avancement élaborés. Cette transparence est particulièrement utile
+	dans le contexte d'un projet académique impliquant des interactions
+	régulières avec un directeur de mémoire et un encadreur professionnel,
+	à qui l'état d'avancement peut être communiqué de manière instantanée
+	et sans ambiguïté.
+	
+	\textbf{La prévention des goulots d'étranglement} constitue le
+	troisième avantage opérationnel. La limitation du WIP contraint à
+	achever les tâches engagées avant d'en démarrer de nouvelles, ce
+	qui prévient l'accumulation de travaux partiellement réalisés et
+	favorise une livraison régulière et prévisible de fonctionnalités.
+	Dans le cadre du développement de la plateforme \textit{Business
+		Partnership}, cette discipline a permis d'éviter la dispersion entre
+	les différentes composantes du projet (analyse des données,
+	développement du back-end, développement du front-end, rédaction du
+	mémoire) et de maintenir une progression équilibrée sur l'ensemble
+	des axes.
+	
+	\textbf{La légèreté procédurale}, enfin, constitue un avantage
+	non négligeable pour un projet conduit en contexte académique. Kanban
+	ne requiert ni réunion quotidienne obligatoire (\textit{daily
+		stand-up}), ni définition de rôles spécialisés (\textit{product
+		owner}, \textit{scrum master}), ni planification d'itérations à
+	durée fixe, ce qui le rend directement applicable sans formation
+	préalable approfondie ni infrastructure organisationnelle complexe.
+	Sa mise en \oe uvre peut être réalisée à partir d'outils simples et
+	accessibles, aussi bien physiques (tableau blanc et post-its) que
+	numériques, comme les plateformes Trello, Notion ou GitHub Projects,
+	qui ont été mobilisées dans le cadre de ce projet.
+	
+	%-------------------------------------------------------------
+	\subsection{Application de Kanban au développement de la plateforme
+		\textit{Business Partnership}}
+	\label{subsec:kanban_application}
+	%-------------------------------------------------------------
+	
+	L'application concrète de la méthode Kanban au développement de la
+	plateforme \textit{Business Partnership} s'est traduite par
+	l'organisation de l'ensemble des tâches du projet en une liste de
+	travaux (\textit{backlog}) initiale, établie dès la phase de
+	conception et enrichie de manière incrémentale tout au long du
+	développement. Cette liste a été structurée en trois catégories
+	principales de tâches~: les tâches d'analyse statistique (traitement
+	des données de l'enquête, réalisation de l'ACM, de la CAH et de
+	l'AFD), les tâches de développement logiciel (conception de la base
+	de données, développement des modèles Django, développement des vues
+	et des templates, intégration de l'algorithme de recommandation), et
+	les tâches de documentation et de rédaction (rédaction du mémoire,
+	documentation technique de la plateforme).
+	
+	La priorisation des tâches a été conduite selon le principe de la
+	valeur métier~: les fonctionnalités à plus forte valeur pour
+	l'utilisateur final (inscription des entreprises, saisie des besoins,
+	affichage des recommandations) ont été traitées en priorité, afin
+	de disposer le plus tôt possible d'un prototype fonctionnel
+	susceptible d'être présenté et évalué. Cette approche, cohérente
+	avec les principes agiles de livraison incrémentale de valeur,
+	a permis de valider rapidement les choix de conception et d'ajuster
+	le développement en fonction des retours obtenus lors des revues
+	intermédiaires avec l'encadrement académique et professionnel.
+	
+	Le tableau~\ref{tab:kanban_taches} ci-dessous présente une sélection
+	des principales tâches réalisées au cours du projet, organisées par
+	catégorie et accompagnées de leur état d'avancement à la date de
+	rédaction de ce mémoire.
+	
+	\begin{table}[H]
+		\centering
+		\caption{Sélection des principales tâches du projet \textit{Business Partnership} dans le tableau Kanban}
+		\label{tab:kanban_taches}
+		\renewcommand{\arraystretch}{1.3}
+		\begin{tabularx}{\textwidth}{l X >{\centering\arraybackslash}p{2.5cm}}
+			\toprule
+			\rowcolor{primary!15}
+			\textbf{Catégorie} & \textbf{Tâche} & \textbf{État} \\
+			\midrule
+			
+			\multirow{4}{*}{\textbf{Analyse}}
+			& Prétraitement des données de l'enquête & \textcolor{green!60!black}{Terminé} \\
+			& Réalisation de l'ACM (FactoMineR) & \textcolor{green!60!black}{Terminé} \\
+			& Réalisation de la CAH (méthode de Ward) & \textcolor{green!60!black}{Terminé} \\
+			& Réalisation de l'AFD et calcul du TBC & \textcolor{green!60!black}{Terminé} \\
+			
+			\midrule
+			
+			\multirow{5}{*}{\textbf{Développement}}
+			& Conception du MCD et du MLD (MERISE) & \textcolor{green!60!black}{Terminé} \\
+			& Développement des modèles Django & \textcolor{green!60!black}{Terminé} \\
+			& Développement du module d'inscription & \textcolor{green!60!black}{Terminé} \\
+			& Intégration de l'algorithme de recommandation & \textcolor{green!60!black}{Terminé} \\
+			& Tests et validation de la plateforme & \textcolor{orange}{\textbf{En cours}} \\
+			
+			\midrule
+			
+			\multirow{3}{*}{\textbf{Rédaction}}
+			& Rédaction des chapitres 1 à 3 & \textcolor{green!60!black}{Terminé} \\
+			& Rédaction du chapitre 4 & \textcolor{orange}{\textbf{En cours}} \\
+			& Relecture et mise en forme finale & \textcolor{blue}{\textbf{À faire}} \\
+			
+			\bottomrule
+		\end{tabularx}
+	\end{table}
+	L'utilisation de la méthode Kanban tout au long de ce projet a
+	permis de maintenir une organisation rigoureuse et transparente,
+	de livrer de manière incrémentale les différentes composantes de
+	la plateforme et de l'analyse, et d'adapter continuellement les
+	priorités en fonction de l'évolution des contraintes académiques
+	et techniques. Elle constitue en ce sens un cadre méthodologique
+	pleinement cohérent avec la nature exploratoire et itérative d'un
+	projet de Data Sciences appliquées au développement d'une plateforme
+	gouvernementale.
+	\section{Structure du mémoire}
+	
+	Ce document est organisé en quatre chapitres. Le \textbf{Chapitre~1} présente la structure d'accueil et le déroulement du stage. Le \textbf{Chapitre~2} propose une revue de la littérature et un état de l'art sur les plateformes similaires. Le \textbf{Chapitre~3} décrit la méthodologie adoptée pour la conception et le développement de la plateforme. Enfin, le \textbf{Chapitre~4} présente et discute les résultats obtenus.
+	
 	
 	%============================================================
 	%  CHAPITRE 2 : CONCEPTS ET ÉTAT DE L'ART
@@ -993,8 +1290,692 @@ ce qui limite leur capacité à en tirer parti pour se faire connaître
 	%============================================================
 	%  CHAPITRE 3 : MÉTHODOLOGIE
 	%============================================================
-	\chapter{Méthodologie}
+	%=============================================================
+	\chapter{Cahier des charges de la plateforme
+		\textit{Business Partnership}}
+	\label{chap:cahier_charges}
+	%=============================================================
 	
+	Le présent cahier des charges constitue le document de référence
+	qui formalise l'ensemble des exigences fonctionnelles, techniques
+	et non fonctionnelles auxquelles doit satisfaire la plateforme
+	gouvernementale \textit{Business Partnership}. Il précise le
+	contexte dans lequel s'inscrit le projet, les acteurs concernés,
+	les cas d'usage attendus, les contraintes imposées et les critères
+	de qualité retenus pour évaluer la solution livrée. Ce document
+	a été élaboré en cohérence avec les résultats de l'analyse
+	statistique des données de l'enquête du \gls{minepat} présentée
+	au chapitre précédent, dont les enseignements ont directement
+	informé la définition des besoins fonctionnels de la plateforme.
+	
+	%=============================================================
+	\section{Contexte et périmètre du projet}
+	\label{sec:contexte_projet}
+	%=============================================================
+	
+	\subsection{Contexte institutionnel}
+	
+	La plateforme \textit{Business Partnership} s'inscrit dans le cadre
+	de la mise en \oe uvre de la Stratégie Nationale de Développement
+	2020--2030 (\gls{snd30}), qui identifie le développement du secteur
+	privé comme l'un des leviers essentiels de la transformation
+	structurelle de l'économie camerounaise. Elle constitue le
+	prolongement numérique de l'enquête sur la cartographie et les
+	besoins des entreprises conduite par le \gls{minepat} en 2025,
+	dont les données collectées alimentent directement la base de
+	connaissances de la plateforme et le moteur de recommandation
+	qui en constitue le c\oe ur fonctionnel. La plateforme est
+	destinée à être opérée sous la tutelle du \gls{minepat}, qui
+	en assurera la gouvernance et la maintenance, et à être accessible
+	à l'ensemble des entreprises du tissu productif camerounais
+	disposant d'un accès à internet.
+	
+	\subsection{Périmètre fonctionnel}
+	
+	Le périmètre de la plateforme \textit{Business Partnership} couvre
+	les fonctionnalités suivantes~:
+	
+	\begin{itemize}
+		\item la création et la gestion de profils d'entreprises~;
+		\item la saisie et la mise à jour des besoins exprimés par
+		les entreprises~;
+		\item la cartographie géographique et sectorielle des entreprises
+		enregistrées~;
+		\item la mise en relation automatisée des entreprises sur la base
+		d'un algorithme de recommandation fondé sur la similarité
+		cosinus calculée dans l'espace factoriel de l'ACM~;
+		\item la gestion des interactions entre entreprises mises en
+		relation~;
+		\item l'administration et le suivi de la plateforme par les
+		agents du \gls{minepat}.
+	\end{itemize}
+	
+	Sont explicitement exclus du périmètre de la version actuelle~:
+	la gestion des transactions commerciales entre entreprises, le
+	traitement des paiements en ligne, la signature électronique des
+	contrats de partenariat, et l'intégration avec les systèmes
+	d'information tiers des administrations partenaires (DGI, CNPS,
+	OHADA). Ces fonctionnalités pourront être envisagées dans une
+	version ultérieure de la plateforme.
+	
+	%=============================================================
+	\section{Identification des acteurs}
+	\label{sec:acteurs}
+	%=============================================================
+	
+	L'identification précise des acteurs du système constitue un
+	préalable indispensable à la définition des cas d'usage et à la
+	modélisation des droits d'accès. Un acteur est défini ici comme
+	toute entité --- humaine ou système externe --- qui interagit
+	avec la plateforme \textit{Business Partnership} dans le cadre
+	de son utilisation normale. Trois catégories d'acteurs principaux
+	ont été identifiées.
+	
+	\subsection{L'entreprise (acteur principal)}
+	
+	L'entreprise constitue l'acteur central de la plateforme. Elle
+	désigne toute unité économique --- quelle que soit sa taille,
+	sa forme juridique ou son secteur d'activité --- qui s'inscrit
+	sur la plateforme afin de renseigner son profil, d'exprimer
+	ses besoins et de consulter les recommandations de partenaires
+	potentiels générées par le moteur de mise en relation. L'entreprise
+	est représentée sur la plateforme par un ou plusieurs utilisateurs
+	physiques disposant d'un compte personnel sécurisé.
+	
+	\subsection{L'administrateur}
+	
+	L'administrateur est un agent du \gls{minepat} disposant de
+	droits d'accès étendus à l'ensemble des fonctionnalités de la
+	plateforme. Il est chargé de la validation des inscriptions des
+	entreprises, de la modération des contenus publiés, du suivi
+	des indicateurs d'utilisation et de l'administration technique
+	de la plateforme. Il dispose d'un tableau de bord dédié lui
+	permettant de superviser en temps réel l'ensemble des activités
+	de la plateforme.
+	
+	\subsection{Le visiteur}
+	
+	Le visiteur désigne tout internaute qui accède à la plateforme
+	sans être authentifié. Il peut consulter les informations
+	publiques de présentation de la plateforme et ses fonctionnalités,
+	mais ne peut accéder ni aux profils des entreprises, ni aux
+	recommandations, ni à aucune fonctionnalité interactive. Son
+	accès est strictement limité aux pages publiques, afin de
+	protéger la confidentialité des informations des entreprises
+	enregistrées.
+	
+	\begin{table}[H]
+		\centering
+		\caption{Synthèse des acteurs et de leurs droits d'accès}
+		\label{tab:acteurs}
+		\renewcommand{\arraystretch}{1.5}
+		\begin{tabularx}{\textwidth}{>{\raggedright\arraybackslash}p{3cm}
+				>{\centering\arraybackslash}p{2.2cm}
+				>{\centering\arraybackslash}p{2.2cm}
+				>{\centering\arraybackslash}X}
+			\toprule
+			\rowcolor{primary!15}
+			\textbf{Fonctionnalité}
+			& \textbf{Visiteur}
+			& \textbf{Entreprise}
+			& \textbf{Administrateur} \\
+			\midrule
+			
+			Consulter les pages publiques
+			& \textcolor{green!60!black}{\checkmark}
+			& \textcolor{green!60!black}{\checkmark}
+			& \textcolor{green!60!black}{\checkmark} \\
+			
+			\rowcolor{lightgray}
+			Créer un compte entreprise
+			& \textcolor{green!60!black}{\checkmark}
+			& ---
+			& \textcolor{green!60!black}{\checkmark} \\
+			
+			Gérer son profil
+			& \textcolor{accent}{\texttimes}
+			& \textcolor{green!60!black}{\checkmark}
+			& \textcolor{green!60!black}{\checkmark} \\
+			
+			\rowcolor{lightgray}
+			Saisir ses besoins
+			& \textcolor{accent}{\texttimes}
+			& \textcolor{green!60!black}{\checkmark}
+			& \textcolor{green!60!black}{\checkmark} \\
+			
+			Consulter les recommandations
+			& \textcolor{accent}{\texttimes}
+			& \textcolor{green!60!black}{\checkmark}
+			& \textcolor{green!60!black}{\checkmark} \\
+			
+			\rowcolor{lightgray}
+			Contacter un partenaire
+			& \textcolor{accent}{\texttimes}
+			& \textcolor{green!60!black}{\checkmark}
+			& \textcolor{green!60!black}{\checkmark} \\
+			
+			Valider les inscriptions
+			& \textcolor{accent}{\texttimes}
+			& \textcolor{accent}{\texttimes}
+			& \textcolor{green!60!black}{\checkmark} \\
+			
+			\rowcolor{lightgray}
+			Accéder au tableau de bord
+			& \textcolor{accent}{\texttimes}
+			& \textcolor{accent}{\texttimes}
+			& \textcolor{green!60!black}{\checkmark} \\
+			
+			Gérer les utilisateurs
+			& \textcolor{accent}{\texttimes}
+			& \textcolor{accent}{\texttimes}
+			& \textcolor{green!60!black}{\checkmark} \\
+			
+			\rowcolor{lightgray}
+			Exporter les données
+			& \textcolor{accent}{\texttimes}
+			& \textcolor{accent}{\texttimes}
+			& \textcolor{green!60!black}{\checkmark} \\
+			
+			\bottomrule
+		\end{tabularx}
+	\end{table}
+	
+	%=============================================================
+	\section{Spécifications fonctionnelles}
+	\label{sec:specs_fonctionnelles}
+	%=============================================================
+	
+	Les spécifications fonctionnelles décrivent de manière exhaustive
+	et précise l'ensemble des fonctionnalités que doit offrir la
+	plateforme \textit{Business Partnership} à ses différents acteurs.
+	Chaque fonctionnalité est décrite sous la forme d'un cas d'usage
+	(\textit{use case}), précisant les acteurs impliqués, les
+	préconditions, le scénario nominal et les exceptions éventuelles.
+	
+	\subsection{Gestion des comptes et authentification}
+	
+	\begin{tcolorbox}[
+		colback=lightgray, colframe=primary,
+		title={\textbf{UC-01 — Inscription d'une entreprise}},
+		fonttitle=\bfseries\small\color{white},
+		colbacktitle=primary, arc=4pt, boxrule=0.8pt
+		]
+		\textbf{Acteur principal~:} Représentant légal de l'entreprise \\
+		\textbf{Préconditions~:} L'entreprise n'est pas encore enregistrée
+		sur la plateforme \\
+		\textbf{Scénario nominal~:}
+		\begin{enumerate}
+			\item L'utilisateur accède au formulaire d'inscription depuis
+			la page d'accueil de la plateforme~;
+			\item Il renseigne les informations obligatoires~: raison sociale,
+			statut juridique, région, secteur d'activité, adresse
+			électronique et mot de passe~;
+			\item Il soumet le formulaire~;
+			\item Le système vérifie la validité et la cohérence des
+			informations saisies~;
+			\item Un courriel de confirmation est envoyé à l'adresse
+			électronique renseignée~;
+			\item L'administrateur valide l'inscription après vérification
+			des informations~;
+			\item L'entreprise reçoit une notification de validation et
+			peut accéder à son espace personnel.
+		\end{enumerate}
+		\textbf{Exceptions~:} Adresse électronique déjà utilisée~;
+		informations incomplètes ou incohérentes~; délai de validation
+		dépassé.
+	\end{tcolorbox}
+	
+	\vspace{0.5cm}
+	
+	\begin{tcolorbox}[
+		colback=lightgray, colframe=primary,
+		title={\textbf{UC-02 — Authentification}},
+		fonttitle=\bfseries\small\color{white},
+		colbacktitle=primary, arc=4pt, boxrule=0.8pt
+		]
+		\textbf{Acteur principal~:} Entreprise / Administrateur \\
+		\textbf{Préconditions~:} L'utilisateur dispose d'un compte validé \\
+		\textbf{Scénario nominal~:}
+		\begin{enumerate}
+			\item L'utilisateur saisit son adresse électronique et son
+			mot de passe dans le formulaire de connexion~;
+			\item Le système vérifie les identifiants~;
+			\item En cas de succès, l'utilisateur est redirigé vers son
+			tableau de bord personnel.
+		\end{enumerate}
+		\textbf{Exceptions~:} Identifiants incorrects (maximum 5 tentatives
+		avant verrouillage temporaire du compte)~; compte non encore validé
+		par l'administrateur.
+	\end{tcolorbox}
+	
+	\subsection{Gestion du profil de l'entreprise}
+	
+	\begin{tcolorbox}[
+		colback=lightgray, colframe=primary,
+		title={\textbf{UC-03 — Compléter et mettre à jour le profil}},
+		fonttitle=\bfseries\small\color{white},
+		colbacktitle=primary, arc=4pt, boxrule=0.8pt
+		]
+		\textbf{Acteur principal~:} Entreprise \\
+		\textbf{Préconditions~:} L'utilisateur est authentifié \\
+		\textbf{Scénario nominal~:}
+		\begin{enumerate}
+			\item L'utilisateur accède à la section \og{}Mon profil\fg{}
+			depuis son tableau de bord~;
+			\item Il complète ou met à jour les informations relatives à son
+			entreprise~: localisation précise, branche d'activité,
+			biens et services proposés, taille, ancienneté, coordonnées
+			et site web~;
+			\item Il enregistre les modifications~;
+			\item Le système met à jour les données et régénère les
+			recommandations de partenaires en conséquence.
+		\end{enumerate}
+		\textbf{Exceptions~:} Données incohérentes~; format de fichier
+		non supporté pour les pièces jointes éventuelles.
+	\end{tcolorbox}
+	
+	\subsection{Gestion des besoins}
+	
+	\begin{tcolorbox}[
+		colback=lightgray, colframe=primary,
+		title={\textbf{UC-04 — Saisir et gérer ses besoins}},
+		fonttitle=\bfseries\small\color{white},
+		colbacktitle=primary, arc=4pt, boxrule=0.8pt
+		]
+		\textbf{Acteur principal~:} Entreprise \\
+		\textbf{Préconditions~:} Le profil de l'entreprise est complété
+		à au moins 50\,\% \\
+		\textbf{Scénario nominal~:}
+		\begin{enumerate}
+			\item L'utilisateur accède à la section \og{}Mes besoins\fg{}~;
+			\item Il sélectionne la catégorie de besoin parmi les types
+			proposés (financement, équipements, intrants, transport,
+			emballages, appui institutionnel, innovation)~;
+			\item Il renseigne une description détaillée du besoin~;
+			\item Il indique le degré de priorité (urgent, important,
+			secondaire)~;
+			\item Il soumet le besoin~;
+			\item Le système enregistre le besoin et déclenche la mise à
+			jour des recommandations de partenaires.
+		\end{enumerate}
+		\textbf{Exceptions~:} Description insuffisamment détaillée~;
+		catégorie de besoin non sélectionnée.
+	\end{tcolorbox}
+	
+	\subsection{Moteur de recommandation et mise en relation}
+	
+	\begin{tcolorbox}[
+		colback=lightgray, colframe=primary,
+		title={\textbf{UC-05 — Consulter les recommandations de partenaires}},
+		fonttitle=\bfseries\small\color{white},
+		colbacktitle=primary, arc=4pt, boxrule=0.8pt
+		]
+		\textbf{Acteur principal~:} Entreprise \\
+		\textbf{Préconditions~:} Au moins un besoin a été saisi par
+		l'entreprise \\
+		\textbf{Scénario nominal~:}
+		\begin{enumerate}
+			\item L'utilisateur accède à la section \og{}Mes recommandations\fg{}~;
+			\item Le système calcule la similarité cosinus entre le profil
+			factoriel de l'entreprise et ceux des autres entreprises
+			enregistrées~;
+			\item Les cinq entreprises présentant les scores de similarité
+			les plus élevés sont affichées, accompagnées de leur profil
+			synthétique et du score de compatibilité calculé~;
+			\item L'utilisateur peut affiner les recommandations en appliquant
+			des filtres (région, secteur, taille)~;
+			\item Il peut accéder au profil complet d'une entreprise
+			recommandée et initier un contact.
+		\end{enumerate}
+		\textbf{Exceptions~:} Aucune entreprise compatible trouvée~;
+		profil insuffisamment renseigné pour générer des recommandations
+		pertinentes.
+	\end{tcolorbox}
+	
+	\begin{tcolorbox}[
+		colback=lightgray, colframe=primary,
+		title={\textbf{UC-06 — Contacter un partenaire potentiel}},
+		fonttitle=\bfseries\small\color{white},
+		colbacktitle=primary, arc=4pt, boxrule=0.8pt
+		]
+		\textbf{Acteur principal~:} Entreprise \\
+		\textbf{Préconditions~:} L'entreprise est authentifiée et a
+		consulté les recommandations \\
+		\textbf{Scénario nominal~:}
+		\begin{enumerate}
+			\item L'utilisateur sélectionne une entreprise recommandée~;
+			\item Il accède à son profil public~;
+			\item Il rédige un message de prise de contact via le formulaire
+			intégré à la plateforme~;
+			\item Le message est transmis à l'entreprise destinataire par
+			notification interne et par courriel~;
+			\item L'entreprise destinataire peut accepter, refuser ou
+			différer la mise en relation.
+		\end{enumerate}
+		\textbf{Exceptions~:} Message vide~; entreprise destinataire
+		ayant désactivé les contacts entrants.
+	\end{tcolorbox}
+	
+	\subsection{Administration de la plateforme}
+	
+\begin{tcolorbox}[
+	colback=gray!10, % Plus clair pour une meilleure lisibilité du texte noir
+	colframe=primary,
+	title={UC-07 --- Tableau de bord administrateur}, % --- pour un tiret cadratin propre
+	fonttitle=\bfseries\small\color{white},
+	colbacktitle=primary, arc=4pt, boxrule=0.8pt
+	]
+	\textbf{Acteur principal :} Administrateur \par\smallskip
+	\textbf{Préconditions :} L'administrateur est authentifié avec ses droits étendus \par\smallskip
+	\textbf{Scénario nominal :}
+	\begin{enumerate}
+		\item L'administrateur accède à son tableau de bord dédié ;
+		\item Il consulte les indicateurs clés de la plateforme :
+		nombre d'entreprises enregistrées, nombre de besoins
+		saisis, nombre de mises en relation initiées, répartition
+		géographique et sectorielle des entreprises ;
+		\item Il gère les demandes d'inscription en attente de validation ;
+		\item Il accède à la liste complète des entreprises et peut
+		consulter, modifier ou suspendre tout profil ;
+		\item Il peut exporter les données agrégées sous format CSV
+		pour des analyses complémentaires.
+	\end{enumerate}
+\end{tcolorbox}
+	%=============================================================
+	\section{Spécifications non fonctionnelles}
+	\label{sec:specs_non_fonctionnelles}
+	%=============================================================
+	
+	Les spécifications non fonctionnelles définissent les contraintes
+	de qualité, de performance et de sécurité auxquelles la plateforme
+	\textit{Business Partnership} doit se conformer, indépendamment
+	des fonctionnalités qu'elle offre. Elles constituent des exigences
+	transversales qui conditionnent la qualité globale de la solution
+	et son adéquation aux contraintes du contexte camerounais.
+	
+	\subsection{Exigences de performance}
+	
+	La plateforme doit être en mesure de répondre aux requêtes des
+	utilisateurs dans un délai maximal de \textbf{3 secondes} pour
+	les pages de consultation de profils et d'affichage des
+	recommandations, et de \textbf{5 secondes} pour les opérations
+	impliquant le calcul de la similarité cosinus sur l'ensemble
+	de la base d'entreprises. Ces seuils ont été définis en tenant
+	compte des contraintes de connectivité caractéristiques du
+	contexte camerounais, où les débits internet disponibles peuvent
+	être sensiblement inférieurs à ceux des pays à infrastructure
+	numérique plus développée. La plateforme doit par ailleurs être
+	dimensionnée pour supporter simultanément au moins
+	\textbf{500 utilisateurs connectés} sans dégradation significative
+	des performances, ce seuil étant défini sur la base des effectifs
+	d'entreprises potentiellement utilisatrices identifiés lors de
+	l'enquête du \gls{minepat}.
+	
+	\subsection{Exigences de sécurité}
+	
+	La sécurité constitue une exigence fondamentale de la plateforme,
+	en raison de la sensibilité des informations économiques et
+	commerciales que les entreprises y déposent. Les mesures de
+	sécurité suivantes sont imposées~:
+	
+	\begin{itemize}
+		\item \textbf{Chiffrement des communications}~: l'ensemble des
+		échanges entre le navigateur de l'utilisateur et le serveur de
+		la plateforme doit être chiffré via le protocole
+		\textbf{HTTPS/TLS}~;
+		
+		\item \textbf{Hachage des mots de passe}~: les mots de passe
+		des utilisateurs doivent être stockés sous forme hachée à l'aide
+		d'un algorithme cryptographiquement sûr (bcrypt ou Argon2),
+		et ne doivent en aucun cas être stockés en clair dans la base
+		de données~;
+		
+		\item \textbf{Protection contre les attaques courantes}~: la
+		plateforme doit intégrer des mécanismes de protection contre
+		les principales vulnérabilités web répertoriées par l'OWASP
+		(\textit{Open Web Application Security Project}), notamment les
+		injections SQL, les attaques par script intersite (XSS) et
+		la falsification de requêtes intersites (CSRF). Le framework
+		Django, retenu pour le développement, intègre nativement des
+		mécanismes de protection contre ces attaques~;
+		
+		\item \textbf{Contrôle d'accès}~: un système de contrôle
+		d'accès basé sur les rôles (\textit{Role-Based Access Control},
+		RBAC) doit garantir qu'aucun utilisateur ne peut accéder à des
+		ressources ou des fonctionnalités au-delà de celles autorisées
+		par son profil~;
+		
+		\item \textbf{Journalisation des accès}~: les accès à la
+		plateforme et les opérations sensibles (modification de profil,
+		suppression de données, connexions administrateur) doivent
+		être journalisés afin de permettre la traçabilité et l'audit.
+	\end{itemize}
+	
+	\subsection{Exigences d'accessibilité et d'ergonomie}
+	
+	La plateforme doit être accessible depuis les navigateurs web
+	modernes les plus répandus (Google Chrome, Mozilla Firefox,
+	Microsoft Edge, Safari) dans leurs versions récentes, sans
+	nécessiter l'installation de plugins ou d'extensions tierces.
+	Elle doit adopter une conception \textit{responsive}, garantissant
+	une expérience utilisateur satisfaisante aussi bien sur ordinateur
+	de bureau que sur terminal mobile, ces derniers représentant le
+	principal mode d'accès à internet pour une large fraction des
+	utilisateurs camerounais. L'interface doit être rédigée intégralement
+	en \textbf{langue française}, et son architecture de navigation
+	doit respecter le principe de la règle des trois clics, selon
+	lequel toute fonctionnalité doit être accessible depuis la page
+	d'accueil en au plus trois interactions.
+	
+	\subsection{Exigences de maintenabilité et d'évolutivité}
+	
+	La plateforme doit être conçue selon les principes de l'architecture
+	logicielle propre (\textit{clean architecture}), de manière à
+	faciliter sa maintenance corrective et évolutive par des équipes
+	techniques qui n'auraient pas participé à son développement initial.
+	Le code source doit être intégralement documenté et versionné
+	à l'aide du système Git, et déposé sur un dépôt accessible aux
+	équipes techniques du \gls{minepat}. La base de données doit
+	être conçue de manière modulaire, afin de permettre l'ajout de
+	nouvelles variables d'analyse ou de nouvelles fonctionnalités
+	sans nécessiter une refonte complète de l'architecture existante.
+	
+	\subsection{Exigences de disponibilité}
+	
+	La plateforme doit garantir un taux de disponibilité
+	(\textit{uptime}) d'au moins \textbf{99\,\%} sur une base mensuelle,
+	soit un temps d'indisponibilité maximal de 7 heures 12 minutes par
+	mois. Les opérations de maintenance planifiées doivent être réalisées
+	en dehors des heures de forte utilisation, idéalement entre 23h00
+	et 05h00 (heure de Yaoundé), et annoncées aux utilisateurs avec
+	un préavis minimal de 48 heures.
+	
+	%=============================================================
+	\section{Modélisation des données : Modèle Conceptuel des Données}
+	\label{sec:mcd}
+	%=============================================================
+	
+	Le Modèle Conceptuel des Données (MCD), élaboré selon la méthode
+	MERISE, représente la structure logique des informations gérées par
+	la plateforme \textit{Business Partnership}, indépendamment de toute
+	considération technique relative au système de gestion de bases de
+	données retenu. Il identifie les entités du système, leurs attributs
+	et les associations qui les relient, en précisant les cardinalités
+	de chaque association \citep{tardieu_1983}.
+	
+	\subsection{Entités et attributs}
+	
+	Les entités principales du modèle sont les suivantes~:
+	
+	\begin{itemize}
+		
+		\item \textbf{Entreprise}~: entité centrale du modèle. Attributs~:
+		\texttt{id} (identifiant unique), \texttt{raison\_sociale},
+		\texttt{statut\_juridique}, \texttt{taille}, \texttt{date\_creation},
+		\texttt{email}, \texttt{telephone}, \texttt{site\_web},
+		\texttt{localisation}, \texttt{date\_inscription},
+		\texttt{statut\_validation}~;
+		
+		\item \textbf{Region}~: entité référentielle. Attributs~:
+		\texttt{id}, \texttt{nom\_region}~;
+		
+		\item \textbf{SecteurActivite}~: entité référentielle. Attributs~:
+		\texttt{id}, \texttt{nom\_secteur}, \texttt{type\_secteur}
+		(primaire/secondaire/tertiaire)~;
+		
+		\item \textbf{BrancheActivite}~: entité référentielle. Attributs~:
+		\texttt{id}, \texttt{nom\_branche}~;
+		
+		\item \textbf{Besoin}~: entité décrivant les besoins exprimés.
+		Attributs~: \texttt{id}, \texttt{type\_besoin},
+		\texttt{detail\_besoin}, \texttt{priorite},
+		\texttt{date\_saisie}, \texttt{statut}~;
+		
+		\item \textbf{MiseEnRelation}~: entité associative matérialisant
+		une mise en relation entre deux entreprises. Attributs~:
+		\texttt{id}, \texttt{date\_initiation}, \texttt{statut}
+		(en attente/acceptée/refusée), \texttt{score\_similarite}~;
+		
+		\item \textbf{Utilisateur}~: entité représentant les comptes
+		d'accès à la plateforme. Attributs~: \texttt{id},
+		\texttt{email}, \texttt{mot\_de\_passe\_hache},
+		\texttt{role} (entreprise/administrateur),
+		\texttt{date\_creation\_compte}, \texttt{dernier\_acces}.
+		
+	\end{itemize}
+	
+	\subsection{Associations et cardinalités}
+	
+	Les associations entre entités sont les suivantes~:
+	
+	\begin{itemize}
+		
+		\item \textbf{Entreprise -- Region}~: une entreprise est
+		implantée dans une et une seule région~; une région peut
+		accueillir plusieurs entreprises. Cardinalité~: (1,1) -- (0,n)~;
+		
+		\item \textbf{Entreprise -- SecteurActivite}~: une entreprise
+		appartient à un et un seul secteur d'activité~; un secteur peut
+		regrouper plusieurs entreprises. Cardinalité~: (1,1) -- (0,n)~;
+		
+		\item \textbf{Entreprise -- BrancheActivite}~: une entreprise
+		opère dans une branche d'activité~; une branche peut regrouper
+		plusieurs entreprises. Cardinalité~: (1,1) -- (0,n)~;
+		
+		\item \textbf{Entreprise -- Besoin}~: une entreprise peut
+		exprimer plusieurs besoins~; chaque besoin est associé à une
+		et une seule entreprise. Cardinalité~: (1,n) -- (1,1)~;
+		
+		\item \textbf{Entreprise -- MiseEnRelation}~: une entreprise
+		peut initier plusieurs mises en relation et en recevoir
+		plusieurs~; chaque mise en relation implique exactement deux
+		entreprises. Cardinalité~: (0,n) -- (2,2)~;
+		
+		\item \textbf{Entreprise -- Utilisateur}~: un compte utilisateur
+		est rattaché à une et une seule entreprise~; une entreprise peut
+		disposer de plusieurs comptes utilisateurs. Cardinalité~:
+		(1,n) -- (1,1).
+		
+	\end{itemize}
+	
+	%=============================================================
+	\section{Diagramme des cas d'usage}
+	\label{sec:use_case}
+	%=============================================================
+	
+	Le diagramme des cas d'usage synthétise l'ensemble des interactions
+	entre les acteurs identifiés et les fonctionnalités de la plateforme.
+	Il constitue une représentation graphique standardisée, issue de la
+	notation UML (\textit{Unified Modeling Language}), qui permet de
+	communiquer de manière claire et non ambiguë les exigences
+	fonctionnelles du système à l'ensemble des parties prenantes du
+	projet, qu'elles soient techniques ou non \citep{booch_1998}.
+	
+	
+	
+	%=============================================================
+	\section{Synthèse des exigences}
+	\label{sec:synthese_exigences}
+	%=============================================================
+	
+	Le tableau~\ref{tab:synthese_exigences} ci-dessous présente une
+	synthèse récapitulative de l'ensemble des exigences du cahier des
+	charges, organisées par catégorie et accompagnées de leur niveau
+	de priorité selon la méthode \textbf{MoSCoW}
+	(\textit{Must have, Should have, Could have, Won't have}),
+	qui constitue l'une des techniques de priorisation des exigences
+	les plus répandues dans les projets agiles \citep{anderson2015essential}.
+\begin{table}[H]
+	\centering
+	\caption{Synthèse des exigences selon la méthode MoSCoW}
+	\label{tab:synthese_exigences}
+	\renewcommand{\arraystretch}{1.4}
+	\begin{tabularx}{\textwidth}{>{\raggedright\arraybackslash}p{1.5cm}
+			>{\raggedright\arraybackslash}X
+			>{\centering\arraybackslash}p{2.5cm}}
+		\toprule
+		\rowcolor{primary!15}
+		\textbf{Catégorie} & \textbf{Exigence} & \textbf{Priorité MoSCoW} \\
+		\midrule
+		
+		\multirow{10}{1.5cm}{\raggedright\textbf{Fonction-\\nel}}
+		& Inscription et authentification des entreprises
+		& \textbf{Must have} \\
+		& Gestion du profil d'entreprise
+		& \textbf{Must have} \\
+		\rowcolor{lightgray}
+		& Saisie et gestion des besoins
+		& \textbf{Must have} \\
+		& Moteur de recommandation (similarité cosinus)
+		& \textbf{Must have} \\
+		\rowcolor{lightgray}
+		& Messagerie interne entre entreprises
+		& \textbf{Should have} \\
+		& Cartographie géographique interactive
+		& \textbf{Should have} \\
+		\rowcolor{lightgray}
+		& Tableau de bord administrateur
+		& \textbf{Must have} \\
+		& Export des données (CSV)
+		& \textbf{Should have} \\
+		\rowcolor{lightgray}
+		& Système de notation des partenariats
+		& \textbf{Could have} \\
+		& Intégration avec les SI des administrations
+		& \textbf{Won't have} \\
+		
+		\midrule
+		
+		\multirow{5}{1.5cm}{\raggedright\textbf{Non\\fonction-\\nel}}
+		& Temps de réponse $\leq$ 3 secondes
+		& \textbf{Must have} \\
+		\rowcolor{lightgray}
+		& Chiffrement HTTPS/TLS
+		& \textbf{Must have} \\
+		& Interface \textit{responsive} (mobile)
+		& \textbf{Must have} \\
+		\rowcolor{lightgray}
+		& Disponibilité $\geq$ 99\,\%
+		& \textbf{Should have} \\
+		& Support multilingue (français/anglais)
+		& \textbf{Could have} \\
+		
+		\bottomrule
+	\end{tabularx}
+\end{table}
+	Ce cahier des charges constitue le document contractuel de référence
+	sur lequel s'est fondé l'ensemble du processus de conception et de
+	développement de la plateforme \textit{Business Partnership}. Les
+	exigences classées \textit{Must have} ont été intégralement
+	implémentées dans la version présentée dans ce mémoire. Les exigences
+	\textit{Should have} ont été partiellement développées et constituent
+	des axes prioritaires d'évolution pour les versions ultérieures.
+	Les exigences \textit{Could have} et \textit{Won't have} ont été
+	documentées et transmises aux équipes techniques du \gls{minepat}
+	comme feuille de route pour les développements futurs de la plateforme.
+	
+	
+	\chapter{Conception, modélisation et implémentation}
 	Il sera question dans ce chapitre de présenter la méthodologie utilisée en vue du traitement des données issues de  l’enquête réalisée par le MINEPAT sur la cartographie des besoins des entreprises. Nous débuterons par une présentation des données à travers la description de la source des données, des variables et en fin les méthodes de traitements de ces données. S’en suivra la méthodologie sur la conception de la plateforme gouvernementale et des techniques utilisées.
 	\label{chap:methodo}
 	
@@ -1593,12 +2574,81 @@ Lorsque le test du $\chi^2$ indique une association significative, l’intensit�
 	
 	
 	%=============================================================
-	\section{Méthodologie de conception et de développement
-		de la plateforme Business Partnership}
-	\label{sec:methodologie_dev}
-	%=============================================================
+\section{Méthodologie de conception et de développement de la plateforme Business Partnership}
+\label{sec:methodologie_dev}
+%=============================================================
+Dans cette section, nous présentons la démarche méthodologique ainsi que les instruments techniques ayant guidé la conception et le développement de la plateforme \textit{Business Partnership}. Notre approche s'articule autour de trois axes principaux : la modélisation formelle de l'architecture de données, la sélection de l'écosystème logiciel (langage et frameworks), et enfin, la spécification de l'algorithme de mise en relation (matching) qui constitue le cœur fonctionnel de l'application.
+
+\subsection{Conception de la base de données}
+Une architecture de données rigoureuse est le gage d'une application robuste, évolutive et performante. Afin de formaliser cette structure, nous avons adopté la méthode \textit{MERISE}, une approche systémique particulièrement adaptée à la modélisation des bases de données relationnelles. Le Système de Gestion de Base de Données (SGBD) retenu pour le développement et la phase de prototypage est \textit{SQLite3}. Ce choix est justifié par sa légèreté, sa configuration simplifiée (sans serveur autonome) et sa parfaite conformité aux propriétés ACID (Atomicité, Cohérence, Isolation, Durabilité).
+
+\subsubsection{Spécification fonctionnelle et règles de gestion}
+L'analyse des besoins métiers de la plateforme a permis de dégager les règles de gestion suivantes, indispensables à la construction de nos modèles de données :
+\begin{itemize}
+	\item \textbf{Profil de l'entreprise :} Chaque entreprise s'enregistre sur la plateforme et est caractérisée par sa raison sociale, sa région d'implantation, sa taille (effectif ou chiffre d'affaires), son statut juridique et son ancienneté.
+	\item \textbf{Classification sectorielle :} Une entreprise appartient à une et une seule \textit{Classe} d'activité.
+	\item \textbf{Capacités de couverture :} Une entreprise peut posséder (ou non) les compétences requises pour combler les besoins d'une ou plusieurs classes d'entreprises.
+	\item \textbf{Expression des besoins :} Dès son inscription, l'entreprise doit obligatoirement définir ses besoins sur la plateforme.
+	\item \textbf{Système de recommandation :} En réponse à ses besoins exprimés, l'entreprise reçoit des suggestions ciblées listant les entités capables d'y répondre.
+\end{itemize}
+
+\subsubsection{Modèle Conceptuel de Données (MCD)}
+Le MCD formalise les entités (\textit{Entreprise}, \textit{Classe}, \textit{Besoin}), leurs associations ainsi que les cardinalités issues des règles de gestion, indépendamment de toute considération technique ou logicielle.
+% Intégration future du schéma MCD
+% \begin{figure}[htbp]
+	%     \centering
+	%     \includegraphics[width=0.8\textwidth]{images/mcd_plateforme.png}
+	%     \caption{Modèle Conceptuel de Données (MCD)}
+	%     \label{fig:mcd}
+	% \end{figure}
+
+\subsubsection{Modèle Logique de Données (MLD)}
+Le MLD traduit le MCD en structures relationnelles exploitables. Les entités deviennent des tables, et les associations se transforment en clés primaires et clés étrangères selon les règles de dérivation de la méthode MERISE.
+% Intégration future du schéma MLD
+% \begin{figure}[htbp]
+	%     \centering
+	%     \includegraphics[width=0.8\textwidth]{images/mld_plateforme.png}
+	%     \caption{Modèle Logique de Données (MLD)}
+	%     \label{fig:mld}
+	% \end{figure}
+
+\subsubsection{Modèle Physique de Données (MPD)}
+Le MPD représente l'implémentation concrète de la structure relationnelle au sein du SGBD SQLite3, en spécifiant les types de champs (TEXT, INTEGER, etc.) et les contraintes d'intégrité référentielle.
+% Intégration future du schéma MPD
+% \begin{figure}[htbp]
+	%     \centering
+	%     \includegraphics[width=0.8\textwidth]{images/mpd_plateforme.png}
+	%     \caption{Modèle Physique de Données (MPD)}
+	%     \label{fig:mpd}
+	% \end{figure}
+
+\subsection{Langages de programmation et frameworks utilisés}
+Le choix de l'environnement technologique répond à des impératifs d'efficacité, de sécurité et de rapidité de déploiement. Notre choix s'est porté sur le langage \textit{Python} et le framework \textit{Django}. 
+
+Python s'est imposé naturellement en raison de sa polyvalence et de sa suprématie dans le domaine de la Data Science, facilitant ainsi l'intégration future de nos algorithmes de mise en relation. 
+
+Le framework de haut niveau \textit{Django}, initialement développé en 2003 pour la gestion de sites d'actualités par le journal américain \textit{Lawrence Journal-World}, est aujourd'hui une référence mondiale pour le développement d'applications web robustes. Django se distingue par son architecture orientée \textit{MTV} (Modèle-Template-Vue), qui est une déclinaison directe du traditionnel pattern \textit{MVC} (Modèle-Vue-Contrôleur) :
+\begin{itemize}
+	\item \textbf{Le Modèle (Model) :} Correspond à la couche de données. Il encapsule la structure de la base de données via un ORM (\textit{Object-Relational Mapping}) et gère la logique métier.
+	\item \textbf{Le Template (Template) :} Gère la couche de présentation (l'interface utilisateur HTML/CSS). Il équivaut à la \textit{Vue} dans le modèle MVC classique.
+	\item \textbf{La Vue (View) :} Contient la logique de contrôle. Elle intercepte les requêtes HTTP, interagit avec les Modèles pour récupérer ou modifier les données, et sélectionne le Template approprié à afficher. Elle fait office de \textit{Contrôleur}.
+\end{itemize}
 	
-	
+\subsection{Spécification de l'algorithme de mise en relation (Matching)}
+\label{subsec:algorithme_matching}
+Le moteur de recommandation est le cœur analytique de la plateforme. La mise en relation entre une entreprise exprimant un besoin et les entreprises capables d'y répondre ne peut se satisfaire d'une simple requête SQL adaptative. Nous avons mis en place une approche basée sur [compléter ici : ex. la similarité de cosinus sur des embeddings de texte / un filtrage basé sur le contenu / des règles métiers probabilistes].
+
+\subsubsection{Formalisation mathématique / logique}
+Soit $E$ l'ensemble des entreprises inscrites et $B_i$ l'ensemble des besoins spécifiés par une entreprise $e_i$. Le score de compatibilité $S$ entre l'entreprise demanderesse $e_i$ et une entreprise prestataire potentielle $e_j$ est calculé selon la fonction suivante :
+
+\begin{equation}
+	S(e_i, e_j) = f(B_i, C_j) \times \omega_{géo}
+\end{equation}
+
+Où $C_j$ représente les classes de compétences de l'entreprise $e_j$ et $\omega_{géo}$ est un coefficient de pondération lié à la proximité géographique (région d'implantation). 
+
+\subsubsection{Gestion du démarrage à froid (Cold Start)}
+Un défi majeur des systèmes de recommandation est le problème du \textit{Cold Start} (démarrage à froid), qui survient lorsqu'une nouvelle entreprise s'inscrit sans historique d'interactions. Pour y pallier, la plateforme impose la saisie obligatoire des besoins dès l'inscription, permettant une recommandation immédiate basée sur le contenu (\textit{Content-Based Filtering}) plutôt que sur l'historique des connexions.
 	
 	%============================================================
 	%  CHAPITRE 4 : PRÉSENTATION DES RÉSULTATS
@@ -1737,7 +2787,7 @@ Technologies de l'Informations et de la Communication sont assez peu nombreuses 
 			de visualiser la distribution conjointe des variables, et le test du
 			$\chi^2$ de Pearson accompagné du coefficient $V$ de Cramér, qui
 			permettent de tester et de quantifier l'intensité de ces associations
-			\citep{saporta_2010}.
+			\cite{saporta_2010}.
 			
 			\subsubsection{Répartition des besoins selon le statut juridique}
 			
@@ -2060,7 +3110,7 @@ Technologies de l'Informations et de la Communication sont assez peu nombreuses 
 			\subsubsection{Analyse des Correspondances Multiples (ACM)}
 			
 			L'ACM a été conduite à l'aide du package \texttt{FactoMineR} du
-			langage R %\citep{lebart_morineau_piron_1995}
+			langage R %\cite{lebart_morineau_piron_1995}
 			, sur l'ensemble des
 			variables qualitatives retenues pour décrire les entreprises et
 			leurs besoins. Son objectif principal est d'identifier les axes
@@ -2155,7 +3205,7 @@ Technologies de l'Informations et de la Communication sont assez peu nombreuses 
 			La CAH a été conduite à partir des coordonnées factorielles des
 			entreprises sur les axes retenus lors de l'ACM, en utilisant la
 			méthode d'agrégation de Ward qui minimise la perte d'inertie
-			inter-classes à chaque étape de fusion \citep{saporta_2010}. Cette
+			inter-classes à chaque étape de fusion \cite{saporta_2010}. Cette
 			approche, combinant ACM et CAH, est particulièrement adaptée aux
 			données qualitatives dans la mesure où elle s'affranchit des
 			problèmes liés aux distances euclidiennes calculées directement
@@ -2248,7 +3298,7 @@ Technologies de l'Informations et de la Communication sont assez peu nombreuses 
 			
 			L'AFD est conduite en aval de la CAH afin de valider la qualité de
 			la partition obtenue et d'identifier les variables qui discriminent
-			le mieux les trois classes d'entreprises \citep{saporta_2010}. Elle
+			le mieux les trois classes d'entreprises \cite{saporta_2010}. Elle
 			permet de répondre à deux questions complémentaires~: les classes
 			identifiées sont-elles suffisamment distinctes pour être considérées
 			comme des groupes homogènes~? Quelles variables permettent de les
@@ -2455,7 +3505,10 @@ entre les classes.
 	%  BIBLIOGRAPHIE
 	%============================================================
 	%\printbibliography[heading=bibintoc, title={Bibliographie}]
-	\bibliography{references}
+\newpage
+\bibliographystyle{plainnat}
+\bibliography{references.bib} % Indiquez le nom de votre fichier .bib sans l'extension
+%\printbibliography[title={Bibliographie}] % Génère la liste des références
 	%============================================================
 	%  ANNEXES
 	%============================================================

@@ -1,0 +1,98 @@
+\babel@toc {french}{}\relax 
+\contentsline {chapter}{Dédicace}{i}{chapter*.1}%
+\contentsline {chapter}{Remerciements}{ii}{chapter*.2}%
+\contentsline {chapter}{Résumé}{iii}{chapter*.3}%
+\contentsline {chapter}{Abstract}{v}{chapter*.4}%
+\contentsline {chapter}{Table des matières}{vii}{chapter*.5}%
+\contentsline {chapter}{Liste des figures}{ix}{chapter*.6}%
+\contentsline {chapter}{Liste des tableaux}{1}{chapter*.7}%
+\contentsline {chapter}{Introduction Générale}{2}{chapter*.8}%
+\contentsline {chapter}{\numberline {1}Présentation de la structure d'accueil et déroulement du stage}{5}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Présentation du MINEPAT}{5}{section.1.1}%
+\contentsline {subsection}{\numberline {1.1.1}Organisation interne du \gls {minepat}}{5}{subsection.1.1.1}%
+\contentsline {subsubsection}{Le Ministre délégué}{5}{subsection.1.1.1}%
+\contentsline {subsubsection}{L'Inspection Générale}{5}{subsection.1.1.1}%
+\contentsline {subsubsection}{L'Administration Centrale}{6}{subsection.1.1.1}%
+\contentsline {subsubsection}{Les Services Déconcentrés}{7}{Item.5}%
+\contentsline {subsection}{\numberline {1.1.2}Missions du MINEPAT}{7}{subsection.1.1.2}%
+\contentsline {subsection}{\numberline {1.1.3}Présentation de la structure d'accueil : la DAPE}{7}{subsection.1.1.3}%
+\contentsline {section}{\numberline {1.2}Déroulement du stage}{7}{section.1.2}%
+\contentsline {subsection}{\numberline {1.2.1}Cadre du stage}{8}{subsection.1.2.1}%
+\contentsline {subsection}{\numberline {1.2.2}Missions confiées}{8}{subsection.1.2.2}%
+\contentsline {subsection}{\numberline {1.2.3}Apports du stage}{8}{subsection.1.2.3}%
+\contentsline {chapter}{\numberline {2}Définition des concepts et état de l'art}{9}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Définition des concepts}{9}{section.2.1}%
+\contentsline {subsection}{\numberline {2.1.1}Cartographie des besoins des entreprises}{9}{subsection.2.1.1}%
+\contentsline {subsection}{\numberline {2.1.2}Mise en relation des entreprises}{10}{subsection.2.1.2}%
+\contentsline {subsubsection}{Plateformes numériques B2B}{10}{subsection.2.1.2}%
+\contentsline {subsubsection}{Bourses de Sous-Traitance et de Partenariat}{10}{subsection.2.1.2}%
+\contentsline {subsubsection}{Partenariats contractuels directs}{11}{subsection.2.1.2}%
+\contentsline {section}{\numberline {2.2}État de l'art}{11}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}Enquêtes en vue de la cartographie des besoins des entreprises}{11}{subsection.2.2.1}%
+\contentsline {subsection}{\numberline {2.2.2}Plateformes existantes de mise en relation des entreprises}{11}{subsection.2.2.2}%
+\contentsline {subsubsection}{LinkedIn}{11}{subsection.2.2.2}%
+\contentsline {subsubsection}{Facebook Marketplace}{11}{subsection.2.2.2}%
+\contentsline {subsubsection}{Alibaba}{12}{subsection.2.2.2}%
+\contentsline {chapter}{\numberline {3}Méthodologie}{13}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Méthodologie pour la cartographie des besoins des entreprises}{13}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}Présentation des données}{13}{subsection.3.1.1}%
+\contentsline {subsubsection}{Source de données}{13}{subsection.3.1.1}%
+\contentsline {subsubsection}{Description des variables}{14}{subsection.3.1.1}%
+\contentsline {subsubsection}{Pré-traitement de la base de données}{15}{table.caption.11}%
+\contentsline {subsection}{\numberline {3.1.2}Méthode d'analyse}{15}{subsection.3.1.2}%
+\contentsline {subsubsection}{Analyse descriptive}{16}{subsection.3.1.2}%
+\contentsline {subsubsection}{Analyse exploratoire des données}{16}{Item.7}%
+\contentsline {paragraph}{Formalisation mathématique}{16}{Item.8}%
+\contentsline {section}{\numberline {3.2}Méthodologie de conception et de développement de la plateforme Business Partnership}{18}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}Contexte et objectifs de la plateforme}{18}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.2}Méthode de développement : approche itérative}{18}{subsection.3.2.2}%
+\contentsline {subsection}{\numberline {3.2.3}Conception de la base de données}{18}{subsection.3.2.3}%
+\contentsline {subsubsection}{Description des fonctionnalités}{18}{subsection.3.2.3}%
+\contentsline {subsubsection}{Modèle Conceptuel de Données}{19}{subsection.3.2.3}%
+\contentsline {subsubsection}{Modèle Logique de Données}{19}{figure.caption.12}%
+\contentsline {subsubsection}{Modèle Physique de Données}{20}{figure.caption.12}%
+\contentsline {subsection}{\numberline {3.2.4}Langage de programmation et frameworks utilisés}{20}{subsection.3.2.4}%
+\contentsline {subsubsection}{Python et Django}{20}{subsection.3.2.4}%
+\contentsline {subsubsection}{Autres outils et bibliothèques}{21}{figure.caption.13}%
+\contentsline {subsection}{\numberline {3.2.5}Architecture de la plateforme}{21}{subsection.3.2.5}%
+\contentsline {subsection}{\numberline {3.2.6}Algorithme de mise en relation et de recommandation}{22}{subsection.3.2.6}%
+\contentsline {subsubsection}{Étape 1 : Encodage et projection ACM}{22}{subsection.3.2.6}%
+\contentsline {subsubsection}{Étape 2 : Classification AFD}{22}{equation.3.9}%
+\contentsline {subsubsection}{Étape 3 : Génération des recommandations}{22}{equation.3.9}%
+\contentsline {subsection}{\numberline {3.2.7}Flux d'inscription et d'onboarding}{23}{subsection.3.2.7}%
+\contentsline {subsection}{\numberline {3.2.8}Sécurité et contrôle d'accès}{24}{subsection.3.2.8}%
+\contentsline {chapter}{\numberline {4}Présentation des résultats}{25}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Résultats sur la cartographie des entreprises}{25}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}Résultats de l'analyse univariée}{25}{subsection.4.1.1}%
+\contentsline {subsubsection}{Répartition des entreprises par statut juridique}{25}{subsection.4.1.1}%
+\contentsline {subsubsection}{Répartition des entreprises par région}{26}{figure.caption.15}%
+\contentsline {subsubsection}{Répartition des entreprises par taille}{27}{figure.caption.16}%
+\contentsline {subsubsection}{Répartition des entreprises par ancienneté}{28}{figure.caption.17}%
+\contentsline {subsubsection}{Répartition des entreprises par secteur d'activité}{29}{figure.caption.18}%
+\contentsline {subsubsection}{Répartition des besoins exprimés}{30}{figure.caption.19}%
+\contentsline {subsection}{\numberline {4.1.2}Résultats de l'analyse bivariée}{30}{subsection.4.1.2}%
+\contentsline {subsubsection}{Répartition des besoins selon le statut juridique}{31}{subsection.4.1.2}%
+\contentsline {subsubsection}{Répartition des besoins selon la région}{32}{table.caption.22}%
+\contentsline {subsubsection}{Répartition des besoins selon l'ancienneté}{33}{table.caption.24}%
+\contentsline {subsubsection}{Répartition des besoins selon le secteur d'activité}{33}{table.caption.25}%
+\contentsline {subsection}{\numberline {4.1.3}Résultats de l'analyse multidimensionnelle}{34}{subsection.4.1.3}%
+\contentsline {subsubsection}{Analyse des Correspondances Multiples (ACM)}{34}{subsection.4.1.3}%
+\contentsline {paragraph}{Valeurs propres et inertie expliquée}{34}{subsection.4.1.3}%
+\contentsline {paragraph}{Projection des modalités sur le premier plan factoriel}{34}{figure.caption.27}%
+\contentsline {subsubsection}{Classification Ascendante Hiérarchique (CAH)}{35}{figure.caption.28}%
+\contentsline {subsubsection}{Analyse Factorielle Discriminante (AFD)}{36}{figure.caption.30}%
+\contentsline {section}{\numberline {4.2}Présentation de la plateforme Business Partnership}{37}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Prérequis et environnement d'exécution}{37}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.2}Flux d'inscription et d'onboarding}{37}{subsection.4.2.2}%
+\contentsline {subsubsection}{Page d'accueil et inscription}{37}{subsection.4.2.2}%
+\contentsline {subsubsection}{Formulaire de profil d'entreprise}{38}{figure.caption.33}%
+\contentsline {subsubsection}{Formulaire de besoins}{38}{figure.caption.33}%
+\contentsline {subsection}{\numberline {4.2.3}Page de recommandations}{39}{subsection.4.2.3}%
+\contentsline {subsection}{\numberline {4.2.4}Interface d'administration}{39}{subsection.4.2.4}%
+\contentsline {subsection}{\numberline {4.2.5}Limites du travail}{40}{subsection.4.2.5}%
+\contentsline {subsection}{\numberline {4.2.6}Perspectives}{40}{subsection.4.2.6}%
+\contentsline {chapter}{Conclusion Générale}{41}{chapter*.36}%
+\contentsline {chapter}{\numberline {A}Questionnaire de l'enquête MINEPAT 2025}{42}{appendix.A}%
+\contentsline {chapter}{\numberline {B}Code Python du module de classification}{43}{appendix.B}%
+\contentsline {chapter}{\numberline {C}Manuel d'utilisation de la plateforme}{44}{appendix.C}%
+\contentsfinish 

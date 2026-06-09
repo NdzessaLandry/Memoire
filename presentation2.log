@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.5.12)  5 JUN 2026 11:37
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.5.12)  3 JUN 2026 15:37
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**./presentation_beamer.tex
-(presentation_beamer.tex
+**./presentation2.tex
+(presentation2.tex
 LaTeX2e <2025-11-01>
 L3 programming layer <2025-12-24>
 
@@ -903,6 +903,18 @@ File: tikzlibraryshapes.geometric.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 /shapes\pgflibraryshapes.geometric.code.tex
 File: pgflibraryshapes.geometric.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 ))
+(C:\Users\LandryNDZESSA\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries
+\pgflibraryarrows.meta.code.tex
+File: pgflibraryarrows.meta.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgfarrowinset=\dimen315
+\pgfarrowlength=\dimen316
+\pgfarrowwidth=\dimen317
+\pgfarrowlinewidth=\dimen318
+)
+(C:\Users\LandryNDZESSA\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendl
+ayer/tikz/libraries\tikzlibrarycalc.code.tex
+File: tikzlibrarycalc.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+)
 (C:\Users\LandryNDZESSA\AppData\Local\Programs\MiKTeX\tex/latex/float\float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \c@float@type=\count367
@@ -922,14 +934,14 @@ Package: caption 2023/08/05 v3.6o Customizing captions (AR)
 (C:\Users\LandryNDZESSA\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption
 3.sty
 Package: caption3 2023/07/31 v2.4d caption3 kernel (AR)
-\caption@tempdima=\dimen315
-\captionmargin=\dimen316
-\caption@leftmargin=\dimen317
-\caption@rightmargin=\dimen318
-\caption@width=\dimen319
-\caption@indent=\dimen320
-\caption@parindent=\dimen321
-\caption@hangindent=\dimen322
+\caption@tempdima=\dimen319
+\captionmargin=\dimen320
+\caption@leftmargin=\dimen321
+\caption@rightmargin=\dimen322
+\caption@width=\dimen323
+\caption@indent=\dimen324
+\caption@parindent=\dimen325
+\caption@hangindent=\dimen326
 Package caption Info: beamer document class detected.
 
 (C:\Users\LandryNDZESSA\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption
@@ -978,7 +990,7 @@ LaTeX Encoding Info:    Ignoring declaration for text command \IJ (encoding ?)
 on input line 2076.
 LaTeX Encoding Info:    Ignoring declaration for text command \SS (encoding ?) 
 on input line 2101.
-\U@D=\dimen323
+\U@D=\dimen327
 \l@unhyphenated=\language79
 
 (C:\Users\LandryNDZESSA\AppData\Local\Programs\MiKTeX\tex/generic/babel\txtbabe
@@ -1018,25 +1030,25 @@ Package babel Info: Making ! an active character on input line 275.
 Package babel Info: Making ? an active character on input line 276.
 \FBguill@level=\count375
 \FBold@everypar=\toks52
-\FB@Mht=\dimen324
+\FB@Mht=\dimen328
 \mc@charclass=\count376
 \mc@charfam=\count377
 \mc@charslot=\count378
 \std@mcc=\count379
 \dec@mcc=\count380
-\FB@pardim=\dimen325
-\listindentFB=\dimen326
-\descindentFB=\dimen327
-\labelindentFB=\dimen328
-\labelwidthFB=\dimen329
-\leftmarginFB=\dimen330
-\parindentFFN=\dimen331
-\FBfnindent=\dimen332
+\FB@pardim=\dimen329
+\listindentFB=\dimen330
+\descindentFB=\dimen331
+\labelindentFB=\dimen332
+\labelwidthFB=\dimen333
+\leftmarginFB=\dimen334
+\parindentFFN=\dimen335
+\FBfnindent=\dimen336
 )))
 (C:\Users\LandryNDZESSA\AppData\Local\Programs\MiKTeX\tex/latex/carlisle\scalef
 nt.sty)
 Package french3.ldf Info: No list customisation for the beamer class,
-(french3.ldf)             reported on input line 32.
+(french3.ldf)             reported on input line 14.
 
 (C:\Users\LandryNDZESSA\AppData\Local\Programs\MiKTeX\tex/latex/csquotes\csquot
 es.sty
@@ -1106,7 +1118,7 @@ LaTeX Info: Redefining \leftprotrusion on input line 1085.
 \MT@prot@toks=\toks55
 LaTeX Info: Redefining \rightprotrusion on input line 1104.
 LaTeX Info: Redefining \textls on input line 1449.
-\MT@outer@kern=\dimen333
+\MT@outer@kern=\dimen337
 LaTeX Info: Redefining \microtypecontext on input line 2053.
 LaTeX Info: Redefining \textmicrotypecontext on input line 2070.
 \MT@listname@count=\count388
@@ -1127,42 +1139,26 @@ File: microtype.cfg 2026/03/01 v3.2d microtype main configuration file (RS)
 )
 LaTeX Info: Redefining \microtypesetup on input line 3065.
 )
-\sympureletters=\mathgroup6
-LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
-(Font)                  OT1/mathkerncmss/m/sl --> OT1/mathkerncmss/bx/sl on inp
-ut line 45.
-
-(C:\Users\LandryNDZESSA\AppData\Local\Programs\MiKTeX\tex/latex/tools\bm.sty
-Package: bm 2025/10/21 v1.2g Bold Symbol Support (DPC/FMi)
-\symboldoperators=\mathgroup7
-\symboldletters=\mathgroup8
-\symboldsymbols=\mathgroup9
-Package bm Info: No bold for \OMX/lmex/m/n, using \pmb.
-Package bm Info: No bold for \U/msa/m/n, using \pmb.
-Package bm Info: No bold for \U/msb/m/n, using \pmb.
-\symboldpureletters=\mathgroup10
-LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 149.
-)
 (C:\Users\LandryNDZESSA\AppData\Local\Programs\MiKTeX\tex/latex/booktabs\bookta
 bs.sty
 Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
-\heavyrulewidth=\dimen334
-\lightrulewidth=\dimen335
-\cmidrulewidth=\dimen336
-\belowrulesep=\dimen337
-\belowbottomsep=\dimen338
-\aboverulesep=\dimen339
-\abovetopsep=\dimen340
-\cmidrulesep=\dimen341
-\cmidrulekern=\dimen342
-\defaultaddspace=\dimen343
+\heavyrulewidth=\dimen338
+\lightrulewidth=\dimen339
+\cmidrulewidth=\dimen340
+\belowrulesep=\dimen341
+\belowbottomsep=\dimen342
+\aboverulesep=\dimen343
+\abovetopsep=\dimen344
+\cmidrulesep=\dimen345
+\cmidrulekern=\dimen346
+\defaultaddspace=\dimen347
 \@cmidla=\count389
 \@cmidlb=\count390
-\@aboverulesep=\dimen344
-\@belowrulesep=\dimen345
+\@aboverulesep=\dimen348
+\@belowrulesep=\dimen349
 \@thisruleclass=\count391
 \@lastruleclass=\count392
-\@thisrulewidth=\dimen346
+\@thisrulewidth=\dimen350
 )
 (C:\Users\LandryNDZESSA\AppData\Local\Programs\MiKTeX\tex/latex/tools\tabularx.
 sty
@@ -1170,19 +1166,19 @@ Package: tabularx 2023/12/11 v2.12a `tabularx' package (DPC)
 
 (C:\Users\LandryNDZESSA\AppData\Local\Programs\MiKTeX\tex/latex/tools\array.sty
 Package: array 2025/09/25 v2.6n Tabular extension package (FMi)
-\col@sep=\dimen347
+\col@sep=\dimen351
 \ar@mcellbox=\box86
-\extrarowheight=\dimen348
+\extrarowheight=\dimen352
 \NC@list=\toks56
 \extratabsurround=\skip68
 \backup@length=\skip69
 \ar@cellbox=\box87
 )
-\TX@col@width=\dimen349
-\TX@old@table=\dimen350
-\TX@old@col=\dimen351
-\TX@target=\dimen352
-\TX@delta=\dimen353
+\TX@col@width=\dimen353
+\TX@old@table=\dimen354
+\TX@old@col=\dimen355
+\TX@target=\dimen356
+\TX@delta=\dimen357
 \TX@cols=\count393
 \TX@ftn=\toks57
 )
@@ -1192,7 +1188,7 @@ Package: multirow 2024/11/12 v2.9 Span multiple rows of a table
 \multirow@colwidth=\skip70
 \multirow@cntb=\count394
 \multirow@dima=\skip71
-\bigstrutjot=\dimen354
+\bigstrutjot=\dimen358
 )
 (C:\Users\LandryNDZESSA\AppData\Local\Programs\MiKTeX\tex/latex/colortbl\colort
 bl.sty
@@ -1201,84 +1197,12 @@ Package: colortbl 2024/10/29 v1.0k Color table columns (DPC)
 \minrowclearance=\skip72
 \rownum=\count395
 )
-(C:\Users\LandryNDZESSA\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendl
-ayer/tikz/libraries\tikzlibraryshapes.code.tex
-File: tikzlibraryshapes.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-
-(C:\Users\LandryNDZESSA\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendl
-ayer/tikz/libraries\tikzlibraryshapes.misc.code.tex
-File: tikzlibraryshapes.misc.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-
-(C:\Users\LandryNDZESSA\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries
-/shapes\pgflibraryshapes.misc.code.tex
-File: pgflibraryshapes.misc.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-))
-(C:\Users\LandryNDZESSA\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendl
-ayer/tikz/libraries\tikzlibraryshapes.symbols.code.tex
-File: tikzlibraryshapes.symbols.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-
-(C:\Users\LandryNDZESSA\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries
-/shapes\pgflibraryshapes.symbols.code.tex
-File: pgflibraryshapes.symbols.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-))
-(C:\Users\LandryNDZESSA\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendl
-ayer/tikz/libraries\tikzlibraryshapes.arrows.code.tex
-File: tikzlibraryshapes.arrows.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-
-(C:\Users\LandryNDZESSA\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries
-/shapes\pgflibraryshapes.arrows.code.tex
-File: pgflibraryshapes.arrows.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-))
-(C:\Users\LandryNDZESSA\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendl
-ayer/tikz/libraries\tikzlibraryshapes.callouts.code.tex
-(C:\Users\LandryNDZESSA\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries
-/shapes\pgflibraryshapes.callouts.code.tex))
-(C:\Users\LandryNDZESSA\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendl
-ayer/tikz/libraries\tikzlibraryshapes.multipart.code.tex
-File: tikzlibraryshapes.multipart.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-
-(C:\Users\LandryNDZESSA\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries
-/shapes\pgflibraryshapes.multipart.code.tex
-File: pgflibraryshapes.multipart.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-\pgfnodepartlowerbox=\box88
-\pgfnodeparttwobox=\box89
-\pgfnodepartthreebox=\box90
-\pgfnodepartfourbox=\box91
-\pgfnodeparttwentybox=\box92
-\pgfnodepartnineteenbox=\box93
-\pgfnodeparteighteenbox=\box94
-\pgfnodepartseventeenbox=\box95
-\pgfnodepartsixteenbox=\box96
-\pgfnodepartfifteenbox=\box97
-\pgfnodepartfourteenbox=\box98
-\pgfnodepartthirteenbox=\box99
-\pgfnodeparttwelvebox=\box100
-\pgfnodepartelevenbox=\box101
-\pgfnodeparttenbox=\box102
-\pgfnodepartninebox=\box103
-\pgfnodeparteightbox=\box104
-\pgfnodepartsevenbox=\box105
-\pgfnodepartsixbox=\box106
-\pgfnodepartfivebox=\box107
-)))
-(C:\Users\LandryNDZESSA\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries
-\pgflibraryarrows.meta.code.tex
-File: pgflibraryarrows.meta.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-\pgfarrowinset=\dimen355
-\pgfarrowlength=\dimen356
-\pgfarrowwidth=\dimen357
-\pgfarrowlinewidth=\dimen358
-)
-(C:\Users\LandryNDZESSA\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendl
-ayer/tikz/libraries\tikzlibrarycalc.code.tex
-File: tikzlibrarycalc.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-)
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
 Package csquotes Info: Adjusting default style.
 Package csquotes Info: Redefining alias 'default' -> 'french'.
-LaTeX Font Info:    Trying to load font information for T1+lmss on input line 1
-51.
+LaTeX Font Info:    Trying to load font information for T1+lmss on input line 4
+5.
 
 (C:\Users\LandryNDZESSA\AppData\Local\Programs\MiKTeX\tex/latex/lm\t1lmss.fd
 File: t1lmss.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
@@ -1287,30 +1211,30 @@ File: t1lmss.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 kend-pdftex.def
 File: l3backend-pdftex.def 2025-10-09 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count396
-) (presentation_beamer.aux
+) (presentation2.aux
 Package babel Info: 'french' activates 'french' shorthands.
 (babel)             Reported on input line 11.
 )
-\openout1 = `presentation_beamer.aux'.
+\openout1 = `presentation2.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 151.
-LaTeX Font Info:    ... okay on input line 151.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 151.
-LaTeX Font Info:    ... okay on input line 151.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 151.
-LaTeX Font Info:    ... okay on input line 151.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 151.
-LaTeX Font Info:    ... okay on input line 151.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 151.
-LaTeX Font Info:    ... okay on input line 151.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 151.
-LaTeX Font Info:    ... okay on input line 151.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 151.
-LaTeX Font Info:    ... okay on input line 151.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 151.
-LaTeX Font Info:    ... okay on input line 151.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 151.
-LaTeX Font Info:    ... okay on input line 151.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1352,7 +1276,7 @@ p-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count397
 \scratchdimen=\dimen359
-\scratchbox=\box108
+\scratchbox=\box88
 \nofMPsegments=\count398
 \nofMParguments=\count399
 \everyMPshowfont=\toks59
@@ -1372,81 +1296,57 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 df-sys.cfg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
-Package hyperref Info: Link coloring OFF on input line 151.
- (presentation_beamer.out) (presentation_beamer.out)
+Package hyperref Info: Link coloring OFF on input line 45.
+ (presentation2.out) (presentation2.out)
 \@outlinefile=\write5
-\openout5 = `presentation_beamer.out'.
+\openout5 = `presentation2.out'.
 
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/lmr/m/n --> OT1/cmss/m/n on input line 151.
+(Font)                  OT1/lmr/m/n --> OT1/cmss/m/n on input line 45.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/lmr/bx/n --> OT1/cmss/b/n on input line 151.
+(Font)                  OT1/lmr/bx/n --> OT1/cmss/b/n on input line 45.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmss/m/n --> OT1/lmss/m/n on input line 151.
+(Font)                  OT1/cmss/m/n --> OT1/lmss/m/n on input line 45.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmss/b/n --> OT1/lmss/b/n on input line 151.
-\symnumbers=\mathgroup11
-LaTeX Font Info:    Redeclaring symbol font `pureletters' on input line 151.
-LaTeX Font Info:    Encoding `OT1' has changed to `T1' for symbol font
-(Font)              `pureletters' in the math version `normal' on input line 15
-1.
-LaTeX Font Info:    Overwriting symbol font `pureletters' in version `normal'
-(Font)                  OT1/mathkerncmss/m/sl --> T1/lmss/m/it on input line 15
-1.
-LaTeX Font Info:    Encoding `OT1' has changed to `T1' for symbol font
-(Font)              `pureletters' in the math version `bold' on input line 151.
-
-LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
-(Font)                  OT1/mathkerncmss/bx/sl --> T1/lmss/m/it on input line 1
-51.
+(Font)                  OT1/cmss/b/n --> OT1/lmss/b/n on input line 45.
+\symnumbers=\mathgroup6
+\sympureletters=\mathgroup7
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
-(Font)                  OT1/lmss/m/n --> T1/lmr/m/n on input line 151.
-LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 151.
-LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 151.
-LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/lmss/m/n --> T1/lmss/m/n on input line 151.
-LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/lmss/bx/n --> T1/lmss/m/n on input line 151.
-LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 151.
-LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/lmr/m/it --> T1/lmss/m/it on input line 151.
-LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/lmr/bx/it --> T1/lmss/m/it on input line 151.
-LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 151.
-LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/lmtt/m/n --> T1/lmtt/m/n on input line 151.
-LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/lmtt/m/n --> T1/lmtt/m/n on input line 151.
-LaTeX Font Info:    Overwriting symbol font `numbers' in version `bold'
-(Font)                  T1/lmss/m/n --> T1/lmss/b/n on input line 151.
-LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
-(Font)                  T1/lmss/m/it --> T1/lmss/b/it on input line 151.
-LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `bold'
-(Font)                  OT1/lmss/b/n --> T1/lmr/b/n on input line 151.
+(Font)                  OT1/lmss/m/n --> T1/lmr/m/n on input line 45.
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 45.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
+(Font)                  OT1/lmr/bx/n --> T1/lmss/b/n on input line 45.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  T1/lmss/b/n --> T1/lmss/b/n on input line 151.
+(Font)                  OT1/lmr/bx/n --> T1/lmss/b/n on input line 45.
+LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 45.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
+(Font)                  OT1/lmss/m/n --> T1/lmss/m/n on input line 45.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  T1/lmss/m/n --> T1/lmss/b/n on input line 151.
+(Font)                  OT1/lmss/bx/n --> T1/lmss/m/n on input line 45.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 45.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
+(Font)                  OT1/lmr/m/it --> T1/lmss/m/it on input line 45.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  T1/lmss/m/it --> T1/lmss/b/it on input line 151.
+(Font)                  OT1/lmr/bx/it --> T1/lmss/m/it on input line 45.
+LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 45.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
+(Font)                  OT1/lmtt/m/n --> T1/lmtt/m/n on input line 45.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  T1/lmtt/m/n --> T1/lmtt/b/n on input line 151.
-LaTeX Font Info:    Redeclaring symbol font `boldpureletters' on input line 151
-.
-LaTeX Font Info:    Encoding `OT1' has changed to `T1' for symbol font
-(Font)              `boldpureletters' in the math version `normal' on input lin
-e 151.
-LaTeX Font Info:    Overwriting symbol font `boldpureletters' in version `norma
-l'
-(Font)                  OT1/mathkerncmss/bx/sl --> T1/lmss/bx/it on input line 
-151.
-LaTeX Font Info:    Encoding `OT1' has changed to `T1' for symbol font
-(Font)              `boldpureletters' in the math version `bold' on input line 
-151.
-LaTeX Font Info:    Overwriting symbol font `boldpureletters' in version `bold'
-
-(Font)                  OT1/mathkerncmss/bx/sl --> T1/lmss/bx/it on input line 
-151.
+(Font)                  OT1/lmtt/m/n --> T1/lmtt/m/n on input line 45.
+LaTeX Font Info:    Overwriting symbol font `numbers' in version `bold'
+(Font)                  T1/lmss/m/n --> T1/lmss/b/n on input line 45.
+LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
+(Font)                  T1/lmss/m/it --> T1/lmss/b/it on input line 45.
+LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `bold'
+(Font)                  OT1/lmss/b/n --> T1/lmr/b/n on input line 45.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
+(Font)                  T1/lmss/b/n --> T1/lmss/b/n on input line 45.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
+(Font)                  T1/lmss/m/n --> T1/lmss/b/n on input line 45.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  T1/lmss/m/it --> T1/lmss/b/it on input line 45.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
+(Font)                  T1/lmtt/m/n --> T1/lmtt/b/n on input line 45.
 
 (C:\Users\LandryNDZESSA\AppData\Local\Programs\MiKTeX\tex/latex/translator\tran
 slator-basic-dictionary-English.dict
@@ -1475,14 +1375,14 @@ Dictionary: translator-theorem-dictionary, Language: English
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: french babel package is loaded.
 Package caption Info: End \AtBeginDocument code.
-LaTeX Info: Redefining \degres on input line 151.
-LaTeX Info: Redefining \microtypecontext on input line 151.
-Package microtype Info: Applying patch `item' on input line 151.
-Package microtype Info: Applying patch `toc' on input line 151.
-Package microtype Info: Applying patch `eqnum' on input line 151.
-Package microtype Info: Applying patch `footnote' on input line 151.
-Package microtype Info: Applying patch `verbatim' on input line 151.
-LaTeX Info: Redefining \microtypesetup on input line 151.
+LaTeX Info: Redefining \degres on input line 45.
+LaTeX Info: Redefining \microtypecontext on input line 45.
+Package microtype Info: Applying patch `item' on input line 45.
+Package microtype Info: Applying patch `toc' on input line 45.
+Package microtype Info: Applying patch `eqnum' on input line 45.
+Package microtype Info: Applying patch `footnote' on input line 45.
+Package microtype Info: Applying patch `verbatim' on input line 45.
+LaTeX Info: Redefining \microtypesetup on input line 45.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
@@ -1497,71 +1397,191 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `lmss' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
- (presentation_beamer.nav) [1
+ (presentation2.nav)
+Overfull \hbox (1.55898pt too wide) in paragraph at lines 45--45
+ [][]  \T1/lmss/m/n/5 (-20) ([])  
+ []
+
+
+Overfull \hbox (18.44496pt too wide) in paragraph at lines 45--45
+ [][][][]  
+ []
+
+
+Overfull \hbox (1.55898pt too wide) in paragraph at lines 50--50
+ [][]  \T1/lmss/m/n/5 (-20) ([])  
+ []
+
+
+Overfull \hbox (18.44496pt too wide) in paragraph at lines 50--50
+ [][][][]  
+ []
+
+[1
 
 {C:/Users/LandryNDZESSA/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Us
 ers/LandryNDZESSA/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ec.enc}]
-(presentation_beamer.toc) [2
+Overfull \hbox (1.55898pt too wide) in paragraph at lines 55--55
+ [][]  \T1/lmss/m/n/5 (-20) ([])  
+ []
 
-] [3
 
-] [4
+Overfull \hbox (18.44496pt too wide) in paragraph at lines 55--55
+ [][][][]  
+ []
+
+(presentation2.toc)
+Overfull \hbox (1.55898pt too wide) has occurred while \output is active
+ [][]  \T1/lmss/m/n/5 (-20) ([])  
+ []
+
+
+Overfull \hbox (18.44496pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[2
 
 ]
-Overfull \vbox (3.28258pt too high) detected at line 247
+Overfull \hbox (1.55898pt too wide) in paragraph at lines 67--67
+ [][]  \T1/lmss/m/n/5 (-20) ([])  
+ []
+
+
+Overfull \hbox (18.44496pt too wide) in paragraph at lines 67--67
+ [][][][]  
+ []
+
+
+Overfull \hbox (1.55898pt too wide) has occurred while \output is active
+ [][]  \T1/lmss/m/n/5 (-20) ([])  
+ []
+
+
+Overfull \hbox (18.44496pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[3
+
+]
+Overfull \hbox (1.55898pt too wide) in paragraph at lines 73--73
+ [][]  \T1/lmss/m/n/5 (-20) ([])  
+ []
+
+
+Overfull \hbox (18.44496pt too wide) in paragraph at lines 73--73
+ [][][][]  
+ []
+
+
+Overfull \hbox (1.55898pt too wide) has occurred while \output is active
+ [][]  \T1/lmss/m/n/5 (-20) ([])  
+ []
+
+
+Overfull \hbox (18.44496pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[4
+
+]
+Overfull \hbox (1.55898pt too wide) in paragraph at lines 84--84
+ [][]  \T1/lmss/m/n/5 (-20) ([])  
+ []
+
+
+Overfull \hbox (18.44496pt too wide) in paragraph at lines 84--84
+ [][][][]  
+ []
+
+
+Overfull \hbox (1.55898pt too wide) has occurred while \output is active
+ [][]  \T1/lmss/m/n/5 (-20) ([])  
+ []
+
+
+Overfull \hbox (18.44496pt too wide) has occurred while \output is active
+ [][][][]  
  []
 
 [5
 
 ]
-LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <10> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 250.
+Overfull \hbox (1.55898pt too wide) in paragraph at lines 93--93
+ [][]  \T1/lmss/m/n/5 (-20) ([])  
+ []
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [6
+Overfull \hbox (18.44496pt too wide) in paragraph at lines 93--93
+ [][][][]  
+ []
 
-]
-[7] [8
-
-]
-<statut.jpeg, id=230, 655.44875pt x 614.295pt>
-File: statut.jpeg Graphic file (type jpg)
-<use statut.jpeg>
-Package pdftex.def Info: statut.jpeg  used on input line 322.
-(pdftex.def)             Requested size: 139.28128pt x 130.53362pt.
-<repartition_region.jpeg, id=231, 614.295pt x 614.295pt>
+<repartition_region.jpeg, id=120, 614.295pt x 614.295pt>
 File: repartition_region.jpeg Graphic file (type jpg)
 <use repartition_region.jpeg>
-Package pdftex.def Info: repartition_region.jpeg  used on input line 322.
-(pdftex.def)             Requested size: 139.28128pt x 139.27896pt.
-<repartition_taille.jpeg, id=232, 655.44875pt x 614.295pt>
-File: repartition_taille.jpeg Graphic file (type jpg)
-<use repartition_taille.jpeg>
-Package pdftex.def Info: repartition_taille.jpeg  used on input line 322.
-(pdftex.def)             Requested size: 139.28128pt x 130.53362pt.
- [9
+Package pdftex.def Info: repartition_region.jpeg  used on input line 93.
+(pdftex.def)             Requested size: 304.6695pt x 304.67216pt.
 
- <./statut.jpeg> <./repartition_region.jpeg> <./repartition_taille.jpeg>]
-<repartition_activite.jpeg, id=245, 946.53625pt x 614.295pt>
-File: repartition_activite.jpeg Graphic file (type jpg)
-<use repartition_activite.jpeg>
-Package pdftex.def Info: repartition_activite.jpeg  used on input line 326.
-(pdftex.def)             Requested size: 182.8017pt x 118.62943pt.
-<repartition_besoins.jpeg, id=246, 1284.8pt x 631.35875pt>
+Overfull \vbox (123.99136pt too high) detected at line 93
+ []
+
+
+Overfull \hbox (1.55898pt too wide) has occurred while \output is active
+ [][]  \T1/lmss/m/n/5 (-20) ([])  
+ []
+
+
+Overfull \hbox (18.44496pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[6
+
+ <./repartition_region.jpeg>]
+Overfull \hbox (1.55898pt too wide) in paragraph at lines 103--103
+ [][]  \T1/lmss/m/n/5 (-20) ([])  
+ []
+
+
+Overfull \hbox (18.44496pt too wide) in paragraph at lines 103--103
+ [][][][]  
+ []
+
+<repartition_besoins.jpeg, id=128, 1284.8pt x 631.35875pt>
 File: repartition_besoins.jpeg Graphic file (type jpg)
 <use repartition_besoins.jpeg>
-Package pdftex.def Info: repartition_besoins.jpeg  used on input line 333.
-(pdftex.def)             Requested size: 226.32875pt x 111.21196pt.
+Package pdftex.def Info: repartition_besoins.jpeg  used on input line 103.
+(pdftex.def)             Requested size: 304.6695pt x 149.71805pt.
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Overfull \vbox (22.76521pt too high) detected at line 103
+ []
 
- [10
 
- <./repartition_activite.jpeg> <./repartition_besoins.jpeg>]
+Overfull \hbox (1.55898pt too wide) has occurred while \output is active
+ [][]  \T1/lmss/m/n/5 (-20) ([])  
+ []
+
+
+Overfull \hbox (18.44496pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[7
+
+ <./repartition_besoins.jpeg>]
+Overfull \hbox (1.55898pt too wide) in paragraph at lines 120--120
+ [][]  \T1/lmss/m/n/5 (-20) ([])  
+ []
+
+
+Overfull \hbox (18.44496pt too wide) in paragraph at lines 120--120
+ [][][][]  
+ []
+
 LaTeX Font Info:    Trying to load font information for OT1+lmss on input line 
-380.
-
+120.
 (C:\Users\LandryNDZESSA\AppData\Local\Programs\MiKTeX\tex/latex/lm\ot1lmss.fd
 File: ot1lmss.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
@@ -1569,29 +1589,29 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `lmss' (encoding: OT1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-LaTeX Font Info:    Trying to load font information for OML+lmm on input line 3
-80.
+LaTeX Font Info:    Trying to load font information for OML+lmm on input line 1
+20.
 
 (C:\Users\LandryNDZESSA\AppData\Local\Programs\MiKTeX\tex/latex/lm\omllmm.fd
 File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 
-380.
+120.
 
 (C:\Users\LandryNDZESSA\AppData\Local\Programs\MiKTeX\tex/latex/lm\omslmsy.fd
 File: omslmsy.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 
-380.
+120.
 
 (C:\Users\LandryNDZESSA\AppData\Local\Programs\MiKTeX\tex/latex/lm\omxlmex.fd
 File: omxlmex.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 380.
+(Font)              <7> on input line 120.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 380.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 380
+(Font)              <5> on input line 120.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 120
 .
 
 (C:\Users\LandryNDZESSA\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.f
@@ -1602,7 +1622,7 @@ File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 a.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 380
+LaTeX Font Info:    Trying to load font information for U+msb on input line 120
 .
 
 (C:\Users\LandryNDZESSA\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.f
@@ -1614,266 +1634,132 @@ b.cfg
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
 LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <7> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 380.
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 120.
 LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <5> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 380.
-LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 3
-80.
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 120.
 
-(C:\Users\LandryNDZESSA\AppData\Local\Programs\MiKTeX\tex/latex/lm\ot1lmr.fd
-File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-)
-(C:\Users\LandryNDZESSA\AppData\Local\Programs\MiKTeX\tex/latex/microtype\mt-cm
-r.cfg
-File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman 
-(RS)
-)
-LaTeX Font Info:    Font shape `T1/lmss/bx/it' in size <7> not available
-(Font)              Font shape `T1/lmss/bx/sl' tried instead on input line 380.
-
-LaTeX Font Info:    Font shape `T1/lmss/bx/it' in size <5> not available
-(Font)              Font shape `T1/lmss/bx/sl' tried instead on input line 380.
-
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <14.4> on input line 380.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 380.
-LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <14.4> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 380.
-LaTeX Font Info:    Font shape `T1/lmss/bx/it' in size <14.4> not available
-(Font)              Font shape `T1/lmss/bx/sl' tried instead on input line 380.
-
-LaTeX Font Info:    Font shape `T1/lmss/bx/it' in size <10> not available
-(Font)              Font shape `T1/lmss/bx/sl' tried instead on input line 380.
+Overfull \hbox (1.55898pt too wide) has occurred while \output is active
+ [][]  \T1/lmss/m/n/5 (-20) ([])  
+ []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Overfull \hbox (18.44496pt too wide) has occurred while \output is active
+ [][][][]  
+ []
 
- [11]
-[12{C:/Users/LandryNDZESSA/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-
-mathit.enc}]
-LaTeX Font Info:    Trying to load font information for TS1+lmss on input line 
-407.
-
-(C:\Users\LandryNDZESSA\AppData\Local\Programs\MiKTeX\tex/latex/lm\ts1lmss.fd
-File: ts1lmss.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-)
-Package microtype Info: Loading generic protrusion settings for font family
-(microtype)             `lmss' (encoding: TS1).
-(microtype)             For optimal results, create family-specific settings.
-(microtype)             See the microtype manual for details.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <9> on input line 407.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 407.
-LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <9> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 407.
-LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <6> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 407.
-LaTeX Font Info:    Font shape `T1/lmss/bx/it' in size <9> not available
-(Font)              Font shape `T1/lmss/bx/sl' tried instead on input line 407.
-
-LaTeX Font Info:    Font shape `T1/lmss/bx/it' in size <6> not available
-(Font)              Font shape `T1/lmss/bx/sl' tried instead on input line 407.
-
-
-[13
-
-{C:/Users/LandryNDZESSA/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ts1
-.enc}{C:/Users/LandryNDZESSA/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/l
-m-rm.enc}] [14
+[8
 
 ]
-LaTeX Font Info:    Font shape `T1/lmss/b/n' in size <7> not available
-(Font)              Font shape `T1/lmss/bx/n' tried instead on input line 475.
-LaTeX Font Info:    Font shape `T1/lmss/b/n' in size <5> not available
-(Font)              Font shape `T1/lmss/bx/n' tried instead on input line 475.
- [15
+Overfull \hbox (1.55898pt too wide) in paragraph at lines 131--131
+ [][]  \T1/lmss/m/n/5 (-20) ([])  
+ []
 
-{C:/Users/LandryNDZESSA/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mat
-hsy.enc}]
-LaTeX Font Info:    Font shape `T1/lmss/b/n' in size <10> not available
-(Font)              Font shape `T1/lmss/bx/n' tried instead on input line 524.
- [16
 
-{C:/Users/LandryNDZESSA/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mat
-hex.enc}]
-<contributionValeursPropres.jpeg, id=413, 1284.8pt x 631.35875pt>
-File: contributionValeursPropres.jpeg Graphic file (type jpg)
-<use contributionValeursPropres.jpeg>
-Package pdftex.def Info: contributionValeursPropres.jpeg  used on input line 54
-9.
-(pdftex.def)             Requested size: 239.38554pt x 117.62804pt.
-LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 5
-49.
+Overfull \hbox (18.44496pt too wide) in paragraph at lines 131--131
+ [][][][]  
+ []
 
-(C:\Users\LandryNDZESSA\AppData\Local\Programs\MiKTeX\tex/latex/lm\t1lmtt.fd
-File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-)
-Package microtype Info: Loading generic protrusion settings for font family
-(microtype)             `lmtt' (encoding: T1).
-(microtype)             For optimal results, create family-specific settings.
-(microtype)             See the microtype manual for details.
 
-[17
+Overfull \hbox (1.55898pt too wide) has occurred while \output is active
+ [][]  \T1/lmss/m/n/5 (-20) ([])  
+ []
 
- <./contributionValeursPropres.jpeg>]
-<projectionDesCategories.jpeg, id=423, 1284.8pt x 631.35875pt>
+
+Overfull \hbox (18.44496pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[9
+
+]
+Overfull \hbox (1.55898pt too wide) in paragraph at lines 138--138
+ [][]  \T1/lmss/m/n/5 (-20) ([])  
+ []
+
+
+Overfull \hbox (18.44496pt too wide) in paragraph at lines 138--138
+ [][][][]  
+ []
+
+<projectionDesCategories.jpeg, id=165, 1284.8pt x 631.35875pt>
 File: projectionDesCategories.jpeg Graphic file (type jpg)
 <use projectionDesCategories.jpeg>
-Package pdftex.def Info: projectionDesCategories.jpeg  used on input line 564.
+Package pdftex.def Info: projectionDesCategories.jpeg  used on input line 138.
 (pdftex.def)             Requested size: 304.6695pt x 149.71805pt.
 
-Overfull \vbox (39.64334pt too high) detected at line 564
+Overfull \hbox (1.55898pt too wide) has occurred while \output is active
+ [][]  \T1/lmss/m/n/5 (-20) ([])  
  []
 
-[18
+
+Overfull \hbox (18.44496pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[10
 
  <./projectionDesCategories.jpeg>]
-<contributionCategoriesAlAxe1.jpeg, id=443, 1284.8pt x 631.35875pt>
-File: contributionCategoriesAlAxe1.jpeg Graphic file (type jpg)
-<use contributionCategoriesAlAxe1.jpeg>
-Package pdftex.def Info: contributionCategoriesAlAxe1.jpeg  used on input line 
-594.
-(pdftex.def)             Requested size: 217.62202pt x 106.93459pt.
- [19
-
- <./contributionCategoriesAlAxe1.jpeg>]
-<contributionCategorieALAxe2.jpeg, id=465, 1284.8pt x 631.35875pt>
-File: contributionCategorieALAxe2.jpeg Graphic file (type jpg)
-<use contributionCategorieALAxe2.jpeg>
-Package pdftex.def Info: contributionCategorieALAxe2.jpeg  used on input line 6
-26.
-(pdftex.def)             Requested size: 217.62202pt x 106.93459pt.
-LaTeX Font Info:    Font shape `T1/lmss/b/n' in size <9> not available
-(Font)              Font shape `T1/lmss/bx/n' tried instead on input line 626.
-LaTeX Font Info:    Font shape `T1/lmss/b/n' in size <6> not available
-(Font)              Font shape `T1/lmss/bx/n' tried instead on input line 626.
- [20
-
- <./contributionCategorieALAxe2.jpeg>] [21
-
-]
-<dendrogramme.jpeg, id=516, 1284.8pt x 631.35875pt>
-File: dendrogramme.jpeg Graphic file (type jpg)
-<use dendrogramme.jpeg>
-Package pdftex.def Info: dendrogramme.jpeg  used on input line 690.
-(pdftex.def)             Requested size: 226.32875pt x 111.21196pt.
- [22
-
- <./dendrogramme.jpeg>]
-<CAH.jpeg, id=524, 1284.8pt x 631.35875pt>
-File: CAH.jpeg Graphic file (type jpg)
-<use CAH.jpeg>
-Package pdftex.def Info: CAH.jpeg  used on input line 705.
-(pdftex.def)             Requested size: 295.96275pt x 145.43103pt.
-
-Overfull \vbox (10.93585pt too high) detected at line 705
+Overfull \hbox (1.55898pt too wide) in paragraph at lines 145--145
+ [][]  \T1/lmss/m/n/5 (-20) ([])  
  []
 
-[23
 
- <./CAH.jpeg>] [24
+Overfull \hbox (18.44496pt too wide) in paragraph at lines 145--145
+ [][][][]  
+ []
 
-] [25
+<dendrogramme.jpeg, id=173, 1284.8pt x 631.35875pt>
+File: dendrogramme.jpeg Graphic file (type jpg)
+<use dendrogramme.jpeg>
+Package pdftex.def Info: dendrogramme.jpeg  used on input line 145.
+(pdftex.def)             Requested size: 304.6695pt x 149.71805pt.
 
-] [26
+Overfull \hbox (1.55898pt too wide) has occurred while \output is active
+ [][]  \T1/lmss/m/n/5 (-20) ([])  
+ []
 
-]
-<AFDProjectionDesObservations.jpeg, id=640, 1284.8pt x 631.35875pt>
-File: AFDProjectionDesObservations.jpeg Graphic file (type jpg)
-<use AFDProjectionDesObservations.jpeg>
-Package pdftex.def Info: AFDProjectionDesObservations.jpeg  used on input line 
-847.
-(pdftex.def)             Requested size: 239.38554pt x 117.62804pt.
- [27
 
- <./AFDProjectionDesObservations.jpeg>]
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 891.
-LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <8> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 891.
-LaTeX Font Info:    Font shape `T1/lmss/bx/it' in size <8> not available
-(Font)              Font shape `T1/lmss/bx/sl' tried instead on input line 891.
+Overfull \hbox (18.44496pt too wide) has occurred while \output is active
+ [][][][]  
+ []
 
-LaTeX Font Info:    Font shape `T1/lmss/b/n' in size <8> not available
-(Font)              Font shape `T1/lmss/bx/n' tried instead on input line 891.
+[11
 
-[28
-
-]
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12> on input line 922.
-LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <12> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 922.
-LaTeX Font Info:    Font shape `T1/lmss/bx/it' in size <12> not available
-(Font)              Font shape `T1/lmss/bx/sl' tried instead on input line 922.
-
-LaTeX Font Info:    Font shape `T1/lmss/b/n' in size <12> not available
-(Font)              Font shape `T1/lmss/bx/n' tried instead on input line 922.
- [29
-
-] [30
-
-] [31
-
-]
+ <./dendrogramme.jpeg>]
 \tf@nav=\write6
-\openout6 = `presentation_beamer.nav'.
+\openout6 = `presentation2.nav'.
 
 \tf@toc=\write7
-\openout7 = `presentation_beamer.toc'.
+\openout7 = `presentation2.toc'.
 
 \tf@snm=\write8
-\openout8 = `presentation_beamer.snm'.
+\openout8 = `presentation2.snm'.
 
- (presentation_beamer.aux)
+ (presentation2.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2025-12-24>
  ***********
-Package rerunfilecheck Info: File `presentation_beamer.out' has not changed.
-(rerunfilecheck)             Checksum: 465AD92A24A60E521CEF107F0871FBE1;896.
+Package rerunfilecheck Info: File `presentation2.out' has not changed.
+(rerunfilecheck)             Checksum: 3C3875A0ABF0A4D7B984B66568E5F1A1;641.
  ) 
 Here is how much of TeX's memory you used:
- 35023 strings out of 467871
- 721285 string characters out of 5414504
- 1147031 words of memory out of 5000000
- 62878 multiletter control sequences out of 15000+600000
- 808606 words of font info for 270 fonts, out of 8000000 for 9000
+ 32396 strings out of 467871
+ 650278 string characters out of 5414504
+ 1069033 words of memory out of 5000000
+ 60585 multiletter control sequences out of 15000+600000
+ 667037 words of font info for 87 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 128i,15n,123p,1018b,1160s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 128i,15n,123p,1012b,792s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/LandryNDZESSA/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/l
-mbx10.pfb><C:/Users/LandryNDZESSA/AppData/Local/Programs/MiKTeX/fonts/type1/pub
-lic/lm/lmex10.pfb><C:/Users/LandryNDZESSA/AppData/Local/Programs/MiKTeX/fonts/t
-ype1/public/lm/lmmi10.pfb><C:/Users/LandryNDZESSA/AppData/Local/Programs/MiKTeX
-/fonts/type1/public/lm/lmmi12.pfb><C:/Users/LandryNDZESSA/AppData/Local/Program
-s/MiKTeX/fonts/type1/public/lm/lmmi5.pfb><C:/Users/LandryNDZESSA/AppData/Local/
-Programs/MiKTeX/fonts/type1/public/lm/lmmi7.pfb><C:/Users/LandryNDZESSA/AppData
-/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi9.pfb><C:/Users/LandryNDZESSA/
-AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmib10.pfb><C:/Users/Landr
-yNDZESSA/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmss10.pfb><C:/Use
-rs/LandryNDZESSA/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmss12.pfb
-><C:/Users/LandryNDZESSA/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lm
-ss8.pfb><C:/Users/LandryNDZESSA/AppData/Local/Programs/MiKTeX/fonts/type1/publi
-c/lm/lmss9.pfb><C:/Users/LandryNDZESSA/AppData/Local/Programs/MiKTeX/fonts/type
-1/public/lm/lmssbx10.pfb><C:/Users/LandryNDZESSA/AppData/Local/Programs/MiKTeX/
-fonts/type1/public/lm/lmsso10.pfb><C:/Users/LandryNDZESSA/AppData/Local/Program
-s/MiKTeX/fonts/type1/public/lm/lmsso12.pfb><C:/Users/LandryNDZESSA/AppData/Loca
-l/Programs/MiKTeX/fonts/type1/public/lm/lmsso8.pfb><C:/Users/LandryNDZESSA/AppD
-ata/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsso9.pfb><C:/Users/LandryNDZE
-SSA/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb><C:/Users/La
-ndryNDZESSA/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy5.pfb><C:/U
-sers/LandryNDZESSA/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy6.pf
-b><C:/Users/LandryNDZESSA/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/l
-msy7.pfb><C:/Users/LandryNDZESSA/AppData/Local/Programs/MiKTeX/fonts/type1/publ
-ic/lm/lmsy8.pfb><C:/Users/LandryNDZESSA/AppData/Local/Programs/MiKTeX/fonts/typ
-e1/public/lm/lmsy9.pfb><C:/Users/LandryNDZESSA/AppData/Local/Programs/MiKTeX/fo
-nts/type1/public/lm/lmtt10.pfb><C:/Users/LandryNDZESSA/AppData/Local/Programs/M
-iKTeX/fonts/type1/public/lm/lmtt9.pfb>
-Output written on presentation_beamer.pdf (31 pages, 2639229 bytes).
+mss10.pfb><C:/Users/LandryNDZESSA/AppData/Local/Programs/MiKTeX/fonts/type1/pub
+lic/lm/lmss12.pfb><C:/Users/LandryNDZESSA/AppData/Local/Programs/MiKTeX/fonts/t
+ype1/public/lm/lmss8.pfb><C:/Users/LandryNDZESSA/AppData/Local/Programs/MiKTeX/
+fonts/type1/public/lm/lmss9.pfb><C:/Users/LandryNDZESSA/AppData/Local/Programs/
+MiKTeX/fonts/type1/public/lm/lmssbx10.pfb>
+Output written on presentation2.pdf (11 pages, 849984 bytes).
 PDF statistics:
- 901 PDF objects out of 1000 (max. 8388607)
- 79 named destinations out of 1000 (max. 500000)
- 117215 words of extra memory for PDF output out of 128383 (max. 10000000)
+ 211 PDF objects out of 1000 (max. 8388607)
+ 27 named destinations out of 1000 (max. 500000)
+ 24851 words of extra memory for PDF output out of 24883 (max. 10000000)
 
