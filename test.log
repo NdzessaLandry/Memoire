@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.5.12)  9 JUN 2026 02:31
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.5.12)  16 JUN 2026 14:48
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1572,14 +1572,14 @@ Package glossaries Info: Writing glossary file test.acn on input line 236.
 
 
 Package french3.ldf Warning: Please load the "natbib" package
-(french3.ldf)                BEFORE babel/french; reported on input line 273.
+(french3.ldf)                BEFORE babel/french; reported on input line 276.
 
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
 Package csquotes Info: Adjusting default style.
 Package csquotes Info: Redefining alias 'default' -> 'french'.
 LaTeX Font Info:    Trying to load font information for T1+lmr on input line 27
-3.
+6.
 (C:\Users\LandryNDZESSA\AppData\Local\Programs\MiKTeX\tex/latex/lm\t1lmr.fd
 File: t1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
@@ -1593,25 +1593,25 @@ Package babel Info: 'french' activates 'french' shorthands.
 )
 \openout1 = `test.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 273.
-LaTeX Font Info:    ... okay on input line 273.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 273.
-LaTeX Font Info:    ... okay on input line 273.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 273.
-LaTeX Font Info:    ... okay on input line 273.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 273.
-LaTeX Font Info:    ... okay on input line 273.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 273.
-LaTeX Font Info:    ... okay on input line 273.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 273.
-LaTeX Font Info:    ... okay on input line 273.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 273.
-LaTeX Font Info:    ... okay on input line 273.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 273.
-LaTeX Font Info:    ... okay on input line 273.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 273.
-LaTeX Font Info:    ... okay on input line 273.
-LaTeX Info: Redefining \degres on input line 273.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 276.
+LaTeX Font Info:    ... okay on input line 276.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 276.
+LaTeX Font Info:    ... okay on input line 276.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 276.
+LaTeX Font Info:    ... okay on input line 276.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 276.
+LaTeX Font Info:    ... okay on input line 276.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 276.
+LaTeX Font Info:    ... okay on input line 276.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 276.
+LaTeX Font Info:    ... okay on input line 276.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 276.
+LaTeX Font Info:    ... okay on input line 276.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 276.
+LaTeX Font Info:    ... okay on input line 276.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 276.
+LaTeX Font Info:    ... okay on input line 276.
+LaTeX Info: Redefining \degres on input line 276.
 
 (C:\Users\LandryNDZESSA\AppData\Local\Programs\MiKTeX\tex/latex/translations/di
 cts\translations-basic-dictionary-french.trsl
@@ -1619,7 +1619,7 @@ File: translations-basic-dictionary-french.trsl (french translation file `trans
 lations-basic-dictionary')
 )
 Package translations Info: loading dictionary `translations-basic-dictionary' f
-or `french'. on input line 273.
+or `french'. on input line 276.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: hyperref package is loaded.
 Package caption Info: listings package is loaded.
@@ -1658,13 +1658,13 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 df-sys.cfg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
-LaTeX Info: Redefining \microtypecontext on input line 273.
-Package microtype Info: Applying patch `item' on input line 273.
-Package microtype Info: Applying patch `toc' on input line 273.
-Package microtype Info: Applying patch `eqnum' on input line 273.
-Package microtype Info: Applying patch `footnote' on input line 273.
-Package microtype Info: Applying patch `verbatim' on input line 273.
-LaTeX Info: Redefining \microtypesetup on input line 273.
+LaTeX Info: Redefining \microtypecontext on input line 276.
+Package microtype Info: Applying patch `item' on input line 276.
+Package microtype Info: Applying patch `toc' on input line 276.
+Package microtype Info: Applying patch `eqnum' on input line 276.
+Package microtype Info: Applying patch `footnote' on input line 276.
+Package microtype Info: Applying patch `verbatim' on input line 276.
+LaTeX Info: Redefining \microtypesetup on input line 276.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
@@ -1716,7 +1716,7 @@ File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 \c@lstlisting=\count448
-Package hyperref Info: Link coloring ON on input line 273.
+Package hyperref Info: Link coloring ON on input line 276.
 (test.out) (test.out)
 \@outlinefile=\write7
 \openout7 = `test.out'.
@@ -1766,87 +1766,87 @@ a.cfg)
 d)
 (C:\Users\LandryNDZESSA\AppData\Local\Programs\MiKTeX\tex/latex/microtype\mt-ms
 b.cfg)
-Overfull \vbox (111.58148pt too high) detected at line 315
+Overfull \vbox (111.58148pt too high) detected at line 318
  []
 
 
-Overfull \vbox (35.14299pt too high) detected at line 315
+Overfull \vbox (35.14299pt too high) detected at line 318
  []
 
 
-Overfull \vbox (111.58148pt too high) detected at line 315
+Overfull \vbox (111.58148pt too high) detected at line 318
  []
 
 
-Overfull \vbox (111.58148pt too high) detected at line 315
+Overfull \vbox (111.58148pt too high) detected at line 318
  []
 
 
-Overfull \vbox (35.14299pt too high) detected at line 315
+Overfull \vbox (35.14299pt too high) detected at line 318
  []
 
 
-Overfull \vbox (111.58148pt too high) detected at line 315
+Overfull \vbox (111.58148pt too high) detected at line 318
  []
 
 
-Overfull \vbox (111.58148pt too high) detected at line 315
+Overfull \vbox (111.58148pt too high) detected at line 318
  []
 
 File: LogoUMA.png Graphic file (type png)
 <use LogoUMA.png>
-Package pdftex.def Info: LogoUMA.png  used on input line 315.
+Package pdftex.def Info: LogoUMA.png  used on input line 318.
 (pdftex.def)             Requested size: 48.91344pt x 71.13188pt.
 
-Overfull \vbox (35.14299pt too high) detected at line 315
+Overfull \vbox (35.14299pt too high) detected at line 318
  []
 
 
-Overfull \vbox (111.58148pt too high) detected at line 315
+Overfull \vbox (111.58148pt too high) detected at line 318
  []
 
 
-Overfull \vbox (27.8222pt too high) detected at line 343
+Overfull \vbox (27.8222pt too high) detected at line 346
  []
 
 
-Overfull \vbox (32.96887pt too high) detected at line 343
+Overfull \vbox (32.96887pt too high) detected at line 346
  []
 
 
-Overfull \vbox (27.8222pt too high) detected at line 343
+Overfull \vbox (27.8222pt too high) detected at line 346
  []
 
 
-Overfull \vbox (27.8222pt too high) detected at line 343
+Overfull \vbox (27.8222pt too high) detected at line 346
  []
 
 
-Overfull \vbox (32.96887pt too high) detected at line 343
+Overfull \vbox (32.96887pt too high) detected at line 346
  []
 
 
-Overfull \vbox (27.8222pt too high) detected at line 343
+Overfull \vbox (27.8222pt too high) detected at line 346
  []
 
 File: LogoENSPM.jpeg Graphic file (type jpg)
 <use LogoENSPM.jpeg>
-Package pdftex.def Info: LogoENSPM.jpeg  used on input line 343.
+Package pdftex.def Info: LogoENSPM.jpeg  used on input line 346.
 (pdftex.def)             Requested size: 51.2068pt x 51.21504pt.
 
-Overfull \vbox (27.8222pt too high) detected at line 343
+Overfull \vbox (27.8222pt too high) detected at line 346
  []
 
 
-Overfull \vbox (32.96887pt too high) detected at line 343
+Overfull \vbox (32.96887pt too high) detected at line 346
  []
 
 File: minepat.png Graphic file (type png)
 <use minepat.png>
-Package pdftex.def Info: minepat.png  used on input line 343.
+Package pdftex.def Info: minepat.png  used on input line 346.
 (pdftex.def)             Requested size: 47.05602pt x 51.21504pt.
 
-Overfull \vbox (27.8222pt too high) detected at line 343
+Overfull \vbox (27.8222pt too high) detected at line 346
  []
 
 [1
@@ -1861,27 +1861,25 @@ ers/LandryNDZESSA/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ec.enc} <
 
 ] [2
 
-] [3
-
-] [4
-
-] (test.toc
-[5
+] (test.toc [3
 
 ]
 Package babel Info: 'french' activates 'french' shorthands.
-(babel)             Reported on input line 91.
- [6])
+(babel)             Reported on input line 103.
+
+[4])
 \tf@toc=\write8
 \openout8 = `test.toc'.
 
- [7] (test.lof [8
 
-])
-\tf@lof=\write9
-\openout9 = `test.lof'.
+No file test.acr.
+[5] [6
 
- [9] (test.lot
+{C:/Users/LandryNDZESSA/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-rm.
+enc}{C:/Users/LandryNDZESSA/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm
+-mathit.enc}] [7
+
+] (test.lot
 LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 9
 .
 
@@ -1893,44 +1891,47 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 )
-\tf@lot=\write10
-\openout10 = `test.lot'.
+\tf@lot=\write9
+\openout9 = `test.lot'.
 
 
-No file test.acr.
+[8
+
+] (test.lof [9
+
+])
+\tf@lof=\write10
+\openout10 = `test.lof'.
+
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.492 	\chapter
-               *{Introduction GÃ©nÃ©rale} [1
+l.497 	\chapter
+               *{Introduction GÃ©nÃ©rale} [1] [2
 
-{C:/Users/LandryNDZESSA/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mat
-hit.enc}{C:/Users/LandryNDZESSA/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/l
-m/lm-rm.enc}] [2
-
-]
+] [3]
 Chapitre 1.
 LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 5
-07.
+21.
 (C:\Users\LandryNDZESSA\AppData\Local\Programs\MiKTeX\tex/latex/lm\ts1lmr.fd
 File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\gls' on input line 517.
+(hyperref)                removing `\gls' on input line 531.
 
-[3
+[4
 
 {C:/Users/LandryNDZESSA/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ts1
-.enc}] [4] [5] [6]
+.enc}] [5] [6] [7]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\gls' on input line 668.
+(hyperref)                removing `\gls' on input line 682.
 
 
-Overfull \hbox (10.47061pt too wide) in paragraph at lines 713--714
+Overfull \hbox (10.47061pt too wide) in paragraph at lines 727--728
  [][] 
  []
 
@@ -1939,245 +1940,219 @@ Package microtype Info: Character `029' is missing
 (microtype)             Ignoring protrusion settings for this character.
 
 LaTeX Font Warning: Font shape `T1/lmr/bx/sc' undefined
-(Font)              using `T1/lmr/bx/n' instead on input line 714.
+(Font)              using `T1/lmr/bx/n' instead on input line 728.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 720--722
-
- []
-
-[7]
-Underfull \hbox (badness 10000) in paragraph at lines 723--724
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 725--726
+Underfull \hbox (badness 10000) in paragraph at lines 734--736
 
  []
 
 [8]
-Underfull \hbox (badness 10000) in paragraph at lines 732--733
+Underfull \hbox (badness 10000) in paragraph at lines 737--738
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 734--735
+Underfull \hbox (badness 10000) in paragraph at lines 739--740
+
+ []
+
+[9]
+Underfull \hbox (badness 10000) in paragraph at lines 746--747
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 736--737
+Underfull \hbox (badness 10000) in paragraph at lines 748--749
 
  []
 
-[9] [10] [11] [12]
+
+Underfull \hbox (badness 10000) in paragraph at lines 750--751
+
+ []
+
+[10] [11] [12] [13]
 (C:\Users\LandryNDZESSA\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendl
 ayer/tikz/libraries\tikzlibraryshadows.code.tex
 File: tikzlibraryshadows.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-) [13] [14] [15] [16]
+) [14] [15] [16] [17]
 Chapitre 2.
-[17
+[18
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 1110--1111
+Underfull \hbox (badness 10000) in paragraph at lines 1124--1125
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1112--1114
+Underfull \hbox (badness 10000) in paragraph at lines 1126--1128
 
  []
 
-[18] [19] [20]
-Underfull \hbox (badness 10000) in paragraph at lines 1134--1135
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1136--1137
-
- []
-
-[21]
-<enqueteGecam.png, id=740, 450.18187pt x 403.5075pt>
-File: enqueteGecam.png Graphic file (type png)
-<use enqueteGecam.png>
-Package pdftex.def Info: enqueteGecam.png  used on input line 1140.
-(pdftex.def)             Requested size: 352.81552pt x 316.2492pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 1146--1147
-
- []
-
-[22 <./enqueteGecam.png>]
+[19] [20] [21]
 Underfull \hbox (badness 10000) in paragraph at lines 1148--1149
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1150--1151
+Underfull \hbox (badness 10000) in paragraph at lines 1151--1152
 
  []
 
-<zoneRecensement.png, id=746, 400.49625pt x 551.05875pt>
+[22]
+<enqueteGecam.png, id=775, 450.18187pt x 403.5075pt>
+File: enqueteGecam.png Graphic file (type png)
+<use enqueteGecam.png>
+Package pdftex.def Info: enqueteGecam.png  used on input line 1155.
+(pdftex.def)             Requested size: 352.81552pt x 316.2492pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 1161--1162
+
+ []
+
+[23 <./enqueteGecam.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 1164--1165
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1167--1168
+
+ []
+
+[24]
+<zoneRecensement.png, id=791, 400.49625pt x 551.05875pt>
 File: zoneRecensement.png Graphic file (type png)
 <use zoneRecensement.png>
-Package pdftex.def Info: zoneRecensement.png  used on input line 1154.
+Package pdftex.def Info: zoneRecensement.png  used on input line 1171.
 (pdftex.def)             Requested size: 352.81552pt x 485.47974pt.
-[23] [24 <./zoneRecensement.png>] [25] [26] [27]
+ [25] [26 <./zoneRecensement.png>] [27] [28] [29]
 Chapitre 3.
-[28
+[30
 
-] [29] [30] [31] [32] [33] [34] [35]
+] [31] [32] [33] [34]
 
-Package natbib Warning: Citation `tardieu_1983' on page 36 undefined on input l
-ine 1804.
-
-[36]
-Overfull \hbox (13.87819pt too wide) in paragraph at lines 1812--1818
-\T1/lmtt/m/n/12 raison_sociale\T1/lmr/m/n/12 (-20) , \T1/lmtt/m/n/12 statut_jur
-idique\T1/lmr/m/n/12 (-20) , \T1/lmtt/m/n/12 taille\T1/lmr/m/n/12 (-20) , \T1/l
-mtt/m/n/12 date_creation\T1/lmr/m/n/12 (-20) , \T1/lmtt/m/n/12 email\T1/lmr/m/n
-/12 (-20) , \T1/lmtt/m/n/12 telephone\T1/lmr/m/n/12 (-20) ,
- []
+Package natbib Warning: Citation `booch_1998' on page 35 undefined on input lin
+e 1660.
 
 
-Overfull \hbox (7.97612pt too wide) in paragraph at lines 1822--1825
-[]\T1/lmr/bx/n/12 (-20) SecteurActivite \T1/lmr/m/n/12 (-20) : en-tité ré-fé-re
-n-tielle. At-tri-buts : \T1/lmtt/m/n/12 id\T1/lmr/m/n/12 (-20) , \T1/lmtt/m/n/1
-2 nom_secteur\T1/lmr/m/n/12 (-20) , \T1/lmtt/m/n/12 type_secteur
- []
-
-
-Overfull \hbox (39.79288pt too wide) in paragraph at lines 1834--1838
-\T1/lmr/m/n/12 (-20) deux en-tre-prises. At-tri-buts : \T1/lmtt/m/n/12 id\T1/lm
-r/m/n/12 (-20) , \T1/lmtt/m/n/12 date_initiation\T1/lmr/m/n/12 (-20) , \T1/lmtt
-/m/n/12 statut \T1/lmr/m/n/12 (-20) (en at-tente/acceptée/refusée),
- []
-
-[37]
-
-Package natbib Warning: Citation `booch_1998' on page 38 undefined on input lin
-e 1892.
-
-
-Overfull \hbox (12.83443pt too wide) in paragraph at lines 1964--1964
+Overfull \hbox (12.83443pt too wide) in paragraph at lines 1732--1732
 []|\T1/lmr/bx/n/12 (-20) Catégorie|  
  []
 
 
-Overfull \hbox (9.29767pt too wide) in paragraph at lines 1964--1964
+Overfull \hbox (9.29767pt too wide) in paragraph at lines 1732--1732
 []|\T1/lmr/bx/n/12 (-20) Fonction- 
  []
 
 
-Overfull \hbox (6.14891pt too wide) in paragraph at lines 1964--1964
+Overfull \hbox (6.14891pt too wide) in paragraph at lines 1732--1732
 []\T1/lmr/bx/n/12 (-20) fonction- 
  []
 
-[38] [39{C:/Users/LandryNDZESSA/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/l
+[35] [36{C:/Users/LandryNDZESSA/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/l
 m/lm-mathsy.enc}]
 Chapitre 4.
-[40
+[37
 
 ]
-Overfull \hbox (27.72952pt too wide) in paragraph at lines 2104--2104
+Overfull \hbox (27.72952pt too wide) in paragraph at lines 1872--1872
 []|\T1/lmtt/m/n/12 autre_statut_juridique|  
  []
 
 
-Overfull \hbox (9.20451pt too wide) in paragraph at lines 2104--2104
+Overfull \hbox (9.20451pt too wide) in paragraph at lines 1872--1872
 []|\T1/lmtt/m/n/12 date_debut_activite|  
  []
 
-[41]
+[38]
 Overfull \vbox (117.1305pt too high) has occurred while \output is active []
 
 
-[42]
-Overfull \hbox (15.37952pt too wide) in paragraph at lines 2155--2155
+[39]
+Overfull \hbox (15.37952pt too wide) in paragraph at lines 1923--1923
 []|\T1/lmtt/m/n/12 plateforme_existante|  
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2165--2166
+Underfull \hbox (badness 10000) in paragraph at lines 1933--1934
+
+ []
+
+[40]
+Underfull \hbox (badness 10000) in paragraph at lines 1937--1938
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1939--1941
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1945--1946
+
+ []
+
+[41]
+Underfull \hbox (badness 10000) in paragraph at lines 1957--1958
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1959--1960
+
+ []
+
+[42]
+Underfull \hbox (badness 10000) in paragraph at lines 1964--1965
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1966--1967
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1968--1969
 
  []
 
 [43]
-Underfull \hbox (badness 10000) in paragraph at lines 2169--2170
+Underfull \hbox (badness 10000) in paragraph at lines 1979--1980
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2171--2173
+Underfull \hbox (badness 10000) in paragraph at lines 1981--1982
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2177--2178
+Underfull \hbox (badness 10000) in paragraph at lines 1983--1984
 
  []
 
-[44]
-Underfull \hbox (badness 10000) in paragraph at lines 2189--2190
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2191--2192
-
- []
-
-[45]
-Underfull \hbox (badness 10000) in paragraph at lines 2196--2197
+[44] [45{C:/Users/LandryNDZESSA/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/l
+m/lm-mathex.enc}] [46]
+Underfull \hbox (badness 10000) in paragraph at lines 2127--2128
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2198--2199
+Underfull \hbox (badness 10000) in paragraph at lines 2129--2130
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2200--2201
+Underfull \hbox (badness 10000) in paragraph at lines 2131--2132
 
  []
 
-[46]
-Underfull \hbox (badness 10000) in paragraph at lines 2211--2212
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2213--2214
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2215--2216
-
- []
-
-[47] [48{C:/Users/LandryNDZESSA/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/l
-m/lm-mathex.enc}] [49]
-Underfull \hbox (badness 10000) in paragraph at lines 2359--2360
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2361--2362
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2363--2364
-
- []
-
-[50]
-Overfull \hbox (39.26176pt too wide) in paragraph at lines 2368--2374
+[47]
+Overfull \hbox (39.26176pt too wide) in paragraph at lines 2136--2142
 [] []\T1/lmr/bx/n/12 (-20) For-ma-li-sa-tion ma-thé-ma-tiques[] \T1/lmr/m/n/12 
 (-20) Soit un en-semble de $\OML/lmm/m/it/12 n$ \T1/lmr/m/n/12 (-20) in-di-vi-d
 us $\OT1/lmr/m/n/12 (-20) 
@@ -2185,199 +2160,321 @@ us $\OT1/lmr/m/n/12 (-20)
 lmr/m/n/12 (-20) ,
  []
 
-[51] [52] [53] [54] [55]
+[48] [49] [50] [51] [52]
 
-LaTeX Warning: Command \' invalid in math mode on input line 2645.
+LaTeX Warning: Command \' invalid in math mode on input line 2413.
 
 
-LaTeX Warning: Command \' invalid in math mode on input line 2648.
+LaTeX Warning: Command \' invalid in math mode on input line 2416.
 
-[56]
+[53]
 Chapitre 5.
-[57
+[54
 
 ]
-<statut.jpeg, id=997, 655.44875pt x 614.295pt>
+<statut.jpeg, id=994, 655.44875pt x 614.295pt>
 File: statut.jpeg Graphic file (type jpg)
 <use statut.jpeg>
-Package pdftex.def Info: statut.jpeg  used on input line 2713.
+Package pdftex.def Info: statut.jpeg  used on input line 2481.
 (pdftex.def)             Requested size: 330.76329pt x 309.99625pt.
- [58 <./statut.jpeg>]
-<repartition_region.jpeg, id=1002, 614.295pt x 614.295pt>
+ [55 <./statut.jpeg>]
+<repartition_region.jpeg, id=999, 614.295pt x 614.295pt>
 File: repartition_region.jpeg Graphic file (type jpg)
 <use repartition_region.jpeg>
-Package pdftex.def Info: repartition_region.jpeg  used on input line 2724.
+Package pdftex.def Info: repartition_region.jpeg  used on input line 2492.
 (pdftex.def)             Requested size: 330.76329pt x 330.76764pt.
-<repartition_taille.jpeg, id=1003, 655.44875pt x 614.295pt>
+<repartition_taille.jpeg, id=1000, 655.44875pt x 614.295pt>
 File: repartition_taille.jpeg Graphic file (type jpg)
 <use repartition_taille.jpeg>
-Package pdftex.def Info: repartition_taille.jpeg  used on input line 2737.
+Package pdftex.def Info: repartition_taille.jpeg  used on input line 2505.
 (pdftex.def)             Requested size: 330.76329pt x 309.99625pt.
- [59 <./repartition_region.jpeg>]
-<anciennete.jpeg, id=1008, 614.295pt x 614.295pt>
+ [56 <./repartition_region.jpeg>]
+<anciennete.jpeg, id=1005, 614.295pt x 614.295pt>
 File: anciennete.jpeg Graphic file (type jpg)
 <use anciennete.jpeg>
-Package pdftex.def Info: anciennete.jpeg  used on input line 2748.
+Package pdftex.def Info: anciennete.jpeg  used on input line 2516.
 (pdftex.def)             Requested size: 330.76329pt x 330.76764pt.
- [60 <./repartition_taille.jpeg>]
-<repartition_activite.jpeg, id=1013, 946.53625pt x 614.295pt>
+ [57 <./repartition_taille.jpeg>]
+<repartition_activite.jpeg, id=1011, 946.53625pt x 614.295pt>
 File: repartition_activite.jpeg Graphic file (type jpg)
 <use repartition_activite.jpeg>
-Package pdftex.def Info: repartition_activite.jpeg  used on input line 2761.
+Package pdftex.def Info: repartition_activite.jpeg  used on input line 2529.
 (pdftex.def)             Requested size: 330.76329pt x 214.65965pt.
- [61 <./anciennete.jpeg>]
-<repartition_besoins.jpeg, id=1018, 1284.8pt x 631.35875pt>
+ [58 <./anciennete.jpeg>]
+<repartition_besoins.jpeg, id=1016, 1284.8pt x 631.35875pt>
 File: repartition_besoins.jpeg Graphic file (type jpg)
 <use repartition_besoins.jpeg>
-Package pdftex.def Info: repartition_besoins.jpeg  used on input line 2771.
+Package pdftex.def Info: repartition_besoins.jpeg  used on input line 2539.
 (pdftex.def)             Requested size: 330.76329pt x 162.54056pt.
- [62 <./repartition_activite.jpeg> <./repartition_besoins.jpeg>]
-<carte_chaleur_besoins_statut_juridique.jpeg, id=1024, 1284.8pt x 631.35875pt>
+ [59 <./repartition_activite.jpeg> <./repartition_besoins.jpeg>]
+<carte_chaleur_besoins_statut_juridique.jpeg, id=1022, 1284.8pt x 631.35875pt>
 File: carte_chaleur_besoins_statut_juridique.jpeg Graphic file (type jpg)
 <use carte_chaleur_besoins_statut_juridique.jpeg>
 Package pdftex.def Info: carte_chaleur_besoins_statut_juridique.jpeg  used on i
-nput line 2800.
+nput line 2568.
 (pdftex.def)             Requested size: 441.01773pt x 216.72075pt.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10.95> on input line 2809.
- [63 <./carte_chaleur_besoins_statut_juridique.jpeg>]
-<carte_chaleur_besoins_region.jpeg, id=1032, 1284.8pt x 631.35875pt>
+(Font)              <10.95> on input line 2577.
+ [60 <./carte_chaleur_besoins_statut_juridique.jpeg>]
+<carte_chaleur_besoins_region.jpeg, id=1029, 1284.8pt x 631.35875pt>
 File: carte_chaleur_besoins_region.jpeg Graphic file (type jpg)
 <use carte_chaleur_besoins_region.jpeg>
 Package pdftex.def Info: carte_chaleur_besoins_region.jpeg  used on input line 
-2856.
+2624.
 (pdftex.def)             Requested size: 441.01773pt x 216.72075pt.
 
-[64 <./carte_chaleur_besoins_region.jpeg>]
-<carte_chaleur_besoins_anciennete.jpeg, id=1037, 1284.8pt x 631.35875pt>
+[61 <./carte_chaleur_besoins_region.jpeg>]
+<carte_chaleur_besoins_anciennete.jpeg, id=1034, 1284.8pt x 631.35875pt>
 File: carte_chaleur_besoins_anciennete.jpeg Graphic file (type jpg)
 <use carte_chaleur_besoins_anciennete.jpeg>
 Package pdftex.def Info: carte_chaleur_besoins_anciennete.jpeg  used on input l
-ine 2909.
+ine 2677.
 (pdftex.def)             Requested size: 441.01773pt x 216.72075pt.
- [65 <./carte_chaleur_besoins_anciennete.jpeg>]
-<carte_chaleur_besoins_secteurs_activite.jpeg, id=1042, 1284.8pt x 631.35875pt>
+ [62 <./carte_chaleur_besoins_anciennete.jpeg>]
+<carte_chaleur_besoins_secteurs_activite.jpeg, id=1039, 1284.8pt x 631.35875pt>
 
 File: carte_chaleur_besoins_secteurs_activite.jpeg Graphic file (type jpg)
 <use carte_chaleur_besoins_secteurs_activite.jpeg>
 Package pdftex.def Info: carte_chaleur_besoins_secteurs_activite.jpeg  used on 
-input line 2961.
+input line 2729.
 (pdftex.def)             Requested size: 441.01773pt x 216.72075pt.
- [66 <./carte_chaleur_besoins_secteurs_activite.jpeg>]
-<carte_chaleur_besoins_taille_entreprise.jpeg, id=1047, 1284.8pt x 631.35875pt>
+ [63 <./carte_chaleur_besoins_secteurs_activite.jpeg>]
+<carte_chaleur_besoins_taille_entreprise.jpeg, id=1045, 1284.8pt x 631.35875pt>
 
 File: carte_chaleur_besoins_taille_entreprise.jpeg Graphic file (type jpg)
 <use carte_chaleur_besoins_taille_entreprise.jpeg>
 Package pdftex.def Info: carte_chaleur_besoins_taille_entreprise.jpeg  used on 
-input line 3016.
+input line 2784.
 (pdftex.def)             Requested size: 441.01773pt x 216.72075pt.
- [67 <./carte_chaleur_besoins_taille_entreprise.jpeg>]
-<contributionValeursPropres.jpeg, id=1052, 1284.8pt x 631.35875pt>
+ [64 <./carte_chaleur_besoins_taille_entreprise.jpeg>]
+<contributionValeursPropres.jpeg, id=1050, 1284.8pt x 631.35875pt>
 File: contributionValeursPropres.jpeg Graphic file (type jpg)
 <use contributionValeursPropres.jpeg>
-Package pdftex.def Info: contributionValeursPropres.jpeg  used on input line 31
-29.
+Package pdftex.def Info: contributionValeursPropres.jpeg  used on input line 28
+97.
 (pdftex.def)             Requested size: 330.76329pt x 162.54056pt.
- [68]
-<projectionDesCategories.jpeg, id=1058, 1284.8pt x 631.35875pt>
+ [65]
+<projectionDesCategories.jpeg, id=1056, 1284.8pt x 631.35875pt>
 File: projectionDesCategories.jpeg Graphic file (type jpg)
 <use projectionDesCategories.jpeg>
-Package pdftex.def Info: projectionDesCategories.jpeg  used on input line 3149.
+Package pdftex.def Info: projectionDesCategories.jpeg  used on input line 2917.
 
 (pdftex.def)             Requested size: 441.01773pt x 216.72075pt.
- [69 <./contributionValeursPropres.jpeg>]
-<contributionCategoriesAlAxe1.jpeg, id=1065, 1284.8pt x 631.35875pt>
+ [66 <./contributionValeursPropres.jpeg>]
+<contributionCategoriesAlAxe1.jpeg, id=1062, 1284.8pt x 631.35875pt>
 File: contributionCategoriesAlAxe1.jpeg Graphic file (type jpg)
 <use contributionCategoriesAlAxe1.jpeg>
 Package pdftex.def Info: contributionCategoriesAlAxe1.jpeg  used on input line 
-3167.
+2935.
 (pdftex.def)             Requested size: 211.68661pt x 104.01555pt.
-<contributionCategorieALAxe2.jpeg, id=1066, 1284.8pt x 631.35875pt>
+<contributionCategorieALAxe2.jpeg, id=1063, 1284.8pt x 631.35875pt>
 File: contributionCategorieALAxe2.jpeg Graphic file (type jpg)
 <use contributionCategorieALAxe2.jpeg>
-Package pdftex.def Info: contributionCategorieALAxe2.jpeg  used on input line 3
-174.
+Package pdftex.def Info: contributionCategorieALAxe2.jpeg  used on input line 2
+942.
 (pdftex.def)             Requested size: 211.68661pt x 104.01555pt.
 
-Overfull \hbox (0.608pt too wide) in paragraph at lines 3180--3199
+Overfull \hbox (0.608pt too wide) in paragraph at lines 2948--2967
 \T1/lmr/m/n/12 (-20) les ex-pres-sions contras-tées des be-soins lo-gis-tiques 
 et tech-niques (\T1/lmtt/m/n/12 besoin_transport_Oui\T1/lmr/m/n/12 (-20) ,
  []
 
 
-Overfull \hbox (20.60188pt too wide) in paragraph at lines 3180--3199
+Overfull \hbox (20.60188pt too wide) in paragraph at lines 2948--2967
 \T1/lmtt/m/n/12 besoin_transport_Non\T1/lmr/m/n/12 (-20) , \T1/lmtt/m/n/12 beso
 in_innovation_recherche_Oui\T1/lmr/m/n/12 (-20) , \T1/lmtt/m/n/12 besoin_emball
 ages_Oui\T1/lmr/m/n/12 (-20) ).
  []
 
-[70 <./projectionDesCategories.jpeg> <./contributionCategoriesAlAxe1.jpeg> <./c
+[67 <./projectionDesCategories.jpeg> <./contributionCategoriesAlAxe1.jpeg> <./c
 ontributionCategorieALAxe2.jpeg>]
-<dendrogramme.jpeg, id=1072, 1284.8pt x 631.35875pt>
+<dendrogramme.jpeg, id=1069, 1284.8pt x 631.35875pt>
 File: dendrogramme.jpeg Graphic file (type jpg)
 <use dendrogramme.jpeg>
-Package pdftex.def Info: dendrogramme.jpeg  used on input line 3221.
+Package pdftex.def Info: dendrogramme.jpeg  used on input line 2989.
 (pdftex.def)             Requested size: 374.86775pt x 184.20686pt.
- [71]
-<CAH.jpeg, id=1078, 1284.8pt x 631.35875pt>
+ [68]
+<CAH.jpeg, id=1075, 1284.8pt x 631.35875pt>
 File: CAH.jpeg Graphic file (type jpg)
 <use CAH.jpeg>
-Package pdftex.def Info: CAH.jpeg  used on input line 3241.
+Package pdftex.def Info: CAH.jpeg  used on input line 3009.
 (pdftex.def)             Requested size: 441.01773pt x 216.72075pt.
- [72 <./dendrogramme.jpeg> <./CAH.jpeg>]
-<classe_et_anciennete.jpeg, id=1084, 1284.8pt x 631.35875pt>
+ [69 <./dendrogramme.jpeg> <./CAH.jpeg>]
+<classe_et_anciennete.jpeg, id=1082, 1284.8pt x 631.35875pt>
 File: classe_et_anciennete.jpeg Graphic file (type jpg)
 <use classe_et_anciennete.jpeg>
-Package pdftex.def Info: classe_et_anciennete.jpeg  used on input line 3267.
+Package pdftex.def Info: classe_et_anciennete.jpeg  used on input line 3035.
 (pdftex.def)             Requested size: 211.68661pt x 104.01555pt.
-<classes_et_secteurs_activites.jpeg, id=1085, 1284.8pt x 631.35875pt>
+<classes_et_secteurs_activites.jpeg, id=1083, 1284.8pt x 631.35875pt>
 File: classes_et_secteurs_activites.jpeg Graphic file (type jpg)
 <use classes_et_secteurs_activites.jpeg>
 Package pdftex.def Info: classes_et_secteurs_activites.jpeg  used on input line
- 3274.
+ 3042.
 (pdftex.def)             Requested size: 211.68661pt x 104.01555pt.
-<classes_et_tailles.jpeg, id=1086, 1284.8pt x 631.35875pt>
+<classes_et_tailles.jpeg, id=1084, 1284.8pt x 631.35875pt>
 File: classes_et_tailles.jpeg Graphic file (type jpg)
 <use classes_et_tailles.jpeg>
-Package pdftex.def Info: classes_et_tailles.jpeg  used on input line 3283.
+Package pdftex.def Info: classes_et_tailles.jpeg  used on input line 3051.
 (pdftex.def)             Requested size: 211.68661pt x 104.01555pt.
-<classes_et_regions.jpeg, id=1087, 1284.8pt x 631.35875pt>
+<classes_et_regions.jpeg, id=1085, 1284.8pt x 631.35875pt>
 File: classes_et_regions.jpeg Graphic file (type jpg)
 <use classes_et_regions.jpeg>
-Package pdftex.def Info: classes_et_regions.jpeg  used on input line 3290.
+Package pdftex.def Info: classes_et_regions.jpeg  used on input line 3058.
 (pdftex.def)             Requested size: 211.68661pt x 104.01555pt.
 
-[73 <./classe_et_anciennete.jpeg> <./classes_et_secteurs_activites.jpeg> <./cla
+[70 <./classe_et_anciennete.jpeg> <./classes_et_secteurs_activites.jpeg> <./cla
 sses_et_tailles.jpeg> <./classes_et_regions.jpeg>]
-<AFDProjectionDesObservations.jpeg, id=1093, 1284.8pt x 631.35875pt>
+<AFDProjectionDesObservations.jpeg, id=1091, 1284.8pt x 631.35875pt>
 File: AFDProjectionDesObservations.jpeg Graphic file (type jpg)
 <use AFDProjectionDesObservations.jpeg>
 Package pdftex.def Info: AFDProjectionDesObservations.jpeg  used on input line 
-3311.
+3079.
 (pdftex.def)             Requested size: 374.86775pt x 184.20686pt.
- [74 <./AFDProjectionDesObservations.jpeg>]
-Underfull \hbox (badness 10000) in paragraph at lines 3382--3386
+ [71 <./AFDProjectionDesObservations.jpeg>]
+Underfull \hbox (badness 10000) in paragraph at lines 3151--3155
 
  []
 
-[75] [76] [77] [78
+[72] [73]
+Overfull \hbox (35.06161pt too wide) in paragraph at lines 3310--3312
+ [][] 
+ []
 
-] (test.bbl [79
+[74]
 
-]) [80]
+LaTeX Warning: File `./img/screenshot_accueil.png' not found on input line 3350
+.
+
+
+! Package pdftex.def Error: File `./img/screenshot_accueil.png' not found: usin
+g draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.3350 ...textwidth]{./img/screenshot_accueil.png}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+[75]
+
+LaTeX Warning: File `./img/screenshot_dashboard.png' not found on input line 33
+73.
+
+
+! Package pdftex.def Error: File `./img/screenshot_dashboard.png' not found: us
+ing draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.3373 ...xtwidth]{./img/screenshot_dashboard.png}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+[76]
+
+LaTeX Warning: File `./img/screenshot_besoins.png' not found on input line 3393
+.
+
+
+! Package pdftex.def Error: File `./img/screenshot_besoins.png' not found: usin
+g draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.3393 ...textwidth]{./img/screenshot_besoins.png}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+[77]
+
+LaTeX Warning: File `./img/screenshot_recommandations.png' not found on input l
+ine 3416.
+
+
+! Package pdftex.def Error: File `./img/screenshot_recommandations.png' not fou
+nd: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.3416 ...h]{./img/screenshot_recommandations.png}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+[78]
+
+LaTeX Warning: File `./img/screenshot_admin.png' not found on input line 3437.
+
+
+! Package pdftex.def Error: File `./img/screenshot_admin.png' not found: using 
+draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.3437 ...=\textwidth]{./img/screenshot_admin.png}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+[79] [80]
+(C:\Users\LandryNDZESSA\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstlan
+g1.sty
+File: lstlang1.sty 2025/11/14 1.11b listings language file
+)
+Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
+nput line 3472.
+LaTeX Font Info:    Font shape `T1/lmtt/bx/n' in size <10.95> not available
+(Font)              Font shape `T1/lmtt/b/n' tried instead on input line 3473.
+ [81] [82]
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <5> on input line 3624.
+ [83]
+
+Package natbib Warning: Citation `lebart_morineau_piron_1995' on page 84 undefi
+ned on input line 3702.
+
+[84] [85]
+
+Package natbib Warning: Citation `ins_rge_2023' on page 86 undefined on input l
+ine 3748.
+
+[86] [87] [88] [89
+
+] (test.bbl
+Underfull \hbox (badness 2753) in paragraph at lines 54--58
+[]\T1/lmr/m/n/12 (+20) Larousse.  Dic-tion-naire la-rousse en ligne.  [][]$\T1/
+lmtt/m/n/12 https : / / www . larousse . fr /
+ []
+
+[90
+
+]) [91]
 Annexe A.
-[81
+[92
 
 ]
 Annexe B.
-[82
+[93
 
 ]
 Annexe C.
 
 Package natbib Warning: There were undefined citations.
 
-[83
+[94
 
 ] (test.aux)
  ***********
@@ -2389,20 +2486,16 @@ L3 programming layer <2025-12-24>
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 Package rerunfilecheck Info: File `test.out' has not changed.
-(rerunfilecheck)             Checksum: 73BB6FD65A2CE0B66C614FB1BAEDC7AF;17515.
+(rerunfilecheck)             Checksum: A1F32B886B4D0C3F0A7C93446FF4D901;17006.
  ) 
 Here is how much of TeX's memory you used:
- 51547 strings out of 467871
- 1120401 string characters out of 5414504
- 1613067 words of memory out of 5000000
- 79032 multiletter control sequences out of 15000+600000
- 732548 words of font info for 249 fonts, out of 8000000 for 9000
+ 52542 strings out of 467871
+ 1137074 string characters out of 5414504
+ 1970412 words of memory out of 5000000
+ 79924 multiletter control sequences out of 15000+600000
+ 745125 words of font info for 265 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 84i,16n,104p,2474b,1380s stack positions out of 10000i,1000n,20000p,200000b,200000s
-
-pdfTeX warning (dest): name{glo:snd30} has been referenced but does not exist, 
-replaced by a fixed one
-
+ 84i,16n,96p,2474b,2841s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
 pdfTeX warning (dest): name{glo:gecam} has been referenced but does not exist, 
 replaced by a fixed one
@@ -2410,6 +2503,22 @@ replaced by a fixed one
 
 pdfTeX warning (dest): name{glo:dgepip} has been referenced but does not exist,
  replaced by a fixed one
+
+
+pdfTeX warning (dest): name{glo:snd30} has been referenced but does not exist, 
+replaced by a fixed one
+
+
+pdfTeX warning (dest): name{glo:afd} has been referenced but does not exist, re
+placed by a fixed one
+
+
+pdfTeX warning (dest): name{glo:cah} has been referenced but does not exist, re
+placed by a fixed one
+
+
+pdfTeX warning (dest): name{glo:acm} has been referenced but does not exist, re
+placed by a fixed one
 
 
 pdfTeX warning (dest): name{glo:cas} has been referenced but does not exist, re
@@ -2448,11 +2557,12 @@ yNDZESSA/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtk10.pfb><C:/Use
 rs/LandryNDZESSA/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt10.pfb
 ><C:/Users/LandryNDZESSA/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lm
 tt12.pfb><C:/Users/LandryNDZESSA/AppData/Local/Programs/MiKTeX/fonts/type1/publ
-ic/amsfonts/symbols/msam10.pfb><C:/Users/LandryNDZESSA/AppData/Local/Programs/M
-iKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on test.pdf (93 pages, 5392499 bytes).
+ic/lm/lmtti10.pfb><C:/Users/LandryNDZESSA/AppData/Local/Programs/MiKTeX/fonts/t
+ype1/public/amsfonts/symbols/msam10.pfb><C:/Users/LandryNDZESSA/AppData/Local/P
+rograms/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on test.pdf (104 pages, 5483427 bytes).
 PDF statistics:
- 1325 PDF objects out of 1440 (max. 8388607)
- 320 named destinations out of 1000 (max. 500000)
- 55692 words of extra memory for PDF output out of 61914 (max. 10000000)
+ 1499 PDF objects out of 1728 (max. 8388607)
+ 399 named destinations out of 1000 (max. 500000)
+ 62836 words of extra memory for PDF output out of 74296 (max. 10000000)
 

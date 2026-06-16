@@ -1,21 +1,22 @@
 \babel@toc {french}{}\relax 
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {1.1}{\ignorespaces Sélection des principales tâches du projet \textit {Business Partnership} dans le tableau Kanban}}{16}{table.caption.11}%
+\contentsline {table}{\numberline {1.1}{\ignorespaces Sélection des principales tâches du projet \textit {Business Partnership} dans le tableau Kanban}}{17}{table.caption.11}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {3.1}{\ignorespaces Synthèse des acteurs et de leurs droits d'accès}}{30}{table.caption.14}%
-\contentsline {table}{\numberline {3.2}{\ignorespaces Synthèse des exigences selon la méthode MoSCoW}}{39}{table.caption.15}%
+\contentsline {table}{\numberline {3.1}{\ignorespaces Synthèse des acteurs et de leurs droits d'accès}}{32}{table.caption.14}%
+\contentsline {table}{\numberline {3.2}{\ignorespaces Synthèse des exigences selon la méthode MoSCoW}}{36}{table.caption.15}%
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {4.1}{\ignorespaces Variables pour l'identification des entreprises (\texttt {identifications.csv})}}{42}{table.caption.16}%
-\contentsline {table}{\numberline {4.2}{\ignorespaces Variables relatives aux besoins des entreprises (\texttt {besoins.csv})}}{43}{table.caption.17}%
+\contentsline {table}{\numberline {4.1}{\ignorespaces Variables pour l'identification des entreprises (\texttt {identifications.csv})}}{39}{table.caption.16}%
+\contentsline {table}{\numberline {4.2}{\ignorespaces Variables relatives aux besoins des entreprises (\texttt {besoins.csv})}}{40}{table.caption.17}%
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {5.1}{\ignorespaces Test du $\chi ^2$ entre le statut juridique et les besoins des entreprises}}{63}{table.caption.25}%
-\contentsline {table}{\numberline {5.2}{\ignorespaces Test du $\chi ^2$ entre la région d'implantation et les besoins des entreprises}}{64}{table.caption.27}%
-\contentsline {table}{\numberline {5.3}{\ignorespaces Test du $\chi ^2$ entre l'ancienneté et les besoins des entreprises}}{65}{table.caption.29}%
-\contentsline {table}{\numberline {5.4}{\ignorespaces Test du $\chi ^2$ entre le secteur d'activité et les besoins des entreprises}}{66}{table.caption.31}%
-\contentsline {table}{\numberline {5.5}{\ignorespaces Test du $\chi ^2$ entre la taille de l'entreprise et ses besoins}}{67}{table.caption.33}%
-\contentsline {table}{\numberline {5.6}{\ignorespaces Coefficients des variables sur les fonctions discriminantes canoniques}}{75}{table.caption.42}%
-\contentsline {table}{\numberline {5.7}{\ignorespaces Indicateurs de performance du modèle discriminant}}{76}{table.caption.43}%
+\contentsline {table}{\numberline {5.1}{\ignorespaces Test du $\chi ^2$ entre le statut juridique et les besoins des entreprises}}{60}{table.caption.25}%
+\contentsline {table}{\numberline {5.2}{\ignorespaces Test du $\chi ^2$ entre la région d'implantation et les besoins des entreprises}}{61}{table.caption.27}%
+\contentsline {table}{\numberline {5.3}{\ignorespaces Test du $\chi ^2$ entre l'ancienneté et les besoins des entreprises}}{62}{table.caption.29}%
+\contentsline {table}{\numberline {5.4}{\ignorespaces Test du $\chi ^2$ entre le secteur d'activité et les besoins des entreprises}}{63}{table.caption.31}%
+\contentsline {table}{\numberline {5.5}{\ignorespaces Test du $\chi ^2$ entre la taille de l'entreprise et ses besoins}}{64}{table.caption.33}%
+\contentsline {table}{\numberline {5.6}{\ignorespaces Coefficients des variables sur les fonctions discriminantes canoniques}}{72}{table.caption.42}%
+\contentsline {table}{\numberline {5.7}{\ignorespaces Indicateurs de performance du modèle discriminant}}{73}{table.caption.43}%
+\contentsline {table}{\numberline {5.8}{\ignorespaces Métriques de performance du modèle de classification (validation par l'AFD)}}{85}{table.caption.51}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }

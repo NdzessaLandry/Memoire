@@ -1,9 +1,22 @@
-\begin{thebibliography}{10}
+\begin{thebibliography}{21}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
   \providecommand{\doi}[1]{doi: #1}\else
   \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[{Acceor}(2024)]{acceor2024}
+{Acceor}.
+\newblock Plateformes b2b : Définition, fonctionnement et avantages pour les
+  entreprises.
+\newblock \url{https://www.acceor.com/plateformes-b2b}, 2024.
+\newblock Consulté le 12 mars 2025.
+
+\bibitem[{Alibaba Group}(2024)]{alibaba2024}
+{Alibaba Group}.
+\newblock Alibaba.com --- global b2b trade marketplace.
+\newblock \url{https://www.alibaba.com/}, 2024.
+\newblock Consulté le 12 mars 2025.
 
 \bibitem[Anderson and Carmichael(2015)]{anderson2015essential}
 D.J. Anderson and A.~Carmichael.
@@ -30,6 +43,31 @@ Kent Beck et~al.
 \newblock Rapport d'enquête, Groupement des Entreprises du Cameroun, Yaoundé,
   Cameroun, 2019.
 
+\bibitem[{Institut National de la Statistique}(2023)]{ins2023}
+{Institut National de la Statistique}.
+\newblock Troisième recensement général des entreprises (rge3) ---
+  résultats préliminaires.
+\newblock Rapport statistique, Institut National de la Statistique du Cameroun,
+  Yaoundé, Cameroun, 2023.
+
+\bibitem[{Larousse}(2024)]{larousse}
+{Larousse}.
+\newblock Dictionnaire larousse en ligne.
+\newblock \url{https://www.larousse.fr/dictionnaires/francais/}, 2024.
+\newblock Consulté le 1er mars 2025.
+
+\bibitem[{LinkedIn Corporation}(2024)]{linkedin2024}
+{LinkedIn Corporation}.
+\newblock About linkedin.
+\newblock \url{https://about.linkedin.com/}, 2024.
+\newblock Consulté le 12 mars 2025.
+
+\bibitem[{Meta Platforms Inc.}(2024)]{meta2024}
+{Meta Platforms Inc.}
+\newblock Facebook marketplace.
+\newblock \url{https://www.facebook.com/marketplace/}, 2024.
+\newblock Consulté le 12 mars 2025.
+
 \bibitem[{MINEPAT}(2009)]{minepat2009}
 {MINEPAT}.
 \newblock Document de stratégie pour la croissance et l'emploi (dsce)
@@ -43,6 +81,13 @@ Kent Beck et~al.
 \newblock Rapport stratégique, Ministère de l'Économie, de la Planification
   et de l'Aménagement du Territoire, Yaoundé, Cameroun, 2020.
 
+\bibitem[{MINEPAT}(2022)]{minepat2022}
+{MINEPAT}.
+\newblock Stratégie de développement du secteur de l'industrie et des
+  services (sdsis).
+\newblock Document de stratégie sectorielle, Ministère de l'Économie, de la
+  Planification et de l'Aménagement du Territoire, Yaoundé, Cameroun, 2022.
+
 \bibitem[{MINEPAT}(2025)]{minepat2025}
 {MINEPAT}.
 \newblock Rapport de revue à mi-parcours de la stratégie nationale de
@@ -50,10 +95,31 @@ Kent Beck et~al.
 \newblock Rapport d'évaluation, Ministère de l'Économie, de la Planification
   et de l'Aménagement du Territoire, Yaoundé, Cameroun, January 2025.
 
+\bibitem[{MINPMEESA}(2023)]{minpmeesa}
+{MINPMEESA}.
+\newblock Bourses de sous-traitance et de partenariat (bstp).
+\newblock Document de présentation institutionnel, 2023.
+\newblock Ministère des Petites et Moyennes Entreprises, de l'Économie
+  Sociale et de l'Artisanat, Yaoundé, Cameroun.
+
+\bibitem[{OCDE}(2021)]{ocde2021}
+{OCDE}.
+\newblock Perspectives économiques de l'afrique 2021 : De la dépendance à
+  l'autonomisation.
+\newblock Rapport économique, Organisation de Coopération et de
+  Développement Économiques, Paris, France, 2021.
+
 \bibitem[Ohno(1988)]{ohno_1988}
 Taiichi Ohno.
 \newblock \emph{Toyota Production System: Beyond Large-Scale Production}.
 \newblock Productivity Press, New York, 1988.
+
+\bibitem[{Oser Entreprendre}(2023)]{oserentreprendre}
+{Oser Entreprendre}.
+\newblock Cartographie des besoins en compétences : Un outil stratégique pour
+  les entreprises.
+\newblock \url{https://www.oserentreprendre.fr/}, 2023.
+\newblock Consulté le 5 avril 2025.
 
 \bibitem[{République du Cameroun}(2008)]{decret2008}
 {République du Cameroun}.
@@ -67,5 +133,11 @@ Taiichi Ohno.
 Gilbert Saporta.
 \newblock \emph{Probabilités, Analyse des Données et Statistique}.
 \newblock Technip, Paris, France, 3 edition, 2010.
+
+\bibitem[Williamson(1985)]{williamson1985}
+Oliver~E. Williamson.
+\newblock \emph{The Economic Institutions of Capitalism: Firms, Markets,
+  Relational Contracting}.
+\newblock Free Press, New York, NY, USA, 1985.
 
 \end{thebibliography}

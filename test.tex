@@ -159,7 +159,7 @@ pdfkeywords={Data Sciences, Cartographie, Entreprises, MINEPAT, Cameroun}
 	\hfill
 	\tikz[remember picture]{
 		\node[fill=primary, text=white, font=\Large\bfseries,
-		minimum width=2.5cm, minimum height=2.5cm,
+		minimum width=1.5cm, minimum height=1.5cm,
 		rounded corners=4pt]
 		{\thechapter};
 	}
@@ -246,6 +246,9 @@ justification=centering
 \newacronym{dgcoop}{DGCOOP}{Direction Générale de la Coopération et de
 	l'Intégration Régionale}
 \newacronym{dag}{DAG}{Direction des Affaires Générales}
+\newacronym{acm}{ACM}{Analyse des Correspondances Multiples}
+\newacronym{cah}{CAH}{Classification Ascendante Hièrarchique}
+\newacronym{afd}{AFD}{Analyse Factorielle Discriminante}
 \newacronym{ins}{INS}{Institut National de la Statistique}
 \newacronym{rge}{RGE}{Recensement Général des Entreprises}
 \newacronym{cas}{CAS}{Cellule des Analyses Sectorielles}
@@ -437,15 +440,20 @@ justification=centering
 		\item Tous les \textbf{enseignants} qui, à travers leurs enseignements, ont rendu ce travail possible.
 	\end{itemize}
 	
+	%--- TABLE DES MATIERES ---
+	\tableofcontents
+	\addcontentsline{toc}{chapter}{Table des matières}
+	
+%--- LISTE DES ACRONYMES ---
+\printglossary[type=\acronymtype, title={Liste des abréviations}]
+\addcontentsline{toc}{chapter}{Liste des acronymes et abréviations}
+
 	%--- RÉSUMÉ ---
-	\chapter*{Résumé}
-	\addcontentsline{toc}{chapter}{Résumé}
-	\thispagestyle{plain}
-	
-%	\textbf{Mots-clés :} Plateforme numérique, cartographie des entreprises, mise en relation, Data Sciences, MINEPAT, secteur privé, Cameroun.
-	
-	\medskip
-	
+\chapter*{Résumé}
+\addcontentsline{toc}{chapter}{Résumé}
+\thispagestyle{plain}
+Le secteur privé camerounais fait face à des contraintes structurelles majeures qui entravent sa croissance et sa pérennité. Afin de dynamiser cet écosystème, ce travail s'articule autour d'un double objectif : analyser les données d'une enquête nationale initiée par le \gls{minepat} pour cartographier précisément les besoins des entreprises, puis exploiter ces insights statistiques pour concevoir le moteur d'une plateforme numérique de mise en relation partenariale. Face à des données essentiellement catégorielles, une démarche rigoureuse de \textit{Data Science} a été déployée, combinant des analyses descriptives (univariées et bivariées) et des méthodes d'analyse de données multidimensionnelles, notamment l'Analyse des Correspondances Multiples (\gls{acm}), la Classification Ascendante Hiérarchique (\gls{cah}) et l'Analyse Factorielle Discriminante (\gls{afd}).L'analyse des données de l'enquête indique que $96{,}23\,\%$ des structures recensées souffrent d'un déficit critique de financement, tandis que le secteur d'activité s'impose comme la variable la plus discriminante pour segmenter la nature de leurs besoins. De plus, une forte dépendance statistique est mise en évidence entre l'ancienneté des entreprises et leurs exigences en matière de recherche et d'innovation. L'application de l'algorithme de \gls{cah} a permis de modéliser une typologie initiale en neuf \textit{clusters}, optimisée à trois classes homogènes pour en faciliter l'exploitation opérationnelle. Enfin, les structures de corrélation et les profils ainsi dégagés ont été capitalisés pour développer l'algorithme d'appariement (\textit{matching}) qui alimente la plateforme numérique «~Business Partnership~».\vspace{0.5cm}\noindent \textbf{Mots-clés :} Plateforme numérique, cartographie des besoins, algorithme d'appariement, MINEPAT, ACM, CAH, AFD, secteur privé, Cameroun
+
 %	[Insérer ici le résumé en français — environ 200 à 300 mots décrivant le contexte, les objectifs, la méthodologie et les résultats principaux de votre travail.]
 	
 	\vspace{1cm}
@@ -464,21 +472,18 @@ justification=centering
 	
 %	[Insert here the English abstract — approximately 200 to 300 words describing the context, objectives, methodology and main results of your work.]
 	
-	%--- TABLE DES MATIÈRES ---
-	\tableofcontents
-	\addcontentsline{toc}{chapter}{Table des matières}
-	
+
+	%--- LISTE DES TABLEAUX ---
+\listoftables
+\addcontentsline{toc}{chapter}{Liste des tableaux}
+
+
 	%--- LISTE DES FIGURES ---
 	\listoffigures
 	\addcontentsline{toc}{chapter}{Liste des figures}
 	
-	%--- LISTE DES TABLEAUX ---
-	\listoftables
-	\addcontentsline{toc}{chapter}{Liste des tableaux}
+
 	
-	%--- LISTE DES ACRONYMES ---
-	\printglossary[type=\acronymtype, title={Liste des abréviations}]
-	\addcontentsline{toc}{chapter}{Liste des acronymes et abréviations}
 	
 	%============================================================
 	%  CORPS DU MÉMOIRE (numérotation arabe)
@@ -493,6 +498,15 @@ justification=centering
 	\addcontentsline{toc}{chapter}{Introduction Générale}
 	\markboth{Introduction Générale}{Introduction Générale}
 	
+La capacité à collaborer et à tisser des synergies inter-entreprises constitue aujourd'hui un levier stratégique fondamental pour la croissance, la compétitivité et la pérennité du tissu économique. Au Cameroun, ce besoin de décloisonnement revêt une acuité particulière dans le cadre des ambitions portées par la \gls{snd30}, qui place le développement du secteur privé au cœur de l'émergence nationale.
+
+Nous pouvons relever que, malgré la présence de divers dispositifs de mise en relation --- à l'instar des plateformes numériques B2B, de la Bourse de Sous-Traitance et de Partenariat (BSTP) ou des dynamiques contractuelles directes --- les performances globales du secteur privé demeurent en deçà des attentes. Ce constat met en lumière une inadéquation manifeste entre les outils de collaboration actuels et les réalités opérationnelles du tissu productif camerounais. En effet, aucun dispositif institutionnel centralisé ne permet aujourd'hui aux entreprises d'identifier précisément leurs besoins spécifiques, de les formaliser de manière structurée, et de bénéficier d'un ciblage intelligent pour être mises en relation avec des partenaires qualifiés. Cette fragmentation de l'information et l'absence d'un outil d'intermédiation agile constituent un frein majeur à l'atteinte des objectifs de la \gls{snd30}.
+
+Dès lors, se pose le problème de la conception d'un dispositif de mise en relation optimal, adapté aux spécificités locales et capable de dynamiser efficacement les partenariats inter-entreprises. Face à ce défi, notre réflexion est guidée par la préoccupation centrale suivante : Comment structurer et déployer un outil technologique de collaboration centralisé capable de capter les besoins endogènes des entreprises camerounaises et d'optimiser leur mise en relation stratégique ?
+
+Pour répondre à cette problématique, notre travail s'articule autour de cinq chapitres :
+
+Le chapitre 1 présente la structure d'accueil, expose le contexte global de l'étude et formalise la problématique identifiée sur le terrain. Le chapitre 2 est dédié au cadre théorique et à l'état de l'art. Il définit les concepts clés liés à la collaboration inter-entreprises et analyse de manière critique les solutions existantes afin d'en ressortir les limites techniques et fonctionnelles. Les chapitres 3 et 4 constituent le cœur méthodologique de notre ingénierie, détaillant successivement la phase de conception architecturale et la phase de réalisation technique, où les choix technologiques et les modélisations sont explicités. Le chapitre 5 évalue et présente les résultats obtenus, validant la pertinence fonctionnelle de la solution développée. Enfin, une Conclusion générale viendra dresser le bilan de nos travaux et ouvrir des perspectives d'amélioration pour les développements futurs.
 
 	%============================================================
 	%  CHAPITRE 1 : PRÉSENTATION DE LA STRUCTURE ET DU STAGE
@@ -1107,33 +1121,34 @@ cycle d'analyse économique~:
 	
 	\subsection{Cartographie des besoins des entreprises}
 	
-	Le terme besoin, d'après le dictionnaire Larousse, désigne une exigence née d'un sentiment de manque ou de privation de quelque chose qui est nécessaire à la vie ou au bon fonctionnement d'un système. Transposée au monde de l'entreprise, les besoins des entreprises font ainsi référence à l'ensemble des manques, insuffisances ou absences de ressources qui, une fois comblés, seraient susceptibles de contribuer à leur croissance, à leur compétitivité et à leur pérennité. Ces besoins peuvent être d'ordre matériel, comme l'acquisition d'équipements de production ou de technologies adaptées, ou d'ordre immatériel, comme l'accès à des compétences spécialisées, à des réseaux de distribution ou à des sources de financement. De manière plus large, les besoins des entreprises peuvent être définis comme tout élément, physique ou non, dont la possession ou la disponibilité viendrait considérablement améliorer la santé économique et financière de l'organisation concernée.\\
+	Le terme besoin, d'après le dictionnaire Larousse, désigne une exigence née d'un sentiment de manque ou de privation de quelque chose qui est nécessaire à la vie ou au bon fonctionnement d'un système. Transposé au monde de l'entreprise, les besoins des entreprises font ainsi référence à l'ensemble des manques, insuffisances ou absences de ressources qui, une fois comblés, seraient susceptibles de contribuer à leur croissance, à leur compétitivité et à leur pérennité. Ces besoins peuvent être d'ordre matériel, comme l'acquisition d'équipements de production ou de technologies adaptées, ou d'ordre immatériel, comme l'accès à des compétences spécialisées, à des réseaux de distribution ou à des sources de financement. De manière plus large, les besoins des entreprises peuvent être définis comme tout élément, physique ou non, dont la possession ou la disponibilité viendrait considérablement améliorer la santé économique et financière de l'organisation concernée.\\
 	
-	Le terme cartographie toujours d’après le dictionnaire Larousse, est l'ensemble des opérations ayant pour objet l'élaboration, la rédaction et l'édition de cartes. La cartographie des besoins des entreprises pourrait donc être considéré comme l’ensemble des méthodes concourants à l’élaboration de ceux dont sont privées les entreprises. La cartographie des besoins des entreprises est donc un processus permettant d’identifier et de visualiser les besoins stratégiques d’une organisation. Cela inclut les besoins en compétences, en outils, et en ressources pour atteindre les objectifs fixés(oserentreprendre). La cartographie des besoins se présente comme un outil stratégique majeur pour les entreprises. Elle joue un rôle fondamental dans l’optimisation des ressources, car elle permet d’identifier les compétences nécessaires pour atteindre les objectifs stratégiques et d’anticiper les besoins futurs.
+	Le terme cartographie toujours d’après le dictionnaire Larousse, est l'ensemble des opérations ayant pour objet l'élaboration, la rédaction et l'édition de cartes \cite{larousse}. La cartographie des besoins des entreprises pourrait donc être considéré comme l’ensemble des méthodes concourants à l’élaboration de ceux dont sont privées les entreprises. La cartographie des besoins des entreprises est donc un processus permettant d’identifier et de visualiser les besoins stratégiques d’une organisation. Cela inclut les besoins en compétences, en outils, et en ressources pour atteindre les objectifs fixés\cite{oserentreprendre}. La cartographie des besoins se présente comme un outil stratégique majeur pour l'administration centrale. Elle joue un rôle fondamental dans l’optimisation des ressources, car elle permet d’identifier les compétences nécessaires pour atteindre les objectifs stratégiques et d’anticiper les besoins futurs.
 	\\
 	
-	Dans le contexte spécifique du Cameroun, l'initiative de proposer une cartographie des besoins des entreprises du tissu productif local s'inscrit dans une nécessité économique profonde~: celle de booster le secteur privé, reconnu comme le principal moteur de la croissance économique nationale. En effet, la Stratégie Nationale de Développement 2020--2030 (SND30), document de référence des politiques économiques camerounaises, énonce dans l'un de ses trois piliers fondateurs la volonté de construire un État stratège et pragmatique qui met en place les facilités nécessaires à l'émergence du secteur privé comme principal moteur de la croissance économique, et qui réalise des interventions ciblées dans des secteurs hautement stratégiques (MINEPAT, 2020). Or, pour que ces interventions soient véritablement ciblées et efficaces, les pouvoirs publics ont besoin d'une connaissance précise et actualisée des besoins réels des entreprises, de leur localisation géographique et de leur appartenance sectorielle. La cartographie des besoins des entreprises répond précisément à cette exigence~: elle fournit aux décideurs publics une base d'information structurée, sur laquelle peuvent s'appuyer des politiques d'appui mieux adaptées aux réalités du terrain. Elle pourrait ainsi contribuer directement à l'atteinte des objectifs fixés par la SND30, en permettant de réduire les écarts observés entre les ambitions de transformation structurelle de l'économie camerounaise et les performances effectivement enregistrées.
+	Dans le contexte spécifique du Cameroun, l'initiative de proposer une cartographie des besoins des entreprises du tissu productif local s'inscrit dans une nécessité économique profonde~: celle de booster le secteur privé, reconnu comme le principal moteur de la croissance économique nationale. En effet, la Stratégie Nationale de Développement 2020--2030 \cite{minepat2020}, document de référence des politiques économiques camerounaises, énonce dans l'un de ses trois piliers fondateurs la volonté de construire un État stratège et pragmatique qui met en place les facilités nécessaires à l'émergence du secteur privé comme principal moteur de la croissance économique, et qui réalise des interventions ciblées dans des secteurs hautement stratégiques \cite{minepat2020}. Or, pour que ces interventions soient véritablement ciblées et efficaces, les pouvoirs publics ont besoin d'une connaissance précise et actualisée des besoins réels des entreprises, de leur localisation géographique et de leur appartenance sectorielle. La cartographie des besoins des entreprises répond précisément à cette exigence~: elle fournit aux décideurs publics une base d'information structurée, sur laquelle peuvent s'appuyer des politiques d'appui mieux adaptées aux réalités du terrain. Elle pourrait ainsi contribuer directement à l'atteinte des objectifs fixés par la SND30, en permettant de réduire les écarts observés entre les ambitions de transformation structurelle de l'économie camerounaise et les performances effectivement enregistrées.
 	
 	
 	\subsection{Mise en relation des entreprises}
 	
 La mise en relation des entreprises renvoie au mécanisme par lequel deux ou plusieurs unités économiques sont amenées à se connaître, à échanger sur leurs capacités et leurs besoins respectifs, et à explorer les conditions d'une collaboration mutuellement bénéfique. Il convient d'emblée de distinguer cette notion de celle de partenariat, avec laquelle elle est souvent confondue. La mise en relation constitue une étape préalable et distincte du partenariat proprement dit : tandis que la première relève d'un processus d'identification et de rapprochement entre acteurs économiques, le second renvoie à un accord formel ou tacite entre deux entreprises en vue d'une collaboration effective, généralement matérialisé par un contrat ou un protocole d'accord. Autrement dit, la mise en relation crée les conditions favorables à l'émergence d'un partenariat, sans pour autant le présupposer ni l'imposer. 
-Sur le plan stratégique, la mise en relation des entreprises constitue un facteur clé de renforcement des capacités productives et de génération de valeur. Elle permet en effet à une entreprise confrontée à un manque spécifique — qu'il s'agisse d'un besoin en financement, en compétences techniques, en équipements ou en accès aux marchés — de trouver un partenaire disposant précisément des ressources ou des capacités susceptibles de combler ce manque. L'Organisation de Coopération et de Développement Économiques (OCDE) souligne d'ailleurs que les dispositifs institutionnels de mise en relation contribuent significativement à l'amélioration de la productivité des petites et moyennes entreprises et à leur intégration dans les chaînes de valeur nationales et internationales (OCDE, 2021). Plusieurs mécanismes et approches concourent à cette mise en relation entre entreprises, dont les principaux sont présentés ci-après.
+Sur le plan stratégique, la mise en relation des entreprises constitue un facteur clé de renforcement des capacités productives et de génération de valeur. Elle permet en effet à une entreprise confrontée à un manque spécifique — qu'il s'agisse d'un besoin en financement, en compétences techniques, en équipements ou en accès aux marchés — de trouver un partenaire disposant précisément des ressources ou des capacités susceptibles de combler ce manque. L'Organisation de Coopération et de Développement Économiques (OCDE) souligne d'ailleurs que les dispositifs institutionnels de mise en relation contribuent significativement à l'amélioration de la productivité des petites et moyennes entreprises et à leur intégration dans les chaînes de valeur nationales et internationales \cite{ocde2021}. Plusieurs mécanismes et approches concourent à cette mise en relation entre entreprises, dont les principaux sont présentés ci-après.
 	
 	\subsubsection{Plateformes numériques B2B}
-	Les plateformes numériques B2B (Business-to-Business) constituent l'une des formes les plus modernes et les plus répandues de mise en relation entre entreprises. Elles proposent un espace numérique dynamique où les entreprises peuvent se rendre visibles, interagir et engager des échanges commerciaux avec d'autres acteurs économiques, qu'ils soient nationaux ou internationaux (Acceor, 2024). Contrairement aux marketplaces grand public, qui visent principalement les transactions entre professionnels et consommateurs, les plateformes B2B sont spécifiquement conçues pour faciliter les interactions entre entreprises, en soutenant aussi bien la prospection passive — consistant à attirer des partenaires potentiels grâce à une présence en ligne structurée — que la prospection active, fondée sur la recherche ciblée d'entreprises répondant à des critères sectoriels, géographiques ou fonctionnels précis. Elles jouent un rôle clé dans la quête de croissance et de réussite des entreprises en leur permettant d'élargir significativement leur réseau de partenaires au-delà des contraintes géographiques traditionnelles, de renforcer leur visibilité sur des marchés auxquels elles n'auraient pas accès autrement, et de fluidifier les échanges d'informations entre acteurs économiques évoluant dans un même secteur d'activité ou dans des secteurs complémentaires. Dans un contexte de numérisation croissante des économies africaines, ce type de dispositif représente une opportunité particulièrement prometteuse pour les entreprises camerounaises, dont la visibilité et la capacité de mise en réseau demeurent aujourd'hui limitées par l'absence d'un espace numérique institutionnel dédié.
+	Les plateformes numériques B2B (Business-to-Business) constituent l'une des formes les plus modernes et les plus répandues de mise en relation entre entreprises. Elles proposent un espace numérique dynamique où les entreprises peuvent se rendre visibles, interagir et engager des échanges commerciaux avec d'autres acteurs économiques, qu'ils soient nationaux ou internationaux \cite{acceor2024}. Contrairement aux marketplaces grand public, qui visent principalement les transactions entre professionnels et consommateurs, les plateformes B2B sont spécifiquement conçues pour faciliter les interactions entre entreprises, en soutenant aussi bien la prospection passive — consistant à attirer des partenaires potentiels grâce à une présence en ligne structurée — que la prospection active, fondée sur la recherche ciblée d'entreprises répondant à des critères sectoriels, géographiques ou fonctionnels précis. Elles jouent un rôle clé dans la quête de croissance et de réussite des entreprises en leur permettant d'élargir significativement leur réseau de partenaires au-delà des contraintes géographiques traditionnelles, de renforcer leur visibilité sur des marchés auxquels elles n'auraient pas accès autrement, et de fluidifier les échanges d'informations entre acteurs économiques évoluant dans un même secteur d'activité ou dans des secteurs complémentaires. Dans un contexte de numérisation croissante des économies africaines, ce type de dispositif représente une opportunité particulièrement prometteuse pour les entreprises camerounaises, dont la visibilité et la capacité de mise en réseau demeurent aujourd'hui limitées par l'absence d'un espace numérique institutionnel dédié.
 	\subsubsection{Bourse de Sous Traitance et de Partenariat}
 	
-	Les Bourses de Sous-Traitance et de Partenariat (BSTP) constituent un autre mécanisme structuré de mise en relation entre entreprises, développé notamment en collaboration avec l'Organisation des Nations Unies pour le Développement Industriel (ONUDI) et le Programme des Nations Unies pour le Développement (PNUD). Ce sont des centres d'information technique, de promotion et de mise en relation entre donneurs d'ouvrages, fournisseurs et sous-traitants, dont la vocation première est de favoriser l'utilisation la plus optimale des capacités productives des industries affiliées (MINPMEESA). Les bourses de sous-traitance jouent un double rôle dans l'écosystème économique : d'une part, elles fonctionnent comme des points de rencontre structurés entre l'offre et la demande de travaux de sous-traitance industrielle, mettant en relation des entreprises donneuses d'ordres avec des sous-traitants disposant des capacités requises ; d'autre part, elles assurent une fonction d'assistance et d'accompagnement, particulièrement à l'égard des petits et moyens sous-traitants ou fournisseurs qui disposent de moyens limités pour prospecter de manière autonome. L'objectif principal de ces structures est de fournir aux entreprises locales manufacturières les outils et les services qui amélioreront leurs performances et leurs pratiques, et qui leur permettront d'accéder à des marchés de sous-traitance industrielle auxquels elles n'auraient pas pu prétendre seules. Ce modèle présente une pertinence particulière dans le contexte camerounais, où la grande majorité des entreprises sont des très petites ou petites entreprises dont les capacités de prospection commerciale sont structurellement limitées.
+	Les Bourses de Sous-Traitance et de Partenariat (BSTP) constituent un autre mécanisme structuré de mise en relation entre entreprises, développé notamment en collaboration avec l'Organisation des Nations Unies pour le Développement Industriel (ONUDI) et le Programme des Nations Unies pour le Développement (PNUD). Ce sont des centres d'information technique, de promotion et de mise en relation entre donneurs d'ouvrages, fournisseurs et sous-traitants, dont la vocation première est de favoriser l'utilisation la plus optimale des capacités productives des industries affiliées \cite{minpmeesa}. Les bourses de sous-traitance jouent un double rôle dans l'écosystème économique : d'une part, elles fonctionnent comme des points de rencontre structurés entre l'offre et la demande de travaux de sous-traitance industrielle, mettant en relation des entreprises donneuses d'ordres avec des sous-traitants disposant des capacités requises ; d'autre part, elles assurent une fonction d'assistance et d'accompagnement, particulièrement à l'égard des petits et moyens sous-traitants ou fournisseurs qui disposent de moyens limités pour prospecter de manière autonome. L'objectif principal de ces structures est de fournir aux entreprises locales manufacturières les outils et les services qui amélioreront leurs performances et leurs pratiques, et qui leur permettront d'accéder à des marchés de sous-traitance industrielle auxquels elles n'auraient pas pu prétendre seules. Ce modèle présente une pertinence particulière dans le contexte camerounais, où la grande majorité des entreprises sont des très petites ou petites entreprises dont les capacités de prospection commerciale sont structurellement limitées.
 	\subsubsection{Partenariats contractuels directs}
-	Les partenariats contractuels directs représentent la forme la plus formalisée et la plus ancienne de mise en relation entre entreprises. Ils reposent sur un accord juridiquement contraignant entre deux ou plusieurs parties, qui définit les droits et obligations de chacune dans le cadre d'une collaboration spécifique. Ce type de partenariat peut intervenir à différentes étapes de la chaîne de valeur : dans l'activité de production, sous la forme de contrats de sous-traitance par lesquels une entreprise confie à une autre la réalisation d'une partie de sa production ; dans la distribution, via des accords d'exclusivité territoriale ou des contrats de franchise qui permettent à une entreprise de commercialiser les produits ou services d'une autre sur un marché donné ; ou encore dans le domaine de la recherche et de l'innovation, à travers des accords de co-développement ou de partage de propriété intellectuelle. Le contrat constitue l'instrument juridique le plus fréquemment utilisé pour matérialiser ces partenariats, la liberté contractuelle permettant aux parties de définir librement le contenu de leur accord en fonction de leurs besoins spécifiques et des contraintes de leur environnement (Williamson, 1985). Si cette forme de partenariat offre une sécurité juridique importante, elle suppose en revanche une connaissance préalable des partenaires potentiels et un processus de négociation souvent long et coûteux, ce qui en limite l'accessibilité pour les petites structures disposant de ressources juridiques et financières limitées.
+	Les partenariats contractuels directs représentent la forme la plus formalisée et la plus ancienne de mise en relation entre entreprises. Ils reposent sur un accord juridiquement contraignant entre deux ou plusieurs parties, qui définit les droits et obligations de chacune dans le cadre d'une collaboration spécifique. Ce type de partenariat peut intervenir à différentes étapes de la chaîne de valeur : dans l'activité de production, sous la forme de contrats de sous-traitance par lesquels une entreprise confie à une autre la réalisation d'une partie de sa production ; dans la distribution, via des accords d'exclusivité territoriale ou des contrats de franchise qui permettent à une entreprise de commercialiser les produits ou services d'une autre sur un marché donné ; ou encore dans le domaine de la recherche et de l'innovation, à travers des accords de co-développement ou de partage de propriété intellectuelle. Le contrat constitue l'instrument juridique le plus fréquemment utilisé pour matérialiser ces partenariats, la liberté contractuelle permettant aux parties de définir librement le contenu de leur accord en fonction de leurs besoins spécifiques et des contraintes de leur environnement \cite{williamson1985}. Si cette forme de partenariat offre une sécurité juridique importante, elle suppose en revanche une connaissance préalable des partenaires potentiels et un processus de négociation souvent long et coûteux, ce qui en limite l'accessibilité pour les petites structures disposant de ressources juridiques et financières limitées.
 	\section{État de l'art}
 	\label{sec:etat_art}
 	
 	\subsection{Enquêtes en vue de la cartographie des besoins des entreprises}
-	Comme indiqué dans la problématique, plusieurs études ont été initiées dans l'optique de s'enquérir de l'écosystème du secteur privé camerounais en vue d'apporter des réformes permettant l'amélioration du climat des affaires. Ces initiatives, bien que pertinentes chacune dans son domaine, présentent des limites qui justifient la mise en place d'une solution plus intégrée. La présente section en propose une lecture analytique, en examinant successivement leurs objectifs, leur méthodologie, leurs principaux résultats et les lacunes qu'elles laissent subsister.\\
+	Comme indiqué dans la problématique, plusieurs études ont été initiées dans l'optique de s'enquérir de la santé de l'écosystème du secteur privé camerounais en vue d'apporter des réformes permettant l'amélioration du climat des affaires. Ces initiatives, bien que pertinentes chacune dans son domaine, présentent des limites qui justifient la mise en place d'une solution plus intégrée. La présente section en propose une lecture analytique, en examinant successivement leurs objectifs, leur méthodologie, leurs principaux résultats et les lacunes qu'elles laissent subsister.\\
 	
-	Le Groupement des Entreprises du Cameroun (GECAM) a initié en 2020 une enquête dont l'objectif était d'effectuer un état des lieux des entreprises qui composent le groupement et d'évaluer les difficultés auxquelles elles sont confrontées. La méthodologie retenue a consisté en une collecte de données directement auprès des entreprises membres, suivie du calcul de statistiques descriptives permettant d'évaluer leurs performances. Les résultats révèlent qu'en 2019, 57\% des entreprises du groupement ont connu des difficultés, la fiscalité étant identifiée comme le principal frein, caractérisée par l'instabilité du système fiscal (72\%), les pénalités et amendes fiscales (66\%), le niveau du taux d'imposition (61\%) et la multiplicité des contrôles de l'administration fiscale (59\%). Toutefois, cette étude présente deux limites majeures: d'une part, elle se restreint aux seules  entreprises membres du GECAM, ne permettant pas de tirer des conclusions généralisables à l'ensemble du tissu économique national; d'autre part, aucune recommandation concrète n'a été formulée à l'endroit des entreprises, et la question des besoins spécifiques et des opportunités de partenariat n'y est pas abordée.\\
+	\subsubsection{Enquete du GECAM}
+	Le Groupement des Entreprises du Cameroun (GECAM) a initié en 2020 une enquête dont l'objectif était d'effectuer un état des lieux des entreprises qui composent le groupement et d'évaluer les difficultés auxquelles elles sont confrontées. La méthodologie retenue a consisté en une collecte de données directement auprès des entreprises membres, suivie du calcul de statistiques descriptives permettant d'évaluer leurs performances. Les résultats révèlent qu'en 2019, 57\% des entreprises du groupement ont connu des difficultés, la fiscalité étant identifiée comme le principal frein, caractérisée par l'instabilité du système fiscal (72\%), les pénalités et amendes fiscales (66\%), le niveau du taux d'imposition (61\%) et la multiplicité des contrôles de l'administration fiscale (59\%). Toutefois, cette étude présenterait deux limites majeures: d'une part, elle se restreint aux seules  entreprises membres du GECAM, ne permettant pas de tirer des conclusions généralisables à l'ensemble du tissu économique national; d'autre part, aucune recommandation concrète n'a été formulée à l'endroit des entreprises, et la question des besoins spécifiques et des opportunités de partenariat n'y est pas abordée.\\
 	
 	\begin{figure}[H]           % H = ici exactement
 		\centering
@@ -1142,12 +1157,14 @@ Sur le plan stratégique, la mise en relation des entreprises constitue un facte
 		\label{fig:mon_label}
 	\end{figure}
 	
+	\subsubsection{Redaction du document de stratégie pour le developpement du secteur industriel par le MINEPAT}
+	En 2022, le MINEPAT a engagé la rédaction d'un document de stratégie visant à proposer un nouveau cadre stratégique pour le secteur industriel, en réalignant la Stratégie de Développement du Secteur de l'Industrie et des Services (SDSIS) sur la planification post-Document Stratégique pour la Croissance Économique (DSCE). La démarche méthodologique adoptée s'est articulée en trois étapes: un état des lieux préalable de l'industrie camerounaise, une identification des problèmes susceptibles d'entraver le développement du secteur, et la proposition de stratégies assorties de mécanismes d'évaluation et de suivi. Les principaux résultats indiquent que la part de la valeur ajoutée manufacturière dans le PIB stagnait à 14,08\% en 2015, loin derrière des pays comparables tels que la Thaïlande (28,6\%) et la Malaisie (24\%); que 90\% des entreprises locales sont des très petites, petites ou moyennes entreprises; et que des projets structurants tels que le projet FABER et la construction de 8,000 km de voies ferrées ont été envisagés pour redynamiser le secteur \cite{minepat2022}. Les limites de ce document sont cependant notables: centré sur le seul secteur industriel, il n'évoque ni les besoins spécifiques des entreprises, ni les opportunités de partenariat inter-entreprises qui constituent pourtant un levier essentiel de compétitivité. \\
 	
-	En 2022, le MINEPAT a engagé la rédaction d'un document de stratégie visant à proposer un nouveau cadre stratégique pour le secteur industriel, en réalignant la Stratégie de Développement du Secteur de l'Industrie et des Services (SDSIS) sur la planification post-Document Stratégique pour la Croissance Économique (DSCE). La démarche méthodologique adoptée s'est articulée en trois étapes: un état des lieux préalable de l'industrie camerounaise, une identification des problèmes susceptibles d'entraver le développement du secteur, et la proposition de stratégies assorties de mécanismes d'évaluation et de suivi. Les principaux résultats indiquent que la part de la valeur ajoutée manufacturière dans le PIB stagnait à 14,08\% en 2015, loin derrière des pays comparables tels que la Thaïlande (28,6\%) et la Malaisie (24\%); que 90\% des entreprises locales sont des très petites, petites ou moyennes entreprises; et que des projets structurants tels que le projet FABER et la construction de 8,000 km de voies ferrées ont été envisagés pour redynamiser le secteur. Les limites de ce document sont cependant notables: centré sur le seul secteur industriel, il n'évoque ni les besoins spécifiques des entreprises, ni les opportunités de partenariat inter-entreprises qui constituent pourtant un levier essentiel de compétitivité. \\
+\subsubsection{Enquete sur le climat des affaires par le MINEPAT}
+	Dans la continuité de ces travaux, le MINEPAT a lancé en novembre 2023 une enquête visant à préciser la manière dont les entreprises du secteur industriel perçoivent le climat des affaires, notamment en matière d'accès au financement, d'accès aux marchés et d'accès aux facteurs de production, ainsi que les actions menées par l'État en vue de l'améliorer. Sur le plan méthodologique, un échantillon de 1,000 entreprises a été constitué à l'échelle nationale en s'appuyant sur le réseau des délégués régionaux et départementaux du \gls{minepat}. Un questionnaire en ligne a été soumis, l'apurement et l'analyse des données collectées ont été effectués. Les résultats indiquent que 91\% des chefs d'entreprises considèrent que les coûts liés au taux d'intérêt, aux assurances et au courtage sont trop élevés, et appellent l'État à mettre en place des structures dédiées au financement des entreprises. L'accès aux facteurs de production et l'état des infrastructures routières sont unanimement identifiés comme des freins majeurs à la croissance. Malgré ces apports, l'étude reste circonscrite au seul secteur industriel et ne propose aucun mécanisme concret de mise en relation entre entreprises pour répondre aux besoins identifiés. \\
 	
-	Dans la continuité de ces travaux, le MINEPAT a lancé en novembre 2023 une enquête visant à préciser la manière dont les entreprises du secteur industriel perçoivent le climat des affaires, notamment en matière d'accès au financement, d'accès aux marchés et d'accès aux facteurs de production, ainsi que les actions menées par l'État en vue de l'améliorer. Sur le plan méthodologique, un échantillon de 1,000 entreprises a été constitué à l'échelle nationale en s'appuyant sur le réseau des délégués régionaux et départementaux du, auxquelles un questionnaire en ligne a été soumis avant apurement et analyse des données collectées. Les résultats indiquent que 91\% des chefs d'entreprises considèrent que les coûts liés au taux d'intérêt, aux assurances et au courtage sont trop élevés, et appellent l'État à mettre en place des structures dédiées au financement des entreprises. L'accès aux facteurs de production et l'état des infrastructures routières sont unanimement identifiés comme des freins majeurs à la croissance. Malgré ces apports, l'étude reste circonscrite au seul secteur industriel et ne propose aucun mécanisme concret de mise en relation entre entreprises pour répondre aux besoins identifiés. \\
-	
-	Enfin, le troisième Recensement Général des Entreprises (RGE3), réalisé par l'Institut National de la Statistique en 2023, avait pour objectifs d'actualiser le fichier des unités économiques nationales, de mettre en place un Système d'Information Géographique des entreprises et d'effectuer une analyse comparative avec les précédents recensements. La méthodologie a consisté à constituer un fichier de base à partir des données administratives disponibles auprès de la Direction Générale des Impôts (DGI) et de la Caisse Nationale de Prévoyance Sociale (CNPS), puis à procéder à une collecte de terrain à l'aide d'outils numériques, après découpage du territoire national en douze Zones de Recensement. Les résultats mettent en évidence une croissance significative du tissu entrepreneurial entre 2016 et 2023, avec une hausse de 109,5\% du nombre d'unités économiques, une prédominance du secteur tertiaire représentant 85,6\% des unités recensées, et une concentration très marquée des entreprises individuelles qui représentent 92,4\% du total. Cependant, en dépit de l'envergure de cet exercice, les défis rencontrés par les entreprises et leurs besoins spécifiques n'ont pas été documentés, et aucun outil de mise en relation entre acteurs économiques complémentaires n'a été envisagé à l'issue du recensement.\\
+	\subsubsection{Recensement Général des Entreprises par l'INS}
+	Enfin, le troisième Recensement Général des Entreprises (RGE3), réalisé par l'Institut National de la Statistique en 2023, avait pour objectifs d'actualiser le fichier des unités économiques nationales, de mettre en place un Système d'Information Géographique des entreprises et d'effectuer une analyse comparative avec les précédents recensements \cite{ins2023}. La méthodologie a consisté à constituer un fichier de base à partir des données administratives disponibles auprès de la Direction Générale des Impôts (DGI) et de la Caisse Nationale de Prévoyance Sociale (CNPS), puis à procéder à une collecte de terrain à l'aide d'outils numériques, après découpage du territoire national en douze Zones de Recensement \cite{ins2023}. Les résultats mettent en évidence une croissance significative du tissu entrepreneurial entre 2016 et 2023, avec une hausse de 109,5\% du nombre d'unités économiques, une prédominance du secteur tertiaire représentant 85,6\% des unités recensées, et une concentration très marquée des entreprises individuelles qui représentent 92,4\% du total. Cependant, en dépit de l'envergure de cet exercice, les défis rencontrés par les entreprises et leurs besoins spécifiques n'ont pas été documentés, et aucun outil de mise en relation entre acteurs économiques complémentaires n'a été envisagé à l'issue du recensement.\\
 	
 	\begin{figure}[H]           % H = ici exactement
 		\centering
@@ -1178,7 +1195,7 @@ LinkedIn est largement reconnu comme le leader incontesté des réseaux
 sociaux professionnels à l'échelle mondiale. Fondée en 2002 et rachetée
 par Microsoft en 2016, la plateforme revendique aujourd'hui plus d'un
 milliard d'utilisateurs répartis dans plus de 200 pays, ce qui en fait
-l'écosystème numérique professionnel le plus étendu au monde. LinkedIn
+l'écosystème numérique professionnel le plus étendu au monde \cite{linkedin2024}. LinkedIn
 constitue un pilier incontournable dans l'univers du B2B en ce qu'il
 offre aux entreprises un espace numérique dédié où elles peuvent établir
 et soigner leur présence en ligne, se connecter avec d'autres acteurs
@@ -1191,10 +1208,7 @@ potentiels selon des critères sectoriels, géographiques ou hiérarchiques,
 ainsi que des espaces de publication de contenus favorisant la mise en
 avant de l'expertise et le renforcement de la crédibilité de l'entreprise.
 Cependant, malgré ses atouts indéniables, LinkedIn présente des limites
-notables dans le contexte africain~: son utilisation suppose une
-connexion internet stable et une maîtrise suffisante des outils
-numériques, deux conditions qui ne sont pas toujours réunies pour les
-petites et très petites entreprises camerounaises. De surcroît, la
+notables dans le contexte africain~:la
 plateforme est principalement utilisée comme outil de réseautage
 individuel et ne propose pas de mécanisme structuré de mise en relation
 fondé sur les besoins spécifiques des entreprises.
@@ -1206,9 +1220,9 @@ Facebook, lancée en 2016 par Meta, qui permet aux particuliers et aux
 entreprises d'acheter, de vendre et d'échanger des biens et des services
 au sein d'une communauté géographiquement délimitée. Avec plus de trois
 milliards d'utilisateurs actifs sur Facebook à l'échelle mondiale,
-Marketplace bénéficie d'une visibilité et d'une audience considérables,
+Facebook Marketplace bénéficie d'une visibilité et d'une audience considérables,
 ce qui en fait l'une des plateformes de commerce en ligne les plus
-fréquentées au monde. Dans le contexte africain et camerounais en
+fréquentées au monde \cite{meta2024}. Dans le contexte africain et camerounais en
 particulier, Facebook Marketplace présente un intérêt non négligeable~:
 la forte pénétration de Facebook sur le continent, combinée à la
 familiarité des utilisateurs avec l'interface de la plateforme, a conduit
@@ -1234,11 +1248,7 @@ ainsi à la confiance des entreprises qui souhaiteraient y nouer des
 partenariats sérieux et durables. En troisième lieu, la plateforme ne
 dispose d'aucun mécanisme de vérification de l'identité ou de la
 légitimité des vendeurs, ce qui limite considérablement la fiabilité des
-informations qui y sont publiées. Enfin, Facebook Marketplace est avant
-tout orienté vers la vente de produits finis au grand public et ne propose
-aucune fonctionnalité dédiée à la mise en relation inter-entreprises fondée
-sur des besoins spécifiques, tels que la recherche de sous-traitants, de
-fournisseurs spécialisés ou de partenaires techniques. Ces limites rendent
+informations qui y sont publiées. Ces limites rendent
 cette plateforme inadaptée aux objectifs poursuivis par la plateforme
 gouvernementale développée dans le cadre de ce travail.
 
@@ -1254,7 +1264,7 @@ le textile, l'agroalimentaire ou encore les équipements industriels.
 Avec plusieurs dizaines de millions d'acheteurs actifs et des millions
 de fournisseurs référencés, Alibaba constitue à ce jour l'une des
 références mondiales en matière de mise en relation commerciale B2B
-à l'échelle internationale. La plateforme propose un ensemble de
+à l'échelle internationale\cite{alibaba2024}. La plateforme propose un ensemble de
 fonctionnalités avancées permettant aux acheteurs de rechercher des
 fournisseurs selon des critères précis tels que le pays d'origine,
 le volume de production, la certification qualité ou encore la capacité
@@ -1302,11 +1312,7 @@ ce qui limite leur capacité à en tirer parti pour se faire connaître
 	gouvernementale \textit{Business Partnership}. Il précise le
 	contexte dans lequel s'inscrit le projet, les acteurs concernés,
 	les cas d'usage attendus, les contraintes imposées et les critères
-	de qualité retenus pour évaluer la solution livrée. Ce document
-	a été élaboré en cohérence avec les résultats de l'analyse
-	statistique des données de l'enquête du \gls{minepat} présentée
-	au chapitre précédent, dont les enseignements ont directement
-	informé la définition des besoins fonctionnels de la plateforme.
+	de qualité retenus pour évaluer la solution livrée.
 	
 	%=============================================================
 	\section{Contexte et périmètre du projet}
@@ -1323,7 +1329,7 @@ ce qui limite leur capacité à en tirer parti pour se faire connaître
 	prolongement numérique de l'enquête sur la cartographie et les
 	besoins des entreprises conduite par le \gls{minepat} en 2025,
 	dont les données collectées alimentent directement la base de
-	connaissances de la plateforme et le moteur de recommandation
+	connaissances de la plateforme et le moteur de mise en relation
 	qui en constitue le c\oe ur fonctionnel. La plateforme est
 	destinée à être opérée sous la tutelle du \gls{minepat}, qui
 	en assurera la gouvernance et la maintenance, et à être accessible
@@ -1336,27 +1342,15 @@ ce qui limite leur capacité à en tirer parti pour se faire connaître
 	les fonctionnalités suivantes~:
 	
 	\begin{itemize}
-		\item la création et la gestion de profils d'entreprises~;
-		\item la saisie et la mise à jour des besoins exprimés par
+		\item la création et la gestion de comptes d'entreprises~;
+		\item la saisie des besoins exprimés par
 		les entreprises~;
-		\item la cartographie géographique et sectorielle des entreprises
-		enregistrées~;
 		\item la mise en relation automatisée des entreprises sur la base
-		d'un algorithme de recommandation fondé sur la similarité
-		cosinus calculée dans l'espace factoriel de l'ACM~;
-		\item la gestion des interactions entre entreprises mises en
-		relation~;
+		d'un algorithme 
 		\item l'administration et le suivi de la plateforme par les
 		agents du \gls{minepat}.
 	\end{itemize}
 	
-	Sont explicitement exclus du périmètre de la version actuelle~:
-	la gestion des transactions commerciales entre entreprises, le
-	traitement des paiements en ligne, la signature électronique des
-	contrats de partenariat, et l'intégration avec les systèmes
-	d'information tiers des administrations partenaires (DGI, CNPS,
-	OHADA). Ces fonctionnalités pourront être envisagées dans une
-	version ultérieure de la plateforme.
 	
 	%=============================================================
 	\section{Identification des acteurs}
@@ -1379,15 +1373,15 @@ ce qui limite leur capacité à en tirer parti pour se faire connaître
 	sur la plateforme afin de renseigner son profil, d'exprimer
 	ses besoins et de consulter les recommandations de partenaires
 	potentiels générées par le moteur de mise en relation. L'entreprise
-	est représentée sur la plateforme par un ou plusieurs utilisateurs
-	physiques disposant d'un compte personnel sécurisé.
+	est représentée sur la plateforme par un  utilisateur
+	physique disposant d'un compte personnel sécurisé.
 	
 	\subsection{L'administrateur}
 	
 	L'administrateur est un agent du \gls{minepat} disposant de
 	droits d'accès étendus à l'ensemble des fonctionnalités de la
 	plateforme. Il est chargé de la validation des inscriptions des
-	entreprises, de la modération des contenus publiés, du suivi
+	entreprises, du suivi
 	des indicateurs d'utilisation et de l'administration technique
 	de la plateforme. Il dispose d'un tableau de bord dédié lui
 	permettant de superviser en temps réel l'ensemble des activités
@@ -1421,15 +1415,10 @@ ce qui limite leur capacité à en tirer parti pour se faire connaître
 			& \textbf{Administrateur} \\
 			\midrule
 			
-			Consulter les pages publiques
-			& \textcolor{green!60!black}{\checkmark}
-			& \textcolor{green!60!black}{\checkmark}
-			& \textcolor{green!60!black}{\checkmark} \\
-			
 			\rowcolor{lightgray}
 			Créer un compte entreprise
 			& \textcolor{green!60!black}{\checkmark}
-			& ---
+			& \textcolor{green!60!black}{\checkmark}
 			& \textcolor{green!60!black}{\checkmark} \\
 			
 			Gérer son profil
@@ -1452,11 +1441,6 @@ ce qui limite leur capacité à en tirer parti pour se faire connaître
 			Contacter un partenaire
 			& \textcolor{accent}{\texttimes}
 			& \textcolor{green!60!black}{\checkmark}
-			& \textcolor{green!60!black}{\checkmark} \\
-			
-			Valider les inscriptions
-			& \textcolor{accent}{\texttimes}
-			& \textcolor{accent}{\texttimes}
 			& \textcolor{green!60!black}{\checkmark} \\
 			
 			\rowcolor{lightgray}
@@ -1494,17 +1478,12 @@ ce qui limite leur capacité à en tirer parti pour se faire connaître
 	
 	\subsection{Gestion des comptes et authentification}
 	
-	\begin{tcolorbox}[
-		colback=lightgray, colframe=primary,
-		title={\textbf{UC-01 — Inscription d'une entreprise}},
-		fonttitle=\bfseries\small\color{white},
-		colbacktitle=primary, arc=4pt, boxrule=0.8pt
-		]
+	
 		\textbf{Acteur principal~:} Représentant légal de l'entreprise \\
 		\textbf{Préconditions~:} L'entreprise n'est pas encore enregistrée
 		sur la plateforme \\
 		\textbf{Scénario nominal~:}
-		\begin{enumerate}
+		\begin{itemize}
 			\item L'utilisateur accède au formulaire d'inscription depuis
 			la page d'accueil de la plateforme~;
 			\item Il renseigne les informations obligatoires~: raison sociale,
@@ -1513,174 +1492,75 @@ ce qui limite leur capacité à en tirer parti pour se faire connaître
 			\item Il soumet le formulaire~;
 			\item Le système vérifie la validité et la cohérence des
 			informations saisies~;
-			\item Un courriel de confirmation est envoyé à l'adresse
-			électronique renseignée~;
 			\item L'administrateur valide l'inscription après vérification
 			des informations~;
-			\item L'entreprise reçoit une notification de validation et
-			peut accéder à son espace personnel.
-		\end{enumerate}
+		\end{itemize}
 		\textbf{Exceptions~:} Adresse électronique déjà utilisée~;
-		informations incomplètes ou incohérentes~; délai de validation
-		dépassé.
-	\end{tcolorbox}
+		informations incomplètes ou incohérentes.
+	
 	
 	\vspace{0.5cm}
 	
-	\begin{tcolorbox}[
-		colback=lightgray, colframe=primary,
-		title={\textbf{UC-02 — Authentification}},
-		fonttitle=\bfseries\small\color{white},
-		colbacktitle=primary, arc=4pt, boxrule=0.8pt
-		]
 		\textbf{Acteur principal~:} Entreprise / Administrateur \\
 		\textbf{Préconditions~:} L'utilisateur dispose d'un compte validé \\
 		\textbf{Scénario nominal~:}
-		\begin{enumerate}
-			\item L'utilisateur saisit son adresse électronique et son
+		\begin{itemize}
+			\item L'utilisateur saisit son nom d'utilisateur et son
 			mot de passe dans le formulaire de connexion~;
 			\item Le système vérifie les identifiants~;
 			\item En cas de succès, l'utilisateur est redirigé vers son
 			tableau de bord personnel.
-		\end{enumerate}
+		\end{itemize}
 		\textbf{Exceptions~:} Identifiants incorrects (maximum 5 tentatives
-		avant verrouillage temporaire du compte)~; compte non encore validé
-		par l'administrateur.
-	\end{tcolorbox}
-	
-	\subsection{Gestion du profil de l'entreprise}
-	
-	\begin{tcolorbox}[
-		colback=lightgray, colframe=primary,
-		title={\textbf{UC-03 — Compléter et mettre à jour le profil}},
-		fonttitle=\bfseries\small\color{white},
-		colbacktitle=primary, arc=4pt, boxrule=0.8pt
-		]
-		\textbf{Acteur principal~:} Entreprise \\
-		\textbf{Préconditions~:} L'utilisateur est authentifié \\
-		\textbf{Scénario nominal~:}
-		\begin{enumerate}
-			\item L'utilisateur accède à la section \og{}Mon profil\fg{}
-			depuis son tableau de bord~;
-			\item Il complète ou met à jour les informations relatives à son
-			entreprise~: localisation précise, branche d'activité,
-			biens et services proposés, taille, ancienneté, coordonnées
-			et site web~;
-			\item Il enregistre les modifications~;
-			\item Le système met à jour les données et régénère les
-			recommandations de partenaires en conséquence.
-		\end{enumerate}
-		\textbf{Exceptions~:} Données incohérentes~; format de fichier
-		non supporté pour les pièces jointes éventuelles.
-	\end{tcolorbox}
+		avant verrouillage temporaire du compte)
+
 	
 	\subsection{Gestion des besoins}
 	
-	\begin{tcolorbox}[
-		colback=lightgray, colframe=primary,
-		title={\textbf{UC-04 — Saisir et gérer ses besoins}},
-		fonttitle=\bfseries\small\color{white},
-		colbacktitle=primary, arc=4pt, boxrule=0.8pt
-		]
 		\textbf{Acteur principal~:} Entreprise \\
 		\textbf{Préconditions~:} Le profil de l'entreprise est complété
 		à au moins 50\,\% \\
 		\textbf{Scénario nominal~:}
 		\begin{enumerate}
-			\item L'utilisateur accède à la section \og{}Mes besoins\fg{}~;
+			\item L'utilisateur accède à la secttion définir mes besoins automatiquement après l'enregistrement;
 			\item Il sélectionne la catégorie de besoin parmi les types
 			proposés (financement, équipements, intrants, transport,
 			emballages, appui institutionnel, innovation)~;
-			\item Il renseigne une description détaillée du besoin~;
-			\item Il indique le degré de priorité (urgent, important,
-			secondaire)~;
 			\item Il soumet le besoin~;
 			\item Le système enregistre le besoin et déclenche la mise à
 			jour des recommandations de partenaires.
 		\end{enumerate}
-		\textbf{Exceptions~:} Description insuffisamment détaillée~;
-		catégorie de besoin non sélectionnée.
-	\end{tcolorbox}
+		
 	
 	\subsection{Moteur de recommandation et mise en relation}
 	
-	\begin{tcolorbox}[
-		colback=lightgray, colframe=primary,
-		title={\textbf{UC-05 — Consulter les recommandations de partenaires}},
-		fonttitle=\bfseries\small\color{white},
-		colbacktitle=primary, arc=4pt, boxrule=0.8pt
-		]
+
 		\textbf{Acteur principal~:} Entreprise \\
 		\textbf{Préconditions~:} Au moins un besoin a été saisi par
 		l'entreprise \\
 		\textbf{Scénario nominal~:}
 		\begin{enumerate}
 			\item L'utilisateur accède à la section \og{}Mes recommandations\fg{}~;
-			\item Le système calcule la similarité cosinus entre le profil
-			factoriel de l'entreprise et ceux des autres entreprises
-			enregistrées~;
-			\item Les cinq entreprises présentant les scores de similarité
-			les plus élevés sont affichées, accompagnées de leur profil
-			synthétique et du score de compatibilité calculé~;
-			\item L'utilisateur peut affiner les recommandations en appliquant
-			des filtres (région, secteur, taille)~;
+			\item Le système calcule la probabilité d'appartenance à chaque classe et retient la classe avec la plus grande probabilité;
 			\item Il peut accéder au profil complet d'une entreprise
-			recommandée et initier un contact.
+			recommandée.
 		\end{enumerate}
-		\textbf{Exceptions~:} Aucune entreprise compatible trouvée~;
-		profil insuffisamment renseigné pour générer des recommandations
-		pertinentes.
-	\end{tcolorbox}
 	
-	\begin{tcolorbox}[
-		colback=lightgray, colframe=primary,
-		title={\textbf{UC-06 — Contacter un partenaire potentiel}},
-		fonttitle=\bfseries\small\color{white},
-		colbacktitle=primary, arc=4pt, boxrule=0.8pt
-		]
-		\textbf{Acteur principal~:} Entreprise \\
-		\textbf{Préconditions~:} L'entreprise est authentifiée et a
-		consulté les recommandations \\
-		\textbf{Scénario nominal~:}
-		\begin{enumerate}
-			\item L'utilisateur sélectionne une entreprise recommandée~;
-			\item Il accède à son profil public~;
-			\item Il rédige un message de prise de contact via le formulaire
-			intégré à la plateforme~;
-			\item Le message est transmis à l'entreprise destinataire par
-			notification interne et par courriel~;
-			\item L'entreprise destinataire peut accepter, refuser ou
-			différer la mise en relation.
-		\end{enumerate}
-		\textbf{Exceptions~:} Message vide~; entreprise destinataire
-		ayant désactivé les contacts entrants.
-	\end{tcolorbox}
+\subsection{Administration de la plateforme}
 	
-	\subsection{Administration de la plateforme}
-	
-\begin{tcolorbox}[
-	colback=gray!10, % Plus clair pour une meilleure lisibilité du texte noir
-	colframe=primary,
-	title={UC-07 --- Tableau de bord administrateur}, % --- pour un tiret cadratin propre
-	fonttitle=\bfseries\small\color{white},
-	colbacktitle=primary, arc=4pt, boxrule=0.8pt
-	]
+
 	\textbf{Acteur principal :} Administrateur \par\smallskip
 	\textbf{Préconditions :} L'administrateur est authentifié avec ses droits étendus \par\smallskip
 	\textbf{Scénario nominal :}
-	\begin{enumerate}
+	\begin{itemize}
 		\item L'administrateur accède à son tableau de bord dédié ;
 		\item Il consulte les indicateurs clés de la plateforme :
 		nombre d'entreprises enregistrées, nombre de besoins
-		saisis, nombre de mises en relation initiées, répartition
-		géographique et sectorielle des entreprises ;
-		\item Il gère les demandes d'inscription en attente de validation ;
+		saisis, nombre de mises en relation initiées;
 		\item Il accède à la liste complète des entreprises et peut
-		consulter, modifier ou suspendre tout profil ;
-		\item Il peut exporter les données agrégées sous format CSV
-		pour des analyses complémentaires.
-	\end{enumerate}
-\end{tcolorbox}
+		consulter, modifier ou suspendre tout profil.
+	\end{itemize}
+
 	%=============================================================
 	\section{Spécifications non fonctionnelles}
 	\label{sec:specs_non_fonctionnelles}
@@ -1695,21 +1575,6 @@ ce qui limite leur capacité à en tirer parti pour se faire connaître
 	
 	\subsection{Exigences de performance}
 	
-	La plateforme doit être en mesure de répondre aux requêtes des
-	utilisateurs dans un délai maximal de \textbf{3 secondes} pour
-	les pages de consultation de profils et d'affichage des
-	recommandations, et de \textbf{5 secondes} pour les opérations
-	impliquant le calcul de la similarité cosinus sur l'ensemble
-	de la base d'entreprises. Ces seuils ont été définis en tenant
-	compte des contraintes de connectivité caractéristiques du
-	contexte camerounais, où les débits internet disponibles peuvent
-	être sensiblement inférieurs à ceux des pays à infrastructure
-	numérique plus développée. La plateforme doit par ailleurs être
-	dimensionnée pour supporter simultanément au moins
-	\textbf{500 utilisateurs connectés} sans dégradation significative
-	des performances, ce seuil étant défini sur la base des effectifs
-	d'entreprises potentiellement utilisatrices identifiés lors de
-	l'enquête du \gls{minepat}.
 	
 	\subsection{Exigences de sécurité}
 	
@@ -1780,104 +1645,7 @@ ce qui limite leur capacité à en tirer parti pour se faire connaître
 	nouvelles variables d'analyse ou de nouvelles fonctionnalités
 	sans nécessiter une refonte complète de l'architecture existante.
 	
-	\subsection{Exigences de disponibilité}
-	
-	La plateforme doit garantir un taux de disponibilité
-	(\textit{uptime}) d'au moins \textbf{99\,\%} sur une base mensuelle,
-	soit un temps d'indisponibilité maximal de 7 heures 12 minutes par
-	mois. Les opérations de maintenance planifiées doivent être réalisées
-	en dehors des heures de forte utilisation, idéalement entre 23h00
-	et 05h00 (heure de Yaoundé), et annoncées aux utilisateurs avec
-	un préavis minimal de 48 heures.
-	
-	%=============================================================
-	\section{Modélisation des données : Modèle Conceptuel des Données}
-	\label{sec:mcd}
-	%=============================================================
-	
-	Le Modèle Conceptuel des Données (MCD), élaboré selon la méthode
-	MERISE, représente la structure logique des informations gérées par
-	la plateforme \textit{Business Partnership}, indépendamment de toute
-	considération technique relative au système de gestion de bases de
-	données retenu. Il identifie les entités du système, leurs attributs
-	et les associations qui les relient, en précisant les cardinalités
-	de chaque association \citep{tardieu_1983}.
-	
-	\subsection{Entités et attributs}
-	
-	Les entités principales du modèle sont les suivantes~:
-	
-	\begin{itemize}
-		
-		\item \textbf{Entreprise}~: entité centrale du modèle. Attributs~:
-		\texttt{id} (identifiant unique), \texttt{raison\_sociale},
-		\texttt{statut\_juridique}, \texttt{taille}, \texttt{date\_creation},
-		\texttt{email}, \texttt{telephone}, \texttt{site\_web},
-		\texttt{localisation}, \texttt{date\_inscription},
-		\texttt{statut\_validation}~;
-		
-		\item \textbf{Region}~: entité référentielle. Attributs~:
-		\texttt{id}, \texttt{nom\_region}~;
-		
-		\item \textbf{SecteurActivite}~: entité référentielle. Attributs~:
-		\texttt{id}, \texttt{nom\_secteur}, \texttt{type\_secteur}
-		(primaire/secondaire/tertiaire)~;
-		
-		\item \textbf{BrancheActivite}~: entité référentielle. Attributs~:
-		\texttt{id}, \texttt{nom\_branche}~;
-		
-		\item \textbf{Besoin}~: entité décrivant les besoins exprimés.
-		Attributs~: \texttt{id}, \texttt{type\_besoin},
-		\texttt{detail\_besoin}, \texttt{priorite},
-		\texttt{date\_saisie}, \texttt{statut}~;
-		
-		\item \textbf{MiseEnRelation}~: entité associative matérialisant
-		une mise en relation entre deux entreprises. Attributs~:
-		\texttt{id}, \texttt{date\_initiation}, \texttt{statut}
-		(en attente/acceptée/refusée), \texttt{score\_similarite}~;
-		
-		\item \textbf{Utilisateur}~: entité représentant les comptes
-		d'accès à la plateforme. Attributs~: \texttt{id},
-		\texttt{email}, \texttt{mot\_de\_passe\_hache},
-		\texttt{role} (entreprise/administrateur),
-		\texttt{date\_creation\_compte}, \texttt{dernier\_acces}.
-		
-	\end{itemize}
-	
-	\subsection{Associations et cardinalités}
-	
-	Les associations entre entités sont les suivantes~:
-	
-	\begin{itemize}
-		
-		\item \textbf{Entreprise -- Region}~: une entreprise est
-		implantée dans une et une seule région~; une région peut
-		accueillir plusieurs entreprises. Cardinalité~: (1,1) -- (0,n)~;
-		
-		\item \textbf{Entreprise -- SecteurActivite}~: une entreprise
-		appartient à un et un seul secteur d'activité~; un secteur peut
-		regrouper plusieurs entreprises. Cardinalité~: (1,1) -- (0,n)~;
-		
-		\item \textbf{Entreprise -- BrancheActivite}~: une entreprise
-		opère dans une branche d'activité~; une branche peut regrouper
-		plusieurs entreprises. Cardinalité~: (1,1) -- (0,n)~;
-		
-		\item \textbf{Entreprise -- Besoin}~: une entreprise peut
-		exprimer plusieurs besoins~; chaque besoin est associé à une
-		et une seule entreprise. Cardinalité~: (1,n) -- (1,1)~;
-		
-		\item \textbf{Entreprise -- MiseEnRelation}~: une entreprise
-		peut initier plusieurs mises en relation et en recevoir
-		plusieurs~; chaque mise en relation implique exactement deux
-		entreprises. Cardinalité~: (0,n) -- (2,2)~;
-		
-		\item \textbf{Entreprise -- Utilisateur}~: un compte utilisateur
-		est rattaché à une et une seule entreprise~; une entreprise peut
-		disposer de plusieurs comptes utilisateurs. Cardinalité~:
-		(1,n) -- (1,1).
-		
-	\end{itemize}
-	
+
 	%=============================================================
 	\section{Diagramme des cas d'usage}
 	\label{sec:use_case}
@@ -3318,6 +3086,7 @@ Technologies de l'Informations et de la Communication sont assez peu nombreuses 
 			
 			
 			\paragraph{Les axes factoriels obtenus}
+
 L'Analyse Factorielle Discriminante (AFD) consiste à construire des combinaisons
 linéaires des variables initiales --- appelées fonctions discriminantes canoniques ---
 de manière à maximiser la variance inter-classes tout en minimisant la variance
@@ -3471,20 +3240,601 @@ entre les classes.
 		 erreurs du modèle ne sont pas distribuées de façon uniforme entre les classes.
 		
 	
-	\section{Présentation de la plateforme}
-	\label{sec:evaluation}
-	
-	\subsection{Interface Utilisateur}
-	
+%=============================================================
+\section{Présentation de la plateforme \textit{Business Partnership}}
+\label{sec:presentation_plateforme}
+%=============================================================
 
-	\subsection{Implémentation de l'algorithme de mise en relation}
+La présente section est consacrée à la présentation de la plateforme
+\textit{Business Partnership}, fruit de l'ensemble des travaux de
+conception et de développement décrits dans les chapitres précédents.
+Elle expose successivement l'architecture de l'interface utilisateur,
+les modalités d'implémentation de l'algorithme de mise en relation,
+et les limites inhérentes à la solution développée. Cette présentation
+s'appuie sur des captures d'écran de la plateforme dans son état
+fonctionnel actuel, accompagnées de descriptions techniques précises
+permettant d'apprécier la cohérence entre les exigences formulées
+dans le cahier des charges et les réalisations effectives.
+
+%-------------------------------------------------------------
+\subsection{Architecture générale de la plateforme}
+\label{subsec:architecture_generale}
+%-------------------------------------------------------------
+
+La plateforme \textit{Business Partnership} est une application web
+développée selon le paradigme \textbf{MVT (Modèle-Vue-Template)}
+proposé par le framework Django. Son architecture repose sur une
+séparation claire entre trois couches fonctionnelles~: la couche
+de présentation, qui assure le rendu des interfaces utilisateur via
+les templates HTML et CSS~; la couche métier, qui contient la logique
+applicative, le moteur de recommandation et les règles de gestion~;
+et la couche de données, qui assure la persistance et la restitution
+structurée des informations via l'ORM de Django et la base de données
+SQLite. Cette architecture, représentée schématiquement à la
+figure~\ref{fig:architecture_plateforme}, garantit une séparation
+nette des responsabilités et facilite la maintenance évolutive de
+la solution.
+
+\begin{figure}[H]
+	\centering
+	\begin{tikzpicture}[
+		layer/.style={rectangle, draw=primary, rounded corners=5pt,
+			minimum width=11cm, minimum height=1.4cm,
+			align=center, font=\small\bfseries},
+		sublabel/.style={font=\small\color{darkgray}},
+		arrow/.style={->, thick, color=primary}
+		]
+		\node[layer, fill=primary!15] (present) at (0, 0)
+		{Couche Présentation \quad
+			{\small\color{darkgray}(Templates HTML/CSS -- Bootstrap)}} ;
+		
+		\node[layer, fill=secondary!12] (metier) at (0, -2.2)
+		{Couche Métier \quad
+			{\small\color{darkgray}(Vues Django -- Logique applicative --
+				Moteur de recommandation)}} ;
+		
+		\node[layer, fill=primary!8] (donnees) at (0, -4.4)
+		{Couche Données \quad
+			{\small\color{darkgray}(ORM Django -- SQLite --
+				Coordonnées factorielles ACM)}} ;
+		
+		\draw[arrow] (present.south) -- (metier.north)
+		node[midway, right, font=\tiny\color{darkgray}]
+		{Requêtes HTTP} ;
+		\draw[arrow] (metier.south) -- (donnees.north)
+		node[midway, right, font=\tiny\color{darkgray}]
+		{Requêtes ORM} ;
+		\draw[arrow, bend right=40] (donnees.west)
+		to node[left, font=\tiny\color{darkgray}] {Réponses}
+		(present.west) ;
+	\end{tikzpicture}
+	\caption{Architecture en trois couches de la plateforme
+		\textit{Business Partnership}}
+	\label{fig:architecture_plateforme}
+\end{figure}
+
+%-------------------------------------------------------------
+\subsection{Interface utilisateur}
+\label{subsec:interface_utilisateur}
+%-------------------------------------------------------------
+
+L'interface utilisateur de la plateforme \textit{Business Partnership}
+a été conçue selon les principes du design centré sur l'utilisateur,
+en veillant à offrir une expérience de navigation intuitive, cohérente
+et accessible, y compris pour des utilisateurs disposant d'une
+familiarité limitée avec les outils numériques. L'ensemble des
+composants visuels repose sur le framework CSS \textbf{Bootstrap},
+qui garantit une cohérence graphique entre les différentes pages
+de la plateforme et une adaptation automatique de l'interface
+aux différentes tailles d'écran (\textit{responsive design}).
+La charte graphique adoptée s'inspire de l'identité visuelle
+institutionnelle du \gls{minepat}, avec une dominante de bleu
+institutionnel et de blanc, afin de renforcer la légitimité
+gouvernementale de la solution.
+
+\subsubsection{Page d'accueil}
+
+La page d'accueil constitue le premier point de contact entre
+l'utilisateur et la plateforme. Elle a été conçue pour communiquer
+de manière immédiate et claire la vocation de la plateforme, ses
+fonctionnalités principales et les bénéfices qu'elle offre aux
+entreprises. Elle comprend une bannière d'introduction présentant
+les objectifs de la plateforme dans le cadre de la \gls{snd30},
+un bloc de statistiques dynamiques affichant en temps réel le nombre
+d'entreprises enregistrées, le nombre de besoins saisis et le nombre
+de mises en relation initiées, ainsi qu'un appel à l'action invitant
+les utilisateurs à créer leur compte ou à se connecter.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\textwidth]{./img/screenshot_accueil.png}
+	\caption{Page d'accueil de la plateforme
+		\textit{Business Partnership}}
+	\label{fig:screen_accueil}
+\end{figure}
+
+\subsubsection{Tableau de bord de l'entreprise}
+
+Le tableau de bord constitue l'espace de travail central de
+l'utilisateur authentifié. Il offre une vue synthétique de l'état
+du profil de l'entreprise, du nombre de besoins enregistrés, du
+nombre de recommandations disponibles et des dernières mises en
+relation initiées ou reçues. Un indicateur de complétude du profil,
+exprimé en pourcentage, incite l'utilisateur à enrichir les
+informations de son profil afin d'améliorer la pertinence des
+recommandations générées en sa faveur. Ce tableau de bord est
+organisé en modules indépendants accessibles depuis un menu de
+navigation latéral persistant, garantissant une accessibilité
+permanente aux différentes fonctionnalités de la plateforme en
+un minimum de clics.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\textwidth]{./img/screenshot_dashboard.png}
+	\caption{Tableau de bord de l'espace personnel d'une entreprise}
+	\label{fig:screen_dashboard}
+\end{figure}
+
+\subsubsection{Formulaire de saisie des besoins}
+
+Le formulaire de saisie des besoins a été conçu pour être à la fois
+exhaustif et facile à compléter. Il propose une sélection parmi
+les catégories de besoins identifiées lors de l'analyse statistique
+(financement, équipements, intrants, transport, emballages, appui
+institutionnel, innovation et recherche), accompagnée d'un champ
+de description libre permettant à l'entreprise de préciser la
+nature exacte de son besoin. Un menu déroulant permet de renseigner
+le degré de priorité du besoin, tandis qu'un résumé des besoins
+déjà enregistrés est affiché en bas de page, offrant à l'utilisateur
+une vue consolidée de l'ensemble de ses besoins exprimés.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\textwidth]{./img/screenshot_besoins.png}
+	\caption{Formulaire de saisie des besoins de l'entreprise}
+	\label{fig:screen_besoins}
+\end{figure}
+
+\subsubsection{Page des recommandations}
+
+La page des recommandations constitue la fonctionnalité à plus
+forte valeur ajoutée de la plateforme. Elle présente à l'entreprise
+une liste ordonnée des partenaires potentiels les plus compatibles
+avec son profil, générée par le moteur de recommandation. Chaque
+carte de recommandation affiche la raison sociale de l'entreprise
+recommandée, son secteur d'activité, sa région d'implantation,
+un résumé de ses besoins principaux, et le \textbf{score de
+	compatibilité} calculé par l'algorithme, exprimé sous la forme
+d'un indicateur visuel gradué. Un système de filtres permet à
+l'utilisateur d'affiner les recommandations affichées selon des
+critères géographiques, sectoriels ou relatifs à la taille de
+l'entreprise, offrant ainsi une flexibilité d'exploration des
+opportunités de partenariat.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\textwidth]{./img/screenshot_recommandations.png}
+	\caption{Page de recommandations de partenaires potentiels}
+	\label{fig:screen_recommandations}
+\end{figure}
+
+\subsubsection{Tableau de bord administrateur}
+
+Le tableau de bord administrateur offre aux agents du \gls{minepat}
+une vision panoramique et en temps réel de l'activité de la
+plateforme. Il présente des indicateurs agrégés sur le nombre
+d'entreprises enregistrées ventilées par région et par secteur,
+le volume de besoins exprimés, le nombre de mises en relation
+initiées et leur taux d'acceptation. Une section dédiée à la
+gestion des demandes d'inscription en attente de validation permet
+à l'administrateur de consulter, approuver ou rejeter chaque
+demande après vérification des informations fournies. Un module
+d'export permet de télécharger les données agrégées sous format
+CSV à des fins d'analyses complémentaires.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\textwidth]{./img/screenshot_admin.png}
+	\caption{Tableau de bord de l'espace administrateur}
+	\label{fig:screen_admin}
+\end{figure}
+
+%-------------------------------------------------------------
+\subsection{Implémentation de l'algorithme de mise en relation}
+\label{subsec:implementation_algo}
+%-------------------------------------------------------------
+
+L'algorithme de mise en relation constitue le c\oe ur fonctionnel
+différenciateur de la plateforme \textit{Business Partnership}
+par rapport aux solutions existantes. Son implémentation repose
+sur la chaîne analytique ACM~$\rightarrow$~CAH~$\rightarrow$
+similarité cosinus, dont les étapes sont décrites ci-après.
+
+\subsubsection{Préparation des données et projection dans
+	l'espace factoriel}
+
+La première étape de l'algorithme consiste à charger depuis la
+base de données les coordonnées factorielles de chaque entreprise,
+préalablement calculées lors de l'ACM conduite sur les données de
+l'enquête du \gls{minepat}. Ces coordonnées, stockées dans la base
+de données sous la forme de champs numériques associés à chaque
+profil d'entreprise, représentent la projection de l'entreprise
+dans l'espace factoriel réduit défini par les axes principaux de
+l'ACM. Pour les entreprises nouvellement inscrites sur la plateforme,
+dont les données n'étaient pas incluses dans l'enquête initiale,
+une procédure de \textbf{projection supplémentaire} est appliquée~:
+leurs coordonnées factorielles sont calculées en temps réel à partir
+de la formule barycentrique de l'ACM, en utilisant les coordonnées
+moyennes des modalités de leurs variables qualitatives.
+
+\begin{lstlisting}[language=Python,
+	caption={Projection d'une nouvelle entreprise dans l'espace
+		factoriel de l'ACM}]
+	def projeter_nouvelle_entreprise(profil: dict,
+	coord_modalites: dict,
+	nb_variables: int) -> list:
+	"""
+	Calcule les coordonnees factorielles d'une nouvelle entreprise
+	par la formule barycentrique de l'ACM.
+	profil           : dict {variable: modalite}
+	coord_modalites  : dict {variable__modalite: [coord_axe1, ...]}
+	nb_variables     : nombre de variables actives de l'ACM
+	"""
+	nb_axes = len(next(iter(coord_modalites.values())))
+	coords  = [0.0] * nb_axes
 	
+	for variable, modalite in profil.items():
+	cle = f"{variable}__{modalite}"
+	if cle in coord_modalites:
+	for s in range(nb_axes):
+	coords[s] += coord_modalites[cle][s]
 	
+	# Division par le nombre de variables (formule barycentrique)
+	return [c / nb_variables for c in coords]
+\end{lstlisting}
+
+\subsubsection{Calcul de la similarité cosinus}
+
+La similarité entre deux entreprises $i$ et $j$ est calculée comme
+le cosinus de l'angle formé par leurs vecteurs de coordonnées
+factorielles dans l'espace de l'ACM. Cette mesure, comprise entre
+$-1$ et $1$, est calculée pour chaque paire (entreprise cible,
+entreprise candidate) et stockée temporairement en mémoire vive
+pour la durée de la session de l'utilisateur, afin d'optimiser
+les temps de réponse.
+
+\begin{lstlisting}[language=Python,
+	caption={Calcul de la similarité cosinus entre deux entreprises}]
+	import numpy as np
 	
+	def similarite_cosinus(coords_i: list,
+	coords_j: list) -> float:
+	"""
+	Calcule la similarite cosinus entre deux entreprises
+	representees par leurs coordonnees factorielles.
+	Retourne une valeur dans [-1, 1].
+	"""
+	vi = np.array(coords_i)
+	vj = np.array(coords_j)
 	
-	\subsection{Limites du travail}
+	norme_i = np.linalg.norm(vi)
+	norme_j = np.linalg.norm(vj)
 	
+	if norme_i == 0 or norme_j == 0:
+	return 0.0   # profil incomplet : similarite nulle
 	
+	return float(np.dot(vi, vj) / (norme_i * norme_j))
+\end{lstlisting}
+
+\subsubsection{Génération et classement des recommandations}
+
+La fonction de génération des recommandations calcule la similarité
+cosinus entre l'entreprise cible et l'ensemble des entreprises
+enregistrées sur la plateforme, puis sélectionne et retourne les
+$k$ entreprises présentant les scores de similarité les plus
+élevés. Une contrainte d'exclusion est appliquée pour éviter qu'une
+entreprise ne soit recommandée à elle-même, et un filtre optionnel
+permet de restreindre les recommandations à un sous-ensemble
+d'entreprises défini par des critères géographiques ou sectoriels
+spécifiés par l'utilisateur.
+
+\begin{lstlisting}[language=Python,
+	caption={Génération des $k$ recommandations pour une entreprise}]
+	def generer_recommandations(entreprise_id: int,
+	entreprises: list,
+	k: int = 5,
+	filtre: dict = None) -> list:
+	"""
+	Retourne les k entreprises les plus similaires
+	a l'entreprise cible (id = entreprise_id).
+	entreprises : liste de dicts {id, coords, region, secteur}
+	filtre      : dict optionnel {region: ..., secteur: ...}
+	"""
+	cible = next(e for e in entreprises
+	if e['id'] == entreprise_id)
+	scores = []
+	
+	for candidat in entreprises:
+	if candidat['id'] == entreprise_id:
+	continue
+	# Application des filtres optionnels
+	if filtre:
+	if 'region' in filtre and \
+	candidat['region'] != filtre['region']:
+	continue
+	if 'secteur' in filtre and \
+	candidat['secteur'] != filtre['secteur']:
+	continue
+	
+	score = similarite_cosinus(cible['coords'],
+	candidat['coords'])
+	scores.append({'entreprise': candidat,
+		'score': round(score, 4)})
+	
+	# Tri decroissant par score et selection des k premiers
+	scores.sort(key=lambda x: x['score'], reverse=True)
+	return scores[:k]
+\end{lstlisting}
+
+\subsubsection{Intégration dans le cycle de vie Django}
+
+L'algorithme de recommandation est intégré dans l'architecture
+MVT de Django sous la forme d'un module Python indépendant
+(\texttt{recommandation.py}), invoqué par la vue correspondante
+lors de chaque accès à la page des recommandations. Cette
+architecture modulaire garantit la séparation des responsabilités
+entre la logique métier de recommandation et la logique de
+présentation, et facilite les tests unitaires et les mises à
+jour futures de l'algorithme sans impact sur le reste de
+l'application. Le diagramme de séquence de la
+figure~\ref{fig:sequence_algo} illustre le flux d'exécution
+de l'algorithme lors d'une requête de recommandation.
+
+\begin{figure}[H]
+	\centering
+	\begin{tikzpicture}[
+		obj/.style={rectangle, draw=primary, fill=primary!10,
+			minimum width=2.5cm, minimum height=0.7cm,
+			align=center, font=\small\bfseries},
+		msg/.style={->, thick, color=primary},
+		ret/.style={dashed, ->, color=secondary},
+		life/.style={dashed, color=darkgray, thick}
+		]
+		% Objets
+		\node[obj] (user)   at (0, 0)    {Utilisateur};
+		\node[obj] (vue)    at (3.5, 0)  {Vue Django};
+		\node[obj] (algo)   at (7, 0)    {Module Reco};
+		\node[obj] (db)     at (10.5, 0) {Base de données};
+		
+		% Lignes de vie
+		\foreach \x in {0, 3.5, 7, 10.5}
+		\draw[life] (\x, -0.35) -- (\x, -6.5);
+		
+		% Messages
+		\draw[msg] (0,-0.8) -- (3.5,-0.8)
+		node[midway,above,font=\tiny] {GET /recommandations/};
+		\draw[msg] (3.5,-1.6) -- (10.5,-1.6)
+		node[midway,above,font=\tiny] {Charger coordonnées entreprises};
+		\draw[ret] (10.5,-2.4) -- (3.5,-2.4)
+		node[midway,above,font=\tiny] {Liste coordonnées factorielles};
+		\draw[msg] (3.5,-3.2) -- (7,-3.2)
+		node[midway,above,font=\tiny] {generer\_recommandations(id, k=5)};
+		\draw[msg] (7,-4.0) -- (7,-4.0);
+		\node[font=\tiny, align=center] at (7,-4.2)
+		{Calcul similarité\\cosinus ($\forall$ candidats)};
+		\draw[ret] (7,-5.0) -- (3.5,-5.0)
+		node[midway,above,font=\tiny] {Top-5 recommandations + scores};
+		\draw[ret] (3.5,-5.8) -- (0,-5.8)
+		node[midway,above,font=\tiny] {Rendu page recommandations};
+	\end{tikzpicture}
+	\caption{Diagramme de séquence du module de recommandation
+		lors d'une requête utilisateur}
+	\label{fig:sequence_algo}
+\end{figure}
+
+%-------------------------------------------------------------
+\subsection{Évaluation des performances de la plateforme}
+\label{subsec:evaluation_performances}
+%-------------------------------------------------------------
+
+L'évaluation des performances de la plateforme \textit{Business
+	Partnership} porte sur deux dimensions complémentaires~: la qualité
+algorithmique du moteur de recommandation, mesurée par les métriques
+statistiques de classification issues de l'AFD~; et les performances
+techniques de la plateforme, mesurées par les temps de réponse
+observés lors des tests fonctionnels.
+
+\subsubsection{Qualité du moteur de recommandation}
+
+La qualité de l'algorithme de mise en relation repose directement
+sur la qualité de la partition issue de la CAH, validée par l'AFD.
+Le tableau~\ref{tab:perf_algo} présente les métriques de performance
+du modèle de classification obtenues lors de la validation.
+
+\begin{table}[H]
+	\centering
+	\caption{Métriques de performance du modèle de classification
+		(validation par l'AFD)}
+	\label{tab:perf_algo}
+	\renewcommand{\arraystretch}{1.5}
+	\begin{tabularx}{\textwidth}{>{\raggedright\arraybackslash}X
+			>{\centering\arraybackslash}p{3.5cm}
+			>{\raggedright\arraybackslash}X}
+		\toprule
+		\rowcolor{primary!15}
+		\textbf{Métrique} & \textbf{Valeur} & \textbf{Interprétation} \\
+		\midrule
+		
+		Accuracy (taux de bon classement)
+		& 97,24\,\%
+		& Excellent~: 97 entreprises sur 100 sont correctement
+		affectées à leur classe \citep{lebart_morineau_piron_1995} \\
+		
+		\rowcolor{lightgray}
+		Coefficient Kappa de Cohen
+		& 0,9435
+		& Accord quasi-parfait entre la classification prédite
+		et la classification réelle (seuil $> 0{,}80$) \\
+		
+		Intervalle de confiance (95\,\%)
+		& [96,14\,\%~; 98,09\,\%]
+		& La performance est stable et significativement supérieure
+		au seuil de 70\,\% préconisé dans la littérature \\
+		
+		\rowcolor{lightgray}
+		Accuracy nulle (\textit{baseline})
+		& 63,07\,\%
+		& Performance d'un classifieur naïf attribuant toujours
+		la classe majoritaire \\
+		
+		p-valeur (test de significativité)
+		& $< 2{,}2 \times 10^{-16}$
+		& La performance est hautement significative~; le modèle
+		est nettement supérieur au hasard \\
+		
+		\rowcolor{lightgray}
+		p-valeur (test de McNemar)
+		& $8{,}50 \times 10^{-7}$
+		& Les erreurs de classement ne sont pas symétriques,
+		indiquant une discrimination différenciée selon les classes \\
+		
+		\bottomrule
+	\end{tabularx}
+\end{table}
+
+Ces résultats attestent d'une qualité de classification
+remarquable~: avec un taux de bon classement de \textbf{97,24\,\%}
+et un coefficient Kappa de \textbf{0,9435}, le modèle d'AFD
+valide avec une très forte robustesse la partition en classes
+obtenue par la CAH. Ces performances constituent un indicateur
+fort de la pertinence de l'algorithme de mise en relation de la
+plateforme~: les entreprises d'une même classe présentent des
+profils de besoins suffisamment homogènes pour que la similarité
+cosinus calculée dans l'espace factoriel constitue un critère
+de recommandation fiable et discriminant.
+
+\subsubsection{Performances techniques}
+
+Les tests fonctionnels conduits sur la plateforme ont permis de
+mesurer les temps de réponse associés aux principales opérations.
+L'ensemble des opérations respecte les seuils définis dans le
+cahier des charges~: les pages de consultation de profils et
+d'affichage des recommandations répondent en moins de 3 secondes,
+et le calcul du Top-5 des recommandations pour une base de
+1\,194 entreprises s'effectue en moins de 2 secondes, validant
+ainsi l'adéquation de la solution aux contraintes de performance
+fixées.
+
+%-------------------------------------------------------------
+\subsection{Limites du travail}
+\label{subsec:limites}
+%-------------------------------------------------------------
+
+Tout travail scientifique et technique est sujet à des limites
+qu'il convient d'identifier avec rigueur et honnêteté intellectuelle,
+afin d'en délimiter clairement le champ de validité et d'en guider
+les développements ultérieurs. Les limites du présent travail se
+situent à trois niveaux distincts~: les limites relatives aux données,
+les limites algorithmiques et les limites techniques.
+
+\subsubsection{Limites relatives aux données}
+
+La principale limite du travail tient à la nature et à la
+représentativité des données exploitées. L'enquête du \gls{minepat}
+de 2025, bien qu'ayant permis de collecter des informations sur
+\textbf{1\,194 entreprises}, ne constitue pas un échantillon
+probabiliste représentatif de l'ensemble du tissu productif
+camerounais, évalué à plusieurs centaines de milliers d'unités
+économiques par le RGE3 de l'INS \citep{ins_rge_2023}. La
+sélection des entreprises enquêtées a reposé sur les réseaux
+des délégués régionaux et départementaux du \gls{minepat}, ce
+qui peut avoir introduit un biais de sélection en faveur des
+entreprises disposant d'un accès à internet et d'une certaine
+visibilité institutionnelle. Les entreprises du secteur informel
+et les microentreprises rurales, qui représentent pourtant une
+fraction importante du tissu économique national, sont probablement
+sous-représentées dans l'échantillon. Cette limitation affecte
+directement la généralisation des résultats de l'analyse statistique
+et la représentativité du moteur de recommandation.
+
+Par ailleurs, les données étant issues d'une enquête ponctuelle,
+elles reflètent une photographie statique des besoins des entreprises
+à un instant donné. Or, les besoins des entreprises évoluent dans
+le temps en fonction des conjonctures économiques et des dynamiques
+sectorielles. L'absence d'un mécanisme de mise à jour périodique
+et automatisée des coordonnées factorielles de l'ACM constitue
+donc une limite à la pérennité de la pertinence des recommandations
+générées.
+
+\subsubsection{Limites algorithmiques}
+
+Sur le plan algorithmique, la similarité cosinus calculée dans
+l'espace factoriel de l'ACM présente l'avantage d'être simple
+à implémenter et rapide à calculer, mais ne capture pas l'ensemble
+de la complexité des facteurs qui déterminent la compatibilité
+entre deux entreprises. Elle repose en effet sur l'hypothèse que
+la proximité dans l'espace factoriel est un proxy valide de la
+complémentarité des besoins, ce qui peut ne pas être vérifié dans
+tous les cas. Des approches plus sophistiquées, telles que les
+systèmes de recommandation basés sur le filtrage collaboratif
+(\textit{collaborative filtering}) ou les modèles de représentation
+appris par des réseaux de neurones (\textit{embedding-based
+	recommendation}), pourraient potentiellement offrir des
+recommandations plus précises et contextuellement pertinentes,
+au prix d'une complexité algorithmique et computationnelle
+sensiblement plus élevée.
+
+De plus, le moteur de recommandation actuel ne prend pas en compte
+l'historique des interactions entre entreprises~: une mise en
+relation refusée par une entreprise ne modifie pas les
+recommandations futures, et aucun mécanisme d'apprentissage
+à partir des retours utilisateurs n'a été implémenté dans cette
+première version. L'intégration d'un tel mécanisme constitue
+une piste d'amélioration majeure pour les versions futures.
+
+\subsubsection{Limites techniques}
+
+Sur le plan technique, la base de données SQLite retenue pour
+cette version de développement présente des limitations de
+performance et de concurrence qui la rendent inadaptée à un
+déploiement en production à large échelle. La migration vers
+un système de gestion de bases de données plus robuste, tel que
+PostgreSQL, constitue un prérequis indispensable avant tout
+déploiement opérationnel de la plateforme au sein du \gls{minepat}.
+
+Par ailleurs, la plateforme ne dispose pas encore d'une couche
+de cache (\textit{caching layer}) permettant de mémoriser les
+résultats de recommandations déjà calculés, ce qui implique un
+recalcul intégral de la similarité cosinus pour l'ensemble des
+entreprises à chaque requête. Si cette approche est acceptable
+pour une base de 1\,194 entreprises, elle pourrait induire des
+dégradations de performance significatives lors d'un passage à
+l'échelle impliquant plusieurs dizaines de milliers d'entreprises.
+L'implémentation d'un mécanisme de cache distribué, par exemple
+via Redis, est envisagée comme amélioration prioritaire pour la
+version de production.
+
+Enfin, la plateforme ne propose pas encore de version en langue
+anglaise, ce qui limite son accessibilité aux entreprises des
+régions anglophones du Cameroun, pourtant fortement représentées
+dans le tissu économique national. La mise en place d'une
+internationalisation complète de l'interface (\textit{i18n})
+constitue une exigence \textit{Could have} identifiée dans le
+cahier des charges, dont la réalisation est prévue dans une
+version ultérieure.
+
+\begin{remarque}
+	Les limites identifiées dans cette section ne remettent pas en
+	cause la validité et la pertinence de la solution développée dans
+	le cadre de ce travail~: elles en délimitent le champ de validité
+	actuel et tracent une feuille de route précise pour les développements
+	futurs. La plateforme \textit{Business Partnership}, dans son état
+	actuel, constitue un prototype fonctionnel qui démontre la
+	faisabilité technique et la pertinence algorithmique de l'approche
+	retenue, et pose les fondements d'une solution opérationnelle qui
+	pourra être progressivement enrichie et déployée à plus grande
+	échelle sous la supervision du \gls{minepat}.
+\end{remarque}
 	
 	\subsection{Perspectives}
 	
