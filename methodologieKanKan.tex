@@ -1,0 +1,328 @@
+	\section{Méthode de gestion de projet : l'approche Kanban}
+\label{sec:kanban}
+%=============================================================
+
+La conduite d'un projet informatique de la nature de celui présenté
+dans ce travail alliant traitement de données statistiques,
+développement d'une application web requiert une méthode de gestion de projet adaptée
+à la complexité, à l'incertitude et à l'évolutivité inhérentes à ce
+type de réalisation. Parmi les différentes approches disponibles,
+la méthode \textbf{Kanban} a été retenue comme cadre organisationnel
+du présent projet, en raison de sa flexibilité, de sa capacité à
+visualiser en temps réel l'état d'avancement des tâches et de son
+adéquation avec les contraintes d'un projet conduit par un nombre
+limité de collaborateurs. La présente section expose les fondements
+théoriques et pratiques de cette méthode, avant d'en présenter
+l'application concrète dans le cadre du développement de la
+plateforme \textit{Business Partnership}.
+
+%-------------------------------------------------------------
+\subsection{Origines et fondements conceptuels de la méthode Kanban}
+\label{subsec:kanban_origines}
+%-------------------------------------------------------------
+
+La méthode Kanban trouve ses origines dans le système de production
+industrielle développé par l'ingénieur Taiichi Ohno au sein des
+usines Toyota dans le Japon de l'après-guerre, au milieu des années
+1950. Inspiré du fonctionnement des supermarchés américains, dans
+lesquels les rayons sont réapprovisionnés en fonction de la demande
+réelle des consommateurs et non selon des prévisions préétablies,
+Ohno conçoit un système de production dit \textit{en flux tiré}
+(\textit{pull system}), dans lequel chaque étape du processus de
+fabrication ne produit que ce que l'étape suivante est en mesure
+d'absorber \cite{ohno_1988}. Ce principe fondamental de régulation
+par la demande constitue le c\oe ur philosophique de la méthode
+Kanban, dont le nom signifie littéralement \og{}étiquette\fg{} ou
+\og{}signal visuel\fg{} en japonais, en référence aux cartes physiques
+utilisées pour matérialiser le flux de travail sur les lignes
+d'assemblage.
+
+Transposée au domaine du développement logiciel et de la gestion de
+projets informatiques au début des années 2000, la méthode Kanban
+a été formalisée et popularisée par David J. Anderson, dont l'ouvrage
+de référence \textit{Kanban: Successful Evolutionary Change for Your
+	Technology Business} (2010) constitue la base théorique sur laquelle
+repose la quasi-totalité des implémentations modernes de cette
+méthode \cite{anderson2015essential}. Anderson identifie cinq propriétés
+fondamentales qui caractérisent toute implémentation Kanban~:
+
+\begin{enumerate}
+	\item \textbf{La visualisation du flux de travail}~: l'ensemble des
+	tâches constituant le projet est rendu visible sur un tableau
+	structuré en colonnes représentant les différents états du processus
+	de réalisation (à faire, en cours, terminé, etc.), permettant à
+	chaque membre de l'équipe d'appréhender instantanément l'état
+	d'avancement global du projet~;
+	
+	\item \textbf{La limitation du travail en cours (WIP)}~: chaque
+	colonne du tableau Kanban est soumise à une limite maximale de
+	tâches simultanément en cours (\textit{Work In Progress limit},
+	ou WIP limit), afin d'éviter la surcharge des ressources, de
+	favoriser l'achèvement des tâches engagées avant d'en démarrer
+	de nouvelles, et d'identifier rapidement les goulots d'étranglement
+	du processus~;
+	
+	\item \textbf{La gestion et la mesure du flux}~: le flux de travail
+	est mesuré et géré de manière continue, à l'aide d'indicateurs
+	tels que le \textit{lead time} (délai entre la création d'une tâche
+	et sa livraison) et le \textit{cycle time} (délai de traitement
+	effectif), afin d'identifier les inefficiences et d'optimiser
+	la cadence de livraison~;
+	
+	\item \textbf{La formalisation des règles du processus}~: les
+	critères d'entrée et de sortie de chaque étape du processus sont
+	explicitement définis et partagés par l'ensemble des parties
+	prenantes, garantissant ainsi la cohérence et la prévisibilité
+	des livraisons~;
+	
+	\item \textbf{L'amélioration continue collaborative}~: la méthode
+	Kanban inscrit l'équipe dans une démarche permanente d'amélioration
+	du processus (\textit{kaizen}), fondée sur l'analyse régulière
+	des métriques de flux et la mise en \oe uvre collective de mesures
+	correctives.
+\end{enumerate}
+
+Kanban s'inscrit ainsi dans la famille des méthodes agiles de gestion
+de projet, dont le Manifeste Agile de 2001 a posé les principes
+fondateurs~: priorité aux individus et aux interactions sur les
+processus, aux logiciels fonctionnels sur la documentation exhaustive,
+à la collaboration avec le client sur la négociation contractuelle,
+et à l'adaptation au changement sur le suivi d'un plan rigide
+\cite{beck_2001}. Il se distingue cependant d'autres méthodes agiles
+telles que Scrum en ce qu'il ne prescrit ni itérations de durée fixe
+(\textit{sprints}), ni rôles prédéfinis, ni cérémonies obligatoires,
+offrant ainsi une flexibilité organisationnelle maximale, particulièrement
+adaptée aux projets conduits par des équipes de petite taille ou en
+contexte académique.
+
+%-------------------------------------------------------------
+\subsection{Structure et composantes du tableau Kanban}
+\label{subsec:kanban_tableau}
+%-------------------------------------------------------------
+
+Le tableau Kanban constitue l'artefact central de la méthode~: il
+matérialise visuellement l'ensemble du flux de travail et en rend
+l'état instantanément lisible par l'ensemble des parties prenantes
+du projet. Dans sa forme la plus courante, le tableau Kanban est
+organisé en colonnes verticales représentant les différentes étapes
+du cycle de vie d'une tâche, et en lignes horizontales pouvant
+correspondre à différentes catégories de travaux ou à différents
+membres de l'équipe. Chaque tâche est représentée par une carte
+(\textit{kanban card}), physique ou numérique, qui se déplace de
+gauche à droite sur le tableau au fur et à mesure de son avancement.
+
+Dans le cadre du développement de la plateforme \textit{Business
+	Partnership}, le tableau Kanban a été structuré autour de
+\textbf{cinq colonnes} correspondant aux étapes successives du
+processus de développement~:
+
+\begin{enumerate}
+	\item \textbf{Backlog} (\textit{À planifier})~: cette colonne
+	regroupe l'ensemble des tâches identifiées mais non encore
+	planifiées pour réalisation. Elle constitue le réservoir de travail
+	du projet et est alimentée au fur et à mesure de l'identification
+	de nouveaux besoins fonctionnels ou techniques~;
+	
+	\item \textbf{À faire} (\textit{To Do})~: les tâches sélectionnées
+	pour être traitées dans la période courante sont déplacées du
+	Backlog vers cette colonne. Leur sélection est effectuée en
+	fonction de leur priorité et de la capacité disponible de l'équipe~;
+	
+	\item \textbf{En cours} (\textit{In Progress})~: cette colonne
+	regroupe les tâches en cours de réalisation. Une limite WIP est
+	appliquée à cette colonne afin de garantir la focalisation de
+	l'effort sur un nombre restreint de tâches simultanées~;
+	
+	\item \textbf{En révision} (\textit{In Review})~: les tâches
+	achevées sont soumises à une phase de relecture, de test et de
+	validation avant d'être considérées comme définitivement terminées.
+	Cette étape garantit la qualité des livrables produits~;
+	
+	\item \textbf{Terminé} (\textit{Done})~: les tâches ayant satisfait
+	l'ensemble des critères de validation définis sont archivées dans
+	cette colonne, constituant ainsi un historique des réalisations
+	accomplies.
+\end{enumerate}
+
+\usetikzlibrary{shadows} % <--- Indispensable pour l'effet "drop shadow"
+
+\begin{figure}[H]
+	\centering
+	\begin{tikzpicture}[
+		col/.style={rectangle, draw=primary, fill=primary!8,
+			minimum width=2.2cm, minimum height=7cm,
+			text width=2cm, align=center, rounded corners=3pt},
+		card/.style={rectangle, draw=secondary, fill=white,
+			minimum width=1.8cm, minimum height=0.8cm,
+			text width=1.7cm, align=center, font=\tiny,
+			rounded corners=2pt, drop shadow},
+		header/.style={rectangle, fill=primary, text=white,
+			minimum width=2.2cm, minimum height=0.6cm,
+			text width=2cm, align=center, font=\small\bfseries,
+			rounded corners=3pt}
+		]
+		% Colonnes
+		\foreach \i/\name in {0/{Backlog}, 2.4/{À faire}, 4.8/{En cours}, 7.2/{En révision}, 9.6/{Terminé}}{
+			\node[col] at (\i, 0) {};
+			\node[header] at (\i, 3.2) {\name};
+		}
+		% Cartes exemples
+		\node[card] at (0, 2.2) {Conception MCD};
+		\node[card] at (0, 1.2) {Tests unitaires};
+		\node[card] at (0, 0.2) {Documentation};
+		\node[card] at (2.4, 2.2) {ACM / CAH};
+		\node[card] at (2.4, 1.2) {Module auth};
+		\node[card, fill=secondary!15] at (4.8, 2.2) {Algo matching};
+		\node[card, fill=secondary!15] at (4.8, 1.2) {Interface profil};
+		\node[card, fill=accent!10] at (7.2, 2.2) {API REST};
+		\node[card, fill=green!20] at (9.6, 2.2) {Base de données};
+		\node[card, fill=green!20] at (9.6, 1.2) {Page d'accueil};
+		% Limite WIP
+		\node[font=\tiny\color{accent}] at (4.8, -3) {WIP max : 2};
+	\end{tikzpicture}
+	\caption{Représentation schématique du tableau Kanban utilisé pour
+		le développement de la plateforme \textit{Business Partnership}}
+	\label{fig:kanban_board}
+\end{figure}
+%-------------------------------------------------------------
+\subsection{Avantages de Kanban pour un projet de Data Sciences}
+\label{subsec:kanban_avantages}
+%-------------------------------------------------------------
+
+Le choix de la méthode Kanban comme cadre de gestion du présent
+projet se justifie par plusieurs avantages spécifiques, particulièrement
+pertinents dans le contexte d'un projet de Data Sciences combinant
+analyse statistique et développement logiciel.
+
+\textbf{La flexibilité face à l'incertitude analytique} constitue
+le premier avantage déterminant. Un projet de Data Sciences est par
+nature itératif et exploratoire~: les résultats d'une analyse
+statistique peuvent remettre en question des choix de modélisation
+antérieurs ou faire émerger de nouveaux besoins fonctionnels pour
+la plateforme. Contrairement à des méthodes prescriptives telles
+que le cycle en V ou le modèle en cascade, Kanban permet d'intégrer
+ces évolutions sans rupture organisationnelle, simplement en ajoutant
+ou en repriorisant des cartes dans le tableau. Cette adaptabilité
+est d'autant plus précieuse que les phases d'analyse (ACM, CAH, AFD)
+et de développement (Django, SQLite) s'influencent mutuellement de
+manière non linéaire au cours du projet.
+
+\textbf{La visibilité permanente de l'avancement} représente le
+second avantage majeur. Le tableau Kanban offre à tout moment une
+photographie fidèle de l'état du projet~: les tâches terminées, en
+cours, en attente et à planifier sont visibles d'un seul regard,
+sans nécessiter de réunions de suivi formelles ou de rapports
+d'avancement élaborés. Cette transparence est particulièrement utile
+dans le contexte d'un projet académique impliquant des interactions
+régulières avec un directeur de mémoire et un encadreur professionnel,
+à qui l'état d'avancement peut être communiqué de manière instantanée
+et sans ambiguïté.
+
+\textbf{La prévention des goulots d'étranglement} constitue le
+troisième avantage opérationnel. La limitation du WIP contraint à
+achever les tâches engagées avant d'en démarrer de nouvelles, ce
+qui prévient l'accumulation de travaux partiellement réalisés et
+favorise une livraison régulière et prévisible de fonctionnalités.
+Dans le cadre du développement de la plateforme \textit{Business
+	Partnership}, cette discipline a permis d'éviter la dispersion entre
+les différentes composantes du projet (analyse des données,
+développement du back-end, développement du front-end, rédaction du
+mémoire) et de maintenir une progression équilibrée sur l'ensemble
+des axes.
+
+\textbf{La légèreté procédurale}, enfin, constitue un avantage
+non négligeable pour un projet conduit en contexte académique. Kanban
+ne requiert ni réunion quotidienne obligatoire (\textit{daily
+	stand-up}), ni définition de rôles spécialisés (\textit{product
+	owner}, \textit{scrum master}), ni planification d'itérations à
+durée fixe, ce qui le rend directement applicable sans formation
+préalable approfondie ni infrastructure organisationnelle complexe.
+Sa mise en \oe uvre peut être réalisée à partir d'outils simples et
+accessibles, aussi bien physiques (tableau blanc et post-its) que
+numériques, comme les plateformes Trello, Notion ou GitHub Projects,
+qui ont été mobilisées dans le cadre de ce projet.
+
+%-------------------------------------------------------------
+\subsection{Application de Kanban au développement de la plateforme
+	\textit{Business Partnership}}
+\label{subsec:kanban_application}
+%-------------------------------------------------------------
+
+L'application concrète de la méthode Kanban au développement de la
+plateforme \textit{Business Partnership} s'est traduite par
+l'organisation de l'ensemble des tâches du projet en une liste de
+travaux (\textit{backlog}) initiale, établie dès la phase de
+conception et enrichie de manière incrémentale tout au long du
+développement. Cette liste a été structurée en trois catégories
+principales de tâches~: les tâches d'analyse statistique (traitement
+des données de l'enquête, réalisation de l'ACM, de la CAH et de
+l'AFD), les tâches de développement logiciel (conception de la base
+de données, développement des modèles Django, développement des vues
+et des templates, intégration de l'algorithme de recommandation), et
+les tâches de documentation et de rédaction (rédaction du mémoire,
+documentation technique de la plateforme).
+
+La priorisation des tâches a été conduite selon le principe de la
+valeur métier~: les fonctionnalités à plus forte valeur pour
+l'utilisateur final (inscription des entreprises, saisie des besoins,
+affichage des recommandations) ont été traitées en priorité, afin
+de disposer le plus tôt possible d'un prototype fonctionnel
+susceptible d'être présenté et évalué. Cette approche, cohérente
+avec les principes agiles de livraison incrémentale de valeur,
+a permis de valider rapidement les choix de conception et d'ajuster
+le développement en fonction des retours obtenus lors des revues
+intermédiaires avec l'encadrement académique et professionnel.
+
+Le tableau~\ref{tab:kanban_taches} ci-dessous présente une sélection
+des principales tâches réalisées au cours du projet, organisées par
+catégorie et accompagnées de leur état d'avancement à la date de
+rédaction de ce mémoire.
+
+\begin{table}[H]
+	\centering
+	\caption{Sélection des principales tâches du projet \textit{Business Partnership} dans le tableau Kanban}
+	\label{tab:kanban_taches}
+	\renewcommand{\arraystretch}{1.3}
+	\begin{tabularx}{\textwidth}{l X >{\centering\arraybackslash}p{2.5cm}}
+		\toprule
+		\rowcolor{primary!15}
+		\textbf{Catégorie} & \textbf{Tâche} & \textbf{État} \\
+		\midrule
+		
+		\multirow{4}{*}{\textbf{Analyse}}
+		& Prétraitement des données de l'enquête & \textcolor{green!60!black}{Terminé} \\
+		& Réalisation de l'ACM (FactoMineR) & \textcolor{green!60!black}{Terminé} \\
+		& Réalisation de la CAH (méthode de Ward) & \textcolor{green!60!black}{Terminé} \\
+		& Réalisation de l'AFD et calcul du TBC & \textcolor{green!60!black}{Terminé} \\
+		
+		\midrule
+		
+		\multirow{5}{*}{\textbf{Développement}}
+		& Conception du MCD et du MLD (MERISE) & \textcolor{green!60!black}{Terminé} \\
+		& Développement des modèles Django & \textcolor{green!60!black}{Terminé} \\
+		& Développement du module d'inscription & \textcolor{green!60!black}{Terminé} \\
+		& Intégration de l'algorithme de recommandation & \textcolor{green!60!black}{Terminé} \\
+		& Tests et validation de la plateforme & \textcolor{orange}{\textbf{En cours}} \\
+		
+		\midrule
+		
+		\multirow{3}{*}{\textbf{Rédaction}}
+		& Rédaction des chapitres 1 à 3 & \textcolor{green!60!black}{Terminé} \\
+		& Rédaction du chapitre 4 & \textcolor{orange}{\textbf{En cours}} \\
+		& Relecture et mise en forme finale & \textcolor{blue}{\textbf{À faire}} \\
+		
+		\bottomrule
+	\end{tabularx}
+\end{table}
+L'utilisation de la méthode Kanban tout au long de ce projet a
+permis de maintenir une organisation rigoureuse et transparente,
+de livrer de manière incrémentale les différentes composantes de
+la plateforme et de l'analyse, et d'adapter continuellement les
+priorités en fonction de l'évolution des contraintes académiques
+et techniques. Elle constitue en ce sens un cadre méthodologique
+pleinement cohérent avec la nature exploratoire et itérative d'un
+projet de Data Sciences appliquées au développement d'une plateforme
+gouvernementale.
+\section{Structure du mémoire}
+
+Ce document est organisé en quatre chapitres. Le \textbf{Chapitre~1} présente la structure d'accueil et le déroulement du stage. Le \textbf{Chapitre~2} propose une revue de la littérature et un état de l'art sur les plateformes similaires. Le \textbf{Chapitre~3} décrit la méthodologie adoptée pour la conception et le développement de la plateforme. Enfin, le \textbf{Chapitre~4} présente et discute les résultats obtenus.
