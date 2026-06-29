@@ -1,4 +1,4 @@
-\begin{thebibliography}{21}
+\begin{thebibliography}{29}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -7,16 +7,22 @@
 
 \bibitem[{Acceor}(2024)]{acceor2024}
 {Acceor}.
-\newblock Plateformes b2b : Définition, fonctionnement et avantages pour les
+\newblock Plateformes b2b : D{'e}finition, fonctionnement et avantages pour les
   entreprises.
 \newblock \url{https://www.acceor.com/plateformes-b2b}, 2024.
-\newblock Consulté le 12 mars 2025.
+\newblock Consult{'e} le 12 mars 2025.
 
 \bibitem[{Alibaba Group}(2024)]{alibaba2024}
 {Alibaba Group}.
 \newblock Alibaba.com --- global b2b trade marketplace.
 \newblock \url{https://www.alibaba.com/}, 2024.
-\newblock Consulté le 12 mars 2025.
+\newblock Consult{'e} le 12 mars 2025.
+
+\bibitem[Anderson(2010)]{anderson_2010}
+David~J. Anderson.
+\newblock \emph{Kanban: Successful Evolutionary Change for Your Technology
+  Business}.
+\newblock Blue Hole Press, Sequim, WA, 2010.
 
 \bibitem[Anderson and Carmichael(2015)]{anderson2015essential}
 D.J. Anderson and A.~Carmichael.
@@ -25,89 +31,136 @@ D.J. Anderson and A.~Carmichael.
 \newblock ISBN 9780984521425.
 \newblock URL \url{https://books.google.cm/books?id=fHMCDQEACAAJ}.
 
-\bibitem[Beck et~al.(2001)]{beck_2001}
-Kent Beck et~al.
-\newblock Manifeste pour le d\'eveloppement agile de logiciels, 2001.
-\newblock URL \url{https://agilemanifesto.org}.
+\bibitem[Bardos(2001)]{bardos_2001}
+Max Bardos.
+\newblock \emph{Analyse discriminante~: application au risque et scoring
+  financier}.
+\newblock Dunod, Paris, 2001.
 
-\bibitem[{Fonds Monétaire International}(2023)]{fmi2023}
-{Fonds Monétaire International}.
-\newblock Perspectives de l'Économie mondiale : Navigating global divergences.
-\newblock World economic outlook, Fonds Monétaire International, Washington,
+\bibitem[Beck et~al.(2001)Beck, Beedle, van Bennekum, Cockburn, Cunningham,
+  Fowler, Grenning, Highsmith, Hunt, Jeffries, Kern, Marick, Martin, Mellor,
+  Schwaber, Sutherland, and Thomas]{beck2001}
+Kent Beck, Mike Beedle, Arie van Bennekum, Alistair Cockburn, Ward Cunningham,
+  Martin Fowler, James Grenning, Jim Highsmith, Andrew Hunt, Ron Jeffries, Jon
+  Kern, Brian Marick, Robert~C. Martin, Steve Mellor, Ken Schwaber, Jeff
+  Sutherland, and Dave Thomas.
+\newblock Manifeste pour le d{'e}veloppement agile de logiciels.
+\newblock \url{https://agilemanifesto.org/}, 2001.
+\newblock Consult{'e} le 5 juin 2025.
+
+\bibitem[Booch et~al.(1998)Booch, Rumbaugh, and Jacobson]{booch_1998}
+Grady Booch, James Rumbaugh, and Ivar Jacobson.
+\newblock \emph{The Unified Modeling Language User Guide}.
+\newblock Addison-Wesley, Reading, MA, 1998.
+
+\bibitem[{Fonds Mon{'e}taire International}(2023)]{fmi2023}
+{Fonds Mon{'e}taire International}.
+\newblock Perspectives de l'{'E}conomie mondiale : Navigating global
+  divergences.
+\newblock World economic outlook, Fonds Mon{'e}taire International, Washington,
   DC, USA, October 2023.
 
 \bibitem[{GECAM}(2019)]{gecam2019}
 {GECAM}.
-\newblock Rapport d'enquête sur les difficultés des entreprises membres du
-  groupement des entreprises du cameroun.
-\newblock Rapport d'enquête, Groupement des Entreprises du Cameroun, Yaoundé,
-  Cameroun, 2019.
+\newblock Rapport d'enqu{\^e}te sur les difficult{'e}s des entreprises membres
+  du groupement des entreprises du cameroun.
+\newblock Rapport d'enqu{\^e}te, Groupement des Entreprises du Cameroun,
+  Yaound{'e}, Cameroun, 2019.
+
+\bibitem[Husson et~al.(2009)Husson, Le, and Pag\`es]{husson_le_pages_2009}
+Fran\c{c}ois Husson, S\'ebastien Le, and J\'er\^ome Pag\`es.
+\newblock \emph{Analyse de donn\'ees avec R}.
+\newblock Presses Universitaires de Grenoble, Grenoble, 2009.
 
 \bibitem[{Institut National de la Statistique}(2023)]{ins2023}
 {Institut National de la Statistique}.
-\newblock Troisième recensement général des entreprises (rge3) ---
-  résultats préliminaires.
+\newblock Troisi{`e}me recensement g{'e}n{'e}ral des entreprises (rge3) ---
+  r{'e}sultats pr{'e}liminaires.
 \newblock Rapport statistique, Institut National de la Statistique du Cameroun,
-  Yaoundé, Cameroun, 2023.
+  Yaound{'e}, Cameroun, 2023.
+
+\bibitem[{Institut National de la Statistique (INS)}(2023)]{ins_rge_2023}
+{Institut National de la Statistique (INS)}.
+\newblock Rapport du recensement {G}{\'e}n{\'e}ral des entreprises du cameroun.
+\newblock Rapport statistique, Institut National de la Statistique,
+  Yaound{\'e}, Cameroun, 2023.
 
 \bibitem[{Larousse}(2024)]{larousse}
 {Larousse}.
 \newblock Dictionnaire larousse en ligne.
 \newblock \url{https://www.larousse.fr/dictionnaires/francais/}, 2024.
-\newblock Consulté le 1er mars 2025.
+\newblock Consult{'e} le 1er mars 2025.
+
+\bibitem[Lebart et~al.(1995)Lebart, Morineau, and
+  Piron]{lebart_morineau_piron_1995}
+Ludovic Lebart, Alain Morineau, and Marie Piron.
+\newblock \emph{Statistique exploratoire multidimensionnelle}.
+\newblock Dunod, Paris, 1995.
 
 \bibitem[{LinkedIn Corporation}(2024)]{linkedin2024}
 {LinkedIn Corporation}.
 \newblock About linkedin.
 \newblock \url{https://about.linkedin.com/}, 2024.
-\newblock Consulté le 12 mars 2025.
+\newblock Consult{'e} le 12 mars 2025.
 
 \bibitem[{Meta Platforms Inc.}(2024)]{meta2024}
 {Meta Platforms Inc.}
 \newblock Facebook marketplace.
 \newblock \url{https://www.facebook.com/marketplace/}, 2024.
-\newblock Consulté le 12 mars 2025.
+\newblock Consult{'e} le 12 mars 2025.
 
 \bibitem[{MINEPAT}(2009)]{minepat2009}
 {MINEPAT}.
-\newblock Document de stratégie pour la croissance et l'emploi (dsce)
+\newblock Document de strat{'e}gie pour la croissance et l'emploi (dsce)
   2010--2020.
-\newblock Rapport stratégique, Ministère de l'Économie, de la Planification
-  et de l'Aménagement du Territoire, Yaoundé, Cameroun, 2009.
+\newblock Rapport strat{'e}gique, Minist{`e}re de l'{'E}conomie, de la
+  Planification et de l'Am{'e}nagement du Territoire, Yaound{'e}, Cameroun,
+  2009.
 
 \bibitem[{MINEPAT}(2020)]{minepat2020}
 {MINEPAT}.
-\newblock Stratégie nationale de développement 2020--2030 (snd30).
-\newblock Rapport stratégique, Ministère de l'Économie, de la Planification
-  et de l'Aménagement du Territoire, Yaoundé, Cameroun, 2020.
+\newblock Strat{'e}gie nationale de d{'e}veloppement 2020--2030 (snd30).
+\newblock Rapport strat{'e}gique, Minist{`e}re de l'{'E}conomie, de la
+  Planification et de l'Am{'e}nagement du Territoire, Yaound{'e}, Cameroun,
+  2020.
 
 \bibitem[{MINEPAT}(2022)]{minepat2022}
 {MINEPAT}.
-\newblock Stratégie de développement du secteur de l'industrie et des
+\newblock Strat{'e}gie de d{'e}veloppement du secteur de l'industrie et des
   services (sdsis).
-\newblock Document de stratégie sectorielle, Ministère de l'Économie, de la
-  Planification et de l'Aménagement du Territoire, Yaoundé, Cameroun, 2022.
+\newblock Document de strat{'e}gie sectorielle, Minist{`e}re de l'{'E}conomie,
+  de la Planification et de l'Am{'e}nagement du Territoire, Yaound{'e},
+  Cameroun, 2022.
+
+\bibitem[{MINEPAT}(2023)]{minepat2023}
+{MINEPAT}.
+\newblock Enqu{\^e}te sur le climat des affaires au cameroun aupr{`e}s des
+  chefs d'entreprises du secteur industriel.
+\newblock Rapport d'enqu{\^e}te, Minist{`e}re de l'{'E}conomie, de la
+  Planification et de l'Am{'e}nagement du Territoire, Yaound{'e}, Cameroun,
+  2023.
 
 \bibitem[{MINEPAT}(2025)]{minepat2025}
 {MINEPAT}.
-\newblock Rapport de revue à mi-parcours de la stratégie nationale de
-  développement snd30.
-\newblock Rapport d'évaluation, Ministère de l'Économie, de la Planification
-  et de l'Aménagement du Territoire, Yaoundé, Cameroun, January 2025.
+\newblock Rapport de revue {`a} mi-parcours de la strat{'e}gie nationale de
+  d{'e}veloppement snd30.
+\newblock Rapport d'{'e}valuation, Minist{`e}re de l'{'E}conomie, de la
+  Planification et de l'Am{'e}nagement du Territoire, Yaound{'e}, Cameroun,
+  January 2025.
 
 \bibitem[{MINPMEESA}(2023)]{minpmeesa}
 {MINPMEESA}.
 \newblock Bourses de sous-traitance et de partenariat (bstp).
-\newblock Document de présentation institutionnel, 2023.
-\newblock Ministère des Petites et Moyennes Entreprises, de l'Économie
-  Sociale et de l'Artisanat, Yaoundé, Cameroun.
+\newblock Document de pr{'e}sentation institutionnel, 2023.
+\newblock Minist{`e}re des Petites et Moyennes Entreprises, de l'{'E}conomie
+  Sociale et de l'Artisanat, Yaound{'e}, Cameroun.
 
 \bibitem[{OCDE}(2021)]{ocde2021}
 {OCDE}.
-\newblock Perspectives économiques de l'afrique 2021 : De la dépendance à
-  l'autonomisation.
-\newblock Rapport économique, Organisation de Coopération et de
-  Développement Économiques, Paris, France, 2021.
+\newblock Perspectives {'e}conomiques de l'afrique 2021 : De la d{'e}pendance
+  {`a} l'autonomisation.
+\newblock Rapport {'e}conomique, Organisation de Coop{'e}ration et de
+  D{'e}veloppement {'E}conomiques, Paris, France, 2021.
 
 \bibitem[Ohno(1988)]{ohno_1988}
 Taiichi Ohno.
@@ -116,23 +169,28 @@ Taiichi Ohno.
 
 \bibitem[{Oser Entreprendre}(2023)]{oserentreprendre}
 {Oser Entreprendre}.
-\newblock Cartographie des besoins en compétences : Un outil stratégique pour
-  les entreprises.
+\newblock Cartographie des besoins en comp{'e}tences : Un outil strat{'e}gique
+  pour les entreprises.
 \newblock \url{https://www.oserentreprendre.fr/}, 2023.
-\newblock Consulté le 5 avril 2025.
+\newblock Consult{'e} le 5 avril 2025.
 
-\bibitem[{République du Cameroun}(2008)]{decret2008}
-{République du Cameroun}.
-\newblock Décret n° 2008/220 du 4 juillet 2008 portant organisation du
-  ministère de l'Économie, de la planification et de l'aménagement du
+\bibitem[{R{'e}publique du Cameroun}(2008)]{decret2008}
+{R{'e}publique du Cameroun}.
+\newblock D{'e}cret n° 2008/220 du 4 juillet 2008 portant organisation du
+  minist{`e}re de l'{'E}conomie, de la planification et de l'am{'e}nagement du
   territoire.
-\newblock Décret présidentiel, Présidence de la République du Cameroun,
-  Yaoundé, Cameroun, 2008.
+\newblock D{'e}cret pr{'e}sidentiel, Pr{'e}sidence de la R{'e}publique du
+  Cameroun, Yaound{'e}, Cameroun, 2008.
 
 \bibitem[Saporta(2010)]{saporta_2010}
 Gilbert Saporta.
-\newblock \emph{Probabilités, Analyse des Données et Statistique}.
+\newblock \emph{Probabilit{'e}s, Analyse des Donn{'e}es et Statistique}.
 \newblock Technip, Paris, France, 3 edition, 2010.
+
+\bibitem[Tardieu et~al.(1983)Tardieu, Rochfeld, and Coletti]{tardieu_1983}
+Hubert Tardieu, Arnold Rochfeld, and Ren{\'e} Coletti.
+\newblock \emph{La m{\'e}thode {MERISE}~: Principes et outils}.
+\newblock Les {\'E}ditions d'Organisation, Paris, 1983.
 
 \bibitem[Williamson(1985)]{williamson1985}
 Oliver~E. Williamson.

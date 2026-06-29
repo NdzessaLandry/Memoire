@@ -1,9 +1,10 @@
 \babel@toc {french}{}\relax 
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {1.1}{\ignorespaces Organigramme simplifié du \gls {minepat} (lieu de stage mis en évidence)}}{8}{figure.caption.11}%
+\contentsline {figure}{\numberline {1.1}{\ignorespaces Organigramme simplifié du \gls {minepat}}}{8}{figure.caption.11}%
+\contentsline {figure}{\numberline {1.2}{\ignorespaces Méthode agile Kanban en image}}{15}{figure.caption.12}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces récapitulatif de l'enquête du GECAM}}{20}{figure.caption.12}%
-\contentsline {figure}{\numberline {2.2}{\ignorespaces Découpage des zones de recensement }}{23}{figure.caption.13}%
+\contentsline {figure}{\numberline {2.1}{\ignorespaces récapitulatif de l'enquête du GECAM}}{21}{figure.caption.13}%
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Découpage des zones de recensement }}{23}{figure.caption.14}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
@@ -30,12 +31,7 @@
 \contentsline {figure}{\numberline {5.21}{\ignorespaces Répartition des classes par région}}{68}{figure.caption.40}%
 \contentsline {figure}{\numberline {5.22}{\ignorespaces Projection des entreprises et des centres de classes sur les axes discriminants de l'AFD}}{69}{figure.caption.41}%
 \contentsline {figure}{\numberline {5.23}{\ignorespaces Architecture en trois couches de la plateforme \textit {Business Partnership}}}{72}{figure.caption.44}%
-\contentsline {figure}{\numberline {5.24}{\ignorespaces Page d'accueil de la plateforme \textit {Business Partnership}}}{74}{figure.caption.45}%
-\contentsline {figure}{\numberline {5.25}{\ignorespaces Tableau de bord de l'espace personnel d'une entreprise}}{75}{figure.caption.46}%
-\contentsline {figure}{\numberline {5.26}{\ignorespaces Formulaire de saisie des besoins de l'entreprise}}{76}{figure.caption.47}%
-\contentsline {figure}{\numberline {5.27}{\ignorespaces Page de recommandations de partenaires potentiels}}{77}{figure.caption.48}%
-\contentsline {figure}{\numberline {5.28}{\ignorespaces Tableau de bord de l'espace administrateur}}{78}{figure.caption.49}%
-\contentsline {figure}{\numberline {5.29}{\ignorespaces Diagramme de séquence du module de recommandation lors d'une requête utilisateur}}{82}{figure.caption.50}%
+\contentsline {figure}{\numberline {5.24}{\ignorespaces Diagramme de séquence du module de recommandation lors d'une requête utilisateur}}{78}{figure.caption.45}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
