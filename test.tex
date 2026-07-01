@@ -247,6 +247,8 @@ justification=centering
 \newacronym{dgcoop}{DGCOOP}{Direction Générale de la Coopération et de
 	l'Intégration Régionale}
 \newacronym{dag}{DAG}{Direction des Affaires Générales}
+\newacronym{uml}{UML}{Unified Modeling Language}
+\newacronym{orm}{ORM}{Object Relational Mapping}
 \newacronym{acm}{ACM}{Analyse des Correspondances Multiples}
 \newacronym{cah}{CAH}{Classification Ascendante Hièrarchique}
 \newacronym{afd}{AFD}{Analyse Factorielle Discriminante}
@@ -453,20 +455,25 @@ justification=centering
 \chapter*{Résumé}
 \addcontentsline{toc}{chapter}{Résumé}
 \thispagestyle{plain}
-Le secteur privé camerounais fait face à des difficultés manifestes qui entravent sa croissance et sa pérennité. Afin de dynamiser ce secteur, le présent travail s'articule autour d'un double objectif : analyser les données d'une enquête nationale initiée par le \gls{minepat} pour cartographier précisément les besoins des entreprises, puis exploiter ces insights statistiques pour concevoir le moteur d'une plateforme numérique de mise en relation partenariale. Face à des données essentiellement catégorielles, une démarche d'analyse de données a été déployée, combinant des analyses descriptives (univariées et bivariées) et des méthodes d'analyse de données multidimensionnelles. L'analyse des données de l'enquête indique que $96{,}23\,\%$ des structures recensées souffrent d'un déficit critique de financement, tandis que le secteur d'activité s'impose comme la variable la plus discriminante pour segmenter la nature de leurs besoins. De plus, une forte dépendance statistique est mise en évidence entre l'ancienneté des entreprises et leurs exigences en matière de recherche et d'innovation. L'utilisation de l'algorithme de \gls{cah} (algorithme de classification) a permis de faire ressortir trois catégories d'entreprises dont la première dénomée \textbf{Les acteurs de l'Agro-productifs emergants} renvoie à des petites entreprises évoluant pour la plupart dans le secteur de l'agroalimentaire(81,1\%) et ayant majoritairement une durée de vie de vie de 5 à 9ans. La deuxième catégorie identifiée comme \textbf{Les Opérateurs Financiers et autres services établis} represente les entreprises  qui ont à 26,6 \% plus de 20 ans d'ancienneté et offrant pour la plupart des services financiers et bancaires. La troisième catégorie a été nommé \textbf{Les petites entreprises multisectorielles} sont des entreprises naissante évoluant à 68,8 \% dans des secteurs autres que celui de l'agro-alimentaire. Enfin, les structures de corrélation et les profils ainsi dégagés ont été capitalisés pour développer l'algorithme d'appariement (\textit{matching}) qui alimente la plateforme numérique «~Business Partnership~».\vspace{0.5cm}\noindent \textbf{Mots-clés :} Plateforme numérique, cartographie des besoins, algorithme d'appariement, secteur privé.
+Le secteur privé camerounais fait face à des difficultés manifestes qui entravent sa croissance et sa pérennité. Afin de dynamiser ce tissu économique, le présent travail s'articule autour d'un double objectif : analyser les données d'une enquête nationale initiée par le \gls{minepat} pour cartographier précisément les besoins des entreprises, puis concevoir une plateforme numérique de mise en relation de ces acteurs. Face à des données essentiellement catégorielles, une démarche d'analyse multidimensionnelle combinant statistiques descriptives (univariées et bivariées) et classification automatique a été déployée. L'analyse révèle que $96{,}23\,\%$ des structures recensées souffrent d'un déficit critique de financement, le secteur d'activité s'imposant comme la variable la plus discriminante pour segmenter la nature de leurs besoins. De plus, une forte dépendance statistique est mise en évidence entre l'ancienneté des entreprises et leurs exigences en matière de recherche et d'innovation. L'application de la Classification Ascendante Hiérarchique (CAH) a permis de partitionner le tissu entrepreneurial en trois profils distincts. La première catégorie, qualifiée d'acteurs agro-productifs émergents, regroupe de petites structures évoluant majoritairement dans l'agroalimentaire ($81{,}1\,\%$) et ayant une ancienneté de 5 à 9 ans. La deuxième catégorie, identifiée comme les opérateurs financiers et autres services établis, représente des entreprises plus matures, dont $26{,}6\,\%$ affichent plus de 20 ans d'existence, orientées principalement vers les services financiers et bancaires. Enfin, la troisième catégorie, nommée les petites entreprises multisectorielles, est constituée de jeunes structures en phase de démarrage opérant à $68{,}8\,\%$ dans des secteurs diversifiés hors agroalimentaire. Le second volet de ce travail est consacré au développement de la plateforme «~Business Partnership~». Adoptant une approche orientée vers la performance, la base de données sous-jacente a fait l'objet d'une modélisation dimensionnelle, optimisant ainsi la fluidité et l'efficacité des requêtes SQL lors des recherches de partenariats.
 
+\vspace{0.5cm}
+\noindent \textbf{Mots-clés :} Plateforme numérique, cartographie des besoins, modélisation dimensionnelle, secteur privé, classification ascendante hiérarchique.
 %	[Insérer ici le résumé en français — environ 200 à 300 mots décrivant le contexte, les objectifs, la méthodologie et les résultats principaux de votre travail.]
 	
 	\vspace{1cm}
-	
-	\begin{center}
-		\rule{0.5\linewidth}{0.4pt}
-	\end{center}
-	
+
 	\chapter*{Abstract}
 	\addcontentsline{toc}{chapter}{Abstract}
 	\thispagestyle{plain}
+	The Cameroonian private sector faces pronounced challenges that hinder its growth and sustainability. To revitalize this economic framework, this study revolves around a dual objective: analyzing data from a national survey initiated by the \gls{minepat} to accurately map business needs, and subsequently designing a digital matchmaking platform for these stakeholders. Given the predominantly categorical nature of the data, a multidimensional data analysis approach was deployed, combining univariate and bivariate descriptive statistics with automatic classification.
 	
+	The analysis reveals that $96.23\,\%$ of the surveyed structures suffer from a critical funding deficit, with the business sector emerging as the most discriminating variable for segmenting the nature of their needs. Furthermore, a strong statistical dependence is highlighted between the seniority of the companies and their requirements regarding research and innovation. The application of Hierarchical Cluster Analysis (\gls{cah}) enabled the partitioning of the entrepreneurial landscape into three distinct profiles. The first category, described as emerging agro-productive actors, clusters small entities operating mainly in the agrifood sector ($81.1\,\%$) with an operational seniority of 5 to 9 years. The second category, identified as established financial operators and other services, represents more mature companies, $26.6\,\%$ of which have been operating for over 20 years, focusing primarily on banking and financial services. Finally, the third category, termed small multisectoral enterprises, consists of young startup structures operating at $68.8\,\%$ in diversified sectors outside of agribusiness.
+	
+	The second phase of this work is dedicated to developing the "Business Partnership" platform. Adopting a performance-oriented approach, the underlying database underwent dimensional modeling, thereby optimizing the fluidity and efficiency of SQL queries during partnership searches.
+	
+	\vspace{0.5cm}
+	\noindent \textbf{Keywords:} Digital platform, needs mapping, dimensional modeling, private sector, hierarchical cluster analysis.
 %	\textbf{Keywords:} Digital platform, business mapping, matching system, Data Sciences, MINEPAT, private sector, Cameroon.
 	
 	\medskip
@@ -744,9 +751,7 @@ cycle d'analyse économique~:
 	\begin{itemize}
 		\item Décrire l’état des besoins exprimés par les entreprises locales;
 		\item Analyser les besoins en fonction des caractéristiques des entreprises;
-		\item Proposer une classification des entreprises locales selon leurs besoins et leurs profils;
-		\item Proposer un modèle de classification des entreprises;
-		\item Concevoir l’architecture d’une plateforme gouvernementale de cartographie et de mise en relation;
+		\item Concevoir l’architecture d’une plateforme gouvernementale de mise en relation;
 		\item  Développer et tester un prototype fonctionnel de cette plateforme.
 	\end{itemize}
 	%=============================================================
@@ -757,7 +762,7 @@ cycle d'analyse économique~:
 	%-------------------------------------------------------------
 	
 	Afin de répondre à la problématique centrale de ce travail ---
-	à savoir la conception d'un modèle de classification et d'une plateforme gouvernementale permettant
+	à savoir la d'une plateforme gouvernementale permettant
 	la mise en relation des entreprises une
 	démarche méthodologique structurée en deux axes complémentaires
 	a été adoptée, articulant une approche analytique fondée sur le
@@ -813,28 +818,18 @@ cycle d'analyse économique~:
 	\subsubsection{Méthodologie de conception de la plateforme}
 	Le second axe de la démarche porte sur la conception et le
 	développement de la plateforme numérique gouvernementale
-	\textit{Business Partnership}, dont l'architecture et les
-	fonctionnalités sont directement informées par les résultats
-	de l'analyse statistique. La conception de la base de données
-	a été réalisée selon la méthode \textbf{MERISE}, en élaborant
-	successivement le Modèle Conceptuel des Données (MCD), le
-	Modèle Logique des Données (MLD) et le Modèle Physique des
-	Données (MPD), afin de garantir une structure relationnelle
+	\textit{Business Partnership}. La conception de la base de données
+	a été réalisée selon la méthode \textbf{dimensionnelle} où deux tables de dimensions et une table de fait ont été créé. Nous avons élaborer
+	ce schéma de la base de données via l'\gls{orm} de Django, afin de garantir une structure relationnelle
 	cohérente, évolutive et adaptée aux exigences fonctionnelles
-	de la plateforme \citep{tardieu_1983}. Le développement de
-	l'application a été conduit sous le framework \textbf{Django}
-	du langage Python, en suivant le paradigme MVT
+	de la plateforme. Le développement de
+	l'application a été conduit en suivant le paradigme MVT
 	(Modèle-Vue-Template) qui assure une séparation nette des
 	responsabilités entre la logique de données, la logique métier
 	et la couche de présentation.
 	
 	Le c\oe ur fonctionnel 
-	de la plateforme est constitué de deux moteurs de mise en relation. Dont le premier repose
-	sur le calcul des \textbf{probabilités de Bayes}. Pour les entreprises nouvellement
-	inscrites une projection sur les différents axes factorielles issues de l' \gls{acm} est réalisée puis sur les axes discriminants obtenus par l'\gls{afd}. Ensuite une probabilité d'appartenance à chaque classe est calculée afin d'obtenir la classe la plus probable pour l'entreprise. Le deuxième moteur de mise en relation est obtenue par le calcul d'une proportion.
-	Considéront par $B$ l'ensemble des besoins d'une entreprise $e_1$ et $O$ l'ensemble des offres d'une entreprise $e_2$
-	l'entreprise $e_2$ est mise en relation avec l'entreprise $e_1$ si $\frac{|B\cap O|}{|B|} \geq 0.6$. 
-	Où $|X|$ mesure le cardinal de l'ensemble $X$.
+	de la plateforme est une requete SQL qui permet de mettre en relation des entreprises ayant des besoins et des offres de services communs. 
 	
 	  La gestion de projet a été conduite selon la méthode
 	agile \textbf{Kanban}, qui a permis de maintenir une organisation
@@ -1131,7 +1126,7 @@ ce qui limite leur capacité à en tirer parti pour se faire connaître
 
 \section*{Conclusion}
 
-La cartographie des besoins des entreprises considérée ici comme l'opération consistant à proposer une distribution des manquements des entreprises vient  s'ajouter à la liste d'initiative en vue de s'enquerir des besoins des entreprises, de dynamiser le secteur privé et d'accélérer la croissance économique. Tout ceci passerait au delà des actions ciblées sur la base des résultats des analyses obtenues mais aussi par la capacité des entreprises privés à cheminer ensemble. Bien d'outils permettent effectivement aux entreprises d'établir des raprochements mais jusqu'ici aucun d'eux ne saisi le problème dans sa globalité.
+La cartographie des besoins des entreprises, définie ici comme la mise en lumière et la distribution des manquements du secteur privé, s'ajoute aux initiatives existantes visant à cerner les attentes des opérateurs économiques, à dynamiser le secteur privé et à accélérer la croissance. Au-delà des actions ciblées découlant des résultats d'analyse, le succès de cette démarche repose également sur la capacité des entreprises à collaborer et à cheminer ensemble. Si de nombreux outils permettent déjà d'établir des rapprochements, aucun d'entre eux n'a jusqu'à présent appréhendé cette problématique dans sa globalité.
 	%============================================================
 	%  CHAPITRE 3 : MÉTHODOLOGIE
 	%============================================================
@@ -1321,10 +1316,11 @@ La cartographie des besoins des entreprises considérée ici comme l'opération 
 			la page d'accueil de la plateforme~;
 			\item Il renseigne les informations obligatoires~: raison sociale,
 			statut juridique, région, secteur d'activité, adresse
-			électronique et mot de passe~;
+			électronique et mot de passe, documents; 
 			\item Il soumet le formulaire~;
 			\item Le système vérifie la validité et la cohérence des
 			informations saisies~;
+			\item L'administrateur de la plateforme examine les informations envoyées et valide ou invalide la création du compte.
 		\end{itemize}
 		\textbf{Exceptions~:} Adresse électronique déjà utilisée~;
 		informations incomplètes ou incohérentes.
@@ -1353,33 +1349,11 @@ La cartographie des besoins des entreprises considérée ici comme l'opération 
 		\textbf{Scénario nominal~:}
 		\begin{enumerate}
 			\item L'utilisateur accède à la secttion définir mes besoins automatiquement après l'enregistrement;
-			\item Il sélectionne la catégorie de besoin parmi les types
-			proposés (financement, équipements, intrants, transport,
-			emballages, appui institutionnel, innovation)~;
-			\item Il choisi le type de mise en relation qui l'arrange;
-			\item Il soumet le besoin~;
-			\item Le système enregistre le besoin et déclenche la mise à
-			jour des recommandations de partenaires.
+			\item Il défini ses besoins par services;
+			\item Il défini également ses offres par service;
+			\item La mise en relation se fait instantanément sur la base des entreprises déjà enregistrées.
 		\end{enumerate}
 		
-	
-	\subsubsection{Moteur de recommandation et mise en relation}
-	
-
-		\textbf{Acteur principal~:} Entreprise \\
-		\textbf{Préconditions~:} Au moins un besoin a été saisi par
-		l'entreprise \\
-		\textbf{Scénario nominal~:}
-		\begin{enumerate}
-			\item L'utilisateur accède à la section \og{}Mes recommandations\fg{}~;
-			\item Si l'utilisateur a choisi la mise en relation des entreprises proposées par le \gls{minepat} alors;
-			\item Le système calcule la probabilité d'appartenance à chaque classe et retient la classe avec la plus grande probabilité;
-			\item Sinon;
-			\item Le système recherche les entreprises qui peuvent le plus répondre à ses besoins ayant renseignées leurs offres;
-			\item Il peut accéder au profil complet d'une entreprise
-			recommandée.
-		\end{enumerate}
-	
 \subsubsection{Administration de la plateforme}
 	
 
@@ -1391,6 +1365,7 @@ La cartographie des besoins des entreprises considérée ici comme l'opération 
 		\item Il consulte les indicateurs clés de la plateforme :
 		nombre d'entreprises enregistrées, nombre de besoins
 		saisis, nombre de mises en relation initiées;
+		\item Il valide ou invalide une demande d'adhésion;
 		\item Il accède à la liste complète des entreprises et peut
 		consulter, modifier ou suspendre tout profil.
 	\end{itemize}
@@ -1463,19 +1438,6 @@ La cartographie des besoins des entreprises considérée ici comme l'opération 
 	utilisateurs camerounais. L'interface doit être rédigée intégralement
 	en \textbf{langue française}.
 	
-	\subsubsection{Exigences de maintenabilité et d'évolutivité}
-	
-	La plateforme doit être conçue selon les principes de l'architecture
-	logicielle propre (\textit{clean architecture}), de manière à
-	faciliter sa maintenance corrective et évolutive par des équipes
-	techniques qui n'auraient pas participé à son développement initial.
-	Le code source doit être intégralement documenté et versionné
-	à l'aide du système Git, et déposé sur un dépôt accessible aux
-	équipes techniques du \gls{minepat}. La base de données doit
-	être conçue de manière modulaire, afin de permettre l'ajout de
-	nouvelles variables d'analyse ou de nouvelles fonctionnalités
-	sans nécessiter une refonte complète de l'architecture existante.
-	
 
 	%=============================================================
 	\subsubsection{Diagramme des cas d'usage}
@@ -1489,15 +1451,25 @@ La cartographie des besoins des entreprises considérée ici comme l'opération 
 	communiquer de manière claire et non ambiguë les exigences
 	fonctionnelles du système à l'ensemble des parties prenantes du
 	projet, qu'elles soient techniques ou non \citep{booch_1998}.
+	\begin{figure}[htbp]
+		\centering
+		\includegraphics[width=0.85\textwidth]{UseCase1.png}
+		\caption{Diagramme de cas d'utilisation -- Vue Entreprise}
+		\label{fig:uc_entreprise}
+	\end{figure}
 	
+	\begin{figure}[htbp]
+		\centering
+		\includegraphics[width=0.85\textwidth]{UseCase2.png}
+		\caption{Diagramme de cas d'utilisation -- Vue Agent Minist\`ere}
+		\label{fig:uc_agent}
+	\end{figure}
 	
 \section*{Conclusion}
-	Ce cahier des charges constitue le document contractuel de référence
-	sur lequel s'est fondé l'ensemble du processus de conception et de
-	développement de la plateforme \textit{Business Partnership}. Il sera donc principalement question pour cette plateforme, de permettre une double mise en relation une sur la base des entreprises rescencées par le \gls{minepat} et une autre sur la base des entreprises déjà enregistrées dans la plateforme et offrant des services précis.
+	Ce cahier des charges constitue le document contractuel de référence sur lequel s'est fondé l'ensemble du processus de conception et de développement de la plateforme \textit{Business Partnership}. Cette dernière a pour vocation principale de faciliter la mise en relation des entreprises conformes.
 	
 	
-	\chapter{Analyse, conception et modélisation}
+	\chapter{Cartographie des besoins, conception et modélisation de la plateforme}
 	Il sera question dans ce chapitre de présenter premièrement la méthodologie utilisée en vue du traitement des données issues de  l’enquête réalisée par le MINEPAT sur la cartographie des besoins des entreprises. Nous débuterons par une présentation des données à travers la description de la source de données, des variables et en fin les méthodes de traitements de ces données. S’en suivra enfin la présentation de la conception de la plateforme gouvernementale et des techniques utilisées.
 	\label{chap:methodo}
 	
@@ -1737,144 +1709,78 @@ Lorsque le test du $\chi^2$ indique une association significative, l’intensit�
 	Les contributions des modalités permettent de repérer les catégories qui jouent le rôle le plus important dans la construction des axes. Une modalité fortement contributive participe fortement à la différenciation des entreprises. Le cosinus carré complète cette information en indiquant si la modalité est bien représentée sur l’axe considéré. Une modalité à la fois fortement contributive et bien représentée est particulièrement utile pour interpréter l’axe. À l’inverse, une modalité très rare ou faiblement représentée doit être commentée avec prudence, même lorsqu’elle apparaît visible sur la carte factorielle.\\
 	
 	Les cartes factorielles issues de l’ACM facilitent la lecture des relations entre profils et besoins. Sur la carte des modalités, deux modalités proches peuvent être interprétées comme associées. Par exemple, la proximité entre une catégorie de taille d’entreprise et un besoin donné peut suggérer que ce besoin est plus fréquent pour cette catégorie. Les modalités éloignées du centre sont celles qui différencient le plus les entreprises, tandis que les modalités proches du centre sont moins discriminantes. Sur la carte des individus, chaque point représente une entreprise ; les entreprises proches les unes des autres présentent des profils relativement similaires.
-		\paragraph{Formalisation mathématique}
-		Soit un tableau de données $X$ composé de $n$ individus (entreprises)
-		décrits par $p$ variables qualitatives $Q_1, Q_2, \ldots, Q_p$, où la
-		variable $Q_j$ admet $m_j$ modalités. Le nombre total de modalités est
-		noté $m = \sum_{j=1}^{p} m_j$. L'ACM repose sur la transformation de
-		ce tableau en un \textbf{tableau disjonctif complet} (TDC) $Z$ de
-		dimension $n \times m$, dans lequel chaque variable qualitative $Q_j$
-		est recodée en $m_j$ variables binaires~:
-		
-		\begin{equation}
-			z_{ik}^{(j)} =
-			\begin{cases}
-				1 & \text{si l'individu } i \text{ présente la modalité } k
-				\text{ de la variable } Q_j \\
-				0 & \text{sinon}
-			\end{cases}
-			\label{eq:tdc}
-		\end{equation}
-	Le tableau de Burt $\mathbf{B}$ est défini comme le produit :
+	\paragraph{Formalisation mathématique}
+	Soit un tableau de données $X$ composé de $n$ individus (entreprises) décrits par $p$ variables qualitatives $Q_1, Q_2, \ldots, Q_p$, où chaque variable $Q_j$ admet $m_j$ modalités. Le nombre total de modalités est noté $m = \sum_{j=1}^{p} m_j$. L'ACM repose sur la transformation de ce tableau en un \textbf{tableau disjonctif complet} (TDC) $\mathbf{Z}$ de dimension $n \times m$, dans lequel chaque variable qualitative $Q_j$ est recodée en $m_j$ variables binaires~:
 	
 	\begin{equation}
-		\mathbf{B} = \mathbf{Z}^{\top} \mathbf{Z} \in \mathbb{R}^{K \times K}.
+		z_{ik}^{(j)} =
+		\begin{cases}
+			1 & \text{si l'individu } i \text{ présente la modalité } k \text{ de la variable } Q_j \\
+			0 & \text{sinon}
+		\end{cases}
+		\label{eq:tdc}
+	\end{equation}
+	
+	Le tableau de Burt $\mathbf{B}$ est défini comme le produit symétrique~:
+	\begin{equation}
+		\mathbf{B} = \mathbf{Z}^{\top} \mathbf{Z} \in \mathbb{R}^{m \times m}
 		\label{eq:burt}
 	\end{equation}
+	Il regroupe en sous-blocs les tableaux de contingence croisés entre toutes les paires de variables, tandis que ses blocs diagonaux contiennent les effectifs marginaux de chaque modalité.
 	
-	Il regroupe en sous-blocs les tableaux de contingence croisés entre toutes les paires
-	de variables, et les tableaux diagonaux contenant les effectifs marginaux de chaque
-	modalité.
-	
-	On définit les matrices diagonales de pondération :
-	
+	On définit la matrice des fréquences relatives $\mathbf{P} = \frac{1}{np}\mathbf{Z}$. Les matrices diagonales de pondération des lignes ($\mathbf{D}_r$) et des colonnes ($\mathbf{D}_c$) sont alors définies par~:
 	\begin{equation}
-		\mathbf{D}_r = \frac{1}{nQ}\,\mathbf{Z}^{\top}\mathbf{1}_n, \qquad
-		\mathbf{D}_c = \frac{1}{nQ}\,\mathbf{Z}^{\top}\mathbf{1}_n,
+		\mathbf{D}_r = \text{diag}(\mathbf{r}) = \frac{1}{n}\mathbf{I}_n \qquad \text{et} \qquad \mathbf{D}_c = \text{diag}(\mathbf{c}) = \frac{1}{np}\mathbf{Z}^{\top}\mathbf{1}_n
 	\end{equation}
+	où $\mathbf{1}_n$ est le vecteur unité de taille $n$, $\mathbf{r} = \mathbf{P}\mathbf{1}_m = \frac{1}{n}\mathbf{1}_n$ et $\mathbf{c} = \mathbf{P}^{\top}\mathbf{1}_n$ représentent respectivement les vecteurs des marges lignes et colonnes de $\mathbf{P}$.
 	
-	où $\mathbf{1}_n$ est le vecteur unité de taille $n$. La matrice des profils ligne
-	(profils des individus sur les modalités) est :
-	
+	La structure des liaisons est étudiée à travers la matrice des écarts à l'indépendance $\mathbf{S}$~:
 	\begin{equation}
-		\mathbf{P} = \frac{1}{nQ}\,\mathbf{Z}.
-		\label{eq:profils}
-	\end{equation}
-	
-	La matrice à décomposer est alors la matrice des écarts à l'indépendance :
-	
-	\begin{equation}
-		\mathbf{S} = \mathbf{D}_r^{-1/2}
-		\left(\mathbf{P} - \mathbf{r}\,\mathbf{c}^{\top}\right)
-		\mathbf{D}_c^{-1/2},
+		\mathbf{S} = \mathbf{D}_r^{-1/2} \left(\mathbf{P} - \mathbf{r}\mathbf{c}^{\top}\right) \mathbf{D}_c^{-1/2}
 		\label{eq:ecarts}
 	\end{equation}
 	
-	où $\mathbf{r} = \mathbf{P}\,\mathbf{1}_K$ et $\mathbf{c} = \mathbf{P}^{\top}\mathbf{1}_n$
-	sont respectivement les marges lignes et colonnes de $\mathbf{P}$.
-	
-	% --- 1.4 Décomposition en valeurs singulières et vecteurs propres ---
-	
-	
-	L'ACM repose sur la Décomposition en Valeurs Singulières (DVS) de la matrice
-	$\mathbf{S}$ définie en~\eqref{eq:ecarts} :
-	
+	\paragraph{Décomposition en valeurs singulières}
+	L'extraction des axes factoriels repose sur la Décomposition en Valeurs Singulières (DVS) de la matrice $\mathbf{S}$~:
 	\begin{equation}
-		\mathbf{S} = \mathbf{U}\,\boldsymbol{\Sigma}\,\mathbf{V}^{\top},
+		\mathbf{S} = \mathbf{U}\,\boldsymbol{\Sigma}\,\mathbf{V}^{\top}
 		\label{eq:svd}
 	\end{equation}
+	où $\mathbf{U} \in \mathbb{R}^{n \times r}$ et $\mathbf{V} \in \mathbb{R}^{m \times r}$ sont les matrices des vecteurs singuliers orthogonaux à gauche et à droite, et $\boldsymbol{\Sigma} = \mathrm{diag}(\sigma_1, \dots, \sigma_r)$ est la matrice des valeurs singulières triées par ordre décroissant. Les valeurs propres de l'ACM sont données par $\lambda_s = \sigma_s^2$.
 	
-	où :
-	\begin{itemize}
-		\item $\mathbf{U} \in \mathbb{R}^{n \times r}$ contient les vecteurs singuliers
-		gauches (vecteurs propres des individus) ;
-		\item $\mathbf{V} \in \mathbb{R}^{K \times r}$ contient les vecteurs singuliers
-		droits (vecteurs propres des modalités) ;
-		\item $\boldsymbol{\Sigma} = \mathrm{diag}(\sigma_1, \sigma_2, \ldots, \sigma_r)$
-		est la matrice diagonale des valeurs singulières, avec
-		$\sigma_1 \geq \sigma_2 \geq \cdots \geq \sigma_r \geq 0$.
-	\end{itemize}
-	
-	Les valeurs propres associées à chaque axe factoriel sont :
-	
+	Le taux d'inertie brut associé à l'axe $s$ est calculé par~:
 	\begin{equation}
-		\lambda_s = \sigma_s^2, \quad s = 1, \ldots, r.
-		\label{eq:valeurs_propres}
+		\tau_s = \frac{\lambda_s}{\sum_{s'=1}^{r} \lambda_{s'}} = \frac{\lambda_s}{\frac{m}{p} - 1}
+		\label{eq:inertie_brute}
 	\end{equation}
+	\cite{saporta_2010}
 	
-	Les vecteurs propres $\mathbf{v}_s$ (colonnes de $\mathbf{V}$) sont solutions du
-	problème aux valeurs propres :
+	\paragraph{Correction des valeurs propres de Benzécri}
+	En ACM, le codage disjonctif complet introduit de l'inertie artificielle liée aux liaisons intra-variables. Cela induit une sous-estimation sévère de la part de variance expliquée par les premiers axes factoriels ($\tau_s$). Pour pallier ce biais,Benzécri a proposé une réévaluation des valeurs propres.
 	
+	La correction s'applique exclusivement aux axes dont la valeur propre brute est supérieure au seuil d'exclusion $\frac{1}{p}$ (où $p$ est le nombre de variables qualitatives). Pour ces axes, la valeur propre corrigée $\tilde{\lambda}_s$ est définie par~:
 	\begin{equation}
-		\mathbf{S}^{\top}\mathbf{S}\,\mathbf{v}_s = \lambda_s\,\mathbf{v}_s,
-		\qquad \|\mathbf{v}_s\| = 1.
-		\label{eq:vp_modalites}
+		\tilde{\lambda}_s = \left( \frac{p}{p - 1} \right)^2 \left( \lambda_s - \frac{1}{p} \right)^2 \quad \text{si } \lambda_s > \frac{1}{p}
+		\label{eq:benzecri}
 	\end{equation}
-	
-	La part de variance totale expliquée par l'axe $s$ est mesurée par le taux d'inertie :
-	
+	Pour les axes dont $\lambda_s \le \frac{1}{p}$, la valeur propre corrigée est fixée à $0$. Le taux d'inertie corrigé $\tilde{\tau}_s$ devient alors beaucoup plus représentatif de la structure réelle des données~:
 	\begin{equation}
-		\tau_s = \frac{\lambda_s}{\displaystyle\sum_{s'=1}^{r} \lambda_{s'}}.
-		\label{eq:inertie}
+		\tilde{\tau}_s = \frac{\tilde{\lambda}_s}{\sum_{s'=1}^{r} \tilde{\lambda}_{s'}}
+		\label{eq:inertie_corrigee}
 	\end{equation}
-	
-	% --- 1.5 Projection dans le nouvel espace factoriel ---
-	
-	
-	Une fois les vecteurs propres obtenus, les coordonnées factorielles des individus
-	sur les axes de l'ACM sont calculées par projection dans le nouvel espace. Les
-	coordonnées de l'individu $i$ sur l'axe $s$ sont données par :
-	
+	\cite{dunod}
+	\paragraph{Projection dans l'espace factoriel}
+	Les coordonnées des individus (lignes) et des modalités (colonnes) dans le nouvel espace s'obtiennent à l'aide des matrices de projection $\mathbf{F}$ et $\mathbf{G}$~:
 	\begin{equation}
-		F_{is} = \frac{1}{\sigma_s}\,\sum_{k=1}^{K} p_{ik}\,v_{ks},
-		\label{eq:coord_individus}
-	\end{equation}
-	
-	où $p_{ik}$ est l'élément $(i,k)$ de $\mathbf{P}$ et $v_{ks}$ est la $k$-ième
-	composante du $s$-ième vecteur propre. En notation matricielle :
-	
-	\begin{equation}
-		\boxed{\mathbf{F} = \mathbf{D}_r^{-1/2}\,\mathbf{U}\,\boldsymbol{\Sigma}}
+		\mathbf{F} = \mathbf{D}_r^{-1/2}\,\mathbf{U}\,\boldsymbol{\Sigma}
 		\label{eq:proj_individus}
 	\end{equation}
-	
-	De même, les coordonnées des modalités sur l'axe $s$ sont :
-	
 	\begin{equation}
-		G_{ks} = \frac{1}{\sigma_s}\,\sum_{i=1}^{n} p_{ik}\,u_{is},
-		\label{eq:coord_modalites}
-	\end{equation}
-	
-	soit en notation matricielle :
-	
-	\begin{equation}
-		\boxed{\mathbf{G} = \mathbf{D}_c^{-1/2}\,\mathbf{V}\,\boldsymbol{\Sigma}}
+		\mathbf{G} = \mathbf{D}_c^{-1/2}\,\mathbf{V}\,\boldsymbol{\Sigma}
 		\label{eq:proj_modalites}
 	\end{equation}
+	Ces coordonnées permettent la représentation simultanée des entreprises et de leurs caractéristiques (manquements et besoins) au sein d'un graphique biplot.
 	
-	Les matrices $\mathbf{F}$ et $\mathbf{G}$ constituent le nouvel espace factoriel
-	dans lequel individus et modalités sont représentés simultanément, ce qui est la
-	propriété centrale du biplot en ACM.
 	\item Classification Ascendante Hiérarchique (CAH):
 	
 	\paragraph{Notion de CAH}
@@ -1886,8 +1792,7 @@ Lorsque le test du $\chi^2$ indique une association significative, l’intensit�
 	
 	
 	\paragraph{Formalisation mathématiques}
-	
-	Soit un ensemble de $n$ individus $\Omega = \{\omega_1, \omega_2,
+	Soit un ensemble de $n$ individus\\ $\Omega = \{\omega_1, \omega_2,
 	\ldots, \omega_n\}$, décrits dans un espace factoriel de dimension $q$
 	par leurs coordonnées issues de l'ACM. L'objectif de la CAH est de
 	construire une partition de $\Omega$ en $K$ classes homogènes, en
@@ -1922,174 +1827,100 @@ Lorsque le test du $\chi^2$ indique une association significative, l’intensit�
 	
 	\item Analyse Factirielle Disctriminante (AFD):
 	
-	L'Analyse Factorielle Discriminante est une méthode d'analyse multivariée à caractère supervisé, qui intervient en aval de la classification. Contrairement à la CAH qui est non supervisée et construit les groupes sans information préalable sur leur appartenance, l'AFD suppose que les classes sont connues et cherche à identifier les combinaisons linéaires des variables explicatives qui permettent de les séparer et de les caractériser le mieux possible. Elle permet ainsi de déterminer quelles sont les variables qui contribuent le plus à discriminer les groupes identifiés lors de la classification, et d'évaluer la qualité de cette discrimination à travers des indicateurs tels que le pouvoir discriminant des axes canoniques et le taux de bon classement des individus. Dans le cadre de cette étude, l'AFD sera appliquée aux classes d'entreprises issues de la CAH, afin de valider la pertinence de la partition obtenue et d'identifier les variables secteur d'activité, région, type de besoin, taille de l'entreprise qui caractérisent le mieux chacun des profils constitués. Les résultats de l'AFD alimenteront directement la logique de recommandation de la plateforme, en fournissant les critères objectifs sur lesquels reposera l'algorithme de mise en relation des entreprises.
+	L'Analyse Factorielle Discriminante est une méthode d'analyse multivariée à caractère supervisé, qui intervient en aval de la classification. Contrairement à la CAH qui est non supervisée et construit les groupes sans information préalable sur leur appartenance, l'AFD suppose que les classes sont connues et cherche à identifier les combinaisons linéaires des variables explicatives qui permettent de les séparer et de les caractériser le mieux possible. Elle permet ainsi de déterminer quelles sont les variables qui contribuent le plus à discriminer les groupes identifiés lors de la classification, et d'évaluer la qualité de cette discrimination à travers des indicateurs tels que le pouvoir discriminant des axes canoniques et le taux de bon classement des individus. Dans le cadre de cette étude, l'AFD sera appliquée aux classes d'entreprises issues de la CAH, afin de valider la pertinence de la partition obtenue et d'identifier les variables secteur d'activité, région, type de besoin, taille de l'entreprise qui caractérisent le mieux chacun des profils constitués.
 	\end{enumerate}
 	
-	\paragraph{Formulation mathématiques}
+	\paragraph{Formulation mathématique}
 	
-	Soit $n$ individus répartis en $g$ classes $\mathcal{C}_1, \ldots, \mathcal{C}_g$,
-	chaque individu $i$ étant décrit par un vecteur $\mathbf{x}_i \in \mathbb{R}^p$.
-	La variance totale se décompose en :
+	Soit $n$ individus répartis en $g$ classes $\mathcal{C}_1, \ldots, \mathcal{C}_g$, chaque individu $i$ étant décrit par un vecteur $\mathbf{x}_i \in \mathbb{R}^p$. La variance totale du nuage de points se décompose selon le théorème de Huygens en~:
 	
 	\begin{equation}
 		\mathbf{T} = \mathbf{W} + \mathbf{B},
 		\label{eq:decomp_variance}
 	\end{equation}
 	
-	où la matrice de dispersion intra-classes $\mathbf{W}$ et la matrice de dispersion
-	inter-classes $\mathbf{B}$ sont définies par :
+	où la matrice de dispersion intra-classes $\mathbf{W}$ (variance résiduelle) et la matrice de dispersion inter-classes $\mathbf{B}$ (variance expliquée) sont définies par~:
 	
 	\begin{align}
-		\mathbf{W} &= \sum_{c=1}^{g} \sum_{i \in \mathcal{C}_c}
-		\left(\mathbf{x}_i - \boldsymbol{\mu}_c\right)
-		\left(\mathbf{x}_i - \boldsymbol{\mu}_c\right)^{\top},
-		\label{eq:W} \\[6pt]
-		\mathbf{B} &= \sum_{c=1}^{g} n_c\,
-		\left(\boldsymbol{\mu}_c - \boldsymbol{\mu}\right)
-		\left(\boldsymbol{\mu}_c - \boldsymbol{\mu}\right)^{\top},
-		\label{eq:B}
+		\mathbf{W} &= \sum_{c=1}^{g} \sum_{i \in \mathcal{C}_c} \left(\mathbf{x}_i - \boldsymbol{\mu}_c\right) \left(\mathbf{x}_i - \boldsymbol{\mu}_c\right)^{\top}, \label{eq:W} \\[6pt]
+		\mathbf{B} &= \sum_{c=1}^{g} n_c\,\left(\boldsymbol{\mu}_c - \boldsymbol{\mu}\right) \left(\boldsymbol{\mu}_c - \boldsymbol{\mu}\right)^{\top}, \label{eq:B}
 	\end{align}
 	
-	avec $\boldsymbol{\mu}_c = \frac{1}{n_c}\sum_{i \in \mathcal{C}_c} \mathbf{x}_i$
-	le centroïde de la classe $c$, $n_c$ son effectif, et
-	$\boldsymbol{\mu} = \frac{1}{n}\sum_{i=1}^{n} \mathbf{x}_i$ le centre de gravité global.
+	avec $\boldsymbol{\mu}_c = \frac{1}{n_c}\sum_{i \in \mathcal{C}_c} \mathbf{x}_i$ le centroïde de la classe $c$, $n_c$ son effectif, et $\boldsymbol{\mu} = \frac{1}{n}\sum_{i=1}^{n} \mathbf{x}_i$ le centre de gravité global du nuage.
 	
-	
-	L'AFD cherche les vecteurs $\mathbf{a} \in \mathbb{R}^p$ qui maximisent le rapport
-	de la variance inter-classes à la variance intra-classes dans l'espace projeté,
-	appelé \textit{critère de Fisher} :
+	L'AFD cherche les vecteurs de projection $\mathbf{a} \in \mathbb{R}^p$ qui maximisent le rapport de la variance inter-classes à la variance intra-classes dans l'espace projeté. Cet indicateur est appelé \textit{critère de Fisher}~:
 	
 	\begin{equation}
-		\mathbf{a}^* = \underset{\mathbf{a}}{\arg\max}\;
-		\frac{\mathbf{a}^{\top}\mathbf{B}\,\mathbf{a}}
-		{\mathbf{a}^{\top}\mathbf{W}\,\mathbf{a}}.
+		\mathbf{a}^* = \underset{\mathbf{a}}{\arg\max}\; \frac{\mathbf{a}^{\top}\mathbf{B}\,\mathbf{a}}{\mathbf{a}^{\top}\mathbf{W}\,\mathbf{a}}.
 		\label{eq:fisher}
 	\end{equation}
 	
-	Ce problème d'optimisation est équivalent au problème aux valeurs propres généralisé :
+	Ce problème d'optimisation est équivalent au problème aux valeurs propres généralisé $\mathbf{B}\mathbf{a} = \lambda\mathbf{W}\mathbf{a}$, qui se ramène, sous réserve d'inversibilité de $\mathbf{W}$, au problème aux valeurs propres standard suivant~:
 	
 	\begin{equation}
-		\mathbf{B}\,\mathbf{a} = \lambda\,\mathbf{W}\,\mathbf{a},
-		\label{eq:vp_generalisee}
-	\end{equation}
-	
-	qui se ramène, en posant $\mathbf{a} = \mathbf{W}^{-1/2}\tilde{\mathbf{a}}$, au
-	problème aux valeurs propres standard :
-	
-	\begin{equation}
-		\mathbf{W}^{-1}\mathbf{B}\,\mathbf{a}_s = \lambda_s\,\mathbf{a}_s,
-		\qquad s = 1, \ldots, \min(p,\, g-1).
+		\mathbf{W}^{-1}\mathbf{B}\,\mathbf{a}_s = \lambda_s\,\mathbf{a}_s, \qquad s = 1, \ldots, \min(p,\, g-1).
 		\label{eq:vp_standard}
 	\end{equation}
 	
-	Les vecteurs propres $\mathbf{a}_1, \mathbf{a}_2, \ldots$ ordonnés selon les valeurs
-	propres décroissantes $\lambda_1 \geq \lambda_2 \geq \cdots$ constituent les
-	\textbf{axes discriminants} (fonctions LD1, LD2, \ldots). Le nombre maximal d'axes
-	est $\min(p,\, g-1)$.
-	
-	La part de discrimination expliquée par l'axe $s$ est :
+	Les vecteurs propres $\mathbf{a}_1, \mathbf{a}_2, \ldots$ ordonnés selon les valeurs propres décroissantes $\lambda_1 \geq \lambda_2 \geq \cdots$ constituent les \textbf{axes discriminants}. Le nombre maximal d'axes est limité par la dimension de l'espace et le nombre de groupes, soit $\min(p,\, g-1)$. La part de discrimination expliquée par l'axe $s$ est donnée par le taux d'inertie~:
 	
 	\begin{equation}
 		\tau_s = \frac{\lambda_s}{\displaystyle\sum_{s'=1}^{\min(p,\,g-1)} \lambda_{s'}}.
 		\label{eq:inertie_afd}
 	\end{equation}
 	
-	% --- 2.3 Projection sur les axes discriminants ---
-	
-	Les coordonnées discriminantes de l'individu $i$ sur l'axe $s$ sont obtenues par
-	projection de son vecteur de variables centré sur le vecteur discriminant $\mathbf{a}_s$ :
-	
+	\paragraph{Projection sur les axes discriminants}
+	Les coordonnées discriminantes de l'individu $i$ sur l'axe $s$ sont obtenues par projection de son vecteur centré sur le vecteur discriminant $\mathbf{a}_s$~:
 	\begin{equation}
 		y_{is} = \mathbf{a}_s^{\top}\,(\mathbf{x}_i - \boldsymbol{\mu}),
 		\label{eq:projection}
 	\end{equation}
-	
-	soit, pour l'ensemble des individus :
-	
+	soit, sous forme matricielle pour l'ensemble de l'échantillon~:
 	\begin{equation}
 		\boxed{\mathbf{Y} = (\mathbf{X} - \mathbf{1}_n\boldsymbol{\mu}^{\top})\,\mathbf{A}}
 		\label{eq:proj_matrice}
 	\end{equation}
+	où $\mathbf{A} = [\mathbf{a}_1 \mid \mathbf{a}_2 \mid \cdots \mid \mathbf{a}_d] \in \mathbb{R}^{p \times d}$ regroupe les $d$ vecteurs discriminants retenus et $\mathbf{Y} \in \mathbb{R}^{n \times d}$ est la matrice des scores factoriels.
 	
-	où $\mathbf{A} = [\mathbf{a}_1 \mid \mathbf{a}_2 \mid \cdots \mid \mathbf{a}_d]
-	\in \mathbb{R}^{p \times d}$ est la matrice des $d$ vecteurs discriminants retenus
-	et $\mathbf{Y} \in \mathbb{R}^{n \times d}$ est la matrice des scores discriminants.
-	
-	% --- 2.4 Règle de classification bayésienne ---
-	
-	
-	La règle de classification repose sur le théorème de Bayes. Pour un individu $i$
-	de vecteur $\mathbf{x}_i$, la probabilité a posteriori d'appartenir à la classe
-	$c$ est :
+	\paragraph{Règle de classification et hypothèses probabilistes}
+	L'AFD peut être formulée sous un angle probabiliste à travers la règle de classification bayésienne pour l'affectation de nouveaux individus. Pour un vecteur d'observations $\mathbf{x}_i$, la probabilité a posteriori d'appartenir à la classe $c$ s'exprime par~:
 	
 	\begin{equation}
-		P(\mathcal{C}_c \mid \mathbf{x}_i)
-		= \frac{P(\mathbf{x}_i \mid \mathcal{C}_c)\,\pi_c}
-		{\displaystyle\sum_{c'=1}^{g} P(\mathbf{x}_i \mid \mathcal{C}_{c'})\,\pi_{c'}},
+		P(\mathcal{C}_c \mid \mathbf{x}_i) = \frac{P(\mathbf{x}_i \mid \mathcal{C}_c)\,\pi_c}{\displaystyle\sum_{c'=1}^{g} P(\mathbf{x}_i \mid \mathcal{C}_{c'})\,\pi_{c'}},
 		\label{eq:bayes}
 	\end{equation}
 	
-	où $\pi_c = n_c / n$ est la probabilité a priori de la classe $c$ et
-	$P(\mathbf{x}_i \mid \mathcal{C}_c)$ est la vraisemblance de l'observation
-	sachant la classe $c$.
+	où $\pi_c = n_c / n$ représente la probabilité a priori de la classe $c$ et $P(\mathbf{x}_i \mid \mathcal{C}_c)$ est la densité de probabilité conditionnelle (vraisemblance). 
 	
-	Sous l'hypothèse de normalité multivariée et d'homoscédasticité
-	(matrices de covariance égales entre classes, $\boldsymbol{\Sigma}_c = \boldsymbol{\Sigma}$),
-	la vraisemblance s'écrit :
+	Pour construire une frontière de décision linéaire, l'algorithme sous-jacent (notamment implémenté dans la fonction \texttt{lda()} du package \texttt{MASS} sous R) repose sur deux hypothèses statistiques fondamentales \cite[chap.~12]{venables2002modern}~:
+	\begin{itemize}
+		\item \textbf{La normalité multivariée :} Les variables explicatives suivent une distribution normale au sein de chaque groupe.
+		\item \textbf{L'homoscédasticité :} Les classes partagent une structure de variance commune, impliquant l'égalité des matrices de covariance conditionnelles ($\boldsymbol{\Sigma}_c = \boldsymbol{\Sigma}, \forall c$).
+	\end{itemize}
 	
+	Sous ces hypothèses, la fonction de vraisemblance s'écrit~:
 	\begin{equation}
-		P(\mathbf{x}_i \mid \mathcal{C}_c)
-		= \frac{1}{(2\pi)^{p/2}|\boldsymbol{\Sigma}|^{1/2}}
-		\exp\!\left(
-		-\frac{1}{2}
-		(\mathbf{x}_i - \boldsymbol{\mu}_c)^{\top}
-		\boldsymbol{\Sigma}^{-1}
-		(\mathbf{x}_i - \boldsymbol{\mu}_c)
-		\right).
+		P(\mathbf{x}_i \mid \mathcal{C}_c) = \frac{1}{(2\pi)^{p/2}|\boldsymbol{\Sigma}|^{1/2}} \exp\!\left( -\frac{1}{2} (\mathbf{x}_i - \boldsymbol{\mu}_c)^{\top} \boldsymbol{\Sigma}^{-1} (\mathbf{x}_i - \boldsymbol{\mu}_c) \right).
 		\label{eq:vraisemblance}
 	\end{equation}
 	
-	En substituant~\eqref{eq:vraisemblance} dans~\eqref{eq:bayes} et en prenant le
-	logarithme, la règle de décision revient à maximiser le \textbf{score discriminant
-		linéaire de Bayes} :
-	
+	En passant au logarithme, la règle de décision bayésienne revient à maximiser le \textbf{score discriminant linéaire}~:
 	\begin{equation}
-		\delta_c(\mathbf{x}_i)
-		= \mathbf{x}_i^{\top}\,\boldsymbol{\Sigma}^{-1}\boldsymbol{\mu}_c
-		- \frac{1}{2}\,\boldsymbol{\mu}_c^{\top}\,\boldsymbol{\Sigma}^{-1}\boldsymbol{\mu}_c
-		+ \log(\pi_c).
+		\delta_c(\mathbf{x}_i) = \mathbf{x}_i^{\top}\,\boldsymbol{\Sigma}^{-1}\boldsymbol{\mu}_c - \frac{1}{2}\,\boldsymbol{\mu}_c^{\top}\,\boldsymbol{\Sigma}^{-1}\boldsymbol{\mu}_c + \log(\pi_c).
 		\label{eq:score_bayes}
 	\end{equation}
-	
-	L'individu $i$ est alors affecté à la classe $\hat{c}$ qui maximise ce score :
-	
+	L'individu est alors affecté à la classe $\hat{c}$ maximisant ce critère~: $\hat{c}(\mathbf{x}_i) = \arg\max_{c} \delta_c(\mathbf{x}_i)$. Géométriquement, cela équivaut à attribuer l'entité à la classe dont le centroïde est le plus proche au sens de la \textbf{distance de Mahalanobis} pénalisée par les structures a priori~:
 	\begin{equation}
-		\boxed{\hat{c}(\mathbf{x}_i)
-			= \underset{c \in \{1,\ldots,g\}}{\arg\max}\;
-			\delta_c(\mathbf{x}_i)}
-		\label{eq:regle_classif}
-	\end{equation}
-	
-	Cette règle est équivalente à affecter l'individu à la classe dont le centroïde
-	$\boldsymbol{\mu}_c$ est le plus proche au sens de la \textbf{distance de Mahalanobis}
-	corrigée des probabilités a priori :
-	
-	\begin{equation}
-		d_M^2(\mathbf{x}_i,\, \mathcal{C}_c)
-		= (\mathbf{x}_i - \boldsymbol{\mu}_c)^{\top}\,
-		\boldsymbol{\Sigma}^{-1}\,
-		(\mathbf{x}_i - \boldsymbol{\mu}_c)
-		- 2\log(\pi_c).
+		d_M^2(\mathbf{x}_i,\, \mathcal{C}_c) = (\mathbf{x}_i - \boldsymbol{\mu}_c)^{\top}\,\boldsymbol{\Sigma}^{-1}\,(\mathbf{x}_i - \boldsymbol{\mu}_c) - 2\log(\pi_c).
 		\label{eq:mahalanobis}
 	\end{equation}
 	
-	La matrice de covariance commune $\boldsymbol{\Sigma}$ est estimée par la matrice
-	de dispersion intra-classes poolée :
-	
+	La matrice de covariance théorique commune $\boldsymbol{\Sigma}$ est estimée empiriquement à partir de la matrice de dispersion intra-classe ($\mathbf{W}$) corrigée de ses degrés de liberté afin de garantir un estimateur sans biais (matrice de covariance poolée)~:
 	\begin{equation}
-		\hat{\boldsymbol{\Sigma}} = \frac{\mathbf{W}}{n - g}.
+		\hat{\boldsymbol{\Sigma}} = \frac{1}{n - g} \mathbf{W} = \frac{1}{n - g} \sum_{c=1}^{g} (n_c - 1) \mathbf{S}_c,
 		\label{eq:sigma_estime}
 	\end{equation}
+	où $\mathbf{S}_c$ désigne la matrice de covariance interne de la seule classe $c$.
 	
 \subsection{Justification de la méthode utilisée}
 	Le choix de la chaîne analytique retenue dans ce travail ---
@@ -2104,26 +1935,12 @@ Lorsque le test du $\chi^2$ indique une association significative, l’intensit�
 	précisément celui des enquêtes d'opinion et des questionnaires
 	à choix multiples, dont la structure est analogue à celle de
 	l'enquête du \gls{minepat} mobilisée dans ce travail.
-	\citet{saporta_2010} souligne que l'ACM constitue l'équivalent
+	L'ACM constitue l'équivalent
 	de l'Analyse en Composantes Principales (ACP) pour les variables
 	qualitatives et se réduit formellement à une Analyse Factorielle
 	des Correspondances (AFC) appliquée au tableau disjonctif complet
 	ou au tableau de Burt issus du tableau de données initial
-	(Saporta, 2010, chap. 11, pp. 211--240). Ce fondement théorique
-	rigoureux garantit que la réduction de dimensionnalité opérée
-	par l'ACM est optimale au sens de l'inertie expliquée, c'est-à-
-	dire qu'elle maximise la part de variance des données restituée
-	par les axes factoriels retenus, minimisant ainsi la perte
-	d'information par rapport aux données brutes
-	\citep{lebart_morineau_piron_1995}. L'ACM est par ailleurs
-	traditionnellement employée dans le traitement d'enquêtes basées
-	sur des questions fermées à choix multiples, afin de mettre en
-	évidence des relations entre modalités ou entre observations et
-	modalités, et peut également servir à résumer un grand nombre
-	de variables nominales par un faible nombre de variables
-	synthétiques quantitatives, ce qui correspond exactement aux
-	objectifs poursuivis dans ce travail à partir des données de
-	l'enquête du \gls{minepat}. La conduite de la CAH à partir des
+	\citet{saporta_2010}. La conduite de la CAH à partir des
 	coordonnées factorielles issues de l'ACM --- approche connue
 	sous le nom de méthode HCPC (\textit{Hierarchical Clustering on
 		Principal Components}) dans le package \texttt{FactoMineR} du
@@ -2131,13 +1948,11 @@ Lorsque le test du $\chi^2$ indique une association significative, l’intensit�
 	comme la procédure optimale pour classifier des individus décrits
 	par des variables qualitatives, dans la mesure où elle s'affranchit
 	des distorsions induites par le calcul de distances euclidiennes
-	directement sur des indicatrices binaires (Husson, Lê \& Pagès,
-	2009, chap. 5). Le critère d'agrégation de Ward, retenu pour la
+	directement sur des indicatrices binaires \cite{husson_le_pages_2009}. Le critère d'agrégation de Ward, retenu pour la
 	CAH, est unanimement recommandé dans la littérature pour produire
 	des classes compactes et bien séparées, en minimisant la perte
 	d'inertie inter-classes à chaque étape de fusion
-	\citep{lebart_morineau_piron_1995}. Enfin, l'AFD, telle que
-	formalisée par \citet{bardos_2001} dans le prolongement des
+	\citep{lebart_morineau_piron_1995}. Enfin, l'AFD  dans le prolongement des
 	travaux fondateurs de Ronald Fisher, constitue la méthode de
 	référence pour valider et caractériser une partition en classes
 	prédéfinies à l'aide des variables les plus discriminantes
@@ -2160,50 +1975,28 @@ Lorsque le test du $\chi^2$ indique une association significative, l’intensit�
 \section{Méthodologie de conception et de développement de la plateforme Business Partnership}
 \label{sec:methodologie_dev}
 %=============================================================
-Dans cette section, nous présentons la démarche méthodologique ainsi que les instruments techniques ayant guidé la conception et le développement de la plateforme \textit{Business Partnership}. Notre approche s'articule autour de trois axes principaux : la modélisation formelle de l'architecture de données, la sélection de l'écosystème logiciel (langage et frameworks), et enfin, la spécification de l'algorithme de mise en relation (matching) qui constitue le cœur fonctionnel de l'application.
+Dans cette section, nous présentons la démarche méthodologique ainsi que les instruments techniques ayant guidé la conception et le développement de la plateforme \textit{Business Partnership}. Notre approche s'articule autour de trois axes principaux : la modélisation formelle de l'architecture de données, la sélection de l'écosystème logiciel (langage et frameworks).
 
 \subsection{Conception de la base de données}
-Une architecture de données rigoureuse est le gage d'une application robuste, évolutive et performante. Afin de formaliser cette structure, nous avons adopté la méthode \textit{MERISE}, une approche systémique particulièrement adaptée à la modélisation des bases de données relationnelles. Le Système de Gestion de Base de Données (SGBD) retenu pour le développement et la phase de prototypage est \textit{SQLite3}. Ce choix est justifié par sa légèreté, sa configuration simplifiée (sans serveur autonome) et sa parfaite conformité aux propriétés ACID (Atomicité, Cohérence, Isolation, Durabilité).
+Une architecture de données rigoureuse est le gage d'une application robuste, évolutive et performante. Afin de formaliser cette structure, nous avons adopté la méthode \textit{Dimensionnelle}, une approche systémique dont les bases ont été jeté par \textbf{Ralph Kimball}\cite{kimball2002toolkit}. Le Système de Gestion de Base de Données (SGBD) retenu pour le développement et la phase de prototypage est \textit{SQLite3}. Ce choix est justifié par sa légèreté, sa configuration simplifiée (sans serveur autonome) et sa parfaite conformité aux propriétés ACID (Atomicité, Cohérence, Isolation, Durabilité).
 
 \subsubsection{Spécification fonctionnelle et règles de gestion}
 L'analyse des besoins métiers de la plateforme a permis de dégager les règles de gestion suivantes, indispensables à la construction de nos modèles de données :
 \begin{itemize}
-	\item \textbf{Profil de l'entreprise :} Chaque entreprise s'enregistre sur la plateforme et est caractérisée par sa raison sociale, sa région d'implantation, sa taille (effectif ou chiffre d'affaires), son statut juridique et son ancienneté.
-	\item \textbf{Classification sectorielle :} Une entreprise appartient à une et une seule \textit{Classe} d'activité.
+	\item \textbf{Profil de l'entreprise :} Chaque entreprise s'enregistre sur la plateforme et est caractérisée par sa raison sociale, sa région d'implantation.
 	\item \textbf{Capacités de couverture :} Une entreprise peut posséder (ou non) les compétences requises pour combler les besoins d'une ou plusieurs classes d'entreprises.
-	\item \textbf{Expression des besoins :} Dès son inscription, l'entreprise doit obligatoirement définir ses besoins sur la plateforme.
-	\item \textbf{Système de recommandation :} En réponse à ses besoins exprimés, l'entreprise reçoit des suggestions ciblées listant les entités capables d'y répondre.
+	\item \textbf{Expression des besoins :} Dès son inscription, l'entreprise peut définir ses besoins sur la plateforme.
+	\item \textbf{Système de recommandation :} Des entreprises sont recommandées sur la base des besoins exprrimés.
 \end{itemize}
 
-\subsubsection{Modèle Conceptuel de Données (MCD)}
-Le MCD formalise les entités (\textit{Entreprise}, \textit{Classe}, \textit{Besoin}), leurs associations ainsi que les cardinalités issues des règles de gestion, indépendamment de toute considération technique ou logicielle.
-% Intégration future du schéma MCD
-% \begin{figure}[htbp]
-	%     \centering
-	%     \includegraphics[width=0.8\textwidth]{images/mcd_plateforme.png}
-	%     \caption{Modèle Conceptuel de Données (MCD)}
-	%     \label{fig:mcd}
-	% \end{figure}
-
-\subsubsection{Modèle Logique de Données (MLD)}
-Le MLD traduit le MCD en structures relationnelles exploitables. Les entités deviennent des tables, et les associations se transforment en clés primaires et clés étrangères selon les règles de dérivation de la méthode MERISE.
-% Intégration future du schéma MLD
-% \begin{figure}[htbp]
-	%     \centering
-	%     \includegraphics[width=0.8\textwidth]{images/mld_plateforme.png}
-	%     \caption{Modèle Logique de Données (MLD)}
-	%     \label{fig:mld}
-	% \end{figure}
-
-\subsubsection{Modèle Physique de Données (MPD)}
-Le MPD représente l'implémentation concrète de la structure relationnelle au sein du SGBD SQLite3, en spécifiant les types de champs (TEXT, INTEGER, etc.) et les contraintes d'intégrité référentielle.
-% Intégration future du schéma MPD
-% \begin{figure}[htbp]
-	%     \centering
-	%     \includegraphics[width=0.8\textwidth]{images/mpd_plateforme.png}
-	%     \caption{Modèle Physique de Données (MPD)}
-	%     \label{fig:mpd}
-	% \end{figure}
+\subsubsection{Schéma de la base de données}
+Le modèle de données définie trois tables dont une de fait et deux de dimensions. La première table de dimension \textbf{Services} est la table qui représentera offres et besoins. La table \textbf{Entreprise} permettra d'enregistrer les utilisateurs et enfin la table 
+ \begin{figure}[htbp]
+	  \centering
+	     \includegraphics[width=0.8\textwidth]{schema_base_dimensionnelle.png}
+	     \caption{Schéma de la base de données}
+	     \label{fig:mcd}
+	 \end{figure}
 
 \subsection{Langages de programmation et frameworks utilisés}
 Le choix de l'environnement technologique répond à des impératifs d'efficacité, de sécurité et de rapidité de déploiement. Notre choix s'est porté sur le langage \textit{Python} et le framework \textit{Django}. 
@@ -2216,22 +2009,6 @@ Le framework de haut niveau \textit{Django}, initialement développé en 2003 po
 	\item \textbf{Le Template (Template) :} Gère la couche de présentation (l'interface utilisateur HTML/CSS). Il équivaut à la \textit{Vue} dans le modèle MVC classique.
 	\item \textbf{La Vue (View) :} Contient la logique de contrôle. Elle intercepte les requêtes HTTP, interagit avec les Modèles pour récupérer ou modifier les données, et sélectionne le Template approprié à afficher. Elle fait office de \textit{Contrôleur}.
 \end{itemize}
-	
-\subsection{Spécification de l'algorithme de mise en relation (Matching)}
-\label{subsec:algorithme_matching}
-Le moteur de recommandation est le cœur analytique de la plateforme. La mise en relation entre une entreprise exprimant un besoin et les entreprises capables d'y répondre ne peut se satisfaire d'une simple requête SQL adaptative. Nous avons mis en place une approche basée sur [compléter ici : ex. la similarité de cosinus sur des embeddings de texte / un filtrage basé sur le contenu / des règles métiers probabilistes].
-
-\subsubsection{Formalisation mathématique / logique}
-Soit $E$ l'ensemble des entreprises inscrites et $B_i$ l'ensemble des besoins spécifiés par une entreprise $e_i$. Le score de compatibilité $S$ entre l'entreprise demanderesse $e_i$ et une entreprise prestataire potentielle $e_j$ est calculé selon la fonction suivante :
-
-\begin{equation}
-	S(e_i, e_j) = f(B_i, C_j) \times \omega_{géo}
-\end{equation}
-
-Où $C_j$ représente les classes de compétences de l'entreprise $e_j$ et $\omega_{géo}$ est un coefficient de pondération lié à la proximité géographique (région d'implantation). 
-
-\subsubsection{Gestion du démarrage à froid (Cold Start)}
-Un défi majeur des systèmes de recommandation est le problème du \textit{Cold Start} (démarrage à froid), qui survient lorsqu'une nouvelle entreprise s'inscrit sans historique d'interactions. Pour y pallier, la plateforme impose la saisie obligatoire des besoins dès l'inscription, permettant une recommandation immédiate basée sur le contenu (\textit{Content-Based Filtering}) plutôt que sur l'historique des connexions.
 	
 	%============================================================
 	%  CHAPITRE 4 : PRÉSENTATION DES RÉSULTATS
@@ -2715,8 +2492,7 @@ Technologies de l'Informations et de la Communication sont assez peu nombreuses 
 				\label{fig:acm_vp}
 			\end{figure}
 			
-			L’objectif principal de l’ACM étant l’interprétation à partir des projections des modalités sur les axes factoriels, le nombre d’axes à retenir est choisi en utilisant le critère du « coude »% (Cours Méthodes Factorielles Cnam UE).
-			 Le critère du coude stipule que: (i) avant le coude, la pente est très raide. Chaque axe supplémentaire apporte une quantité importante d'information (d'inertie); (ii) après le coude, la courbe s'aplatit et forme un plateau linéaire. Les axes suivants n'apportent que du "bruit de fond" ou des détails négligeables. A partir de cette règle et de la figure \ref{fig:acm_vp} nous avons choisi les 5 premiers axes factoriels.
+			L’objectif principal de l’ACM étant l’interprétation à partir des projections des modalités sur les axes factoriels, le nombre d’axes à retenir est choisi en utilisant le critère du pourcentage d'inertie expliqué par les axes factorielles. Il est souvent conseillé de sélectionner les axes factorielles qui expliquent au moins 80\% de l'inertie total du nuage dans notre cas, nous avons retenu les 5 premiers axes factoriels qui avec les valeurs propres corrigées expliquent 88,74\% de l'inertie totale.
 			
 			
 			\paragraph{Projection des modalités sur le premier plan factoriel}
@@ -2788,11 +2564,7 @@ Technologies de l'Informations et de la Communication sont assez peu nombreuses 
 			La CAH a été conduite à partir des coordonnées factorielles des
 			entreprises sur les axes retenus lors de l'ACM, en utilisant la
 			méthode d'agrégation de Ward qui minimise la perte d'inertie
-			inter-classes à chaque étape de fusion \cite{saporta_2010}. Cette
-			approche, combinant ACM et CAH, est particulièrement adaptée aux
-			données qualitatives dans la mesure où elle s'affranchit des
-			problèmes liés aux distances euclidiennes calculées directement
-			sur des variables catégorielles brutes.
+			inter-classes à chaque étape de fusion \cite{saporta_2010}.
 			
 			\paragraph{Dendrogramme et choix du nombre de classes}
 			
@@ -2807,15 +2579,7 @@ Technologies de l'Informations et de la Communication sont assez peu nombreuses 
 				\label{fig:dendrogramme}
 			\end{figure}
 			
-			L'examen du dendrogramme (figure~\ref{fig:dendrogramme}) révèle
-			l'existence d'un saut d'inertie particulièrement marqué à l'étape
-			correspondant au passage de trois à deux classes, ce qui plaide en
-			faveur d'une partition en \textbf{trois classes}. Ce choix est
-			conforté par l'éboulis des indices de niveau, qui présente un
-			décrochement net à ce niveau. La partition en trois classes offre
-			par ailleurs une granularité suffisante pour identifier des profils
-			d'entreprises distincts et opérationnellement utiles dans le cadre
-			de l'algorithme de mise en relation de la plateforme.
+		Nous avons choisi de partitionner le jeu de données en trois classes. Du fait qu'un nombre trop élevé de classe pourrait très mal représenter les groupes du jeu de donnée et un nombre trop petit traduirait une difficulté pour distinguer les groupes.
 			
 			\paragraph{Visualisation de la partition obtenue}
 			
@@ -3062,10 +2826,7 @@ entre les classes.
 
 La présente section est consacrée à la présentation de la plateforme
 \textit{Business Partnership}, fruit de l'ensemble des travaux de
-conception et de développement décrits dans les chapitres précédents.
-Elle expose successivement l'architecture de l'interface utilisateur,
-les modalités d'implémentation de l'algorithme de mise en relation,
-et les limites inhérentes à la solution développée. Cette présentation
+conception et de développement décrits dans les chapitres précédents. Cette présentation
 s'appuie sur des captures d'écran de la plateforme dans son état
 fonctionnel actuel, accompagnées de descriptions techniques précises
 permettant d'apprécier la cohérence entre les exigences formulées
@@ -3082,51 +2843,10 @@ proposé par le framework Django. Son architecture repose sur une
 séparation claire entre trois couches fonctionnelles~: la couche
 de présentation, qui assure le rendu des interfaces utilisateur via
 les templates HTML et CSS~; la couche métier, qui contient la logique
-applicative, le moteur de recommandation et les règles de gestion~;
+applicative;
 et la couche de données, qui assure la persistance et la restitution
 structurée des informations via l'ORM de Django et la base de données
-SQLite. Cette architecture, représentée schématiquement à la
-figure~\ref{fig:architecture_plateforme}, garantit une séparation
-nette des responsabilités et facilite la maintenance évolutive de
-la solution.
-
-\begin{figure}[H]
-	\centering
-	\begin{tikzpicture}[
-		layer/.style={rectangle, draw=primary, rounded corners=5pt,
-			minimum width=11cm, minimum height=1.4cm,
-			align=center, font=\small\bfseries},
-		sublabel/.style={font=\small\color{darkgray}},
-		arrow/.style={->, thick, color=primary}
-		]
-		\node[layer, fill=primary!15] (present) at (0, 0)
-		{Couche Présentation \quad
-			{\small\color{darkgray}(Templates HTML/CSS -- Bootstrap)}} ;
-		
-		\node[layer, fill=secondary!12] (metier) at (0, -2.2)
-		{Couche Métier \quad
-			{\small\color{darkgray}(Vues Django -- Logique applicative --
-				Moteur de recommandation)}} ;
-		
-		\node[layer, fill=primary!8] (donnees) at (0, -4.4)
-		{Couche Données \quad
-			{\small\color{darkgray}(ORM Django -- SQLite --
-				Coordonnées factorielles ACM)}} ;
-		
-		\draw[arrow] (present.south) -- (metier.north)
-		node[midway, right, font=\tiny\color{darkgray}]
-		{Requêtes HTTP} ;
-		\draw[arrow] (metier.south) -- (donnees.north)
-		node[midway, right, font=\tiny\color{darkgray}]
-		{Requêtes ORM} ;
-		\draw[arrow, bend right=40] (donnees.west)
-		to node[left, font=\tiny\color{darkgray}] {Réponses}
-		(present.west) ;
-	\end{tikzpicture}
-	\caption{Architecture en trois couches de la plateforme
-		\textit{Business Partnership}}
-	\label{fig:architecture_plateforme}
-\end{figure}
+SQLite.
 
 %-------------------------------------------------------------
 \subsection{Interface utilisateur}
@@ -3134,526 +2854,94 @@ la solution.
 %-------------------------------------------------------------
 
 L'interface utilisateur de la plateforme \textit{Business Partnership}
-a été conçue selon les principes du design centré sur l'utilisateur,
-en veillant à offrir une expérience de navigation intuitive, cohérente
-et accessible, y compris pour des utilisateurs disposant d'une
-familiarité limitée avec les outils numériques. L'ensemble des
+a été conçue dans l'optique d'offrir une expérience de navigation intuitive, cohérente
+et accessible. L'ensemble des
 composants visuels repose sur le framework CSS \textbf{Bootstrap},
 qui garantit une cohérence graphique entre les différentes pages
 de la plateforme et une adaptation automatique de l'interface
 aux différentes tailles d'écran (\textit{responsive design}).
-La charte graphique adoptée s'inspire de l'identité visuelle
-institutionnelle du \gls{minepat}, avec une dominante de bleu
-institutionnel et de blanc, afin de renforcer la légitimité
-gouvernementale de la solution.
 
-\subsubsection{Page d'accueil}
+\subsubsection{Page de login}
 
-La page d'accueil constitue le premier point de contact entre
-l'utilisateur et la plateforme. Elle a été conçue pour communiquer
-de manière immédiate et claire la vocation de la plateforme, ses
-fonctionnalités principales et les bénéfices qu'elle offre aux
-entreprises. Elle comprend une bannière d'introduction présentant
-les objectifs de la plateforme dans le cadre de la \gls{snd30},
-un bloc de statistiques dynamiques affichant en temps réel le nombre
-d'entreprises enregistrées, le nombre de besoins saisis et le nombre
-de mises en relation initiées, ainsi qu'un appel à l'action invitant
-les utilisateurs à créer leur compte ou à se connecter.
+La page login permet à l'utilisateur de se connecter à son compte si ce dernier existe déjà. Cette page donne également la possibilité de créer un compte avec ses informations. La validation de son compte sera fait par l'administrateur du site après examen des documents.
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\textwidth]{login.png}
+	\caption{Page de login
+		\textit{Business Partnership}}
+	\label{fig:screen_accueil}
+\end{figure}
 
-%\begin{figure}[H]
-%	\centering
-%	\includegraphics[width=\textwidth]{./img/screenshot_accueil.png}
-%	\caption{Page d'accueil de la plateforme
-%		\textit{Business Partnership}}
-%	\label{fig:screen_accueil}
-%\end{figure}
+\subsubsection{Page de création de compte}
 
+La page de création de compte demande des informations basiques sur l'entreprise et trois documents dont un facultatif.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\textwidth]{creationDeCompte.png}
+	\caption{Page de création de compte}
+	\label{fig:creationDeCompte}
+\end{figure}
+\subsubsection{Validation de compte par l'administrateur}
+L'administrateur du site recoit la demande d'adhésion et la valide ou l'invalide.
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\textwidth]{demande.png}
+	\caption{Les demandes}
+	\label{fig:demande}
+\end{figure}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\textwidth]{validation.png}
+	\caption{Validation de compte}
+	\label{fig:validation}
+\end{figure}
 \subsubsection{Tableau de bord de l'entreprise}
+Le tableau de bord de l'entreprise permet de définir ses besoins, ses offres, de modifier ses informations et de visualiser les entreprises recommandées.
 
-Le tableau de bord constitue l'espace de travail central de
-l'utilisateur authentifié. Il offre une vue synthétique de l'état
-du profil de l'entreprise, du nombre de besoins enregistrés, du
-nombre de recommandations disponibles et des dernières mises en
-relation initiées ou reçues. Un indicateur de complétude du profil,
-exprimé en pourcentage, incite l'utilisateur à enrichir les
-informations de son profil afin d'améliorer la pertinence des
-recommandations générées en sa faveur. Ce tableau de bord est
-organisé en modules indépendants accessibles depuis un menu de
-navigation latéral persistant, garantissant une accessibilité
-permanente aux différentes fonctionnalités de la plateforme en
-un minimum de clics.
-
-%\begin{figure}[H]
-%	\centering
-%	\includegraphics[width=\textwidth]{./img/screenshot_dashboard.png}
-%	\caption{Tableau de bord de l'espace personnel d'une entreprise}
-%	\label{fig:screen_dashboard}
-%\end{figure}
-
-\subsubsection{Formulaire de saisie des besoins}
-
-Le formulaire de saisie des besoins a été conçu pour être à la fois
-exhaustif et facile à compléter. Il propose une sélection parmi
-les catégories de besoins identifiées lors de l'analyse statistique
-(financement, équipements, intrants, transport, emballages, appui
-institutionnel, innovation et recherche), accompagnée d'un champ
-de description libre permettant à l'entreprise de préciser la
-nature exacte de son besoin. Un menu déroulant permet de renseigner
-le degré de priorité du besoin, tandis qu'un résumé des besoins
-déjà enregistrés est affiché en bas de page, offrant à l'utilisateur
-une vue consolidée de l'ensemble de ses besoins exprimés.
-
-%\begin{figure}[H]
-%	\centering
-%	\includegraphics[width=\textwidth]{./img/screenshot_besoins.png}
-%	\caption{Formulaire de saisie des besoins de l'entreprise}
-%	\label{fig:screen_besoins}
-%\end{figure}
-
-\subsubsection{Page des recommandations}
-
-La page des recommandations constitue la fonctionnalité à plus
-forte valeur ajoutée de la plateforme. Elle présente à l'entreprise
-une liste ordonnée des partenaires potentiels les plus compatibles
-avec son profil, générée par le moteur de recommandation. Chaque
-carte de recommandation affiche la raison sociale de l'entreprise
-recommandée, son secteur d'activité, sa région d'implantation,
-un résumé de ses besoins principaux, et le \textbf{score de
-	compatibilité} calculé par l'algorithme, exprimé sous la forme
-d'un indicateur visuel gradué. Un système de filtres permet à
-l'utilisateur d'affiner les recommandations affichées selon des
-critères géographiques, sectoriels ou relatifs à la taille de
-l'entreprise, offrant ainsi une flexibilité d'exploration des
-opportunités de partenariat.
-
-%\begin{figure}[H]
-%	\centering
-%	\includegraphics[width=\textwidth]{./img/screenshot_recommandations.png}
-%	\caption{Page de recommandations de partenaires potentiels}
-%	\label{fig:screen_recommandations}
-%\end{figure}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\textwidth]{tableauDeBordEntreprise.png}
+	\caption{Tableau de bord de l'entreprise}
+	\label{fig:tableauDeBord}
+\end{figure}
 
 \subsubsection{Tableau de bord administrateur}
 
 Le tableau de bord administrateur offre aux agents du \gls{minepat}
 une vision panoramique et en temps réel de l'activité de la
-plateforme. Il présente des indicateurs agrégés sur le nombre
-d'entreprises enregistrées ventilées par région et par secteur,
-le volume de besoins exprimés, le nombre de mises en relation
-initiées et leur taux d'acceptation. Une section dédiée à la
+plateforme. Une section dédiée à la
 gestion des demandes d'inscription en attente de validation permet
 à l'administrateur de consulter, approuver ou rejeter chaque
-demande après vérification des informations fournies. Un module
-d'export permet de télécharger les données agrégées sous format
-CSV à des fins d'analyses complémentaires.
-
-%\begin{figure}[H]
-%	\centering
-%	\includegraphics[width=\textwidth]{./img/screenshot_admin.png}
-%	\caption{Tableau de bord de l'espace administrateur}
-%	\label{fig:screen_admin}
-%\end{figure}
-
-%-------------------------------------------------------------
-\subsection{Implémentation de l'algorithme de mise en relation}
-\label{subsec:implementation_algo}
-%-------------------------------------------------------------
-
-L'algorithme de mise en relation constitue le c\oe ur fonctionnel
-différenciateur de la plateforme \textit{Business Partnership}
-par rapport aux solutions existantes. Son implémentation repose
-sur la chaîne analytique ACM~$\rightarrow$~CAH~$\rightarrow$
-similarité cosinus, dont les étapes sont décrites ci-après.
-
-\subsubsection{Préparation des données et projection dans
-	l'espace factoriel}
-
-La première étape de l'algorithme consiste à charger depuis la
-base de données les coordonnées factorielles de chaque entreprise,
-préalablement calculées lors de l'ACM conduite sur les données de
-l'enquête du \gls{minepat}. Ces coordonnées, stockées dans la base
-de données sous la forme de champs numériques associés à chaque
-profil d'entreprise, représentent la projection de l'entreprise
-dans l'espace factoriel réduit défini par les axes principaux de
-l'ACM. Pour les entreprises nouvellement inscrites sur la plateforme,
-dont les données n'étaient pas incluses dans l'enquête initiale,
-une procédure de \textbf{projection supplémentaire} est appliquée~:
-leurs coordonnées factorielles sont calculées en temps réel à partir
-de la formule barycentrique de l'ACM, en utilisant les coordonnées
-moyennes des modalités de leurs variables qualitatives.
-
-\begin{lstlisting}[language=Python,
-	caption={Projection d'une nouvelle entreprise dans l'espace
-		factoriel de l'ACM}]
-	def projeter_nouvelle_entreprise(profil: dict,
-	coord_modalites: dict,
-	nb_variables: int) -> list:
-	"""
-	Calcule les coordonnees factorielles d'une nouvelle entreprise
-	par la formule barycentrique de l'ACM.
-	profil           : dict {variable: modalite}
-	coord_modalites  : dict {variable__modalite: [coord_axe1, ...]}
-	nb_variables     : nombre de variables actives de l'ACM
-	"""
-	nb_axes = len(next(iter(coord_modalites.values())))
-	coords  = [0.0] * nb_axes
-	
-	for variable, modalite in profil.items():
-	cle = f"{variable}__{modalite}"
-	if cle in coord_modalites:
-	for s in range(nb_axes):
-	coords[s] += coord_modalites[cle][s]
-	
-	# Division par le nombre de variables (formule barycentrique)
-	return [c / nb_variables for c in coords]
-\end{lstlisting}
-
-\subsubsection{Calcul de la similarité cosinus}
-
-La similarité entre deux entreprises $i$ et $j$ est calculée comme
-le cosinus de l'angle formé par leurs vecteurs de coordonnées
-factorielles dans l'espace de l'ACM. Cette mesure, comprise entre
-$-1$ et $1$, est calculée pour chaque paire (entreprise cible,
-entreprise candidate) et stockée temporairement en mémoire vive
-pour la durée de la session de l'utilisateur, afin d'optimiser
-les temps de réponse.
-
-\begin{lstlisting}[language=Python,
-	caption={Calcul de la similarité cosinus entre deux entreprises}]
-	import numpy as np
-	
-	def similarite_cosinus(coords_i: list,
-	coords_j: list) -> float:
-	"""
-	Calcule la similarite cosinus entre deux entreprises
-	representees par leurs coordonnees factorielles.
-	Retourne une valeur dans [-1, 1].
-	"""
-	vi = np.array(coords_i)
-	vj = np.array(coords_j)
-	
-	norme_i = np.linalg.norm(vi)
-	norme_j = np.linalg.norm(vj)
-	
-	if norme_i == 0 or norme_j == 0:
-	return 0.0   # profil incomplet : similarite nulle
-	
-	return float(np.dot(vi, vj) / (norme_i * norme_j))
-\end{lstlisting}
-
-\subsubsection{Génération et classement des recommandations}
-
-La fonction de génération des recommandations calcule la similarité
-cosinus entre l'entreprise cible et l'ensemble des entreprises
-enregistrées sur la plateforme, puis sélectionne et retourne les
-$k$ entreprises présentant les scores de similarité les plus
-élevés. Une contrainte d'exclusion est appliquée pour éviter qu'une
-entreprise ne soit recommandée à elle-même, et un filtre optionnel
-permet de restreindre les recommandations à un sous-ensemble
-d'entreprises défini par des critères géographiques ou sectoriels
-spécifiés par l'utilisateur.
-
-\begin{lstlisting}[language=Python,
-	caption={Génération des $k$ recommandations pour une entreprise}]
-	def generer_recommandations(entreprise_id: int,
-	entreprises: list,
-	k: int = 5,
-	filtre: dict = None) -> list:
-	"""
-	Retourne les k entreprises les plus similaires
-	a l'entreprise cible (id = entreprise_id).
-	entreprises : liste de dicts {id, coords, region, secteur}
-	filtre      : dict optionnel {region: ..., secteur: ...}
-	"""
-	cible = next(e for e in entreprises
-	if e['id'] == entreprise_id)
-	scores = []
-	
-	for candidat in entreprises:
-	if candidat['id'] == entreprise_id:
-	continue
-	# Application des filtres optionnels
-	if filtre:
-	if 'region' in filtre and \
-	candidat['region'] != filtre['region']:
-	continue
-	if 'secteur' in filtre and \
-	candidat['secteur'] != filtre['secteur']:
-	continue
-	
-	score = similarite_cosinus(cible['coords'],
-	candidat['coords'])
-	scores.append({'entreprise': candidat,
-		'score': round(score, 4)})
-	
-	# Tri decroissant par score et selection des k premiers
-	scores.sort(key=lambda x: x['score'], reverse=True)
-	return scores[:k]
-\end{lstlisting}
-
-\subsubsection{Intégration dans le cycle de vie Django}
-
-L'algorithme de recommandation est intégré dans l'architecture
-MVT de Django sous la forme d'un module Python indépendant
-(\texttt{recommandation.py}), invoqué par la vue correspondante
-lors de chaque accès à la page des recommandations. Cette
-architecture modulaire garantit la séparation des responsabilités
-entre la logique métier de recommandation et la logique de
-présentation, et facilite les tests unitaires et les mises à
-jour futures de l'algorithme sans impact sur le reste de
-l'application. Le diagramme de séquence de la
-figure~\ref{fig:sequence_algo} illustre le flux d'exécution
-de l'algorithme lors d'une requête de recommandation.
+demande après vérification des informations fournies. 
 
 \begin{figure}[H]
 	\centering
-	\begin{tikzpicture}[
-		obj/.style={rectangle, draw=primary, fill=primary!10,
-			minimum width=2.5cm, minimum height=0.7cm,
-			align=center, font=\small\bfseries},
-		msg/.style={->, thick, color=primary},
-		ret/.style={dashed, ->, color=secondary},
-		life/.style={dashed, color=darkgray, thick}
-		]
-		% Objets
-		\node[obj] (user)   at (0, 0)    {Utilisateur};
-		\node[obj] (vue)    at (3.5, 0)  {Vue Django};
-		\node[obj] (algo)   at (7, 0)    {Module Reco};
-		\node[obj] (db)     at (10.5, 0) {Base de données};
-		
-		% Lignes de vie
-		\foreach \x in {0, 3.5, 7, 10.5}
-		\draw[life] (\x, -0.35) -- (\x, -6.5);
-		
-		% Messages
-		\draw[msg] (0,-0.8) -- (3.5,-0.8)
-		node[midway,above,font=\tiny] {GET /recommandations/};
-		\draw[msg] (3.5,-1.6) -- (10.5,-1.6)
-		node[midway,above,font=\tiny] {Charger coordonnées entreprises};
-		\draw[ret] (10.5,-2.4) -- (3.5,-2.4)
-		node[midway,above,font=\tiny] {Liste coordonnées factorielles};
-		\draw[msg] (3.5,-3.2) -- (7,-3.2)
-		node[midway,above,font=\tiny] {generer\_recommandations(id, k=5)};
-		\draw[msg] (7,-4.0) -- (7,-4.0);
-		\node[font=\tiny, align=center] at (7,-4.2)
-		{Calcul similarité\\cosinus ($\forall$ candidats)};
-		\draw[ret] (7,-5.0) -- (3.5,-5.0)
-		node[midway,above,font=\tiny] {Top-5 recommandations + scores};
-		\draw[ret] (3.5,-5.8) -- (0,-5.8)
-		node[midway,above,font=\tiny] {Rendu page recommandations};
-	\end{tikzpicture}
-	\caption{Diagramme de séquence du module de recommandation
-		lors d'une requête utilisateur}
-	\label{fig:sequence_algo}
+	\includegraphics[width=\textwidth]{tableauDeBordAdmin.png}
+	\caption{Tableau de bord de l'espace administrateur}
+	\label{fig:admin}
 \end{figure}
 
-%-------------------------------------------------------------
-\subsection{Évaluation des performances de la plateforme}
-\label{subsec:evaluation_performances}
-%-------------------------------------------------------------
 
-L'évaluation des performances de la plateforme \textit{Business
-	Partnership} porte sur deux dimensions complémentaires~: la qualité
-algorithmique du moteur de recommandation, mesurée par les métriques
-statistiques de classification issues de l'AFD~; et les performances
-techniques de la plateforme, mesurées par les temps de réponse
-observés lors des tests fonctionnels.
+\subsubsection{Requ\^ete pour la mise en relation}
 
-\subsubsection{Qualité du moteur de recommandation}
+La mise en relation des entreprises est basée sur l'offre et la demande. Le classement est fait par ordre décroissant des entreprises les plus compatibles avec les besoins de l'entreprise. C'est à dire les entreprises offrant des serices dont vous avez le plus besoin.
 
-La qualité de l'algorithme de mise en relation repose directement
-sur la qualité de la partition issue de la CAH, validée par l'AFD.
-Le tableau~\ref{tab:perf_algo} présente les métriques de performance
-du modèle de classification obtenues lors de la validation.
-
-\begin{table}[H]
+\begin{figure}[H]
 	\centering
-	\caption{Métriques de performance du modèle de classification
-		(validation par l'AFD)}
-	\label{tab:perf_algo}
-	\renewcommand{\arraystretch}{1.5}
-	\begin{tabularx}{\textwidth}{>{\raggedright\arraybackslash}X
-			>{\centering\arraybackslash}p{3.5cm}
-			>{\raggedright\arraybackslash}X}
-		\toprule
-		\rowcolor{primary!15}
-		\textbf{Métrique} & \textbf{Valeur} & \textbf{Interprétation} \\
-		\midrule
-		
-		Accuracy (taux de bon classement)
-		& 97,24\,\%
-		& Excellent~: 97 entreprises sur 100 sont correctement
-		affectées à leur classe \citep{lebart_morineau_piron_1995} \\
-		
-		\rowcolor{lightgray}
-		Coefficient Kappa de Cohen
-		& 0,9435
-		& Accord quasi-parfait entre la classification prédite
-		et la classification réelle (seuil $> 0{,}80$) \\
-		
-		Intervalle de confiance (95\,\%)
-		& [96,14\,\%~; 98,09\,\%]
-		& La performance est stable et significativement supérieure
-		au seuil de 70\,\% préconisé dans la littérature \\
-		
-		\rowcolor{lightgray}
-		Accuracy nulle (\textit{baseline})
-		& 63,07\,\%
-		& Performance d'un classifieur naïf attribuant toujours
-		la classe majoritaire \\
-		
-		p-valeur (test de significativité)
-		& $< 2{,}2 \times 10^{-16}$
-		& La performance est hautement significative~; le modèle
-		est nettement supérieur au hasard \\
-		
-		\rowcolor{lightgray}
-		p-valeur (test de McNemar)
-		& $8{,}50 \times 10^{-7}$
-		& Les erreurs de classement ne sont pas symétriques,
-		indiquant une discrimination différenciée selon les classes \\
-		
-		\bottomrule
-	\end{tabularx}
-\end{table}
+	\includegraphics[width=\textwidth]{requeteSQL.png}
+	\caption{Requ\^ete pour la mise en relation }
+	\label{fig:admin}
+\end{figure}
 
-Ces résultats attestent d'une qualité de classification
-remarquable~: avec un taux de bon classement de \textbf{97,24\,\%}
-et un coefficient Kappa de \textbf{0,9435}, le modèle d'AFD
-valide avec une très forte robustesse la partition en classes
-obtenue par la CAH. Ces performances constituent un indicateur
-fort de la pertinence de l'algorithme de mise en relation de la
-plateforme~: les entreprises d'une même classe présentent des
-profils de besoins suffisamment homogènes pour que la similarité
-cosinus calculée dans l'espace factoriel constitue un critère
-de recommandation fiable et discriminant.
-
-\subsubsection{Performances techniques}
-
-Les tests fonctionnels conduits sur la plateforme ont permis de
-mesurer les temps de réponse associés aux principales opérations.
-L'ensemble des opérations respecte les seuils définis dans le
-cahier des charges~: les pages de consultation de profils et
-d'affichage des recommandations répondent en moins de 3 secondes,
-et le calcul du Top-5 des recommandations pour une base de
-1\,194 entreprises s'effectue en moins de 2 secondes, validant
-ainsi l'adéquation de la solution aux contraintes de performance
-fixées.
-
-%-------------------------------------------------------------
-\subsection{Limites du travail}
-\label{subsec:limites}
-%-------------------------------------------------------------
-
-Tout travail scientifique et technique est sujet à des limites
-qu'il convient d'identifier avec rigueur et honnêteté intellectuelle,
-afin d'en délimiter clairement le champ de validité et d'en guider
-les développements ultérieurs. Les limites du présent travail se
-situent à trois niveaux distincts~: les limites relatives aux données,
-les limites algorithmiques et les limites techniques.
-
-\subsubsection{Limites relatives aux données}
-
-La principale limite du travail tient à la nature et à la
-représentativité des données exploitées. L'enquête du \gls{minepat}
-de 2025, bien qu'ayant permis de collecter des informations sur
-\textbf{1\,194 entreprises}, ne constitue pas un échantillon
-probabiliste représentatif de l'ensemble du tissu productif
-camerounais, évalué à plusieurs centaines de milliers d'unités
-économiques par le RGE3 de l'INS \cite{ins_rge_2023}. La
-sélection des entreprises enquêtées a reposé sur les réseaux
-des délégués régionaux et départementaux du \gls{minepat}, ce
-qui peut avoir introduit un biais de sélection en faveur des
-entreprises disposant d'un accès à internet et d'une certaine
-visibilité institutionnelle. Les entreprises du secteur informel
-et les microentreprises rurales, qui représentent pourtant une
-fraction importante du tissu économique national, sont probablement
-sous-représentées dans l'échantillon. Cette limitation affecte
-directement la généralisation des résultats de l'analyse statistique
-et la représentativité du moteur de recommandation.
-
-Par ailleurs, les données étant issues d'une enquête ponctuelle,
-elles reflètent une photographie statique des besoins des entreprises
-à un instant donné. Or, les besoins des entreprises évoluent dans
-le temps en fonction des conjonctures économiques et des dynamiques
-sectorielles. L'absence d'un mécanisme de mise à jour périodique
-et automatisée des coordonnées factorielles de l'ACM constitue
-donc une limite à la pérennité de la pertinence des recommandations
-générées.
-
-\subsubsection{Limites algorithmiques}
-
-Sur le plan algorithmique, la similarité cosinus calculée dans
-l'espace factoriel de l'ACM présente l'avantage d'être simple
-à implémenter et rapide à calculer, mais ne capture pas l'ensemble
-de la complexité des facteurs qui déterminent la compatibilité
-entre deux entreprises. Elle repose en effet sur l'hypothèse que
-la proximité dans l'espace factoriel est un proxy valide de la
-complémentarité des besoins, ce qui peut ne pas être vérifié dans
-tous les cas. Des approches plus sophistiquées, telles que les
-systèmes de recommandation basés sur le filtrage collaboratif
-(\textit{collaborative filtering}) ou les modèles de représentation
-appris par des réseaux de neurones (\textit{embedding-based
-	recommendation}), pourraient potentiellement offrir des
-recommandations plus précises et contextuellement pertinentes,
-au prix d'une complexité algorithmique et computationnelle
-sensiblement plus élevée.
-
-De plus, le moteur de recommandation actuel ne prend pas en compte
-l'historique des interactions entre entreprises~: une mise en
-relation refusée par une entreprise ne modifie pas les
-recommandations futures, et aucun mécanisme d'apprentissage
-à partir des retours utilisateurs n'a été implémenté dans cette
-première version. L'intégration d'un tel mécanisme constitue
-une piste d'amélioration majeure pour les versions futures.
-
-\subsubsection{Limites techniques}
-
-Sur le plan technique, la base de données SQLite retenue pour
-cette version de développement présente des limitations de
-performance et de concurrence qui la rendent inadaptée à un
-déploiement en production à large échelle. La migration vers
-un système de gestion de bases de données plus robuste, tel que
-PostgreSQL, constitue un prérequis indispensable avant tout
-déploiement opérationnel de la plateforme au sein du \gls{minepat}.
-
-Par ailleurs, la plateforme ne dispose pas encore d'une couche
-de cache (\textit{caching layer}) permettant de mémoriser les
-résultats de recommandations déjà calculés, ce qui implique un
-recalcul intégral de la similarité cosinus pour l'ensemble des
-entreprises à chaque requête. Si cette approche est acceptable
-pour une base de 1\,194 entreprises, elle pourrait induire des
-dégradations de performance significatives lors d'un passage à
-l'échelle impliquant plusieurs dizaines de milliers d'entreprises.
-L'implémentation d'un mécanisme de cache distribué, par exemple
-via Redis, est envisagée comme amélioration prioritaire pour la
-version de production.
-
-Enfin, la plateforme ne propose pas encore de version en langue
-anglaise, ce qui limite son accessibilité aux entreprises des
-régions anglophones du Cameroun, pourtant fortement représentées
-dans le tissu économique national. La mise en place d'une
-internationalisation complète de l'interface (\textit{i18n})
-constitue une exigence \textit{Could have} identifiée dans le
-cahier des charges, dont la réalisation est prévue dans une
-version ultérieure.
-
-\begin{remarque}
-	Les limites identifiées dans cette section ne remettent pas en
-	cause la validité et la pertinence de la solution développée dans
-	le cadre de ce travail~: elles en délimitent le champ de validité
-	actuel et tracent une feuille de route précise pour les développements
-	futurs. La plateforme \textit{Business Partnership}, dans son état
-	actuel, constitue un prototype fonctionnel qui démontre la
-	faisabilité technique et la pertinence algorithmique de l'approche
-	retenue, et pose les fondements d'une solution opérationnelle qui
-	pourra être progressivement enrichie et déployée à plus grande
-	échelle sous la supervision du \gls{minepat}.
-\end{remarque}
-	
 	\subsection{Perspectives}
 	
-	
+L'onjectif principal de le plateforme numérique developpée dans le cadre de ce travail est de proposer un environnement de collaboration entre les entreprises basé sur les offres et les besoins de ceux-ci. Les évolutions potentielles envisagées pourraient consister à:
+\begin{itemize}
+	\item Donner la possibilité aux entreprises d'exposer leurs produits visible par les autres. La plateforme pourra donc s'étendre à une vitrine non seuelement de mise en relation mais aussi d'exposition des produits des entreprises;
+	\item Intégrer un système de communication direct entre les entreprises sur la plateforme pour faciliter les échanges;
+	\item Construire un outil d'aide à la décision pour accompagner les entreprises sur la base des données receuillies.
+\end{itemize}
 	
 	%============================================================
 	%  CONCLUSION GÉNÉRALE
@@ -3662,7 +2950,7 @@ version ultérieure.
 	\addcontentsline{toc}{chapter}{Conclusion Générale}
 	\markboth{Conclusion Générale}{Conclusion Générale}
 	
-	
+	L'atteint des objctifs de la \gls{snd30} fait parti des préoccupations majeur pour le gouvernement Camerounais. Des réformes, des études, des stratégies ont été élaborées dans ce but. Le secteur privé, identifié comme moteur de la croissance économique fait donc l'objet d'une attention particulière. Construire un climat des affaires propices pour ce dernier contriburait considérablement à l'atteinte des objectifs. L'étude réalisée par le MINEPAT qui a fait l'objet de notre travail fait état d'une économie très peu tournée vers la transformation par conséquent une économie avec une valeur ajoutée faible. La plateforme numérique developpée dans le cadre de travail se veut etre un tremplin qui permettra de dynamiser les le secteur privé et de le rendre compétitif 
 	\medskip
 	
 

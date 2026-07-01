@@ -24,19 +24,6 @@ David~J. Anderson.
   Business}.
 \newblock Blue Hole Press, Sequim, WA, 2010.
 
-\bibitem[Anderson and Carmichael(2015)]{anderson2015essential}
-D.J. Anderson and A.~Carmichael.
-\newblock \emph{Essential Kanban Condensed}.
-\newblock [Essential Kanban]. Lean-Kanban University, 2015.
-\newblock ISBN 9780984521425.
-\newblock URL \url{https://books.google.cm/books?id=fHMCDQEACAAJ}.
-
-\bibitem[Bardos(2001)]{bardos_2001}
-Max Bardos.
-\newblock \emph{Analyse discriminante~: application au risque et scoring
-  financier}.
-\newblock Dunod, Paris, 2001.
-
 \bibitem[Beck et~al.(2001)Beck, Beedle, van Bennekum, Cockburn, Cunningham,
   Fowler, Grenning, Highsmith, Hunt, Jeffries, Kern, Marick, Martin, Mellor,
   Schwaber, Sutherland, and Thomas]{beck2001}
@@ -85,17 +72,33 @@ Fran\c{c}ois Husson, S\'ebastien Le, and J\'er\^ome Pag\`es.
 \newblock Rapport statistique, Institut National de la Statistique,
   Yaound{\'e}, Cameroun, 2023.
 
+\bibitem[Kimball and Ross(2002)]{kimball2002toolkit}
+Ralph Kimball and Margy Ross.
+\newblock \emph{The Data Warehouse Toolkit: The Complete Guide to Dimensional
+  Modeling}.
+\newblock John Wiley \& Sons, New York, 2 edition, 2002.
+\newblock ISBN 978-0-471-20024-6.
+
 \bibitem[{Larousse}(2024)]{larousse}
 {Larousse}.
 \newblock Dictionnaire larousse en ligne.
 \newblock \url{https://www.larousse.fr/dictionnaires/francais/}, 2024.
 \newblock Consult{'e} le 1er mars 2025.
 
-\bibitem[Lebart et~al.(1995)Lebart, Morineau, and
+\bibitem[Lebart et~al.(1995{\natexlab{a}})Lebart, Morineau, and Piron]{dunod}
+Ludovic Lebart, Alain Morineau, and Marie Piron.
+\newblock \emph{Statistique exploratoire multidimensionnelle}.
+\newblock Dunod, Paris, 3\textsuperscript{e} \'ed. edition, 1995{\natexlab{a}}.
+\newblock ISBN 978-2100028863.
+\newblock Contient les d\'eveloppements th\'eoriques sur l'Analyse des
+  Correspondances Multiples et les corrections des valeurs propres de
+  Benz\'ecri.
+
+\bibitem[Lebart et~al.(1995{\natexlab{b}})Lebart, Morineau, and
   Piron]{lebart_morineau_piron_1995}
 Ludovic Lebart, Alain Morineau, and Marie Piron.
 \newblock \emph{Statistique exploratoire multidimensionnelle}.
-\newblock Dunod, Paris, 1995.
+\newblock Dunod, Paris, 1995{\natexlab{b}}.
 
 \bibitem[{LinkedIn Corporation}(2024)]{linkedin2024}
 {LinkedIn Corporation}.
@@ -187,10 +190,13 @@ Gilbert Saporta.
 \newblock \emph{Probabilit{'e}s, Analyse des Donn{'e}es et Statistique}.
 \newblock Technip, Paris, France, 3 edition, 2010.
 
-\bibitem[Tardieu et~al.(1983)Tardieu, Rochfeld, and Coletti]{tardieu_1983}
-Hubert Tardieu, Arnold Rochfeld, and Ren{\'e} Coletti.
-\newblock \emph{La m{\'e}thode {MERISE}~: Principes et outils}.
-\newblock Les {\'E}ditions d'Organisation, Paris, 1983.
+\bibitem[Venables and Ripley(2002)]{venables2002modern}
+William~N. Venables and Brian~D. Ripley.
+\newblock \emph{Modern Applied Statistics with S}.
+\newblock Springer, New York, 4\textsuperscript{e} éd. edition, 2002.
+\newblock ISBN 978-0-387-95457-8.
+\newblock Documentation officielle de référence pour le package MASS et
+  l'implémentation de la fonction lda.
 
 \bibitem[Williamson(1985)]{williamson1985}
 Oliver~E. Williamson.
