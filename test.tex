@@ -1922,53 +1922,6 @@ Lorsque le test du $\chi^2$ indique une association significative, l’intensit�
 	\end{equation}
 	où $\mathbf{S}_c$ désigne la matrice de covariance interne de la seule classe $c$.
 	
-\subsection{Justification de la méthode utilisée}
-	Le choix de la chaîne analytique retenue dans ce travail ---
-	Analyse des Correspondances Multiples (ACM), Classification
-	Ascendante Hiérarchique (CAH) et Analyse Factorielle
-	Discriminante (AFD) --- s'inscrit dans une tradition méthodologique
-	solidement établie dans la littérature statistique pour le
-	traitement des données d'enquête à variables qualitatives.
-	L'ACM est une méthode d'analyse factorielle adaptée aux données
-	qualitatives, qui permet d'étudier simultanément plus de deux
-	variables. Un exemple typique de données utilisées en ACM est
-	précisément celui des enquêtes d'opinion et des questionnaires
-	à choix multiples, dont la structure est analogue à celle de
-	l'enquête du \gls{minepat} mobilisée dans ce travail.
-	L'ACM constitue l'équivalent
-	de l'Analyse en Composantes Principales (ACP) pour les variables
-	qualitatives et se réduit formellement à une Analyse Factorielle
-	des Correspondances (AFC) appliquée au tableau disjonctif complet
-	ou au tableau de Burt issus du tableau de données initial
-	\citet{saporta_2010}. La conduite de la CAH à partir des
-	coordonnées factorielles issues de l'ACM --- approche connue
-	sous le nom de méthode HCPC (\textit{Hierarchical Clustering on
-		Principal Components}) dans le package \texttt{FactoMineR} du
-	logiciel R --- est recommandée par \citet{husson_le_pages_2009}
-	comme la procédure optimale pour classifier des individus décrits
-	par des variables qualitatives, dans la mesure où elle s'affranchit
-	des distorsions induites par le calcul de distances euclidiennes
-	directement sur des indicatrices binaires \cite{husson_le_pages_2009}. Le critère d'agrégation de Ward, retenu pour la
-	CAH, est unanimement recommandé dans la littérature pour produire
-	des classes compactes et bien séparées, en minimisant la perte
-	d'inertie inter-classes à chaque étape de fusion
-	\citep{lebart_morineau_piron_1995}. Enfin, l'AFD  dans le prolongement des
-	travaux fondateurs de Ronald Fisher, constitue la méthode de
-	référence pour valider et caractériser une partition en classes
-	prédéfinies à l'aide des variables les plus discriminantes
-	\citep{saporta_2010}. L'AFD est une technique qui projette des
-	classes prédéfinies sur des plans factoriels les discriminant le
-	plus possible, ce qui en fait l'outil idéal pour valider la
-	partition obtenue par la CAH et identifier les variables qui
-	permettent de distinguer le plus efficacement les profils
-	d'entreprises constitués. La combinaison ACM~$\rightarrow$~CAH
-	~$\rightarrow$~AFD constitue ainsi une chaîne analytique
-	méthodologiquement cohérente, éprouvée dans de nombreux travaux
-	académiques portant sur l'analyse d'enquêtes économiques et
-	sociales à variables catégorielles, et dont la pertinence au
-	regard des données mobilisées dans ce travail est pleinement
-	justifiée.
-	
 	
 	
 	%=============================================================
@@ -2010,6 +1963,8 @@ Le framework de haut niveau \textit{Django}, initialement développé en 2003 po
 	\item \textbf{La Vue (View) :} Contient la logique de contrôle. Elle intercepte les requêtes HTTP, interagit avec les Modèles pour récupérer ou modifier les données, et sélectionne le Template approprié à afficher. Elle fait office de \textit{Contrôleur}.
 \end{itemize}
 	
+	\section*{Conclusion}
+	En conclusion, la méthodologie déployée dans ce travail répond aux exigences techniques de notre double objectif. D'une part, la cartographie des besoins des entreprises s'est appuyée sur un ensemble d'outils statistiques allant des analyses descriptives (univariée et bivariée) aux méthodes multidimensionnelles, notamment l'Analyse des Correspondances Multiples (\gls{acm}), l'Analyse Factorielle Discriminante (\gls{afd}) et la Classification Ascendante Hiérarchique (\gls{cah}). D'autre part, le développement de la plateforme numérique «~Business Partnership~» repose sur une modélisation dimensionnelle de la base de données afin de garantir l'efficacité des requêtes.
 	%============================================================
 	%  CHAPITRE 4 : PRÉSENTATION DES RÉSULTATS
 	%============================================================
@@ -2942,7 +2897,8 @@ L'onjectif principal de le plateforme numérique developpée dans le cadre de ce
 	\item Intégrer un système de communication direct entre les entreprises sur la plateforme pour faciliter les échanges;
 	\item Construire un outil d'aide à la décision pour accompagner les entreprises sur la base des données receuillies.
 \end{itemize}
-	
+\section*{Conclusion}
+La cartographie des besoins des entreprises, réalisée à l'aide d'outils tant théoriques que pratiques, a permis de mettre en évidence trois catégories distinctes. L'identification du profil des entreprises et des besoins les plus récurrents au sein de chaque classe pourrait ainsi guider les pouvoirs publics dans la mise en œuvre d'actions ciblées. Ces derniers n'étant pas en mesure de répondre à l'ensemble des sollicitations multiformes des entreprises, la plateforme numérique développée dans le cadre de ce travail vient non seulement accompagner ces structures, mais aussi appuyer les interventions du \gls{minepat}. 
 	%============================================================
 	%  CONCLUSION GÉNÉRALE
 	%============================================================
@@ -2950,8 +2906,13 @@ L'onjectif principal de le plateforme numérique developpée dans le cadre de ce
 	\addcontentsline{toc}{chapter}{Conclusion Générale}
 	\markboth{Conclusion Générale}{Conclusion Générale}
 	
-	L'atteint des objctifs de la \gls{snd30} fait parti des préoccupations majeur pour le gouvernement Camerounais. Des réformes, des études, des stratégies ont été élaborées dans ce but. Le secteur privé, identifié comme moteur de la croissance économique fait donc l'objet d'une attention particulière. Construire un climat des affaires propices pour ce dernier contriburait considérablement à l'atteinte des objectifs. L'étude réalisée par le MINEPAT qui a fait l'objet de notre travail fait état d'une économie très peu tournée vers la transformation par conséquent une économie avec une valeur ajoutée faible. La plateforme numérique developpée dans le cadre de travail se veut etre un tremplin qui permettra de dynamiser les le secteur privé et de le rendre compétitif 
-	\medskip
+L'atteinte des objectifs de la Stratégie Nationale de Développement 2020-2030 (\gls{snd30}) constitue l'une des préoccupations majeures du gouvernement camerounais. Dans cette perspective, le secteur privé a été identifié comme le principal moteur de la croissance économique, rendant indispensable l'amélioration continue du climat des affaires pour stimuler sa compétitivité. Le présent travail s'est inscrit dans cette dynamique à travers l'exploitation des données de l'enquête nationale initiée par le \gls{minepat}.
+
+Le volet analytique de cette étude a mis en évidence les caractéristiques structurelles du tissu entrepreneurial national, révélant notamment une économie encore faiblement orientée vers la transformation industrielle et souffrant d'un déficit de valeur ajoutée. L'application des méthodes d'analyse statistique multidimensionnelle a toutefois permis de segmenter les entreprises en trois profils distincts, offrant ainsi une grille de lecture factuelle pour orienter les futures interventions publiques. 
+
+Face au constat que l'État ne peut répondre seul aux besoins multiformes de ces acteurs, la plateforme numérique «~Business Partnership~» a été développée comme un outil d'accompagnement direct. En s'appuyant sur une modélisation dimensionnelle adaptée, cette application facilite la mise en relation et la recherche d'opportunités d'affaires entre les entreprises, contribuant ainsi à dynamiser le secteur privé.
+
+En guise d'ouverture, ce travail pose les bases d'un système d'aide à la décision qui pourrait être enrichi à l'avenir. Une perspective intéressante consisterait à intégrer des modules d'analyse prédictive ou d'intelligence artificielle pour recommander automatiquement des partenariats en fonction de l'évolution des besoins des entreprises, consolidant ainsi le rôle de la plateforme comme levier du développement économique national.
 	
 
 	%============================================================
@@ -2965,19 +2926,42 @@ L'onjectif principal de le plateforme numérique developpée dans le cadre de ce
 	%============================================================
 	%  ANNEXES
 	%============================================================
-	\appendix
+	
 	\chapter{Questionnaire de l'enquête MINEPAT 2025}
 	\label{ann:questionnaire}
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=\textwidth]{annexe1.png}
+		\caption{Questionnaire }
+		\label{fig:admin}
+	\end{figure}
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=\textwidth]{annexe2.png}
+		\caption{Questionnaire}
+		\label{fig:admin}
+	\end{figure}
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=\textwidth]{annexe3.png}
+		\caption{Questionnaire}
+		\label{fig:admin}
+	\end{figure}
 	
-	
-	
-	\chapter{Modèle de données complet}
+	\chapter{Publication de l'annonce}
 	\label{ann:modele}
-	
-	
-	
-	\chapter{Manuel d'utilisation de la plateforme}
-	\label{ann:manuel}
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=\textwidth]{annexe5.jpg}
+		\caption{Communiqué d'inter\^et publique}
+		\label{fig:admin}
+	\end{figure}
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=\textwidth]{annexe6.jpg}
+		\caption{Demande de communiqué à cameroun tribune}
+		\label{fig:admin}
+	\end{figure}
 	
 
 	

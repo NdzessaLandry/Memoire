@@ -83,11 +83,10 @@
 \contentsline {paragraph}{Formulation mathématique}{45}{Item.32}%
 \contentsline {paragraph}{Projection sur les axes discriminants}{46}{equation.4.18}%
 \contentsline {paragraph}{Règle de classification et hypothèses probabilistes}{47}{equation.4.20}%
-\contentsline {subsection}{\numberline {4.1.3}Justification de la méthode utilisée}{48}{subsection.4.1.3}%
-\contentsline {section}{\numberline {4.2}Méthodologie de conception et de développement de la plateforme Business Partnership}{49}{section.4.2}%
-\contentsline {subsection}{\numberline {4.2.1}Conception de la base de données}{49}{subsection.4.2.1}%
-\contentsline {subsubsection}{Spécification fonctionnelle et règles de gestion}{49}{subsection.4.2.1}%
-\contentsline {subsubsection}{Schéma de la base de données}{49}{subsection.4.2.1}%
+\contentsline {section}{\numberline {4.2}Méthodologie de conception et de développement de la plateforme Business Partnership}{48}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Conception de la base de données}{48}{subsection.4.2.1}%
+\contentsline {subsubsection}{Spécification fonctionnelle et règles de gestion}{48}{subsection.4.2.1}%
+\contentsline {subsubsection}{Schéma de la base de données}{48}{subsection.4.2.1}%
 \contentsline {subsection}{\numberline {4.2.2}Langages de programmation et frameworks utilisés}{49}{subsection.4.2.2}%
 \contentsline {chapter}{\numberline {5}Présentation des résultats}{51}{chapter.5}%
 \contentsline {section}{\numberline {5.1}Résultats sur la cartographie des entreprises}{51}{section.5.1}%
@@ -132,7 +131,6 @@
 \contentsline {subsubsection}{Requ\^ete pour la mise en relation}{73}{figure.caption.52}%
 \contentsline {subsection}{\numberline {5.2.3}Perspectives}{74}{subsection.5.2.3}%
 \contentsline {chapter}{Conclusion Générale}{75}{chapter*.54}%
-\contentsline {chapter}{\numberline {A}Questionnaire de l'enquête MINEPAT 2025}{79}{appendix.A}%
-\contentsline {chapter}{\numberline {B}Modèle de données complet}{80}{appendix.B}%
-\contentsline {chapter}{\numberline {C}Manuel d'utilisation de la plateforme}{81}{appendix.C}%
+\contentsline {chapter}{\numberline {6}Questionnaire de l'enquête MINEPAT 2025}{79}{chapter.6}%
+\contentsline {chapter}{\numberline {7}Publication de l'annonce}{83}{chapter.7}%
 \contentsfinish 
