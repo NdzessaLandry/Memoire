@@ -239,6 +239,7 @@ justification=centering
 \newacronym{dape}{DAPE}{Division des Analyses et des Politiques Économiques}
 \newacronym{minepat}{MINEPAT}{Ministère de l'Économie, de la Planification
 	et de l'Aménagement du Territoire}
+\newacronym{owasp}{OWASP}{Open Web Application Security Project}
 \newacronym{snd30}{SND30}{Stratégie Nationale de Développement  2020-2030}
 \newacronym{dgepip}{DGEPIP}{Direction Générale de l'Économie et de la
 	Programmation des Investissements Publics}
@@ -270,7 +271,7 @@ justification=centering
 \newcommand{\matricule}{21D0180EP}
 \newcommand{\directeur}{Pr }
 \newcommand{\annee}{2025 / 2026}
-\newcommand{\titredoc}{Cartographie des besoins et conception, développement d'une plateforme de mise en relation des entreprises}
+\newcommand{\titredoc}{Cartographie des besoins, conception et développement d'une plate-forme de mise en relation des entreprises}
 %============================================================
 %  DOCUMENT
 %============================================================
@@ -369,7 +370,7 @@ justification=centering
 			\vspace{0.45cm}
 			
 			%--- BLOC 5 : Auteur ---
-			{\normalsize Par NDZESSA AVELE Bruno Landry}\\[5pt]
+			{\normalsize Par }\\[5pt]
 			{\large\bfseries \auteur}\\[3pt]
 			{\small Matricule : \matricule}
 			
@@ -377,8 +378,8 @@ justification=centering
 			
 			%--- BLOC 6 : Encadrement ---
 			{\normalsize Sous la direction de :}\\[5pt]
-			{\large\bfseries\color{primary} \directeur}\\[2pt]
-			{\small Maître de Conférences}
+			{\large\bfseries\color{primary} Pr KALADZAVI Guidedi}\\[2pt]
+			{\small Chargé de cours}
 			
 			\vspace{0.4cm}
 			
@@ -387,8 +388,9 @@ justification=centering
 					>{\raggedright\arraybackslash}X}
 				\multicolumn{2}{c}{\normalsize\bfseries Devant le jury composé de :}\\[6pt]
 				Président :    & Pr  \\[4pt]
-				Rapporteur :   & Pr  \\[4pt]
-				Examinatrice : & Dr  \\
+				Rapporteur :   & Pr KALADZAVI Guidedi \\[4pt]
+				Examinatrice : & Dr  \\[4pt]
+				Invité: & M. Abdelaziz Junmbe
 			\end{tabularx}
 			
 			\vfill
@@ -430,10 +432,10 @@ justification=centering
 	\addcontentsline{toc}{chapter}{Remerciements}
 	\thispagestyle{plain}
 	Ce travail n'aurait pas vu le jour sans l'apport considérable de 
-	de nombreuses personnes. Nous remercions sincèrement :
+	 nombreuses personnes. Nous remercions sincèrement :
 	
 	\begin{itemize}
-		\item M. ALAMINE OUSMANE MEY pour nous avoir accordé la possibilité d'effectuer un stage académique au sein du ministère dont il a la charge;
+		\item M. ALAMINE OUSMANE MEY Ministre de l'Economie de la Planification et de l'Aménagement du Territoire pour nous avoir accordé la possibilité d'effectuer un stage académique au sein de la structure dont il a la charge;
 		\item M. MENDO PAULIN chef de la \textbf{\gls{dape}} pour l'accueil chaleureux et l'accompagnement permanent dont nous avons fait l'objet;
 		\item M. ABDELAZIZ JUNMBE Cadre à la \textbf{\gls{cas}} et notre encadreur professionel pour ses conseils avisés et le suivi à la loupe de l'évolution de ce travail;
 		\item Pr ALIDOU MOHAMADOU \textbf{Directeur de l'École Nationale Supérieure Polytechnique de Maroua};
@@ -455,7 +457,7 @@ justification=centering
 \chapter*{Résumé}
 \addcontentsline{toc}{chapter}{Résumé}
 \thispagestyle{plain}
-Le secteur privé camerounais fait face à des difficultés manifestes qui entravent sa croissance et sa pérennité. Afin de dynamiser ce tissu économique, le présent travail s'articule autour d'un double objectif : analyser les données d'une enquête nationale initiée par le \gls{minepat} pour cartographier précisément les besoins des entreprises, puis concevoir une plateforme numérique de mise en relation de ces acteurs. Face à des données essentiellement catégorielles, une démarche d'analyse multidimensionnelle combinant statistiques descriptives (univariées et bivariées) et classification automatique a été déployée. L'analyse révèle que $96{,}23\,\%$ des structures recensées souffrent d'un déficit critique de financement, le secteur d'activité s'imposant comme la variable la plus discriminante pour segmenter la nature de leurs besoins. De plus, une forte dépendance statistique est mise en évidence entre l'ancienneté des entreprises et leurs exigences en matière de recherche et d'innovation. L'application de la Classification Ascendante Hiérarchique (CAH) a permis de partitionner le tissu entrepreneurial en trois profils distincts. La première catégorie, qualifiée d'acteurs agro-productifs émergents, regroupe de petites structures évoluant majoritairement dans l'agroalimentaire ($81{,}1\,\%$) et ayant une ancienneté de 5 à 9 ans. La deuxième catégorie, identifiée comme les opérateurs financiers et autres services établis, représente des entreprises plus matures, dont $26{,}6\,\%$ affichent plus de 20 ans d'existence, orientées principalement vers les services financiers et bancaires. Enfin, la troisième catégorie, nommée les petites entreprises multisectorielles, est constituée de jeunes structures en phase de démarrage opérant à $68{,}8\,\%$ dans des secteurs diversifiés hors agroalimentaire. Le second volet de ce travail est consacré au développement de la plateforme «~Business Partnership~». Adoptant une approche orientée vers la performance, la base de données sous-jacente a fait l'objet d'une modélisation dimensionnelle, optimisant ainsi la fluidité et l'efficacité des requêtes SQL lors des recherches de partenariats.
+Le secteur privé Camerounais fait face à des difficultés manifestes qui entravent sa croissance et sa pérennité. Afin de dynamiser ce tissu économique, le présent travail s'articule autour d'un double objectif : analyser les données d'une enquête nationale initiée par le \gls{minepat} pour cartographier précisément les besoins des entreprises, puis concevoir une plateforme numérique de mise en relation des entreprises. Les variables issues de la dite enqu\^ete étant essentiellement catégorielles, une démarche d'analyse factorielle combinant statistiques descriptives (univariées et bivariées) et classification automatique a été déployée. L'analyse révèle que $96{,}23\,\%$ des structures recensées souffrent d'un déficit critique de financement, le secteur d'activité s'imposant comme la variable qui permette le mieux de segmenter la nature des besoins. De plus, une forte dépendance est mise en évidence entre l'ancienneté des entreprises et leurs exigences en matière de recherche et d'innovation. L'application de la Classification Ascendante Hiérarchique (CAH) a permis de partitionner le tissu entrepreneurial en trois profils distincts. La première catégorie, qualifiée d'acteurs agro-productifs émergents, regroupe les petites structures évoluant majoritairement dans l'agroalimentaire ($81{,}1\,\%$) et ayant une ancienneté de 5 à 9 ans. La deuxième catégorie, identifiée comme les opérateurs financiers et autres services établis, représente des entreprises plus matures, dont $26{,}6\,\%$ affichent plus de 20 ans d'existence, orientées principalement vers les services financiers et bancaires. Enfin, la troisième catégorie, nommée les petites entreprises multisectorielles, est constituée de jeunes structures en phase de démarrage opérant à $68{,}8\,\%$ dans des secteurs diversifiés hors agroalimentaire. Le second volet de ce travail est consacré au développement de la plateforme «~Business Partnership~». Adoptant une approche orientée vers la performance, la base de données sous-jacente a fait l'objet d'une modélisation dimensionnelle, optimisant ainsi la fluidité et l'efficacité des requêtes SQL lors des recherches de partenariats.
 
 \vspace{0.5cm}
 \noindent \textbf{Mots-clés :} Plateforme numérique, cartographie des besoins, modélisation dimensionnelle, secteur privé, classification ascendante hiérarchique.
@@ -466,14 +468,7 @@ Le secteur privé camerounais fait face à des difficultés manifestes qui entra
 	\chapter*{Abstract}
 	\addcontentsline{toc}{chapter}{Abstract}
 	\thispagestyle{plain}
-	The Cameroonian private sector faces pronounced challenges that hinder its growth and sustainability. To revitalize this economic framework, this study revolves around a dual objective: analyzing data from a national survey initiated by the \gls{minepat} to accurately map business needs, and subsequently designing a digital matchmaking platform for these stakeholders. Given the predominantly categorical nature of the data, a multidimensional data analysis approach was deployed, combining univariate and bivariate descriptive statistics with automatic classification.
-	
-	The analysis reveals that $96.23\,\%$ of the surveyed structures suffer from a critical funding deficit, with the business sector emerging as the most discriminating variable for segmenting the nature of their needs. Furthermore, a strong statistical dependence is highlighted between the seniority of the companies and their requirements regarding research and innovation. The application of Hierarchical Cluster Analysis (\gls{cah}) enabled the partitioning of the entrepreneurial landscape into three distinct profiles. The first category, described as emerging agro-productive actors, clusters small entities operating mainly in the agrifood sector ($81.1\,\%$) with an operational seniority of 5 to 9 years. The second category, identified as established financial operators and other services, represents more mature companies, $26.6\,\%$ of which have been operating for over 20 years, focusing primarily on banking and financial services. Finally, the third category, termed small multisectoral enterprises, consists of young startup structures operating at $68.8\,\%$ in diversified sectors outside of agribusiness.
-	
-	The second phase of this work is dedicated to developing the "Business Partnership" platform. Adopting a performance-oriented approach, the underlying database underwent dimensional modeling, thereby optimizing the fluidity and efficiency of SQL queries during partnership searches.
-	
-	\vspace{0.5cm}
-	\noindent \textbf{Keywords:} Digital platform, needs mapping, dimensional modeling, private sector, hierarchical cluster analysis.
+	The Cameroonian private sector faces clear difficulties that hinder its growth and sustainability. In order to revitalize this economic fabric, this work revolves around a dual objective: analyzing data from a national survey initiated by the \gls{minepat} to precisely map business needs, and then designing a digital matchmaking platform for enterprises. Since the variables from this survey are essentially categorical, a factor analysis approach combining descriptive statistics (univariate and bivariate) and automatic classification was deployed. The analysis reveals that $96.23\,\%$ of the surveyed entities suffer from a critical funding deficit, with the sector of activity emerging as the variable that best segments the nature of these needs. Furthermore, a strong dependence is highlighted between the seniority of the companies and their requirements in terms of research and innovation. The application of Hierarchical Cluster Analysis (HCA) made it possible to partition the entrepreneurial fabric into three distinct profiles. The first category, described as emerging agro-productive actors, brings together small entities operating mainly in the agri-food sector ($81.1\,\%$) and having 5 to 9 years of seniority. The second category, identified as established financial operators and other services, represents more mature companies, $26.6\,\%$ of which have been in existence for more than 20 years, primarily focused on financial and banking services. Finally, the third category, named small multisectoral enterprises, consists of young startup entities with $68.8\,\%$ operating in diversified sectors outside of agri-food. The second part of this work is dedicated to the development of the "Business Partnership" platform. Adopting a performance-oriented approach, the underlying database underwent dimensional modeling, thereby optimizing the fluidity and efficiency of SQL queries during partnership searches.\vspace{0.5cm}\noindent \textbf{Keywords:} Digital platform, needs mapping, dimensional modeling, private sector, hierarchical cluster analysis.
 %	\textbf{Keywords:} Digital platform, business mapping, matching system, Data Sciences, MINEPAT, private sector, Cameroon.
 	
 	\medskip
@@ -509,11 +504,11 @@ Le secteur privé camerounais fait face à des difficultés manifestes qui entra
 La capacité à collaborer et à tisser des relations inter-entreprises pourraient contribuer à la croissance, la compétitivité et la pérennité des entreprises du secteur privé. Au Cameroun, ce besoin de collaboration est d'une grande importance du fait des ambitions portées par la \gls{snd30}, qui place le développement du secteur privé au cœur de l'émergence nationale.
 
  
-Nous pouvons relever que, malgré la présence de divers dispositifs de mise en relation --- à l'instar des plateformes numériques B2B, de la Bourse de Sous-Traitance et de Partenariat (BSTP) ou des dynamiques contractuelles directes --- les performances globales du secteur privé demeurent en deçà des attentes. Ce constat met en lumière une inadéquation potentielle entre les outils de collaboration actuelles et les réalités auxquelles font face les entreprises du secteur privé camerounais. En effet, aucun dispositif institutionnel centralisé ne permet aujourd'hui aux entreprises d'identifier précisément leurs besoins spécifiques et de bénéficier d'un ciblage intelligent pour être mises en relation avec des partenaires qui pourront potentiellement les accompagner dans leurs différentes activités. 
+Nous pouvons tout de m\^eme relever que, malgré la présence de divers dispositifs de mise en relation --- à l'instar des plateformes numériques B2B, de la Bourse de Sous-Traitance et de Partenariat (BSTP) ou des dynamiques contractuelles directes --- les performances globales du secteur privé demeurent en deçà des attentes. Ce constat met en lumière une inadéquation potentielle entre les outils de collaboration actuelles et les réalités auxquelles font face les entreprises du secteur privé Camerounais. En effet, aucun dispositif institutionnel centralisé ne permet aujourd'hui aux entreprises d'identifier précisément leurs besoins spécifiques et de bénéficier d'un ciblage intelligent pour être mises en relation avec des partenaires qui pourront potentiellement les accompagner dans leurs différentes activités. 
 
-Dès lors, se pose le problème de la conception d'un outil de mise en relation optimal, adapté aux spécificités locales et capable de dynamiser efficacement les partenariats inter-entreprises. Face à ce défi, notre réflexion est guidée par la préoccupation centrale suivante : Comment structurer et déployer un outil technologique de collaboration centralisé capable de capter les besoins endogènes des entreprises camerounaises et d'optimiser leur mise en relation ?
+Dès lors, se pose le problème de la conception d'un outil de mise en relation optimal, adapté aux spécificités locales et capable de dynamiser efficacement les partenariats inter-entreprises. Face à ce défi, notre réflexion est guidée par les préoccupations centrales suivantes : Quels sont les profils d'entreprises spécifiques présentant des besoins similaires? Et comment structurer et déployer un outil technologique de collaboration centralisé capable de capter les besoins endogènes des entreprises camerounaises et d'optimiser leur mise en relation ?
 
-Pour répondre à cette problématique, notre travail s'articule autour de cinq chapitres :
+Pour répondre à cette double problématique, notre travail s'articule autour de cinq chapitres :
 
 Le chapitre 1 présente la structure d'accueil, expose le contexte global de l'étude et formalise la problématique identifiée sur le terrain. Le chapitre 2 est dédié au cadre théorique et à l'état de l'art. Il s'atèle à définir les concepts clés liés à la collaboration inter-entreprises et analyse de manière critique les solutions existantes afin d'en ressortir les limites techniques et fonctionnelles. Les chapitres 3 et 4 constituent le cœur méthodologique de notre travail, détaillant successivement la phase de conception et la phase de réalisation, où les choix technologiques et les modélisations sont explicités. Le chapitre 5 évalue et présente les résultats obtenus, validant la pertinence fonctionnelle de la solution développée. Enfin, une conclusion générale viendra dresser le bilan de nos travaux et ouvrir des perspectives d'amélioration pour les développements futurs.
 
@@ -1393,21 +1388,16 @@ La cartographie des besoins des entreprises, définie ici comme la mise en lumi�
 	sécurité suivantes sont imposées~:
 	
 	\begin{itemize}
-		\item \textbf{Chiffrement des communications}~: l'ensemble des
-		échanges entre le navigateur de l'utilisateur et le serveur de
-		la plateforme doit être chiffré via le protocole
-		\textbf{HTTPS/TLS}~;
 		
 		\item \textbf{Hachage des mots de passe}~: les mots de passe
 		des utilisateurs doivent être stockés sous forme hachée à l'aide
-		d'un algorithme cryptographiquement sûr (bcrypt ou Argon2),
+		d'un algorithme cryptographiquement sûr,
 		et ne doivent en aucun cas être stockés en clair dans la base
 		de données~;
 		
 		\item \textbf{Protection contre les attaques courantes}~: la
 		plateforme doit intégrer des mécanismes de protection contre
-		les principales vulnérabilités web répertoriées par l'OWASP
-		(\textit{Open Web Application Security Project}), notamment les
+		les principales vulnérabilités web répertoriées par l'\gls{owasp}, notamment les
 		injections SQL, les attaques par script intersite (XSS) et
 		la falsification de requêtes intersites (CSRF). Le framework
 		Django, retenu pour le développement, intègre nativement des
@@ -1699,12 +1689,12 @@ Lorsque le test du $\chi^2$ indique une association significative, l’intensit�
 	\subsubsection{Analyse exploratoire des données}
 	Après les analyses univariée et bivariée, l’analyse multivariée permet d’étudier simultanément l’ensemble des variables de profil et des besoins. Cette étape est nécessaire, car les entreprises ne se différencient pas seulement par une variable isolée. Elles se distinguent plutôt par une combinaison de caractéristiques : taille, secteur, ancienneté, région, statut juridique et besoins exprimés. Les méthodes multivariées permettent donc de passer d’une lecture variable par variable à une lecture globale des profils d’entreprises. Dans cette logique, l’\gls{acm}), la \gls{cah} puis l'\gls{afd} sont mobilisées.
 	\begin{enumerate}
-		\item \textbf{Analyse en Composante Multiple}:
+		\item \textbf{Analyse des Correspondances Multiples}:
 		
 		\paragraph{Notion d'ACM}
-	L’Analyse des Correspondances Multiples est adaptée aux données qualitatives. Elle permet de résumer l’information contenue dans plusieurs variables catégorielles et de représenter les entreprises et les modalités dans un espace factoriel commun. Son intérêt est particulièrement fort dans cette étude, car les variables utilisées sont essentiellement qualitatives : les caractéristiques des entreprises sont exprimées sous forme de catégories, et les besoins sont codés en modalités « Oui » ou « Non ». L’ACM permet ainsi d’identifier les proximités entre modalités et de voir quelles caractéristiques tendent à apparaître ensemble.\\
+	L’Analyse des Correspondances Multiples est adaptée aux données qualitatives. Elle permet de résumer l’information contenue dans plusieurs variables catégorielles et de représenter les entreprises et les modalités dans un espace factoriel commun. Son intérêt est particulièrement fort dans cette étude, car les variables utilisées sont essentiellement qualitatives : les caractéristiques des entreprises sont exprimées sous forme de catégories, et les besoins sont codés en modalités « Oui » ou « Non », etc. L’ACM permet ainsi d’identifier les proximités entre modalités et de voir quelles caractéristiques tendent à apparaître ensemble.\\
 	
-	L’interprétation de l’ACM repose d’abord sur les axes factoriels. Chaque axe résume une partie des différences entre les entreprises. Les valeurs propres indiquent la part d’information portée par chaque dimension. En ACM, les pourcentages d’inertie sont souvent relativement faibles, surtout lorsque plusieurs variables qualitatives sont utilisées. Les valeurs propres corrigées proposées parn Benzecri seront donc calculées pour définir les nouvelles contributions de chaque axe. L’essentiel est d’identifier les modalités qui contribuent le plus à chaque axe, car ce sont elles qui donnent un sens économique aux dimensions retenues. Les axes ne sont donc pas interprétés uniquement à partir de leur inertie, mais surtout à partir des modalités qui les structurent.\\
+	L’interprétation de l’ACM repose d’abord sur les axes factoriels. Chaque axe résume une partie des différences entre les entreprises. Les valeurs propres indiquent la part d’information portée par chaque dimension. En ACM, les pourcentages d’inertie sont souvent relativement faibles, surtout lorsque plusieurs variables qualitatives sont utilisées. Les valeurs propres corrigées proposées par Benzecri seront donc calculées pour définir les nouvelles contributions de chaque axe. L’essentiel est d’identifier les modalités qui contribuent le plus à chaque axe, car ce sont elles qui donnent un sens économique aux dimensions retenues. Les axes ne sont donc pas interprétés uniquement à partir de leur inertie, mais surtout à partir des modalités qui les structurent.\\
 	
 	Les contributions des modalités permettent de repérer les catégories qui jouent le rôle le plus important dans la construction des axes. Une modalité fortement contributive participe fortement à la différenciation des entreprises. Le cosinus carré complète cette information en indiquant si la modalité est bien représentée sur l’axe considéré. Une modalité à la fois fortement contributive et bien représentée est particulièrement utile pour interpréter l’axe. À l’inverse, une modalité très rare ou faiblement représentée doit être commentée avec prudence, même lorsqu’elle apparaît visible sur la carte factorielle.\\
 	
@@ -2031,7 +2021,7 @@ Le framework de haut niveau \textit{Django}, initialement développé en 2003 po
 	\end{figure}
 \newpage
 	\subsubsection{Répartition des entreprises par région}
-	Le Cameroun compte 10 régions et au vue des données exploitées, nous pouvons relevés une répartition assez inéquitable.
+	Le Cameroun compte 10 régions et au vue des données exploitées, nous pouvons relever une répartition assez inéquitable.
 	En effet plus de la moitié des entreprises interrogées sont implentées dans les régions du Centre et du Littoral avec
 	respectivement un pourcentage de 39,3\% et 17,8\%. Les autres régions se partagent 42,9\% avec les régions du Nord-Ouest et du Sud-Ouest qui ferment la marque avec respectivement 2,7\% et 2,8\% des entreprises étudiées. 
 	\begin{figure}[H]
@@ -2067,7 +2057,7 @@ Le framework de haut niveau \textit{Django}, initialement développé en 2003 po
 	
 	
 	\subsubsection{Répartition des entreprises par secteur d'activité}
-	Les secteurs d'activités des entreprises locales sont plutot diversifiés. Nous avons pu relevé que 
+	Les secteurs d'activités des entreprises locales sont plutot diversifiés. Nous avons pu relever que 
 le secteur de l'agriculture et de l'agroalimentaire est le plus représenté dans les entreprises locales, 
 il détient à lui seul 62,6\% des entreprises étudiées. Les secteurs de l'industrie manufacturière et des 
 Technologies de l'Informations et de la Communication sont assez peu nombreuses avec respectivement des taux de 5,2 \% et 3,7 \%. 
@@ -2080,10 +2070,10 @@ Technologies de l'Informations et de la Communication sont assez peu nombreuses 
 
 	\subsubsection{Répartition des besoins exprimés}
 	
-	Les entreprises interrogées ont exprimé des besoins divers en relation avec les problèmes rencontrés quotidiennement. Le besoin qui revient le plus est celui du financement avec un taux de 20,1\% ce qui pourrait s'expliquer par une prédominance des TPE et des PME qui ont besoin de fonds pour une meilleur implentation. Vient ensuite le besoin en équipements avec 19,4\%, le besoin de transport est la moins fréquente ce qui traduirait l'existence d'infrastructures adéquat pour l'acheminement des produits.
+	Les entreprises interrogées ont exprimé des besoins divers en relation avec les problèmes rencontrés quotidiennement. Le besoin qui revient le plus est celui du financement avec un taux de 96,2\% ce qui pourrait s'expliquer par une prédominance des TPE et des PME qui ont besoin de fonds pour une meilleur implentation. Vient ensuite le besoin en équipements avec 93,0\%, le besoin de transport est la moins fréquente ce qui traduirait l'existence d'infrastructures adéquat pour l'acheminement des produits.
 	\begin{figure}[H]
 		\centering
-		\includegraphics[width=0.75\textwidth]{repartition_besoins.jpeg}
+		\includegraphics[width=0.75\textwidth]{besoinsCorriges.jpeg}
 		\caption{Répartition globale des besoins exprimés par les entreprises
 			enquêtées}
 		\label{fig:besoins_global}

@@ -4,7 +4,6 @@
 \glossaryentry{DAPE?\glossentry{dape}|setentrycounter[]{page}"\glsnumberformat}{iii}
 \glossaryentry{MINEPAT?\glossentry{minepat}|setentrycounter[]{page}"\glsnumberformat}{v}
 \glossaryentry{MINEPAT?\glossentry{minepat}|setentrycounter[]{page}"\glsnumberformat}{vi}
-\glossaryentry{CAH?\glossentry{cah}|setentrycounter[]{page}"\glsnumberformat}{vi}
 \glossaryentry{MINEPAT?\glossentry{minepat}|setentrycounter[]{page}"\glsnumberformat}{viii}
 \glossaryentry{SND30?\glossentry{snd30}|setentrycounter[]{page}"\glsnumberformat}{2}
 \glossaryentry{MINEPAT?\glossentry{minepat}|setentrycounter[]{page}"\glsnumberformat}{4}
@@ -45,6 +44,7 @@
 \glossaryentry{MINEPAT?\glossentry{minepat}|setentrycounter[]{page}"\glsnumberformat}{27}
 \glossaryentry{MINEPAT?\glossentry{minepat}|setentrycounter[]{page}"\glsnumberformat}{28}
 \glossaryentry{MINEPAT?\glossentry{minepat}|setentrycounter[]{page}"\glsnumberformat}{28}
+\glossaryentry{OWASP?\glossentry{owasp}|setentrycounter[]{page}"\glsnumberformat}{31}
 \glossaryentry{DAPE?\glossentry{dape}|setentrycounter[]{page}"\glsnumberformat}{34}
 \glossaryentry{ACM?\glossentry{acm}|setentrycounter[]{page}"\glsnumberformat}{41}
 \glossaryentry{CAH?\glossentry{cah}|setentrycounter[]{page}"\glsnumberformat}{41}
@@ -54,7 +54,7 @@
 \glossaryentry{CAH?\glossentry{cah}|setentrycounter[]{page}"\glsnumberformat}{50}
 \glossaryentry{MINEPAT?\glossentry{minepat}|setentrycounter[]{page}"\glsnumberformat}{51}
 \glossaryentry{MINEPAT?\glossentry{minepat}|setentrycounter[]{page}"\glsnumberformat}{51}
-\glossaryentry{MINEPAT?\glossentry{minepat}|setentrycounter[]{page}"\glsnumberformat}{73}
 \glossaryentry{MINEPAT?\glossentry{minepat}|setentrycounter[]{page}"\glsnumberformat}{74}
-\glossaryentry{SND30?\glossentry{snd30}|setentrycounter[]{page}"\glsnumberformat}{75}
 \glossaryentry{MINEPAT?\glossentry{minepat}|setentrycounter[]{page}"\glsnumberformat}{75}
+\glossaryentry{SND30?\glossentry{snd30}|setentrycounter[]{page}"\glsnumberformat}{76}
+\glossaryentry{MINEPAT?\glossentry{minepat}|setentrycounter[]{page}"\glsnumberformat}{76}

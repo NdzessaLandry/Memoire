@@ -28,7 +28,7 @@
 \contentsline {subsection}{\numberline {1.2.4}Méthodologie générale}{12}{subsection.1.2.4}%
 \contentsline {subsubsection}{Méthodologie d'analyse des données}{12}{subsection.1.2.4}%
 \contentsline {subsubsection}{Méthodologie de conception de la plateforme}{13}{subsection.1.2.4}%
-\contentsline {subsubsection}{M\'ethodologie agile Kanban}{13}{subsection.1.2.4}%
+\contentsline {subsubsection}{M\'ethodologie agile Kanban}{14}{subsection.1.2.4}%
 \contentsline {chapter}{\numberline {2}Définition des concepts et état de l’art}{16}{chapter.2}%
 \contentsline {section}{\numberline {2.1}Définition des concepts }{17}{section.2.1}%
 \contentsline {subsection}{\numberline {2.1.1}Cartographie des besoins des entreprises}{17}{subsection.2.1.1}%
@@ -97,40 +97,40 @@
 \contentsline {subsubsection}{Répartition des entreprises par ancienneté}{54}{figure.caption.21}%
 \contentsline {subsubsection}{Répartition des entreprises par secteur d'activité}{55}{figure.caption.22}%
 \contentsline {subsubsection}{Répartition des besoins exprimés}{56}{figure.caption.23}%
-\contentsline {subsection}{\numberline {5.1.2}Résultats de l'analyse bivariée}{56}{subsection.5.1.2}%
+\contentsline {subsection}{\numberline {5.1.2}Résultats de l'analyse bivariée}{57}{subsection.5.1.2}%
 \contentsline {subsubsection}{Répartition des besoins selon le statut juridique}{57}{subsection.5.1.2}%
-\contentsline {subsubsection}{Répartition des besoins selon la région}{58}{table.caption.26}%
-\contentsline {subsubsection}{Répartition des besoins selon l'ancienneté}{59}{table.caption.28}%
-\contentsline {subsubsection}{Répartition des besoins selon le secteur d'activité}{60}{table.caption.30}%
-\contentsline {subsubsection}{Répartition des besoins selon la taille de l'entreprise}{61}{table.caption.32}%
-\contentsline {subsection}{\numberline {5.1.3}Résultats de l'analyse multidimensionnelle}{62}{subsection.5.1.3}%
-\contentsline {subsubsection}{Analyse des Correspondances Multiples (ACM)}{62}{subsection.5.1.3}%
-\contentsline {paragraph}{Valeurs propres et inertie expliquée}{62}{subsection.5.1.3}%
-\contentsline {paragraph}{Projection des modalités sur le premier plan factoriel}{63}{figure.caption.35}%
-\contentsline {paragraph}{Variables contribuant aux axes factoriels}{64}{figure.caption.36}%
-\contentsline {subsubsection}{Classification Ascendante Hiérarchique (CAH)}{65}{figure.caption.37}%
-\contentsline {paragraph}{Dendrogramme et choix du nombre de classes}{65}{figure.caption.37}%
-\contentsline {paragraph}{Visualisation de la partition obtenue}{66}{figure.caption.38}%
-\contentsline {subsubsection}{Analyse Factorielle Discriminante (AFD)}{67}{figure.caption.41}%
-\contentsline {paragraph}{Axes discriminants et pouvoir discriminant}{67}{figure.caption.41}%
-\contentsline {paragraph}{Les axes factoriels obtenus}{68}{figure.caption.42}%
-\contentsline {paragraph}{Fonction LD1 — Axe de discrimination principal}{68}{table.caption.43}%
-\contentsline {paragraph}{Fonction LD2 — Axe secondaire de séparation}{69}{table.caption.43}%
-\contentsline {paragraph}{Précision globale (Accuracy)}{69}{table.caption.44}%
-\contentsline {paragraph}{Indice Kappa de Cohen}{69}{table.caption.44}%
-\contentsline {paragraph}{Comparaison au classifieur naïf}{70}{table.caption.44}%
-\contentsline {paragraph}{Significativité statistique}{70}{table.caption.44}%
-\contentsline {section}{\numberline {5.2}Présentation de la plateforme \textit {Business Partnership}}{70}{section.5.2}%
-\contentsline {subsection}{\numberline {5.2.1}Architecture générale de la plateforme}{70}{subsection.5.2.1}%
-\contentsline {subsection}{\numberline {5.2.2}Interface utilisateur}{70}{subsection.5.2.2}%
-\contentsline {subsubsection}{Page de login}{71}{subsection.5.2.2}%
-\contentsline {subsubsection}{Page de création de compte}{71}{figure.caption.45}%
-\contentsline {subsubsection}{Validation de compte par l'administrateur}{72}{figure.caption.46}%
-\contentsline {subsubsection}{Tableau de bord de l'entreprise}{72}{figure.caption.48}%
-\contentsline {subsubsection}{Tableau de bord administrateur}{73}{figure.caption.49}%
-\contentsline {subsubsection}{Requ\^ete pour la mise en relation}{73}{figure.caption.50}%
-\contentsline {subsection}{\numberline {5.2.3}Perspectives}{74}{subsection.5.2.3}%
-\contentsline {chapter}{Conclusion Générale}{75}{chapter*.52}%
-\contentsline {chapter}{\numberline {6}Questionnaire de l'enquête MINEPAT 2025}{79}{chapter.6}%
-\contentsline {chapter}{\numberline {7}Publication de l'annonce}{83}{chapter.7}%
+\contentsline {subsubsection}{Répartition des besoins selon la région}{59}{table.caption.26}%
+\contentsline {subsubsection}{Répartition des besoins selon l'ancienneté}{60}{table.caption.28}%
+\contentsline {subsubsection}{Répartition des besoins selon le secteur d'activité}{61}{table.caption.30}%
+\contentsline {subsubsection}{Répartition des besoins selon la taille de l'entreprise}{62}{table.caption.32}%
+\contentsline {subsection}{\numberline {5.1.3}Résultats de l'analyse multidimensionnelle}{63}{subsection.5.1.3}%
+\contentsline {subsubsection}{Analyse des Correspondances Multiples (ACM)}{63}{subsection.5.1.3}%
+\contentsline {paragraph}{Valeurs propres et inertie expliquée}{63}{subsection.5.1.3}%
+\contentsline {paragraph}{Projection des modalités sur le premier plan factoriel}{64}{figure.caption.35}%
+\contentsline {paragraph}{Variables contribuant aux axes factoriels}{65}{figure.caption.36}%
+\contentsline {subsubsection}{Classification Ascendante Hiérarchique (CAH)}{66}{figure.caption.37}%
+\contentsline {paragraph}{Dendrogramme et choix du nombre de classes}{66}{figure.caption.37}%
+\contentsline {paragraph}{Visualisation de la partition obtenue}{67}{figure.caption.38}%
+\contentsline {subsubsection}{Analyse Factorielle Discriminante (AFD)}{68}{figure.caption.41}%
+\contentsline {paragraph}{Axes discriminants et pouvoir discriminant}{68}{figure.caption.41}%
+\contentsline {paragraph}{Les axes factoriels obtenus}{69}{figure.caption.42}%
+\contentsline {paragraph}{Fonction LD1 — Axe de discrimination principal}{69}{table.caption.43}%
+\contentsline {paragraph}{Fonction LD2 — Axe secondaire de séparation}{70}{table.caption.43}%
+\contentsline {paragraph}{Précision globale (Accuracy)}{70}{table.caption.44}%
+\contentsline {paragraph}{Indice Kappa de Cohen}{70}{table.caption.44}%
+\contentsline {paragraph}{Comparaison au classifieur naïf}{71}{table.caption.44}%
+\contentsline {paragraph}{Significativité statistique}{71}{table.caption.44}%
+\contentsline {section}{\numberline {5.2}Présentation de la plateforme \textit {Business Partnership}}{71}{section.5.2}%
+\contentsline {subsection}{\numberline {5.2.1}Architecture générale de la plateforme}{71}{subsection.5.2.1}%
+\contentsline {subsection}{\numberline {5.2.2}Interface utilisateur}{71}{subsection.5.2.2}%
+\contentsline {subsubsection}{Page de login}{72}{subsection.5.2.2}%
+\contentsline {subsubsection}{Page de création de compte}{72}{figure.caption.45}%
+\contentsline {subsubsection}{Validation de compte par l'administrateur}{73}{figure.caption.46}%
+\contentsline {subsubsection}{Tableau de bord de l'entreprise}{73}{figure.caption.48}%
+\contentsline {subsubsection}{Tableau de bord administrateur}{74}{figure.caption.49}%
+\contentsline {subsubsection}{Requ\^ete pour la mise en relation}{74}{figure.caption.50}%
+\contentsline {subsection}{\numberline {5.2.3}Perspectives}{75}{subsection.5.2.3}%
+\contentsline {chapter}{Conclusion Générale}{76}{chapter*.52}%
+\contentsline {chapter}{\numberline {6}Questionnaire de l'enquête MINEPAT 2025}{80}{chapter.6}%
+\contentsline {chapter}{\numberline {7}Publication de l'annonce}{84}{chapter.7}%
 \contentsfinish 
