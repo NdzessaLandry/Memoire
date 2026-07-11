@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.5.12)  7 JUL 2026 13:00
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.5.12)  11 JUL 2026 06:56
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1790,87 +1790,87 @@ a.cfg)
 d)
 (C:\Users\LandryNDZESSA\AppData\Local\Programs\MiKTeX\tex/latex/microtype\mt-ms
 b.cfg)
-Overfull \vbox (111.58148pt too high) detected at line 320
+Overfull \vbox (111.58148pt too high) detected at line 319
  []
 
 
-Overfull \vbox (35.14299pt too high) detected at line 320
+Overfull \vbox (35.14299pt too high) detected at line 319
  []
 
 
-Overfull \vbox (111.58148pt too high) detected at line 320
+Overfull \vbox (111.58148pt too high) detected at line 319
  []
 
 
-Overfull \vbox (111.58148pt too high) detected at line 320
+Overfull \vbox (111.58148pt too high) detected at line 319
  []
 
 
-Overfull \vbox (35.14299pt too high) detected at line 320
+Overfull \vbox (35.14299pt too high) detected at line 319
  []
 
 
-Overfull \vbox (111.58148pt too high) detected at line 320
+Overfull \vbox (111.58148pt too high) detected at line 319
  []
 
 
-Overfull \vbox (111.58148pt too high) detected at line 320
+Overfull \vbox (111.58148pt too high) detected at line 319
  []
 
 File: LogoUMA.png Graphic file (type png)
 <use LogoUMA.png>
-Package pdftex.def Info: LogoUMA.png  used on input line 320.
+Package pdftex.def Info: LogoUMA.png  used on input line 319.
 (pdftex.def)             Requested size: 48.91344pt x 71.13188pt.
 
-Overfull \vbox (35.14299pt too high) detected at line 320
+Overfull \vbox (35.14299pt too high) detected at line 319
  []
 
 
-Overfull \vbox (111.58148pt too high) detected at line 320
+Overfull \vbox (111.58148pt too high) detected at line 319
  []
 
 
-Overfull \vbox (27.8222pt too high) detected at line 348
+Overfull \vbox (27.8222pt too high) detected at line 347
  []
 
 
-Overfull \vbox (32.96887pt too high) detected at line 348
+Overfull \vbox (32.96887pt too high) detected at line 347
  []
 
 
-Overfull \vbox (27.8222pt too high) detected at line 348
+Overfull \vbox (27.8222pt too high) detected at line 347
  []
 
 
-Overfull \vbox (27.8222pt too high) detected at line 348
+Overfull \vbox (27.8222pt too high) detected at line 347
  []
 
 
-Overfull \vbox (32.96887pt too high) detected at line 348
+Overfull \vbox (32.96887pt too high) detected at line 347
  []
 
 
-Overfull \vbox (27.8222pt too high) detected at line 348
+Overfull \vbox (27.8222pt too high) detected at line 347
  []
 
 File: LogoENSPM.jpeg Graphic file (type jpg)
 <use LogoENSPM.jpeg>
-Package pdftex.def Info: LogoENSPM.jpeg  used on input line 348.
+Package pdftex.def Info: LogoENSPM.jpeg  used on input line 347.
 (pdftex.def)             Requested size: 51.2068pt x 51.21504pt.
 
-Overfull \vbox (27.8222pt too high) detected at line 348
+Overfull \vbox (27.8222pt too high) detected at line 347
  []
 
 
-Overfull \vbox (32.96887pt too high) detected at line 348
+Overfull \vbox (32.96887pt too high) detected at line 347
  []
 
 File: minepat.png Graphic file (type png)
 <use minepat.png>
-Package pdftex.def Info: minepat.png  used on input line 348.
+Package pdftex.def Info: minepat.png  used on input line 347.
 (pdftex.def)             Requested size: 47.05602pt x 51.21504pt.
 
-Overfull \vbox (27.8222pt too high) detected at line 348
+Overfull \vbox (27.8222pt too high) detected at line 347
  []
 
 [1
@@ -1895,7 +1895,7 @@ ers/LandryNDZESSA/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ec.enc} <
 
 No file memoireNdzessaAvele.acr.
 Package babel Info: 'french' activates 'french' shorthands.
-(babel)             Reported on input line 457.
+(babel)             Reported on input line 456.
 [4] [5
 
 {C:/Users/LandryNDZESSA/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-rm.
@@ -1931,19 +1931,19 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.500 	\chapter
+l.499 	\chapter
                *{Introduction Générale} [1] [2
 
 ] [3]
 Chapitre 1.
 LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 5
-25.
+24.
 (C:\Users\LandryNDZESSA\AppData\Local\Programs\MiKTeX\tex/latex/lm\ts1lmr.fd
 File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\gls' on input line 535.
+(hyperref)                removing `\gls' on input line 534.
 
 [4
 
@@ -1951,47 +1951,47 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 .enc}] [5] [6] [7]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\gls' on input line 686.
+(hyperref)                removing `\gls' on input line 685.
 
 <Organigramme4.jpg, id=542, 369.7815pt x 298.716pt>
 File: Organigramme4.jpg Graphic file (type jpg)
 <use Organigramme4.jpg>
-Package pdftex.def Info: Organigramme4.jpg  used on input line 712.
+Package pdftex.def Info: Organigramme4.jpg  used on input line 711.
 (pdftex.def)             Requested size: 374.86775pt x 302.84938pt.
 Package microtype Info: Character `029' is missing
 (microtype)             in font `T1/lmr/m/sc/12'.
 (microtype)             Ignoring protrusion settings for this character.
 
 LaTeX Font Warning: Font shape `T1/lmr/bx/sc' undefined
-(Font)              using `T1/lmr/bx/n' instead on input line 713.
+(Font)              using `T1/lmr/bx/n' instead on input line 712.
 
 [8 <./Organigramme4.jpg>]
-Underfull \hbox (badness 10000) in paragraph at lines 720--722
+Underfull \hbox (badness 10000) in paragraph at lines 719--721
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 723--724
+Underfull \hbox (badness 10000) in paragraph at lines 722--723
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 725--726
+Underfull \hbox (badness 10000) in paragraph at lines 724--725
 
  []
 
 [9]
-Underfull \hbox (badness 10000) in paragraph at lines 732--733
+Underfull \hbox (badness 10000) in paragraph at lines 731--732
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 734--735
+Underfull \hbox (badness 10000) in paragraph at lines 733--734
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 736--737
+Underfull \hbox (badness 10000) in paragraph at lines 735--736
 
  []
 
@@ -1999,29 +1999,29 @@ Underfull \hbox (badness 10000) in paragraph at lines 736--737
 <methodeAgile.jpeg, id=615, 675.52374pt x 371.3875pt>
 File: methodeAgile.jpeg Graphic file (type jpg)
 <use methodeAgile.jpeg>
-Package pdftex.def Info: methodeAgile.jpeg  used on input line 912.
+Package pdftex.def Info: methodeAgile.jpeg  used on input line 911.
 (pdftex.def)             Requested size: 352.81552pt x 193.97264pt.
  [14] [15 <./methodeAgile.jpeg>]
 Chapitre 2.
 [16
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 946--947
+Underfull \hbox (badness 10000) in paragraph at lines 945--946
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 948--950
+Underfull \hbox (badness 10000) in paragraph at lines 947--949
 
  []
 
 [17] [18] [19]
-Underfull \hbox (badness 10000) in paragraph at lines 970--971
+Underfull \hbox (badness 10000) in paragraph at lines 969--970
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 973--974
+Underfull \hbox (badness 10000) in paragraph at lines 972--973
 
  []
 
@@ -2029,20 +2029,20 @@ Underfull \hbox (badness 10000) in paragraph at lines 973--974
 <enqueteGecam.png, id=671, 450.18187pt x 403.5075pt>
 File: enqueteGecam.png Graphic file (type png)
 <use enqueteGecam.png>
-Package pdftex.def Info: enqueteGecam.png  used on input line 977.
+Package pdftex.def Info: enqueteGecam.png  used on input line 976.
 (pdftex.def)             Requested size: 352.81552pt x 316.2492pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 983--984
+Underfull \hbox (badness 10000) in paragraph at lines 982--983
 
  []
 
 [21 <./enqueteGecam.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 986--987
+Underfull \hbox (badness 10000) in paragraph at lines 985--986
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 989--990
+Underfull \hbox (badness 10000) in paragraph at lines 988--989
 
  []
 
@@ -2050,7 +2050,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 989--990
 <zoneRecensement.png, id=687, 400.49625pt x 551.05875pt>
 File: zoneRecensement.png Graphic file (type png)
 <use zoneRecensement.png>
-Package pdftex.def Info: zoneRecensement.png  used on input line 993.
+Package pdftex.def Info: zoneRecensement.png  used on input line 992.
 (pdftex.def)             Requested size: 352.81552pt x 485.47974pt.
  [23 <./zoneRecensement.png>] [24] [25] [26]
 Chapitre 3.
@@ -2060,25 +2060,25 @@ Chapitre 3.
 <UseCase1.png, id=740, 435.12563pt x 398.99063pt>
 File: UseCase1.png Graphic file (type png)
 <use UseCase1.png>
-Package pdftex.def Info: UseCase1.png  used on input line 1446.
+Package pdftex.def Info: UseCase1.png  used on input line 1445.
 (pdftex.def)             Requested size: 374.86775pt x 343.7584pt.
  [31]
 <UseCase2.png, id=746, 429.10312pt x 330.23375pt>
 File: UseCase2.png Graphic file (type png)
 <use UseCase2.png>
-Package pdftex.def Info: UseCase2.png  used on input line 1453.
+Package pdftex.def Info: UseCase2.png  used on input line 1452.
 (pdftex.def)             Requested size: 374.86775pt x 288.49525pt.
  [32 <./UseCase1.png>] [33 <./UseCase2.png>]
 Chapitre 4.
 [34
 
 ]
-Overfull \hbox (27.72952pt too wide) in paragraph at lines 1588--1588
+Overfull \hbox (27.72952pt too wide) in paragraph at lines 1587--1587
 []|\T1/lmtt/m/n/12 autre_statut_juridique|  
  []
 
 
-Overfull \hbox (9.20451pt too wide) in paragraph at lines 1588--1588
+Overfull \hbox (9.20451pt too wide) in paragraph at lines 1587--1587
 []|\T1/lmtt/m/n/12 date_debut_activite|  
  []
 
@@ -2087,301 +2087,286 @@ Overfull \vbox (117.1305pt too high) has occurred while \output is active []
 
 
 [36]
-Overfull \hbox (15.37952pt too wide) in paragraph at lines 1639--1639
+Overfull \hbox (15.37952pt too wide) in paragraph at lines 1638--1638
 []|\T1/lmtt/m/n/12 plateforme_existante|  
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1649--1650
+Underfull \hbox (badness 10000) in paragraph at lines 1648--1649
 
  []
 
 [37]
-Underfull \hbox (badness 10000) in paragraph at lines 1653--1654
+Underfull \hbox (badness 10000) in paragraph at lines 1652--1653
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1655--1657
+Underfull \hbox (badness 10000) in paragraph at lines 1654--1656
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1661--1662
+Underfull \hbox (badness 10000) in paragraph at lines 1660--1661
 
  []
 
 [38]
-Underfull \hbox (badness 10000) in paragraph at lines 1673--1674
+Underfull \hbox (badness 10000) in paragraph at lines 1672--1673
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1675--1676
+Underfull \hbox (badness 10000) in paragraph at lines 1674--1675
 
  []
 
 [39]
-Underfull \hbox (badness 10000) in paragraph at lines 1680--1681
+Underfull \hbox (badness 10000) in paragraph at lines 1679--1680
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1682--1683
+Underfull \hbox (badness 10000) in paragraph at lines 1681--1682
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1684--1685
+Underfull \hbox (badness 10000) in paragraph at lines 1683--1684
 
  []
 
-[40]
-Underfull \hbox (badness 10000) in paragraph at lines 1695--1696
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1697--1698
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1699--1700
-
- []
-
-[41] [42{C:/Users/LandryNDZESSA/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/l
+[40] [41{C:/Users/LandryNDZESSA/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/l
 m/lm-mathex.enc}{C:/Users/LandryNDZESSA/AppData/Local/Programs/MiKTeX/fonts/enc
-/dvips/lm/lm-mathsy.enc}] [43]
-Underfull \hbox (badness 10000) in paragraph at lines 1777--1778
+/dvips/lm/lm-mathsy.enc}]
+Underfull \hbox (badness 10000) in paragraph at lines 1804--1805
+
+ []
+
+[42]
+Underfull \hbox (badness 10000) in paragraph at lines 1806--1807
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1779--1780
+Underfull \hbox (badness 10000) in paragraph at lines 1808--1809
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 1781--1782
-
- []
-
-[44] [45] [46] [47]
-<schema_base_dimensionnelle.png, id=870, 2730.2pt x 2248.4pt>
+[43] [44] [45] [46]
+<schema_base_dimensionnelle.png, id=863, 2730.2pt x 2248.4pt>
 File: schema_base_dimensionnelle.png Graphic file (type png)
 <use schema_base_dimensionnelle.png>
-Package pdftex.def Info: schema_base_dimensionnelle.png  used on input line 193
-9.
+Package pdftex.def Info: schema_base_dimensionnelle.png  used on input line 196
+6.
 (pdftex.def)             Requested size: 352.81552pt x 290.55257pt.
- [48] [49 <./schema_base_dimensionnelle.png>] [50]
+ [47] [48 <./schema_base_dimensionnelle.png>] [49]
 Chapitre 5.
-[51
+[50
 
 ]
-<statut.jpeg, id=894, 655.44875pt x 614.295pt>
+<statut.jpeg, id=887, 655.44875pt x 614.295pt>
 File: statut.jpeg Graphic file (type jpg)
 <use statut.jpeg>
-Package pdftex.def Info: statut.jpeg  used on input line 2018.
+Package pdftex.def Info: statut.jpeg  used on input line 2045.
 (pdftex.def)             Requested size: 330.76329pt x 309.99625pt.
- [52 <./statut.jpeg>]
-<repartition_region.jpeg, id=900, 614.295pt x 614.295pt>
+ [51 <./statut.jpeg>]
+<repartition_region.jpeg, id=892, 614.295pt x 614.295pt>
 File: repartition_region.jpeg Graphic file (type jpg)
 <use repartition_region.jpeg>
-Package pdftex.def Info: repartition_region.jpeg  used on input line 2029.
+Package pdftex.def Info: repartition_region.jpeg  used on input line 2056.
 (pdftex.def)             Requested size: 330.76329pt x 330.76764pt.
-<repartition_taille.jpeg, id=901, 655.44875pt x 614.295pt>
+<repartition_taille.jpeg, id=893, 655.44875pt x 614.295pt>
 File: repartition_taille.jpeg Graphic file (type jpg)
 <use repartition_taille.jpeg>
-Package pdftex.def Info: repartition_taille.jpeg  used on input line 2042.
+Package pdftex.def Info: repartition_taille.jpeg  used on input line 2069.
 (pdftex.def)             Requested size: 330.76329pt x 309.99625pt.
- [53 <./repartition_region.jpeg>]
-<anciennete.jpeg, id=906, 614.295pt x 614.295pt>
+ [52 <./repartition_region.jpeg>]
+<anciennete.jpeg, id=899, 614.295pt x 614.295pt>
 File: anciennete.jpeg Graphic file (type jpg)
 <use anciennete.jpeg>
-Package pdftex.def Info: anciennete.jpeg  used on input line 2053.
+Package pdftex.def Info: anciennete.jpeg  used on input line 2080.
 (pdftex.def)             Requested size: 330.76329pt x 330.76764pt.
- [54 <./repartition_taille.jpeg>]
-<repartition_activite.jpeg, id=911, 946.53625pt x 614.295pt>
+ [53 <./repartition_taille.jpeg>]
+<repartition_activite.jpeg, id=904, 946.53625pt x 614.295pt>
 File: repartition_activite.jpeg Graphic file (type jpg)
 <use repartition_activite.jpeg>
-Package pdftex.def Info: repartition_activite.jpeg  used on input line 2066.
+Package pdftex.def Info: repartition_activite.jpeg  used on input line 2093.
 (pdftex.def)             Requested size: 330.76329pt x 214.65965pt.
- [55 <./anciennete.jpeg>]
-<besoinsCorriges.jpeg, id=916, 691.58376pt x 614.295pt>
+ [54 <./anciennete.jpeg>]
+<besoinsCorriges.jpeg, id=909, 691.58376pt x 614.295pt>
 File: besoinsCorriges.jpeg Graphic file (type jpg)
 <use besoinsCorriges.jpeg>
-Package pdftex.def Info: besoinsCorriges.jpeg  used on input line 2076.
+Package pdftex.def Info: besoinsCorriges.jpeg  used on input line 2103.
 (pdftex.def)             Requested size: 330.76329pt x 293.79906pt.
- [56 <./repartition_activite.jpeg>]
-<carte_chaleur_besoins_statut_juridique.jpeg, id=922, 1284.8pt x 631.35875pt>
+ [55 <./repartition_activite.jpeg>]
+<carte_chaleur_besoins_statut_juridique.jpeg, id=915, 1284.8pt x 631.35875pt>
 File: carte_chaleur_besoins_statut_juridique.jpeg Graphic file (type jpg)
 <use carte_chaleur_besoins_statut_juridique.jpeg>
 Package pdftex.def Info: carte_chaleur_besoins_statut_juridique.jpeg  used on i
-nput line 2105.
+nput line 2132.
 (pdftex.def)             Requested size: 441.01773pt x 216.72075pt.
 
-[57 <./besoinsCorriges.jpeg>]
+[56 <./besoinsCorriges.jpeg>]
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10.95> on input line 2114.
- [58 <./carte_chaleur_besoins_statut_juridique.jpeg>]
-<carte_chaleur_besoins_region.jpeg, id=933, 1284.8pt x 631.35875pt>
+(Font)              <10.95> on input line 2141.
+ [57 <./carte_chaleur_besoins_statut_juridique.jpeg>]
+<carte_chaleur_besoins_region.jpeg, id=925, 1284.8pt x 631.35875pt>
 File: carte_chaleur_besoins_region.jpeg Graphic file (type jpg)
 <use carte_chaleur_besoins_region.jpeg>
 Package pdftex.def Info: carte_chaleur_besoins_region.jpeg  used on input line 
-2161.
+2188.
 (pdftex.def)             Requested size: 441.01773pt x 216.72075pt.
- [59 <./carte_chaleur_besoins_region.jpeg>]
-<carte_chaleur_besoins_anciennete.jpeg, id=938, 1284.8pt x 631.35875pt>
+ [58 <./carte_chaleur_besoins_region.jpeg>]
+<carte_chaleur_besoins_anciennete.jpeg, id=931, 1284.8pt x 631.35875pt>
 File: carte_chaleur_besoins_anciennete.jpeg Graphic file (type jpg)
 <use carte_chaleur_besoins_anciennete.jpeg>
 Package pdftex.def Info: carte_chaleur_besoins_anciennete.jpeg  used on input l
-ine 2214.
+ine 2241.
 (pdftex.def)             Requested size: 441.01773pt x 216.72075pt.
-<carte_chaleur_besoins_secteurs_activite.jpeg, id=939, 1284.8pt x 631.35875pt>
+<carte_chaleur_besoins_secteurs_activite.jpeg, id=932, 1284.8pt x 631.35875pt>
 File: carte_chaleur_besoins_secteurs_activite.jpeg Graphic file (type jpg)
 <use carte_chaleur_besoins_secteurs_activite.jpeg>
 Package pdftex.def Info: carte_chaleur_besoins_secteurs_activite.jpeg  used on 
-input line 2266.
+input line 2293.
 (pdftex.def)             Requested size: 441.01773pt x 216.72075pt.
- [60 <./carte_chaleur_besoins_anciennete.jpeg>] [61 <./carte_chaleur_besoins_se
+ [59 <./carte_chaleur_besoins_anciennete.jpeg>] [60 <./carte_chaleur_besoins_se
 cteurs_activite.jpeg>]
-<carte_chaleur_besoins_taille_entreprise.jpeg, id=948, 1284.8pt x 631.35875pt>
+<carte_chaleur_besoins_taille_entreprise.jpeg, id=941, 1284.8pt x 631.35875pt>
 File: carte_chaleur_besoins_taille_entreprise.jpeg Graphic file (type jpg)
 <use carte_chaleur_besoins_taille_entreprise.jpeg>
 Package pdftex.def Info: carte_chaleur_besoins_taille_entreprise.jpeg  used on 
-input line 2321.
+input line 2348.
 (pdftex.def)             Requested size: 441.01773pt x 216.72075pt.
- [62 <./carte_chaleur_besoins_taille_entreprise.jpeg>]
-<contributionValeursPropres.jpeg, id=953, 1284.8pt x 631.35875pt>
+ [61 <./carte_chaleur_besoins_taille_entreprise.jpeg>]
+<contributionValeursPropres.jpeg, id=946, 1284.8pt x 631.35875pt>
 File: contributionValeursPropres.jpeg Graphic file (type jpg)
 <use contributionValeursPropres.jpeg>
 Package pdftex.def Info: contributionValeursPropres.jpeg  used on input line 24
-34.
+61.
 (pdftex.def)             Requested size: 330.76329pt x 162.54056pt.
- [63]
-<projectionDesCategories.jpeg, id=958, 1284.8pt x 631.35875pt>
+ [62]
+<projectionDesCategories.jpeg, id=951, 1284.8pt x 631.35875pt>
 File: projectionDesCategories.jpeg Graphic file (type jpg)
 <use projectionDesCategories.jpeg>
-Package pdftex.def Info: projectionDesCategories.jpeg  used on input line 2453.
+Package pdftex.def Info: projectionDesCategories.jpeg  used on input line 2480.
 
 (pdftex.def)             Requested size: 441.01773pt x 216.72075pt.
- [64 <./contributionValeursPropres.jpeg> <./projectionDesCategories.jpeg>]
-<contributionCategoriesAlAxe1.jpeg, id=965, 1284.8pt x 631.35875pt>
+ [63 <./contributionValeursPropres.jpeg> <./projectionDesCategories.jpeg>]
+<contributionCategoriesAlAxe1.jpeg, id=957, 1284.8pt x 631.35875pt>
 File: contributionCategoriesAlAxe1.jpeg Graphic file (type jpg)
 <use contributionCategoriesAlAxe1.jpeg>
 Package pdftex.def Info: contributionCategoriesAlAxe1.jpeg  used on input line 
-2471.
+2498.
 (pdftex.def)             Requested size: 211.68661pt x 104.01555pt.
-<contributionCategorieALAxe2.jpeg, id=966, 1284.8pt x 631.35875pt>
+<contributionCategorieALAxe2.jpeg, id=958, 1284.8pt x 631.35875pt>
 File: contributionCategorieALAxe2.jpeg Graphic file (type jpg)
 <use contributionCategorieALAxe2.jpeg>
 Package pdftex.def Info: contributionCategorieALAxe2.jpeg  used on input line 2
-478.
+505.
 (pdftex.def)             Requested size: 211.68661pt x 104.01555pt.
 
-Overfull \hbox (0.608pt too wide) in paragraph at lines 2484--2503
+Overfull \hbox (0.608pt too wide) in paragraph at lines 2511--2530
 \T1/lmr/m/n/12 (-20) les ex-pres-sions contras-t�es des be-soins lo-gis-tiques 
 et tech-niques (\T1/lmtt/m/n/12 besoin_transport_Oui\T1/lmr/m/n/12 (-20) ,
  []
 
 
-Overfull \hbox (20.60188pt too wide) in paragraph at lines 2484--2503
+Overfull \hbox (20.60188pt too wide) in paragraph at lines 2511--2530
 \T1/lmtt/m/n/12 besoin_transport_Non\T1/lmr/m/n/12 (-20) , \T1/lmtt/m/n/12 beso
 in_innovation_recherche_Oui\T1/lmr/m/n/12 (-20) , \T1/lmtt/m/n/12 besoin_emball
 ages_Oui\T1/lmr/m/n/12 (-20) ).
  []
 
-[65 <./contributionCategoriesAlAxe1.jpeg> <./contributionCategorieALAxe2.jpeg>]
-<dendrogramme.jpeg, id=972, 1284.8pt x 631.35875pt>
+[64 <./contributionCategoriesAlAxe1.jpeg> <./contributionCategorieALAxe2.jpeg>]
+<dendrogramme.jpeg, id=965, 1284.8pt x 631.35875pt>
 File: dendrogramme.jpeg Graphic file (type jpg)
 <use dendrogramme.jpeg>
-Package pdftex.def Info: dendrogramme.jpeg  used on input line 2521.
+Package pdftex.def Info: dendrogramme.jpeg  used on input line 2548.
 (pdftex.def)             Requested size: 374.86775pt x 184.20686pt.
-<CAH.jpeg, id=973, 1284.8pt x 631.35875pt>
+<CAH.jpeg, id=966, 1284.8pt x 631.35875pt>
 File: CAH.jpeg Graphic file (type jpg)
 <use CAH.jpeg>
-Package pdftex.def Info: CAH.jpeg  used on input line 2533.
+Package pdftex.def Info: CAH.jpeg  used on input line 2560.
 (pdftex.def)             Requested size: 441.01773pt x 216.72075pt.
-[66 <./dendrogramme.jpeg>]
-<classe_et_anciennete.jpeg, id=979, 1284.8pt x 631.35875pt>
+[65 <./dendrogramme.jpeg>]
+<classe_et_anciennete.jpeg, id=972, 1284.8pt x 631.35875pt>
 File: classe_et_anciennete.jpeg Graphic file (type jpg)
 <use classe_et_anciennete.jpeg>
-Package pdftex.def Info: classe_et_anciennete.jpeg  used on input line 2559.
+Package pdftex.def Info: classe_et_anciennete.jpeg  used on input line 2586.
 (pdftex.def)             Requested size: 211.68661pt x 104.01555pt.
-<classes_et_secteurs_activites.jpeg, id=980, 1284.8pt x 631.35875pt>
+<classes_et_secteurs_activites.jpeg, id=973, 1284.8pt x 631.35875pt>
 File: classes_et_secteurs_activites.jpeg Graphic file (type jpg)
 <use classes_et_secteurs_activites.jpeg>
 Package pdftex.def Info: classes_et_secteurs_activites.jpeg  used on input line
- 2566.
+ 2593.
 (pdftex.def)             Requested size: 211.68661pt x 104.01555pt.
-<classes_et_tailles.jpeg, id=981, 1284.8pt x 631.35875pt>
+<classes_et_tailles.jpeg, id=974, 1284.8pt x 631.35875pt>
 File: classes_et_tailles.jpeg Graphic file (type jpg)
 <use classes_et_tailles.jpeg>
-Package pdftex.def Info: classes_et_tailles.jpeg  used on input line 2575.
+Package pdftex.def Info: classes_et_tailles.jpeg  used on input line 2602.
 (pdftex.def)             Requested size: 211.68661pt x 104.01555pt.
-<classes_et_regions.jpeg, id=982, 1284.8pt x 631.35875pt>
+<classes_et_regions.jpeg, id=975, 1284.8pt x 631.35875pt>
 File: classes_et_regions.jpeg Graphic file (type jpg)
 <use classes_et_regions.jpeg>
-Package pdftex.def Info: classes_et_regions.jpeg  used on input line 2582.
+Package pdftex.def Info: classes_et_regions.jpeg  used on input line 2609.
 (pdftex.def)             Requested size: 211.68661pt x 104.01555pt.
- [67 <./CAH.jpeg>]
-<AFDProjectionDesObservations.jpeg, id=988, 1284.8pt x 631.35875pt>
+ [66 <./CAH.jpeg>]
+<AFDProjectionDesObservations.jpeg, id=981, 1284.8pt x 631.35875pt>
 File: AFDProjectionDesObservations.jpeg Graphic file (type jpg)
 <use AFDProjectionDesObservations.jpeg>
 Package pdftex.def Info: AFDProjectionDesObservations.jpeg  used on input line 
-2603.
+2630.
 (pdftex.def)             Requested size: 374.86775pt x 184.20686pt.
- [68 <./classe_et_anciennete.jpeg> <./classes_et_secteurs_activites.jpeg> <./cl
+ [67 <./classe_et_anciennete.jpeg> <./classes_et_secteurs_activites.jpeg> <./cl
 asses_et_tailles.jpeg> <./classes_et_regions.jpeg> <./AFDProjectionDesObservati
 ons.jpeg>]
-Underfull \hbox (badness 10000) in paragraph at lines 2675--2679
+Underfull \hbox (badness 10000) in paragraph at lines 2702--2706
 
  []
 
-[69] [70] [71]
-<login.png, id=1010, 933.4875pt x 422.07687pt>
+[68] [69] [70]
+<login.png, id=1003, 933.4875pt x 422.07687pt>
 File: login.png Graphic file (type png)
 <use login.png>
-Package pdftex.def Info: login.png  used on input line 2814.
+Package pdftex.def Info: login.png  used on input line 2841.
 (pdftex.def)             Requested size: 441.01773pt x 199.40662pt.
-<creationDeCompte.png, id=1011, 897.85437pt x 431.11063pt>
+<creationDeCompte.png, id=1004, 897.85437pt x 431.11063pt>
 File: creationDeCompte.png Graphic file (type png)
 <use creationDeCompte.png>
-Package pdftex.def Info: creationDeCompte.png  used on input line 2826.
+Package pdftex.def Info: creationDeCompte.png  used on input line 2853.
 (pdftex.def)             Requested size: 441.01773pt x 211.75914pt.
-<demande.png, id=1012, 918.93312pt x 373.89688pt>
+<demande.png, id=1005, 918.93312pt x 373.89688pt>
 File: demande.png Graphic file (type png)
 <use demande.png>
-Package pdftex.def Info: demande.png  used on input line 2834.
+Package pdftex.def Info: demande.png  used on input line 2861.
 (pdftex.def)             Requested size: 441.01773pt x 179.44563pt.
- [72 <./login.png> <./creationDeCompte.png>]
-<validation.png, id=1019, 804.00375pt x 396.48125pt>
+ [71 <./login.png> <./creationDeCompte.png>]
+<validation.png, id=1012, 804.00375pt x 396.48125pt>
 File: validation.png Graphic file (type png)
 <use validation.png>
-Package pdftex.def Info: validation.png  used on input line 2840.
+Package pdftex.def Info: validation.png  used on input line 2867.
 (pdftex.def)             Requested size: 441.01773pt x 217.47852pt.
-<tableauDeBordEntreprise.png, id=1020, 928.97063pt x 434.12187pt>
+<tableauDeBordEntreprise.png, id=1013, 928.97063pt x 434.12187pt>
 File: tableauDeBordEntreprise.png Graphic file (type png)
 <use tableauDeBordEntreprise.png>
-Package pdftex.def Info: tableauDeBordEntreprise.png  used on input line 2849.
+Package pdftex.def Info: tableauDeBordEntreprise.png  used on input line 2876.
 (pdftex.def)             Requested size: 441.01773pt x 206.09741pt.
- [73 <./demande.png> <./validation.png>]
-<tableauDeBordAdmin.png, id=1028, 934.99312pt x 439.6425pt>
+ [72 <./demande.png> <./validation.png>]
+<tableauDeBordAdmin.png, id=1021, 934.99312pt x 439.6425pt>
 File: tableauDeBordAdmin.png Graphic file (type png)
 <use tableauDeBordAdmin.png>
-Package pdftex.def Info: tableauDeBordAdmin.png  used on input line 2865.
+Package pdftex.def Info: tableauDeBordAdmin.png  used on input line 2892.
 (pdftex.def)             Requested size: 441.01773pt x 207.36992pt.
-<requeteSQL.png, id=1029, 400.99812pt x 170.13562pt>
+<requeteSQL.png, id=1022, 400.99812pt x 170.13562pt>
 File: requeteSQL.png Graphic file (type png)
 <use requeteSQL.png>
-Package pdftex.def Info: requeteSQL.png  used on input line 2877.
+Package pdftex.def Info: requeteSQL.png  used on input line 2904.
 (pdftex.def)             Requested size: 441.01773pt x 187.12637pt.
- [74 <./tableauDeBordEntreprise.png> <./tableauDeBordAdmin.png>] [75 <./requete
-SQL.png>] [76
+ [73 <./tableauDeBordEntreprise.png> <./tableauDeBordAdmin.png>] [74 <./requete
+SQL.png>] [75
 
-] (memoireNdzessaAvele.bbl [77
+] (memoireNdzessaAvele.bbl [76
 
 ]
 Underfull \hbox (badness 2753) in paragraph at lines 77--81
@@ -2389,41 +2374,41 @@ Underfull \hbox (badness 2753) in paragraph at lines 77--81
 lmtt/m/n/12 https : / / www . larousse . fr /
  []
 
-[78]) [79]
+[77]) [78]
 Chapitre 6.
-<annexe1.png, id=1073, 430.60875pt x 423.5825pt>
+<annexe1.png, id=1065, 430.60875pt x 423.5825pt>
 File: annexe1.png Graphic file (type png)
 <use annexe1.png>
-Package pdftex.def Info: annexe1.png  used on input line 2924.
+Package pdftex.def Info: annexe1.png  used on input line 2951.
 (pdftex.def)             Requested size: 441.01773pt x 433.83232pt.
-<annexe2.png, id=1074, 435.12563pt x 422.07687pt>
+<annexe2.png, id=1066, 435.12563pt x 422.07687pt>
 File: annexe2.png Graphic file (type png)
 <use annexe2.png>
-Package pdftex.def Info: annexe2.png  used on input line 2930.
+Package pdftex.def Info: annexe2.png  used on input line 2957.
 (pdftex.def)             Requested size: 441.01773pt x 427.82063pt.
-[80
+[79
 
 ]
-<annexe3.png, id=1079, 426.59375pt x 416.05438pt>
+<annexe3.png, id=1071, 426.59375pt x 416.05438pt>
 File: annexe3.png Graphic file (type png)
 <use annexe3.png>
-Package pdftex.def Info: annexe3.png  used on input line 2936.
+Package pdftex.def Info: annexe3.png  used on input line 2963.
 (pdftex.def)             Requested size: 441.01773pt x 430.14696pt.
- [81 <./annexe1.png>] [82 <./annexe2.png>] [83 <./annexe3.png>]
+ [80 <./annexe1.png>] [81 <./annexe2.png>] [82 <./annexe3.png>]
 Chapitre 7.
-<annexe5.jpg, id=1096, 455.45157pt x 681.29532pt>
+<annexe5.jpg, id=1088, 455.45157pt x 681.29532pt>
 File: annexe5.jpg Graphic file (type jpg)
 <use annexe5.jpg>
-Package pdftex.def Info: annexe5.jpg  used on input line 2945.
+Package pdftex.def Info: annexe5.jpg  used on input line 2972.
 (pdftex.def)             Requested size: 441.01773pt x 659.72253pt.
-<annexe6.jpg, id=1097, 455.45157pt x 654.19406pt>
+<annexe6.jpg, id=1089, 455.45157pt x 654.19406pt>
 File: annexe6.jpg Graphic file (type jpg)
 <use annexe6.jpg>
-Package pdftex.def Info: annexe6.jpg  used on input line 2951.
+Package pdftex.def Info: annexe6.jpg  used on input line 2978.
 (pdftex.def)             Requested size: 441.01773pt x 633.47942pt.
-[84
+[83
 
-] [85 <./annexe5.jpg>] [86 <./annexe6.jpg>] (memoireNdzessaAvele.aux)
+] [84 <./annexe5.jpg>] [85 <./annexe6.jpg>] (memoireNdzessaAvele.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2025-12-24>
@@ -2439,11 +2424,11 @@ Package rerunfilecheck Info: File `memoireNdzessaAvele.out' has not changed.
 (rerunfilecheck)             Checksum: 0DE0FBB33E5FC8295C3C052BA293BC26;11665.
  ) 
 Here is how much of TeX's memory you used:
- 51705 strings out of 467871
- 1123757 string characters out of 5414504
- 1613191 words of memory out of 5000000
- 79219 multiletter control sequences out of 15000+600000
- 736865 words of font info for 252 fonts, out of 8000000 for 9000
+ 51688 strings out of 467871
+ 1123551 string characters out of 5414504
+ 1612720 words of memory out of 5000000
+ 79213 multiletter control sequences out of 15000+600000
+ 736681 words of font info for 250 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  84i,16n,96p,2489b,1378s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
@@ -2517,9 +2502,9 @@ rs/LandryNDZESSA/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt10.pfb
 tt12.pfb><C:/Users/LandryNDZESSA/AppData/Local/Programs/MiKTeX/fonts/type1/publ
 ic/amsfonts/symbols/msam10.pfb><C:/Users/LandryNDZESSA/AppData/Local/Programs/M
 iKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on memoireNdzessaAvele.pdf (95 pages, 7013883 bytes).
+Output written on memoireNdzessaAvele.pdf (94 pages, 7009287 bytes).
 PDF statistics:
- 1288 PDF objects out of 1440 (max. 8388607)
- 290 named destinations out of 1000 (max. 500000)
+ 1278 PDF objects out of 1440 (max. 8388607)
+ 283 named destinations out of 1000 (max. 500000)
  57625 words of extra memory for PDF output out of 61914 (max. 10000000)
 

@@ -5,49 +5,44 @@ Reallocating 'name_of_file' (item size: 1) to 9 items.
 The style file: plainnat.bst
 Reallocating 'name_of_file' (item size: 1) to 11 items.
 Database file #1: references.bib
-You're missing a field name---line 479 of file references.bib
- :  author       = {{Scribd}}, 
- :                             % À remplacer par le nom de l'auteur s'il est visible sur le document
-I'm skipping whatever remains of this entry
-You've used 27 entries,
+You've used 26 entries,
             2773 wiz_defined-function locations,
-            737 strings with 9448 characters,
-and the built_in function-call counts, 9304 in all, are:
-= -- 818
-> -- 498
+            728 strings with 9098 characters,
+and the built_in function-call counts, 8863 in all, are:
+= -- 780
+> -- 468
 < -- 23
-+ -- 180
-- -- 153
-* -- 591
-:= -- 1570
-add.period$ -- 94
-call.type$ -- 27
-change.case$ -- 137
-chr.to.int$ -- 27
-cite$ -- 54
-duplicate$ -- 454
-empty$ -- 779
-format.name$ -- 184
-if$ -- 1910
++ -- 170
+- -- 144
+* -- 553
+:= -- 1497
+add.period$ -- 89
+call.type$ -- 26
+change.case$ -- 131
+chr.to.int$ -- 26
+cite$ -- 52
+duplicate$ -- 433
+empty$ -- 746
+format.name$ -- 174
+if$ -- 1819
 int.to.chr$ -- 1
 int.to.str$ -- 1
-missing$ -- 18
-newline$ -- 156
-num.names$ -- 108
-pop$ -- 278
+missing$ -- 16
+newline$ -- 149
+num.names$ -- 104
+pop$ -- 267
 preamble$ -- 1
-purify$ -- 105
+purify$ -- 100
 quote$ -- 0
-skip$ -- 341
+skip$ -- 327
 stack$ -- 0
-substring$ -- 54
-swap$ -- 19
+substring$ -- 52
+swap$ -- 18
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 252
+type$ -- 246
 warning$ -- 0
-while$ -- 81
+while$ -- 78
 width$ -- 0
-write$ -- 390
-(There was 1 error message)
+write$ -- 372

@@ -1,4 +1,4 @@
-\begin{thebibliography}{27}
+\begin{thebibliography}{26}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -7,16 +7,16 @@
 
 \bibitem[{Acceor}(2024)]{acceor2024}
 {Acceor}.
-\newblock Plateformes b2b : D{'e}finition, fonctionnement et avantages pour les
+\newblock Plateformes b2b : D\'efinition, fonctionnement et avantages pour les
   entreprises.
 \newblock \url{https://www.acceor.com/plateformes-b2b}, 2024.
-\newblock Consult{'e} le 12 mars 2025.
+\newblock Consult\'e le 12 mars 2026.
 
 \bibitem[{Alibaba Group}(2024)]{alibaba2024}
 {Alibaba Group}.
 \newblock Alibaba.com --- global b2b trade marketplace.
 \newblock \url{https://www.alibaba.com/}, 2024.
-\newblock Consult{'e} le 12 mars 2025.
+\newblock Consult\'e le 12 mars 2026.
 
 \bibitem[Anderson(2010)]{anderson_2010}
 David~J. Anderson.
@@ -31,28 +31,28 @@ Kent Beck, Mike Beedle, Arie van Bennekum, Alistair Cockburn, Ward Cunningham,
   Martin Fowler, James Grenning, Jim Highsmith, Andrew Hunt, Ron Jeffries, Jon
   Kern, Brian Marick, Robert~C. Martin, Steve Mellor, Ken Schwaber, Jeff
   Sutherland, and Dave Thomas.
-\newblock Manifeste pour le d{'e}veloppement agile de logiciels.
+\newblock Manifeste pour le d\'eveloppement agile de logiciels.
 \newblock \url{https://agilemanifesto.org/}, 2001.
-\newblock Consult{'e} le 5 juin 2025.
+\newblock Consult\'e le 5 juin 2026.
 
 \bibitem[Booch et~al.(1998)Booch, Rumbaugh, and Jacobson]{booch_1998}
 Grady Booch, James Rumbaugh, and Ivar Jacobson.
 \newblock \emph{The Unified Modeling Language User Guide}.
 \newblock Addison-Wesley, Reading, MA, 1998.
 
-\bibitem[{Fonds Mon{'e}taire International}(2023)]{fmi2023}
-{Fonds Mon{'e}taire International}.
-\newblock Perspectives de l'{'E}conomie mondiale : Navigating global
+\bibitem[{Fonds Mon\'etaire International}(2023)]{fmi2023}
+{Fonds Mon\'etaire International}.
+\newblock Perspectives de l'\'economie mondiale : Navigating global
   divergences.
-\newblock World economic outlook, Fonds Mon{'e}taire International, Washington,
+\newblock World economic outlook, Fonds Mon\'etaire International, Washington,
   DC, USA, October 2023.
 
 \bibitem[{GECAM}(2019)]{gecam2019}
 {GECAM}.
-\newblock Rapport d'enqu{\^e}te sur les difficult{'e}s des entreprises membres
-  du groupement des entreprises du cameroun.
-\newblock Rapport d'enqu{\^e}te, Groupement des Entreprises du Cameroun,
-  Yaound{'e}, Cameroun, 2019.
+\newblock Rapport d'enqu\^ete sur les difficult\'es des entreprises membres du
+  groupement des entreprises du cameroun.
+\newblock Rapport d'enqu\^ete, Groupement des Entreprises du Cameroun,
+  Yaound\'e, Cameroun, 2019.
 
 \bibitem[Husson et~al.(2009)Husson, Le, and Pag\`es]{husson_le_pages_2009}
 Fran\c{c}ois Husson, S\'ebastien Le, and J\'er\^ome Pag\`es.
@@ -61,10 +61,10 @@ Fran\c{c}ois Husson, S\'ebastien Le, and J\'er\^ome Pag\`es.
 
 \bibitem[{Institut National de la Statistique}(2023)]{ins2023}
 {Institut National de la Statistique}.
-\newblock Troisi{`e}me recensement g{'e}n{'e}ral des entreprises (rge3) ---
-  r{'e}sultats pr{'e}liminaires.
+\newblock Troisi\`eme recensement g\'en\'eral des entreprises (rge3) ---
+  r\'esultats pr\'eliminitaires.
 \newblock Rapport statistique, Institut National de la Statistique du Cameroun,
-  Yaound{'e}, Cameroun, 2023.
+  Yaound\'e, Cameroun, 2023.
 
 \bibitem[Kimball and Ross(2002)]{kimball2002toolkit}
 Ralph Kimball and Margy Ross.
@@ -77,81 +77,69 @@ Ralph Kimball and Margy Ross.
 {Larousse}.
 \newblock Dictionnaire larousse en ligne.
 \newblock \url{https://www.larousse.fr/dictionnaires/francais/}, 2024.
-\newblock Consult{'e} le 1er mars 2025.
-
-\bibitem[Lebart et~al.(1995)Lebart, Morineau, and Piron]{dunod}
-Ludovic Lebart, Alain Morineau, and Marie Piron.
-\newblock \emph{Statistique exploratoire multidimensionnelle}.
-\newblock Dunod, Paris, 3\textsuperscript{e} \'ed. edition, 1995.
-\newblock ISBN 978-2100028863.
-\newblock Contient les d\'eveloppements th\'eoriques sur l'Analyse des
-  Correspondances Multiples et les corrections des valeurs propres de
-  Benz\'ecri.
+\newblock Consult\'e le 1er mars 2026.
 
 \bibitem[{LinkedIn Corporation}(2024)]{linkedin2024}
 {LinkedIn Corporation}.
 \newblock About linkedin.
 \newblock \url{https://about.linkedin.com/}, 2024.
-\newblock Consult{'e} le 12 mars 2025.
+\newblock Consult\'e le 12 mars 2026.
 
 \bibitem[{Meta Platforms Inc.}(2024)]{meta2024}
 {Meta Platforms Inc.}
 \newblock Facebook marketplace.
 \newblock \url{https://www.facebook.com/marketplace/}, 2024.
-\newblock Consult{'e} le 12 mars 2025.
+\newblock Consult\'e le 12 mars 2026.
 
 \bibitem[{MINEPAT}(2009)]{minepat2009}
 {MINEPAT}.
-\newblock Document de strat{'e}gie pour la croissance et l'emploi (dsce)
+\newblock Document de strat\'egie pour la croissance et l'emploi (dsce)
   2010--2020.
-\newblock Rapport strat{'e}gique, Minist{`e}re de l'{'E}conomie, de la
-  Planification et de l'Am{'e}nagement du Territoire, Yaound{'e}, Cameroun,
-  2009.
+\newblock Rapport strat\'egique, Minist\`ere de l'\'Economie, de la
+  Planification et de l'Am\'enagement du Territoire, Yaound\'e, Cameroun, 2009.
 
 \bibitem[{MINEPAT}(2020)]{minepat2020}
 {MINEPAT}.
-\newblock Strat{'e}gie nationale de d{'e}veloppement 2020--2030 (snd30).
-\newblock Rapport strat{'e}gique, Minist{`e}re de l'{'E}conomie, de la
-  Planification et de l'Am{'e}nagement du Territoire, Yaound{'e}, Cameroun,
-  2020.
+\newblock Strat\'egie nationale de d\'eveloppement 2020--2030 (snd30).
+\newblock Rapport strat\'egique, Minist\`ere de l'\'Economie, de la
+  Planification et de l'Am\'enagement du Territoire, Yaound\'e, Cameroun, 2020.
 
 \bibitem[{MINEPAT}(2022)]{minepat2022}
 {MINEPAT}.
-\newblock Strat{'e}gie de d{'e}veloppement du secteur de l'industrie et des
+\newblock Strat\'egie de d\'eveloppement du secteur de l'industrie et des
   services (sdsis).
-\newblock Document de strat{'e}gie sectorielle, Minist{`e}re de l'{'E}conomie,
-  de la Planification et de l'Am{'e}nagement du Territoire, Yaound{'e},
-  Cameroun, 2022.
+\newblock Document de strat\'egie sectorielle, Minist\`ere de l'\'Economie, de
+  la Planification et de l'Am\'enagement du Territoire, Yaound\'e, Cameroun,
+  2022.
 
 \bibitem[{MINEPAT}(2023)]{minepat2023}
 {MINEPAT}.
-\newblock Enqu{\^e}te sur le climat des affaires au cameroun aupr{`e}s des
-  chefs d'entreprises du secteur industriel.
-\newblock Rapport d'enqu{\^e}te, Minist{`e}re de l'{'E}conomie, de la
-  Planification et de l'Am{'e}nagement du Territoire, Yaound{'e}, Cameroun,
-  2023.
+\newblock Enqu\^ete sur le climat des affaires au cameroun aupr\`es des chefs
+  d'entreprises du secteur industriel.
+\newblock Rapport d'enqu\^ete, Minist\`ere de l'\'Economie, de la Planification
+  et de l'Am\'enagement du Territoire, Yaound\'e, Cameroun, 2023.
 
 \bibitem[{MINEPAT}(2025)]{minepat2025}
 {MINEPAT}.
-\newblock Rapport de revue {`a} mi-parcours de la strat{'e}gie nationale de
-  d{'e}veloppement snd30.
-\newblock Rapport d'{'e}valuation, Minist{`e}re de l'{'E}conomie, de la
-  Planification et de l'Am{'e}nagement du Territoire, Yaound{'e}, Cameroun,
+\newblock Rapport de revue \'a mi-parcours de la strat\'egie nationale de
+  d\'eveloppement snd30.
+\newblock Rapport d'\'evaluation, Minist\`ere de l'\'Economie, de la
+  Planification et de l'Am\'enagement du Territoire, Yaound\'e, Cameroun,
   January 2025.
 
 \bibitem[{MINPMEESA}(2023)]{minpmeesa}
 {MINPMEESA}.
 \newblock Bourses de sous-traitance et de partenariat (bstp).
-\newblock Document de pr{'e}sentation institutionnel, 2023.
-\newblock Minist{`e}re des Petites et Moyennes Entreprises, de l'{'E}conomie
-  Sociale et de l'Artisanat, Yaound{'e}, Cameroun.
+\newblock Document de pr\'esentation institutionnel, 2023.
+\newblock Minist\`ere des Petites et Moyennes Entreprises, de l'\'Economie
+  Sociale et de l'Artisanat, Yaound\'e, Cameroun.
 
 \bibitem[{OCDE}(2021)]{ocde2021}
 {OCDE}.
-\newblock Perspectives {'e}conomiques de l'afrique 2021 : De la d{'e}pendance
-  {`a} l'autonomisation.
-\newblock Rapport {'e}conomique, Organisation de Coop{'e}ration et de
-  D{'e}veloppement {'E}conomiques, Paris, France, 2021.
+\newblock Perspectives \'economiques de l'afrique 2021 : De la d\'ependance \`a
+  l'autonomisation.
+\newblock Rapport \'economique, Organisation de Coop\'eration et de
+  D\'eveloppement \'Economiques, Paris, France, 2021.
 
 \bibitem[Ohno(1988)]{ohno_1988}
 Taiichi Ohno.
@@ -160,31 +148,31 @@ Taiichi Ohno.
 
 \bibitem[{Oser Entreprendre}(2023)]{oserentreprendre}
 {Oser Entreprendre}.
-\newblock Cartographie des besoins en comp{'e}tences : Un outil strat{'e}gique
+\newblock Cartographie des besoins en comp\'etences : Un outil strat\'egique
   pour les entreprises.
 \newblock \url{https://www.oserentreprendre.fr/}, 2023.
-\newblock Consult{'e} le 5 avril 2025.
+\newblock Consult\'e le 5 avril 2026.
 
-\bibitem[{R{'e}publique du Cameroun}(2008)]{decret2008}
-{R{'e}publique du Cameroun}.
-\newblock D{'e}cret n° 2008/220 du 4 juillet 2008 portant organisation du
-  minist{`e}re de l'{'E}conomie, de la planification et de l'am{'e}nagement du
+\bibitem[{R\'epublique du Cameroun}(2008)]{decret2008}
+{R\'epublique du Cameroun}.
+\newblock D\'ecret n° 2008/220 du 4 juillet 2008 portant organisation du
+  minist\`ere de l'\'economie, de la planification et de l'am\'enagement du
   territoire.
-\newblock D{'e}cret pr{'e}sidentiel, Pr{'e}sidence de la R{'e}publique du
-  Cameroun, Yaound{'e}, Cameroun, 2008.
+\newblock D\'ecret pr\'esidentiel, Pr\'esidence de la R\'epublique du Cameroun,
+  Yaound\'e, Cameroun, 2008.
 
 \bibitem[Saporta(2010)]{saporta_2010}
 Gilbert Saporta.
-\newblock \emph{Probabilit{'e}s, Analyse des Donn{'e}es et Statistique}.
+\newblock \emph{Probabilit\'es, Analyse des Donn\'ees et Statistique}.
 \newblock Technip, Paris, France, 3 edition, 2010.
 
 \bibitem[Venables and Ripley(2002)]{venables2002modern}
 William~N. Venables and Brian~D. Ripley.
 \newblock \emph{Modern Applied Statistics with S}.
-\newblock Springer, New York, 4\textsuperscript{e} éd. edition, 2002.
+\newblock Springer, New York, 4\textsuperscript{e} \'ed. edition, 2002.
 \newblock ISBN 978-0-387-95457-8.
-\newblock Documentation officielle de référence pour le package MASS et
-  l'implémentation de la fonction lda.
+\newblock Documentation officielle de r\'ef\'erence pour le package MASS et
+  l'impl\'ementation de la fonction lda.
 
 \bibitem[Williamson(1985)]{williamson1985}
 Oliver~E. Williamson.
