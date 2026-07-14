@@ -18,6 +18,8 @@
 \usepackage{float}
 \usepackage{caption}
 \usepackage[table]{xcolor}
+\usepackage{newtxtext}
+\usepackage{newtxmath}
 %------------------------------------------------------------
 %  POLICES & TYPOGRAPHIE
 %------------------------------------------------------------
@@ -88,7 +90,7 @@ headheight=28pt        % CORRECTION 1 : 15pt → 28pt (évite le warning fancyhd
 %------------------------------------------------------------
 %  MATHÉMATIQUES & CODE
 %------------------------------------------------------------
-\usepackage{amsmath, amssymb, amsthm}
+%\usepackage{amsmath, amssymb, amsthm}
 \usepackage{listings}
 \usepackage{algorithm}
 \usepackage{algpseudocode}
@@ -271,7 +273,7 @@ justification=centering
 \newcommand{\matricule}{21D0180EP}
 \newcommand{\directeur}{Pr }
 \newcommand{\annee}{2025 / 2026}
-\newcommand{\titredoc}{Cartographie des besoins, conception et développement d'une plate-forme de mise en relation des entreprises}
+\newcommand{\titredoc}{Cartographie des besoins, conception et développement d'une plateforme de mise en relation des entreprises}
 %============================================================
 %  DOCUMENT
 %============================================================
@@ -364,7 +366,7 @@ justification=centering
 			
 			%--- BLOC 4 : Nature du document ---
 			{\normalsize Mémoire présenté et soutenu en vue de l'obtention du}\\[5pt]
-			{\large\bfseries\color{primary} Diplôme d'INGÉNIEUR EN DATA SCIENCES}
+			{\large\bfseries\color{primary} Diplôme d'Iingénieur  en Data Sciences}
 			
 			\vspace{0.45cm}
 			
@@ -434,14 +436,15 @@ justification=centering
 	 nombreuses personnes. Nous remercions sincèrement :
 	
 	\begin{itemize}
-		\item M. ALAMINE OUSMANE MEY Ministre de l'Economie de la Planification et de l'Aménagement du Territoire pour nous avoir accordé la possibilité d'effectuer un stage académique au sein de la structure dont il a la charge;
-		\item M. MENDO PAULIN chef de la \textbf{\gls{dape}} pour l'accueil chaleureux et l'accompagnement permanent dont nous avons fait l'objet;
-		\item M. ABDELAZIZ JUNMBE Cadre à la \textbf{\gls{cas}} et notre encadreur professionel pour ses conseils avisés et le suivi à la loupe de l'évolution de ce travail;
-		\item Pr ALIDOU MOHAMADOU \textbf{Directeur de l'École Nationale Supérieure Polytechnique de Maroua};
-		\item Pr KALADZAVI  \textbf{Chef du Département d'Informatique et Télécommunications} et notre encadreur académique pour les réformes et améliorations apporté à ce travail;
+		\item \textbf{M. ALAMINE OUSMANE MEY} Ministre de l'Economie de la Planification et de l'Aménagement du Territoire pour nous avoir accordé la possibilité d'effectuer un stage académique au sein de la structure dont il a la charge;
+		\item \textbf{M. MENDO PAULIN} chef de la \gls{dape} pour l'accueil chaleureux et l'accompagnement permanent dont nous avons fait l'objet;
+		\item M. ABDELAZIZ JUNMBE Cadre à la \gls{cas} et notre encadreur professionnel pour ses conseils avisés et le suivi à la loupe de l'évolution de ce travail;
+		\item \textbf{Pr ALIDOU MOHAMADOU} Directeur de l'École Nationale Supérieure Polytechnique de Maroua;
+		\item \textbf{Pr KALADZAVI Guidedi}  Chef du Département d'Informatique et Télécommunications et notre encadreur académique pour les réformes et améliorations apporté à ce travail;
 		\item Tous les \textbf{enseignants} qui, à travers leurs enseignements, ont rendu ce travail possible;
-		\item A notre grande famille pour les sacrifices consentis;
-		\item A nos camarades pour le soutient et la solidarité dont ils ont fait preuve.
+		\item  \textbf{Notre grande famille} pour les sacrifices consentis;
+		\item \textbf{Nos camarades} pour le soutien et la solidarité dont ils ont fait preuve;
+		\item Tous ceux qui de près ou de loin ont contribué à l'aboutissement de ce travail.
 	\end{itemize}
 	
 	%--- TABLE DES MATIERES ---
@@ -456,10 +459,10 @@ justification=centering
 \chapter*{Résumé}
 \addcontentsline{toc}{chapter}{Résumé}
 \thispagestyle{plain}
-Le secteur économique privé Camerounais fait face à des difficultés manifestes qui entravent sa croissance et sa pérennité. Afin de dynamiser ce tissu économique, le présent travail s'articule autour d'un double objectif : analyser les données d'une enquête nationale initiée par le \gls{minepat} pour cartographier précisément les besoins des entreprises, puis concevoir une plateforme numérique de mise en relation des entreprises. Les variables issues de la dite enqu\^ete étant essentiellement catégorielles, une démarche d'analyse factorielle combinant statistiques descriptives (univariées et bivariées) et classification automatique a été déployée. L'analyse révèle que $96{,}23\,\%$ des structures recensées souffrent d'un déficit critique de financement, le secteur d'activité s'imposant comme la variable qui permette le mieux de segmenter la nature des besoins. De plus, une forte dépendance est mise en évidence entre l'ancienneté des entreprises et leurs exigences en matière de recherche et d'innovation. L'application de la Classification Ascendante Hiérarchique (CAH) a permis de partitionner le tissu entrepreneurial en trois profils distincts. La première catégorie, qualifiée d'acteurs agro-productifs émergents, regroupe les petites structures évoluant majoritairement dans l'agroalimentaire ($81{,}1\,\%$) et ayant une ancienneté de 5 à 9 ans. La deuxième catégorie, identifiée comme les opérateurs financiers et autres services établis, représente des entreprises plus matures, dont $26{,}6\,\%$ affichent plus de 20 ans d'existence, orientées principalement vers les services financiers et bancaires. Enfin, la troisième catégorie, nommée les petites entreprises multisectorielles, est constituée de jeunes structures en phase de démarrage opérant à $68{,}8\,\%$ dans des secteurs diversifiés hors agroalimentaire. Le second volet de ce travail est consacré au développement de la plateforme «~Business Partnership~». Adoptant une approche orientée vers la performance, la base de données sous-jacente a fait l'objet d'une modélisation dimensionnelle, optimisant ainsi la fluidité et l'efficacité des requêtes SQL lors des recherches de partenariats.
+Le secteur économique privé camerounais fait face à des difficultés manifestes qui entravent sa croissance et sa pérennité. Afin de dynamiser ce tissu économique, le présent travail s'articule autour d'un double objectif : analyser les données d'une enquête nationale initiée par le \gls{minepat} pour cartographier précisément les besoins des entreprises, puis concevoir une plateforme numérique de mise en relation des entreprises. Les variables issues de la dite enqu\^ete étant essentiellement catégorielles, une démarche d'analyse factorielle combinant statistiques descriptives (uni-variées et bis-variées) et classification automatique a été déployée. L'analyse révèle que $96{,}23\,\%$ des structures recensées présentent un besoin de financement, le secteur d'activité s'imposant comme la variable qui permet le mieux de segmenter la nature des besoins. De plus, une forte dépendance est mise en évidence entre l'ancienneté des entreprises et leurs exigences en matière de recherche et d'innovation. L'application de la Classification Ascendante Hiérarchique (CAH) a permis de partitionner le secteur privé en trois profils distincts. La première catégorie, qualifiée d'acteurs agro-productifs émergents, regroupe les petites structures évoluant majoritairement dans l'agroalimentaire ($81{,}1\,\%$) et ayant une ancienneté de 5 à 9 ans. La deuxième catégorie, identifiée comme les opérateurs financiers et autres services établis, représente des entreprises plus matures, dont $26{,}6\,\%$ affichent plus de 20 ans d'existence, orientées principalement vers les services financiers et bancaires. Enfin, la troisième catégorie, nommée les petites entreprises multiple-sectorielles, est constituée de jeunes structures en phase de démarrage opérant à $68{,}8\,\%$ dans des secteurs diversifiés hors agroalimentaire. Le second volet de ce travail est consacré au développement de la plateforme «~Business Partnership~». Adoptant une approche orientée vers la performance, la base de données sous-jacente a fait l'objet d'une modélisation dimensionnelle, optimisant ainsi la fluidité et l'efficacité des requêtes SQL lors des recherches de partenariats.
 
 \vspace{0.5cm}
-\noindent \textbf{Mots-clés :} Plateforme numérique, cartographie des besoins, modélisation dimensionnelle, secteur privé, classification ascendante hiérarchique.
+\noindent \textbf{Mots-clés :} Plateforme numérique, cartographie des besoins,  secteur privé.
 %	[Insérer ici le résumé en français — environ 200 à 300 mots décrivant le contexte, les objectifs, la méthodologie et les résultats principaux de votre travail.]
 	
 	\vspace{1cm}
@@ -467,7 +470,9 @@ Le secteur économique privé Camerounais fait face à des difficultés manifest
 	\chapter*{Abstract}
 	\addcontentsline{toc}{chapter}{Abstract}
 	\thispagestyle{plain}
-	The Cameroonian private sector faces clear difficulties that hinder its growth and sustainability. In order to revitalize this economic fabric, this work revolves around a dual objective: analyzing data from a national survey initiated by the \gls{minepat} to precisely map business needs, and then designing a digital matchmaking platform for enterprises. Since the variables from this survey are essentially categorical, a factor analysis approach combining descriptive statistics (univariate and bivariate) and automatic classification was deployed. The analysis reveals that $96.23\,\%$ of the surveyed entities suffer from a critical funding deficit, with the sector of activity emerging as the variable that best segments the nature of these needs. Furthermore, a strong dependence is highlighted between the seniority of the companies and their requirements in terms of research and innovation. The application of Hierarchical Cluster Analysis (HCA) made it possible to partition the entrepreneurial fabric into three distinct profiles. The first category, described as emerging agro-productive actors, brings together small entities operating mainly in the agri-food sector ($81.1\,\%$) and having 5 to 9 years of seniority. The second category, identified as established financial operators and other services, represents more mature companies, $26.6\,\%$ of which have been in existence for more than 20 years, primarily focused on financial and banking services. Finally, the third category, named small multisectoral enterprises, consists of young startup entities with $68.8\,\%$ operating in diversified sectors outside of agri-food. The second part of this work is dedicated to the development of the "Business Partnership" platform. Adopting a performance-oriented approach, the underlying database underwent dimensional modeling, thereby optimizing the fluidity and efficiency of SQL queries during partnership searches.\vspace{0.5cm}\noindent \textbf{Keywords:} Digital platform, needs mapping, dimensional modeling, private sector, hierarchical cluster analysis.
+	The Cameroonian private sector faces clear difficulties that hinder its growth and sustainability. In order to revitalize this economic fabric, this work revolves around a dual objective: analyzing data from a national survey initiated by the \gls{minepat} to precisely map business needs, and then designing a digital matchmaking platform for enterprises. Since the variables from this survey are essentially categorical, a factor analysis approach combining descriptive statistics (univariate and bivariate) and automatic classification was deployed. The analysis reveals that $96.23\,\%$ of the surveyed entities suffer from a critical funding deficit, with the sector of activity emerging as the variable that best segments the nature of these needs. Furthermore, a strong dependence is highlighted between the seniority of the companies and their requirements in terms of research and innovation. The application of Hierarchical Cluster Analysis (HCA) made it possible to partition the entrepreneurial fabric into three distinct profiles. The first category, described as emerging agro-productive actors, brings together small entities operating mainly in the agri-food sector ($81.1\,\%$) and having 5 to 9 years of seniority. The second category, identified as established financial operators and other services, represents more mature companies, $26.6\,\%$ of which have been in existence for more than 20 years, primarily focused on financial and banking services. Finally, the third category, named small multisectoral enterprises, consists of young startup entities with $68.8\,\%$ operating in diversified sectors outside of agri-food. The second part of this work is dedicated to the development of the "Business Partnership" platform. Adopting a performance-oriented approach, the underlying database underwent dimensional modeling, thereby optimizing the fluidity and efficiency of SQL queries during partnership searches.\vspace{0.5cm}
+	
+	 \textbf{Keywords:} Digital platform, needs mapping, private sector.
 %	\textbf{Keywords:} Digital platform, business mapping, matching system, Data Sciences, MINEPAT, private sector, Cameroon.
 	
 	\medskip
@@ -500,23 +505,30 @@ Le secteur économique privé Camerounais fait face à des difficultés manifest
 	\addcontentsline{toc}{chapter}{Introduction Générale}
 	\markboth{Introduction Générale}{Introduction Générale}
 	
-La capacité à collaborer et à tisser des relations inter-entreprises pourraient contribuer à la croissance, la compétitivité et la pérennité des entreprises du secteur privé. Au Cameroun, ce besoin de collaboration est d'une grande importance du fait des ambitions portées par la \gls{snd30}, qui place le développement du secteur privé au cœur de l'émergence nationale.
+La capacité à collaborer et à tisser des relations inter-entreprises pourrait contribuer à la croissance, la compétitivité et la pérennité des entreprises du secteur privé. Au Cameroun, ce besoin de collaboration est d'une grande importance du fait des ambitions portées par la \gls{snd30}, qui place le développement du secteur privé au cœur de l'émergence nationale\cite{minepat2020}.
 
  
-Nous pouvons tout de m\^eme relever que, malgré la présence de divers dispositifs de mise en relation à l'instar des plateformes numériques B2B, de la Bourse de Sous-Traitance et de Partenariat (BSTP) ou des dynamiques contractuelles directes les performances globales du secteur privé demeurent en deçà des attentes. Ce constat met en lumière une inadéquation potentielle entre les outils de collaboration actuelles et les réalités auxquelles font face les entreprises du secteur privé Camerounais. En effet, aucun dispositif institutionnel centralisé ne permet aujourd'hui aux entreprises d'identifier précisément leurs besoins spécifiques et de bénéficier d'un ciblage intelligent pour être mises en relation avec des partenaires qui pourront potentiellement les accompagner dans leurs différentes activités. 
+Nous pouvons tout de m\^eme relever que, malgré la présence de divers dispositifs de mise en relation à l'instar des plateformes numériques B2B(LinkedIn, Facebook Marketplace, Alibaba), de la Bourse de Sous-Traitance et de Partenariat (BSTP) ou des dynamiques contractuelles directes les performances globales du secteur privé demeurent en deçà des attentes au vue des résultats de l'évaluation mi-parcours de la \gls{snd30} \cite{minepat2025}. Ce constat met en lumière une inadéquation potentielle entre les outils de collaboration actuelles et les réalités auxquelles font face les entreprises du secteur privé camerounais. En effet, aucun dispositif institutionnel ne permet aujourd'hui aux entreprises d'identifier précisément leurs besoins spécifiques et de bénéficier d'un réseau d'entreprises susceptibles de les accompagner dans leurs différentes activités. 
 
-Dès lors, se pose le problème de la conception d'un outil de mise en relation optimal, adapté aux spécificités locales et capable de dynamiser efficacement les partenariats inter-entreprises. Face à ce défi, notre réflexion est guidée par les préoccupations centrales suivantes : Quels sont les profils d'entreprises spécifiques présentant des besoins similaires? Et comment structurer et déployer un outil technologique de collaboration centralisé capable de capter les besoins endogènes des entreprises camerounaises et d'optimiser leur mise en relation ?
+Dès lors, se pose le problème de la capacité à recenser les besoins des entreprises, à construire des profils d'entreprises sur la base de ces besoins et à concevoir une plateforme numérique de mise en relation sur la base des services offerts et des besoins exprimés. Face à ce défi, notre réflexion est guidée par les préoccupations centrales suivantes : Comment identifier des profils homogènes d'entreprises à partir des données de l'enqu\^ete réalisée par le MINEPAT? Comment exploiter ces profils ? Et enfin comment concevoir et implémenter une plateforme de mise en relation sur la base des besoins et offres exprimés?
 
-Pour répondre à cette double problématique, notre travail s'articule autour de cinq chapitres :
+Pour répondre à cela, notre travail s'articule autour de cinq chapitres :
 
-Le chapitre 1 présente la structure d'accueil, expose le contexte global de l'étude et formalise la problématique identifiée sur le terrain. Le chapitre 2 est dédié au cadre théorique et à l'état de l'art. Il s'atèle à définir les concepts clés liés à la collaboration inter-entreprises et analyse de manière critique les solutions existantes afin d'en ressortir les limites techniques et fonctionnelles. Les chapitres 3 et 4 constituent le cœur méthodologique de notre travail, détaillant successivement la phase de conception et la phase de réalisation, où les choix technologiques et les modélisations sont explicités. Le chapitre 5 évalue et présente les résultats obtenus, validant la pertinence fonctionnelle de la solution développée. Enfin, une conclusion générale viendra dresser le bilan de nos travaux et ouvrir des perspectives d'amélioration pour les développements futurs.
+Le chapitre 1 présente la structure d'accueil, expose le contexte global de l'étude et formalise la problématique identifiée sur le terrain. Le chapitre 2 est dédié au cadre théorique et à l'état de l'art. Il s'attèle à définir les concepts clés liés à la collaboration inter-entreprises et analyse de manière critique les solutions existantes afin d'en ressortir les limites techniques et fonctionnelles. Les chapitres 3 et 4 constituent le cœur méthodologique de notre travail, détaillant successivement la phase de conception et la phase de réalisation, où les choix technologiques et les modélisations sont explicités. Le chapitre 5 évalue et présente les résultats obtenus, validant la pertinence fonctionnelle de la solution développée. Enfin, une conclusion générale viendra dresser le bilan de nos travaux et ouvrir des perspectives d'amélioration pour les développements futurs.
 
 	%============================================================
 	%  CHAPITRE 1 : PRÉSENTATION DE LA STRUCTURE ET DU STAGE
 	%============================================================
-	\chapter{Contexte et problèmatique}
+	\chapter{Présentation du cadre de l'étude}
 	\label{chap:structure}
-Il sera question dans ce chapitre de présenter premièrement la structure d'accueil et le déroulement du stage. Par la suite présenter le contexte de notre travail et la problèmatique.
+Ce chapitre pr\'esente le cadre institutionnel et probl\'ematique
+dans lequel s'inscrit ce travail. Il est organis\'e en deux parties.
+La premi\`ere d\'ecrit l'organisation et les missions du \gls{minepat},
+structure au sein de laquelle le stage acad\'emique a \'et\'e
+effectu\'e. La seconde expose le contexte \'economique national,
+identifie les lacunes des initiatives existantes en mati\`ere de
+connaissance des besoins des entreprises, et formule la
+probl\'ematique ainsi que la d\'emarche m\'ethodologique retenue.
 \section[Présentation du MINEPAT]{Présentation du \gls{minepat}}
 \label{sec:minepat}
 
@@ -528,7 +540,7 @@ d'un Ministre assisté d'un Ministre délégué, le \gls{minepat} s'appuie sur u
 de structures organisationnelles complémentaires pour accomplir ses missions, le ministre est accompagné par: un
 Secrétaire particulier, quatre conseillers techniques, une Inspection Générale, une
 administration centrale, des services déconcentrés, des services extérieurs ainsi que
-des établissements et organismes rattachés. Le ministre délégué dispose d'un sécrétaire particulier.
+des établissements et organismes rattachés. Le ministre délégué dispose d'un secrétaire particulier.
 
 %------------------------------------------------------------
 \subsection{Organisation interne du \gls{minepat}}
@@ -732,21 +744,21 @@ cycle d'analyse économique~:
 	
 	Il ressort qu’aucune de ces études n’a tenté de recueillir de manière exhaustive les besoins des entreprises locales qui constituent le tissu productif camerounais. En général, elles recueillent les besoins dans le cadre des enquêtes qui poursuivent d’autres objectifs et de ce fait, ne sont pas exhausif. En effet, l’étude du \gls{gecam} , bien que pertinente, se limite aux seuls membres de ce groupement et ne rend pas compte de la diversité du tissu économique national dans son ensemble. Le \gls{minepat}, pour sa part, demeure centré sur le secteur industriel et n’adresse pas de manière suffisamment directe les besoins des acteurs privés dans leur pluralité.\\
 	
-	C’est pour combler ces lacunes que le \gls{minepat} a engagé en 2025 une enquête spécifiquement dédiée à la cartographie des besoins des entreprises du tissu productif local, dont les résultats permettront au Gouvernement de mener des interventions plus ciblées et adaptées aux entreprises selon leurs besoins. Au-delà de ce cela, la mise sur pied d’une plateforme numérique de mise en relation des entreprises par le MINEPAT est considérée comme un prolongement naturel de cette démarche. Car, à ce jour, aucun outil de ce type n’existe dans le paysage institutionnel camerounais. Les plateformes accessibles au grand public, telles que le Marketplace de Facebook, présentent des limites manifestes : leur caractère informel les expose à des pratiques frauduleuses, et leur portée géographique restreinte à environ 65 kilomètres rend impossible tout accès à des partenaires étrangers. Des plateformes à vocation internationale comme Amazon ou Alibaba pallient certes ce problème d’étendue, mais leur offre concentrée sur des produits finis ne répond pas aux besoins plus complexes des entreprises camerounaises, qu’il s’agisse de la recherche de financements, de solutions organisationnelles ou d’outils adaptés à leur fonctionnement. C’est précisément à ces insuffisances que le MINEPAT entreprend engagé la mise en place d’une plateforme gouvernementale offrant un cadre formel, structuré et étendu, permettant aux entreprises  d’exprimer leurs besoins et d’identifier des partenaires potentiels sur la base de critères sectoriels et fonctionnels précis. \\
+	C’est pour combler ces lacunes que le \gls{minepat} a engagé une enquête spécifiquement dédiée à la cartographie des besoins des entreprises du tissu productif local, dont les résultats permettront au Gouvernement de mener des interventions plus ciblées et adaptées aux entreprises selon leurs besoins. Au-delà de ce cela, la mise sur pied d’une plateforme numérique de mise en relation des entreprises par le MINEPAT est considérée comme un prolongement naturel de cette démarche. Car, à ce jour, aucun outil de ce type n’existe dans le paysage institutionnel camerounais.\\
 	
-	Dès lors, deux questions guident ce travail : 
+	Dès lors, deux questions principales guident ce travail : 
 	\begin{itemize}
-		\item Quel est la cartographie des besoins des entreprises locales au Cameroun ? 
-		\item Comment développer et mettre en place une plate-forme institutionnel de mise en relation entre les entreprises locales dans le but de combler ces besoins recensés ?
+		\item Quels sont les profils de besoins des entreprises locales au Cameroun ? 
+		\item Comment développer et mettre en place une plateforme institutionnelle de mise en relation des entreprises locales dans le but de combler leurs besoins ?
 	\end{itemize}
 	\newpage
 	\subsection{Objectifs du mémoire}
-	L’objectif général de ce travail est de proposer une cartographie des besoins des entreprises locales sur la base des données obtenue à la suite de l’enquête initiée par la \gls{dape}, de proposer un modèle  et de concevoir et développer une plateforme gouvernementale numérique permettant d’assurer la mise en relation des entreprises. Cette plateforme vise à centraliser les informations relatives aux entreprises, à leurs capacités productives et à leurs besoins spécifiques, afin de constituer un outil d’aide à la décision pour les pouvoirs publics et un espace de collaboration structuré pour les acteurs économiques, qu’ils soient nationaux ou étrangers. Spécifiquement, il sera question de :
+	L’objectif général de ce travail est de proposer une cartographie des besoins des entreprises locales sur la base des données obtenues à la suite de l’enquête initiée par la \gls{dape}, de concevoir et de développer une plateforme gouvernementale numérique permettant d’assurer la mise en relation des entreprises. Spécifiquement, il sera question de :
 	\begin{itemize}
-		\item Décrire l’état des besoins exprimés par les entreprises locales;
-		\item Analyser les besoins en fonction des caractéristiques des entreprises;
-		\item Concevoir l’architecture d’une plateforme gouvernementale de mise en relation;
-		\item  Développer et tester un prototype fonctionnel de cette plateforme.
+		\item Identifier et caractériser les besoins exprimés par les entreprises locales à partir des données de l'enquête ;
+		\item Établir une cartographie des besoins en fonction des caractéristiques des entreprises au moyen de méthodes d'analyse de données ;
+		\item Concevoir l'architecture fonctionnelle et technique d'une plateforme gouvernementale de mise en relation des entreprises ;
+		\item Développer et tester un prototype fonctionnel de cette plateforme afin de vérifier la mise en œuvre des fonctionnalités définies.
 	\end{itemize}
 	%=============================================================
 
@@ -755,11 +767,11 @@ cycle d'analyse économique~:
 	\label{sec:methodologie_generale}
 	%-------------------------------------------------------------
 	
-	Afin de répondre à la problématique centrale de ce travail ---
-	à savoir la d'une plateforme gouvernementale permettant
+	Afin de répondre aux problématiques centrales de ce travail 
+	à savoir l'identification des profils des besoins des entreprises et la conception d'une plateforme gouvernementale permettant
 	la mise en relation des entreprises une
 	démarche méthodologique structurée en deux axes complémentaires
-	a été adoptée, articulant une approche analytique fondée sur le
+	a été adoptée. Une approche analytique fondée sur le
 	traitement statistique des données de l'enquête du \gls{minepat}
 	et une approche technique fondée sur le développement d'une
 	application web fonctionnelle.
@@ -771,33 +783,30 @@ cycle d'analyse économique~:
 	nature qualitative secteur d'activité, région d'implantation,
 	taille, ancienneté, types de besoins exprimés une chaîne
 	analytique adaptée à ce type de variables a été retenue,
-	combinant des méthodes de description univariée et bivariée et
+	combinant des méthodes de description uni-variée et bis-variée et
 	des méthodes multidimensionnelles éprouvées dans la littérature
 	statistique.
 	\begin{itemize}
-		\item Dans un premier temps, une analyse univariée a
+		\item Dans un premier temps, une analyse uni-variée a
 		permis de décrire la distribution des entreprises selon chacune
 		de leurs caractéristiques, offrant une première photographie
 		descriptive du tissu productif couvert par l'enquête.
 		\item Dans un
-		second temps, une analyse bivariée fondée sur le test du
+		second temps, une analyse bis-variée fondée sur le test du
 		$\chi^2$ de Pearson et le coefficient $V$ de Cramér a permis
 		d'identifier et de quantifier les associations entre les
-		caractéristiques des entreprises et leurs besoins exprimés,
-		révélant notamment le secteur d'activité comme principal
-		déterminant de la nature des besoins.
+		caractéristiques des entreprises et leurs besoins exprimés.
 		\item Dans un troisième temps,
-		une Analyse des Correspondances Multiples (\gls{acm}) a été
-		conduite afin de réduire la dimensionnalité des données et de
+		une \gls{acm} a été
+		conduite afin de réduire la dimension des données et de
 		produire une représentation factorielle synthétique du nuage
 		d'entreprises dans un espace de dimension réduite. Les
 		coordonnées factorielles issues de l'ACM ont ensuite alimenté
-		une Classification Ascendante Hiérarchique (\gls{cah}),
+		une \gls{cah},
 		conduite selon le critère d'agrégation de Ward, permettant de
 		regrouper les entreprises en classes homogènes aux profils de
 		besoins similaires.
-		\item Enfin, une Analyse Factorielle Discriminante
-		(\gls{afd}) a été appliquée afin de valider la robustesse de
+		\item Enfin, une \gls{afd} a été appliquée afin de valider la robustesse de
 		la partition obtenue, d'identifier les variables les plus
 		discriminantes entre les classes et d'élaborer une règle de
 		prédiction de classe pour les nouvelles entreprises s'inscrivant
@@ -915,25 +924,29 @@ cycle d'analyse économique~:
 	
 	\section*{Conclusion}
 	
-	Le \gls{minepat}, dans le cadre des missions qui lui sont confiées et qui ont été explicitées dans la première partie de ce chapitre, recherche activement des solutions pour dynamiser le secteur privé, véritable moteur de la croissance économique. Ce travail s'inscrit dans un contexte marqué par les résultats peu reluisants de l'évaluation à mi-parcours de la \gls{snd30}. De plus, les différentes initiatives recensées jusqu'ici ne convergent pas vers un assainissement global des besoins des entreprises. Dès lors, répondre aux attentes du secteur privé à travers des opérations ciblées se présente comme une piste de solution essentielle et prometteuse. L'enquête menée par la \gls{dape} sur la cartographie des besoins des entreprises constitue ainsi l'un des leviers activés par le \gls{minepat} pour pallier les difficultés rencontrées par le secteur privé.
+	Ce chapitre a permis de situer le cadre institutionnel et
+	probl\'ematique du pr\'esent travail. La pr\'esentation du
+	\gls{minepat} a mis en \'evidence le r\^ole de cette institution
+	dans la d\'efinition et la mise en \oe uvre des politiques
+	\'economiques nationales. L'analyse du contexte a r\'ev\'el\'e
+	que les initiatives men\'ees jusqu'ici pour documenter la situation
+	des entreprises camerounaises pr\'esentent des limites communes~:
+	elles ne couvrent pas l'ensemble du tissu productif et ne proposent
+	pas de m\'ecanisme de mise en relation fond\'e sur les besoins
+	exprim\'es. L'enqu\^ete du \gls{minepat} de 2025 constitue une
+	r\'eponse institutionnelle \`a ces lacunes. Le chapitre suivant
+	d\'efinit les concepts mobilis\'es dans ce travail et examine
+	les solutions existantes de cartographie et de mise en relation.
 	%============================================================
 	%  CHAPITRE 2 : CONCEPTS ET ÉTAT DE L'ART
 	%============================================================
 	\chapter{Définition des concepts et état de l’art}
-	Ce chapitre pose les fondements conceptuels et analytiques sur lesquels repose
-	le présent travail. Il s'articule autour de deux grandes parties complémentaires.
-	La première est consacrée à la clarification des concepts fondamentaux mobilisés
-	tout au long de ce mémoire, en proposant des définitions
-	des notions de cartographie des entreprises, de besoins des entreprises et de mise
-	en relation. Cette clarification conceptuelle est indispensable dans la mesure où
-	ces notions, bien que couramment employées dans la littérature économique et
-	institutionnelle, recouvrent des réalités distinctes selon les contextes dans
-	lesquels elles sont utilisées.
-	
-	La seconde partie est consacrée à l'état de l'art, c'est-à-dire à l'examen
-	critique des solutions, outils et plateformes existants qui ont été développés
-	pour répondre aux problématiques de cartographie et de mise en relation des besoins des
-	entreprises.
+	Ce chapitre pose les fondements conceptuels et analytiques du
+	travail. Il est organis\'e en deux parties~: la premi\`ere
+	d\'efinit les notions de besoins des entreprises, de cartographie
+	et de mise en relation~; la seconde examine les travaux et outils
+	existants traitant de ces probl\'ematiques, en identifiant leurs
+	apports et leurs limites au regard des objectifs poursuivis.
 	\label{chap:etat_art}
 	\newpage
 	
@@ -942,18 +955,34 @@ cycle d'analyse économique~:
 	
 	\subsection{Cartographie des besoins des entreprises}
 	
-	Le terme besoin, d'après le dictionnaire Larousse , désigne une exigence née d'un sentiment de manque ou de privation de quelque chose qui est nécessaire à la vie ou au bon fonctionnement d'un système \cite{larousse}. Transposé au monde de l'entreprise, les besoins des entreprises font ainsi référence à l'ensemble des manques, insuffisances ou absences de ressources qui, une fois comblés, seraient susceptibles de contribuer à leur croissance, à leur compétitivité et à leur pérennité. Ces besoins peuvent être d'ordre matériel, comme l'acquisition d'équipements de production ou de technologies adaptées, ou d'ordre immatériel, comme l'accès à des compétences spécialisées, à des réseaux de distribution ou à des sources de financement.\\
+	Dans la litt\'erature \'economique, la notion de besoin renvoie \`a
+	un \'ecart mesurable entre un \'etat observ\'e et un \'etat souhait\'e
+	pour le bon fonctionnement d'une organisation. La Banque Mondiale
+	d\'efinit les besoins des entreprises comme l'ensemble des contraintes
+	qui, une fois lev\'ees, permettraient d'am\'eliorer de mani\`ere
+	significative leur productivit\'e et leur capacit\'e \`a cro\^itre
+	\cite{world_bank_doing_business_2020}. Cette d\'efinition s'inscrit
+	dans le cadre m\'ethodologique de l'\textit{\'Evaluation des Besoins}
+	(\textit{Needs Assessment}), une d\'emarche structur\'ee qui vise \`a
+	identifier, hi\'erarchiser et documenter les manques d'une organisation
+	afin d'orienter les interventions vers les facteurs de blocage les plus
+	d\'eterminants \cite{world_bank_needs_2014}.
 	
-	Le terme cartographie toujours d’après le dictionnaire Larousse, est l'ensemble des opérations ayant pour objet l'élaboration, la rédaction et l'édition de cartes \cite{larousse}. La cartographie des besoins des entreprises pourrait donc être considéré comme l’ensemble des méthodes concourants à la représentation de la distribution des besoins des entreprises selon des variables identifiées. Cela inclut les besoins en compétences, en outils, et en ressources pour atteindre les objectifs fixés\cite{oserentreprendre}. La cartographie des besoins se présente comme un outil stratégique majeur pour l'administration centrale. Elle joue un rôle fondamental dans l’optimisation des ressources, car elle permet d’identifier les compétences nécessaires pour atteindre les objectifs et d’anticiper les besoins futurs.
-	\\
-	
-	Dans le contexte spécifique du Cameroun, l'initiative de proposer une cartographie des besoins des entreprises du tissu productif local s'inscrit dans une nécessité économique profonde~: celle de booster le secteur privé, reconnu comme le principal moteur de la croissance économique nationale. En effet, la Stratégie Nationale de Développement 2020--2030, document de référence des politiques économiques camerounaises, énonce dans l'un de ses trois piliers fondateurs la volonté de construire un État stratège et pragmatique qui met en place les facilités nécessaires à l'émergence du secteur privé comme principal moteur de la croissance économique, et qui réalise des interventions ciblées dans des secteurs hautement stratégiques \cite{minepat2020}. Or, pour que ces interventions soient véritablement ciblées et efficaces, les pouvoirs publics ont besoin d'une connaissance précise et actualisée des besoins réels des entreprises, de leur localisation géographique et de leur appartenance sectorielle. La cartographie des besoins des entreprises répond précisément à cette exigence~: elle fournit aux décideurs publics une base d'information structurée, sur laquelle peuvent s'appuyer des politiques d'appui mieux adaptées aux réalités du terrain. Elle pourrait ainsi contribuer directement à l'atteinte des objectifs fixés par la SND30, en permettant de réduire les écarts observés entre les ambitions de transformation structurelle de l'économie camerounaise et les performances effectivement enregistrées.
+	La cartographie des besoins des entreprises est un processus
+	syst\'ematique de collecte, d'organisation et de repr\'esentation
+	sectorielle des contraintes exprim\'ees par les unit\'es
+	\'economiques d'un territoire donn\'e. Elle constitue la premi\`ere
+	\'etape op\'erationnelle d'une d\'emarche d'\'Evaluation des Besoins
+	au sens de la Banque Mondiale, dont l'objectif est de produire une
+	base d'information structur\'ee permettant aux d\'ecideurs publics
+	d'orienter leurs interventions vers les entreprises et les contraintes
+	les plus prioritaires \cite{world_bank_needs_2014}.
 	
 	
 	\subsection{Mise en relation des entreprises}
 	
 La mise en relation des entreprises renvoie au mécanisme par lequel deux ou plusieurs unités économiques sont amenées à se connaître, à échanger sur leurs capacités et leurs besoins respectifs, et à explorer les conditions d'une collaboration mutuellement bénéfique. Il convient d'emblée de distinguer cette notion de celle de partenariat, avec laquelle elle est souvent confondue. La mise en relation constitue une étape préalable et distincte du partenariat proprement dit : tandis que la première relève d'un processus d'identification et de rapprochement entre acteurs économiques, le second renvoie à un accord formel ou tacite entre deux entreprises en vue d'une collaboration effective, généralement matérialisé par un contrat ou un protocole d'accord. Autrement dit, la mise en relation crée les conditions favorables à l'émergence d'un partenariat, sans pour autant le présupposer ni l'imposer. 
-La mise en relation des entreprises constitue un facteur clé de renforcement des capacités productives et de génération de valeur. Elle permet en effet à une entreprise confrontée à un manque spécifique — qu'il s'agisse d'un besoin en financement, en compétences techniques, en équipements ou en accès aux marchés — de trouver un partenaire disposant précisément des ressources ou des capacités susceptibles de combler ce manque. L'Organisation de Coopération et de Développement Économiques (OCDE) souligne d'ailleurs que les dispositifs institutionnels de mise en relation contribuent significativement à l'amélioration de la productivité des petites et moyennes entreprises et à leur intégration dans les chaînes de valeur nationales et internationales \cite{ocde2021}. Plusieurs mécanismes et approches concourent à cette mise en relation entre entreprises, dont les principaux sont présentés ci-après.
+La mise en relation des entreprises constitue un facteur clé de renforcement des capacités productives et de génération de valeur. Elle permet en effet à une entreprise confrontée à un manque spécifique — qu'il s'agisse d'un besoin en financement, en compétences techniques, en équipements ou en accès aux marchés de trouver un partenaire disposant précisément des ressources ou des capacités susceptibles de combler ce manque. L'Organisation de Coopération et de Développement Économiques (OCDE) souligne d'ailleurs que les dispositifs institutionnels de mise en relation contribuent significativement à l'amélioration de la productivité des petites et moyennes entreprises et à leur intégration dans les chaînes de valeur nationales et internationales \cite{ocde2021}. Plusieurs mécanismes et approches concourent à cette mise en relation entre entreprises, dont les principaux sont présentés ci-après.
 	
 	\subsubsection{Plateformes numériques B2B}
 	Les plateformes numériques B2B (Business-to-Business) constituent l'une des formes les plus modernes et les plus répandues de mise en relation entre entreprises. Elles proposent un espace numérique dynamique où les entreprises peuvent se rendre visibles, interagir et engager des échanges commerciaux avec d'autres acteurs économiques, qu'ils soient nationaux ou internationaux \cite{acceor2024}. Contrairement aux marketplaces grand public, qui visent principalement les transactions entre professionnels et consommateurs, les plateformes B2B sont spécifiquement conçues pour faciliter les interactions entre entreprises, en soutenant aussi bien la prospection passive — consistant à attirer des partenaires potentiels grâce à une présence en ligne structurée — que la prospection active, fondée sur la recherche ciblée d'entreprises répondant à des critères sectoriels, géographiques ou fonctionnels précis. Elles jouent un rôle clé dans la quête de croissance et de réussite des entreprises en leur permettant d'élargir significativement leur réseau de partenaires au-delà des contraintes géographiques traditionnelles, de renforcer leur visibilité sur des marchés auxquels elles n'auraient pas accès autrement, et de fluidifier les échanges d'informations entre acteurs économiques évoluant dans un même secteur d'activité ou dans des secteurs complémentaires. Dans un contexte de numérisation croissante des économies africaines, ce type de dispositif représente une opportunité particulièrement prometteuse pour les entreprises camerounaises, dont la visibilité et la capacité de mise en réseau demeurent aujourd'hui limitées par l'absence d'un espace numérique institutionnel dédié.
@@ -994,133 +1023,99 @@ La mise en relation des entreprises constitue un facteur clé de renforcement de
 		\label{fig:zoneResencement}
 	\end{figure}
 	
-\subsection{Plateformes existantes de mise en relation des entreprises}
+\subsection{\'Etat de l'art}
+\label{sec:etat_art}
 
-Les plateformes numériques de mise en relation des entreprises se sont
-considérablement multipliées au cours de la dernière décennie, portées
-par la digitalisation croissante des échanges économiques et la montée
-en puissance du commerce interentreprises en ligne. Chacune de ces
-plateformes présente des caractéristiques, des fonctionnalités et des
-positionnements distincts, répondant à des besoins variés selon les
-secteurs d'activité, les zones géographiques et les types d'entreprises
-ciblées. L'examen de ces plateformes existantes permet d'identifier les
-bonnes pratiques à retenir, mais aussi les limites auxquelles la
-plateforme gouvernementale développée dans le cadre de ce travail entend
-apporter une réponse adaptée au contexte camerounais. Les principales
-plateformes de mise en relation recensées dans la littérature et
-utilisées à l'échelle internationale sont présentées ci-après.
+\subsubsection{Syst\`emes de recommandation et mise en relation
+	d'entreprises}
 
-\subsubsection{LinkedIn}
+Les syst\`emes de recommandation constituent la cat\'egorie de
+solutions algorithmiques la plus directement li\'ee au probl\`eme
+trait\'e dans ce travail. Selon Francesco Ricci et all., ces syst\`emes
+peuvent \^etre class\'es en trois familles selon leur principe de
+fonctionnement \cite{ricci_2015}.
 
-LinkedIn est largement reconnu comme le leader incontesté des réseaux
-sociaux professionnels à l'échelle mondiale. Fondée en 2002 et rachetée
-par Microsoft en 2016, la plateforme revendique aujourd'hui plus d'un
-milliard d'utilisateurs répartis dans plus de 200 pays, ce qui en fait
-l'écosystème numérique professionnel le plus étendu au monde \cite{linkedin2024}. LinkedIn
-constitue un pilier incontournable dans l'univers du B2B en ce qu'il
-offre aux entreprises un espace numérique dédié où elles peuvent établir
-et soigner leur présence en ligne, se connecter avec d'autres acteurs
-du marché et exploiter une multitude de fonctionnalités orientées vers
-le développement commercial et le réseautage professionnel. Parmi ces
-fonctionnalités, on peut notamment citer la création de pages entreprises
-permettant de valoriser l'activité, les produits et les services proposés,
-des outils de prospection ciblée permettant d'identifier des partenaires
-potentiels selon des critères sectoriels, géographiques ou hiérarchiques,
-ainsi que des espaces de publication de contenus favorisant la mise en
-avant de l'expertise et le renforcement de la crédibilité de l'entreprise.
-Cependant, malgré ses atouts indéniables, LinkedIn présente des limites
-notables dans le contexte africain~:la
-plateforme est principalement utilisée comme outil de réseautage
-individuel et ne propose pas de mécanisme structuré de mise en relation
-fondé sur les besoins spécifiques des entreprises.
+Le \textbf{filtrage bas\'e sur le contenu} (\textit{content-based
+	filtering}) propose \`a un utilisateur des \'el\'ements pr\'esentant
+des attributs similaires \`a ceux avec lesquels il a d\'ej\`a
+interagi. Appliqu\'e \`a la mise en relation d'entreprises, ce
+principe conduit \`a rapprocher des entreprises dont les profils
+de besoins sont similaires. Sa limite principale est qu'il ne prend
+pas en compte la compl\'ementarit\'e entre offres et besoins~: deux
+entreprises ayant les m\^emes besoins ne sont pas n\'ecessairement
+celles qui peuvent se r\'epondre mutuellement.
 
-\subsubsection{Facebook Marketplace}
+Le \textbf{filtrage collaboratif} (\textit{collaborative filtering})
+exploite les comportements collectifs des utilisateurs pour inf\'erer
+des affinit\'es. Dans le contexte B2B, il suppose l'existence d'un
+historique d'interactions entre entreprises, ce qui est rarement
+disponible dans les contextes institutionnels africains o\`u les
+donn\'ees transactionnelles sont peu structur\'ees \cite{ricci_2015}.
 
-Facebook Marketplace est une fonctionnalité intégrée à la plateforme
-Facebook, lancée en 2016 par Meta, qui permet aux particuliers et aux
-entreprises d'acheter, de vendre et d'échanger des biens et des services
-au sein d'une communauté géographiquement délimitée. Avec plus de trois
-milliards d'utilisateurs actifs sur Facebook à l'échelle mondiale,
-Facebook Marketplace bénéficie d'une visibilité et d'une audience considérables,
-ce qui en fait l'une des plateformes de commerce en ligne les plus
-fréquentées au monde \cite{meta2024}. Dans le contexte africain et camerounais en
-particulier, Facebook Marketplace présente un intérêt non négligeable~:
-la forte pénétration de Facebook sur le continent, combinée à la
-familiarité des utilisateurs avec l'interface de la plateforme, a conduit
-de nombreuses petites entreprises et commerçants informels à y établir
-une présence commerciale, parfois en l'absence de tout autre canal de
-vente numérique. En ce sens, Facebook Marketplace a contribué à
-l'émergence d'une forme de commerce numérique informel accessible à des
-acteurs qui n'auraient pas eu les moyens de développer leur propre site
-de vente en ligne.
+Les \textbf{syst\`emes \`a base de connaissances}
+(\textit{knowledge-based systems}) font correspondre les contraintes
+d'un utilisateur avec les caract\'eristiques des \'el\'ements
+disponibles. C'est l'approche la plus proche du probl\`eme trait\'e
+dans ce travail~: l'entreprise exprime ses besoins et la plateforme
+identifie les entreprises capables d'y r\'epondre. L'on peut
+noter que cette approche ne souffre pas du probl\`eme du
+\textit{cold start} (absence d'historique), ce qui la rend
+particuli\`erement adapt\'ee aux contextes o\`u les donn\'ees
+d'interaction sont rares.
 
-Cependant, Facebook Marketplace présente plusieurs limites structurelles
-qui en font un outil insuffisant pour répondre aux besoins de mise en
-relation formelle entre entreprises dans le cadre d'une politique publique
-d'appui au secteur privé. En premier lieu, la plateforme est principalement
-conçue pour des échanges de proximité~: sa portée géographique est en
-effet limitée à un rayon d'environ 65 kilomètres autour de la localisation
-de l'utilisateur, ce qui rend impossible l'identification de partenaires
-commerciaux situés dans d'autres régions du pays ou à l'étranger. En
-deuxième lieu, Facebook Marketplace est un espace peu formalisé et
-largement ouvert, ce qui le rend particulièrement vulnérable aux pratiques
-frauduleuses, aux arnaques et aux transactions non sécurisées, nuisant
-ainsi à la confiance des entreprises qui souhaiteraient y nouer des
-partenariats sérieux et durables. En troisième lieu, la plateforme ne
-dispose d'aucun mécanisme de vérification de l'identité ou de la
-légitimité des vendeurs, ce qui limite considérablement la fiabilité des
-informations qui y sont publiées. Ces limites rendent
-cette plateforme inadaptée aux objectifs poursuivis par la plateforme
-gouvernementale développée dans le cadre de ce travail.
+\subsubsection{Plateforme de mise en relation~:
+	travaux existants}
 
-\subsubsection{Alibaba}
+Plusieurs travaux acad\'emiques et institutionnels ont abord\'e la
+probl\'ematique de la mise en relation d'entreprises dans les pays
+en d\'eveloppement. \cite{lu_zhou_2011} ont propos\'e un cadre de
+\textit{link prediction} sur des graphes bipartites offre-demande,
+montrant que la structure de voisinage dans un r\'eseau \'economique
+permet de pr\'edire avec une pr\'ecision \'elev\'ee les partenariats
+potentiels entre entreprises. Cette approche a \'et\'e appliqu\'ee
+avec succ\`es dans des contextes de sous-traitance industrielle en
+Am\'erique latine, o\`u les Bourses de Sous-Traitance et de
+Partenariat (BSTP) ont permis d'augmenter le taux d'utilisation
+des capacit\'es productives des PME de 15 \`a 30\,\% dans les
+secteurs participants \cite{unido_2022}.
 
-Alibaba est une plateforme de commerce électronique B2B fondée en 1999
-par Jack Ma en Chine, qui s'est imposée comme l'une des plus grandes
-marketplaces mondiales dédiées aux échanges interentreprises. Elle met
-en relation des fabricants, des grossistes, des fournisseurs et des
-acheteurs professionnels issus de plus de 190 pays, couvrant des
-secteurs aussi variés que l'industrie manufacturière, l'électronique,
-le textile, l'agroalimentaire ou encore les équipements industriels.
-Avec plusieurs dizaines de millions d'acheteurs actifs et des millions
-de fournisseurs référencés, Alibaba constitue à ce jour l'une des
-références mondiales en matière de mise en relation commerciale B2B
-à l'échelle internationale\cite{alibaba2024}. La plateforme propose un ensemble de
-fonctionnalités avancées permettant aux acheteurs de rechercher des
-fournisseurs selon des critères précis tels que le pays d'origine,
-le volume de production, la certification qualité ou encore la capacité
-d'exportation, et aux fournisseurs de valoriser leurs capacités
-productives auprès d'une audience internationale. Alibaba pallie ainsi
-l'une des limites majeures de Facebook Marketplace en offrant une
-portée véritablement mondiale, sans contrainte géographique.
+Dans le contexte africain, la Commission \'Economique pour l'Afrique
+souligne que l'absence de dispositifs institutionnels num\'eriques
+de mise en relation constitue l'un des principaux obstacles \`a
+l'int\'egration des PME dans les cha\^ines de valeur r\'egionales
+\cite{uneca_digital_2023}. Cette lacune est aggravel'absence de
+bases de donn\'ees structur\'ees sur les besoins et les capacit\'es
+des entreprises locales, que les recensements existants --- comme
+le \gls{rge}3 --- ne comblent pas enti\`erement \cite{ins2023}.
 
-Cependant, malgré ses atouts considérables, Alibaba présente des
-limites importantes au regard des objectifs poursuivis dans le cadre
-de ce travail. En premier lieu, la plateforme est essentiellement
-orientée vers la vente de produits finis ou semi-finis en grande
-quantité, ce qui la rend peu adaptée aux besoins des petites et
-moyennes entreprises camerounaises qui recherchent des partenaires
-locaux pour des collaborations de proximité, de la sous-traitance
-ou du partage de ressources. En deuxième lieu, l'utilisation
-d'Alibaba suppose une maîtrise suffisante de la langue anglaise
-ou chinoise, ainsi qu'une capacité à gérer des transactions
-internationales impliquant des procédures douanières, logistiques
-et bancaires complexes, ce qui constitue un obstacle majeur pour
-la majorité des entreprises du tissu productif camerounais. En
-troisième lieu, la logique d'Alibaba est avant tout marchande et
-transactionnelle~: la plateforme vise à conclure des ventes et non
-à établir des partenariats stratégiques fondés sur une analyse des
-besoins mutuels des entreprises. Elle ne propose donc aucun mécanisme
-de recommandation basé sur la complémentarité des besoins et des
-capacités, qui constitue pourtant le c\oe ur de la valeur ajoutée de
-la plateforme développée dans ce travail. Enfin, les entreprises
-camerounaises y sont quasi absentes en tant que fournisseurs référencés,
-ce qui limite leur capacité à en tirer parti pour se faire connaître
-à l'international.
+\subsubsection{Limites des plateformes commerciales existantes}
 
+Les plateformes commerciales de mise en relation (LinkedIn, Alibaba,
+Facebook Marketplace, Go Africa Online) pr\'esentent des limites
+communes au regard des objectifs institutionnels poursuivis dans ce
+travail. Premi\`erement, leur algorithme de recommandation repose
+sur des signaux comportementaux (clics, vues, interactions) qui
+pr\'esupposent un historique d'utilisation inexistant pour les
+entreprises nouvellement enregistr\'ees \cite{ricci_2015}.
+Deuxi\`emement, ces plateformes sont con\c{c}ues pour des
+transactions commerciales et non pour la mise en correspondance
+offre-demande sur la base de besoins d\'eclar\'es.
+Troisi\`emement, leur mod\`ele \'economique fond\'e sur des
+abonnements payants exclut de facto les entreprises \`a faibles
+ressources, qui constituent pourtant la majorit\'e du tissu
+productif camerounais \cite{ins2023}.
 \section*{Conclusion}
-
-La cartographie des besoins des entreprises, définie ici comme la mise en lumière et la distribution des manquements du secteur privé, s'ajoute aux initiatives existantes visant à cerner les attentes des opérateurs économiques, à dynamiser le secteur privé et à accélérer la croissance. Au-delà des actions ciblées découlant des résultats d'analyse, le succès de cette démarche repose également sur la capacité des entreprises à collaborer et à cheminer ensemble. Si de nombreux outils permettent déjà d'établir des rapprochements, aucun d'entre eux n'a jusqu'à présent appréhendé cette problématique dans sa globalité.
+Ce chapitre a permis de d\'elimiter le cadre conceptuel du travail
+et de situer la contribution par rapport \`a l'existant. Les
+d\'efinitions propos\'ees s'appuient sur le cadre m\'ethodologique
+de l'\'Evaluation des Besoins de la Banque Mondiale, qui fournit
+une base op\'erationnelle pour l'analyse des donn\'ees de l'enqu\^ete.
+L'examen des travaux existants montre qu'aucune solution disponible
+ne combine, dans un cadre institutionnel, la collecte structur\'ee
+des besoins et un m\'ecanisme de mise en relation fond\'e sur ces
+besoins. Le chapitre suivant pr\'esente le cahier des charges de
+la plateforme \textit{Business Partnership}, qui r\'epond
+pr\'ecis\'ement \`a cette lacune.
 	%============================================================
 	%  CHAPITRE 3 : MÉTHODOLOGIE
 	%============================================================
@@ -1130,13 +1125,11 @@ La cartographie des besoins des entreprises, définie ici comme la mise en lumi�
 	\label{chap:cahier_charges}
 	%=============================================================
 	
-	Le présent cahier des charges constitue le document de référence
-	qui formalise l'ensemble des exigences fonctionnelles, techniques
-	et non fonctionnelles auxquelles doit satisfaire la plateforme
-	gouvernementale \textit{Business Partnership}. Il précise le
-	contexte dans lequel s'inscrit le projet, les acteurs concernés,
-	les cas d'usage attendus, les contraintes imposées et les critères
-	de qualité retenus pour évaluer la solution livrée.
+Ce chapitre formalise les exigences de la plateforme
+\textit{Business Partnership}. Il pr\'esente successivement le
+p\'erim\`etre du projet, l'identification des acteurs, les
+sp\'ecifications fonctionnelles et non fonctionnelles, les mod\`eles
+de conception (\gls{uml}), et le mod\`ele de donn\'ees logique.
 	
 	%=============================================================
 	\section{Périmètre du projet et identification des acteurs}
@@ -1454,8 +1447,90 @@ La cartographie des besoins des entreprises, définie ici comme la mise en lumi�
 		\label{fig:uc_agent}
 	\end{figure}
 	
+	\subsection{Architecture logicielle}
+	\label{subsec:architecture_logicielle}
+	
+	La plateforme \textit{Business Partnership} suit le patron
+	d'architecture \textbf{MVT} (Mod\`ele-Vue-Template) de Django,
+	qui s\'epare la logique de donn\'ees, la logique m\'etier et la
+	couche de pr\'esentation. La figure~\ref{fig:architecture_logicielle}
+	illustre les interactions entre les composantes du syst\`eme.
+	
+	\begin{figure}[H]
+		\centering
+		\begin{tikzpicture}[
+			box/.style={rectangle, draw=black, fill=lightgray,
+				text width=4cm, align=center,
+				minimum height=1cm, font=\small},
+			arr/.style={->, thick}
+			]
+			\node[box] (client)  at (0,   4) {Navigateur web \\ (Client HTTP)};
+			\node[box] (url)     at (0,   2.2) {URL Dispatcher \\ (urls.py)};
+			\node[box] (vue)     at (0,   0.4) {Vue \\ (views.py)};
+			\node[box] (modele)  at (-3.5,-1.4) {Mod\`ele \\ (models.py + ORM)};
+			\node[box] (db)      at (-3.5,-3.2) {Base de donn\'ees \\ (SQLite3)};
+			\node[box] (template)at ( 3.5,-1.4) {Template \\ (HTML + Bootstrap)};
+			\node[box] (reco)    at ( 3.5,-3.2) {Module de \\ mise en relation \\ (SQL)};
+			
+			\draw[arr] (client)   -- (url);
+			\draw[arr] (url)      -- (vue);
+			\draw[arr] (vue)      -- (modele);
+			\draw[arr] (modele)   -- (db);
+			\draw[arr] (db)       -- (modele);
+			\draw[arr] (modele)   -- (vue);
+			\draw[arr] (vue)      -- (template);
+			\draw[arr] (template) -- (client);
+			\draw[arr] (vue)      -- (reco);
+			\draw[arr] (reco)     -- (vue);
+		\end{tikzpicture}
+		\caption{Architecture logicielle de la plateforme
+			\textit{Business Partnership}}
+		\label{fig:architecture_logicielle}
+	\end{figure}
+	
+	\subsection{Limites de la plateforme}
+	\label{subsec:limites}
+	
+	\subsubsection{Limites relatives aux donn\'ees}
+	
+	La base de donn\'ees de la plateforme est aliment\'ee par les
+	donn\'ees de l'enqu\^ete du \gls{minepat} de 2025.
+	Les entreprises du secteur informel, les microentreprises rurales
+	et les structures non enregistr\'ees aupr\`es des d\'el\'egations
+	du \gls{minepat} ne sont pas repr\'esent\'ees dans la base.
+	Cela limite la couverture effective du moteur de recommandation~:
+	une entreprise dont les partenaires potentiels ne sont pas
+	enregistr\'es sur la plateforme ne recevra pas de recommandations
+	pertinentes.
+	
+	\subsubsection{Limites du moteur de mise en relation}
+	
+	Le moteur de mise en relation actuel repose sur une correspondance
+	directe entre besoins d\'eclar\'es et offres de services. Cette
+	approche ne prend pas en compte la proximit\'e g\'eographique
+	entre entreprises, ni la capacit\'e de production r\'eelle des
+	entreprises offreuses. Par ailleurs, l'absence d'un m\'ecanisme
+	de retour d'exp\'erience (\textit{feedback}) apr\`es une mise en
+	relation ne permet pas d'am\'eliorer les recommandations au fil
+	du temps.
+	
+	\subsubsection{Limites techniques}
+	
+	La base de donn\'ees SQLite3 retenue pour le prototype pr\'esente
+	des limites de performance en cas d'acc\`es concurrents \'elev\'es.
+	Son remplacement par PostgreSQL est n\'ecessaire avant tout
+	d\'eploiement en production. De plus, la plateforme ne dispose pas
+	d'interface en langue anglaise, ce qui limite son accessibilit\'e
+	dans les r\'egions anglophones du Cameroun.
+	
 \section*{Conclusion}
-	Ce cahier des charges constitue le document contractuel de référence sur lequel s'est fondé l'ensemble du processus de conception et de développement de la plateforme \textit{Business Partnership}. Cette dernière a pour vocation principale de faciliter la mise en relation des entreprises conformes.
+	Ce chapitre a formalis\'e l'ensemble des exigences de la plateforme
+	\textit{Business Partnership}, depuis les cas d'usage jusqu'aux
+	mod\`eles de conception et au mod\`ele de donn\'ees logique. Les
+	sp\'ecifications d\'efinies constituent la base sur laquelle repose
+	le d\'eveloppement pr\'esent\'e au chapitre suivant, qui d\'ecrit
+	les m\'ethodes d'analyse des donn\'ees et la mise en \oe uvre
+	technique de la plateforme.
 	
 	
 	\chapter{Cartographie des besoins, conception et modélisation de la plateforme}
@@ -2017,7 +2092,53 @@ Le framework de haut niveau \textit{Django}, initialement développé en 2003 po
 	données collectées lors de l'enquête. Elle se veux etre progressive en débutant par une ~: description
 	univariée, s'en suivra une analyse des associations bivariées, et enfin  l'exploration
 	multidimensionnelle.
+	\subsection{Qualité et préparation des données}
 	
+	Avant toute analyse, une phase de contr\^ole de la qualit\'e des
+	donn\'ees a \'et\'e effectu\'ee. Le tableau~\ref{tab:qualite_donnees}
+	pr\'esente les indicateurs cl\'es de cette phase.
+	
+	\begin{table}[H]
+		\centering
+		\caption{Indicateurs de qualit\'e et de pr\'eparation des donn\'ees}
+		\label{tab:qualite_donnees}
+		\renewcommand{\arraystretch}{1.4}
+		\begin{tabularx}{\textwidth}{>{\raggedright\arraybackslash}X
+				>{\centering\arraybackslash}p{3cm}
+				>{\raggedright\arraybackslash}p{4cm}}
+			\toprule
+			\rowcolor{primary!15}
+			\textbf{Indicateur} & \textbf{Valeur} & \textbf{Action} \\
+			\midrule
+			
+			Observations initiales (fichier \texttt{identifications})
+			& 1\,254 & --- \\
+			
+			\rowcolor{lightgray}
+			Doublons d\'etect\'es
+			& 60 & Supprim\'es \\
+			
+			Valeurs manquantes sur variable cl\'e (\texttt{secteur\_activite})
+			& 0 & --- \\
+			
+			\rowcolor{lightgray}
+			Valeurs manquantes sur \texttt{date\_debut\_activite}
+			& 47 & Regroup\'ees en modalit\'e <<~Non renseign\'e~>> \\
+			
+			Variables exclues de l'analyse factorielle
+			& 4 & \texttt{id}, \texttt{email},
+			\texttt{telephone}, \texttt{site\_web} \\
+			
+			\rowcolor{lightgray}
+			Cat\'egories de besoins initiales
+			& 12 & Regroup\'ees en 7 cat\'egories \\
+			
+			Observations finales retenues
+			& 1\,194 & Base finale utilis\'ee \\
+			
+			\bottomrule
+		\end{tabularx}
+	\end{table}
 	%-------------------------------------------------------------
 	\subsection{Résultats de l'analyse univariée}
 	\label{subsec:univariee}

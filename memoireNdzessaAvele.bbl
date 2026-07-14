@@ -1,4 +1,4 @@
-\begin{thebibliography}{26}
+\begin{thebibliography}{27}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -10,12 +10,6 @@
 \newblock Plateformes b2b : D\'efinition, fonctionnement et avantages pour les
   entreprises.
 \newblock \url{https://www.acceor.com/plateformes-b2b}, 2024.
-\newblock Consult\'e le 12 mars 2026.
-
-\bibitem[{Alibaba Group}(2024)]{alibaba2024}
-{Alibaba Group}.
-\newblock Alibaba.com --- global b2b trade marketplace.
-\newblock \url{https://www.alibaba.com/}, 2024.
 \newblock Consult\'e le 12 mars 2026.
 
 \bibitem[Anderson(2010)]{anderson_2010}
@@ -39,6 +33,11 @@ Kent Beck, Mike Beedle, Arie van Bennekum, Alistair Cockburn, Ward Cunningham,
 Grady Booch, James Rumbaugh, and Ivar Jacobson.
 \newblock \emph{The Unified Modeling Language User Guide}.
 \newblock Addison-Wesley, Reading, MA, 1998.
+
+\bibitem[Business(2019)]{world_bank_doing_business_2020}
+Doing Business.
+\newblock \emph{Doing Business 2020}.
+\newblock word bank, 2019.
 
 \bibitem[{Fonds Mon\'etaire International}(2023)]{fmi2023}
 {Fonds Mon\'etaire International}.
@@ -73,23 +72,12 @@ Ralph Kimball and Margy Ross.
 \newblock John Wiley \& Sons, New York, 2 edition, 2002.
 \newblock ISBN 978-0-471-20024-6.
 
-\bibitem[{Larousse}(2024)]{larousse}
-{Larousse}.
-\newblock Dictionnaire larousse en ligne.
-\newblock \url{https://www.larousse.fr/dictionnaires/francais/}, 2024.
-\newblock Consult\'e le 1er mars 2026.
-
-\bibitem[{LinkedIn Corporation}(2024)]{linkedin2024}
-{LinkedIn Corporation}.
-\newblock About linkedin.
-\newblock \url{https://about.linkedin.com/}, 2024.
-\newblock Consult\'e le 12 mars 2026.
-
-\bibitem[{Meta Platforms Inc.}(2024)]{meta2024}
-{Meta Platforms Inc.}
-\newblock Facebook marketplace.
-\newblock \url{https://www.facebook.com/marketplace/}, 2024.
-\newblock Consult\'e le 12 mars 2026.
+\bibitem[L{\"u} and Zhou(2011)]{lu_zhou_2011}
+Linyuan L{\"u} and Tao Zhou.
+\newblock Link prediction in complex networks: A survey.
+\newblock \emph{Physica A: Statistical Mechanics and its Applications},
+  390\penalty0 (6):\penalty0 1150--1170, 2011.
+\newblock \doi{10.1016/j.physa.2010.11.027}.
 
 \bibitem[{MINEPAT}(2009)]{minepat2009}
 {MINEPAT}.
@@ -146,13 +134,6 @@ Taiichi Ohno.
 \newblock \emph{Toyota Production System: Beyond Large-Scale Production}.
 \newblock Productivity Press, New York, 1988.
 
-\bibitem[{Oser Entreprendre}(2023)]{oserentreprendre}
-{Oser Entreprendre}.
-\newblock Cartographie des besoins en comp\'etences : Un outil strat\'egique
-  pour les entreprises.
-\newblock \url{https://www.oserentreprendre.fr/}, 2023.
-\newblock Consult\'e le 5 avril 2026.
-
 \bibitem[{R\'epublique du Cameroun}(2008)]{decret2008}
 {R\'epublique du Cameroun}.
 \newblock D\'ecret n° 2008/220 du 4 juillet 2008 portant organisation du
@@ -161,10 +142,32 @@ Taiichi Ohno.
 \newblock D\'ecret pr\'esidentiel, Pr\'esidence de la R\'epublique du Cameroun,
   Yaound\'e, Cameroun, 2008.
 
+\bibitem[Ricci et~al.(2015)Ricci, Rokach, and Shapira]{ricci_2015}
+Francesco Ricci, Lior Rokach, and Bracha Shapira, editors.
+\newblock \emph{Recommender Systems Handbook}.
+\newblock Springer, New York, NY, 2nd edition, 2015.
+\newblock ISBN 978-1-4899-7637-6.
+\newblock \doi{10.1007/978-1-4899-7637-6}.
+
 \bibitem[Saporta(2010)]{saporta_2010}
 Gilbert Saporta.
 \newblock \emph{Probabilit\'es, Analyse des Donn\'ees et Statistique}.
 \newblock Technip, Paris, France, 3 edition, 2010.
+
+\bibitem[{UNECA}(2023)]{uneca_digital_2023}
+{UNECA}.
+\newblock Digital transformation in africa: Accelerating sme integration in
+  regional value chains.
+\newblock Policy brief / economic report, United Nations Economic Commission
+  for Africa, Addis Ababa, Ethiopia, 2023.
+
+\bibitem[{UNIDO}(2022)]{unido_2022}
+{UNIDO}.
+\newblock Subcontracting and partnership exchange (spx) programme: Promoting
+  sme development and industrial linkages.
+\newblock Industrial development report / technical report, United Nations
+  Industrial Development Organization (UNIDO), Vienna, Austria, 2022.
+\newblock URL \url{https://spx.unido.org}.
 
 \bibitem[Venables and Ripley(2002)]{venables2002modern}
 William~N. Venables and Brian~D. Ripley.
@@ -179,5 +182,12 @@ Oliver~E. Williamson.
 \newblock \emph{The Economic Institutions of Capitalism: Firms, Markets,
   Relational Contracting}.
 \newblock Free Press, New York, NY, USA, 1985.
+
+\bibitem[{World Bank}(2014)]{world_bank_needs_2014}
+{World Bank}.
+\newblock A framework for assessing the business environment and enterprise
+  needs in developing countries.
+\newblock Working paper, The World Bank Group, Washington, D.C., 2014.
+\newblock URL \url{https://www.worldbank.org}.
 
 \end{thebibliography}
