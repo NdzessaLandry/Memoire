@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.5.12)  14 JUL 2026 11:36
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.5.12)  14 JUL 2026 12:48
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2121,17 +2121,19 @@ LaTeX Font Info:    Font shape `T1/ntxtlf/b/it' will be
 \tf@toc=\write8
 \openout8 = `memoireNdzessaAvele.toc'.
 
-
-No file memoireNdzessaAvele.acr.
+ (memoireNdzessaAvele.acr
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/it' will be
-(Font)              scaled to size 10.95pt on input line 459.
+(Font)              scaled to size 10.95pt on input line 1.
 Package babel Info: 'french' activates 'french' shorthands.
-(babel)             Reported on input line 459.
-[4] [5
+(babel)             Reported on input line 1.
+ [4]) [5
+
+
+] [6
 
 {C:/Users/LandryNDZESSA/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-rm.
 enc}{C:/Users/LandryNDZESSA/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm
--mathit.enc}] [6
+-mathit.enc}] [7
 
 ] (memoireNdzessaAvele.lot
 LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 7
@@ -2149,10 +2151,10 @@ Package microtype Info: Loading generic protrusion settings for font family
 \openout9 = `memoireNdzessaAvele.lot'.
 
 
-[7
+[8
 
 {C:/Users/LandryNDZESSA/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ec.
-enc}] (memoireNdzessaAvele.lof [8
+enc}] (memoireNdzessaAvele.lof [9
 
 ])
 \tf@lof=\write10
@@ -2193,7 +2195,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\gls' on input line 697.
 
 [7]
-<Organigramme4.jpg, id=562, 369.7815pt x 298.716pt>
+<Organigramme4.jpg, id=599, 369.7815pt x 298.716pt>
 File: Organigramme4.jpg Graphic file (type jpg)
 <use Organigramme4.jpg>
 Package pdftex.def Info: Organigramme4.jpg  used on input line 723.
@@ -2242,7 +2244,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 747--748
  []
 
 [10] [11] [12]
-<methodeAgile.jpeg, id=632, 675.52374pt x 371.3875pt>
+<methodeAgile.jpeg, id=663, 675.52374pt x 371.3875pt>
 File: methodeAgile.jpeg Graphic file (type jpg)
 <use methodeAgile.jpeg>
 Package pdftex.def Info: methodeAgile.jpeg  used on input line 920.
@@ -2261,7 +2263,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1001--1002
 
  []
 
-<enqueteGecam.png, id=679, 450.18187pt x 403.5075pt>
+<enqueteGecam.png, id=710, 450.18187pt x 403.5075pt>
 File: enqueteGecam.png Graphic file (type png)
 <use enqueteGecam.png>
 Package pdftex.def Info: enqueteGecam.png  used on input line 1005.
@@ -2282,7 +2284,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1017--1018
  []
 
 [20]
-<zoneRecensement.png, id=693, 400.49625pt x 551.05875pt>
+<zoneRecensement.png, id=724, 400.49625pt x 551.05875pt>
 File: zoneRecensement.png Graphic file (type png)
 <use zoneRecensement.png>
 Package pdftex.def Info: zoneRecensement.png  used on input line 1021.
@@ -2294,13 +2296,13 @@ LaTeX Font Info:    Font shape `T1/ntxtlf/b/it' will be
 [25
 
 ] [26] [27] [28]
-<UseCase1.png, id=759, 435.12563pt x 398.99063pt>
+<UseCase1.png, id=788, 435.12563pt x 398.99063pt>
 File: UseCase1.png Graphic file (type png)
 <use UseCase1.png>
 Package pdftex.def Info: UseCase1.png  used on input line 1438.
 (pdftex.def)             Requested size: 374.86775pt x 343.7584pt.
  [29]
-<UseCase2.png, id=766, 429.10312pt x 330.23375pt>
+<UseCase2.png, id=794, 429.10312pt x 330.23375pt>
 File: UseCase2.png Graphic file (type png)
 <use UseCase2.png>
 Package pdftex.def Info: UseCase2.png  used on input line 1445.
@@ -2567,7 +2569,7 @@ Missing character: There is no Í in font lmex10!
 Missing character: There is no ¹ in font lmsy10!
 Missing character: There is no º in font lmsy10!
 [45]
-<schema_base_dimensionnelle.png, id=890, 2730.2pt x 2248.4pt>
+<schema_base_dimensionnelle.png, id=919, 2730.2pt x 2248.4pt>
 File: schema_base_dimensionnelle.png Graphic file (type png)
 <use schema_base_dimensionnelle.png>
 Package pdftex.def Info: schema_base_dimensionnelle.png  used on input line 204
@@ -2578,42 +2580,42 @@ Chapitre 5.
 [48
 
 ]
-<statut.jpeg, id=911, 655.44875pt x 614.295pt>
+<statut.jpeg, id=939, 655.44875pt x 614.295pt>
 File: statut.jpeg Graphic file (type jpg)
 <use statut.jpeg>
 Package pdftex.def Info: statut.jpeg  used on input line 2166.
 (pdftex.def)             Requested size: 330.76329pt x 309.99625pt.
  [49] [50 <./statut.jpeg>]
-<repartition_region.jpeg, id=920, 614.295pt x 614.295pt>
+<repartition_region.jpeg, id=948, 614.295pt x 614.295pt>
 File: repartition_region.jpeg Graphic file (type jpg)
 <use repartition_region.jpeg>
 Package pdftex.def Info: repartition_region.jpeg  used on input line 2177.
 (pdftex.def)             Requested size: 330.76329pt x 330.76764pt.
-<repartition_taille.jpeg, id=921, 655.44875pt x 614.295pt>
+<repartition_taille.jpeg, id=949, 655.44875pt x 614.295pt>
 File: repartition_taille.jpeg Graphic file (type jpg)
 <use repartition_taille.jpeg>
 Package pdftex.def Info: repartition_taille.jpeg  used on input line 2190.
 (pdftex.def)             Requested size: 330.76329pt x 309.99625pt.
  [51 <./repartition_region.jpeg>]
-<anciennete.jpeg, id=926, 614.295pt x 614.295pt>
+<anciennete.jpeg, id=955, 614.295pt x 614.295pt>
 File: anciennete.jpeg Graphic file (type jpg)
 <use anciennete.jpeg>
 Package pdftex.def Info: anciennete.jpeg  used on input line 2201.
 (pdftex.def)             Requested size: 330.76329pt x 330.76764pt.
  [52 <./repartition_taille.jpeg>]
-<repartition_activite.jpeg, id=932, 946.53625pt x 614.295pt>
+<repartition_activite.jpeg, id=960, 946.53625pt x 614.295pt>
 File: repartition_activite.jpeg Graphic file (type jpg)
 <use repartition_activite.jpeg>
 Package pdftex.def Info: repartition_activite.jpeg  used on input line 2214.
 (pdftex.def)             Requested size: 330.76329pt x 214.65965pt.
  [53 <./anciennete.jpeg>]
-<besoinsCorriges.jpeg, id=937, 691.58376pt x 614.295pt>
+<besoinsCorriges.jpeg, id=965, 691.58376pt x 614.295pt>
 File: besoinsCorriges.jpeg Graphic file (type jpg)
 <use besoinsCorriges.jpeg>
 Package pdftex.def Info: besoinsCorriges.jpeg  used on input line 2224.
 (pdftex.def)             Requested size: 330.76329pt x 293.79906pt.
  [54 <./repartition_activite.jpeg>]
-<carte_chaleur_besoins_statut_juridique.jpeg, id=943, 1284.8pt x 631.35875pt>
+<carte_chaleur_besoins_statut_juridique.jpeg, id=971, 1284.8pt x 631.35875pt>
 File: carte_chaleur_besoins_statut_juridique.jpeg Graphic file (type jpg)
 <use carte_chaleur_besoins_statut_juridique.jpeg>
 Package pdftex.def Info: carte_chaleur_besoins_statut_juridique.jpeg  used on i
@@ -2654,7 +2656,7 @@ LaTeX Font Info:    Font shape `U/ntxexa/m/n' will be
 
 Missing character: There is no ¹ in font lmsy10!
 Missing character: There is no ¹ in font lmsy10!
-<carte_chaleur_besoins_region.jpeg, id=948, 1284.8pt x 631.35875pt>
+<carte_chaleur_besoins_region.jpeg, id=976, 1284.8pt x 631.35875pt>
 File: carte_chaleur_besoins_region.jpeg Graphic file (type jpg)
 <use carte_chaleur_besoins_region.jpeg>
 Package pdftex.def Info: carte_chaleur_besoins_region.jpeg  used on input line 
@@ -2663,7 +2665,7 @@ Package pdftex.def Info: carte_chaleur_besoins_region.jpeg  used on input line
 [56 <./carte_chaleur_besoins_statut_juridique.jpeg>]
 Missing character: There is no ¹ in font lmsy10!
 Missing character: There is no ¹ in font lmsy10!
-<carte_chaleur_besoins_anciennete.jpeg, id=955, 1284.8pt x 631.35875pt>
+<carte_chaleur_besoins_anciennete.jpeg, id=983, 1284.8pt x 631.35875pt>
 File: carte_chaleur_besoins_anciennete.jpeg Graphic file (type jpg)
 <use carte_chaleur_besoins_anciennete.jpeg>
 Package pdftex.def Info: carte_chaleur_besoins_anciennete.jpeg  used on input l
@@ -2672,7 +2674,7 @@ ine 2362.
 [57 <./carte_chaleur_besoins_region.jpeg>]
 Missing character: There is no ¹ in font lmsy10!
 Missing character: There is no ¹ in font lmsy10!
-<carte_chaleur_besoins_secteurs_activite.jpeg, id=960, 1284.8pt x 631.35875pt>
+<carte_chaleur_besoins_secteurs_activite.jpeg, id=989, 1284.8pt x 631.35875pt>
 File: carte_chaleur_besoins_secteurs_activite.jpeg Graphic file (type jpg)
 <use carte_chaleur_besoins_secteurs_activite.jpeg>
 Package pdftex.def Info: carte_chaleur_besoins_secteurs_activite.jpeg  used on 
@@ -2682,7 +2684,7 @@ input line 2414.
 Missing character: There is no ¹ in font lmsy10!
 Missing character: There is no ¹ in font lmsy10!
 [59 <./carte_chaleur_besoins_secteurs_activite.jpeg>]
-<carte_chaleur_besoins_taille_entreprise.jpeg, id=970, 1284.8pt x 631.35875pt>
+<carte_chaleur_besoins_taille_entreprise.jpeg, id=998, 1284.8pt x 631.35875pt>
 File: carte_chaleur_besoins_taille_entreprise.jpeg Graphic file (type jpg)
 <use carte_chaleur_besoins_taille_entreprise.jpeg>
 Package pdftex.def Info: carte_chaleur_besoins_taille_entreprise.jpeg  used on 
@@ -2692,27 +2694,27 @@ input line 2469.
 Missing character: There is no ¹ in font lmsy10!
 Missing character: There is no ¹ in font lmsy10!
 [60 <./carte_chaleur_besoins_taille_entreprise.jpeg>]
-<contributionValeursPropres.jpeg, id=975, 1284.8pt x 631.35875pt>
+<contributionValeursPropres.jpeg, id=1003, 1284.8pt x 631.35875pt>
 File: contributionValeursPropres.jpeg Graphic file (type jpg)
 <use contributionValeursPropres.jpeg>
 Package pdftex.def Info: contributionValeursPropres.jpeg  used on input line 25
 82.
 (pdftex.def)             Requested size: 330.76329pt x 162.54056pt.
  [61]
-<projectionDesCategories.jpeg, id=980, 1284.8pt x 631.35875pt>
+<projectionDesCategories.jpeg, id=1008, 1284.8pt x 631.35875pt>
 File: projectionDesCategories.jpeg Graphic file (type jpg)
 <use projectionDesCategories.jpeg>
 Package pdftex.def Info: projectionDesCategories.jpeg  used on input line 2601.
 
 (pdftex.def)             Requested size: 441.01773pt x 216.72075pt.
  [62 <./contributionValeursPropres.jpeg> <./projectionDesCategories.jpeg>]
-<contributionCategoriesAlAxe1.jpeg, id=986, 1284.8pt x 631.35875pt>
+<contributionCategoriesAlAxe1.jpeg, id=1014, 1284.8pt x 631.35875pt>
 File: contributionCategoriesAlAxe1.jpeg Graphic file (type jpg)
 <use contributionCategoriesAlAxe1.jpeg>
 Package pdftex.def Info: contributionCategoriesAlAxe1.jpeg  used on input line 
 2619.
 (pdftex.def)             Requested size: 211.68661pt x 104.01555pt.
-<contributionCategorieALAxe2.jpeg, id=987, 1284.8pt x 631.35875pt>
+<contributionCategorieALAxe2.jpeg, id=1015, 1284.8pt x 631.35875pt>
 File: contributionCategorieALAxe2.jpeg Graphic file (type jpg)
 <use contributionCategorieALAxe2.jpeg>
 Package pdftex.def Info: contributionCategorieALAxe2.jpeg  used on input line 2
@@ -2726,41 +2728,41 @@ emballages_Oui\T1/ntxtlf/m/n/12 (-20) ).
  []
 
 [63 <./contributionCategoriesAlAxe1.jpeg> <./contributionCategorieALAxe2.jpeg>]
-<dendrogramme.jpeg, id=993, 1284.8pt x 631.35875pt>
+<dendrogramme.jpeg, id=1022, 1284.8pt x 631.35875pt>
 File: dendrogramme.jpeg Graphic file (type jpg)
 <use dendrogramme.jpeg>
 Package pdftex.def Info: dendrogramme.jpeg  used on input line 2669.
 (pdftex.def)             Requested size: 374.86775pt x 184.20686pt.
-<CAH.jpeg, id=994, 1284.8pt x 631.35875pt>
+<CAH.jpeg, id=1023, 1284.8pt x 631.35875pt>
 File: CAH.jpeg Graphic file (type jpg)
 <use CAH.jpeg>
 Package pdftex.def Info: CAH.jpeg  used on input line 2681.
 (pdftex.def)             Requested size: 441.01773pt x 216.72075pt.
 [64 <./dendrogramme.jpeg> <./CAH.jpeg>]
-<classe_et_anciennete.jpeg, id=1001, 1284.8pt x 631.35875pt>
+<classe_et_anciennete.jpeg, id=1029, 1284.8pt x 631.35875pt>
 File: classe_et_anciennete.jpeg Graphic file (type jpg)
 <use classe_et_anciennete.jpeg>
 Package pdftex.def Info: classe_et_anciennete.jpeg  used on input line 2707.
 (pdftex.def)             Requested size: 211.68661pt x 104.01555pt.
-<classes_et_secteurs_activites.jpeg, id=1002, 1284.8pt x 631.35875pt>
+<classes_et_secteurs_activites.jpeg, id=1030, 1284.8pt x 631.35875pt>
 File: classes_et_secteurs_activites.jpeg Graphic file (type jpg)
 <use classes_et_secteurs_activites.jpeg>
 Package pdftex.def Info: classes_et_secteurs_activites.jpeg  used on input line
  2714.
 (pdftex.def)             Requested size: 211.68661pt x 104.01555pt.
-<classes_et_tailles.jpeg, id=1003, 1284.8pt x 631.35875pt>
+<classes_et_tailles.jpeg, id=1031, 1284.8pt x 631.35875pt>
 File: classes_et_tailles.jpeg Graphic file (type jpg)
 <use classes_et_tailles.jpeg>
 Package pdftex.def Info: classes_et_tailles.jpeg  used on input line 2723.
 (pdftex.def)             Requested size: 211.68661pt x 104.01555pt.
-<classes_et_regions.jpeg, id=1004, 1284.8pt x 631.35875pt>
+<classes_et_regions.jpeg, id=1032, 1284.8pt x 631.35875pt>
 File: classes_et_regions.jpeg Graphic file (type jpg)
 <use classes_et_regions.jpeg>
 Package pdftex.def Info: classes_et_regions.jpeg  used on input line 2730.
 (pdftex.def)             Requested size: 211.68661pt x 104.01555pt.
  [65 <./classe_et_anciennete.jpeg> <./classes_et_secteurs_activites.jpeg> <./cl
 asses_et_tailles.jpeg> <./classes_et_regions.jpeg>]
-<AFDProjectionDesObservations.jpeg, id=1010, 1284.8pt x 631.35875pt>
+<AFDProjectionDesObservations.jpeg, id=1038, 1284.8pt x 631.35875pt>
 File: AFDProjectionDesObservations.jpeg Graphic file (type jpg)
 <use AFDProjectionDesObservations.jpeg>
 Package pdftex.def Info: AFDProjectionDesObservations.jpeg  used on input line 
@@ -2776,84 +2778,84 @@ Missing character: There is no Ï in font lmsy10!
 LaTeX Font Info:    Font shape `T1/ntxtlf/b/it' will be
 (Font)              scaled to size 14.4pt on input line 2916.
 [68]
-<login.png, id=1027, 933.4875pt x 422.07687pt>
+<login.png, id=1055, 933.4875pt x 422.07687pt>
 File: login.png Graphic file (type png)
 <use login.png>
 Package pdftex.def Info: login.png  used on input line 2962.
 (pdftex.def)             Requested size: 441.01773pt x 199.40662pt.
  [69]
-<creationDeCompte.png, id=1032, 897.85437pt x 431.11063pt>
+<creationDeCompte.png, id=1061, 897.85437pt x 431.11063pt>
 File: creationDeCompte.png Graphic file (type png)
 <use creationDeCompte.png>
 Package pdftex.def Info: creationDeCompte.png  used on input line 2974.
 (pdftex.def)             Requested size: 441.01773pt x 211.75914pt.
-<demande.png, id=1033, 918.93312pt x 373.89688pt>
+<demande.png, id=1062, 918.93312pt x 373.89688pt>
 File: demande.png Graphic file (type png)
 <use demande.png>
 Package pdftex.def Info: demande.png  used on input line 2982.
 (pdftex.def)             Requested size: 441.01773pt x 179.44563pt.
-<validation.png, id=1034, 804.00375pt x 396.48125pt>
+<validation.png, id=1063, 804.00375pt x 396.48125pt>
 File: validation.png Graphic file (type png)
 <use validation.png>
 Package pdftex.def Info: validation.png  used on input line 2988.
 (pdftex.def)             Requested size: 441.01773pt x 217.47852pt.
  [70 <./login.png> <./creationDeCompte.png>]
-<tableauDeBordEntreprise.png, id=1042, 928.97063pt x 434.12187pt>
+<tableauDeBordEntreprise.png, id=1070, 928.97063pt x 434.12187pt>
 File: tableauDeBordEntreprise.png Graphic file (type png)
 <use tableauDeBordEntreprise.png>
 Package pdftex.def Info: tableauDeBordEntreprise.png  used on input line 2997.
 (pdftex.def)             Requested size: 441.01773pt x 206.09741pt.
  [71 <./demande.png> <./validation.png>]
-<tableauDeBordAdmin.png, id=1050, 934.99312pt x 439.6425pt>
+<tableauDeBordAdmin.png, id=1078, 934.99312pt x 439.6425pt>
 File: tableauDeBordAdmin.png Graphic file (type png)
 <use tableauDeBordAdmin.png>
 Package pdftex.def Info: tableauDeBordAdmin.png  used on input line 3013.
 (pdftex.def)             Requested size: 441.01773pt x 207.36992pt.
-<requeteSQL.png, id=1051, 400.99812pt x 170.13562pt>
+<requeteSQL.png, id=1079, 400.99812pt x 170.13562pt>
 File: requeteSQL.png Graphic file (type png)
 <use requeteSQL.png>
 Package pdftex.def Info: requeteSQL.png  used on input line 3025.
 (pdftex.def)             Requested size: 441.01773pt x 187.12637pt.
  [72 <./tableauDeBordEntreprise.png> <./tableauDeBordAdmin.png>]
-[73 <./requeteSQL.png>] [74
+[73 <./requeteSQL.png>] [74] [75
 
-] (memoireNdzessaAvele.bbl [75
+] (memoireNdzessaAvele.bbl [76
 
-] [76]) [77]
+] [77]) [78]
 Chapitre 6.
-<annexe1.png, id=1089, 430.60875pt x 423.5825pt>
+<annexe1.png, id=1122, 430.60875pt x 423.5825pt>
 File: annexe1.png Graphic file (type png)
 <use annexe1.png>
-Package pdftex.def Info: annexe1.png  used on input line 3072.
+Package pdftex.def Info: annexe1.png  used on input line 3123.
 (pdftex.def)             Requested size: 441.01773pt x 433.83232pt.
-<annexe2.png, id=1090, 435.12563pt x 422.07687pt>
+<annexe2.png, id=1123, 435.12563pt x 422.07687pt>
 File: annexe2.png Graphic file (type png)
 <use annexe2.png>
-Package pdftex.def Info: annexe2.png  used on input line 3078.
+Package pdftex.def Info: annexe2.png  used on input line 3129.
 (pdftex.def)             Requested size: 441.01773pt x 427.82063pt.
-[78
+[79
 
 ]
-<annexe3.png, id=1095, 426.59375pt x 416.05438pt>
+<annexe3.png, id=1128, 426.59375pt x 416.05438pt>
 File: annexe3.png Graphic file (type png)
 <use annexe3.png>
-Package pdftex.def Info: annexe3.png  used on input line 3084.
+Package pdftex.def Info: annexe3.png  used on input line 3135.
 (pdftex.def)             Requested size: 441.01773pt x 430.14696pt.
- [79 <./annexe1.png>] [80 <./annexe2.png>] [81 <./annexe3.png>]
+ [80 <./annexe1.png>] [81 <./annexe2.png>] [82 <./annexe3.png>]
 Chapitre 7.
-<annexe5.jpg, id=1111, 455.45157pt x 681.29532pt>
+<annexe5.jpg, id=1145, 455.45157pt x 681.29532pt>
 File: annexe5.jpg Graphic file (type jpg)
 <use annexe5.jpg>
-Package pdftex.def Info: annexe5.jpg  used on input line 3093.
+Package pdftex.def Info: annexe5.jpg  used on input line 3144.
 (pdftex.def)             Requested size: 441.01773pt x 659.72253pt.
-<annexe6.jpg, id=1112, 455.45157pt x 654.19406pt>
+<annexe6.jpg, id=1146, 455.45157pt x 654.19406pt>
 File: annexe6.jpg Graphic file (type jpg)
 <use annexe6.jpg>
-Package pdftex.def Info: annexe6.jpg  used on input line 3099.
+Package pdftex.def Info: annexe6.jpg  used on input line 3150.
 (pdftex.def)             Requested size: 441.01773pt x 633.47942pt.
-[82
+[83
 
-] [83 <./annexe5.jpg>] [84 <./annexe6.jpg>] (memoireNdzessaAvele.aux)
+] [84 <./annexe5.jpg>] [85 <./annexe6.jpg>] (memoireNdzessaAvele.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2020/03/25>
@@ -2863,99 +2865,47 @@ L3 programming layer <2020/03/25>
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `memoireNdzessaAvele.out' has not changed.
-(rerunfilecheck)             Checksum: 5AF8AB009051A1DB6FA1A461468EFDE6;12096.
+(rerunfilecheck)             Checksum: 560B3BA46198DB4060B998E234DF8161;12749.
  ) 
 Here is how much of TeX's memory you used:
- 54701 strings out of 467871
- 1168479 string characters out of 5414504
- 1627957 words of memory out of 5000000
- 82204 multiletter control sequences out of 15000+600000
+ 54726 strings out of 467871
+ 1169005 string characters out of 5414504
+ 1628029 words of memory out of 5000000
+ 82217 multiletter control sequences out of 15000+600000
  754339 words of font info for 270 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  84i,16n,94p,2489b,1410s stack positions out of 10000i,1000n,20000p,200000b,200000s
-
-pdfTeX warning (dest): name{glo:owasp} has been referenced but does not exist, 
-replaced by a fixed one
-
-
-pdfTeX warning (dest): name{glo:uml} has been referenced but does not exist, re
-placed by a fixed one
-
-
-pdfTeX warning (dest): name{glo:rge} has been referenced but does not exist, re
-placed by a fixed one
-
-
-pdfTeX warning (dest): name{glo:orm} has been referenced but does not exist, re
-placed by a fixed one
-
-
-pdfTeX warning (dest): name{glo:afd} has been referenced but does not exist, re
-placed by a fixed one
-
-
-pdfTeX warning (dest): name{glo:cah} has been referenced but does not exist, re
-placed by a fixed one
-
-
-pdfTeX warning (dest): name{glo:acm} has been referenced but does not exist, re
-placed by a fixed one
-
-
-pdfTeX warning (dest): name{glo:gecam} has been referenced but does not exist, 
-replaced by a fixed one
-
-
-pdfTeX warning (dest): name{glo:dgepip} has been referenced but does not exist,
- replaced by a fixed one
-
-
-pdfTeX warning (dest): name{glo:snd30} has been referenced but does not exist, 
-replaced by a fixed one
-
-
-pdfTeX warning (dest): name{glo:minepat} has been referenced but does not exist
-, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{glo:cas} has been referenced but does not exist, re
-placed by a fixed one
-
-
-pdfTeX warning (dest): name{glo:dape} has been referenced but does not exist, r
-eplaced by a fixed one
-
-<C:/Users/LandryNDZESSA/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmb
-x12.pfb><C:/Users/LandryNDZESSA/AppData/Local/Programs/MiKTeX/fonts/type1/publi
-c/lm/lmbx9.pfb><C:/Users/LandryNDZESSA/AppData/Local/Programs/MiKTeX/fonts/type
-1/public/lm/lmex10.pfb><C:/Users/LandryNDZESSA/AppData/Local/Programs/MiKTeX/fo
-nts/type1/public/lm/lmmi10.pfb><C:/Users/LandryNDZESSA/AppData/Local/Programs/M
-iKTeX/fonts/type1/public/lm/lmmi12.pfb><C:/Users/LandryNDZESSA/AppData/Local/Pr
-ograms/MiKTeX/fonts/type1/public/lm/lmmi7.pfb><C:/Users/LandryNDZESSA/AppData/L
-ocal/Programs/MiKTeX/fonts/type1/public/lm/lmmi9.pfb><C:/Users/LandryNDZESSA/Ap
-pData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmib10.pfb><C:/Users/LandryN
-DZESSA/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr12.pfb><C:/Users/
-LandryNDZESSA/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr8.pfb><C:/
-Users/LandryNDZESSA/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr9.pf
-b><C:/Users/LandryNDZESSA/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/l
-msy10.pfb><C:/Users/LandryNDZESSA/AppData/Local/Programs/MiKTeX/fonts/type1/pub
-lic/lm/lmsy7.pfb><C:/Users/LandryNDZESSA/AppData/Local/Programs/MiKTeX/fonts/ty
-pe1/public/lm/lmsy9.pfb><C:/Users/LandryNDZESSA/AppData/Local/Programs/MiKTeX/f
-onts/type1/public/lm/lmtk10.pfb><C:/Users/LandryNDZESSA/AppData/Local/Programs/
-MiKTeX/fonts/type1/public/lm/lmtt10.pfb><C:/Users/LandryNDZESSA/AppData/Local/P
-rograms/MiKTeX/fonts/type1/public/lm/lmtt12.pfb><C:/Users/LandryNDZESSA/AppData
-/Local/Programs/MiKTeX/fonts/type1/public/tex-gyre/qtmr.pfb><C:/Users/LandryNDZ
-ESSA/AppData/Local/Programs/MiKTeX/fonts/type1/public/newtx/txbmiaX.pfb><C:/Use
-rs/LandryNDZESSA/AppData/Local/Programs/MiKTeX/fonts/type1/public/newtx/txmiaX.
-pfb><C:/Users/LandryNDZESSA/AppData/Local/Programs/MiKTeX/fonts/type1/public/ne
-wtx/txsym.pfb><C:/Users/LandryNDZESSA/AppData/Local/Programs/MiKTeX/fonts/type1
-/public/newtx/ztmb.pfb><C:/Users/LandryNDZESSA/AppData/Local/Programs/MiKTeX/fo
-nts/type1/public/newtx/ztmbi.pfb><C:/Users/LandryNDZESSA/AppData/Local/Programs
-/MiKTeX/fonts/type1/public/newtx/ztmr.pfb><C:/Users/LandryNDZESSA/AppData/Local
-/Programs/MiKTeX/fonts/type1/public/newtx/ztmri.pfb>
-Output written on memoireNdzessaAvele.pdf (93 pages, 7060130 bytes).
+<C:/Users/LandryNDZESSA/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/l
+mbx12.pfb><C:/Users/LandryNDZESSA/AppData/Local/Programs/MiKTeX/fonts/type1/pub
+lic/lm/lmbx9.pfb><C:/Users/LandryNDZESSA/AppData/Local/Programs/MiKTeX/fonts/ty
+pe1/public/lm/lmex10.pfb><C:/Users/LandryNDZESSA/AppData/Local/Programs/MiKTeX/
+fonts/type1/public/lm/lmmi10.pfb><C:/Users/LandryNDZESSA/AppData/Local/Programs
+/MiKTeX/fonts/type1/public/lm/lmmi12.pfb><C:/Users/LandryNDZESSA/AppData/Local/
+Programs/MiKTeX/fonts/type1/public/lm/lmmi7.pfb><C:/Users/LandryNDZESSA/AppData
+/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi9.pfb><C:/Users/LandryNDZESSA/
+AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmib10.pfb><C:/Users/Landr
+yNDZESSA/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr12.pfb><C:/User
+s/LandryNDZESSA/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr8.pfb><C
+:/Users/LandryNDZESSA/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr9.
+pfb><C:/Users/LandryNDZESSA/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm
+/lmsy10.pfb><C:/Users/LandryNDZESSA/AppData/Local/Programs/MiKTeX/fonts/type1/p
+ublic/lm/lmsy7.pfb><C:/Users/LandryNDZESSA/AppData/Local/Programs/MiKTeX/fonts/
+type1/public/lm/lmsy9.pfb><C:/Users/LandryNDZESSA/AppData/Local/Programs/MiKTeX
+/fonts/type1/public/lm/lmtk10.pfb><C:/Users/LandryNDZESSA/AppData/Local/Program
+s/MiKTeX/fonts/type1/public/lm/lmtt10.pfb><C:/Users/LandryNDZESSA/AppData/Local
+/Programs/MiKTeX/fonts/type1/public/lm/lmtt12.pfb><C:/Users/LandryNDZESSA/AppDa
+ta/Local/Programs/MiKTeX/fonts/type1/public/tex-gyre/qtmr.pfb><C:/Users/LandryN
+DZESSA/AppData/Local/Programs/MiKTeX/fonts/type1/public/newtx/txbmiaX.pfb><C:/U
+sers/LandryNDZESSA/AppData/Local/Programs/MiKTeX/fonts/type1/public/newtx/txmia
+X.pfb><C:/Users/LandryNDZESSA/AppData/Local/Programs/MiKTeX/fonts/type1/public/
+newtx/txsym.pfb><C:/Users/LandryNDZESSA/AppData/Local/Programs/MiKTeX/fonts/typ
+e1/public/newtx/ztmb.pfb><C:/Users/LandryNDZESSA/AppData/Local/Programs/MiKTeX/
+fonts/type1/public/newtx/ztmbi.pfb><C:/Users/LandryNDZESSA/AppData/Local/Progra
+ms/MiKTeX/fonts/type1/public/newtx/ztmr.pfb><C:/Users/LandryNDZESSA/AppData/Loc
+al/Programs/MiKTeX/fonts/type1/public/newtx/ztmri.pfb>
+Output written on memoireNdzessaAvele.pdf (95 pages, 7067974 bytes).
 PDF statistics:
- 1304 PDF objects out of 1440 (max. 8388607)
- 290 named destinations out of 1000 (max. 500000)
- 49457 words of extra memory for PDF output out of 51595 (max. 10000000)
+ 1338 PDF objects out of 1440 (max. 8388607)
+ 299 named destinations out of 1000 (max. 500000)
+ 49489 words of extra memory for PDF output out of 51595 (max. 10000000)
 

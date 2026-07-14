@@ -1,5 +1,8 @@
 \babel@toc {french}{}\relax 
-\beamer@sectionintoc {1}{Contexte et problématique}{3}{0}{1}
-\beamer@sectionintoc {2}{Sources de données et résultats de l'analyse descriptive}{6}{0}{2}
-\beamer@sectionintoc {3}{Résultat de l' analyse multidimentionnelle }{14}{0}{3}
-\beamer@sectionintoc {4}{Conclusion}{30}{0}{4}
+\beamer@sectionintoc {1}{Introduction Générale}{3}{0}{1}
+\beamer@sectionintoc {2}{Définition des concepts et état de l'art}{8}{0}{2}
+\beamer@sectionintoc {3}{Justification de la méthode d'analyse utilisée et de conception de la plateforme numérique}{15}{0}{3}
+\beamer@sectionintoc {4}{Résultat}{22}{0}{4}
+\beamer@sectionintoc {5}{Conclusion et perspective}{29}{0}{5}
+\beamer@sectionintoc {6}{Résultat de l' analyse multidimentionnelle }{38}{0}{6}
+\beamer@sectionintoc {7}{Conclusion}{54}{0}{7}

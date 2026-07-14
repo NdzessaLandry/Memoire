@@ -2,12 +2,12 @@
 \contentsline {chapter}{Dédicace}{i}{chapter*.1}%
 \contentsline {chapter}{Remerciements}{ii}{chapter*.2}%
 \contentsline {chapter}{Table des matières}{iv}{chapter*.3}%
-\contentsline {chapter}{Liste des acronymes et abréviations}{iv}{chapter*.3}%
-\contentsline {chapter}{Résumé}{v}{chapter*.4}%
-\contentsline {chapter}{Abstract}{vi}{chapter*.5}%
-\contentsline {chapter}{Liste des tableaux}{vii}{chapter*.6}%
-\contentsline {chapter}{Liste des figures}{1}{chapter*.7}%
-\contentsline {chapter}{Introduction Générale}{2}{chapter*.8}%
+\contentsline {chapter}{Liste des acronymes et abréviations}{v}{chapter*.5}%
+\contentsline {chapter}{Résumé}{vi}{chapter*.6}%
+\contentsline {chapter}{Abstract}{vii}{chapter*.7}%
+\contentsline {chapter}{Liste des tableaux}{viii}{chapter*.8}%
+\contentsline {chapter}{Liste des figures}{1}{chapter*.9}%
+\contentsline {chapter}{Introduction Générale}{2}{chapter*.10}%
 \contentsline {chapter}{\numberline {1}Présentation du cadre de l'étude}{4}{chapter.1}%
 \contentsline {section}{\numberline {1.1}Présentation du MINEPAT}{4}{section.1.1}%
 \contentsline {subsection}{\numberline {1.1.1}Organisation interne du \gls {minepat}}{4}{subsection.1.1.1}%
@@ -39,9 +39,9 @@
 \contentsline {section}{\numberline {2.2}État de l'art}{18}{section.2.2}%
 \contentsline {subsection}{\numberline {2.2.1}Enquêtes en vue de la cartographie des besoins des entreprises}{18}{subsection.2.2.1}%
 \contentsline {subsubsection}{Enquete du GECAM}{19}{subsection.2.2.1}%
-\contentsline {subsubsection}{Redaction du document de stratégie pour le developpement du secteur industriel par le MINEPAT}{20}{figure.caption.11}%
-\contentsline {subsubsection}{Enquete sur le climat des affaires par le MINEPAT}{20}{figure.caption.11}%
-\contentsline {subsubsection}{Recensement Général des Entreprises par l'INS}{21}{figure.caption.11}%
+\contentsline {subsubsection}{Redaction du document de stratégie pour le developpement du secteur industriel par le MINEPAT}{20}{figure.caption.13}%
+\contentsline {subsubsection}{Enquete sur le climat des affaires par le MINEPAT}{20}{figure.caption.13}%
+\contentsline {subsubsection}{Recensement Général des Entreprises par l'INS}{21}{figure.caption.13}%
 \contentsline {subsection}{\numberline {2.2.2}\'Etat de l'art}{22}{subsection.2.2.2}%
 \contentsline {subsubsection}{Syst\`emes de recommandation et mise en relation d'entreprises}{22}{subsection.2.2.2}%
 \contentsline {subsubsection}{Plateforme de mise en relation~: travaux existants}{23}{subsection.2.2.2}%
@@ -74,7 +74,7 @@
 \contentsline {subsection}{\numberline {4.1.1}Présentation des données}{33}{subsection.4.1.1}%
 \contentsline {subsubsection}{Source de données}{33}{subsection.4.1.1}%
 \contentsline {subsubsection}{Description des variables}{34}{subsection.4.1.1}%
-\contentsline {subsubsection}{Pré-traitement de la Base de Données}{36}{table.caption.18}%
+\contentsline {subsubsection}{Pré-traitement de la Base de Données}{36}{table.caption.20}%
 \contentsline {subsection}{\numberline {4.1.2}Méthode d'analyse}{38}{subsection.4.1.2}%
 \contentsline {subsubsection}{Analyse descriptive}{38}{subsection.4.1.2}%
 \contentsline {subsubsection}{Analyse exploratoire des données}{40}{Item.29}%
@@ -93,45 +93,49 @@
 \contentsline {subsection}{\numberline {5.1.1}Qualité et préparation des données}{48}{subsection.5.1.1}%
 \contentsline {subsection}{\numberline {5.1.2}Résultats de l'analyse univariée}{49}{subsection.5.1.2}%
 \contentsline {subsubsection}{Répartition des entreprises par statut juridique}{49}{subsection.5.1.2}%
-\contentsline {subsubsection}{Répartition des entreprises par région}{51}{figure.caption.21}%
-\contentsline {subsubsection}{Répartition des entreprises par taille}{51}{figure.caption.22}%
-\contentsline {subsubsection}{Répartition des entreprises par ancienneté}{52}{figure.caption.23}%
-\contentsline {subsubsection}{Répartition des entreprises par secteur d'activité}{53}{figure.caption.24}%
-\contentsline {subsubsection}{Répartition des besoins exprimés}{54}{figure.caption.25}%
+\contentsline {subsubsection}{Répartition des entreprises par région}{51}{figure.caption.23}%
+\contentsline {subsubsection}{Répartition des entreprises par taille}{51}{figure.caption.24}%
+\contentsline {subsubsection}{Répartition des entreprises par ancienneté}{52}{figure.caption.25}%
+\contentsline {subsubsection}{Répartition des entreprises par secteur d'activité}{53}{figure.caption.26}%
+\contentsline {subsubsection}{Répartition des besoins exprimés}{54}{figure.caption.27}%
 \contentsline {subsection}{\numberline {5.1.3}Résultats de l'analyse bivariée}{55}{subsection.5.1.3}%
 \contentsline {subsubsection}{Répartition des besoins selon le statut juridique}{55}{subsection.5.1.3}%
-\contentsline {subsubsection}{Répartition des besoins selon la région}{57}{table.caption.28}%
-\contentsline {subsubsection}{Répartition des besoins selon l'ancienneté}{58}{table.caption.30}%
-\contentsline {subsubsection}{Répartition des besoins selon le secteur d'activité}{59}{table.caption.32}%
-\contentsline {subsubsection}{Répartition des besoins selon la taille de l'entreprise}{60}{table.caption.34}%
+\contentsline {subsubsection}{Répartition des besoins selon la région}{57}{table.caption.30}%
+\contentsline {subsubsection}{Répartition des besoins selon l'ancienneté}{58}{table.caption.32}%
+\contentsline {subsubsection}{Répartition des besoins selon le secteur d'activité}{59}{table.caption.34}%
+\contentsline {subsubsection}{Répartition des besoins selon la taille de l'entreprise}{60}{table.caption.36}%
 \contentsline {subsection}{\numberline {5.1.4}Résultats de l'analyse multidimensionnelle}{61}{subsection.5.1.4}%
 \contentsline {subsubsection}{Analyse des Correspondances Multiples (ACM)}{61}{subsection.5.1.4}%
 \contentsline {paragraph}{Valeurs propres et inertie expliquée}{61}{subsection.5.1.4}%
-\contentsline {paragraph}{Projection des modalités sur le premier plan factoriel}{62}{figure.caption.37}%
-\contentsline {paragraph}{Variables contribuant aux axes factoriels}{63}{figure.caption.38}%
-\contentsline {subsubsection}{Classification Ascendante Hiérarchique (CAH)}{64}{figure.caption.39}%
-\contentsline {paragraph}{Dendrogramme et choix du nombre de classes}{64}{figure.caption.39}%
-\contentsline {paragraph}{Visualisation de la partition obtenue}{64}{figure.caption.40}%
-\contentsline {subsubsection}{Analyse Factorielle Discriminante (AFD)}{65}{figure.caption.43}%
-\contentsline {paragraph}{Axes discriminants et pouvoir discriminant}{66}{figure.caption.43}%
-\contentsline {paragraph}{Les axes factoriels obtenus}{66}{figure.caption.44}%
-\contentsline {paragraph}{Fonction LD1 — Axe de discrimination principal}{67}{table.caption.45}%
-\contentsline {paragraph}{Fonction LD2 — Axe secondaire de séparation}{67}{table.caption.45}%
-\contentsline {paragraph}{Précision globale (Accuracy)}{68}{table.caption.46}%
-\contentsline {paragraph}{Indice Kappa de Cohen}{68}{table.caption.46}%
-\contentsline {paragraph}{Comparaison au classifieur naïf}{68}{table.caption.46}%
-\contentsline {paragraph}{Significativité statistique}{68}{table.caption.46}%
+\contentsline {paragraph}{Projection des modalités sur le premier plan factoriel}{62}{figure.caption.39}%
+\contentsline {paragraph}{Variables contribuant aux axes factoriels}{63}{figure.caption.40}%
+\contentsline {subsubsection}{Classification Ascendante Hiérarchique (CAH)}{64}{figure.caption.41}%
+\contentsline {paragraph}{Dendrogramme et choix du nombre de classes}{64}{figure.caption.41}%
+\contentsline {paragraph}{Visualisation de la partition obtenue}{64}{figure.caption.42}%
+\contentsline {subsubsection}{Analyse Factorielle Discriminante (AFD)}{65}{figure.caption.45}%
+\contentsline {paragraph}{Axes discriminants et pouvoir discriminant}{66}{figure.caption.45}%
+\contentsline {paragraph}{Les axes factoriels obtenus}{66}{figure.caption.46}%
+\contentsline {paragraph}{Fonction LD1 — Axe de discrimination principal}{67}{table.caption.47}%
+\contentsline {paragraph}{Fonction LD2 — Axe secondaire de séparation}{67}{table.caption.47}%
+\contentsline {paragraph}{Précision globale (Accuracy)}{68}{table.caption.48}%
+\contentsline {paragraph}{Indice Kappa de Cohen}{68}{table.caption.48}%
+\contentsline {paragraph}{Comparaison au classifieur naïf}{68}{table.caption.48}%
+\contentsline {paragraph}{Significativité statistique}{68}{table.caption.48}%
 \contentsline {section}{\numberline {5.2}Présentation de la plateforme \textit {Business Partnership}}{69}{section.5.2}%
 \contentsline {subsection}{\numberline {5.2.1}Architecture générale de la plateforme}{69}{subsection.5.2.1}%
 \contentsline {subsection}{\numberline {5.2.2}Interface utilisateur}{69}{subsection.5.2.2}%
 \contentsline {subsubsection}{Page de login}{69}{subsection.5.2.2}%
-\contentsline {subsubsection}{Page de création de compte}{70}{figure.caption.47}%
-\contentsline {subsubsection}{Validation de compte par l'administrateur}{70}{figure.caption.48}%
-\contentsline {subsubsection}{Tableau de bord de l'entreprise}{71}{figure.caption.50}%
-\contentsline {subsubsection}{Tableau de bord administrateur}{72}{figure.caption.51}%
-\contentsline {subsubsection}{Requ\^ete pour la mise en relation}{72}{figure.caption.52}%
+\contentsline {subsubsection}{Page de création de compte}{70}{figure.caption.49}%
+\contentsline {subsubsection}{Validation de compte par l'administrateur}{70}{figure.caption.50}%
+\contentsline {subsubsection}{Tableau de bord de l'entreprise}{71}{figure.caption.52}%
+\contentsline {subsubsection}{Tableau de bord administrateur}{72}{figure.caption.53}%
+\contentsline {subsubsection}{Requ\^ete pour la mise en relation}{72}{figure.caption.54}%
 \contentsline {subsection}{\numberline {5.2.3}Perspectives}{73}{subsection.5.2.3}%
-\contentsline {chapter}{Conclusion Générale}{74}{chapter*.54}%
-\contentsline {chapter}{\numberline {6}Questionnaire de l'enquête MINEPAT 2025}{78}{chapter.6}%
-\contentsline {chapter}{\numberline {7}Publication de l'annonce}{82}{chapter.7}%
+\contentsline {section}{\numberline {5.3}Tests de l'application}{73}{section.5.3}%
+\contentsline {subsection}{\numberline {5.3.1}Stratégie de test}{73}{subsection.5.3.1}%
+\contentsline {subsection}{\numberline {5.3.2}Couverture fonctionnelle}{73}{subsection.5.3.2}%
+\contentsline {subsection}{\numberline {5.3.3}Faits saillants}{74}{subsection.5.3.3}%
+\contentsline {chapter}{Conclusion Générale}{75}{chapter*.57}%
+\contentsline {chapter}{\numberline {6}Questionnaire de l'enquête MINEPAT 2025}{79}{chapter.6}%
+\contentsline {chapter}{\numberline {7}Publication de l'annonce}{83}{chapter.7}%
 \contentsfinish 

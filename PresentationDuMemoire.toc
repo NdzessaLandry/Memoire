@@ -1,0 +1,15 @@
+\babel@toc {french}{}\relax 
+\beamer@sectionintoc {1}{Contexte}{4}{0}{1}
+\beamer@sectionintoc {2}{Problématique}{6}{0}{2}
+\beamer@sectionintoc {3}{Définitions et concepts clés}{7}{0}{3}
+\beamer@sectionintoc {4}{État de l'art}{10}{0}{4}
+\beamer@sectionintoc {5}{Justification de l'enquête et de la plateforme}{12}{0}{5}
+\beamer@sectionintoc {6}{Présentation des données}{13}{0}{6}
+\beamer@sectionintoc {7}{Méthodologie d'analyse des données}{14}{0}{7}
+\beamer@sectionintoc {8}{Justification de la méthode}{19}{0}{8}
+\beamer@sectionintoc {9}{Résultats des analyses statistiques}{20}{0}{9}
+\beamer@sectionintoc {10}{La plateforme numérique}{25}{0}{10}
+\beamer@sectionintoc {11}{Outils et modélisation dimensionnelle}{26}{0}{11}
+\beamer@sectionintoc {12}{Modèle de la base de données}{27}{0}{12}
+\beamer@sectionintoc {13}{Résultats de la plateforme}{28}{0}{13}
+\beamer@sectionintoc {14}{Perspectives}{29}{0}{14}

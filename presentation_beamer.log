@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.5.12)  5 JUN 2026 11:37
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.5.12)  14 JUL 2026 15:58
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1507,60 +1507,101 @@ ers/LandryNDZESSA/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ec.enc}]
 
 ] [4
 
+] [5
+
+] [6
+
+] [7
+
+] [8
+
+] [9
+
+] [10
+
+] [11
+
+] [12
+
 ]
-Overfull \vbox (3.28258pt too high) detected at line 247
- []
+[13
 
-[5
+] [14
+
+] [15
+
+] [16
+
+] [17
+
+] [18
+
+] [19
+
+] [20
+
+] [21
+
+] [22
+
+] [23
+
+] [24
+
+] [25
+
+] [26
+
+] [27
 
 ]
-LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <10> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 250.
+[28
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+] [29
 
- [6
+] [30
+
+] [31
+
+] [32
 
 ]
-[7] [8
-
-]
-<statut.jpeg, id=230, 655.44875pt x 614.295pt>
+<statut.jpeg, id=418, 655.44875pt x 614.295pt>
 File: statut.jpeg Graphic file (type jpg)
 <use statut.jpeg>
-Package pdftex.def Info: statut.jpeg  used on input line 322.
+Package pdftex.def Info: statut.jpeg  used on input line 331.
 (pdftex.def)             Requested size: 139.28128pt x 130.53362pt.
-<repartition_region.jpeg, id=231, 614.295pt x 614.295pt>
+<repartition_region.jpeg, id=419, 614.295pt x 614.295pt>
 File: repartition_region.jpeg Graphic file (type jpg)
 <use repartition_region.jpeg>
-Package pdftex.def Info: repartition_region.jpeg  used on input line 322.
+Package pdftex.def Info: repartition_region.jpeg  used on input line 331.
 (pdftex.def)             Requested size: 139.28128pt x 139.27896pt.
-<repartition_taille.jpeg, id=232, 655.44875pt x 614.295pt>
+<repartition_taille.jpeg, id=420, 655.44875pt x 614.295pt>
 File: repartition_taille.jpeg Graphic file (type jpg)
 <use repartition_taille.jpeg>
-Package pdftex.def Info: repartition_taille.jpeg  used on input line 322.
+Package pdftex.def Info: repartition_taille.jpeg  used on input line 331.
 (pdftex.def)             Requested size: 139.28128pt x 130.53362pt.
- [9
+ [33
 
  <./statut.jpeg> <./repartition_region.jpeg> <./repartition_taille.jpeg>]
-<repartition_activite.jpeg, id=245, 946.53625pt x 614.295pt>
+<repartition_activite.jpeg, id=433, 946.53625pt x 614.295pt>
 File: repartition_activite.jpeg Graphic file (type jpg)
 <use repartition_activite.jpeg>
-Package pdftex.def Info: repartition_activite.jpeg  used on input line 326.
+Package pdftex.def Info: repartition_activite.jpeg  used on input line 335.
 (pdftex.def)             Requested size: 182.8017pt x 118.62943pt.
-<repartition_besoins.jpeg, id=246, 1284.8pt x 631.35875pt>
+<repartition_besoins.jpeg, id=434, 1284.8pt x 631.35875pt>
 File: repartition_besoins.jpeg Graphic file (type jpg)
 <use repartition_besoins.jpeg>
-Package pdftex.def Info: repartition_besoins.jpeg  used on input line 333.
+Package pdftex.def Info: repartition_besoins.jpeg  used on input line 342.
 (pdftex.def)             Requested size: 226.32875pt x 111.21196pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [10
+ [34
 
  <./repartition_activite.jpeg> <./repartition_besoins.jpeg>]
 LaTeX Font Info:    Trying to load font information for OT1+lmss on input line 
-380.
+389.
 
 (C:\Users\LandryNDZESSA\AppData\Local\Programs\MiKTeX\tex/latex/lm\ot1lmss.fd
 File: ot1lmss.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
@@ -1570,28 +1611,28 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 LaTeX Font Info:    Trying to load font information for OML+lmm on input line 3
-80.
+89.
 
 (C:\Users\LandryNDZESSA\AppData\Local\Programs\MiKTeX\tex/latex/lm\omllmm.fd
 File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 
-380.
+389.
 
 (C:\Users\LandryNDZESSA\AppData\Local\Programs\MiKTeX\tex/latex/lm\omslmsy.fd
 File: omslmsy.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 
-380.
+389.
 
 (C:\Users\LandryNDZESSA\AppData\Local\Programs\MiKTeX\tex/latex/lm\omxlmex.fd
 File: omxlmex.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 380.
+(Font)              <7> on input line 389.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 380.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 380
+(Font)              <5> on input line 389.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 389
 .
 
 (C:\Users\LandryNDZESSA\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.f
@@ -1602,7 +1643,7 @@ File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 a.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 380
+LaTeX Font Info:    Trying to load font information for U+msb on input line 389
 .
 
 (C:\Users\LandryNDZESSA\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.f
@@ -1614,11 +1655,11 @@ b.cfg
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
 LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <7> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 380.
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 389.
 LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <5> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 380.
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 389.
 LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 3
-80.
+89.
 
 (C:\Users\LandryNDZESSA\AppData\Local\Programs\MiKTeX\tex/latex/lm\ot1lmr.fd
 File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
@@ -1629,31 +1670,33 @@ File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman
 (RS)
 )
 LaTeX Font Info:    Font shape `T1/lmss/bx/it' in size <7> not available
-(Font)              Font shape `T1/lmss/bx/sl' tried instead on input line 380.
+(Font)              Font shape `T1/lmss/bx/sl' tried instead on input line 389.
 
 LaTeX Font Info:    Font shape `T1/lmss/bx/it' in size <5> not available
-(Font)              Font shape `T1/lmss/bx/sl' tried instead on input line 380.
+(Font)              Font shape `T1/lmss/bx/sl' tried instead on input line 389.
 
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <14.4> on input line 380.
+(Font)              <14.4> on input line 389.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 380.
+(Font)              <10> on input line 389.
 LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <14.4> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 380.
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 389.
+LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <10> not available
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 389.
 LaTeX Font Info:    Font shape `T1/lmss/bx/it' in size <14.4> not available
-(Font)              Font shape `T1/lmss/bx/sl' tried instead on input line 380.
+(Font)              Font shape `T1/lmss/bx/sl' tried instead on input line 389.
 
 LaTeX Font Info:    Font shape `T1/lmss/bx/it' in size <10> not available
-(Font)              Font shape `T1/lmss/bx/sl' tried instead on input line 380.
+(Font)              Font shape `T1/lmss/bx/sl' tried instead on input line 389.
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [11]
-[12{C:/Users/LandryNDZESSA/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-
+ [35]
+[36{C:/Users/LandryNDZESSA/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-
 mathit.enc}]
 LaTeX Font Info:    Trying to load font information for TS1+lmss on input line 
-407.
+416.
 
 (C:\Users\LandryNDZESSA\AppData\Local\Programs\MiKTeX\tex/latex/lm\ts1lmss.fd
 File: ts1lmss.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
@@ -1663,49 +1706,49 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <9> on input line 407.
+(Font)              <9> on input line 416.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 407.
+(Font)              <6> on input line 416.
 LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <9> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 407.
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 416.
 LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <6> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 407.
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 416.
 LaTeX Font Info:    Font shape `T1/lmss/bx/it' in size <9> not available
-(Font)              Font shape `T1/lmss/bx/sl' tried instead on input line 407.
+(Font)              Font shape `T1/lmss/bx/sl' tried instead on input line 416.
 
 LaTeX Font Info:    Font shape `T1/lmss/bx/it' in size <6> not available
-(Font)              Font shape `T1/lmss/bx/sl' tried instead on input line 407.
+(Font)              Font shape `T1/lmss/bx/sl' tried instead on input line 416.
 
 
-[13
+[37
 
 {C:/Users/LandryNDZESSA/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ts1
 .enc}{C:/Users/LandryNDZESSA/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/l
-m-rm.enc}] [14
+m-rm.enc}] [38
 
 ]
 LaTeX Font Info:    Font shape `T1/lmss/b/n' in size <7> not available
-(Font)              Font shape `T1/lmss/bx/n' tried instead on input line 475.
+(Font)              Font shape `T1/lmss/bx/n' tried instead on input line 484.
 LaTeX Font Info:    Font shape `T1/lmss/b/n' in size <5> not available
-(Font)              Font shape `T1/lmss/bx/n' tried instead on input line 475.
- [15
+(Font)              Font shape `T1/lmss/bx/n' tried instead on input line 484.
+ [39
 
 {C:/Users/LandryNDZESSA/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mat
 hsy.enc}]
 LaTeX Font Info:    Font shape `T1/lmss/b/n' in size <10> not available
-(Font)              Font shape `T1/lmss/bx/n' tried instead on input line 524.
- [16
+(Font)              Font shape `T1/lmss/bx/n' tried instead on input line 533.
+ [40
 
 {C:/Users/LandryNDZESSA/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mat
 hex.enc}]
-<contributionValeursPropres.jpeg, id=413, 1284.8pt x 631.35875pt>
+<contributionValeursPropres.jpeg, id=601, 1284.8pt x 631.35875pt>
 File: contributionValeursPropres.jpeg Graphic file (type jpg)
 <use contributionValeursPropres.jpeg>
-Package pdftex.def Info: contributionValeursPropres.jpeg  used on input line 54
-9.
+Package pdftex.def Info: contributionValeursPropres.jpeg  used on input line 55
+8.
 (pdftex.def)             Requested size: 239.38554pt x 117.62804pt.
 LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 5
-49.
+58.
 
 (C:\Users\LandryNDZESSA\AppData\Local\Programs\MiKTeX\tex/latex/lm\t1lmtt.fd
 File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
@@ -1715,107 +1758,107 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 
-[17
+[41
 
  <./contributionValeursPropres.jpeg>]
-<projectionDesCategories.jpeg, id=423, 1284.8pt x 631.35875pt>
+<projectionDesCategories.jpeg, id=611, 1284.8pt x 631.35875pt>
 File: projectionDesCategories.jpeg Graphic file (type jpg)
 <use projectionDesCategories.jpeg>
-Package pdftex.def Info: projectionDesCategories.jpeg  used on input line 564.
+Package pdftex.def Info: projectionDesCategories.jpeg  used on input line 573.
 (pdftex.def)             Requested size: 304.6695pt x 149.71805pt.
 
-Overfull \vbox (39.64334pt too high) detected at line 564
+Overfull \vbox (39.64334pt too high) detected at line 573
  []
 
-[18
+[42
 
  <./projectionDesCategories.jpeg>]
-<contributionCategoriesAlAxe1.jpeg, id=443, 1284.8pt x 631.35875pt>
+<contributionCategoriesAlAxe1.jpeg, id=632, 1284.8pt x 631.35875pt>
 File: contributionCategoriesAlAxe1.jpeg Graphic file (type jpg)
 <use contributionCategoriesAlAxe1.jpeg>
 Package pdftex.def Info: contributionCategoriesAlAxe1.jpeg  used on input line 
-594.
+603.
 (pdftex.def)             Requested size: 217.62202pt x 106.93459pt.
- [19
+ [43
 
  <./contributionCategoriesAlAxe1.jpeg>]
-<contributionCategorieALAxe2.jpeg, id=465, 1284.8pt x 631.35875pt>
+<contributionCategorieALAxe2.jpeg, id=654, 1284.8pt x 631.35875pt>
 File: contributionCategorieALAxe2.jpeg Graphic file (type jpg)
 <use contributionCategorieALAxe2.jpeg>
 Package pdftex.def Info: contributionCategorieALAxe2.jpeg  used on input line 6
-26.
+35.
 (pdftex.def)             Requested size: 217.62202pt x 106.93459pt.
 LaTeX Font Info:    Font shape `T1/lmss/b/n' in size <9> not available
-(Font)              Font shape `T1/lmss/bx/n' tried instead on input line 626.
+(Font)              Font shape `T1/lmss/bx/n' tried instead on input line 635.
 LaTeX Font Info:    Font shape `T1/lmss/b/n' in size <6> not available
-(Font)              Font shape `T1/lmss/bx/n' tried instead on input line 626.
- [20
+(Font)              Font shape `T1/lmss/bx/n' tried instead on input line 635.
+ [44
 
- <./contributionCategorieALAxe2.jpeg>] [21
+ <./contributionCategorieALAxe2.jpeg>] [45
 
 ]
-<dendrogramme.jpeg, id=516, 1284.8pt x 631.35875pt>
+<dendrogramme.jpeg, id=705, 1284.8pt x 631.35875pt>
 File: dendrogramme.jpeg Graphic file (type jpg)
 <use dendrogramme.jpeg>
-Package pdftex.def Info: dendrogramme.jpeg  used on input line 690.
+Package pdftex.def Info: dendrogramme.jpeg  used on input line 699.
 (pdftex.def)             Requested size: 226.32875pt x 111.21196pt.
- [22
+ [46
 
  <./dendrogramme.jpeg>]
-<CAH.jpeg, id=524, 1284.8pt x 631.35875pt>
+<CAH.jpeg, id=713, 1284.8pt x 631.35875pt>
 File: CAH.jpeg Graphic file (type jpg)
 <use CAH.jpeg>
-Package pdftex.def Info: CAH.jpeg  used on input line 705.
+Package pdftex.def Info: CAH.jpeg  used on input line 714.
 (pdftex.def)             Requested size: 295.96275pt x 145.43103pt.
 
-Overfull \vbox (10.93585pt too high) detected at line 705
+Overfull \vbox (10.93585pt too high) detected at line 714
  []
 
-[23
+[47
 
- <./CAH.jpeg>] [24
+ <./CAH.jpeg>] [48
 
-] [25
+] [49
 
-] [26
+] [50
 
 ]
-<AFDProjectionDesObservations.jpeg, id=640, 1284.8pt x 631.35875pt>
+<AFDProjectionDesObservations.jpeg, id=829, 1284.8pt x 631.35875pt>
 File: AFDProjectionDesObservations.jpeg Graphic file (type jpg)
 <use AFDProjectionDesObservations.jpeg>
 Package pdftex.def Info: AFDProjectionDesObservations.jpeg  used on input line 
-847.
+856.
 (pdftex.def)             Requested size: 239.38554pt x 117.62804pt.
- [27
+ [51
 
  <./AFDProjectionDesObservations.jpeg>]
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 891.
+(Font)              <8> on input line 900.
 LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <8> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 891.
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 900.
 LaTeX Font Info:    Font shape `T1/lmss/bx/it' in size <8> not available
-(Font)              Font shape `T1/lmss/bx/sl' tried instead on input line 891.
+(Font)              Font shape `T1/lmss/bx/sl' tried instead on input line 900.
 
 LaTeX Font Info:    Font shape `T1/lmss/b/n' in size <8> not available
-(Font)              Font shape `T1/lmss/bx/n' tried instead on input line 891.
+(Font)              Font shape `T1/lmss/bx/n' tried instead on input line 900.
 
-[28
+[52
 
 ]
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12> on input line 922.
+(Font)              <12> on input line 931.
 LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <12> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 922.
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 931.
 LaTeX Font Info:    Font shape `T1/lmss/bx/it' in size <12> not available
-(Font)              Font shape `T1/lmss/bx/sl' tried instead on input line 922.
+(Font)              Font shape `T1/lmss/bx/sl' tried instead on input line 931.
 
 LaTeX Font Info:    Font shape `T1/lmss/b/n' in size <12> not available
-(Font)              Font shape `T1/lmss/bx/n' tried instead on input line 922.
- [29
+(Font)              Font shape `T1/lmss/bx/n' tried instead on input line 931.
+ [53
 
-] [30
+] [54
 
-] [31
+] [55
 
 ]
 \tf@nav=\write6
@@ -1833,16 +1876,16 @@ LaTeX2e <2025-11-01>
 L3 programming layer <2025-12-24>
  ***********
 Package rerunfilecheck Info: File `presentation_beamer.out' has not changed.
-(rerunfilecheck)             Checksum: 465AD92A24A60E521CEF107F0871FBE1;896.
+(rerunfilecheck)             Checksum: 0804C324DF953540CD18591065065DBD;1591.
  ) 
 Here is how much of TeX's memory you used:
- 35023 strings out of 467871
- 721285 string characters out of 5414504
- 1147031 words of memory out of 5000000
+ 35068 strings out of 467871
+ 720775 string characters out of 5414504
+ 1148038 words of memory out of 5000000
  62878 multiletter control sequences out of 15000+600000
- 808606 words of font info for 270 fonts, out of 8000000 for 9000
+ 808303 words of font info for 267 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 128i,15n,123p,1018b,1160s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 128i,15n,123p,1018b,1078s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/LandryNDZESSA/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/l
 mbx10.pfb><C:/Users/LandryNDZESSA/AppData/Local/Programs/MiKTeX/fonts/type1/pub
 lic/lm/lmex10.pfb><C:/Users/LandryNDZESSA/AppData/Local/Programs/MiKTeX/fonts/t
@@ -1871,9 +1914,9 @@ ic/lm/lmsy8.pfb><C:/Users/LandryNDZESSA/AppData/Local/Programs/MiKTeX/fonts/typ
 e1/public/lm/lmsy9.pfb><C:/Users/LandryNDZESSA/AppData/Local/Programs/MiKTeX/fo
 nts/type1/public/lm/lmtt10.pfb><C:/Users/LandryNDZESSA/AppData/Local/Programs/M
 iKTeX/fonts/type1/public/lm/lmtt9.pfb>
-Output written on presentation_beamer.pdf (31 pages, 2639229 bytes).
+Output written on presentation_beamer.pdf (55 pages, 2669574 bytes).
 PDF statistics:
- 901 PDF objects out of 1000 (max. 8388607)
- 79 named destinations out of 1000 (max. 500000)
- 117215 words of extra memory for PDF output out of 128383 (max. 10000000)
+ 1098 PDF objects out of 1200 (max. 8388607)
+ 130 named destinations out of 1000 (max. 500000)
+ 117227 words of extra memory for PDF output out of 128383 (max. 10000000)
 

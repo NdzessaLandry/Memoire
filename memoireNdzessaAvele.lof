@@ -1,51 +1,51 @@
 \babel@toc {french}{}\relax 
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {1.1}{\ignorespaces Organigramme simplifié du \gls {minepat}}}{8}{figure.caption.9}%
-\contentsline {figure}{\numberline {1.2}{\ignorespaces Méthode agile Kanban en image}}{14}{figure.caption.10}%
+\contentsline {figure}{\numberline {1.1}{\ignorespaces Organigramme simplifié du \gls {minepat}}}{8}{figure.caption.11}%
+\contentsline {figure}{\numberline {1.2}{\ignorespaces Méthode agile Kanban en image}}{14}{figure.caption.12}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces récapitulatif de l'enquête du GECAM}}{19}{figure.caption.11}%
-\contentsline {figure}{\numberline {2.2}{\ignorespaces Découpage des zones de recensement }}{22}{figure.caption.12}%
+\contentsline {figure}{\numberline {2.1}{\ignorespaces récapitulatif de l'enquête du GECAM}}{19}{figure.caption.13}%
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Découpage des zones de recensement }}{22}{figure.caption.14}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Diagramme de cas d'utilisation -- Vue Entreprise}}{30}{figure.caption.14}%
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Diagramme de cas d'utilisation -- Vue Agent Minist\`ere}}{31}{figure.caption.15}%
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Architecture logicielle de la plateforme \textit {Business Partnership}}}{31}{figure.caption.16}%
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Diagramme de cas d'utilisation -- Vue Entreprise}}{30}{figure.caption.16}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Diagramme de cas d'utilisation -- Vue Agent Minist\`ere}}{31}{figure.caption.17}%
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Architecture logicielle de la plateforme \textit {Business Partnership}}}{31}{figure.caption.18}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Schéma de la base de données}}{46}{figure.caption.19}%
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Schéma de la base de données}}{46}{figure.caption.21}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Répartition des entreprises enquêtées par statut juridique}}{50}{figure.caption.21}%
-\contentsline {figure}{\numberline {5.2}{\ignorespaces Répartition des entreprises enquêtées par région}}{51}{figure.caption.22}%
-\contentsline {figure}{\numberline {5.3}{\ignorespaces Répartition des entreprises enquêtées par taille}}{52}{figure.caption.23}%
-\contentsline {figure}{\numberline {5.4}{\ignorespaces Répartition des entreprises enquêtées par ancienneté}}{53}{figure.caption.24}%
-\contentsline {figure}{\numberline {5.5}{\ignorespaces Répartition des entreprises enquêtées par secteur d'activité}}{54}{figure.caption.25}%
-\contentsline {figure}{\numberline {5.6}{\ignorespaces Répartition globale des besoins exprimés par les entreprises enquêtées}}{55}{figure.caption.26}%
-\contentsline {figure}{\numberline {5.7}{\ignorespaces Distribution des besoins des entreprises selon le statut juridique}}{56}{figure.caption.27}%
-\contentsline {figure}{\numberline {5.8}{\ignorespaces Distribution des besoins des entreprises selon la région d'implantation}}{57}{figure.caption.29}%
-\contentsline {figure}{\numberline {5.9}{\ignorespaces Distribution des besoins des entreprises selon leur ancienneté}}{58}{figure.caption.31}%
-\contentsline {figure}{\numberline {5.10}{\ignorespaces Distribution des besoins des entreprises selon le secteur d'activité}}{59}{figure.caption.33}%
-\contentsline {figure}{\numberline {5.11}{\ignorespaces Distribution des besoins des entreprises selon leur taille}}{60}{figure.caption.35}%
-\contentsline {figure}{\numberline {5.12}{\ignorespaces Éboulis des valeurs propres de l'ACM --- part d'inertie expliquée par axe factoriel}}{62}{figure.caption.37}%
-\contentsline {figure}{\numberline {5.13}{\ignorespaces Projection des modalités sur le premier plan factoriel de l'ACM (axes 1 et 2)}}{62}{figure.caption.38}%
-\contentsline {figure}{\numberline {5.14}{\ignorespaces Contributions des modalités au premier axe factoriel}}{63}{figure.caption.39}%
-\contentsline {figure}{\numberline {5.15}{\ignorespaces Contributions des modalités au second axe factoriel}}{63}{figure.caption.39}%
-\contentsline {figure}{\numberline {5.16}{\ignorespaces Dendrogramme de la Classification Ascendante Hiérarchique (méthode de Ward)}}{64}{figure.caption.40}%
-\contentsline {figure}{\numberline {5.17}{\ignorespaces Projection des trois classes obtenues par CAH sur le premier plan factoriel de l'ACM}}{64}{figure.caption.41}%
-\contentsline {figure}{\numberline {5.18}{\ignorespaces Répartition des classes par ancienneté }}{65}{figure.caption.42}%
-\contentsline {figure}{\numberline {5.19}{\ignorespaces Répartition des classes par secteur d'activité}}{65}{figure.caption.42}%
-\contentsline {figure}{\numberline {5.20}{\ignorespaces Répartition des classes par taille}}{65}{figure.caption.43}%
-\contentsline {figure}{\numberline {5.21}{\ignorespaces Répartition des classes par région}}{65}{figure.caption.43}%
-\contentsline {figure}{\numberline {5.22}{\ignorespaces Projection des entreprises et des centres de classes sur les axes discriminants de l'AFD}}{66}{figure.caption.44}%
-\contentsline {figure}{\numberline {5.23}{\ignorespaces Page de login \textit {Business Partnership}}}{70}{figure.caption.47}%
-\contentsline {figure}{\numberline {5.24}{\ignorespaces Page de création de compte}}{70}{figure.caption.48}%
-\contentsline {figure}{\numberline {5.25}{\ignorespaces Les demandes}}{71}{figure.caption.49}%
-\contentsline {figure}{\numberline {5.26}{\ignorespaces Validation de compte}}{71}{figure.caption.50}%
-\contentsline {figure}{\numberline {5.27}{\ignorespaces Tableau de bord de l'entreprise}}{72}{figure.caption.51}%
-\contentsline {figure}{\numberline {5.28}{\ignorespaces Tableau de bord de l'espace administrateur}}{72}{figure.caption.52}%
-\contentsline {figure}{\numberline {5.29}{\ignorespaces Requ\^ete pour la mise en relation }}{73}{figure.caption.53}%
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Répartition des entreprises enquêtées par statut juridique}}{50}{figure.caption.23}%
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Répartition des entreprises enquêtées par région}}{51}{figure.caption.24}%
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Répartition des entreprises enquêtées par taille}}{52}{figure.caption.25}%
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Répartition des entreprises enquêtées par ancienneté}}{53}{figure.caption.26}%
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Répartition des entreprises enquêtées par secteur d'activité}}{54}{figure.caption.27}%
+\contentsline {figure}{\numberline {5.6}{\ignorespaces Répartition globale des besoins exprimés par les entreprises enquêtées}}{55}{figure.caption.28}%
+\contentsline {figure}{\numberline {5.7}{\ignorespaces Distribution des besoins des entreprises selon le statut juridique}}{56}{figure.caption.29}%
+\contentsline {figure}{\numberline {5.8}{\ignorespaces Distribution des besoins des entreprises selon la région d'implantation}}{57}{figure.caption.31}%
+\contentsline {figure}{\numberline {5.9}{\ignorespaces Distribution des besoins des entreprises selon leur ancienneté}}{58}{figure.caption.33}%
+\contentsline {figure}{\numberline {5.10}{\ignorespaces Distribution des besoins des entreprises selon le secteur d'activité}}{59}{figure.caption.35}%
+\contentsline {figure}{\numberline {5.11}{\ignorespaces Distribution des besoins des entreprises selon leur taille}}{60}{figure.caption.37}%
+\contentsline {figure}{\numberline {5.12}{\ignorespaces Éboulis des valeurs propres de l'ACM --- part d'inertie expliquée par axe factoriel}}{62}{figure.caption.39}%
+\contentsline {figure}{\numberline {5.13}{\ignorespaces Projection des modalités sur le premier plan factoriel de l'ACM (axes 1 et 2)}}{62}{figure.caption.40}%
+\contentsline {figure}{\numberline {5.14}{\ignorespaces Contributions des modalités au premier axe factoriel}}{63}{figure.caption.41}%
+\contentsline {figure}{\numberline {5.15}{\ignorespaces Contributions des modalités au second axe factoriel}}{63}{figure.caption.41}%
+\contentsline {figure}{\numberline {5.16}{\ignorespaces Dendrogramme de la Classification Ascendante Hiérarchique (méthode de Ward)}}{64}{figure.caption.42}%
+\contentsline {figure}{\numberline {5.17}{\ignorespaces Projection des trois classes obtenues par CAH sur le premier plan factoriel de l'ACM}}{64}{figure.caption.43}%
+\contentsline {figure}{\numberline {5.18}{\ignorespaces Répartition des classes par ancienneté }}{65}{figure.caption.44}%
+\contentsline {figure}{\numberline {5.19}{\ignorespaces Répartition des classes par secteur d'activité}}{65}{figure.caption.44}%
+\contentsline {figure}{\numberline {5.20}{\ignorespaces Répartition des classes par taille}}{65}{figure.caption.45}%
+\contentsline {figure}{\numberline {5.21}{\ignorespaces Répartition des classes par région}}{65}{figure.caption.45}%
+\contentsline {figure}{\numberline {5.22}{\ignorespaces Projection des entreprises et des centres de classes sur les axes discriminants de l'AFD}}{66}{figure.caption.46}%
+\contentsline {figure}{\numberline {5.23}{\ignorespaces Page de login \textit {Business Partnership}}}{70}{figure.caption.49}%
+\contentsline {figure}{\numberline {5.24}{\ignorespaces Page de création de compte}}{70}{figure.caption.50}%
+\contentsline {figure}{\numberline {5.25}{\ignorespaces Les demandes}}{71}{figure.caption.51}%
+\contentsline {figure}{\numberline {5.26}{\ignorespaces Validation de compte}}{71}{figure.caption.52}%
+\contentsline {figure}{\numberline {5.27}{\ignorespaces Tableau de bord de l'entreprise}}{72}{figure.caption.53}%
+\contentsline {figure}{\numberline {5.28}{\ignorespaces Tableau de bord de l'espace administrateur}}{72}{figure.caption.54}%
+\contentsline {figure}{\numberline {5.29}{\ignorespaces Requ\^ete pour la mise en relation }}{73}{figure.caption.55}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {6.1}{\ignorespaces Questionnaire }}{79}{figure.caption.56}%
-\contentsline {figure}{\numberline {6.2}{\ignorespaces Questionnaire}}{80}{figure.caption.57}%
-\contentsline {figure}{\numberline {6.3}{\ignorespaces Questionnaire}}{81}{figure.caption.58}%
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Questionnaire }}{80}{figure.caption.59}%
+\contentsline {figure}{\numberline {6.2}{\ignorespaces Questionnaire}}{81}{figure.caption.60}%
+\contentsline {figure}{\numberline {6.3}{\ignorespaces Questionnaire}}{82}{figure.caption.61}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {7.1}{\ignorespaces Communiqué d'inter\^et publique}}{83}{figure.caption.59}%
-\contentsline {figure}{\numberline {7.2}{\ignorespaces Demande de communiqué à cameroun tribune}}{84}{figure.caption.60}%
+\contentsline {figure}{\numberline {7.1}{\ignorespaces Communiqué d'inter\^et publique}}{84}{figure.caption.62}%
+\contentsline {figure}{\numberline {7.2}{\ignorespaces Demande de communiqué à cameroun tribune}}{85}{figure.caption.63}%
 \contentsfinish 
