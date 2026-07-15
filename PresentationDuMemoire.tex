@@ -1,551 +1,205 @@
-\documentclass[10pt]{beamer}
-
-% ===================== THEME =====================
-\usetheme{Madrid}
-\usecolortheme{whale}
-\setbeamertemplate{navigation symbols}{}
-\setbeamertemplate{footline}[frame number]
-\setbeamercovered{transparent}
-
-% ===================== LANGUE / ENCODAGE =====================
-\usepackage[french]{babel}
+\documentclass[12pt,a4paper]{article}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
-
-% ===================== PACKAGES =====================
-\usepackage{booktabs}
-\usepackage{array}
+\usepackage[margin=2cm, top=2cm, bottom=2cm]{geometry}
 \usepackage{tikz}
-\usetikzlibrary{shapes.geometric,arrows.meta,positioning,fit,backgrounds,decorations.pathreplacing}
-\usepackage{amsmath}
-\usepackage{amssymb}
-\usepackage{multicol}
-\usepackage{tabularx}
+\usetikzlibrary{positioning, calc, arrows.meta}
 
-\definecolor{institbleu}{RGB}{0,32,91}
-\definecolor{institor}{RGB}{193,154,58}
-\setbeamercolor{structure}{fg=institbleu}
-\setbeamercolor{title}{fg=white,bg=institbleu}
-\setbeamercolor{frametitle}{fg=white,bg=institbleu}
+\definecolor{navy}{RGB}{26,58,92}
+\definecolor{tealc}{RGB}{20,110,90}
+\definecolor{amberc}{RGB}{160,100,10}
+\definecolor{fog}{RGB}{238,243,248}
+\definecolor{bgray}{RGB}{200,216,232}
+\definecolor{pkbg}{RGB}{255,252,235}
 
-% ===================== PAGE DE TITRE =====================
-\title[Cartographie \& mise en relation des entreprises]{Cartographie des besoins, conception et réalisation \\ d'une plateforme de mise en relation des entreprises}
-\subtitle{Soutenance en vue de l'obtention du diplôme d'Ingénieur en Data Science}
-\author[Landry]{Présenté par : \textbf{Landry}\\ \small Matricule : 21D0180EP}
-\institute[ENSPM]{
-	\'Ecole Nationale Supérieure Polytechnique de Maroua \\
-	Université de Maroua \\[4pt]
-	Département Informatique et Télécommunication / Data Science
+\tikzset{
+	fkarrow/.style={-Latex, thick, draw=navy!70,
+		shorten >=3pt, shorten <=3pt},
+	cardlbl/.style={font=\scriptsize\bfseries, text=navy!80},
 }
-\date{\today}
+
+% ── Macro : une ligne de table ──────────────────────────────
+% #1 = noeud courant (anchor south west du précédent)
+% #2 = nom du nouveau noeud
+% #3 = largeur
+% #4 = contenu texte
+% #5 = bg color
+% #6 = text color
+\newcommand{\trow}[6]{%
+	\node[rectangle, minimum width=#3, minimum height=0.62cm,
+	fill=#5, draw=bgray, thin, inner xsep=7pt,
+	font=\small, text=#6, align=left,
+	anchor=north west] (#2) at (#1.south west) {#4};%
+}
 
 \begin{document}
+	\thispagestyle{empty}
 	
-	% ---------------------------------------------------------------
-	% PARTIE 1 : PAGE DE TITRE ET CONTEXTE INSTITUTIONNEL
-	% ---------------------------------------------------------------
-	\begin{frame}
-		\titlepage
-	\end{frame}
+	\begin{center}
+		{\large\bfseries Sch\'ema de la base de donn\'ees dimensionnelle}\\[0.35em]
+		{\normalsize Plateforme Business Partnership -- MINEPAT}
+	\end{center}
+	\vspace{0.8em}
 	
-	\begin{frame}{Cadre de la soutenance}
-		\begin{columns}[T]
-			\begin{column}{0.55\textwidth}
-				\textbf{Encadrement académique} \\
-				Pr. Kaladzafi Guidedi \\[8pt]
-				\textbf{Encadrement professionnel} \\
-				M. Abdoulaziz Jumnbe \\[8pt]
-				\textbf{Structure d'accueil}\\
-				Ministère de l'Économie, de la Planification et de l'Aménagement du Territoire (MINEPAT)\\
-				Direction Générale de l'Économie et de la Planification des Investissements Publics (DGEPIP)\\
-				Division des Analyses et des Politiques Économiques (DAPE)
-			\end{column}
-			\begin{column}{0.45\textwidth}
-				\begin{tikzpicture}[scale=0.9]
-					\node[draw, rounded corners, fill=institbleu!10, minimum width=3.2cm, minimum height=1cm, align=center] (m) at (0,2) {\small MINEPAT};
-					\node[draw, rounded corners, fill=institbleu!15, minimum width=3.4cm, minimum height=1cm, align=center] (dg) at (0,0.7) {\small DGEPIP};
-					\node[draw, rounded corners, fill=institbleu!25, minimum width=3.4cm, minimum height=1cm, align=center] (dape) at (0,-0.6) {\small DAPE};
-					\draw[-{Latex}] (m) -- (dg);
-					\draw[-{Latex}] (dg) -- (dape);
-				\end{tikzpicture}
-			\end{column}
-		\end{columns}
-	\end{frame}
-	
-	\begin{frame}{Plan de la présentation}
-		\small
-		\begin{multicols}{2}
-			\tableofcontents
-		\end{multicols}
-	\end{frame}
-	
-	% ---------------------------------------------------------------
-	% PARTIE 2 : CONTEXTE
-	% ---------------------------------------------------------------
-	\section{Contexte}
-	
-	\begin{frame}{Contexte de l'étude (1/2)}
-		\begin{itemize}
-			\item Dans de nombreux pays, le \textbf{secteur privé} joue un rôle déterminant dans la production des biens et services ainsi que dans la création de valeur ajoutée.
-			\item À travers les \textbf{trois piliers de la SND30}, le Cameroun se fixe comme objectif le développement du secteur privé comme moteur de la croissance économique.
-		\end{itemize}
-		\begin{center}
-			\begin{tikzpicture}[scale=0.85, every node/.style={align=center, font=\scriptsize}]
-				\node[draw, fill=institbleu, text=white, rounded corners, minimum width=3.1cm, minimum height=1.4cm] (p1) at (-3.4,0) {Transformation\\structurelle};
-				\node[draw, fill=institor, text=white, rounded corners, minimum width=3.1cm, minimum height=1.4cm] (p2) at (0,0) {Développement\\du capital humain};
-				\node[draw, fill=institbleu!70, text=white, rounded corners, minimum width=3.1cm, minimum height=1.4cm] (p3) at (3.4,0) {Gouvernance,\\décentralisation\\\& modernisation};
-				\node[font=\bfseries] at (0,1.1) {SND30 -- 3 piliers};
-			\end{tikzpicture}
-		\end{center}
-	\end{frame}
-	
-	\begin{frame}{Contexte de l'étude (2/2)}
-		\begin{itemize}
-			\item Des \textbf{réformes} ont été engagées et des \textbf{indicateurs de croissance} définis pour suivre la mise en \oe uvre de la SND30.
-			\item L'\textbf{évaluation à mi-parcours} de l'atteinte de ces indicateurs fait état d'une économie camerounaise \textbf{résiliente}, mais encore \textbf{loin des idéaux fixés}.
-		\end{itemize}
-		\vspace{0.3cm}
-		\begin{center}
-			\begin{tikzpicture}[scale=0.95]
-				\draw[->] (0,0) -- (6.5,0) node[right, font=\scriptsize] {Horizon SND30};
-				\draw[->] (0,0) -- (0,3) node[above, font=\scriptsize] {Indicateurs};
-				\draw[dashed, institbleu] (0,2.6) -- (6.2,2.6) node[right, font=\scriptsize, black] {Cible};
-				\draw[thick, institor] (0,0.3) .. controls (2,0.9) and (3.5,1.3) .. (6,1.6);
-				\node[font=\scriptsize] at (3,1.9) {Trajectoire observée (mi-parcours)};
-			\end{tikzpicture}
-		\end{center}
-	\end{frame}
-	
-	% ---------------------------------------------------------------
-	% PARTIE 3 : PROBLEMATIQUE
-	% ---------------------------------------------------------------
-	\section{Problématique}
-	
-	\begin{frame}{Problématique}
-		\begin{itemize}
-			\item Le secteur privé est incontournable pour la croissance économique d'un pays ; au Cameroun, ce secteur rencontre d'énormes difficultés, comme le montre l'évaluation à mi-parcours de la SND30.
-			\item Permettre au secteur privé de contribuer davantage à la croissance suppose que l'administration centrale aide les entreprises à se défaire des besoins qui freinent leur développement.
-			\item Plusieurs initiatives ont déjà été engagées dans cette optique, avec des résultats peu concluants \textit{(liste exhaustive des enquêtes et initiatives présentée dans le mémoire, chapitre 2)}.
-			\item En 2025, le MINEPAT lance une \textbf{enquête de cartographie des besoins des entreprises}, avec pour objectifs principaux :
-			\begin{itemize}
-				\item permettre des \textbf{actions ciblées} de l'administration ;
-				\item déboucher sur une \textbf{plateforme de collaboration} pour les entreprises.
-			\end{itemize}
-		\end{itemize}
-	\end{frame}
-	
-	% ---------------------------------------------------------------
-	% PARTIE 4 : DEFINITIONS ET CONCEPTS
-	% ---------------------------------------------------------------
-	\section{Définitions et concepts clés}
-	
-	\begin{frame}{Le besoin}
-		\begin{columns}[T]
-			\begin{column}{0.55\textwidth}
-				\small
-				D'après le \textit{Larousse}, un \textbf{besoin} désigne une exigence née d'un sentiment de manque ou de privation de quelque chose de nécessaire à la vie ou au bon fonctionnement d'un système.\\[6pt]
-				Transposé à l'entreprise : ensemble des manques, insuffisances ou absences de ressources qui, une fois comblés, contribuent à la \textbf{croissance}, à la \textbf{compétitivité} et à la \textbf{pérennité} de l'entreprise.
-			\end{column}
-			\begin{column}{0.45\textwidth}
-				\begin{tikzpicture}[scale=0.8]
-					\draw[thick] (0,0) circle (1.3);
-					\fill[institbleu!30] (0,0) circle (1.3);
-					\draw[thick, dashed] (0,0) circle (0.75);
-					\node[font=\scriptsize, align=center] at (0,0) {État\\actuel};
-					\node[font=\scriptsize, align=center] at (0,-1.7) {Niveau requis};
-					\draw[<->, thick, institor] (0.75,0) -- (1.3,0);
-					\node[font=\scriptsize, above] at (1.0,0.15) {besoin};
-				\end{tikzpicture}
-			\end{column}
-		\end{columns}
-	\end{frame}
-	
-	\begin{frame}{La cartographie}
-		\begin{columns}[T]
-			\begin{column}{0.55\textwidth}
-				\small
-				Toujours selon le \textit{Larousse}, la \textbf{cartographie} est l'ensemble des opérations ayant pour objet l'élaboration, la rédaction et l'édition de cartes.\\[6pt]
-				La \textbf{cartographie des besoins des entreprises} : ensemble des méthodes concourant à la représentation de la distribution des besoins des entreprises selon des variables identifiées.
-			\end{column}
-			\begin{column}{0.45\textwidth}
-				\begin{tikzpicture}[scale=0.75]
-					\draw[step=0.7, gray!40, thin] (0,0) grid (2.8,2.1);
-					\fill[institor!70] (0.7,0.7) rectangle (1.4,1.4);
-					\fill[institbleu!60] (1.4,1.4) rectangle (2.1,2.1);
-					\fill[institbleu!30] (0,0) rectangle (0.7,0.7);
-					\node[font=\tiny] at (1.4,-0.3) {Distribution spatiale des besoins};
-				\end{tikzpicture}
-			\end{column}
-		\end{columns}
-	\end{frame}
-	
-	\begin{frame}{La mise en relation}
-		\small
-		La \textbf{mise en relation des entreprises} renvoie au mécanisme par lequel deux ou plusieurs unités économiques sont amenées à se connaître, à échanger sur leurs capacités et leurs besoins respectifs, et à explorer les conditions d'une collaboration mutuellement bénéfique.
-		\vspace{4pt}
+	\begin{tikzpicture}[x=1cm, y=1cm]
 		
-		\alert{À distinguer du partenariat}, notion souvent confondue avec la mise en relation, mais qui implique un engagement contractuel formalisé entre les parties.
-		\begin{center}
-			\begin{tikzpicture}[scale=0.85]
-				\node[draw, circle, fill=institbleu!30, minimum size=1.1cm] (a) at (0,0) {A};
-				\node[draw, circle, fill=institor!40, minimum size=1.1cm] (b) at (3,0) {B};
-				\draw[<->, thick] (a) -- (b) node[midway, above, font=\scriptsize] {échange besoins / offres};
-			\end{tikzpicture}
-		\end{center}
-	\end{frame}
-	
-	% ---------------------------------------------------------------
-	% PARTIE 5 : ETAT DE L'ART
-	% ---------------------------------------------------------------
-	\section{État de l'art}
-	
-	\begin{frame}{État de l'art -- Études de cartographie des besoins}
-		\scriptsize
-		\begin{tabularx}{\textwidth}{>{\raggedright\arraybackslash}p{2.6cm} X X}
-			\toprule
-			\textbf{Étude / initiative} & \textbf{Objectifs} & \textbf{Limites} \\
-			\midrule
-			Recensement Général des Entreprises (INS) & Dénombrer et caractériser le tissu économique national & Périodicité longue, faible granularité des besoins exprimés \\
-			Enquête de climat des affaires (GICAM) & Mesurer la perception des entreprises sur l'environnement des affaires & Approche perceptive, peu actionnable individuellement \\
-			Enquêtes sectorielles ministérielles antérieures & Identifier des contraintes par filière & Couverture partielle, absence de suivi dans le temps \\
-			Enquête MINEPAT 2025 (cadre du mémoire) & Cartographier les besoins et alimenter une plateforme de mise en relation & En cours de valorisation -- objet de ce travail \\
-			\bottomrule
-		\end{tabularx}
-	\end{frame}
-	
-	\begin{frame}{État de l'art -- Outils de mise en relation d'entreprises}
-		\scriptsize
-		\begin{tabularx}{\textwidth}{>{\raggedright\arraybackslash}p{2.2cm} X X}
-			\toprule
-			\textbf{Plateforme} & \textbf{Objectif principal} & \textbf{Limites} \\
-			\midrule
-			LinkedIn & Réseautage professionnel généraliste & Peu spécialisé pour l'appariement fin des besoins d'entreprises \\
-			Kompass & Annuaire B2B mondial d'entreprises & Fonction essentiellement répertoire, appariement limité \\
-			Alibaba & Mise en relation acheteurs-fournisseurs à l'international & Orienté commerce de marchandises, peu adapté au contexte local \\
-			Go Africa Online & Annuaire d'entreprises africaines & Absence de moteur de matching basé sur les besoins exprimés \\
-			\bottomrule
-		\end{tabularx}
-		\vspace{6pt}
-		\normalsize
-		\textbf{Constat} : aucun de ces outils ne combine \textit{cartographie statistique des besoins} et \textit{moteur de mise en relation ciblé}, adapté au contexte camerounais.
-	\end{frame}
-	
-	% ---------------------------------------------------------------
-	% PARTIE 6 : JUSTIFICATION DE L'ENQUETE ET DE LA PLATEFORME
-	% ---------------------------------------------------------------
-	\section{Justification de l'enquête et de la plateforme}
-	
-	\begin{frame}{Pourquoi cette enquête et cette plateforme ?}
-		\begin{itemize}
-			\item \textbf{Objectifs de l'enquête MINEPAT} : identifier finement les besoins des entreprises et permettre des actions ciblées.
-			\item \textbf{Réponse aux limites} des enquêtes précédentes : granularité individuelle, actualisation continue, exploitation numérique directe des données.
-			\item \textbf{Cohérence avec la SND30} : appui direct au pilier de transformation structurelle en levant les freins identifiés du secteur privé.
-			\item \textbf{Opportunité de l'application} : transformer une base de données d'enquête en un \textbf{outil opérationnel} d'aide à la décision et de mise en relation.
-			\item \textbf{Limites résolues} : absence d'outil dédié combinant statistique et appariement automatisé.
-		\end{itemize}
-	\end{frame}
-	
-	% ---------------------------------------------------------------
-	% PARTIE 7 : PRESENTATION DES DONNEES
-	% ---------------------------------------------------------------
-	\section{Présentation des données}
-	
-	\begin{frame}{Les données de l'enquête}
-		\small
-		Données stockées sur un serveur sous deux tables, exportées au format \texttt{.csv} :
-		\begin{itemize}
-			\item \texttt{identifications.csv} : identification précise des entreprises.
-			\item \texttt{besoins.csv} : besoins exprimés par les entreprises.
-		\end{itemize}
-		\vspace{6pt}
-		\begin{columns}[T]
-			\begin{column}{0.5\textwidth}
-				\textbf{Éléments descriptifs (identifications)}
-				\begin{itemize}
-					\small
-					\item Raison sociale, secteur d'activité
-					\item Localisation géographique
-					\item Taille / effectif
-					\item Statut juridique
-					\item Ancienneté
-				\end{itemize}
-			\end{column}
-			\begin{column}{0.5\textwidth}
-				\textbf{Types de besoins recueillis}
-				\begin{itemize}
-					\small
-					\item Financement
-					\item Formation / renforcement de capacités
-					\item Équipement / matériel
-					\item Accompagnement administratif
-					\item Accès au marché
-				\end{itemize}
-			\end{column}
-		\end{columns}
-	\end{frame}
-	
-	% ---------------------------------------------------------------
-	% PARTIE 8 : METHODOLOGIE
-	% ---------------------------------------------------------------
-	\section{Méthodologie d'analyse des données}
-	
-	\begin{frame}{Pipeline méthodologique}
-		\begin{center}
-			\begin{tikzpicture}[
-				box/.style={draw, rounded corners, fill=institbleu!15, minimum width=2.1cm, minimum height=0.9cm, align=center, font=\scriptsize},
-				>=Latex
-				]
-				\node[box] (boite1) at (0,0) {Nettoyage\\\& jointure};
-				\node[box] (boite2) at (2.6,0) {Analyse\\univariée};
-				\node[box] (boite3) at (5.2,0) {Analyse\\bivariée};
-				\node[box] (boite4) at (7.8,0) {ACM};
-				\node[box] (boite5) at (10.4,0) {CAH};
-				\node[box] (boite6) at (13.0,0) {AFD};
-				\draw[->] (boite1) -- (boite2);
-				\draw[->] (boite2) -- (boite3);
-				\draw[->] (boite3) -- (boite4);
-				\draw[->] (boite4) -- (boite5);
-				\draw[->] (boite5) -- (boite6);
-			\end{tikzpicture}
-		\end{center}
-		\vspace{4pt}
-		\small
-		\begin{itemize}
-			\item Nettoyage des données, sélection des variables pertinentes, jointure de \texttt{identifications.csv} et \texttt{besoins.csv}.
-		\end{itemize}
-	\end{frame}
-	
-	\begin{frame}{Analyses univariée et bivariée}
-		\small
-		\textbf{Analyse univariée} : décrit chaque variable isolément (fréquences, répartitions) afin de dresser un premier profil des entreprises et de leurs besoins.\\[6pt]
-		\textbf{Analyse bivariée} : étudie l'association entre deux variables qualitatives à l'aide :
-		\begin{itemize}
-			\item du \textbf{test du $\chi^2$ d'indépendance} :
-			$$\chi^2 = \sum_{i,j} \frac{(n_{ij} - e_{ij})^2}{e_{ij}}$$
-			\item du \textbf{V de Cramér}, mesurant l'intensité de la liaison :
-			$$V = \sqrt{\dfrac{\chi^2}{n \cdot \min(k-1, l-1)}}$$
-		\end{itemize}
-		\footnotesize Conditions d'interprétation : effectifs théoriques suffisants ($e_{ij} \geq 5$), $V \in [0,1]$ (proche de 0 : liaison faible ; proche de 1 : liaison forte).
-	\end{frame}
-	
-	\begin{frame}{Analyse des Correspondances Multiples (ACM)}
-		\small
-		\textbf{Objectif} : synthétiser les associations entre plusieurs variables qualitatives (profils d'entreprises et besoins) dans un espace factoriel de dimension réduite.\\[6pt]
-		Les valeurs propres $\lambda_k$ sont obtenues par diagonalisation de la matrice de Burt / du tableau disjonctif complet :
-		$$ \mathbf{Z}^\top \mathbf{D}_n \mathbf{Z}\, u_k = \lambda_k u_k $$
-		\textbf{Choix des axes} : critère des \textbf{valeurs propres corrigées de Benzécri}, qui pondère la part d'inertie réellement portée par chaque axe et corrige la sous-estimation classique de l'inertie en ACM.
-	\end{frame}
-	
-	\begin{frame}{Classification Ascendante Hiérarchique (CAH)}
-		\small
-		\textbf{Objectif} : regrouper les entreprises en classes homogènes à partir de leurs coordonnées factorielles (issues de l'ACM).\\[6pt]
-		\textbf{Principe} : agrégation itérative des individus/groupes les plus proches, selon un critère de distance (ex. critère de Ward minimisant l'inertie intra-classe) :
-		$$ \Delta(A,B) = \frac{n_A n_B}{n_A+n_B}\, \lVert \bar{x}_A - \bar{x}_B \rVert^2 $$
-		Le résultat est représenté sous forme de \textbf{dendrogramme}, dont la coupe fixe le nombre de classes retenues.
-	\end{frame}
-	
-	\begin{frame}{Analyse Factorielle Discriminante (AFD)}
-		\small
-		\textbf{Objectif} : valider et modéliser l'appartenance des entreprises aux classes issues de la CAH, à partir des variables explicatives.\\[6pt]
-		\textbf{Principe} : recherche des combinaisons linéaires des variables maximisant la variance inter-classes relativement à la variance intra-classe :
-		$$ \lambda = \frac{\det(\mathbf{B})}{\det(\mathbf{B}+\mathbf{W})} \quad \text{(Lambda de Wilks)} $$
-		Test de significativité globale par \texttt{manova()} (R), suivi d'une classification par \texttt{MASS::lda()}.
-	\end{frame}
-	
-	% ---------------------------------------------------------------
-	% PARTIE 9 : JUSTIFICATION DE LA METHODE
-	% ---------------------------------------------------------------
-	\section{Justification de la méthode}
-	
-	\begin{frame}{Pourquoi ces méthodes ?}
-		\small
-		Les analyses uni et bivariées sont indispensables : elles permettent un \textbf{premier diagnostic} des données, détectent les anomalies et orientent le choix des variables actives pour les analyses factorielles.
-		\vspace{6pt}
-		\scriptsize
-		\begin{tabularx}{\textwidth}{>{\raggedright\arraybackslash}p{3.2cm} X X}
-			\toprule
-			\textbf{Approche} & \textbf{Principe} & \textbf{Pertinence pour ce travail} \\
-			\midrule
-			Régression logistique multinomiale & Modélise directement une variable cible catégorielle & Nécessite une cible pré-définie, peu adaptée à la découverte de profils \\
-			Clustering k-means & Partitionnement basé sur des distances euclidiennes & Peu adapté à des données majoritairement qualitatives \\
-			\textbf{ACM + CAH + AFD (retenue)} & Réduction dimensionnelle, classification puis validation discriminante & Adaptée aux données qualitatives, permet de découvrir \emph{et} valider des profils d'entreprises \\
-			\bottomrule
-		\end{tabularx}
-	\end{frame}
-	
-	% ---------------------------------------------------------------
-	% PARTIE 10 : RESULTATS DES ANALYSES
-	% ---------------------------------------------------------------
-	\section{Résultats des analyses statistiques}
-	
-	\begin{frame}{Résultats -- Analyse univariée}
-		\small
-		\textit{[Graphiques de répartition des entreprises par secteur, taille, localisation et type de besoin -- générés via la fonction \texttt{graphique\_repartition()}]}
-		\begin{itemize}
-			\item Prédominance de certains secteurs d'activité et types de besoins à commenter selon les résultats obtenus.
-			\item Répartition géographique des entreprises enquêtées.
-		\end{itemize}
-	\end{frame}
-	
-	\begin{frame}{Résultats -- Analyse bivariée}
-		\small
-		\begin{itemize}
-			\item Associations significatives ($\chi^2$, $p < 0.05$) entre \emph{secteur d'activité} et \emph{type de besoin dominant}.
-			\item Intensité des liaisons mesurée par le V de Cramér, avec interprétation des couples de variables les plus fortement associés.
-		\end{itemize}
-	\end{frame}
-	
-	\begin{frame}{Résultats -- ACM}
-		\small
-		\begin{itemize}
-			\item Sélection des premiers axes factoriels selon le critère de Benzécri.
-			\item Interprétation des axes en fonction des modalités contributives (profil des entreprises selon leurs besoins).
-		\end{itemize}
-	\end{frame}
-	
-	\begin{frame}{Résultats -- CAH}
-		\small
-		\begin{itemize}
-			\item Dendrogramme permettant d'identifier un nombre de classes pertinent.
-			\item Caractérisation des groupes d'entreprises obtenus (profils-types de besoins).
-		\end{itemize}
-	\end{frame}
-	
-	\begin{frame}{Résultats -- AFD}
-		\small
-		\begin{itemize}
-			\item Test de Wilks significatif, validant la séparation des groupes.
-			\item \textbf{Taux de bonne classification : 97{,}24\,\%}
-			\item \textbf{Coefficient Kappa : 0{,}9435} -- excellente concordance
-		\end{itemize}
-	\end{frame}
-	
-	% ---------------------------------------------------------------
-	% PARTIE 11 : PLATEFORME - FONCTIONNALITES
-	% ---------------------------------------------------------------
-	\section{La plateforme numérique}
-	
-	\begin{frame}{Fonctionnalités de la plateforme}
-		\begin{columns}[T]
-			\begin{column}{0.5\textwidth}
-				\textbf{Fonctionnalités fonctionnelles}
-				\begin{itemize}
-					\small
-					\item Inscription et authentification des entreprises
-					\item Déclaration des besoins (onboarding)
-					\item Classification automatique du profil
-					\item Recommandation / mise en relation ciblée
-					\item Affichage des coordonnées du partenaire recommandé
-				\end{itemize}
-			\end{column}
-			\begin{column}{0.5\textwidth}
-				\textbf{Exigences non fonctionnelles}
-				\begin{itemize}
-					\small
-					\item Sécurité des données des entreprises
-					\item Performance et temps de réponse
-					\item Ergonomie et accessibilité
-					\item Évolutivité de la plateforme
-					\item Conformité institutionnelle (charte visuelle)
-				\end{itemize}
-			\end{column}
-		\end{columns}
-	\end{frame}
-	
-	% ---------------------------------------------------------------
-	% PARTIE 12 : OUTILS ET MODELISATION DIMENSIONNELLE
-	% ---------------------------------------------------------------
-	\section{Outils et modélisation dimensionnelle}
-	
-	\begin{frame}{Outils techniques utilisés}
-		\small
-		\begin{itemize}
-			\item \textbf{Backend} : Django (Python), ORM Django (\texttt{annotate()}, \texttt{Count()}, \texttt{Q()})
-			\item \textbf{Analyse statistique} : Python, R (\texttt{MASS::lda()}, \texttt{manova()})
-			\item \textbf{Frontend} : Bootstrap, charte graphique institutionnelle (bleu marine, icônes Bootstrap Icons)
-			\item \textbf{Documentation} : LaTeX (Beamer, TikZ)
-		\end{itemize}
-		\vspace{8pt}
-		\textbf{Choix de la modélisation dimensionnelle} : approche en \textbf{schéma en étoile} inspirée des travaux de \textbf{Kimball}, considéré comme le père fondateur de la modélisation dimensionnelle, retenue pour :
-		\begin{itemize}
-			\small
-			\item sa capacité à modéliser efficacement les faits (besoins/offres exprimés) autour de dimensions (entreprises, services) ;
-			\item sa simplicité de requêtage pour l'algorithme de mise en relation.
-		\end{itemize}
-	\end{frame}
-	
-	% ---------------------------------------------------------------
-	% PARTIE 13 : MODELE DE DONNEES
-	% ---------------------------------------------------------------
-	\section{Modèle de la base de données}
-	
-	\begin{frame}{Schéma en étoile et particularité de la table \texttt{Service}}
-		\begin{center}
-			\begin{tikzpicture}[scale=0.85,
-				dim/.style={draw, rounded corners, fill=institbleu!15, minimum width=2.6cm, minimum height=0.9cm, align=center, font=\scriptsize},
-				fact/.style={draw, rounded corners, fill=institor!40, minimum width=3.4cm, minimum height=1.1cm, align=center, font=\scriptsize}
-				]
-				\node[dim] (ent) at (-3.5,1.5) {Dimension\\\textbf{Entreprise}};
-				\node[dim] (serv) at (3.5,1.5) {Dimension\\\textbf{Service}\\(offres \emph{et} besoins)};
-				\node[fact] (fait) at (0,0) {Fait\\\textbf{BesoinOffreEntreprise}};
-				\draw[-] (ent) -- (fait);
-				\draw[-] (serv) -- (fait);
-			\end{tikzpicture}
-		\end{center}
-		\small
-		\textbf{Particularité} : la table \texttt{Service} représente simultanément les \emph{offres} et les \emph{besoins} -- un paradigme comparable au \textbf{chat de Schrödinger}, à la fois « mort et vivant » selon le contexte d'usage de l'enregistrement.\\[4pt]
-		\textbf{Requête de mise en relation} : exploite l'\textbf{intersection} entre offres et besoins, facilitée par l'unicité de cette table (une seule jointure nécessaire, cf. ORM Django \texttt{annotate()}/\texttt{Count()}/\texttt{Q()}).
-	\end{frame}
-	
-	% ---------------------------------------------------------------
-	% PARTIE 14 : RESULTATS DE LA PLATEFORME
-	% ---------------------------------------------------------------
-	\section{Résultats de la plateforme}
-	
-	\begin{frame}{Résultats obtenus}
-		\small
-		\textit{[Captures d'écran de la plateforme : inscription, déclaration des besoins, tableau de bord des recommandations]}
-		\begin{itemize}
-			\item Parcours utilisateur complet : inscription $\rightarrow$ déclaration des besoins $\rightarrow$ classification $\rightarrow$ recommandations.
-			\item Mise en relation effective de plusieurs profils d'entreprises testées.
-			\item Interface conforme à la charte graphique institutionnelle (validée après retours sur le rendu initial).
-		\end{itemize}
-	\end{frame}
-	
-	% ---------------------------------------------------------------
-	% PARTIE 15 : PERSPECTIVES
-	% ---------------------------------------------------------------
-	\section{Perspectives}
-	
-	\begin{frame}{Perspectives d'amélioration}
-		\begin{itemize}
-			\item Permettre aux entreprises de \textbf{se contacter directement} depuis la plateforme (messagerie intégrée).
-			\item Enrichir le moteur de recommandation par des techniques de \textit{machine learning} supervisé.
-			\item Élargir la couverture géographique et sectorielle de l'enquête.
-			\item Mettre en place un suivi longitudinal des besoins déclarés.
-			\item Intégrer des indicateurs de suivi de la SND30 directement dans la plateforme.
-		\end{itemize}
-	\end{frame}
-	
-	% ---------------------------------------------------------------
-	% CONCLUSION
-	% ---------------------------------------------------------------
-	\section*{Conclusion}
-	\begin{frame}{Conclusion}
-		\small
-		Ce travail a permis de :
-		\begin{itemize}
-			\item cartographier statistiquement les besoins des entreprises camerounaises à partir de l'enquête MINEPAT 2025 ;
-			\item concevoir et développer une plateforme opérationnelle de mise en relation, fondée sur un modèle dimensionnel simple et efficace ;
-			\item valider la robustesse de la démarche méthodologique (ACM, CAH, AFD) par un taux de classification de 97{,}24\,\% et un Kappa de 0{,}9435.
-		\end{itemize}
-		\vspace{10pt}
-		\centering \large \textbf{Merci de votre attention}
-	\end{frame}
-	
-	\begin{frame}
-		\centering
-		\Huge \textbf{Questions ?}
-	\end{frame}
+		% ══════════════════════════════════════════════════════════
+		%  TABLE  Entreprise
+		% ══════════════════════════════════════════════════════════
+		\def\EW{6.4cm}
+		
+		% En-tête
+		\node[rectangle, minimum width=\EW, minimum height=0.75cm,
+		fill=navy, draw=navy!80!black, thick,
+		text=white, font=\bfseries\normalsize, align=center,
+		anchor=north west] (EH) at (0,0) {Entreprise};
+		
+		% PK
+		\node[rectangle, minimum width=\EW, minimum height=0.62cm,
+		fill=pkbg, draw=bgray, thin, inner xsep=7pt,
+		font=\small\bfseries, align=left,
+		anchor=north west] (E01) at (EH.south west)
+		{\textcolor{amberc}{PK}\ \ id \hfill \textcolor{navy!60}{\textit{integer}}};
+		
+		% Champs
+		\trow{E01}{E02}{\EW}{\ \ \ username \hfill \textcolor{navy!60}{\textit{varchar(150)}}}{fog}{black}
+		\trow{E02}{E03}{\EW}{\ \ \ raison\_sociale \hfill \textcolor{navy!60}{\textit{varchar(255)}}}{white}{black}
+		\trow{E03}{E04}{\EW}{\ \ \ email \hfill \textcolor{navy!60}{\textit{varchar (unique)}}}{fog}{black}
+		\trow{E04}{E05}{\EW}{\ \ \ password \hfill \textcolor{navy!60}{\textit{varchar}}}{white}{black}
+		\trow{E05}{E06}{\EW}{\ \ \ est\_locale \hfill \textcolor{navy!60}{\textit{boolean}}}{fog}{black}
+		\trow{E06}{E07}{\EW}{\ \ \ region \hfill \textcolor{navy!60}{\textit{varchar(50)}}}{white}{black}
+		\trow{E07}{E08}{\EW}{\ \ \ branche\_activite \hfill \textcolor{navy!60}{\textit{varchar(50)}}}{fog}{black}
+		\trow{E08}{E09}{\EW}{\ \ \ statut \hfill \textcolor{navy!60}{\textit{varchar(20)}}}{white}{black}
+		\trow{E09}{E10}{\EW}{\ \ \ date\_inscription \hfill \textcolor{navy!60}{\textit{datetime}}}{fog}{black}
+		\trow{E10}{E11}{\EW}{\ \ \ date\_validation \hfill \textcolor{navy!60}{\textit{datetime}}}{white}{black}
+		\trow{E11}{E12}{\EW}{\ \ \ motif\_rejet \hfill \textcolor{navy!60}{\textit{text}}}{fog}{black}
+		\trow{E12}{E13}{\EW}{\ \ \ doc\_registre\_commerce \hfill \textcolor{navy!60}{\textit{file}}}{white}{black}
+		\trow{E13}{E14}{\EW}{\ \ \ doc\_contribuable \hfill \textcolor{navy!60}{\textit{file}}}{fog}{black}
+		\trow{E14}{E15}{\EW}{\ \ \ doc\_autre \hfill \textcolor{navy!60}{\textit{file?}}}{white}{black}
+		
+		% Badge dimension
+		\node[font=\scriptsize\itshape, text=navy!70, anchor=north]
+		at ([yshift=-2pt]E15.south) {\textsc{dimension acteur}};
+		
+		
+		% ══════════════════════════════════════════════════════════
+		%  TABLE  Service
+		% ══════════════════════════════════════════════════════════
+		\def\SW{5.6cm}
+		\def\SX{8.6}  % position X
+		
+		\node[rectangle, minimum width=\SW, minimum height=0.75cm,
+		fill=tealc, draw=tealc!80!black, thick,
+		text=white, font=\bfseries\normalsize, align=center,
+		anchor=north west] (SH) at (\SX,0) {Service};
+		
+		\node[rectangle, minimum width=\SW, minimum height=0.62cm,
+		fill=pkbg, draw=bgray, thin, inner xsep=7pt,
+		font=\small\bfseries, align=left,
+		anchor=north west] (S01) at (SH.south west)
+		{\textcolor{amberc}{PK}\ \ id \hfill \textcolor{tealc!60}{\textit{integer}}};
+		
+		\trow{S01}{S02}{\SW}{\ \ \ nom\_service \hfill \textcolor{tealc!70}{\textit{varchar(150)}}}{fog}{black}
+		\trow{S02}{S03}{\SW}{\ \ \ element \hfill \textcolor{tealc!70}{\textit{varchar(200)}}}{white}{black}
+		\trow{S03}{S04}{\SW}{\ \ \ description \hfill \textcolor{tealc!70}{\textit{text?}}}{fog}{black}
+		
+		\node[font=\scriptsize\itshape, text=tealc!80, anchor=north]
+		at ([yshift=-2pt]S04.south) {\textsc{dimension catalogue}};
+		
+		
+		% ══════════════════════════════════════════════════════════
+		%  TABLE  BesoinOffreEntreprise (table de faits)
+		% ══════════════════════════════════════════════════════════
+		\def\FW{6.2cm}
+		\def\FX{3.4}
+		\def\FY{-11.2}
+		
+		\node[rectangle, minimum width=\FW, minimum height=0.75cm,
+		fill=amberc!90!black, draw=amberc, thick,
+		text=white, font=\bfseries\small, align=center,
+		anchor=north west] (FH) at (\FX,\FY) {BesoinOffreEntreprise};
+		
+		\node[rectangle, minimum width=\FW, minimum height=0.62cm,
+		fill=pkbg, draw=bgray, thin, inner xsep=7pt,
+		font=\small\bfseries, align=left,
+		anchor=north west] (F01) at (FH.south west)
+		{\textcolor{amberc}{PK}\ \ id \hfill \textcolor{amberc!60}{\textit{integer}}};
+		
+		\node[rectangle, minimum width=\FW, minimum height=0.62cm,
+		fill=fog, draw=bgray, thin, inner xsep=7pt,
+		font=\small\bfseries, align=left,
+		anchor=north west] (F02) at (F01.south west)
+		{\textcolor{tealc}{FK}\ \ entreprise\_id
+			\hfill \textcolor{amberc!60}{\textit{integer}}};
+		
+		\node[rectangle, minimum width=\FW, minimum height=0.62cm,
+		fill=white, draw=bgray, thin, inner xsep=7pt,
+		font=\small\bfseries, align=left,
+		anchor=north west] (F03) at (F02.south west)
+		{\textcolor{tealc}{FK}\ \ service\_id
+			\hfill \textcolor{amberc!60}{\textit{integer}}};
+		
+		\trow{F03}{F04}{\FW}{\ \ \ besoin \hfill \textcolor{amberc!60}{\textit{boolean}}}{fog}{black}
+		\trow{F04}{F05}{\FW}{\ \ \ date\_enregistrement \hfill \textcolor{amberc!60}{\textit{datetime}}}{white}{black}
+		
+		% Contrainte unique
+		\node[rectangle, draw=amberc!50, fill=amberc!7,
+		rounded corners=3pt, inner sep=5pt, minimum width=\FW,
+		font=\scriptsize, align=center, anchor=north west]
+		(FUNIQ) at (F05.south west)
+		{UNIQUE\ (entreprise\_id,\ service\_id,\ besoin)};
+		
+		\node[font=\scriptsize\itshape, text=amberc!80, anchor=north]
+		at ([yshift=-2pt]FUNIQ.south) {\textsc{table de faits}};
+		
+		
+		% ══════════════════════════════════════════════════════════
+		%  RELATIONS
+		% ══════════════════════════════════════════════════════════
+		
+		% Entreprise 1 --- N BesoinOffreEntreprise
+		\draw[fkarrow]
+		(F02.west)
+		-- ++(-0.55,0)
+		|- (E01.south -| {-0.55,0})
+		node[pos=0.05, cardlbl, above] {N}
+		node[pos=0.92, cardlbl, right] {1};
+		
+		% Service 1 --- N BesoinOffreEntreprise
+		\draw[fkarrow]
+		(F03.east)
+		-- ++(0.5,0)
+		|- (S01.south -| {14.7,0})
+		node[pos=0.05, cardlbl, above] {N}
+		node[pos=0.92, cardlbl, left] {1};
+		
+		
+		% ══════════════════════════════════════════════════════════
+		%  LEGENDE
+		% ══════════════════════════════════════════════════════════
+		\node[draw=bgray, fill=fog, rounded corners=4pt, inner sep=9pt,
+		anchor=south west]
+		at (0,-17.2) {%
+			\begin{tabular}{@{}ll@{}}
+				\textcolor{amberc}{\textbf{PK}} & Cl\'e primaire \\[2pt]
+				\textcolor{tealc}{\textbf{FK}}  & Cl\'e \'etrang\`ere \\[2pt]
+				\textit{?}                      & Champ nullable (facultatif) \\[2pt]
+				\textit{unique}                 & Contrainte d'unicit\'e \\
+			\end{tabular}%
+		};
+		
+		% ── NOTE BOOLEEN ──────────────────────────────────────────
+		\node[draw=bgray, fill=white, rounded corners=4pt, inner sep=9pt,
+		font=\small, anchor=south east, align=left,
+		text width=7cm]
+		at (14.7,-17.2) {%
+			\textbf{Champ cl\'e -- besoin (boolean)}\\[3pt]
+			\texttt{True} : l'entreprise \textbf{cherche} ce service\\
+			\texttt{False} : l'entreprise \textbf{offre} ce service\\[3pt]
+			Ce champ est au c\oe ur de l'algorithme de mise\\
+			en relation entre entreprises.%
+		};
+		
+	\end{tikzpicture}
 	
 \end{document}

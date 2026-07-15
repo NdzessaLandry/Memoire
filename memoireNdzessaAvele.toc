@@ -24,118 +24,116 @@
 \contentsline {section}{\numberline {1.2}Contexte et problématique}{9}{section.1.2}%
 \contentsline {subsection}{\numberline {1.2.1}Contexte}{9}{subsection.1.2.1}%
 \contentsline {subsection}{\numberline {1.2.2}Problématique}{10}{subsection.1.2.2}%
-\contentsline {subsection}{\numberline {1.2.3}Objectifs du mémoire}{11}{subsection.1.2.3}%
-\contentsline {subsection}{\numberline {1.2.4}Méthodologie générale}{11}{subsection.1.2.4}%
-\contentsline {subsubsection}{Méthodologie d'analyse des données}{11}{subsection.1.2.4}%
-\contentsline {subsubsection}{Méthodologie de conception de la plateforme}{12}{subsection.1.2.4}%
-\contentsline {subsubsection}{M\'ethodologie agile Kanban}{12}{subsection.1.2.4}%
-\contentsline {chapter}{\numberline {2}Définition des concepts et état de l’art}{15}{chapter.2}%
-\contentsline {section}{\numberline {2.1}Définition des concepts }{16}{section.2.1}%
-\contentsline {subsection}{\numberline {2.1.1}Cartographie des besoins des entreprises}{16}{subsection.2.1.1}%
-\contentsline {subsection}{\numberline {2.1.2}Mise en relation des entreprises}{16}{subsection.2.1.2}%
-\contentsline {subsubsection}{Plateformes numériques B2B}{17}{subsection.2.1.2}%
-\contentsline {subsubsection}{Bourse de Sous Traitance et de Partenariat}{17}{subsection.2.1.2}%
-\contentsline {subsubsection}{Partenariats contractuels directs}{18}{subsection.2.1.2}%
-\contentsline {section}{\numberline {2.2}État de l'art}{18}{section.2.2}%
-\contentsline {subsection}{\numberline {2.2.1}Enquêtes en vue de la cartographie des besoins des entreprises}{18}{subsection.2.2.1}%
-\contentsline {subsubsection}{Enquete du GECAM}{19}{subsection.2.2.1}%
-\contentsline {subsubsection}{Redaction du document de stratégie pour le developpement du secteur industriel par le MINEPAT}{20}{figure.caption.13}%
-\contentsline {subsubsection}{Enquete sur le climat des affaires par le MINEPAT}{20}{figure.caption.13}%
-\contentsline {subsubsection}{Recensement Général des Entreprises par l'INS}{21}{figure.caption.13}%
-\contentsline {subsection}{\numberline {2.2.2}\'Etat de l'art}{22}{subsection.2.2.2}%
-\contentsline {subsubsection}{Syst\`emes de recommandation et mise en relation d'entreprises}{22}{subsection.2.2.2}%
-\contentsline {subsubsection}{Plateforme de mise en relation~: travaux existants}{23}{subsection.2.2.2}%
-\contentsline {subsubsection}{Limites des plateformes commerciales existantes}{23}{subsection.2.2.2}%
-\contentsline {chapter}{\numberline {3}Cahier des charges de la plateforme \textit {Business Partnership}}{25}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Périmètre du projet et identification des acteurs}{25}{section.3.1}%
-\contentsline {subsection}{\numberline {3.1.1}Périmétre du projet}{25}{subsection.3.1.1}%
-\contentsline {subsubsection}{Contexte institutionnel}{25}{subsection.3.1.1}%
-\contentsline {subsubsection}{Périmètre fonctionnel}{25}{subsection.3.1.1}%
-\contentsline {subsection}{\numberline {3.1.2}Identifications des acteurs}{26}{subsection.3.1.2}%
-\contentsline {subsubsection}{L'entreprise (acteur principal)}{26}{subsection.3.1.2}%
-\contentsline {subsubsection}{L'administrateur}{26}{subsection.3.1.2}%
-\contentsline {subsubsection}{Le visiteur}{26}{subsection.3.1.2}%
-\contentsline {section}{\numberline {3.2}Spécifications fonctionnelles et non fonctionnelles}{27}{section.3.2}%
-\contentsline {subsection}{\numberline {3.2.1}Spécifications fonctionnelles}{27}{subsection.3.2.1}%
-\contentsline {subsubsection}{Gestion des comptes et authentification}{27}{subsection.3.2.1}%
-\contentsline {subsubsection}{Gestion des besoins}{28}{subsection.3.2.1}%
-\contentsline {subsubsection}{Administration de la plateforme}{28}{Item.27}%
-\contentsline {subsection}{\numberline {3.2.2}Spécifications non fonctionnelles}{28}{subsection.3.2.2}%
-\contentsline {subsubsection}{Exigences de sécurité}{29}{subsection.3.2.2}%
-\contentsline {subsubsection}{Exigences d'accessibilité et d'ergonomie}{29}{subsection.3.2.2}%
-\contentsline {subsubsection}{Diagramme des cas d'usage}{29}{subsection.3.2.2}%
-\contentsline {subsection}{\numberline {3.2.3}Architecture logicielle}{30}{subsection.3.2.3}%
-\contentsline {subsection}{\numberline {3.2.4}Limites de la plateforme}{31}{subsection.3.2.4}%
-\contentsline {subsubsection}{Limites relatives aux donn\'ees}{31}{subsection.3.2.4}%
-\contentsline {subsubsection}{Limites du moteur de mise en relation}{32}{subsection.3.2.4}%
-\contentsline {subsubsection}{Limites techniques}{32}{subsection.3.2.4}%
-\contentsline {chapter}{\numberline {4}Cartographie des besoins, conception et modélisation de la plateforme}{33}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Méthodologie d'analyse pour la cartographie des besoins des entreprises}{33}{section.4.1}%
-\contentsline {subsection}{\numberline {4.1.1}Présentation des données}{33}{subsection.4.1.1}%
-\contentsline {subsubsection}{Source de données}{33}{subsection.4.1.1}%
-\contentsline {subsubsection}{Description des variables}{34}{subsection.4.1.1}%
-\contentsline {subsubsection}{Pré-traitement de la Base de Données}{36}{table.caption.20}%
-\contentsline {subsection}{\numberline {4.1.2}Méthode d'analyse}{38}{subsection.4.1.2}%
-\contentsline {subsubsection}{Analyse descriptive}{38}{subsection.4.1.2}%
-\contentsline {subsubsection}{Analyse exploratoire des données}{40}{Item.29}%
-\contentsline {paragraph}{Notion de CAH}{41}{equation.4.6}%
-\contentsline {paragraph}{Formalisation mathématiques}{42}{equation.4.6}%
-\contentsline {paragraph}{Formulation mathématique}{43}{Item.31}%
-\contentsline {paragraph}{Projection sur les axes discriminants}{44}{equation.4.14}%
-\contentsline {paragraph}{Règle de classification et hypothèses probabilistes}{44}{equation.4.16}%
-\contentsline {section}{\numberline {4.2}Méthodologie de conception et de développement de la plateforme Business Partnership}{45}{section.4.2}%
-\contentsline {subsection}{\numberline {4.2.1}Conception de la base de données}{45}{subsection.4.2.1}%
-\contentsline {subsubsection}{Spécification fonctionnelle et règles de gestion}{45}{subsection.4.2.1}%
-\contentsline {subsubsection}{Schéma de la base de données}{46}{subsection.4.2.1}%
-\contentsline {subsection}{\numberline {4.2.2}Langages de programmation et frameworks utilisés}{46}{subsection.4.2.2}%
-\contentsline {chapter}{\numberline {5}Présentation des résultats}{48}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Résultats sur la cartographie des entreprises}{48}{section.5.1}%
-\contentsline {subsection}{\numberline {5.1.1}Qualité et préparation des données}{48}{subsection.5.1.1}%
-\contentsline {subsection}{\numberline {5.1.2}Résultats de l'analyse univariée}{49}{subsection.5.1.2}%
-\contentsline {subsubsection}{Répartition des entreprises par statut juridique}{49}{subsection.5.1.2}%
-\contentsline {subsubsection}{Répartition des entreprises par région}{51}{figure.caption.23}%
-\contentsline {subsubsection}{Répartition des entreprises par taille}{51}{figure.caption.24}%
-\contentsline {subsubsection}{Répartition des entreprises par ancienneté}{52}{figure.caption.25}%
-\contentsline {subsubsection}{Répartition des entreprises par secteur d'activité}{53}{figure.caption.26}%
-\contentsline {subsubsection}{Répartition des besoins exprimés}{54}{figure.caption.27}%
-\contentsline {subsection}{\numberline {5.1.3}Résultats de l'analyse bivariée}{55}{subsection.5.1.3}%
-\contentsline {subsubsection}{Répartition des besoins selon le statut juridique}{55}{subsection.5.1.3}%
-\contentsline {subsubsection}{Répartition des besoins selon la région}{57}{table.caption.30}%
-\contentsline {subsubsection}{Répartition des besoins selon l'ancienneté}{58}{table.caption.32}%
-\contentsline {subsubsection}{Répartition des besoins selon le secteur d'activité}{59}{table.caption.34}%
-\contentsline {subsubsection}{Répartition des besoins selon la taille de l'entreprise}{60}{table.caption.36}%
-\contentsline {subsection}{\numberline {5.1.4}Résultats de l'analyse multidimensionnelle}{61}{subsection.5.1.4}%
-\contentsline {subsubsection}{Analyse des Correspondances Multiples (ACM)}{61}{subsection.5.1.4}%
-\contentsline {paragraph}{Valeurs propres et inertie expliquée}{61}{subsection.5.1.4}%
-\contentsline {paragraph}{Projection des modalités sur le premier plan factoriel}{62}{figure.caption.39}%
-\contentsline {paragraph}{Variables contribuant aux axes factoriels}{63}{figure.caption.40}%
-\contentsline {subsubsection}{Classification Ascendante Hiérarchique (CAH)}{64}{figure.caption.41}%
-\contentsline {paragraph}{Dendrogramme et choix du nombre de classes}{64}{figure.caption.41}%
-\contentsline {paragraph}{Visualisation de la partition obtenue}{64}{figure.caption.42}%
-\contentsline {subsubsection}{Analyse Factorielle Discriminante (AFD)}{65}{figure.caption.45}%
-\contentsline {paragraph}{Axes discriminants et pouvoir discriminant}{66}{figure.caption.45}%
-\contentsline {paragraph}{Les axes factoriels obtenus}{66}{figure.caption.46}%
-\contentsline {paragraph}{Fonction LD1 — Axe de discrimination principal}{67}{table.caption.47}%
-\contentsline {paragraph}{Fonction LD2 — Axe secondaire de séparation}{67}{table.caption.47}%
-\contentsline {paragraph}{Précision globale (Accuracy)}{68}{table.caption.48}%
-\contentsline {paragraph}{Indice Kappa de Cohen}{68}{table.caption.48}%
-\contentsline {paragraph}{Comparaison au classifieur naïf}{68}{table.caption.48}%
-\contentsline {paragraph}{Significativité statistique}{68}{table.caption.48}%
-\contentsline {section}{\numberline {5.2}Présentation de la plateforme \textit {Business Partnership}}{69}{section.5.2}%
-\contentsline {subsection}{\numberline {5.2.1}Architecture générale de la plateforme}{69}{subsection.5.2.1}%
-\contentsline {subsection}{\numberline {5.2.2}Interface utilisateur}{69}{subsection.5.2.2}%
-\contentsline {subsubsection}{Page de login}{69}{subsection.5.2.2}%
-\contentsline {subsubsection}{Page de création de compte}{70}{figure.caption.49}%
-\contentsline {subsubsection}{Validation de compte par l'administrateur}{70}{figure.caption.50}%
-\contentsline {subsubsection}{Tableau de bord de l'entreprise}{71}{figure.caption.52}%
-\contentsline {subsubsection}{Tableau de bord administrateur}{72}{figure.caption.53}%
-\contentsline {subsubsection}{Requ\^ete pour la mise en relation}{72}{figure.caption.54}%
-\contentsline {subsection}{\numberline {5.2.3}Perspectives}{73}{subsection.5.2.3}%
-\contentsline {section}{\numberline {5.3}Tests de l'application}{73}{section.5.3}%
-\contentsline {subsection}{\numberline {5.3.1}Stratégie de test}{73}{subsection.5.3.1}%
-\contentsline {subsection}{\numberline {5.3.2}Couverture fonctionnelle}{73}{subsection.5.3.2}%
-\contentsline {subsection}{\numberline {5.3.3}Faits saillants}{74}{subsection.5.3.3}%
-\contentsline {chapter}{Conclusion Générale}{75}{chapter*.57}%
-\contentsline {chapter}{\numberline {6}Questionnaire de l'enquête MINEPAT 2025}{79}{chapter.6}%
-\contentsline {chapter}{\numberline {7}Publication de l'annonce}{83}{chapter.7}%
+\contentsline {subsection}{\numberline {1.2.3}Objectifs du mémoire}{12}{subsection.1.2.3}%
+\contentsline {subsection}{\numberline {1.2.4}Méthodologie générale}{12}{subsection.1.2.4}%
+\contentsline {subsubsection}{Méthodologie d'analyse des données}{12}{subsection.1.2.4}%
+\contentsline {subsubsection}{Méthodologie de conception de la plateforme}{13}{subsection.1.2.4}%
+\contentsline {subsubsection}{M\'ethodologie agile Kanban}{13}{subsection.1.2.4}%
+\contentsline {chapter}{\numberline {2}Définition des concepts et état de l’art}{16}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Définition des concepts }{17}{section.2.1}%
+\contentsline {subsection}{\numberline {2.1.1}Cartographie des besoins des entreprises}{17}{subsection.2.1.1}%
+\contentsline {subsection}{\numberline {2.1.2}Mise en relation des entreprises}{17}{subsection.2.1.2}%
+\contentsline {subsubsection}{Plateformes numériques B2B}{18}{subsection.2.1.2}%
+\contentsline {subsubsection}{Bourse de Sous Traitance et de Partenariat}{18}{subsection.2.1.2}%
+\contentsline {subsubsection}{Partenariats contractuels directs}{19}{subsection.2.1.2}%
+\contentsline {section}{\numberline {2.2}État de l'art}{19}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}Enquêtes en vue de la cartographie des besoins des entreprises}{19}{subsection.2.2.1}%
+\contentsline {subsubsection}{Enquete du GECAM}{20}{subsection.2.2.1}%
+\contentsline {subsubsection}{Redaction du document de stratégie pour le developpement du secteur industriel par le MINEPAT}{21}{figure.caption.13}%
+\contentsline {subsubsection}{Enquete sur le climat des affaires par le MINEPAT}{21}{figure.caption.13}%
+\contentsline {subsubsection}{Recensement Général des Entreprises par l'INS}{22}{figure.caption.13}%
+\contentsline {subsection}{\numberline {2.2.2}\'Etat de l'art}{23}{subsection.2.2.2}%
+\contentsline {subsubsection}{Syst\`emes de recommandation et mise en relation d'entreprises}{23}{subsection.2.2.2}%
+\contentsline {subsubsection}{Plateforme de mise en relation~: travaux existants}{24}{subsection.2.2.2}%
+\contentsline {subsubsection}{Limites des plateformes commerciales existantes}{24}{subsection.2.2.2}%
+\contentsline {chapter}{\numberline {3}Cahier des charges de la plateforme \textit {Business Partnership}}{26}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Périmètre du projet et identification des acteurs}{26}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}Périmétre du projet}{26}{subsection.3.1.1}%
+\contentsline {subsubsection}{Contexte institutionnel}{26}{subsection.3.1.1}%
+\contentsline {subsubsection}{Périmètre fonctionnel}{26}{subsection.3.1.1}%
+\contentsline {subsection}{\numberline {3.1.2}Identifications des acteurs}{27}{subsection.3.1.2}%
+\contentsline {subsubsection}{L'entreprise (acteur principal)}{27}{subsection.3.1.2}%
+\contentsline {subsubsection}{L'administrateur}{27}{subsection.3.1.2}%
+\contentsline {subsubsection}{Le visiteur}{27}{subsection.3.1.2}%
+\contentsline {section}{\numberline {3.2}Spécifications fonctionnelles et non fonctionnelles}{28}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}Spécifications fonctionnelles}{28}{subsection.3.2.1}%
+\contentsline {subsubsection}{Gestion des comptes et authentification}{28}{subsection.3.2.1}%
+\contentsline {subsubsection}{Gestion des besoins}{29}{subsection.3.2.1}%
+\contentsline {subsubsection}{Administration de la plateforme}{29}{Item.27}%
+\contentsline {subsection}{\numberline {3.2.2}Spécifications non fonctionnelles}{29}{subsection.3.2.2}%
+\contentsline {subsubsection}{Exigences de sécurité}{30}{subsection.3.2.2}%
+\contentsline {subsubsection}{Exigences d'accessibilité et d'ergonomie}{30}{subsection.3.2.2}%
+\contentsline {subsubsection}{Diagramme des cas d'usage}{30}{subsection.3.2.2}%
+\contentsline {subsection}{\numberline {3.2.3}Architecture logicielle}{31}{subsection.3.2.3}%
+\contentsline {subsection}{\numberline {3.2.4}Limites de la plateforme}{32}{subsection.3.2.4}%
+\contentsline {subsubsection}{Limites relatives aux donn\'ees}{32}{subsection.3.2.4}%
+\contentsline {subsubsection}{Limites du moteur de mise en relation}{33}{subsection.3.2.4}%
+\contentsline {subsubsection}{Limites techniques}{33}{subsection.3.2.4}%
+\contentsline {chapter}{\numberline {4}Cartographie des besoins, conception et modélisation de la plateforme}{34}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Méthodologie d'analyse pour la cartographie des besoins des entreprises}{34}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}Présentation des données}{34}{subsection.4.1.1}%
+\contentsline {subsubsection}{Source de données}{34}{subsection.4.1.1}%
+\contentsline {subsubsection}{Description des variables}{35}{subsection.4.1.1}%
+\contentsline {subsubsection}{Pré-traitement de la Base de Données}{37}{table.caption.20}%
+\contentsline {subsection}{\numberline {4.1.2}Méthode d'analyse}{39}{subsection.4.1.2}%
+\contentsline {subsubsection}{Analyse descriptive}{39}{subsection.4.1.2}%
+\contentsline {subsubsection}{Analyse exploratoire des données}{41}{Item.29}%
+\contentsline {paragraph}{Notion de CAH}{42}{equation.4.6}%
+\contentsline {paragraph}{Formalisation mathématiques}{43}{equation.4.6}%
+\contentsline {paragraph}{Formulation mathématique}{44}{Item.31}%
+\contentsline {paragraph}{Projection sur les axes discriminants}{45}{equation.4.14}%
+\contentsline {paragraph}{Règle de classification et hypothèses probabilistes}{45}{equation.4.16}%
+\contentsline {section}{\numberline {4.2}Méthodologie de conception et de développement de la plateforme Business Partnership}{46}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Conception de la base de données}{46}{subsection.4.2.1}%
+\contentsline {subsubsection}{Spécification fonctionnelle et règles de gestion}{46}{subsection.4.2.1}%
+\contentsline {subsubsection}{Schéma de la base de données}{47}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.2}Langages de programmation et frameworks utilisés}{47}{subsection.4.2.2}%
+\contentsline {chapter}{\numberline {5}Présentation des résultats}{49}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Résultats sur la cartographie des entreprises}{49}{section.5.1}%
+\contentsline {subsection}{\numberline {5.1.1}Qualité et préparation des données}{49}{subsection.5.1.1}%
+\contentsline {subsection}{\numberline {5.1.2}Résultats de l'analyse univariée}{50}{subsection.5.1.2}%
+\contentsline {subsubsection}{Répartition des entreprises par statut juridique}{50}{subsection.5.1.2}%
+\contentsline {subsubsection}{Répartition des entreprises par région}{52}{figure.caption.23}%
+\contentsline {subsubsection}{Répartition des entreprises par taille}{52}{figure.caption.24}%
+\contentsline {subsubsection}{Répartition des entreprises par ancienneté}{53}{figure.caption.25}%
+\contentsline {subsubsection}{Répartition des entreprises par secteur d'activité}{54}{figure.caption.26}%
+\contentsline {subsubsection}{Répartition des besoins exprimés}{55}{figure.caption.27}%
+\contentsline {subsection}{\numberline {5.1.3}Résultats de l'analyse bivariée}{56}{subsection.5.1.3}%
+\contentsline {subsubsection}{Répartition des besoins selon le statut juridique}{56}{subsection.5.1.3}%
+\contentsline {subsubsection}{Répartition des besoins selon la région}{58}{table.caption.30}%
+\contentsline {subsubsection}{Répartition des besoins selon l'ancienneté}{59}{table.caption.32}%
+\contentsline {subsubsection}{Répartition des besoins selon le secteur d'activité}{60}{table.caption.34}%
+\contentsline {subsubsection}{Répartition des besoins selon la taille de l'entreprise}{61}{table.caption.36}%
+\contentsline {subsection}{\numberline {5.1.4}Résultats de l'analyse multidimensionnelle}{62}{subsection.5.1.4}%
+\contentsline {subsubsection}{Analyse des Correspondances Multiples (ACM)}{62}{subsection.5.1.4}%
+\contentsline {paragraph}{Valeurs propres et inertie expliquée}{62}{subsection.5.1.4}%
+\contentsline {paragraph}{Projection des modalités sur le premier plan factoriel}{63}{figure.caption.39}%
+\contentsline {paragraph}{Variables contribuant aux axes factoriels}{64}{figure.caption.40}%
+\contentsline {subsubsection}{Classification Ascendante Hiérarchique (CAH)}{65}{figure.caption.41}%
+\contentsline {paragraph}{Dendrogramme et choix du nombre de classes}{65}{figure.caption.41}%
+\contentsline {paragraph}{Visualisation de la partition obtenue}{65}{figure.caption.42}%
+\contentsline {subsubsection}{Analyse Factorielle Discriminante (AFD)}{66}{figure.caption.45}%
+\contentsline {paragraph}{Axes discriminants et pouvoir discriminant}{67}{figure.caption.45}%
+\contentsline {paragraph}{Les axes factoriels obtenus}{67}{figure.caption.46}%
+\contentsline {paragraph}{Fonction LD1 — Axe de discrimination principal}{68}{table.caption.47}%
+\contentsline {paragraph}{Fonction LD2 — Axe secondaire de séparation}{68}{table.caption.47}%
+\contentsline {paragraph}{Précision globale (Accuracy)}{69}{table.caption.48}%
+\contentsline {paragraph}{Indice Kappa de Cohen}{69}{table.caption.48}%
+\contentsline {paragraph}{Comparaison au classifieur naïf}{69}{table.caption.48}%
+\contentsline {paragraph}{Significativité statistique}{69}{table.caption.48}%
+\contentsline {section}{\numberline {5.2}Présentation de la plateforme \textit {Business Partnership}}{70}{section.5.2}%
+\contentsline {subsection}{\numberline {5.2.1}Architecture générale de la plateforme}{70}{subsection.5.2.1}%
+\contentsline {subsection}{\numberline {5.2.2}Interface utilisateur}{70}{subsection.5.2.2}%
+\contentsline {subsubsection}{Page de login}{70}{subsection.5.2.2}%
+\contentsline {subsubsection}{Page de création de compte}{71}{figure.caption.49}%
+\contentsline {subsubsection}{Validation de compte par l'administrateur}{71}{figure.caption.50}%
+\contentsline {subsubsection}{Tableau de bord de l'entreprise}{72}{figure.caption.52}%
+\contentsline {subsubsection}{Tableau de bord administrateur}{73}{figure.caption.53}%
+\contentsline {subsubsection}{Requ\^ete pour la mise en relation}{73}{figure.caption.54}%
+\contentsline {subsection}{\numberline {5.2.3}Perspectives}{74}{subsection.5.2.3}%
+\contentsline {section}{\numberline {5.3}Tests de l'application}{74}{section.5.3}%
+\contentsline {subsection}{\numberline {5.3.1}Stratégie de test}{74}{subsection.5.3.1}%
+\contentsline {subsection}{\numberline {5.3.2}Couverture fonctionnelle}{74}{subsection.5.3.2}%
+\contentsline {subsection}{\numberline {5.3.3}Faits saillants}{75}{subsection.5.3.3}%
+\contentsline {chapter}{Conclusion Générale}{76}{chapter*.57}%
 \contentsfinish 

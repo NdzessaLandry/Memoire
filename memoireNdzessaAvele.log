@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.5.12)  14 JUL 2026 12:48
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.5.12)  15 JUL 2026 08:45
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1779,21 +1779,6 @@ LaTeX Warning: Label `sec:etat_art' multiply defined.
 
 LaTeX Warning: Label `fig:admin' multiply defined.
 
-
-LaTeX Warning: Label `fig:admin' multiply defined.
-
-
-LaTeX Warning: Label `fig:admin' multiply defined.
-
-
-LaTeX Warning: Label `fig:admin' multiply defined.
-
-
-LaTeX Warning: Label `fig:admin' multiply defined.
-
-
-LaTeX Warning: Label `fig:admin' multiply defined.
-
 )
 \openout1 = `memoireNdzessaAvele.aux'.
 
@@ -2165,26 +2150,26 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.504 	\chapter
+l.503 	\chapter
                *{Introduction G√©n√©rale} [1] [2
 
 ] [3]
 Chapitre 1.
 LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
-(Font)              scaled to size 17.28pt on input line 522.
+(Font)              scaled to size 17.28pt on input line 521.
 LaTeX Font Info:    Trying to load font information for TS1+ntxtlf on input lin
-e 536.
+e 535.
 
 (C:\Users\LandryNDZESSA\AppData\Local\Programs\MiKTeX\tex/latex/newtx\ts1ntxtlf
 .fd
 File: ts1ntxtlf.fd 2015/01/18 v1.0 fd file for TS1/ntxtlf
 )
 LaTeX Font Info:    Font shape `TS1/ntxtlf/m/n' will be
-(Font)              scaled to size 12.0pt on input line 536.
+(Font)              scaled to size 12.0pt on input line 535.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\gls' on input line 546.
+(hyperref)                removing `\gls' on input line 545.
 
 [4
 
@@ -2192,198 +2177,276 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 q-ts1.enc}] [5] [6]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\gls' on input line 697.
+(hyperref)                removing `\gls' on input line 696.
 
 [7]
-<Organigramme4.jpg, id=599, 369.7815pt x 298.716pt>
+<Organigramme4.jpg, id=588, 369.7815pt x 298.716pt>
 File: Organigramme4.jpg Graphic file (type jpg)
 <use Organigramme4.jpg>
-Package pdftex.def Info: Organigramme4.jpg  used on input line 723.
-(pdftex.def)             Requested size: 374.86775pt x 302.84938pt.
+Package pdftex.def Info: Organigramme4.jpg  used on input line 720.
+(pdftex.def)             Requested size: 352.81552pt x 285.03203pt.
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/sc' will be
-(Font)              scaled to size 12.0pt on input line 724.
+(Font)              scaled to size 12.0pt on input line 721.
 Package microtype Info: Character `029' is missing
 (microtype)             in font `T1/ntxtlf/m/sc/12'.
 (microtype)             Ignoring protrusion settings for this character.
 LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
-(Font)              scaled to size 10.95pt on input line 724.
+(Font)              scaled to size 10.95pt on input line 721.
 LaTeX Font Info:    Font shape `T1/ntxtlf/b/sc' will be
-(Font)              scaled to size 10.95pt on input line 724.
+(Font)              scaled to size 10.95pt on input line 721.
 Package microtype Info: Character `029' is missing
 (microtype)             in font `T1/ntxtlf/b/sc/10.95'.
 (microtype)             Ignoring protrusion settings for this character.
- [8{C:/Users/LandryNDZESSA/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/newtx/
-ntx-ec-tlf-pc.enc} <./Organigramme4.jpg>]
-Underfull \hbox (badness 10000) in paragraph at lines 731--733
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <10.95> on input line 721.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <8> on input line 721.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <6.1> on input line 721.
+LaTeX Font Info:    Font shape `U/ntxmia/m/it' will be
+(Font)              scaled to size 10.95pt on input line 721.
+LaTeX Font Info:    Font shape `U/ntxmia/m/it' will be
+(Font)              scaled to size 8.0pt on input line 721.
+LaTeX Font Info:    Font shape `U/ntxmia/m/it' will be
+(Font)              scaled to size 6.1pt on input line 721.
+LaTeX Font Info:    Font shape `U/ntxsym/m/n' will be
+(Font)              scaled to size 10.95pt on input line 721.
+LaTeX Font Info:    Font shape `U/ntxsym/m/n' will be
+(Font)              scaled to size 8.0pt on input line 721.
+LaTeX Font Info:    Font shape `U/ntxsym/m/n' will be
+(Font)              scaled to size 6.1pt on input line 721.
+LaTeX Font Info:    Font shape `U/ntxsyc/m/n' will be
+(Font)              scaled to size 10.95pt on input line 721.
+LaTeX Font Info:    Font shape `U/ntxsyc/m/n' will be
+(Font)              scaled to size 8.0pt on input line 721.
+LaTeX Font Info:    Font shape `U/ntxsyc/m/n' will be
+(Font)              scaled to size 6.1pt on input line 721.
+LaTeX Font Info:    Font shape `U/ntxexa/m/n' will be
+(Font)              scaled to size 10.95pt on input line 721.
+LaTeX Font Info:    Font shape `U/ntxexa/m/n' will be
+(Font)              scaled to size 8.0pt on input line 721.
+LaTeX Font Info:    Font shape `U/ntxexa/m/n' will be
+(Font)              scaled to size 6.1pt on input line 721.
+
+Missing character: There is no π in font lmsy10!
+LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
+(Font)              scaled to size 8.0pt on input line 721.
+LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
+(Font)              scaled to size 10.0pt on input line 724.
+[8{C:/Users/LandryNDZESSA/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/newtx/n
+tx-ec-tlf-pc.enc} <./Organigramme4.jpg>]
+Underfull \hbox (badness 10000) in paragraph at lines 728--730
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 734--735
+Underfull \hbox (badness 10000) in paragraph at lines 731--732
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 736--737
+Underfull \hbox (badness 10000) in paragraph at lines 733--734
 
  []
 
 [9]
-Underfull \hbox (badness 10000) in paragraph at lines 743--744
+Underfull \hbox (badness 10000) in paragraph at lines 740--741
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 745--746
+Underfull \hbox (badness 10000) in paragraph at lines 742--743
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 747--748
+Underfull \hbox (badness 10000) in paragraph at lines 744--745
 
  []
 
-[10] [11] [12]
-<methodeAgile.jpeg, id=663, 675.52374pt x 371.3875pt>
+[10] [11]
+Missing character: There is no π in font lmsy10!
+[12] [13]
+<methodeAgile.jpeg, id=658, 675.52374pt x 371.3875pt>
 File: methodeAgile.jpeg Graphic file (type jpg)
 <use methodeAgile.jpeg>
-Package pdftex.def Info: methodeAgile.jpeg  used on input line 920.
+Package pdftex.def Info: methodeAgile.jpeg  used on input line 917.
 (pdftex.def)             Requested size: 352.81552pt x 193.97264pt.
- [13] [14 <./methodeAgile.jpeg>]
+
+Missing character: There is no π in font lmsy10!
+[14] [15 <./methodeAgile.jpeg>]
 Chapitre 2.
-[15
+[16
 
-] [16] [17]
-Underfull \hbox (badness 10000) in paragraph at lines 998--999
-
- []
-
-[18]
-Underfull \hbox (badness 10000) in paragraph at lines 1001--1002
+] [17] [18]
+Underfull \hbox (badness 10000) in paragraph at lines 996--997
 
  []
 
-<enqueteGecam.png, id=710, 450.18187pt x 403.5075pt>
+[19]
+Underfull \hbox (badness 10000) in paragraph at lines 999--1000
+
+ []
+
+<enqueteGecam.png, id=707, 450.18187pt x 403.5075pt>
 File: enqueteGecam.png Graphic file (type png)
 <use enqueteGecam.png>
-Package pdftex.def Info: enqueteGecam.png  used on input line 1005.
+Package pdftex.def Info: enqueteGecam.png  used on input line 1003.
 (pdftex.def)             Requested size: 352.81552pt x 316.2492pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 1011--1012
+Underfull \hbox (badness 10000) in paragraph at lines 1009--1010
 
  []
 
-[19 <./enqueteGecam.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 1014--1015
+[20 <./enqueteGecam.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 1012--1013
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1017--1018
+Underfull \hbox (badness 10000) in paragraph at lines 1015--1016
 
  []
 
-[20]
-<zoneRecensement.png, id=724, 400.49625pt x 551.05875pt>
+[21]
+<zoneRecensement.png, id=722, 400.49625pt x 551.05875pt>
 File: zoneRecensement.png Graphic file (type png)
 <use zoneRecensement.png>
-Package pdftex.def Info: zoneRecensement.png  used on input line 1021.
+Package pdftex.def Info: zoneRecensement.png  used on input line 1019.
 (pdftex.def)             Requested size: 352.81552pt x 485.47974pt.
- [21] [22 <./zoneRecensement.png>] [23] [24]
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <10> on input line 1023.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <7.3> on input line 1023.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <5.5> on input line 1023.
+LaTeX Font Info:    Font shape `U/ntxmia/m/it' will be
+(Font)              scaled to size 10.0pt on input line 1023.
+LaTeX Font Info:    Font shape `U/ntxmia/m/it' will be
+(Font)              scaled to size 7.3pt on input line 1023.
+LaTeX Font Info:    Font shape `U/ntxmia/m/it' will be
+(Font)              scaled to size 5.5pt on input line 1023.
+LaTeX Font Info:    Font shape `U/ntxsym/m/n' will be
+(Font)              scaled to size 10.0pt on input line 1023.
+LaTeX Font Info:    Font shape `U/ntxsym/m/n' will be
+(Font)              scaled to size 7.3pt on input line 1023.
+LaTeX Font Info:    Font shape `U/ntxsym/m/n' will be
+(Font)              scaled to size 5.5pt on input line 1023.
+LaTeX Font Info:    Font shape `U/ntxsyc/m/n' will be
+(Font)              scaled to size 10.0pt on input line 1023.
+LaTeX Font Info:    Font shape `U/ntxsyc/m/n' will be
+(Font)              scaled to size 7.3pt on input line 1023.
+LaTeX Font Info:    Font shape `U/ntxsyc/m/n' will be
+(Font)              scaled to size 5.5pt on input line 1023.
+LaTeX Font Info:    Font shape `U/ntxexa/m/n' will be
+(Font)              scaled to size 10.0pt on input line 1023.
+LaTeX Font Info:    Font shape `U/ntxexa/m/n' will be
+(Font)              scaled to size 7.3pt on input line 1023.
+LaTeX Font Info:    Font shape `U/ntxexa/m/n' will be
+(Font)              scaled to size 5.5pt on input line 1023.
+
+Missing character: There is no π in font lmsy10!
+LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
+(Font)              scaled to size 7.3pt on input line 1023.
+LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
+(Font)              scaled to size 5.5pt on input line 1023.
+[22] [23 <./zoneRecensement.png>] [24] [25]
 Chapitre 3.
 LaTeX Font Info:    Font shape `T1/ntxtlf/b/it' will be
-(Font)              scaled to size 24.88pt on input line 1124.
-[25
+(Font)              scaled to size 24.88pt on input line 1122.
+[26
 
-] [26] [27] [28]
+]
+Missing character: There is no π in font lmsy10!
+[27] [28] [29]
 <UseCase1.png, id=788, 435.12563pt x 398.99063pt>
 File: UseCase1.png Graphic file (type png)
 <use UseCase1.png>
-Package pdftex.def Info: UseCase1.png  used on input line 1438.
+Package pdftex.def Info: UseCase1.png  used on input line 1436.
 (pdftex.def)             Requested size: 374.86775pt x 343.7584pt.
- [29]
+ [30]
 <UseCase2.png, id=794, 429.10312pt x 330.23375pt>
 File: UseCase2.png Graphic file (type png)
 <use UseCase2.png>
-Package pdftex.def Info: UseCase2.png  used on input line 1445.
+Package pdftex.def Info: UseCase2.png  used on input line 1443.
 (pdftex.def)             Requested size: 374.86775pt x 288.49525pt.
- [30 <./UseCase1.png>] [31 <./UseCase2.png>] [32]
+ [31 <./UseCase1.png>] [32 <./UseCase2.png>] [33]
 Chapitre 4.
-[33
+[34
 
 ]
-Overfull \hbox (27.72952pt too wide) in paragraph at lines 1662--1662
+Overfull \hbox (27.72952pt too wide) in paragraph at lines 1647--1647
 []|\T1/lmtt/m/n/12 autre_statut_juridique|  
  []
 
 
-Overfull \hbox (9.20451pt too wide) in paragraph at lines 1662--1662
+Overfull \hbox (9.20451pt too wide) in paragraph at lines 1647--1647
 []|\T1/lmtt/m/n/12 date_debut_activite|  
  []
 
-[34]
-Overfull \vbox (117.1305pt too high) has occurred while \output is active []
-
-
 [35]
-Overfull \hbox (15.37952pt too wide) in paragraph at lines 1713--1713
+Overfull \vbox (8.38058pt too high) has occurred while \output is active []
+
+
+[36]
+Overfull \hbox (15.37952pt too wide) in paragraph at lines 1698--1698
 []|\T1/lmtt/m/n/12 plateforme_existante|  
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1723--1724
+Underfull \hbox (badness 10000) in paragraph at lines 1708--1709
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1727--1728
-
- []
-
-[36]
-Underfull \hbox (badness 10000) in paragraph at lines 1729--1731
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1735--1736
+Underfull \hbox (badness 10000) in paragraph at lines 1712--1713
 
  []
 
 [37]
-Underfull \hbox (badness 10000) in paragraph at lines 1747--1748
+Underfull \hbox (badness 10000) in paragraph at lines 1714--1716
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1749--1750
+Underfull \hbox (badness 10000) in paragraph at lines 1720--1721
 
  []
 
 [38]
-Underfull \hbox (badness 10000) in paragraph at lines 1754--1755
+Underfull \hbox (badness 10000) in paragraph at lines 1732--1733
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1756--1757
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1758--1759
+Underfull \hbox (badness 10000) in paragraph at lines 1734--1735
 
  []
 
 [39]
+Underfull \hbox (badness 10000) in paragraph at lines 1739--1740
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1741--1742
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1743--1744
+
+ []
+
+[40]
 Missing character: There is no Õ in font lmex10!
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
-(Font)              scaled to size 8.8pt on input line 1795.
+(Font)              scaled to size 8.8pt on input line 1780.
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
-(Font)              scaled to size 6.6pt on input line 1795.
+(Font)              scaled to size 6.6pt on input line 1780.
 Missing character: There is no π in font lmsy9!
 Missing character: There is no ∫ in font lmsy9!
-[40{C:/Users/LandryNDZESSA/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-
+[41{C:/Users/LandryNDZESSA/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-
 mathsy.enc}{C:/Users/LandryNDZESSA/AppData/Local/Programs/MiKTeX/fonts/enc/dvip
 s/lm/lm-mathex.enc}]
 Missing character: There is no Õ in font lmex10!
@@ -2392,95 +2455,95 @@ Missing character: There is no π in font lmsy10!
 Missing character: There is no ∫ in font lmsy10!
 Missing character: There is no Õ in font lmex10!
 
-Underfull \hbox (badness 10000) in paragraph at lines 1879--1880
+Underfull \hbox (badness 10000) in paragraph at lines 1864--1865
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1881--1882
+Underfull \hbox (badness 10000) in paragraph at lines 1866--1867
 
  []
 
-[41]
-Underfull \hbox (badness 10000) in paragraph at lines 1883--1884
-
- []
-
-Missing character: There is no π in font lmsy10!
-Missing character: There is no ∫ in font lmsy10!
-Missing character: There is no Õ in font lmex10!
-Missing character: There is no π in font lmsy10!
-Missing character: There is no ∫ in font lmsy10!
-Missing character: There is no œ in font lmsy10!
-Missing character: There is no π in font lmsy10!
-Missing character: There is no ∫ in font lmsy10!
 [42]
-Missing character: There is no œ in font lmsy10!
-LaTeX Font Info:    Font shape `U/ntxmia/b/it' will be
-(Font)              scaled to size 12.0pt on input line 1939.
-LaTeX Font Info:    Font shape `U/ntxmia/b/it' will be
-(Font)              scaled to size 8.8pt on input line 1939.
-LaTeX Font Info:    Font shape `U/ntxmia/b/it' will be
-(Font)              scaled to size 6.6pt on input line 1939.
-LaTeX Font Info:    Font shape `U/ntxsym/b/n' will be
-(Font)              scaled to size 12.0pt on input line 1939.
-LaTeX Font Info:    Font shape `U/ntxsym/b/n' will be
-(Font)              scaled to size 8.8pt on input line 1939.
-LaTeX Font Info:    Font shape `U/ntxsym/b/n' will be
-(Font)              scaled to size 6.6pt on input line 1939.
-LaTeX Font Info:    Font shape `U/ntxsyc/b/n' will be
-(Font)              scaled to size 12.0pt on input line 1939.
-LaTeX Font Info:    Font shape `U/ntxsyc/b/n' will be
-(Font)              scaled to size 8.8pt on input line 1939.
-LaTeX Font Info:    Font shape `U/ntxsyc/b/n' will be
-(Font)              scaled to size 6.6pt on input line 1939.
-LaTeX Font Info:    Font shape `U/ntxexa/b/n' will be
-(Font)              scaled to size 12.0pt on input line 1939.
-LaTeX Font Info:    Font shape `U/ntxexa/b/n' will be
-(Font)              scaled to size 8.8pt on input line 1939.
-LaTeX Font Info:    Font shape `U/ntxexa/b/n' will be
-(Font)              scaled to size 6.6pt on input line 1939.
-Missing character: There is no π in font lmbsy10!
+Underfull \hbox (badness 10000) in paragraph at lines 1868--1869
+
+ []
+
 Missing character: There is no π in font lmsy10!
-Missing character: There is no π in font lmbsy10!
-Missing character: There is no π in font lmsy10!
-Missing character: There is no Õ in font lmex10!
-Missing character: There is no Õ in font lmex10!
-Missing character: There is no π in font lmbsy10!
-Missing character: There is no π in font lmsy10!
-Missing character: There is no π in font lmbsy10!
-Missing character: There is no π in font lmsy10!
-Missing character: There is no π in font lmbsy10!
-Missing character: There is no π in font lmsy10!
-Missing character: There is no π in font lmbsy10!
-Missing character: There is no π in font lmsy10!
-Missing character: There is no Õ in font lmex10!
-Missing character: There is no π in font lmbsy10!
-Missing character: There is no π in font lmsy10!
-Missing character: There is no π in font lmbsy10!
-Missing character: There is no π in font lmsy10!
-Missing character: There is no Õ in font lmex10!
-Missing character: There is no Õ in font lmex10!
-Missing character: There is no π in font lmbsy10!
-Missing character: There is no π in font lmsy10!
-Missing character: There is no π in font lmbsy10!
-Missing character: There is no π in font lmsy10!
-Missing character: There is no π in font lmbsy10!
-Missing character: There is no π in font lmsy10!
-Missing character: There is no π in font lmbsy10!
-Missing character: There is no π in font lmsy10!
-Missing character: There is no Õ in font lmex10!
-Missing character: There is no π in font lmbsy10!
-Missing character: There is no π in font lmsy10!
-Missing character: There is no Õ in font lmex10!
-Missing character: There is no π in font lmbsy10!
-Missing character: There is no π in font lmsy10!
+Missing character: There is no ∫ in font lmsy10!
 Missing character: There is no Õ in font lmex10!
 Missing character: There is no π in font lmsy10!
 Missing character: There is no ∫ in font lmsy10!
+Missing character: There is no œ in font lmsy10!
 Missing character: There is no π in font lmsy10!
 Missing character: There is no ∫ in font lmsy10!
 [43]
+Missing character: There is no œ in font lmsy10!
+LaTeX Font Info:    Font shape `U/ntxmia/b/it' will be
+(Font)              scaled to size 12.0pt on input line 1924.
+LaTeX Font Info:    Font shape `U/ntxmia/b/it' will be
+(Font)              scaled to size 8.8pt on input line 1924.
+LaTeX Font Info:    Font shape `U/ntxmia/b/it' will be
+(Font)              scaled to size 6.6pt on input line 1924.
+LaTeX Font Info:    Font shape `U/ntxsym/b/n' will be
+(Font)              scaled to size 12.0pt on input line 1924.
+LaTeX Font Info:    Font shape `U/ntxsym/b/n' will be
+(Font)              scaled to size 8.8pt on input line 1924.
+LaTeX Font Info:    Font shape `U/ntxsym/b/n' will be
+(Font)              scaled to size 6.6pt on input line 1924.
+LaTeX Font Info:    Font shape `U/ntxsyc/b/n' will be
+(Font)              scaled to size 12.0pt on input line 1924.
+LaTeX Font Info:    Font shape `U/ntxsyc/b/n' will be
+(Font)              scaled to size 8.8pt on input line 1924.
+LaTeX Font Info:    Font shape `U/ntxsyc/b/n' will be
+(Font)              scaled to size 6.6pt on input line 1924.
+LaTeX Font Info:    Font shape `U/ntxexa/b/n' will be
+(Font)              scaled to size 12.0pt on input line 1924.
+LaTeX Font Info:    Font shape `U/ntxexa/b/n' will be
+(Font)              scaled to size 8.8pt on input line 1924.
+LaTeX Font Info:    Font shape `U/ntxexa/b/n' will be
+(Font)              scaled to size 6.6pt on input line 1924.
+Missing character: There is no π in font lmbsy10!
+Missing character: There is no π in font lmsy10!
+Missing character: There is no π in font lmbsy10!
+Missing character: There is no π in font lmsy10!
+Missing character: There is no Õ in font lmex10!
+Missing character: There is no Õ in font lmex10!
+Missing character: There is no π in font lmbsy10!
+Missing character: There is no π in font lmsy10!
+Missing character: There is no π in font lmbsy10!
+Missing character: There is no π in font lmsy10!
+Missing character: There is no π in font lmbsy10!
+Missing character: There is no π in font lmsy10!
+Missing character: There is no π in font lmbsy10!
+Missing character: There is no π in font lmsy10!
+Missing character: There is no Õ in font lmex10!
+Missing character: There is no π in font lmbsy10!
+Missing character: There is no π in font lmsy10!
+Missing character: There is no π in font lmbsy10!
+Missing character: There is no π in font lmsy10!
+Missing character: There is no Õ in font lmex10!
+Missing character: There is no Õ in font lmex10!
+Missing character: There is no π in font lmbsy10!
+Missing character: There is no π in font lmsy10!
+Missing character: There is no π in font lmbsy10!
+Missing character: There is no π in font lmsy10!
+Missing character: There is no π in font lmbsy10!
+Missing character: There is no π in font lmsy10!
+Missing character: There is no π in font lmbsy10!
+Missing character: There is no π in font lmsy10!
+Missing character: There is no Õ in font lmex10!
+Missing character: There is no π in font lmbsy10!
+Missing character: There is no π in font lmsy10!
+Missing character: There is no Õ in font lmex10!
+Missing character: There is no π in font lmbsy10!
+Missing character: There is no π in font lmsy10!
+Missing character: There is no Õ in font lmex10!
+Missing character: There is no π in font lmsy10!
+Missing character: There is no ∫ in font lmsy10!
+Missing character: There is no π in font lmsy10!
+Missing character: There is no ∫ in font lmsy10!
+[44]
 Missing character: There is no Õ in font lmex10!
 Missing character: There is no π in font lmsy9!
 Missing character: There is no ∫ in font lmsy9!
@@ -2541,7 +2604,7 @@ Missing character: There is no ∫ in font lmsy10!
 Missing character: There is no œ in font lmsy10!
 Missing character: There is no π in font lmsy10!
 Missing character: There is no ∫ in font lmsy10!
-[44]
+[45]
 Missing character: There is no π in font lmsy10!
 Missing character: There is no ∫ in font lmsy10!
 Missing character: There is no π in font lmsy10!
@@ -2568,294 +2631,265 @@ Missing character: There is no π in font lmsy10!
 Missing character: There is no Õ in font lmex10!
 Missing character: There is no π in font lmsy10!
 Missing character: There is no ∫ in font lmsy10!
-[45]
-<schema_base_dimensionnelle.png, id=919, 2730.2pt x 2248.4pt>
-File: schema_base_dimensionnelle.png Graphic file (type png)
-<use schema_base_dimensionnelle.png>
-Package pdftex.def Info: schema_base_dimensionnelle.png  used on input line 204
-1.
-(pdftex.def)             Requested size: 352.81552pt x 290.55257pt.
- [46 <./schema_base_dimensionnelle.png>] [47]
+[46]
+<model1.png, id=919, 654.445pt x 453.695pt>
+File: model1.png Graphic file (type png)
+<use model1.png>
+Package pdftex.def Info: model1.png  used on input line 2026.
+(pdftex.def)             Requested size: 352.81552pt x 244.59012pt.
+ [47 <./model1.png>] [48]
 Chapitre 5.
-[48
+[49
 
 ]
 <statut.jpeg, id=939, 655.44875pt x 614.295pt>
 File: statut.jpeg Graphic file (type jpg)
 <use statut.jpeg>
-Package pdftex.def Info: statut.jpeg  used on input line 2166.
+Package pdftex.def Info: statut.jpeg  used on input line 2151.
 (pdftex.def)             Requested size: 330.76329pt x 309.99625pt.
- [49] [50 <./statut.jpeg>]
-<repartition_region.jpeg, id=948, 614.295pt x 614.295pt>
+ [50] [51 <./statut.jpeg>]
+<repartition_region.jpeg, id=949, 614.295pt x 614.295pt>
 File: repartition_region.jpeg Graphic file (type jpg)
 <use repartition_region.jpeg>
-Package pdftex.def Info: repartition_region.jpeg  used on input line 2177.
+Package pdftex.def Info: repartition_region.jpeg  used on input line 2162.
 (pdftex.def)             Requested size: 330.76329pt x 330.76764pt.
-<repartition_taille.jpeg, id=949, 655.44875pt x 614.295pt>
+<repartition_taille.jpeg, id=950, 655.44875pt x 614.295pt>
 File: repartition_taille.jpeg Graphic file (type jpg)
 <use repartition_taille.jpeg>
-Package pdftex.def Info: repartition_taille.jpeg  used on input line 2190.
+Package pdftex.def Info: repartition_taille.jpeg  used on input line 2175.
 (pdftex.def)             Requested size: 330.76329pt x 309.99625pt.
- [51 <./repartition_region.jpeg>]
+ [52 <./repartition_region.jpeg>]
 <anciennete.jpeg, id=955, 614.295pt x 614.295pt>
 File: anciennete.jpeg Graphic file (type jpg)
 <use anciennete.jpeg>
-Package pdftex.def Info: anciennete.jpeg  used on input line 2201.
+Package pdftex.def Info: anciennete.jpeg  used on input line 2186.
 (pdftex.def)             Requested size: 330.76329pt x 330.76764pt.
- [52 <./repartition_taille.jpeg>]
+ [53 <./repartition_taille.jpeg>]
 <repartition_activite.jpeg, id=960, 946.53625pt x 614.295pt>
 File: repartition_activite.jpeg Graphic file (type jpg)
 <use repartition_activite.jpeg>
-Package pdftex.def Info: repartition_activite.jpeg  used on input line 2214.
+Package pdftex.def Info: repartition_activite.jpeg  used on input line 2199.
 (pdftex.def)             Requested size: 330.76329pt x 214.65965pt.
- [53 <./anciennete.jpeg>]
+ [54 <./anciennete.jpeg>]
 <besoinsCorriges.jpeg, id=965, 691.58376pt x 614.295pt>
 File: besoinsCorriges.jpeg Graphic file (type jpg)
 <use besoinsCorriges.jpeg>
-Package pdftex.def Info: besoinsCorriges.jpeg  used on input line 2224.
+Package pdftex.def Info: besoinsCorriges.jpeg  used on input line 2209.
 (pdftex.def)             Requested size: 330.76329pt x 293.79906pt.
- [54 <./repartition_activite.jpeg>]
+ [55 <./repartition_activite.jpeg>]
 <carte_chaleur_besoins_statut_juridique.jpeg, id=971, 1284.8pt x 631.35875pt>
 File: carte_chaleur_besoins_statut_juridique.jpeg Graphic file (type jpg)
 <use carte_chaleur_besoins_statut_juridique.jpeg>
 Package pdftex.def Info: carte_chaleur_besoins_statut_juridique.jpeg  used on i
-nput line 2253.
+nput line 2238.
 (pdftex.def)             Requested size: 441.01773pt x 216.72075pt.
 
-[55 <./besoinsCorriges.jpeg>]
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10.95> on input line 2262.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 2262.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6.1> on input line 2262.
-LaTeX Font Info:    Font shape `U/ntxmia/m/it' will be
-(Font)              scaled to size 10.95pt on input line 2262.
-LaTeX Font Info:    Font shape `U/ntxmia/m/it' will be
-(Font)              scaled to size 8.0pt on input line 2262.
-LaTeX Font Info:    Font shape `U/ntxmia/m/it' will be
-(Font)              scaled to size 6.1pt on input line 2262.
-LaTeX Font Info:    Font shape `U/ntxsym/m/n' will be
-(Font)              scaled to size 10.95pt on input line 2262.
-LaTeX Font Info:    Font shape `U/ntxsym/m/n' will be
-(Font)              scaled to size 8.0pt on input line 2262.
-LaTeX Font Info:    Font shape `U/ntxsym/m/n' will be
-(Font)              scaled to size 6.1pt on input line 2262.
-LaTeX Font Info:    Font shape `U/ntxsyc/m/n' will be
-(Font)              scaled to size 10.95pt on input line 2262.
-LaTeX Font Info:    Font shape `U/ntxsyc/m/n' will be
-(Font)              scaled to size 8.0pt on input line 2262.
-LaTeX Font Info:    Font shape `U/ntxsyc/m/n' will be
-(Font)              scaled to size 6.1pt on input line 2262.
-LaTeX Font Info:    Font shape `U/ntxexa/m/n' will be
-(Font)              scaled to size 10.95pt on input line 2262.
-LaTeX Font Info:    Font shape `U/ntxexa/m/n' will be
-(Font)              scaled to size 8.0pt on input line 2262.
-LaTeX Font Info:    Font shape `U/ntxexa/m/n' will be
-(Font)              scaled to size 6.1pt on input line 2262.
-
+[56 <./besoinsCorriges.jpeg>]
 Missing character: There is no π in font lmsy10!
 Missing character: There is no π in font lmsy10!
 <carte_chaleur_besoins_region.jpeg, id=976, 1284.8pt x 631.35875pt>
 File: carte_chaleur_besoins_region.jpeg Graphic file (type jpg)
 <use carte_chaleur_besoins_region.jpeg>
 Package pdftex.def Info: carte_chaleur_besoins_region.jpeg  used on input line 
-2309.
+2294.
 (pdftex.def)             Requested size: 441.01773pt x 216.72075pt.
-[56 <./carte_chaleur_besoins_statut_juridique.jpeg>]
+[57 <./carte_chaleur_besoins_statut_juridique.jpeg>]
 Missing character: There is no π in font lmsy10!
 Missing character: There is no π in font lmsy10!
-<carte_chaleur_besoins_anciennete.jpeg, id=983, 1284.8pt x 631.35875pt>
+<carte_chaleur_besoins_anciennete.jpeg, id=984, 1284.8pt x 631.35875pt>
 File: carte_chaleur_besoins_anciennete.jpeg Graphic file (type jpg)
 <use carte_chaleur_besoins_anciennete.jpeg>
 Package pdftex.def Info: carte_chaleur_besoins_anciennete.jpeg  used on input l
-ine 2362.
+ine 2347.
 (pdftex.def)             Requested size: 441.01773pt x 216.72075pt.
-[57 <./carte_chaleur_besoins_region.jpeg>]
+[58 <./carte_chaleur_besoins_region.jpeg>]
 Missing character: There is no π in font lmsy10!
 Missing character: There is no π in font lmsy10!
 <carte_chaleur_besoins_secteurs_activite.jpeg, id=989, 1284.8pt x 631.35875pt>
 File: carte_chaleur_besoins_secteurs_activite.jpeg Graphic file (type jpg)
 <use carte_chaleur_besoins_secteurs_activite.jpeg>
 Package pdftex.def Info: carte_chaleur_besoins_secteurs_activite.jpeg  used on 
-input line 2414.
+input line 2399.
 (pdftex.def)             Requested size: 441.01773pt x 216.72075pt.
-[58 <./carte_chaleur_besoins_anciennete.jpeg>]
+[59 <./carte_chaleur_besoins_anciennete.jpeg>]
 Missing character: There is no π in font lmsy10!
 Missing character: There is no π in font lmsy10!
-[59 <./carte_chaleur_besoins_secteurs_activite.jpeg>]
+[60 <./carte_chaleur_besoins_secteurs_activite.jpeg>]
 <carte_chaleur_besoins_taille_entreprise.jpeg, id=998, 1284.8pt x 631.35875pt>
 File: carte_chaleur_besoins_taille_entreprise.jpeg Graphic file (type jpg)
 <use carte_chaleur_besoins_taille_entreprise.jpeg>
 Package pdftex.def Info: carte_chaleur_besoins_taille_entreprise.jpeg  used on 
-input line 2469.
+input line 2454.
 (pdftex.def)             Requested size: 441.01773pt x 216.72075pt.
 
 Missing character: There is no π in font lmsy10!
 Missing character: There is no π in font lmsy10!
-[60 <./carte_chaleur_besoins_taille_entreprise.jpeg>]
+[61 <./carte_chaleur_besoins_taille_entreprise.jpeg>]
 <contributionValeursPropres.jpeg, id=1003, 1284.8pt x 631.35875pt>
 File: contributionValeursPropres.jpeg Graphic file (type jpg)
 <use contributionValeursPropres.jpeg>
 Package pdftex.def Info: contributionValeursPropres.jpeg  used on input line 25
-82.
+67.
 (pdftex.def)             Requested size: 330.76329pt x 162.54056pt.
- [61]
+ [62]
 <projectionDesCategories.jpeg, id=1008, 1284.8pt x 631.35875pt>
 File: projectionDesCategories.jpeg Graphic file (type jpg)
 <use projectionDesCategories.jpeg>
-Package pdftex.def Info: projectionDesCategories.jpeg  used on input line 2601.
+Package pdftex.def Info: projectionDesCategories.jpeg  used on input line 2586.
 
 (pdftex.def)             Requested size: 441.01773pt x 216.72075pt.
- [62 <./contributionValeursPropres.jpeg> <./projectionDesCategories.jpeg>]
-<contributionCategoriesAlAxe1.jpeg, id=1014, 1284.8pt x 631.35875pt>
+ [63 <./contributionValeursPropres.jpeg> <./projectionDesCategories.jpeg>]
+<contributionCategoriesAlAxe1.jpeg, id=1015, 1284.8pt x 631.35875pt>
 File: contributionCategoriesAlAxe1.jpeg Graphic file (type jpg)
 <use contributionCategoriesAlAxe1.jpeg>
 Package pdftex.def Info: contributionCategoriesAlAxe1.jpeg  used on input line 
-2619.
+2604.
 (pdftex.def)             Requested size: 211.68661pt x 104.01555pt.
-<contributionCategorieALAxe2.jpeg, id=1015, 1284.8pt x 631.35875pt>
+<contributionCategorieALAxe2.jpeg, id=1016, 1284.8pt x 631.35875pt>
 File: contributionCategorieALAxe2.jpeg Graphic file (type jpg)
 <use contributionCategorieALAxe2.jpeg>
 Package pdftex.def Info: contributionCategorieALAxe2.jpeg  used on input line 2
-626.
+611.
 (pdftex.def)             Requested size: 211.68661pt x 104.01555pt.
 
-Overfull \hbox (17.82083pt too wide) in paragraph at lines 2632--2651
+Overfull \hbox (17.82083pt too wide) in paragraph at lines 2617--2636
 \T1/lmtt/m/n/12 besoin_transport_Non\T1/ntxtlf/m/n/12 (-20) , \T1/lmtt/m/n/12 b
 esoin_innovation_recherche_Oui\T1/ntxtlf/m/n/12 (-20) , \T1/lmtt/m/n/12 besoin_
 emballages_Oui\T1/ntxtlf/m/n/12 (-20) ).
  []
 
-[63 <./contributionCategoriesAlAxe1.jpeg> <./contributionCategorieALAxe2.jpeg>]
+[64 <./contributionCategoriesAlAxe1.jpeg> <./contributionCategorieALAxe2.jpeg>]
 <dendrogramme.jpeg, id=1022, 1284.8pt x 631.35875pt>
 File: dendrogramme.jpeg Graphic file (type jpg)
 <use dendrogramme.jpeg>
-Package pdftex.def Info: dendrogramme.jpeg  used on input line 2669.
+Package pdftex.def Info: dendrogramme.jpeg  used on input line 2654.
 (pdftex.def)             Requested size: 374.86775pt x 184.20686pt.
 <CAH.jpeg, id=1023, 1284.8pt x 631.35875pt>
 File: CAH.jpeg Graphic file (type jpg)
 <use CAH.jpeg>
-Package pdftex.def Info: CAH.jpeg  used on input line 2681.
+Package pdftex.def Info: CAH.jpeg  used on input line 2666.
 (pdftex.def)             Requested size: 441.01773pt x 216.72075pt.
-[64 <./dendrogramme.jpeg> <./CAH.jpeg>]
+[65 <./dendrogramme.jpeg> <./CAH.jpeg>]
 <classe_et_anciennete.jpeg, id=1029, 1284.8pt x 631.35875pt>
 File: classe_et_anciennete.jpeg Graphic file (type jpg)
 <use classe_et_anciennete.jpeg>
-Package pdftex.def Info: classe_et_anciennete.jpeg  used on input line 2707.
+Package pdftex.def Info: classe_et_anciennete.jpeg  used on input line 2692.
 (pdftex.def)             Requested size: 211.68661pt x 104.01555pt.
 <classes_et_secteurs_activites.jpeg, id=1030, 1284.8pt x 631.35875pt>
 File: classes_et_secteurs_activites.jpeg Graphic file (type jpg)
 <use classes_et_secteurs_activites.jpeg>
 Package pdftex.def Info: classes_et_secteurs_activites.jpeg  used on input line
- 2714.
+ 2699.
 (pdftex.def)             Requested size: 211.68661pt x 104.01555pt.
 <classes_et_tailles.jpeg, id=1031, 1284.8pt x 631.35875pt>
 File: classes_et_tailles.jpeg Graphic file (type jpg)
 <use classes_et_tailles.jpeg>
-Package pdftex.def Info: classes_et_tailles.jpeg  used on input line 2723.
+Package pdftex.def Info: classes_et_tailles.jpeg  used on input line 2708.
 (pdftex.def)             Requested size: 211.68661pt x 104.01555pt.
 <classes_et_regions.jpeg, id=1032, 1284.8pt x 631.35875pt>
 File: classes_et_regions.jpeg Graphic file (type jpg)
 <use classes_et_regions.jpeg>
-Package pdftex.def Info: classes_et_regions.jpeg  used on input line 2730.
+Package pdftex.def Info: classes_et_regions.jpeg  used on input line 2715.
 (pdftex.def)             Requested size: 211.68661pt x 104.01555pt.
- [65 <./classe_et_anciennete.jpeg> <./classes_et_secteurs_activites.jpeg> <./cl
+ [66 <./classe_et_anciennete.jpeg> <./classes_et_secteurs_activites.jpeg> <./cl
 asses_et_tailles.jpeg> <./classes_et_regions.jpeg>]
 <AFDProjectionDesObservations.jpeg, id=1038, 1284.8pt x 631.35875pt>
 File: AFDProjectionDesObservations.jpeg Graphic file (type jpg)
 <use AFDProjectionDesObservations.jpeg>
 Package pdftex.def Info: AFDProjectionDesObservations.jpeg  used on input line 
-2751.
+2736.
 (pdftex.def)             Requested size: 374.86775pt x 184.20686pt.
- [66 <./AFDProjectionDesObservations.jpeg>]
-Underfull \hbox (badness 10000) in paragraph at lines 2823--2827
+ [67 <./AFDProjectionDesObservations.jpeg>]
+Underfull \hbox (badness 10000) in paragraph at lines 2808--2812
 
  []
 
-[67]
+[68]
 Missing character: There is no œ in font lmsy10!
 LaTeX Font Info:    Font shape `T1/ntxtlf/b/it' will be
-(Font)              scaled to size 14.4pt on input line 2916.
-[68]
-<login.png, id=1055, 933.4875pt x 422.07687pt>
+(Font)              scaled to size 14.4pt on input line 2901.
+[69]
+<login.png, id=1056, 933.4875pt x 422.07687pt>
 File: login.png Graphic file (type png)
 <use login.png>
-Package pdftex.def Info: login.png  used on input line 2962.
+Package pdftex.def Info: login.png  used on input line 2947.
 (pdftex.def)             Requested size: 441.01773pt x 199.40662pt.
- [69]
+ [70]
 <creationDeCompte.png, id=1061, 897.85437pt x 431.11063pt>
 File: creationDeCompte.png Graphic file (type png)
 <use creationDeCompte.png>
-Package pdftex.def Info: creationDeCompte.png  used on input line 2974.
+Package pdftex.def Info: creationDeCompte.png  used on input line 2959.
 (pdftex.def)             Requested size: 441.01773pt x 211.75914pt.
 <demande.png, id=1062, 918.93312pt x 373.89688pt>
 File: demande.png Graphic file (type png)
 <use demande.png>
-Package pdftex.def Info: demande.png  used on input line 2982.
+Package pdftex.def Info: demande.png  used on input line 2967.
 (pdftex.def)             Requested size: 441.01773pt x 179.44563pt.
 <validation.png, id=1063, 804.00375pt x 396.48125pt>
 File: validation.png Graphic file (type png)
 <use validation.png>
-Package pdftex.def Info: validation.png  used on input line 2988.
+Package pdftex.def Info: validation.png  used on input line 2973.
 (pdftex.def)             Requested size: 441.01773pt x 217.47852pt.
- [70 <./login.png> <./creationDeCompte.png>]
+ [71 <./login.png> <./creationDeCompte.png>]
 <tableauDeBordEntreprise.png, id=1070, 928.97063pt x 434.12187pt>
 File: tableauDeBordEntreprise.png Graphic file (type png)
 <use tableauDeBordEntreprise.png>
-Package pdftex.def Info: tableauDeBordEntreprise.png  used on input line 2997.
+Package pdftex.def Info: tableauDeBordEntreprise.png  used on input line 2982.
 (pdftex.def)             Requested size: 441.01773pt x 206.09741pt.
- [71 <./demande.png> <./validation.png>]
+ [72 <./demande.png> <./validation.png>]
 <tableauDeBordAdmin.png, id=1078, 934.99312pt x 439.6425pt>
 File: tableauDeBordAdmin.png Graphic file (type png)
 <use tableauDeBordAdmin.png>
-Package pdftex.def Info: tableauDeBordAdmin.png  used on input line 3013.
+Package pdftex.def Info: tableauDeBordAdmin.png  used on input line 2998.
 (pdftex.def)             Requested size: 441.01773pt x 207.36992pt.
 <requeteSQL.png, id=1079, 400.99812pt x 170.13562pt>
 File: requeteSQL.png Graphic file (type png)
 <use requeteSQL.png>
-Package pdftex.def Info: requeteSQL.png  used on input line 3025.
+Package pdftex.def Info: requeteSQL.png  used on input line 3010.
 (pdftex.def)             Requested size: 441.01773pt x 187.12637pt.
- [72 <./tableauDeBordEntreprise.png> <./tableauDeBordAdmin.png>]
-[73 <./requeteSQL.png>] [74] [75
+ [73 <./tableauDeBordEntreprise.png> <./tableauDeBordAdmin.png>]
+[74 <./requeteSQL.png>] [75] [76
 
-] (memoireNdzessaAvele.bbl [76
+] (memoireNdzessaAvele.bbl [77
 
-] [77]) [78]
-Chapitre 6.
+] [78]) [79]
 <annexe1.png, id=1122, 430.60875pt x 423.5825pt>
 File: annexe1.png Graphic file (type png)
 <use annexe1.png>
-Package pdftex.def Info: annexe1.png  used on input line 3123.
+Package pdftex.def Info: annexe1.png  used on input line 3109.
 (pdftex.def)             Requested size: 441.01773pt x 433.83232pt.
-<annexe2.png, id=1123, 435.12563pt x 422.07687pt>
-File: annexe2.png Graphic file (type png)
-<use annexe2.png>
-Package pdftex.def Info: annexe2.png  used on input line 3129.
-(pdftex.def)             Requested size: 441.01773pt x 427.82063pt.
-[79
+
+Missing character: There is no π in font lmsy10!
+[80
 
 ]
-<annexe3.png, id=1128, 426.59375pt x 416.05438pt>
+<annexe2.png, id=1129, 435.12563pt x 422.07687pt>
+File: annexe2.png Graphic file (type png)
+<use annexe2.png>
+Package pdftex.def Info: annexe2.png  used on input line 3117.
+(pdftex.def)             Requested size: 441.01773pt x 427.82063pt.
+ [81 <./annexe1.png>]
+<annexe3.png, id=1138, 426.59375pt x 416.05438pt>
 File: annexe3.png Graphic file (type png)
 <use annexe3.png>
-Package pdftex.def Info: annexe3.png  used on input line 3135.
+Package pdftex.def Info: annexe3.png  used on input line 3125.
 (pdftex.def)             Requested size: 441.01773pt x 430.14696pt.
- [80 <./annexe1.png>] [81 <./annexe2.png>] [82 <./annexe3.png>]
-Chapitre 7.
-<annexe5.jpg, id=1145, 455.45157pt x 681.29532pt>
+ [82 <./annexe2.png>] [83 <./annexe3.png>]
+<annexe5.jpg, id=1152, 455.45157pt x 681.29532pt>
 File: annexe5.jpg Graphic file (type jpg)
 <use annexe5.jpg>
-Package pdftex.def Info: annexe5.jpg  used on input line 3144.
+Package pdftex.def Info: annexe5.jpg  used on input line 3137.
 (pdftex.def)             Requested size: 441.01773pt x 659.72253pt.
-<annexe6.jpg, id=1146, 455.45157pt x 654.19406pt>
+ [84
+
+]
+<annexe6.jpg, id=1159, 455.45157pt x 654.19406pt>
 File: annexe6.jpg Graphic file (type jpg)
 <use annexe6.jpg>
-Package pdftex.def Info: annexe6.jpg  used on input line 3150.
+Package pdftex.def Info: annexe6.jpg  used on input line 3145.
 (pdftex.def)             Requested size: 441.01773pt x 633.47942pt.
-[83
 
-] [84 <./annexe5.jpg>] [85 <./annexe6.jpg>] (memoireNdzessaAvele.aux)
+[85 <./annexe5.jpg>] [86 <./annexe6.jpg>] (memoireNdzessaAvele.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2020/03/25>
@@ -2865,16 +2899,16 @@ L3 programming layer <2020/03/25>
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `memoireNdzessaAvele.out' has not changed.
-(rerunfilecheck)             Checksum: 560B3BA46198DB4060B998E234DF8161;12749.
+(rerunfilecheck)             Checksum: 9562DF55EEADE28DFD22D57E5032BB49;12325.
  ) 
 Here is how much of TeX's memory you used:
- 54726 strings out of 467871
- 1169005 string characters out of 5414504
- 1628029 words of memory out of 5000000
- 82217 multiletter control sequences out of 15000+600000
- 754339 words of font info for 270 fonts, out of 8000000 for 9000
+ 54809 strings out of 467871
+ 1170484 string characters out of 5414504
+ 1627282 words of memory out of 5000000
+ 82273 multiletter control sequences out of 15000+600000
+ 781623 words of font info for 304 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 84i,16n,94p,2489b,1410s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 84i,16n,96p,2489b,1410s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/LandryNDZESSA/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/l
 mbx12.pfb><C:/Users/LandryNDZESSA/AppData/Local/Programs/MiKTeX/fonts/type1/pub
 lic/lm/lmbx9.pfb><C:/Users/LandryNDZESSA/AppData/Local/Programs/MiKTeX/fonts/ty
@@ -2884,28 +2918,29 @@ fonts/type1/public/lm/lmmi10.pfb><C:/Users/LandryNDZESSA/AppData/Local/Programs
 Programs/MiKTeX/fonts/type1/public/lm/lmmi7.pfb><C:/Users/LandryNDZESSA/AppData
 /Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi9.pfb><C:/Users/LandryNDZESSA/
 AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmib10.pfb><C:/Users/Landr
-yNDZESSA/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr12.pfb><C:/User
-s/LandryNDZESSA/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr8.pfb><C
-:/Users/LandryNDZESSA/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr9.
-pfb><C:/Users/LandryNDZESSA/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm
-/lmsy10.pfb><C:/Users/LandryNDZESSA/AppData/Local/Programs/MiKTeX/fonts/type1/p
-ublic/lm/lmsy7.pfb><C:/Users/LandryNDZESSA/AppData/Local/Programs/MiKTeX/fonts/
-type1/public/lm/lmsy9.pfb><C:/Users/LandryNDZESSA/AppData/Local/Programs/MiKTeX
-/fonts/type1/public/lm/lmtk10.pfb><C:/Users/LandryNDZESSA/AppData/Local/Program
-s/MiKTeX/fonts/type1/public/lm/lmtt10.pfb><C:/Users/LandryNDZESSA/AppData/Local
-/Programs/MiKTeX/fonts/type1/public/lm/lmtt12.pfb><C:/Users/LandryNDZESSA/AppDa
-ta/Local/Programs/MiKTeX/fonts/type1/public/tex-gyre/qtmr.pfb><C:/Users/LandryN
-DZESSA/AppData/Local/Programs/MiKTeX/fonts/type1/public/newtx/txbmiaX.pfb><C:/U
-sers/LandryNDZESSA/AppData/Local/Programs/MiKTeX/fonts/type1/public/newtx/txmia
-X.pfb><C:/Users/LandryNDZESSA/AppData/Local/Programs/MiKTeX/fonts/type1/public/
-newtx/txsym.pfb><C:/Users/LandryNDZESSA/AppData/Local/Programs/MiKTeX/fonts/typ
-e1/public/newtx/ztmb.pfb><C:/Users/LandryNDZESSA/AppData/Local/Programs/MiKTeX/
-fonts/type1/public/newtx/ztmbi.pfb><C:/Users/LandryNDZESSA/AppData/Local/Progra
-ms/MiKTeX/fonts/type1/public/newtx/ztmr.pfb><C:/Users/LandryNDZESSA/AppData/Loc
-al/Programs/MiKTeX/fonts/type1/public/newtx/ztmri.pfb>
-Output written on memoireNdzessaAvele.pdf (95 pages, 7067974 bytes).
+yNDZESSA/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/User
+s/LandryNDZESSA/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr12.pfb><
+C:/Users/LandryNDZESSA/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr8
+.pfb><C:/Users/LandryNDZESSA/AppData/Local/Programs/MiKTeX/fonts/type1/public/l
+m/lmr9.pfb><C:/Users/LandryNDZESSA/AppData/Local/Programs/MiKTeX/fonts/type1/pu
+blic/lm/lmsy10.pfb><C:/Users/LandryNDZESSA/AppData/Local/Programs/MiKTeX/fonts/
+type1/public/lm/lmsy7.pfb><C:/Users/LandryNDZESSA/AppData/Local/Programs/MiKTeX
+/fonts/type1/public/lm/lmsy9.pfb><C:/Users/LandryNDZESSA/AppData/Local/Programs
+/MiKTeX/fonts/type1/public/lm/lmtk10.pfb><C:/Users/LandryNDZESSA/AppData/Local/
+Programs/MiKTeX/fonts/type1/public/lm/lmtt10.pfb><C:/Users/LandryNDZESSA/AppDat
+a/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt12.pfb><C:/Users/LandryNDZESS
+A/AppData/Local/Programs/MiKTeX/fonts/type1/public/tex-gyre/qtmr.pfb><C:/Users/
+LandryNDZESSA/AppData/Local/Programs/MiKTeX/fonts/type1/public/newtx/txbmiaX.pf
+b><C:/Users/LandryNDZESSA/AppData/Local/Programs/MiKTeX/fonts/type1/public/newt
+x/txmiaX.pfb><C:/Users/LandryNDZESSA/AppData/Local/Programs/MiKTeX/fonts/type1/
+public/newtx/txsym.pfb><C:/Users/LandryNDZESSA/AppData/Local/Programs/MiKTeX/fo
+nts/type1/public/newtx/ztmb.pfb><C:/Users/LandryNDZESSA/AppData/Local/Programs/
+MiKTeX/fonts/type1/public/newtx/ztmbi.pfb><C:/Users/LandryNDZESSA/AppData/Local
+/Programs/MiKTeX/fonts/type1/public/newtx/ztmr.pfb><C:/Users/LandryNDZESSA/AppD
+ata/Local/Programs/MiKTeX/fonts/type1/public/newtx/ztmri.pfb>
+Output written on memoireNdzessaAvele.pdf (96 pages, 7000450 bytes).
 PDF statistics:
- 1338 PDF objects out of 1440 (max. 8388607)
- 299 named destinations out of 1000 (max. 500000)
- 49489 words of extra memory for PDF output out of 51595 (max. 10000000)
+ 1356 PDF objects out of 1440 (max. 8388607)
+ 308 named destinations out of 1000 (max. 500000)
+ 59201 words of extra memory for PDF output out of 61914 (max. 10000000)
 
