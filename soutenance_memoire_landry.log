@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.5.12)  16 JUL 2026 06:02
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.5.12)  16 JUL 2026 08:57
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**./presentation_beamer.tex
-(presentation_beamer.tex
+**./soutenance_memoire_landry.tex
+(soutenance_memoire_landry.tex
 LaTeX2e <2025-11-01>
 L3 programming layer <2025-12-24>
 
@@ -1036,7 +1036,7 @@ Package babel Info: Making ? an active character on input line 276.
 (C:\Users\LandryNDZESSA\AppData\Local\Programs\MiKTeX\tex/latex/carlisle\scalef
 nt.sty)
 Package french3.ldf Info: No list customisation for the beamer class,
-(french3.ldf)             reported on input line 32.
+(french3.ldf)             reported on input line 31.
 
 (C:\Users\LandryNDZESSA\AppData\Local\Programs\MiKTeX\tex/latex/csquotes\csquot
 es.sty
@@ -1130,7 +1130,7 @@ LaTeX Info: Redefining \microtypesetup on input line 3065.
 \sympureletters=\mathgroup6
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
 (Font)                  OT1/mathkerncmss/m/sl --> OT1/mathkerncmss/bx/sl on inp
-ut line 45.
+ut line 44.
 
 (C:\Users\LandryNDZESSA\AppData\Local\Programs\MiKTeX\tex/latex/tools\bm.sty
 Package: bm 2025/10/21 v1.2g Bold Symbol Support (DPC/FMi)
@@ -1273,13 +1273,16 @@ File: pgflibraryarrows.meta.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 ayer/tikz/libraries\tikzlibrarycalc.code.tex
 File: tikzlibrarycalc.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 )
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\\' on input line 147.
+
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
 Package csquotes Info: Adjusting default style.
 Package csquotes Info: Redefining alias 'default' -> 'french'.
 LaTeX Font Info:    Trying to load font information for T1+lmss on input line 1
-49.
-
+62.
 (C:\Users\LandryNDZESSA\AppData\Local\Programs\MiKTeX\tex/latex/lm\t1lmss.fd
 File: t1lmss.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
@@ -1287,30 +1290,30 @@ File: t1lmss.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 kend-pdftex.def
 File: l3backend-pdftex.def 2025-10-09 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count396
-) (presentation_beamer.aux
+) (soutenance_memoire_landry.aux
 Package babel Info: 'french' activates 'french' shorthands.
 (babel)             Reported on input line 11.
 )
-\openout1 = `presentation_beamer.aux'.
+\openout1 = `soutenance_memoire_landry.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 149.
-LaTeX Font Info:    ... okay on input line 149.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 149.
-LaTeX Font Info:    ... okay on input line 149.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 149.
-LaTeX Font Info:    ... okay on input line 149.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 149.
-LaTeX Font Info:    ... okay on input line 149.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 149.
-LaTeX Font Info:    ... okay on input line 149.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 149.
-LaTeX Font Info:    ... okay on input line 149.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 149.
-LaTeX Font Info:    ... okay on input line 149.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 149.
-LaTeX Font Info:    ... okay on input line 149.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 149.
-LaTeX Font Info:    ... okay on input line 149.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 162.
+LaTeX Font Info:    ... okay on input line 162.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 162.
+LaTeX Font Info:    ... okay on input line 162.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 162.
+LaTeX Font Info:    ... okay on input line 162.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 162.
+LaTeX Font Info:    ... okay on input line 162.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 162.
+LaTeX Font Info:    ... okay on input line 162.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 162.
+LaTeX Font Info:    ... okay on input line 162.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 162.
+LaTeX Font Info:    ... okay on input line 162.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 162.
+LaTeX Font Info:    ... okay on input line 162.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 162.
+LaTeX Font Info:    ... okay on input line 162.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1372,81 +1375,81 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 df-sys.cfg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
-Package hyperref Info: Link coloring OFF on input line 149.
- (presentation_beamer.out) (presentation_beamer.out)
+Package hyperref Info: Link coloring OFF on input line 162.
+ (soutenance_memoire_landry.out) (soutenance_memoire_landry.out)
 \@outlinefile=\write5
-\openout5 = `presentation_beamer.out'.
+\openout5 = `soutenance_memoire_landry.out'.
 
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/lmr/m/n --> OT1/cmss/m/n on input line 149.
+(Font)                  OT1/lmr/m/n --> OT1/cmss/m/n on input line 162.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/lmr/bx/n --> OT1/cmss/b/n on input line 149.
+(Font)                  OT1/lmr/bx/n --> OT1/cmss/b/n on input line 162.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmss/m/n --> OT1/lmss/m/n on input line 149.
+(Font)                  OT1/cmss/m/n --> OT1/lmss/m/n on input line 162.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmss/b/n --> OT1/lmss/b/n on input line 149.
+(Font)                  OT1/cmss/b/n --> OT1/lmss/b/n on input line 162.
 \symnumbers=\mathgroup11
-LaTeX Font Info:    Redeclaring symbol font `pureletters' on input line 149.
+LaTeX Font Info:    Redeclaring symbol font `pureletters' on input line 162.
 LaTeX Font Info:    Encoding `OT1' has changed to `T1' for symbol font
-(Font)              `pureletters' in the math version `normal' on input line 14
-9.
+(Font)              `pureletters' in the math version `normal' on input line 16
+2.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `normal'
-(Font)                  OT1/mathkerncmss/m/sl --> T1/lmss/m/it on input line 14
-9.
+(Font)                  OT1/mathkerncmss/m/sl --> T1/lmss/m/it on input line 16
+2.
 LaTeX Font Info:    Encoding `OT1' has changed to `T1' for symbol font
-(Font)              `pureletters' in the math version `bold' on input line 149.
+(Font)              `pureletters' in the math version `bold' on input line 162.
 
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
 (Font)                  OT1/mathkerncmss/bx/sl --> T1/lmss/m/it on input line 1
-49.
+62.
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
-(Font)                  OT1/lmss/m/n --> T1/lmr/m/n on input line 149.
-LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 149.
-LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 149.
+(Font)                  OT1/lmss/m/n --> T1/lmr/m/n on input line 162.
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 162.
+LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 162.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/lmss/m/n --> T1/lmss/m/n on input line 149.
+(Font)                  OT1/lmss/m/n --> T1/lmss/m/n on input line 162.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/lmss/bx/n --> T1/lmss/m/n on input line 149.
-LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 149.
+(Font)                  OT1/lmss/bx/n --> T1/lmss/m/n on input line 162.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 162.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/lmr/m/it --> T1/lmss/m/it on input line 149.
+(Font)                  OT1/lmr/m/it --> T1/lmss/m/it on input line 162.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/lmr/bx/it --> T1/lmss/m/it on input line 149.
-LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 149.
+(Font)                  OT1/lmr/bx/it --> T1/lmss/m/it on input line 162.
+LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 162.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/lmtt/m/n --> T1/lmtt/m/n on input line 149.
+(Font)                  OT1/lmtt/m/n --> T1/lmtt/m/n on input line 162.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/lmtt/m/n --> T1/lmtt/m/n on input line 149.
+(Font)                  OT1/lmtt/m/n --> T1/lmtt/m/n on input line 162.
 LaTeX Font Info:    Overwriting symbol font `numbers' in version `bold'
-(Font)                  T1/lmss/m/n --> T1/lmss/b/n on input line 149.
+(Font)                  T1/lmss/m/n --> T1/lmss/b/n on input line 162.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
-(Font)                  T1/lmss/m/it --> T1/lmss/b/it on input line 149.
+(Font)                  T1/lmss/m/it --> T1/lmss/b/it on input line 162.
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `bold'
-(Font)                  OT1/lmss/b/n --> T1/lmr/b/n on input line 149.
+(Font)                  OT1/lmss/b/n --> T1/lmr/b/n on input line 162.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  T1/lmss/b/n --> T1/lmss/b/n on input line 149.
+(Font)                  T1/lmss/b/n --> T1/lmss/b/n on input line 162.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  T1/lmss/m/n --> T1/lmss/b/n on input line 149.
+(Font)                  T1/lmss/m/n --> T1/lmss/b/n on input line 162.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  T1/lmss/m/it --> T1/lmss/b/it on input line 149.
+(Font)                  T1/lmss/m/it --> T1/lmss/b/it on input line 162.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  T1/lmtt/m/n --> T1/lmtt/b/n on input line 149.
-LaTeX Font Info:    Redeclaring symbol font `boldpureletters' on input line 149
+(Font)                  T1/lmtt/m/n --> T1/lmtt/b/n on input line 162.
+LaTeX Font Info:    Redeclaring symbol font `boldpureletters' on input line 162
 .
 LaTeX Font Info:    Encoding `OT1' has changed to `T1' for symbol font
 (Font)              `boldpureletters' in the math version `normal' on input lin
-e 149.
+e 162.
 LaTeX Font Info:    Overwriting symbol font `boldpureletters' in version `norma
 l'
 (Font)                  OT1/mathkerncmss/bx/sl --> T1/lmss/bx/it on input line 
-149.
+162.
 LaTeX Font Info:    Encoding `OT1' has changed to `T1' for symbol font
 (Font)              `boldpureletters' in the math version `bold' on input line 
-149.
+162.
 LaTeX Font Info:    Overwriting symbol font `boldpureletters' in version `bold'
 
 (Font)                  OT1/mathkerncmss/bx/sl --> T1/lmss/bx/it on input line 
-149.
+162.
 
 (C:\Users\LandryNDZESSA\AppData\Local\Programs\MiKTeX\tex/latex/translator\tran
 slator-basic-dictionary-English.dict
@@ -1475,14 +1478,14 @@ Dictionary: translator-theorem-dictionary, Language: English
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: french babel package is loaded.
 Package caption Info: End \AtBeginDocument code.
-LaTeX Info: Redefining \degres on input line 149.
-LaTeX Info: Redefining \microtypecontext on input line 149.
-Package microtype Info: Applying patch `item' on input line 149.
-Package microtype Info: Applying patch `toc' on input line 149.
-Package microtype Info: Applying patch `eqnum' on input line 149.
-Package microtype Info: Applying patch `footnote' on input line 149.
-Package microtype Info: Applying patch `verbatim' on input line 149.
-LaTeX Info: Redefining \microtypesetup on input line 149.
+LaTeX Info: Redefining \degres on input line 162.
+LaTeX Info: Redefining \microtypecontext on input line 162.
+Package microtype Info: Applying patch `item' on input line 162.
+Package microtype Info: Applying patch `toc' on input line 162.
+Package microtype Info: Applying patch `eqnum' on input line 162.
+Package microtype Info: Applying patch `footnote' on input line 162.
+Package microtype Info: Applying patch `verbatim' on input line 162.
+LaTeX Info: Redefining \microtypesetup on input line 162.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
@@ -1497,13 +1500,13 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `lmss' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
- (presentation_beamer.nav)
-Overfull \hbox (201.97552pt too wide) in paragraph at lines 149--149
+ (soutenance_memoire_landry.nav)
+Overfull \hbox (201.97552pt too wide) in paragraph at lines 162--162
  [][][][]  
  []
 
 
-Overfull \hbox (201.97552pt too wide) in paragraph at lines 156--156
+Overfull \hbox (201.97552pt too wide) in paragraph at lines 169--169
  [][][][]  
  []
 
@@ -1511,11 +1514,11 @@ Overfull \hbox (201.97552pt too wide) in paragraph at lines 156--156
 
 {C:/Users/LandryNDZESSA/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Us
 ers/LandryNDZESSA/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ec.enc}]
-Overfull \hbox (201.97552pt too wide) in paragraph at lines 163--163
+Overfull \hbox (201.97552pt too wide) in paragraph at lines 176--176
  [][][][]  
  []
 
-(presentation_beamer.toc)
+(soutenance_memoire_landry.toc)
 Overfull \hbox (201.97552pt too wide) has occurred while \output is active
  [][][][]  
  []
@@ -1523,7 +1526,7 @@ Overfull \hbox (201.97552pt too wide) has occurred while \output is active
 [2
 
 ]
-Overfull \hbox (201.97552pt too wide) in paragraph at lines 166--166
+Overfull \hbox (201.97552pt too wide) in paragraph at lines 179--179
  [][][][]  
  []
 
@@ -1535,7 +1538,7 @@ Overfull \hbox (201.97552pt too wide) has occurred while \output is active
 [3
 
 ]
-Overfull \hbox (201.97552pt too wide) in paragraph at lines 177--177
+Overfull \hbox (201.97552pt too wide) in paragraph at lines 188--188
  [][][][]  
  []
 
@@ -1547,7 +1550,7 @@ Overfull \hbox (201.97552pt too wide) has occurred while \output is active
 [4
 
 ]
-Overfull \hbox (201.97552pt too wide) in paragraph at lines 188--188
+Overfull \hbox (201.97552pt too wide) in paragraph at lines 201--201
  [][][][]  
  []
 
@@ -1559,7 +1562,7 @@ Overfull \hbox (201.97552pt too wide) has occurred while \output is active
 [5
 
 ]
-Overfull \hbox (201.97552pt too wide) in paragraph at lines 197--197
+Overfull \hbox (201.97552pt too wide) in paragraph at lines 212--212
  [][][][]  
  []
 
@@ -1571,12 +1574,12 @@ Overfull \hbox (201.97552pt too wide) has occurred while \output is active
 [6
 
 ]
-Overfull \hbox (201.97552pt too wide) in paragraph at lines 214--214
+Overfull \hbox (201.97552pt too wide) in paragraph at lines 230--230
  [][][][]  
  []
 
 LaTeX Font Info:    Trying to load font information for OT1+lmss on input line 
-214.
+230.
 (C:\Users\LandryNDZESSA\AppData\Local\Programs\MiKTeX\tex/latex/lm\ot1lmss.fd
 File: ot1lmss.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
@@ -1585,30 +1588,30 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 LaTeX Font Info:    Trying to load font information for OML+lmm on input line 2
-14.
+30.
 
 (C:\Users\LandryNDZESSA\AppData\Local\Programs\MiKTeX\tex/latex/lm\omllmm.fd
 File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 
-214.
+230.
 
 (C:\Users\LandryNDZESSA\AppData\Local\Programs\MiKTeX\tex/latex/lm\omslmsy.fd
 File: omslmsy.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 
-214.
+230.
 
 (C:\Users\LandryNDZESSA\AppData\Local\Programs\MiKTeX\tex/latex/lm\omxlmex.fd
 File: omxlmex.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 214.
+(Font)              <10> on input line 230.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 214.
+(Font)              <7> on input line 230.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 214.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 214
+(Font)              <5> on input line 230.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 230
 .
 
 (C:\Users\LandryNDZESSA\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.f
@@ -1619,7 +1622,7 @@ File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 a.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 214
+LaTeX Font Info:    Trying to load font information for U+msb on input line 230
 .
 
 (C:\Users\LandryNDZESSA\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.f
@@ -1631,13 +1634,13 @@ b.cfg
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
 LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <10> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 214.
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 230.
 LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <7> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 214.
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 230.
 LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <5> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 214.
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 230.
 LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 2
-14.
+30.
 
 (C:\Users\LandryNDZESSA\AppData\Local\Programs\MiKTeX\tex/latex/lm\ot1lmr.fd
 File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
@@ -1648,13 +1651,13 @@ File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman
 (RS)
 )
 LaTeX Font Info:    Font shape `T1/lmss/bx/it' in size <10> not available
-(Font)              Font shape `T1/lmss/bx/sl' tried instead on input line 214.
+(Font)              Font shape `T1/lmss/bx/sl' tried instead on input line 230.
 
 LaTeX Font Info:    Font shape `T1/lmss/bx/it' in size <7> not available
-(Font)              Font shape `T1/lmss/bx/sl' tried instead on input line 214.
+(Font)              Font shape `T1/lmss/bx/sl' tried instead on input line 230.
 
 LaTeX Font Info:    Font shape `T1/lmss/bx/it' in size <5> not available
-(Font)              Font shape `T1/lmss/bx/sl' tried instead on input line 214.
+(Font)              Font shape `T1/lmss/bx/sl' tried instead on input line 230.
 
 
 Overfull \hbox (201.97552pt too wide) has occurred while \output is active
@@ -1665,7 +1668,7 @@ Overfull \hbox (201.97552pt too wide) has occurred while \output is active
 
 {C:/Users/LandryNDZESSA/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mat
 hit.enc}]
-Overfull \hbox (201.97552pt too wide) in paragraph at lines 216--216
+Overfull \hbox (201.97552pt too wide) in paragraph at lines 232--232
  [][][][]  
  []
 
@@ -1677,7 +1680,7 @@ Overfull \hbox (201.97552pt too wide) has occurred while \output is active
 [8
 
 ]
-Overfull \hbox (201.97552pt too wide) in paragraph at lines 226--226
+Overfull \hbox (201.97552pt too wide) in paragraph at lines 238--238
  [][][][]  
  []
 
@@ -1689,7 +1692,7 @@ Overfull \hbox (201.97552pt too wide) has occurred while \output is active
 [9
 
 ]
-Overfull \hbox (201.97552pt too wide) in paragraph at lines 238--238
+Overfull \hbox (201.97552pt too wide) in paragraph at lines 249--249
  [][][][]  
  []
 
@@ -1701,7 +1704,7 @@ Overfull \hbox (201.97552pt too wide) has occurred while \output is active
 [10
 
 ]
-Overfull \hbox (201.97552pt too wide) in paragraph at lines 259--259
+Overfull \hbox (201.97552pt too wide) in paragraph at lines 257--257
  [][][][]  
  []
 
@@ -1713,7 +1716,7 @@ Overfull \hbox (201.97552pt too wide) has occurred while \output is active
 [11
 
 ]
-Overfull \hbox (201.97552pt too wide) in paragraph at lines 270--270
+Overfull \hbox (201.97552pt too wide) in paragraph at lines 266--266
  [][][][]  
  []
 
@@ -1725,7 +1728,7 @@ Overfull \hbox (201.97552pt too wide) has occurred while \output is active
 [12
 
 ]
-Overfull \hbox (201.97552pt too wide) in paragraph at lines 272--272
+Overfull \hbox (201.97552pt too wide) in paragraph at lines 268--268
  [][][][]  
  []
 
@@ -1737,7 +1740,7 @@ Overfull \hbox (201.97552pt too wide) has occurred while \output is active
 [13
 
 ]
-Overfull \hbox (201.97552pt too wide) in paragraph at lines 300--300
+Overfull \hbox (201.97552pt too wide) in paragraph at lines 293--293
  [][][][]  
  []
 
@@ -1749,24 +1752,24 @@ Overfull \hbox (201.97552pt too wide) has occurred while \output is active
 [14
 
 ]
-Overfull \hbox (201.97552pt too wide) in paragraph at lines 339--339
+Overfull \hbox (201.97552pt too wide) in paragraph at lines 320--320
  [][][][]  
  []
 
-<statut.jpeg, id=226, 655.44875pt x 614.295pt>
+<statut.jpeg, id=253, 655.44875pt x 614.295pt>
 File: statut.jpeg Graphic file (type jpg)
 <use statut.jpeg>
-Package pdftex.def Info: statut.jpeg  used on input line 339.
+Package pdftex.def Info: statut.jpeg  used on input line 320.
 (pdftex.def)             Requested size: 139.28128pt x 130.53362pt.
-<repartition_region.jpeg, id=227, 614.295pt x 614.295pt>
+<repartition_region.jpeg, id=254, 614.295pt x 614.295pt>
 File: repartition_region.jpeg Graphic file (type jpg)
 <use repartition_region.jpeg>
-Package pdftex.def Info: repartition_region.jpeg  used on input line 339.
+Package pdftex.def Info: repartition_region.jpeg  used on input line 320.
 (pdftex.def)             Requested size: 139.28128pt x 139.27896pt.
-<repartition_taille.jpeg, id=228, 655.44875pt x 614.295pt>
+<repartition_taille.jpeg, id=255, 655.44875pt x 614.295pt>
 File: repartition_taille.jpeg Graphic file (type jpg)
 <use repartition_taille.jpeg>
-Package pdftex.def Info: repartition_taille.jpeg  used on input line 339.
+Package pdftex.def Info: repartition_taille.jpeg  used on input line 320.
 (pdftex.def)             Requested size: 139.28128pt x 130.53362pt.
 
 Overfull \hbox (201.97552pt too wide) has occurred while \output is active
@@ -1776,15 +1779,15 @@ Overfull \hbox (201.97552pt too wide) has occurred while \output is active
 [15
 
  <./statut.jpeg> <./repartition_region.jpeg> <./repartition_taille.jpeg>]
-<repartition_activite.jpeg, id=241, 946.53625pt x 614.295pt>
+<repartition_activite.jpeg, id=268, 946.53625pt x 614.295pt>
 File: repartition_activite.jpeg Graphic file (type jpg)
 <use repartition_activite.jpeg>
-Package pdftex.def Info: repartition_activite.jpeg  used on input line 343.
+Package pdftex.def Info: repartition_activite.jpeg  used on input line 325.
 (pdftex.def)             Requested size: 182.8017pt x 118.62943pt.
-<besoinsCorriges.jpeg, id=242, 691.58376pt x 614.295pt>
+<besoinsCorriges.jpeg, id=269, 691.58376pt x 614.295pt>
 File: besoinsCorriges.jpeg Graphic file (type jpg)
 <use besoinsCorriges.jpeg>
-Package pdftex.def Info: besoinsCorriges.jpeg  used on input line 350.
+Package pdftex.def Info: besoinsCorriges.jpeg  used on input line 332.
 (pdftex.def)             Requested size: 226.32875pt x 201.03076pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -1797,16 +1800,16 @@ Overfull \hbox (201.97552pt too wide) has occurred while \output is active
 [16
 
  <./repartition_activite.jpeg> <./besoinsCorriges.jpeg>]
-Overfull \hbox (201.97552pt too wide) in paragraph at lines 397--397
+Overfull \hbox (201.97552pt too wide) in paragraph at lines 371--371
  [][][][]  
  []
 
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <14.4> on input line 397.
+(Font)              <14.4> on input line 371.
 LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <14.4> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 397.
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 371.
 LaTeX Font Info:    Font shape `T1/lmss/bx/it' in size <14.4> not available
-(Font)              Font shape `T1/lmss/bx/sl' tried instead on input line 397.
+(Font)              Font shape `T1/lmss/bx/sl' tried instead on input line 371.
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -1822,12 +1825,12 @@ Overfull \hbox (201.97552pt too wide) has occurred while \output is active
  []
 
 [18]
-Overfull \hbox (201.97552pt too wide) in paragraph at lines 424--424
+Overfull \hbox (201.97552pt too wide) in paragraph at lines 397--397
  [][][][]  
  []
 
 LaTeX Font Info:    Trying to load font information for TS1+lmss on input line 
-424.
+397.
 (C:\Users\LandryNDZESSA\AppData\Local\Programs\MiKTeX\tex/latex/lm\ts1lmss.fd
 File: ts1lmss.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
@@ -1836,18 +1839,18 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <9> on input line 424.
+(Font)              <9> on input line 397.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 424.
+(Font)              <6> on input line 397.
 LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <9> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 424.
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 397.
 LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <6> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 424.
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 397.
 LaTeX Font Info:    Font shape `T1/lmss/bx/it' in size <9> not available
-(Font)              Font shape `T1/lmss/bx/sl' tried instead on input line 424.
+(Font)              Font shape `T1/lmss/bx/sl' tried instead on input line 397.
 
 LaTeX Font Info:    Font shape `T1/lmss/bx/it' in size <6> not available
-(Font)              Font shape `T1/lmss/bx/sl' tried instead on input line 424.
+(Font)              Font shape `T1/lmss/bx/sl' tried instead on input line 397.
 
 
 Overfull \hbox (201.97552pt too wide) has occurred while \output is active
@@ -1859,7 +1862,7 @@ Overfull \hbox (201.97552pt too wide) has occurred while \output is active
 {C:/Users/LandryNDZESSA/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ts1
 .enc}{C:/Users/LandryNDZESSA/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/l
 m-rm.enc}]
-Overfull \hbox (201.97552pt too wide) in paragraph at lines 426--426
+Overfull \hbox (201.97552pt too wide) in paragraph at lines 400--400
  [][][][]  
  []
 
@@ -1871,14 +1874,14 @@ Overfull \hbox (201.97552pt too wide) has occurred while \output is active
 [20
 
 ]
-Overfull \hbox (201.97552pt too wide) in paragraph at lines 492--492
+Overfull \hbox (201.97552pt too wide) in paragraph at lines 463--463
  [][][][]  
  []
 
 LaTeX Font Info:    Font shape `T1/lmss/b/n' in size <7> not available
-(Font)              Font shape `T1/lmss/bx/n' tried instead on input line 492.
+(Font)              Font shape `T1/lmss/bx/n' tried instead on input line 463.
 LaTeX Font Info:    Font shape `T1/lmss/b/n' in size <5> not available
-(Font)              Font shape `T1/lmss/bx/n' tried instead on input line 492.
+(Font)              Font shape `T1/lmss/bx/n' tried instead on input line 463.
 
 Overfull \hbox (201.97552pt too wide) has occurred while \output is active
  [][][][]  
@@ -1888,12 +1891,12 @@ Overfull \hbox (201.97552pt too wide) has occurred while \output is active
 
 {C:/Users/LandryNDZESSA/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mat
 hsy.enc}]
-Overfull \hbox (201.97552pt too wide) in paragraph at lines 541--541
+Overfull \hbox (201.97552pt too wide) in paragraph at lines 510--510
  [][][][]  
  []
 
 LaTeX Font Info:    Font shape `T1/lmss/b/n' in size <10> not available
-(Font)              Font shape `T1/lmss/bx/n' tried instead on input line 541.
+(Font)              Font shape `T1/lmss/bx/n' tried instead on input line 510.
 
 Overfull \hbox (201.97552pt too wide) has occurred while \output is active
  [][][][]  
@@ -1903,18 +1906,18 @@ Overfull \hbox (201.97552pt too wide) has occurred while \output is active
 
 {C:/Users/LandryNDZESSA/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mat
 hex.enc}]
-Overfull \hbox (201.97552pt too wide) in paragraph at lines 566--566
+Overfull \hbox (201.97552pt too wide) in paragraph at lines 546--546
  [][][][]  
  []
 
-<contributionValeursPropres.jpeg, id=396, 1284.8pt x 631.35875pt>
+<contributionValeursPropres.jpeg, id=423, 1284.8pt x 631.35875pt>
 File: contributionValeursPropres.jpeg Graphic file (type jpg)
 <use contributionValeursPropres.jpeg>
-Package pdftex.def Info: contributionValeursPropres.jpeg  used on input line 56
+Package pdftex.def Info: contributionValeursPropres.jpeg  used on input line 54
 6.
 (pdftex.def)             Requested size: 239.38554pt x 117.62804pt.
 LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 5
-66.
+46.
 (C:\Users\LandryNDZESSA\AppData\Local\Programs\MiKTeX\tex/latex/lm\t1lmtt.fd
 File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
@@ -1930,17 +1933,17 @@ Overfull \hbox (201.97552pt too wide) has occurred while \output is active
 [23
 
  <./contributionValeursPropres.jpeg>]
-Overfull \hbox (201.97552pt too wide) in paragraph at lines 581--581
+Overfull \hbox (201.97552pt too wide) in paragraph at lines 559--559
  [][][][]  
  []
 
-<projectionDesCategories.jpeg, id=406, 1284.8pt x 631.35875pt>
+<projectionDesCategories.jpeg, id=437, 1284.8pt x 631.35875pt>
 File: projectionDesCategories.jpeg Graphic file (type jpg)
 <use projectionDesCategories.jpeg>
-Package pdftex.def Info: projectionDesCategories.jpeg  used on input line 581.
+Package pdftex.def Info: projectionDesCategories.jpeg  used on input line 559.
 (pdftex.def)             Requested size: 304.6695pt x 149.71805pt.
 
-Overfull \vbox (39.64334pt too high) detected at line 581
+Overfull \vbox (39.64334pt too high) detected at line 559
  []
 
 
@@ -1951,15 +1954,15 @@ Overfull \hbox (201.97552pt too wide) has occurred while \output is active
 [24
 
  <./projectionDesCategories.jpeg>]
-Overfull \hbox (201.97552pt too wide) in paragraph at lines 611--611
+Overfull \hbox (201.97552pt too wide) in paragraph at lines 586--586
  [][][][]  
  []
 
-<contributionCategoriesAlAxe1.jpeg, id=427, 1284.8pt x 631.35875pt>
+<contributionCategoriesAlAxe1.jpeg, id=457, 1284.8pt x 631.35875pt>
 File: contributionCategoriesAlAxe1.jpeg Graphic file (type jpg)
 <use contributionCategoriesAlAxe1.jpeg>
 Package pdftex.def Info: contributionCategoriesAlAxe1.jpeg  used on input line 
-611.
+586.
 (pdftex.def)             Requested size: 217.62202pt x 106.93459pt.
 
 Overfull \hbox (201.97552pt too wide) has occurred while \output is active
@@ -1969,20 +1972,20 @@ Overfull \hbox (201.97552pt too wide) has occurred while \output is active
 [25
 
  <./contributionCategoriesAlAxe1.jpeg>]
-Overfull \hbox (201.97552pt too wide) in paragraph at lines 643--643
+Overfull \hbox (201.97552pt too wide) in paragraph at lines 615--615
  [][][][]  
  []
 
-<contributionCategorieALAxe2.jpeg, id=449, 1284.8pt x 631.35875pt>
+<contributionCategorieALAxe2.jpeg, id=479, 1284.8pt x 631.35875pt>
 File: contributionCategorieALAxe2.jpeg Graphic file (type jpg)
 <use contributionCategorieALAxe2.jpeg>
 Package pdftex.def Info: contributionCategorieALAxe2.jpeg  used on input line 6
-43.
+15.
 (pdftex.def)             Requested size: 217.62202pt x 106.93459pt.
 LaTeX Font Info:    Font shape `T1/lmss/b/n' in size <9> not available
-(Font)              Font shape `T1/lmss/bx/n' tried instead on input line 643.
+(Font)              Font shape `T1/lmss/bx/n' tried instead on input line 615.
 LaTeX Font Info:    Font shape `T1/lmss/b/n' in size <6> not available
-(Font)              Font shape `T1/lmss/bx/n' tried instead on input line 643.
+(Font)              Font shape `T1/lmss/bx/n' tried instead on input line 615.
 
 Overfull \hbox (201.97552pt too wide) has occurred while \output is active
  [][][][]  
@@ -1991,7 +1994,7 @@ Overfull \hbox (201.97552pt too wide) has occurred while \output is active
 [26
 
  <./contributionCategorieALAxe2.jpeg>]
-Overfull \hbox (201.97552pt too wide) in paragraph at lines 682--682
+Overfull \hbox (201.97552pt too wide) in paragraph at lines 651--651
  [][][][]  
  []
 
@@ -2003,14 +2006,14 @@ Overfull \hbox (201.97552pt too wide) has occurred while \output is active
 [27
 
 ]
-Overfull \hbox (201.97552pt too wide) in paragraph at lines 707--707
+Overfull \hbox (201.97552pt too wide) in paragraph at lines 675--675
  [][][][]  
  []
 
-<dendrogramme.jpeg, id=502, 1284.8pt x 631.35875pt>
+<dendrogramme.jpeg, id=531, 1284.8pt x 631.35875pt>
 File: dendrogramme.jpeg Graphic file (type jpg)
 <use dendrogramme.jpeg>
-Package pdftex.def Info: dendrogramme.jpeg  used on input line 707.
+Package pdftex.def Info: dendrogramme.jpeg  used on input line 675.
 (pdftex.def)             Requested size: 226.32875pt x 111.21196pt.
 
 Overfull \hbox (201.97552pt too wide) has occurred while \output is active
@@ -2020,17 +2023,17 @@ Overfull \hbox (201.97552pt too wide) has occurred while \output is active
 [28
 
  <./dendrogramme.jpeg>]
-Overfull \hbox (201.97552pt too wide) in paragraph at lines 722--722
+Overfull \hbox (201.97552pt too wide) in paragraph at lines 688--688
  [][][][]  
  []
 
-<CAH.jpeg, id=510, 1284.8pt x 631.35875pt>
+<CAH.jpeg, id=539, 1284.8pt x 631.35875pt>
 File: CAH.jpeg Graphic file (type jpg)
 <use CAH.jpeg>
-Package pdftex.def Info: CAH.jpeg  used on input line 722.
+Package pdftex.def Info: CAH.jpeg  used on input line 688.
 (pdftex.def)             Requested size: 295.96275pt x 145.43103pt.
 
-Overfull \vbox (10.93585pt too high) detected at line 722
+Overfull \vbox (10.93585pt too high) detected at line 688
  []
 
 
@@ -2041,7 +2044,7 @@ Overfull \hbox (201.97552pt too wide) has occurred while \output is active
 [29
 
  <./CAH.jpeg>]
-Overfull \hbox (201.97552pt too wide) in paragraph at lines 759--759
+Overfull \hbox (201.97552pt too wide) in paragraph at lines 716--716
  [][][][]  
  []
 
@@ -2053,7 +2056,7 @@ Overfull \hbox (201.97552pt too wide) has occurred while \output is active
 [30
 
 ]
-Overfull \hbox (201.97552pt too wide) in paragraph at lines 798--798
+Overfull \hbox (201.97552pt too wide) in paragraph at lines 753--753
  [][][][]  
  []
 
@@ -2065,7 +2068,7 @@ Overfull \hbox (201.97552pt too wide) has occurred while \output is active
 [31
 
 ]
-Overfull \hbox (201.97552pt too wide) in paragraph at lines 836--836
+Overfull \hbox (201.97552pt too wide) in paragraph at lines 788--788
  [][][][]  
  []
 
@@ -2077,15 +2080,15 @@ Overfull \hbox (201.97552pt too wide) has occurred while \output is active
 [32
 
 ]
-Overfull \hbox (201.97552pt too wide) in paragraph at lines 864--864
+Overfull \hbox (201.97552pt too wide) in paragraph at lines 815--815
  [][][][]  
  []
 
-<AFDProjectionDesObservations.jpeg, id=626, 1284.8pt x 631.35875pt>
+<AFDProjectionDesObservations.jpeg, id=654, 1284.8pt x 631.35875pt>
 File: AFDProjectionDesObservations.jpeg Graphic file (type jpg)
 <use AFDProjectionDesObservations.jpeg>
 Package pdftex.def Info: AFDProjectionDesObservations.jpeg  used on input line 
-864.
+815.
 (pdftex.def)             Requested size: 239.38554pt x 117.62804pt.
 
 Overfull \hbox (201.97552pt too wide) has occurred while \output is active
@@ -2095,19 +2098,19 @@ Overfull \hbox (201.97552pt too wide) has occurred while \output is active
 [33
 
  <./AFDProjectionDesObservations.jpeg>]
-Overfull \hbox (201.97552pt too wide) in paragraph at lines 908--908
+Overfull \hbox (201.97552pt too wide) in paragraph at lines 855--855
  [][][][]  
  []
 
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 908.
+(Font)              <8> on input line 855.
 LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <8> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 908.
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 855.
 LaTeX Font Info:    Font shape `T1/lmss/bx/it' in size <8> not available
-(Font)              Font shape `T1/lmss/bx/sl' tried instead on input line 908.
+(Font)              Font shape `T1/lmss/bx/sl' tried instead on input line 855.
 
 LaTeX Font Info:    Font shape `T1/lmss/b/n' in size <8> not available
-(Font)              Font shape `T1/lmss/bx/n' tried instead on input line 908.
+(Font)              Font shape `T1/lmss/bx/n' tried instead on input line 855.
 
 Overfull \hbox (201.97552pt too wide) has occurred while \output is active
  [][][][]  
@@ -2116,19 +2119,19 @@ Overfull \hbox (201.97552pt too wide) has occurred while \output is active
 [34
 
 ]
-Overfull \hbox (201.97552pt too wide) in paragraph at lines 939--939
+Overfull \hbox (201.97552pt too wide) in paragraph at lines 882--882
  [][][][]  
  []
 
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12> on input line 939.
+(Font)              <12> on input line 882.
 LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <12> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 939.
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 882.
 LaTeX Font Info:    Font shape `T1/lmss/bx/it' in size <12> not available
-(Font)              Font shape `T1/lmss/bx/sl' tried instead on input line 939.
+(Font)              Font shape `T1/lmss/bx/sl' tried instead on input line 882.
 
 LaTeX Font Info:    Font shape `T1/lmss/b/n' in size <12> not available
-(Font)              Font shape `T1/lmss/bx/n' tried instead on input line 939.
+(Font)              Font shape `T1/lmss/bx/n' tried instead on input line 882.
 
 Overfull \hbox (201.97552pt too wide) has occurred while \output is active
  [][][][]  
@@ -2137,7 +2140,7 @@ Overfull \hbox (201.97552pt too wide) has occurred while \output is active
 [35
 
 ]
-Overfull \hbox (201.97552pt too wide) in paragraph at lines 943--943
+Overfull \hbox (201.97552pt too wide) in paragraph at lines 889--889
  [][][][]  
  []
 
@@ -2149,7 +2152,7 @@ Overfull \hbox (201.97552pt too wide) has occurred while \output is active
 [36
 
 ]
-Overfull \hbox (201.97552pt too wide) in paragraph at lines 980--980
+Overfull \hbox (201.97552pt too wide) in paragraph at lines 904--904
  [][][][]  
  []
 
@@ -2161,31 +2164,142 @@ Overfull \hbox (201.97552pt too wide) has occurred while \output is active
 [37
 
 ]
+Overfull \hbox (201.97552pt too wide) in paragraph at lines 927--927
+ [][][][]  
+ []
+
+LaTeX Font Info:    Font shape `T1/lmtt/bx/n' in size <8> not available
+(Font)              Font shape `T1/lmtt/b/n' tried instead on input line 927.
+
+Overfull \hbox (201.97552pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[38
+
+]
+Overfull \hbox (201.97552pt too wide) in paragraph at lines 951--951
+ [][][][]  
+ []
+
+
+Overfull \hbox (201.97552pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[39
+
+]
+Overfull \hbox (201.97552pt too wide) in paragraph at lines 963--963
+ [][][][]  
+ []
+
+
+Overfull \hbox (201.97552pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[40
+
+]
+Overfull \hbox (201.97552pt too wide) in paragraph at lines 975--975
+ [][][][]  
+ []
+
+
+Overfull \hbox (201.97552pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[41
+
+]
+Overfull \hbox (201.97552pt too wide) in paragraph at lines 1003--1003
+ [][][][]  
+ []
+
+
+Overfull \hbox (201.97552pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[42
+
+]
+Overfull \hbox (201.97552pt too wide) in paragraph at lines 1006--1006
+ [][][][]  
+ []
+
+
+Overfull \hbox (201.97552pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[43
+
+]
+Overfull \hbox (201.97552pt too wide) in paragraph at lines 1032--1032
+ [][][][]  
+ []
+
+
+Overfull \hbox (201.97552pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[44
+
+]
+Overfull \hbox (201.97552pt too wide) in paragraph at lines 1035--1035
+ [][][][]  
+ []
+
+
+Overfull \hbox (201.97552pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[45
+
+]
+Overfull \hbox (201.97552pt too wide) in paragraph at lines 1069--1069
+ [][][][]  
+ []
+
+
+Overfull \hbox (201.97552pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[46
+
+]
 \tf@nav=\write6
-\openout6 = `presentation_beamer.nav'.
+\openout6 = `soutenance_memoire_landry.nav'.
 
 \tf@toc=\write7
-\openout7 = `presentation_beamer.toc'.
+\openout7 = `soutenance_memoire_landry.toc'.
 
 \tf@snm=\write8
-\openout8 = `presentation_beamer.snm'.
+\openout8 = `soutenance_memoire_landry.snm'.
 
- (presentation_beamer.aux)
+ (soutenance_memoire_landry.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2025-12-24>
  ***********
-Package rerunfilecheck Info: File `presentation_beamer.out' has not changed.
-(rerunfilecheck)             Checksum: 2751E2C46284065B1B1A2ACC04A4C0F2;1200.
+Package rerunfilecheck Info: File `soutenance_memoire_landry.out' has not chang
+ed.
+(rerunfilecheck)             Checksum: D00CAADABA2C3C8814803B1A3018BB36;1680.
  ) 
 Here is how much of TeX's memory you used:
- 34959 strings out of 467871
- 718466 string characters out of 5414504
- 1147525 words of memory out of 5000000
- 62795 multiletter control sequences out of 15000+600000
- 808909 words of font info for 273 fonts, out of 8000000 for 9000
+ 35125 strings out of 467871
+ 722798 string characters out of 5414504
+ 1147946 words of memory out of 5000000
+ 62939 multiletter control sequences out of 15000+600000
+ 809409 words of font info for 274 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 128i,15n,123p,1018b,1078s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 128i,15n,123p,1024b,1100s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/LandryNDZESSA/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/l
 mbx10.pfb><C:/Users/LandryNDZESSA/AppData/Local/Programs/MiKTeX/fonts/type1/pub
 lic/lm/lmex10.pfb><C:/Users/LandryNDZESSA/AppData/Local/Programs/MiKTeX/fonts/t
@@ -2212,11 +2326,13 @@ b><C:/Users/LandryNDZESSA/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/l
 msy7.pfb><C:/Users/LandryNDZESSA/AppData/Local/Programs/MiKTeX/fonts/type1/publ
 ic/lm/lmsy8.pfb><C:/Users/LandryNDZESSA/AppData/Local/Programs/MiKTeX/fonts/typ
 e1/public/lm/lmsy9.pfb><C:/Users/LandryNDZESSA/AppData/Local/Programs/MiKTeX/fo
-nts/type1/public/lm/lmtt10.pfb><C:/Users/LandryNDZESSA/AppData/Local/Programs/M
-iKTeX/fonts/type1/public/lm/lmtt9.pfb>
-Output written on presentation_beamer.pdf (37 pages, 2594603 bytes).
+nts/type1/public/lm/lmtk10.pfb><C:/Users/LandryNDZESSA/AppData/Local/Programs/M
+iKTeX/fonts/type1/public/lm/lmtt10.pfb><C:/Users/LandryNDZESSA/AppData/Local/Pr
+ograms/MiKTeX/fonts/type1/public/lm/lmtt9.pfb><C:/Users/LandryNDZESSA/AppData/L
+ocal/Programs/MiKTeX/fonts/type1/public/lm/lmtti10.pfb>
+Output written on soutenance_memoire_landry.pdf (46 pages, 2700763 bytes).
 PDF statistics:
- 888 PDF objects out of 1000 (max. 8388607)
- 92 named destinations out of 1000 (max. 500000)
- 117025 words of extra memory for PDF output out of 128383 (max. 10000000)
+ 1099 PDF objects out of 1200 (max. 8388607)
+ 114 named destinations out of 1000 (max. 500000)
+ 118425 words of extra memory for PDF output out of 128383 (max. 10000000)
 

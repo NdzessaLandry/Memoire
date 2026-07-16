@@ -1,0 +1,406 @@
+%============================================================
+%  MÉMOIRE D'INGÉNIEUR EN DATA SCIENCES
+%  Université de Maroua — ENSPM
+%  Auteur : NDZESSA AVELE BRUNO LANDRY
+%============================================================
+
+\documentclass[12pt, a4paper, oneside]{report}
+
+%------------------------------------------------------------
+%  ENCODAGE & LANGUE
+%------------------------------------------------------------
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[french]{babel}
+\usepackage{csquotes}
+\usepackage{booktabs}
+\usepackage{siunitx}
+\usepackage{float}
+\usepackage{caption}
+\usepackage[table]{xcolor}
+\usepackage{newtxtext}
+\usepackage{newtxmath}
+%------------------------------------------------------------
+%  POLICES & TYPOGRAPHIE
+%------------------------------------------------------------
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{setspace}
+\onehalfspacing
+
+%------------------------------------------------------------
+%  GÉOMÉTRIE DE LA PAGE
+%------------------------------------------------------------
+\usepackage[
+top=2.5cm,
+bottom=2.5cm,
+left=3cm,
+right=2.5cm,
+headheight=28pt        % CORRECTION 1 : 15pt → 28pt (évite le warning fancyhdr)
+]{geometry}
+
+%------------------------------------------------------------
+%  EN-TÊTES & PIEDS DE PAGE
+%------------------------------------------------------------
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small\textit{\leftmark}}
+%\fancyhead[R]{\small\textit{ENSPM — Maroua}}
+\fancyfoot[L]{Rédigé par NDZESSA AVELE Bruno Landry}
+\fancyfoot[R]{\thepage}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\fancypagestyle{plain}{
+	\fancyhf{}
+	\fancyfoot[C]{\thepage}
+	\renewcommand{\headrulewidth}{0pt}
+}
+%------------------------------------------------------------
+%  COULEURS — VERSION IMPRESSION NOIR ET BLANC
+%------------------------------------------------------------
+\usepackage[dvipsnames, table]{xcolor}
+
+% Remplace les couleurs vives par du noir et des gris
+\definecolor{primary}{RGB}{0, 0, 0}          % noir pur → titres, cadres
+\definecolor{secondary}{RGB}{80, 80, 80}     % gris foncé → sous-titres, filets
+\definecolor{accent}{RGB}{50, 50, 50}        % gris très foncé → alertes
+\definecolor{lightgray}{RGB}{240, 240, 240}  % gris clair → fonds de boîtes
+\definecolor{darkgray}{RGB}{60, 60, 60}      % gris foncé → numéros de lignes
+%------------------------------------------------------------
+%  GRAPHIQUES & FIGURES
+%------------------------------------------------------------
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{subcaption}
+\usepackage{wrapfig}
+\usepackage{tikz}
+\usetikzlibrary{shapes, arrows.meta, positioning, calc, decorations.pathmorphing}
+
+%------------------------------------------------------------
+%  TABLEAUX
+%------------------------------------------------------------
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{multirow}
+\usepackage{longtable}
+\usepackage{array}
+
+%------------------------------------------------------------
+%  MATHÉMATIQUES & CODE
+%------------------------------------------------------------
+%\usepackage{amsmath, amssymb, amsthm}
+\usepackage{listings}
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+
+\lstset{
+	basicstyle=\small\ttfamily,
+	backgroundcolor=\color{lightgray},
+	frame=single,
+	framerule=0.5pt,
+	rulecolor=\color{secondary},
+	breaklines=true,
+	numbers=left,
+	numberstyle=\tiny\color{darkgray},
+	keywordstyle=\color{primary}\bfseries,
+	commentstyle=\color{darkgray}\itshape,
+	stringstyle=\color{accent},
+	captionpos=b,
+	xleftmargin=2em,
+	xrightmargin=0.5em,
+	extendedchars=true,           % CORRECTION 2 : autorise les accents dans lstlisting
+	inputencoding=utf8,
+	literate=
+	{é}{{\'e}}1 {è}{{\`e}}1 {ê}{{\^e}}1 {ë}{{\"e}}1
+	{à}{{\`a}}1 {â}{{\^a}}1 {ä}{{\"a}}1
+	{ù}{{\`u}}1 {û}{{\^u}}1 {ü}{{\"u}}1
+	{î}{{\^i}}1 {ï}{{\"i}}1
+	{ô}{{\^o}}1 {ö}{{\"o}}1
+	{ç}{{\c{c}}}1 {œ}{{\oe}}1 {æ}{{\ae}}1
+	{É}{{\'E}}1 {È}{{\`E}}1 {Ê}{{\^E}}1
+	{À}{{\`A}}1 {Â}{{\^A}}1
+	{Ç}{{\c{C}}}1,
+}
+
+%------------------------------------------------------------
+%  HYPERLIENS & PDF METADATA
+%  IMPORTANT : hyperref doit toujours être chargé AVANT biblatex
+%------------------------------------------------------------
+\usepackage[
+colorlinks=true,
+linkcolor=black,       % ← était primary (bleu)
+citecolor=black,       % ← était secondary (bleu clair)
+urlcolor=black,        % ← était secondary
+bookmarks=true,
+pdfauthor={NDZESSA AVELE BRUNO LANDRY},
+pdftitle={Plateforme gouvernementale pour la cartographie et mise en relation
+	des besoins des entreprises locales},
+pdfsubject={Mémoire de fin d'études — Ingénieur en Data Sciences},
+pdfkeywords={Data Sciences, Cartographie, Entreprises, MINEPAT, Cameroun}
+]{hyperref}
+%------------------------------------------------------------
+%  BIBLIOGRAPHIE
+%  CORRECTION 3 : style=apa nécessite le package biblatex-apa
+%  installé via MiKTeX Package Manager
+%------------------------------------------------------------
+%\usepackage[backend=biber,natbib=true, style=ieee, citestyle=ieee]{biblatex}
+% Ton fichier de références
+\usepackage[numbers]{natbib}
+%\addbibresource{references.bib}
+%\bibliographystyle{plainnat}
+%------------------------------------------------------------
+%  PERSONNALISATION DES CHAPITRES
+%------------------------------------------------------------
+\usepackage{titlesec}
+
+\titleformat{\chapter}[display]
+{\normalfont\bfseries\color{black}}        % ← était color{primary}
+{%
+	\hfill
+	\tikz[remember picture]{
+		\node[fill=black, text=white,           % ← fill était primary
+		font=\Large\bfseries,
+		minimum width=1.5cm, minimum height=1.5cm,
+		rounded corners=4pt]
+		{\thechapter};
+	}
+}
+{0pt}
+{\vspace{1ex}\huge\raggedright}
+[\vspace{0.5ex}{\color{black}\rule{\linewidth}{2pt}}]  % ← était primary
+
+\titleformat{\section}
+{\normalfont\large\bfseries\color{black}}  % ← était primary
+{\thesection}{1em}{}
+[\vspace{-0.5ex}{\color{darkgray}\rule{\linewidth}{0.6pt}}]  % ← était secondary
+
+\titleformat{\subsection}
+{\normalfont\normalsize\bfseries\color{black}}   % ← était secondary
+{\thesubsection}{1em}{}
+
+\titleformat{\subsubsection}
+{\normalfont\normalsize\itshape\color{darkgray}} % ← était darkgray, ok
+{\thesubsubsection}{1em}{}
+
+%------------------------------------------------------------
+%  TABLE DES MATIÈRES
+%------------------------------------------------------------
+\usepackage{titletoc}
+\usepackage[titles]{tocloft}
+\renewcommand{\cftchapfont}{\bfseries\color{black}}
+\renewcommand{\cftchappagefont}{\bfseries\color{black}}
+\renewcommand{\cftsecfont}{\color{darkgray}}
+\setlength{\cftbeforechapskip}{6pt}
+
+%------------------------------------------------------------
+%  BOÎTES & ENVIRONNEMENTS SPÉCIAUX
+%------------------------------------------------------------
+\usepackage{tcolorbox}
+\tcbuselibrary{most}
+
+\newtcolorbox{definition}[1][]{
+	colback=lightgray, colframe=black,
+	title=Définition #1,
+	fonttitle=\bfseries,
+	arc=4pt, boxrule=0.8pt
+}
+
+\newtcolorbox{remarque}{
+	colback=blue!5, colframe=darkgray,
+	title=Remarque,
+	fonttitle=\bfseries\small,
+	arc=4pt, boxrule=0.6pt, left=4pt, right=4pt
+}
+
+\newtcolorbox{important}{
+	colback=red!5, colframe=black,
+	title=Important,
+	fonttitle=\bfseries\small,
+	arc=4pt, boxrule=0.6pt
+}
+
+%------------------------------------------------------------
+%  LÉGENDES
+%------------------------------------------------------------
+\usepackage[
+labelfont={bf, color=black},
+font=small,
+justification=centering
+]{caption}
+
+%------------------------------------------------------------
+%  GLOSSAIRE & ACRONYMES
+%  CORRECTION 4 : glossaries chargé APRÈS hyperref (ordre obligatoire)
+%------------------------------------------------------------
+\usepackage[acronym, nonumberlist]{glossaries}
+
+\makeglossaries
+
+\newacronym{dape}{DAPE}{Division des Analyses et des Politiques Économiques}
+\newacronym{minepat}{MINEPAT}{Ministère de l'Économie, de la Planification
+	et de l'Aménagement du Territoire}
+\newacronym{owasp}{OWASP}{Open Web Application Security Project}
+\newacronym{snd30}{SND30}{Stratégie Nationale de Développement  2020-2030}
+\newacronym{dgepip}{DGEPIP}{Direction Générale de l'Économie et de la
+	Programmation des Investissements Publics}
+\newacronym{dgpat}{DGPAT}{Direction Générale de la Planification et de
+	l'Aménagement du Territoire}
+\newacronym{dgcoop}{DGCOOP}{Direction Générale de la Coopération et de
+	l'Intégration Régionale}
+\newacronym{dag}{DAG}{Direction des Affaires Générales}
+\newacronym{uml}{UML}{Unified Modeling Language}
+\newacronym{orm}{ORM}{Object Relational Mapping}
+\newacronym{acm}{ACM}{Analyse des Correspondances Multiples}
+\newacronym{cah}{CAH}{Classification Ascendante Hièrarchique}
+\newacronym{afd}{AFD}{Analyse Factorielle Discriminante}
+\newacronym{ins}{INS}{Institut National de la Statistique}
+\newacronym{rge}{RGE}{Recensement Général des Entreprises}
+\newacronym{cas}{CAS}{Cellule des Analyses Sectorielles}
+\newacronym{gecam}{GECAM}{Groupement des Entreprises du Cameroun}
+\newacronym{pme}{PME}{Petites et Moyennes Entreprises}
+\newacronym{api}{API}{Application Programming Interface}
+\newacronym{ml}{ML}{Machine Learning}
+\newacronym{sgbd}{SGBD}{Système de Gestion de Bases de Données}
+\newacronym{uis}{UI/UX}{User Interface / User Experience}
+
+%------------------------------------------------------------
+%  COMMANDES UTILITAIRES
+%------------------------------------------------------------
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
+\newcommand{\auteur}{NDZESSA AVELE Bruno Landry}
+\newcommand{\matricule}{21D0180EP}
+\newcommand{\directeur}{Pr }
+\newcommand{\annee}{2025 / 2026}
+\newcommand{\titredoc}{Cartographie des besoins des entreprises camerounaises par analyse multidimensionnelle et développement d'une plateforme gouvernementale de mise en relation}
+%============================================================
+%  DOCUMENT
+%============================================================
+\begin{document}
+	%------------------------------------------------------------
+	%  PAGE DE GARDE
+	%------------------------------------------------------------
+	\begin{titlepage}
+		\newgeometry{top=1.5cm, bottom=1.5cm, left=2.5cm, right=2.5cm}
+		\begin{center}
+			
+			%--- BLOC 1 : En-tête bilingue avec logo université centré ---
+			\begin{tabularx}{\textwidth}{>{\centering\arraybackslash}p{4.5cm}
+					>{\centering\arraybackslash}X
+					>{\centering\arraybackslash}p{4.5cm}}
+				\multirow{2}{*}{%
+					\parbox[c]{4.2cm}{\centering\small
+						République du Cameroun\\[-2pt]
+						{\tiny **********}\\[-2pt]
+						Paix-Travail-Patrie\\[-2pt]
+						{\tiny **********}\\[-2pt]
+						Université de Maroua\\[-2pt]
+						{\tiny **********}\\[-2pt]
+						École Nationale Supérieure\\[-2pt]
+						Polytechnique de Maroua}%
+				}
+				&
+				\multirow{2}{*}{%
+					\parbox[c]{3cm}{\centering%
+						\includegraphics[height=2.5cm]{LogoUMA.png}}%
+				}
+				&
+				\multirow{2}{*}{%
+					\parbox[c]{4.2cm}{\centering\small
+						Republic of Cameroon\\[-2pt]
+						{\tiny **********}\\[-2pt]
+						Peace-Work-Fatherland\\[-2pt]
+						{\tiny **********}\\[-2pt]
+						The University of Maroua\\[-2pt]
+						{\tiny **********}\\[-2pt]
+						National Advanced School of\\[-2pt]
+						Engineering of Maroua}%
+				}
+				\\[3.8cm] & & \\
+			\end{tabularx}
+			
+			\vspace{0.3cm}
+			\textcolor{primary}{\rule{\linewidth}{1.5pt}}
+			\vspace{0.15cm}
+			
+			%--- BLOC 2 : Bandeau département avec logos ENSPM et MINEPAT ---
+			\begin{tabularx}{\textwidth}{>{\centering\arraybackslash}p{3cm}
+					>{\centering\arraybackslash}X
+					>{\centering\arraybackslash}p{3cm}}
+				\multirow{2}{*}{%
+					\raisebox{-1\totalheight}{%
+						\includegraphics[height=1.8cm]{LogoENSPM.jpeg}%
+					}%
+				}
+				&
+				\multirow{2}{*}{%
+					\parbox[c]{7cm}{\centering
+						\textbf{\large\color{primary} DÉPARTEMENT D'INFORMATIQUE}\\[2pt]
+						\textbf{\large\color{primary} ET TÉLÉCOMMUNICATIONS}}%
+				}
+				&
+				\multirow{2}{*}{%
+					\raisebox{-1\totalheight}{%
+						\includegraphics[height=1.8cm]{minepat.png}%
+					}%
+				}
+				\\[1.4cm] & & \\
+			\end{tabularx}
+			
+			\vspace{0.15cm}
+			\textcolor{primary}{\rule{\linewidth}{1.5pt}}
+			\vspace{0.5cm}
+			
+			%--- BLOC 3 : Titre du mémoire ---
+			\begin{tcolorbox}[
+				colback=primary!6, colframe=primary,
+				arc=5pt, boxrule=1pt,
+				left=12pt, right=12pt, top=10pt, bottom=10pt
+				]
+				\centering
+				{\large\bfseries\color{primary} \titredoc}
+			\end{tcolorbox}
+			
+			\vspace{0.45cm}
+			
+			%--- BLOC 4 : Nature du document ---
+			{\normalsize Mémoire présenté et soutenu en vue de l'obtention du}\\[5pt]
+			{\large\bfseries\color{primary} Diplôme d'Ingénieur  en Data Sciences}
+			
+			\vspace{0.45cm}
+			
+			%--- BLOC 5 : Auteur ---
+			{\normalsize Par }\\[5pt]
+			{\large\bfseries \auteur}\\[3pt]
+			{\small Matricule : \matricule}
+			
+			\vspace{0.4cm}
+			
+			%--- BLOC 6 : Encadrement ---
+			{\normalsize Sous la direction de :}\\[5pt]
+			{\large\bfseries\color{primary} Pr KALADZAVI Guidedi}\\[2pt]
+			{\small Ma\^itre de conférences}
+			
+			\vspace{0.4cm}
+			
+			%--- BLOC 7 : Jury ---
+			\begin{tabularx}{\textwidth}{>{\bfseries\raggedright\arraybackslash}p{3.2cm}
+					>{\raggedright\arraybackslash}X}
+				\multicolumn{2}{c}{\normalsize\bfseries Devant le jury composé de :}\\[6pt]
+				Président :    & Pr MOULLA KOULLA Donatien \\[4pt]
+				Rapporteur :   & Pr KALADZAVI Guidedi \\[4pt]
+				Examinatrice : & Dr BOUDJOU Hortense \\[4pt]
+				Invité: & M. Abdelaziz Junmbe
+			\end{tabularx}
+			
+			\vfill
+			
+			%--- BLOC 8 : Pied de page ---
+			\textcolor{primary}{\rule{\linewidth}{1pt}}\\[5pt]
+			{\bfseries Année Académique \annee}
+			
+		\end{center}
+		\restoregeometry
+	\end{titlepage}
+\end{document}

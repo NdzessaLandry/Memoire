@@ -30,7 +30,7 @@
 \headcommand {\beamer@framepages {12}{12}}
 \headcommand {\beamer@sectionpages {8}{12}}
 \headcommand {\beamer@subsectionpages {8}{12}}
-\headcommand {\sectionentry {3}{Présentation des résultats de l'analyse des données de l'enquête }{13}{Présentation des résultats de l'analyse des données de l'enquête }{0}}
+\headcommand {\sectionentry {3}{Présentation des résultats de l'analyse des données de l'enquête}{13}{Présentation des résultats de l'analyse des données de l'enquête}{0}}
 \headcommand {\slideentry {3}{0}{1}{13/13}{}{0}}
 \headcommand {\beamer@framepages {13}{13}}
 \headcommand {\slideentry {3}{0}{2}{14/14}{}{0}}
@@ -43,7 +43,7 @@
 \headcommand {\beamer@framepages {19}{19}}
 \headcommand {\beamer@sectionpages {13}{19}}
 \headcommand {\beamer@subsectionpages {13}{19}}
-\headcommand {\sectionentry {4}{Résultat de l' analyse multidimentionnelle }{20}{Résultat de l' analyse multidimentionnelle }{0}}
+\headcommand {\sectionentry {4}{Résultat de l'analyse multidimensionnelle}{20}{Résultat de l'analyse multidimensionnelle}{0}}
 \headcommand {\slideentry {4}{0}{1}{20/20}{}{0}}
 \headcommand {\beamer@framepages {20}{20}}
 \headcommand {\slideentry {4}{0}{2}{21/21}{}{0}}
@@ -78,13 +78,37 @@
 \headcommand {\beamer@framepages {35}{35}}
 \headcommand {\beamer@sectionpages {20}{35}}
 \headcommand {\beamer@subsectionpages {20}{35}}
-\headcommand {\sectionentry {5}{Conclusion}{36}{Conclusion}{0}}
+\headcommand {\sectionentry {5}{Présentation de l'application « Business Partnership »}{36}{Présentation de l'application « Business Partnership »}{0}}
 \headcommand {\slideentry {5}{0}{1}{36/36}{}{0}}
 \headcommand {\beamer@framepages {36}{36}}
 \headcommand {\slideentry {5}{0}{2}{37/37}{}{0}}
 \headcommand {\beamer@framepages {37}{37}}
-\headcommand {\beamer@partpages {1}{37}}
-\headcommand {\beamer@subsectionpages {36}{37}}
-\headcommand {\beamer@sectionpages {36}{37}}
-\headcommand {\beamer@documentpages {37}}
-\headcommand {\gdef \inserttotalframenumber {35}}
+\headcommand {\slideentry {5}{0}{3}{38/38}{}{0}}
+\headcommand {\beamer@framepages {38}{38}}
+\headcommand {\slideentry {5}{0}{4}{39/39}{}{0}}
+\headcommand {\beamer@framepages {39}{39}}
+\headcommand {\slideentry {5}{0}{5}{40/40}{}{0}}
+\headcommand {\beamer@framepages {40}{40}}
+\headcommand {\slideentry {5}{0}{6}{41/41}{}{0}}
+\headcommand {\beamer@framepages {41}{41}}
+\headcommand {\slideentry {5}{0}{7}{42/42}{}{0}}
+\headcommand {\beamer@framepages {42}{42}}
+\headcommand {\beamer@sectionpages {36}{42}}
+\headcommand {\beamer@subsectionpages {36}{42}}
+\headcommand {\sectionentry {6}{Limites et perspectives}{43}{Limites et perspectives}{0}}
+\headcommand {\slideentry {6}{0}{1}{43/43}{}{0}}
+\headcommand {\beamer@framepages {43}{43}}
+\headcommand {\slideentry {6}{0}{2}{44/44}{}{0}}
+\headcommand {\beamer@framepages {44}{44}}
+\headcommand {\beamer@sectionpages {43}{44}}
+\headcommand {\beamer@subsectionpages {43}{44}}
+\headcommand {\sectionentry {7}{Conclusion}{45}{Conclusion}{0}}
+\headcommand {\slideentry {7}{0}{1}{45/45}{}{0}}
+\headcommand {\beamer@framepages {45}{45}}
+\headcommand {\slideentry {7}{0}{2}{46/46}{}{0}}
+\headcommand {\beamer@framepages {46}{46}}
+\headcommand {\beamer@partpages {1}{46}}
+\headcommand {\beamer@subsectionpages {45}{46}}
+\headcommand {\beamer@sectionpages {45}{46}}
+\headcommand {\beamer@documentpages {46}}
+\headcommand {\gdef \inserttotalframenumber {44}}

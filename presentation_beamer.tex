@@ -124,12 +124,10 @@
 % ------------------------------------------------------------
 %  MÉTADONNÉES
 % ------------------------------------------------------------
-\title[Cartographie des besoins entreprises]{%
-    Conception et développement d'une plateforme gouvernementale\\
-    pour la cartographie des besoins et la mise en relation\\
-    des entreprises locales}
+\title[Cartographie des besoins des entreprises camerounaises par analyse multidimensionnelle et développement d'une plateforme gouvernementale de mise en relation]{%
+    Cartographie des besoins des entreprises camerounaises par analyse multidimensionnelle et développement d'une plateforme gouvernementale de mise en relation}
 
-\subtitle{Présentation de l'état d'avancement}
+\subtitle{Présentation en vue de l'obtention du Dip\^ome d'Ingénieur en Data Sciences}
 
 \author[NDZESSA AVELE Bruno Landry]{%
     \textbf{NDZESSA AVELE BRUNO LANDRY}
@@ -167,17 +165,18 @@
 % ============================================================
 \section{Introduction Générale}
 \begin{frame}{Contexte}
-	\begin{alertblock}{Context}
+	
 		\begin{itemize}
-			\item Dans de nombreux pays, le secteur privé jout un role déterminant dans la production des biens et services ainsi que la création de la valeur ajoutée;
-			\item Au travers des trois piliers de la SND30, le Cameroun se fixe comme objectif le developpement du secteur privé moteur de la croissance économique;
+			\item Dans de nombreux pays, le secteur privé joue un rôle déterminant dans la production des biens et services ainsi que la création de la valeur ajoutée;
+			\item Au travers des trois piliers de la SND30, le Cameroun se fixe comme objectif le développement du secteur privé moteur de la croissance économique;
 			\item Des réformes ont donc été engagées, des indicateurs de croissances définis;
 			\item L'évaluation mi-parcourt de l'atteinte des indicateurs de croissance de la SND30 fait état d'une économie Camerounaise résiliente mais bien loin des idéaux fixés.
+			\item Le Ministre de l'économonie de la Planification et de l'Aménagement du territoire lance une enqu\^ete visant à s'enquérir des besoins des entreprises du secteur privé et instruit la mise sur pied d'une plateforme numérique de mise en relation des entreprises.
 		\end{itemize}
-	\end{alertblock}
+	
 \end{frame}
 \begin{frame}{Problématique}
-	\begin{exampleblock}{Problèmatique}
+	
 		\begin{enumerate}
 			\item Le secteur privé est incontournable pour une croissance économique d'un pays et au Cameroun ce secteur rencontre d'énorme difficulté;
 			
@@ -185,83 +184,92 @@
 			\item Bien d'initiatives ont été engagées dans l'optique sus-cité avec des résultats peut concluant;
 			\item Une enquete en vue du rescencement des besoins des entreprises est lancée par le MINEPAT en 2025. 
 		\end{enumerate}
-	\end{exampleblock}
+	Quels sont donc les profils de besoins qui existent dans l'économie camerounaise? Et comment répondre à ces besoins au travers d'une plateforme numérique de mise en relation?
 \end{frame}
 \begin{frame}{Objectifs}
-	contenu...
+	Il sera donc question dans notre travail de présenter les résultats de l'analyse des données issues de l'enqu\^ete menée par le MINEPAT sur la cartographie des entreprises et la présentation des profils de besoins. Et de proposer une application de mise en relation des entreprises basée sur les besoins et les offres exprimés des entreprises.
+	Spécifiquement il sera question de :
+	\begin{itemize}
+		\item Effectuer des analyses descriptives sur les données épurées;
+		\item Utiliser les méthodes d'analyses dimensionnelles(ACM, CAH, AFD) pour synthétiser les données et proposer des profils de besoins;
+		\item Modéliser et construire une application de mise en relation des entreprises
+	\end{itemize}
 \end{frame}
 \begin{frame}{Méthode utilisées}
-	contenu...
+La méthodologie que nous avons utilisés pour l'analyse des données :
+\begin{itemize}
+	\item Statistique descriptive uni-variée(Graphique de proportionalité);
+	\item Statistique descriptive bis-variée(Test de $\chi^2$);
+	\item Analyse des Correspondances Multiples (Représenter les modalités et les entreprises dans un espace de dimension réduis);
+	\item Classification Ascendante Hiérarchique (Construire des classes à partir des données de l'ACM qui utilise le critère de Ward)
+	\item Analyse Factorielle Discriminante (Son objectif est de donner la possibilité de visualiser la répartition des classes sur un plan et de permettre la prédiction des classes de nouvelles entreprises)
+\end{itemize}
+Méthodologie de conception de la plateforme
+\begin{itemize}
+	\item Utilisation des principes de la modélisation dimensionnelle;
+	\item Implémentation de la base de données à travers l'ORM de Django;
+	\item Définir les routes et les vues;
+	\item tester l'application
+\end{itemize}
 \end{frame}
 
 \section{Définition des concepts et état de l'art}
 
-\begin{frame}{Besoin des entreprises}
+\begin{frame}{Cartographie des besoins des entreprises}
+	 La Banque
+	Mondiale définit les besoins des entreprises comme l’ensemble des contraintes qui, une fois
+	levées, permettraient d’améliorer de manière significative leur productivité et leur capacité à
+	croître.
+	La cartographie des besoins des entreprises est un processus systématique de collecte,
+	d’organisation et de représentation sectorielle des contraintes exprimées par les unités
+	économiques d’un territoire donné.
 \end{frame}
 
 \begin{frame}{Mise en relation}
-	contenu...
-\end{frame}
-\begin{frame}
-	contenu...
+	La mise en relation des entreprises renvoie au mécanisme par lequel deux ou plusieurs
+	unités économiques sont amenées à se connaître, à échanger sur leurs capacités et leurs
+	besoins respectifs, et à explorer les conditions d’une collaboration mutuellement bénéfique.
+	Les mécanismes de mise en relation
+	\begin{itemize}
+		\item Plateforme B2B (Amazon, Facebook Market place, Alibaba);
+		\item Bourse de Sous Traitance et de Partenariat;
+		\item Partenariats contractuels directs.
+	\end{itemize}
 \end{frame}
 \begin{frame}{Études en vue de la cartographie des besoins des entreprises}
-	contenu...
+	Plusieurs études ont été réalisées dans le but de s'enquérir des difficultés rencontrées par le secteur privé.
+	\begin{itemize}
+		\item Enquete du GECAM au près des entreprises de son sein (Les résultats révèlent qu’en
+		2019, 57\% des entreprises du groupement ont connu des difficultés, la fiscalité étant identifiée
+		comme le principal frein, caractérisée par l’instabilité du système fiscal (72\%), les pénalités et
+		amendes fiscales (66\%), le niveau du taux d’imposition (61\%) et la multiplicité des contrôles
+		de l’administration fiscale (59\%) )
+		\item Rédaction du document de stratégie pour le développement du secteur industriel ( Les principaux résultats
+		indiquent que la part de la valeur ajoutée manufacturière dans le PIB stagnait à 14,08\% en
+		2015, loin derrière des pays comparables tels que la Thaïlande (28,6\%) et la Malaisie (24\%);
+		que 90\% des entreprises locales sont des très petites, petites ou moyennes entreprises; et que
+		des projets structurants tels que le projet FABER et la construction de 8,000 km de voies
+		ferrées ont été envisagés pour redynamiser le secteur )
+		\item Enqu\^ete sur le climat des affaires par le MINEPAT (Les résultats indiquent que 91% des chefs d’entreprises considèrent que les coûts
+		liés au taux d’intérêt, aux assurances et au courtage sont trop élevés, et appellent l’État à
+		mettre en place des structures dédiées au financement des entreprises. L’accès aux facteurs
+		de production et l’état des infrastructures routières sont unanimement identifiés comme des
+		freins majeurs à la croissance.)
+	\end{itemize}
 \end{frame}
 \begin{frame}{Outils existant de mise en relation}
-	contenu...
-\end{frame}
-\begin{frame}{Les méthodes de mise en relations existantes}
-	contenu...
+	La mise en relation des entreprises pourrait s'apparenter à un système de recommandation. Dans la littérature il existe principalement trois déclinaison:
+	\begin{itemize}
+		\item Filtrage   basé sur le contenu propose à un utilisateur des
+		éléments présentant des attributs similaires à ceux avec lesquels il a déjà interagi.
+		\item Filtrage Collaboratif exploite les comportements collectifs
+		des utilisateurs pour inférer des affinités.
+		\item systèmes à base de connaissances font correspondre les
+		contraintes d’un utilisateur avec les caractéristiques des éléments disponibles.
+	\end{itemize}
 \end{frame}
 
-\section{Justification de la méthode d'analyse utilisée et de conception de la plateforme numérique}
-\begin{frame}{Analyse descriptive uni-variée}
-	contenu...
-\end{frame}
-\begin{frame}{Analyse descriptive bis-variée}
-	contenu...
-\end{frame}
-\begin{frame}{Analyse des Correspondances Multiples (ACM)}
-	contenu...
-\end{frame}
-\begin{frame}{Classification Ascendante Hiérarchique (CAH)}
-	contenu...
-\end{frame}
-\begin{frame}{Analyse Factorielle Discriminante (AFD)}
-	contenu...
-\end{frame}
-\begin{frame}{Modélisation dimensionnelle}
-	contenu...
-\end{frame}
-% ============================================================
-\section{Résultat}
-% ============================================================
-\begin{frame}{Résultat de l'analyse uni-variée}
-	contenu...
-\end{frame}
-\begin{frame}{Résultat de l'analyse bis-variée}
-	contenu...
-\end{frame}
-\begin{frame}{Résultat de l'ACM}
-	contenu...
-\end{frame}
-\begin{frame}{Résultat de la CAH}
-	contenu...
-\end{frame}
-\begin{frame}{Résultat de l'AFD}
-	contenu...
-\end{frame}
-\begin{frame}{Résultat de la plateforme}
-	contenu...
-\end{frame}
-\section{Conclusion et perspective}
-\begin{frame}{Conclusion}
-	contenu...
-\end{frame}
-\begin{frame}{Perspective}
-	contenu...
-\end{frame}
+\section{Présentation des résultats de l'analyse des données de l'enquête }
 % -----------------------------------------------------------
 %  DIAPO 5 — Source des données
 % -----------------------------------------------------------
@@ -339,7 +347,7 @@
 	\hfill
 	\begin{subfigure}[b]{0.52\textwidth}
 		\centering
-		\includegraphics[width=\textwidth]{repartition_besoins.jpeg}
+		\includegraphics[width=\textwidth]{besoinsCorriges.jpeg}
 		\caption{Répartition des besoins des entreprises}
 		\label{fig:sous_fig_e}
 	\end{subfigure}
@@ -347,9 +355,9 @@
 	\label{fig:besoins_secteur_global}
 \end{figure}
 \vspace{6pt}
-\begin{alertblock}{Résultat clé}
-	On observe qu'il y'a très peu de grande entreprise (1,3\%), plus de la moitié des entreprises sont des Petites entreprises(53,4\%). C'est la région du Centre qui dénombre le plus grand nombre d'entreprises(39,3\%) suivi par la région du Littoral(17,8\%) ce qui pourrait susciter des interrogations du fait que la capitale économique soit dans le Littoral. 62,6\% Des entreprises évoluent dans le secteur de l' Agriculture et Agroalimentaire et les besoins les plus réccurents sont le financement(20,1\%), Equipements(19,4\%). Les autres besoins bien qu'ayant des pourcentages d'apparition moindre sont assez bien représentés. 
-\end{alertblock}
+
+	On observe qu'il y'a très peu de grande entreprise (1,3\%), plus de la moitié des entreprises sont des Petites entreprises(53,4\%). C'est la région du Centre qui dénombre le plus grand nombre d'entreprises(39,3\%) suivi par la région du Littoral(17,8\%) ce qui pourrait susciter des interrogations du fait que la capitale économique soit dans le Littoral. 62,6\% Des entreprises évoluent dans le secteur de l' Agriculture et Agroalimentaire et les besoins les plus réccurents sont le financement(96,2\%), Equipements(93,0\%). Les autres besoins bien qu'ayant des pourcentages d'apparition moindre sont assez bien représentés. 
+
 
 % --- Diapositive 1 : Tableau Synthétique ---
 \begin{frame}{Synthèse de l'Analyse Bivariée (Test $\chi^2$ et $V$ de Cramér)}
